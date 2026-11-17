@@ -1,15 +1,17 @@
 # Twenty Bits working rules
 
-Follow the user's phase gates. Phase 0 is complete; do not begin Phase 1 until the user resumes. Update this status at each gate. Append a short plain-language section to LEARN.md and commit at the end of every phase.
+Phase 1 is complete. Stop until the user approves a paid plan. That approval starts Phase 2 only. Append a short plain-language section to LEARN.md and commit at the end of each phase.
 
-The total project Tinker cap is $30. Keep ledger.json across phases and seeds. Use twenty_bits.budget.Ledger.call before every Tinker operation, including zero-cost operations. Before a run, check its full estimated cost and a token-bounded maximum. Refuse unaffordable work. Do not bypass the ledger through cookbook internals or run the stock Twenty Questions recipe.
+The active Tinker cap remains $30. Plan 50 is a proposal and does not authorize a cap increase. Keep ledger.json, twenty_bits/budget.py, its holds, and 408 behavior unchanged unless the user explicitly approves the cap change. Every Tinker operation, including metadata operations, goes through Ledger.call. Do not run the stock cookbook recipe or bypass the guard through its internals.
 
-A 408 from retrieve_future means the request is still running. Keep its reservation and re-poll the original request_id. Never resubmit the original operation because of a polling timeout. Uncertain submissions remain held until reconciled.
+A retrieve_future 408 means pending work. Re-poll the original request_id and retain its hold. Never resubmit sampling, training, or optimizer work because polling times out. Unknown costs remain held until reconciled.
 
-Train only on animals training games. Frozen evaluation games and tools, foods, and synthetic domains never enter training. Keep an animals development split for tuning. Freeze rewards, grammar, output caps, evaluation settings, and comparison rules before the applicable runs. If a change becomes necessary during a run, stop and ask the user.
+Use training_game from twenty_bits/worlds.py for training. It accepts only animals, the fixed 200-row training pool, and N=16,32,64,128. Frozen games and held-out rows never enter gradients. Tools, foods, and synthetic are transfer domains. The paired paid animals games use disjoint held-out profiles, not entirely unfamiliar underlying types.
 
-Read PRIOR_WORK.md, TINKER_CHECK.md, BUDGET.md, and DESIGN_NOTES.md before continuing. Current cost scenarios and the smaller diagnostic are proposals, not approved settings. N=256 needs larger worlds than the originally specified pools. Resolve that choice before generating worlds.
+Read PROTOCOL.md, PAID_PLANS.md, NUMBERS.md, and PHASE1.md before continuing. Freeze sampling settings before paid work and do not change rewards, caps, grammar, or evaluation protocol within a run. Stop and ask if a change is necessary. Preserve the common declared frozen slice across all models and checkpoints.
 
-Keep information gain out of rewards. Report legal item enumeration and long predicates; do not silently ban them. Use exact predicate evaluation, never Python eval. Reuse the pinned cookbook interfaces and rollout machinery when implementing RL, and test that group advantages are standardized as requested.
+EIG is measured, never rewarded. Audit early guesses, singleton search, large name lists, invalid behavior, and parser exploits in the pilot before main training. Legal enumeration is a result; do not silently ban it. The primary-model output cap proposal is 2048, large enough for the measured half-candidate lists.
 
-Do not invent results, charts, invoice totals, model availability, or tests. Distinguish public catalog listings from authenticated capabilities and estimated costs from reconciled actual usage. No Tinker credentials were available at Phase 0.
+Reuse the pinned cookbook environment interfaces, rollout, renderer, and training plumbing at the paid implementation phases. Verify native-tokenizer parity, guard every SDK operation, and implement group-standardized advantages explicitly. Phase 1 has no Tinker adapter and made zero service calls.
+
+Keep prose factual. This is a side project for GitHub and X. PRIOR_WORK.md is context. Do not make priority claims about the research. Distinguish forecasts from actual bills, visible reasoning from internal computation, and public model listings from authenticated availability. Report every seed, missing cell, failure, and limitation.

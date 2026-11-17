@@ -1,0 +1,19 @@
+{
+  "namespace": "paid-v1",
+  "games_per_cell": 200,
+  "policies": [
+    "random",
+    "greedy_single",
+    "greedy_predicate"
+  ],
+  "predicate_tokenizer": "Qwen/Qwen3-8B",
+  "input_hashes": {
+    "data/worlds/animal_split.json": "bb080306bb8a33aff74fc75c65da1b0ae87484d5c8355dcbca9a661b0fee01e2",
+    "data/worlds/animals.json": "c8fbe13c98ad1dad652be24f9573b399d3e5391a6e31e6579f54fe4752a2a113",
+    "data/worlds/foods.json": "d74dbc1d27958d0169cb08dd25471e90957f32b6022bc43b3965fd015a337158",
+    "data/worlds/synthetic.json": "77eb0366f14935a458b0f58898d58857d7b5a854735ed36dc6a7a5eb7eee25a5",
+    "data/worlds/tools.json": "d653cf81084241c38041bb132a622cb1bcdf29e4f31612db8854a10288a52198",
+    "research/tokenizers.json": "897c4bd7904330731f3b18d7a8868b5bb5ba4e60775bd0f35015951e3f47fa1f",
+    "evals/frozen/manifest.json": "96cbff2993f3ffcd5f6f6151571a8786e8ef2606c26c30180a753c944b9511eb"
+  }
+}

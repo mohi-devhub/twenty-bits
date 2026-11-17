@@ -1,0 +1,238 @@
+{
+  "status": "proposals only; ledger cap remains $30 until approval",
+  "forecast_method": "no cache credit; measured maximum initial prompt in each frozen cell; full question budget plus guess; 64 output tokens per turn plus 32 chat/answer tokens in later prompts; full per-turn contexts charged for training; margin 1.5",
+  "uncertainty": "Output lengths and model success have not been measured. 2048 is a universal output cap, not the 64-token forecast. If actual usage consumes the held budget, stop before submitting more work; do not silently cut an approved evaluation.",
+  "zero_shot_choice": "8B is cheaper on the published rate card. Task ability remains unknown without paid calls. Phase 2 screens 4B on 50 matched games before any training; switching models requires a reviewed plan at that gate.",
+  "training_prompt_measurements": {
+    "Qwen/Qwen3-8B": {
+      "16": {
+        "mean": 684.775,
+        "max": 729,
+        "examples": 40
+      },
+      "32": {
+        "mean": 1067.125,
+        "max": 1111,
+        "examples": 40
+      },
+      "64": {
+        "mean": 1809.625,
+        "max": 1877,
+        "examples": 40
+      },
+      "128": {
+        "mean": 3208.95,
+        "max": 3260,
+        "examples": 40
+      }
+    },
+    "Qwen/Qwen3.5-4B": {
+      "16": {
+        "mean": 683.575,
+        "max": 728,
+        "examples": 40
+      },
+      "32": {
+        "mean": 1065.45,
+        "max": 1110,
+        "examples": 40
+      },
+      "64": {
+        "mean": 1807.675,
+        "max": 1875,
+        "examples": 40
+      },
+      "128": {
+        "mean": 3206.95,
+        "max": 3258,
+        "examples": 40
+      }
+    }
+  },
+  "name_list_token_audit": {
+    "Qwen/Qwen3-8B": [
+      {
+        "domain": "animals",
+        "n": 32,
+        "half_list_action_tokens": 146
+      },
+      {
+        "domain": "animals",
+        "n": 128,
+        "half_list_action_tokens": 557
+      },
+      {
+        "domain": "synthetic",
+        "n": 32,
+        "half_list_action_tokens": 177
+      },
+      {
+        "domain": "synthetic",
+        "n": 128,
+        "half_list_action_tokens": 705
+      },
+      {
+        "domain": "synthetic",
+        "n": 256,
+        "half_list_action_tokens": 1409
+      }
+    ],
+    "Qwen/Qwen3.5-4B": [
+      {
+        "domain": "animals",
+        "n": 32,
+        "half_list_action_tokens": 146
+      },
+      {
+        "domain": "animals",
+        "n": 128,
+        "half_list_action_tokens": 557
+      },
+      {
+        "domain": "synthetic",
+        "n": 32,
+        "half_list_action_tokens": 177
+      },
+      {
+        "domain": "synthetic",
+        "n": 128,
+        "half_list_action_tokens": 705
+      },
+      {
+        "domain": "synthetic",
+        "n": 256,
+        "half_list_action_tokens": 1409
+      }
+    ]
+  },
+  "plans": [
+    {
+      "name": "Plan 30",
+      "cap_usd": 30,
+      "main_model": "Qwen/Qwen3-8B",
+      "alternative_model": "Qwen/Qwen3.5-4B",
+      "games_per_cell": 24,
+      "cells": 10,
+      "evaluation_games_per_checkpoint": 240,
+      "seeds": {
+        "A": [
+          11,
+          23
+        ],
+        "B": [
+          41
+        ]
+      },
+      "main_updates_per_seed": 32,
+      "groups_per_update": 1,
+      "games_per_group": 4,
+      "pilot_updates": {
+        "A": 24,
+        "B": 8
+      },
+      "evaluated_main_checkpoints": 3,
+      "kept_checkpoints_per_main_seed": 1,
+      "base_eval_rounds": 1,
+      "reference_games": 20,
+      "alternative_4b_screen_games": 50,
+      "output_cap_tokens": 2048,
+      "thinking": "disabled for Qwen; reference has a 512-token cap including reasoning",
+      "parts_usd": {
+        "phase2_base_primary": 2.40092136,
+        "phase2_alternative_4b_5_games_per_cell": 0.8457627000000001,
+        "phase2_reference_20_games": 0.15698430000000002,
+        "phase3_pilot_training": 1.20352832,
+        "phase3_pilot_dev_checks": 0.18408456,
+        "phase4_main_training": 7.52358,
+        "phase4_final_evaluations": 7.202764080000001
+      },
+      "forecast_usd": 19.51762532,
+      "forecast_with_margin_usd": 29.27643798,
+      "headroom_after_margin_usd": 0.7235620199999993,
+      "precision": {
+        "win_rate_full_ci_width_per_cell_worst_case": 0.4000833246545858,
+        "win_rate_full_ci_width_pooled_10_cells_worst_case": 0.17892270211835426,
+        "paired_win_difference_full_ci_width_per_cell_worst_case": 0.8001666493091716,
+        "eig_full_ci_width_per_cell_baseline_proxy_range": [
+          0.0,
+          0.018667327899643402
+        ],
+        "questions_per_win_full_ci_width_baseline_proxy_range": [
+          0.0,
+          2.1167967541612662
+        ],
+        "noisy_recheck_opportunities_per_game_baseline_mean": 0.07500000000000001,
+        "recheck_full_ci_width_if_opportunities_match_baseline": 0.6533333333333332,
+        "seed_eig_full_ci_width_sensitivity_sd_0_02": {
+          "2": 0.3593799504702509,
+          "1": null
+        }
+      }
+    },
+    {
+      "name": "Plan 50",
+      "cap_usd": 50,
+      "main_model": "Qwen/Qwen3-8B",
+      "alternative_model": "Qwen/Qwen3.5-4B",
+      "games_per_cell": 28,
+      "cells": 10,
+      "evaluation_games_per_checkpoint": 280,
+      "seeds": {
+        "A": [
+          11,
+          23,
+          37
+        ],
+        "B": [
+          41,
+          53
+        ]
+      },
+      "main_updates_per_seed": 32,
+      "groups_per_update": 1,
+      "games_per_group": 4,
+      "pilot_updates": {
+        "A": 32,
+        "B": 16
+      },
+      "evaluated_main_checkpoints": 5,
+      "kept_checkpoints_per_main_seed": 1,
+      "base_eval_rounds": 1,
+      "reference_games": 20,
+      "alternative_4b_screen_games": 50,
+      "output_cap_tokens": 2048,
+      "thinking": "disabled for Qwen; reference has a 512-token cap including reasoning",
+      "parts_usd": {
+        "phase2_base_primary": 2.80107492,
+        "phase2_alternative_4b_5_games_per_cell": 0.8457627000000001,
+        "phase2_reference_20_games": 0.15698430000000002,
+        "phase3_pilot_training": 1.80529248,
+        "phase3_pilot_dev_checks": 0.18408456,
+        "phase4_main_training": 12.5393,
+        "phase4_final_evaluations": 14.005374600000001
+      },
+      "forecast_usd": 32.337873560000006,
+      "forecast_with_margin_usd": 48.50681034000001,
+      "headroom_after_margin_usd": 1.4931896599999916,
+      "precision": {
+        "win_rate_full_ci_width_per_cell_worst_case": 0.37040518354904267,
+        "win_rate_full_ci_width_pooled_10_cells_worst_case": 0.16565023392678924,
+        "paired_win_difference_full_ci_width_per_cell_worst_case": 0.7408103670980853,
+        "eig_full_ci_width_per_cell_baseline_proxy_range": [
+          0.0,
+          0.017282587378534785
+        ],
+        "questions_per_win_full_ci_width_baseline_proxy_range": [
+          0.0,
+          1.9597729821357968
+        ],
+        "noisy_recheck_opportunities_per_game_baseline_mean": 0.07500000000000001,
+        "recheck_full_ci_width_if_opportunities_match_baseline": 0.6048691318514002,
+        "seed_eig_full_ci_width_sensitivity_sd_0_02": {
+          "3": 0.09937352833291839,
+          "2": 0.3593799504702509
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "protocol": "v1",
+  "namespace": "paid-v1",
+  "cells": [
+    {
+      "domain": "animals",
+      "n": 32,
+      "noise": 0,
+      "file": "animals_n32_p0.00.jsonl.gz",
+      "games": 200,
+      "sha256": "d72f8e08d5b1a2a058ec7b4250d6dceffe74266ad6f857714d77de4793ada54d"
+    },
+    {
+      "domain": "animals",
+      "n": 32,
+      "noise": 0.1,
+      "file": "animals_n32_p0.10.jsonl.gz",
+      "games": 200,
+      "sha256": "8c36eb39d83aa1b0555a2bb9589a8b90bdc49f8bcec438cc24a14d6a91fc5a60"
+    },
+    {
+      "domain": "animals",
+      "n": 128,
+      "noise": 0,
+      "file": "animals_n128_p0.00.jsonl.gz",
+      "games": 200,
+      "sha256": "1dcaace1d07e7c2822fe79594afc785519151dbbce800e255de964898101f9e9"
+    },
+    {
+      "domain": "animals",
+      "n": 128,
+      "noise": 0.1,
+      "file": "animals_n128_p0.10.jsonl.gz",
+      "games": 200,
+      "sha256": "6fa3774b45c9fe5518469fab8f9aeb6101ad7d4edaed7d3c17eeceea5f23bb9a"
+    },
+    {
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0,
+      "file": "synthetic_n32_p0.00.jsonl.gz",
+      "games": 200,
+      "sha256": "30e828cb498b97534f218cb6f57c0cca2ea8a73d15ec9e709c88200876eb14ce"
+    },
+    {
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0.1,
+      "file": "synthetic_n32_p0.10.jsonl.gz",
+      "games": 200,
+      "sha256": "f672c108e82c37daef841d1a59c61a68fac97a6b05cb79ff64bc2c2bcd0de67b"
+    },
+    {
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0,
+      "file": "synthetic_n128_p0.00.jsonl.gz",
+      "games": 200,
+      "sha256": "d79c0b0c708809d0fd76a31c16317af73b1f30144b7bca2f1ff959529bc748a1"
+    },
+    {
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0.1,
+      "file": "synthetic_n128_p0.10.jsonl.gz",
+      "games": 200,
+      "sha256": "3c82cee528e64be3c93eca973f02746dc87706ab0dcbc84a3f874ad78e70efcb"
+    },
+    {
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0,
+      "file": "synthetic_n256_p0.00.jsonl.gz",
+      "games": 200,
+      "sha256": "6fe51d1205ebc5e0c0be731fccb3de766d148fcea3a6df257e04d8fedfcbcb3d"
+    },
+    {
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0.1,
+      "file": "synthetic_n256_p0.10.jsonl.gz",
+      "games": 200,
+      "sha256": "dbe1c7009607cca82b0e81e3455ebd571152aaa6ea16079eb16b9a1622eae340"
+    }
+  ],
+  "world_hashes": {
+    "animal_split.json": "bb080306bb8a33aff74fc75c65da1b0ae87484d5c8355dcbca9a661b0fee01e2",
+    "animals.json": "c8fbe13c98ad1dad652be24f9573b399d3e5391a6e31e6579f54fe4752a2a113",
+    "foods.json": "d74dbc1d27958d0169cb08dd25471e90957f32b6022bc43b3965fd015a337158",
+    "synthetic.json": "77eb0366f14935a458b0f58898d58857d7b5a854735ed36dc6a7a5eb7eee25a5",
+    "tools.json": "d653cf81084241c38041bb132a622cb1bcdf29e4f31612db8854a10288a52198"
+  },
+  "training_exclusion": "all paid-v1 game IDs; all held-out animal rows; every tools, foods, synthetic row",
+  "selection": "Plans use a common index slice starting at zero, identical for every checkpoint. No target-dependent selection."
+}

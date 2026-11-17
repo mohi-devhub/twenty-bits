@@ -102,3 +102,9 @@ The ledger tests cover retaining holds and rejecting replacement IDs. They do no
 The inspected SDK exposes hourly [billing usage events](https://github.com/thinking-machines-lab/tinker/blob/1969e0b4ff462717f154347b0c1094269426514d/src/tinker/types/billing_usage_response.py) with session attribution, token categories, cache flags, and costs that can be unavailable or provisional. Missing cost is not zero. Save raw usage snapshots and keep holds until the attributable gross cost is reconciled. Do not subtract unrelated account spending or count credits as permission to exceed $30 of project usage.
 
 [Checkpoint storage](https://tinker-docs.thinkingmachines.ai/administration/checkpoint-storage-pricing/) is free within organization limits on the free plan. Paid storage bills all stored data. Inspect the plan and capacity before saving, use bounded lifetimes, and reserve storage liability if applicable. The budget scenarios assume free-plan headroom; that assumption has not been verified.
+
+## Phase 1 update
+
+The offline engine and baselines now exist. PAID_PLANS.md replaces the old paid-grid proposal. Its tokenizer counts use native HF chat templates at pinned revisions; the cookbook adapter and its token-parity check are still pending Phase 2. No SDK or Tinker service operation was used in Phase 1.
+
+Public pricing was rechecked on 2026-11-18. The three costed models have unchanged rates, recorded in research/rate_recheck.json. Caching is supported for shared prefixes within a sampling client, but no cache hit or authenticated availability has been observed for this project. Both paid forecasts assume no cache savings.

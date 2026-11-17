@@ -1,0 +1,28 @@
+{
+  "checked_on": "2026-11-18",
+  "source": "https://tinker-docs.thinkingmachines.ai/tinker/models.json",
+  "selected_rates_unchanged_from_snapshot": true,
+  "models": [
+    {
+      "tinker_id": "Qwen/Qwen3-8B",
+      "prefill": "$0.195",
+      "cached_prefill": "$0.039",
+      "sample": "$0.60",
+      "train": "$0.44"
+    },
+    {
+      "tinker_id": "Qwen/Qwen3.5-4B",
+      "prefill": "$0.33",
+      "cached_prefill": "$0.066",
+      "sample": "$1.005",
+      "train": "$0.737"
+    },
+    {
+      "tinker_id": "openai/gpt-oss-120b",
+      "prefill": "$0.33",
+      "cached_prefill": "$0.066",
+      "sample": "$0.84",
+      "train": "$0.737"
+    }
+  ]
+}

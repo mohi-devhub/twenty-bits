@@ -1,0 +1,1292 @@
+[
+  {
+    "domain": "animals",
+    "n": 32,
+    "noise": 0,
+    "policy": "random",
+    "games": 200,
+    "questions": 1831,
+    "low_probability_opportunities": 62,
+    "win_rate": 0.42,
+    "win_rate_ci95": [
+      0.35,
+      0.485
+    ],
+    "questions_per_win": 7.988095238095238,
+    "questions_per_win_ci95": [
+      7.333235294117647,
+      8.57151067323481
+    ],
+    "eig_per_question": 0.3334700821960374,
+    "eig_per_question_ci95": [
+      0.3191476025194789,
+      0.3487947124155807
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 2.230475150191152,
+    "predicate_tokens_ci95": [
+      2.1855196834525272,
+      2.275996408697756
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.03225806451612903,
+    "reask_after_low_probability_rate_ci95": [
+      0.0,
+      0.0847457627118644
+    ]
+  },
+  {
+    "domain": "animals",
+    "n": 32,
+    "noise": 0,
+    "policy": "greedy_single",
+    "games": 200,
+    "questions": 1015,
+    "low_probability_opportunities": 0,
+    "win_rate": 1.0,
+    "win_rate_ci95": [
+      1.0,
+      1.0
+    ],
+    "questions_per_win": 5.075,
+    "questions_per_win_ci95": [
+      5.015,
+      5.14
+    ],
+    "eig_per_question": 0.985493283582591,
+    "eig_per_question_ci95": [
+      0.9836307478273298,
+      0.9871935043365903
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 1.9684729064039408,
+    "predicate_tokens_ci95": [
+      1.9159206606417614,
+      2.0206291907899696
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": null,
+    "reask_after_low_probability_rate_ci95": null
+  },
+  {
+    "domain": "animals",
+    "n": 32,
+    "noise": 0,
+    "policy": "greedy_predicate",
+    "games": 200,
+    "questions": 1000,
+    "low_probability_opportunities": 0,
+    "win_rate": 1.0,
+    "win_rate_ci95": [
+      1.0,
+      1.0
+    ],
+    "questions_per_win": 5.0,
+    "questions_per_win_ci95": [
+      5.0,
+      5.0
+    ],
+    "eig_per_question": 1.0,
+    "eig_per_question_ci95": [
+      1.0,
+      1.0
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 3.654,
+    "predicate_tokens_ci95": [
+      3.5,
+      3.797025
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": null,
+    "reask_after_low_probability_rate_ci95": null
+  },
+  {
+    "domain": "animals",
+    "n": 32,
+    "noise": 0.1,
+    "policy": "random",
+    "games": 200,
+    "questions": 1997,
+    "low_probability_opportunities": 171,
+    "win_rate": 0.265,
+    "win_rate_ci95": [
+      0.209875,
+      0.325
+    ],
+    "questions_per_win": 9.943396226415095,
+    "questions_per_win_ci95": [
+      9.80952380952381,
+      10.0
+    ],
+    "eig_per_question": 0.17193402087257967,
+    "eig_per_question_ci95": [
+      0.16560241273104473,
+      0.1783128407866072
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 2.2418627941912868,
+    "predicate_tokens_ci95": [
+      2.198798197295944,
+      2.2864314033550324
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.08187134502923976,
+    "reask_after_low_probability_rate_ci95": [
+      0.04191538389190206,
+      0.12904174573055022
+    ]
+  },
+  {
+    "domain": "animals",
+    "n": 32,
+    "noise": 0.1,
+    "policy": "greedy_single",
+    "games": 200,
+    "questions": 1670,
+    "low_probability_opportunities": 26,
+    "win_rate": 0.85,
+    "win_rate_ci95": [
+      0.8,
+      0.9
+    ],
+    "questions_per_win": 8.070588235294117,
+    "questions_per_win_ci95": [
+      7.849316496756256,
+      8.292397660818713
+    ],
+    "eig_per_question": 0.486298343857105,
+    "eig_per_question_ci95": [
+      0.48218387902494764,
+      0.4902113066233118
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 2.08562874251497,
+    "predicate_tokens_ci95": [
+      2.0322507685123936,
+      2.139437462597247
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.6923076923076923,
+    "reask_after_low_probability_rate_ci95": [
+      0.5,
+      0.8636363636363636
+    ]
+  },
+  {
+    "domain": "animals",
+    "n": 32,
+    "noise": 0.1,
+    "policy": "greedy_predicate",
+    "games": 200,
+    "questions": 1676,
+    "low_probability_opportunities": 14,
+    "win_rate": 0.85,
+    "win_rate_ci95": [
+      0.8,
+      0.9
+    ],
+    "questions_per_win": 8.111764705882353,
+    "questions_per_win_ci95": [
+      7.901158793524062,
+      8.313626373626374
+    ],
+    "eig_per_question": 0.49492832006445053,
+    "eig_per_question_ci95": [
+      0.491553592507356,
+      0.4980478179198946
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 6.690334128878281,
+    "predicate_tokens_ci95": [
+      6.57699135958659,
+      6.796586027233788
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 1.0,
+    "reask_after_low_probability_rate_ci95": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "domain": "animals",
+    "n": 128,
+    "noise": 0,
+    "policy": "random",
+    "games": 200,
+    "questions": 2731,
+    "low_probability_opportunities": 90,
+    "win_rate": 0.215,
+    "win_rate_ci95": [
+      0.16,
+      0.27012499999999934
+    ],
+    "questions_per_win": 12.395348837209303,
+    "questions_per_win_ci95": [
+      11.456219806763286,
+      13.220055555555556
+    ],
+    "eig_per_question": 0.25187715804856026,
+    "eig_per_question_ci95": [
+      0.2407706454321629,
+      0.26345254271831164
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 2.2683998535335044,
+    "predicate_tokens_ci95": [
+      2.233012060949953,
+      2.3055363393910113
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.07777777777777778,
+    "reask_after_low_probability_rate_ci95": [
+      0.02530854430379747,
+      0.13580246913580246
+    ]
+  },
+  {
+    "domain": "animals",
+    "n": 128,
+    "noise": 0,
+    "policy": "greedy_single",
+    "games": 200,
+    "questions": 1429,
+    "low_probability_opportunities": 0,
+    "win_rate": 1.0,
+    "win_rate_ci95": [
+      1.0,
+      1.0
+    ],
+    "questions_per_win": 7.145,
+    "questions_per_win_ci95": [
+      7.07,
+      7.225
+    ],
+    "eig_per_question": 0.9822778645346768,
+    "eig_per_question_ci95": [
+      0.9805855374409647,
+      0.9840162517249722
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 2.039188243526942,
+    "predicate_tokens_ci95": [
+      1.9999825296995108,
+      2.077099682495722
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": null,
+    "reask_after_low_probability_rate_ci95": null
+  },
+  {
+    "domain": "animals",
+    "n": 128,
+    "noise": 0,
+    "policy": "greedy_predicate",
+    "games": 200,
+    "questions": 1400,
+    "low_probability_opportunities": 0,
+    "win_rate": 1.0,
+    "win_rate_ci95": [
+      1.0,
+      1.0
+    ],
+    "questions_per_win": 7.0,
+    "questions_per_win_ci95": [
+      7.0,
+      7.0
+    ],
+    "eig_per_question": 1.0,
+    "eig_per_question_ci95": [
+      1.0,
+      1.0
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 4.86,
+    "predicate_tokens_ci95": [
+      4.732142857142857,
+      4.983589285714285
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": null,
+    "reask_after_low_probability_rate_ci95": null
+  },
+  {
+    "domain": "animals",
+    "n": 128,
+    "noise": 0.1,
+    "policy": "random",
+    "games": 200,
+    "questions": 2800,
+    "low_probability_opportunities": 291,
+    "win_rate": 0.145,
+    "win_rate_ci95": [
+      0.1,
+      0.195
+    ],
+    "questions_per_win": 14.0,
+    "questions_per_win_ci95": [
+      14.0,
+      14.0
+    ],
+    "eig_per_question": 0.12844050206367122,
+    "eig_per_question_ci95": [
+      0.12318074882993937,
+      0.13386857775964
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 2.2675,
+    "predicate_tokens_ci95": [
+      2.2328571428571427,
+      2.3042946428571427
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.08247422680412371,
+    "reask_after_low_probability_rate_ci95": [
+      0.054901960784313725,
+      0.11428835002635739
+    ]
+  },
+  {
+    "domain": "animals",
+    "n": 128,
+    "noise": 0.1,
+    "policy": "greedy_single",
+    "games": 200,
+    "questions": 2427,
+    "low_probability_opportunities": 27,
+    "win_rate": 0.745,
+    "win_rate_ci95": [
+      0.685,
+      0.805
+    ],
+    "questions_per_win": 11.630872483221477,
+    "questions_per_win_ci95": [
+      11.307130952380952,
+      11.947434210526316
+    ],
+    "eig_per_question": 0.48404005069962425,
+    "eig_per_question_ci95": [
+      0.47998743501178837,
+      0.48821690095805936
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 2.0947672023073753,
+    "predicate_tokens_ci95": [
+      2.055572404811269,
+      2.1325766263552963
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.9259259259259259,
+    "reask_after_low_probability_rate_ci95": [
+      0.8076923076923077,
+      1.0
+    ]
+  },
+  {
+    "domain": "animals",
+    "n": 128,
+    "noise": 0.1,
+    "policy": "greedy_predicate",
+    "games": 200,
+    "questions": 2338,
+    "low_probability_opportunities": 14,
+    "win_rate": 0.775,
+    "win_rate_ci95": [
+      0.7198749999999999,
+      0.83
+    ],
+    "questions_per_win": 11.193548387096774,
+    "questions_per_win_ci95": [
+      10.860089066339066,
+      11.5394837746206
+    ],
+    "eig_per_question": 0.5104238634225665,
+    "eig_per_question_ci95": [
+      0.5081132054549528,
+      0.5126130374809943
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 7.506415739948674,
+    "predicate_tokens_ci95": [
+      7.441625934379527,
+      7.572991630986109
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 1.0,
+    "reask_after_low_probability_rate_ci95": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "domain": "synthetic",
+    "n": 32,
+    "noise": 0,
+    "policy": "random",
+    "games": 200,
+    "questions": 1438,
+    "low_probability_opportunities": 11,
+    "win_rate": 0.93,
+    "win_rate_ci95": [
+      0.895,
+      0.965
+    ],
+    "questions_per_win": 6.978494623655914,
+    "questions_per_win_ci95": [
+      6.6881299040976465,
+      7.278074866310161
+    ],
+    "eig_per_question": 0.6704495134103141,
+    "eig_per_question_ci95": [
+      0.6481351369835309,
+      0.6935269371723488
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 8.0,
+    "predicate_tokens_ci95": [
+      8.0,
+      8.0
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.0,
+    "reask_after_low_probability_rate_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "domain": "synthetic",
+    "n": 32,
+    "noise": 0,
+    "policy": "greedy_single",
+    "games": 200,
+    "questions": 1004,
+    "low_probability_opportunities": 0,
+    "win_rate": 1.0,
+    "win_rate_ci95": [
+      1.0,
+      1.0
+    ],
+    "questions_per_win": 5.02,
+    "questions_per_win_ci95": [
+      4.99,
+      5.055
+    ],
+    "eig_per_question": 0.9977872673022369,
+    "eig_per_question_ci95": [
+      0.9967112972045575,
+      0.9987062587976177
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 8.0,
+    "predicate_tokens_ci95": [
+      8.0,
+      8.0
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": null,
+    "reask_after_low_probability_rate_ci95": null
+  },
+  {
+    "domain": "synthetic",
+    "n": 32,
+    "noise": 0,
+    "policy": "greedy_predicate",
+    "games": 200,
+    "questions": 1002,
+    "low_probability_opportunities": 0,
+    "win_rate": 1.0,
+    "win_rate_ci95": [
+      1.0,
+      1.0
+    ],
+    "questions_per_win": 5.01,
+    "questions_per_win_ci95": [
+      5.0,
+      5.025
+    ],
+    "eig_per_question": 0.9994289923986703,
+    "eig_per_question_ci95": [
+      0.998883595152599,
+      0.9998293261839216
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 8.278443113772456,
+    "predicate_tokens_ci95": [
+      8.16699582917083,
+      8.408956343283581
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": null,
+    "reask_after_low_probability_rate_ci95": null
+  },
+  {
+    "domain": "synthetic",
+    "n": 32,
+    "noise": 0.1,
+    "policy": "random",
+    "games": 200,
+    "questions": 1977,
+    "low_probability_opportunities": 72,
+    "win_rate": 0.635,
+    "win_rate_ci95": [
+      0.565,
+      0.705
+    ],
+    "questions_per_win": 9.818897637795276,
+    "questions_per_win_ci95": [
+      9.724985236220473,
+      9.904761904761905
+    ],
+    "eig_per_question": 0.3677955146816311,
+    "eig_per_question_ci95": [
+      0.3614576463005732,
+      0.37422087300033974
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 8.0,
+    "predicate_tokens_ci95": [
+      8.0,
+      8.0
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.2222222222222222,
+    "reask_after_low_probability_rate_ci95": [
+      0.12698412698412698,
+      0.3235294117647059
+    ]
+  },
+  {
+    "domain": "synthetic",
+    "n": 32,
+    "noise": 0.1,
+    "policy": "greedy_single",
+    "games": 200,
+    "questions": 1773,
+    "low_probability_opportunities": 25,
+    "win_rate": 0.815,
+    "win_rate_ci95": [
+      0.755,
+      0.865
+    ],
+    "questions_per_win": 8.63803680981595,
+    "questions_per_win_ci95": [
+      8.448712121212122,
+      8.832360279441117
+    ],
+    "eig_per_question": 0.47354792007534907,
+    "eig_per_question_ci95": [
+      0.46933244842128213,
+      0.4778840130746858
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 8.0,
+    "predicate_tokens_ci95": [
+      8.0,
+      8.0
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.64,
+    "reask_after_low_probability_rate_ci95": [
+      0.4481800766283525,
+      0.8148989898989893
+    ]
+  },
+  {
+    "domain": "synthetic",
+    "n": 32,
+    "noise": 0.1,
+    "policy": "greedy_predicate",
+    "games": 200,
+    "questions": 1693,
+    "low_probability_opportunities": 24,
+    "win_rate": 0.79,
+    "win_rate_ci95": [
+      0.735,
+      0.845
+    ],
+    "questions_per_win": 8.113924050632912,
+    "questions_per_win_ci95": [
+      7.890303779932713,
+      8.343792613636364
+    ],
+    "eig_per_question": 0.49416551641592416,
+    "eig_per_question_ci95": [
+      0.4909503659291336,
+      0.49760832191071874
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 15.847607796810395,
+    "predicate_tokens_ci95": [
+      15.620562138606417,
+      16.082770533058795
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.9166666666666666,
+    "reask_after_low_probability_rate_ci95": [
+      0.7894736842105263,
+      1.0
+    ]
+  },
+  {
+    "domain": "synthetic",
+    "n": 128,
+    "noise": 0,
+    "policy": "random",
+    "games": 200,
+    "questions": 2135,
+    "low_probability_opportunities": 11,
+    "win_rate": 0.92,
+    "win_rate_ci95": [
+      0.885,
+      0.955
+    ],
+    "questions_per_win": 10.38586956521739,
+    "questions_per_win_ci95": [
+      10.016211880329527,
+      10.77127659574468
+    ],
+    "eig_per_question": 0.6325069031703687,
+    "eig_per_question_ci95": [
+      0.6120476415576178,
+      0.6537722115290181
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 8.0,
+    "predicate_tokens_ci95": [
+      8.0,
+      8.0
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.0,
+    "reask_after_low_probability_rate_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "domain": "synthetic",
+    "n": 128,
+    "noise": 0,
+    "policy": "greedy_single",
+    "games": 200,
+    "questions": 1401,
+    "low_probability_opportunities": 0,
+    "win_rate": 1.0,
+    "win_rate_ci95": [
+      1.0,
+      1.0
+    ],
+    "questions_per_win": 7.005,
+    "questions_per_win_ci95": [
+      6.975,
+      7.035
+    ],
+    "eig_per_question": 0.9979029288412958,
+    "eig_per_question_ci95": [
+      0.9971543518002599,
+      0.9986134743250258
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 8.0,
+    "predicate_tokens_ci95": [
+      8.0,
+      8.0
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": null,
+    "reask_after_low_probability_rate_ci95": null
+  },
+  {
+    "domain": "synthetic",
+    "n": 128,
+    "noise": 0,
+    "policy": "greedy_predicate",
+    "games": 200,
+    "questions": 1400,
+    "low_probability_opportunities": 0,
+    "win_rate": 1.0,
+    "win_rate_ci95": [
+      1.0,
+      1.0
+    ],
+    "questions_per_win": 7.0,
+    "questions_per_win_ci95": [
+      6.98,
+      7.02
+    ],
+    "eig_per_question": 0.9990233584669216,
+    "eig_per_question_ci95": [
+      0.9985661355940655,
+      0.9994280643903054
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 8.446428571428571,
+    "predicate_tokens_ci95": [
+      8.332619557458958,
+      8.57255702357803
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": null,
+    "reask_after_low_probability_rate_ci95": null
+  },
+  {
+    "domain": "synthetic",
+    "n": 128,
+    "noise": 0.1,
+    "policy": "random",
+    "games": 200,
+    "questions": 2784,
+    "low_probability_opportunities": 126,
+    "win_rate": 0.625,
+    "win_rate_ci95": [
+      0.56,
+      0.695
+    ],
+    "questions_per_win": 13.888,
+    "questions_per_win_ci95": [
+      13.804878048780488,
+      13.959685483870967
+    ],
+    "eig_per_question": 0.36912725240011124,
+    "eig_per_question_ci95": [
+      0.3642461317042484,
+      0.37397704722372765
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 8.0,
+    "predicate_tokens_ci95": [
+      8.0,
+      8.0
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.29365079365079366,
+    "reask_after_low_probability_rate_ci95": [
+      0.21484764368178663,
+      0.3679278039832285
+    ]
+  },
+  {
+    "domain": "synthetic",
+    "n": 128,
+    "noise": 0.1,
+    "policy": "greedy_single",
+    "games": 200,
+    "questions": 2493,
+    "low_probability_opportunities": 33,
+    "win_rate": 0.855,
+    "win_rate_ci95": [
+      0.8,
+      0.9
+    ],
+    "questions_per_win": 12.216374269005849,
+    "questions_per_win_ci95": [
+      11.98876245794452,
+      12.447070198245044
+    ],
+    "eig_per_question": 0.47649633587674095,
+    "eig_per_question_ci95": [
+      0.47202388148337754,
+      0.4808429127099923
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 8.0,
+    "predicate_tokens_ci95": [
+      8.0,
+      8.0
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.8484848484848485,
+    "reask_after_low_probability_rate_ci95": [
+      0.7141705069124424,
+      0.9583333333333334
+    ]
+  },
+  {
+    "domain": "synthetic",
+    "n": 128,
+    "noise": 0.1,
+    "policy": "greedy_predicate",
+    "games": 200,
+    "questions": 2306,
+    "low_probability_opportunities": 17,
+    "win_rate": 0.81,
+    "win_rate_ci95": [
+      0.755,
+      0.865
+    ],
+    "questions_per_win": 10.962962962962964,
+    "questions_per_win_ci95": [
+      10.639183060549868,
+      11.268346372142966
+    ],
+    "eig_per_question": 0.5073265544494526,
+    "eig_per_question_ci95": [
+      0.5048988595164035,
+      0.5095967464337671
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 17.09410234171726,
+    "predicate_tokens_ci95": [
+      16.963056317310606,
+      17.22914601194121
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 1.0,
+    "reask_after_low_probability_rate_ci95": [
+      1.0,
+      1.0
+    ]
+  },
+  {
+    "domain": "synthetic",
+    "n": 256,
+    "noise": 0,
+    "policy": "random",
+    "games": 200,
+    "questions": 2460,
+    "low_probability_opportunities": 5,
+    "win_rate": 0.87,
+    "win_rate_ci95": [
+      0.82,
+      0.915
+    ],
+    "questions_per_win": 11.74712643678161,
+    "questions_per_win_ci95": [
+      11.323977343265053,
+      12.167710342027808
+    ],
+    "eig_per_question": 0.625503938417593,
+    "eig_per_question_ci95": [
+      0.6049765010833806,
+      0.6469091444807551
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 8.0,
+    "predicate_tokens_ci95": [
+      8.0,
+      8.0
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.2,
+    "reask_after_low_probability_rate_ci95": [
+      0.0,
+      0.6666666666666666
+    ]
+  },
+  {
+    "domain": "synthetic",
+    "n": 256,
+    "noise": 0,
+    "policy": "greedy_single",
+    "games": 200,
+    "questions": 1602,
+    "low_probability_opportunities": 0,
+    "win_rate": 1.0,
+    "win_rate_ci95": [
+      1.0,
+      1.0
+    ],
+    "questions_per_win": 8.01,
+    "questions_per_win_ci95": [
+      7.975,
+      8.05
+    ],
+    "eig_per_question": 0.9978841253939027,
+    "eig_per_question_ci95": [
+      0.9972233971880337,
+      0.9984914653346647
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 8.0,
+    "predicate_tokens_ci95": [
+      8.0,
+      8.0
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": null,
+    "reask_after_low_probability_rate_ci95": null
+  },
+  {
+    "domain": "synthetic",
+    "n": 256,
+    "noise": 0,
+    "policy": "greedy_predicate",
+    "games": 200,
+    "questions": 1602,
+    "low_probability_opportunities": 0,
+    "win_rate": 1.0,
+    "win_rate_ci95": [
+      1.0,
+      1.0
+    ],
+    "questions_per_win": 8.01,
+    "questions_per_win_ci95": [
+      7.99,
+      8.03
+    ],
+    "eig_per_question": 0.9990816703716112,
+    "eig_per_question_ci95": [
+      0.9986751310613464,
+      0.999420703286337
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 8.41947565543071,
+    "predicate_tokens_ci95": [
+      8.311049682050658,
+      8.520329700479257
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": null,
+    "reask_after_low_probability_rate_ci95": null
+  },
+  {
+    "domain": "synthetic",
+    "n": 256,
+    "noise": 0.1,
+    "policy": "random",
+    "games": 200,
+    "questions": 3193,
+    "low_probability_opportunities": 156,
+    "win_rate": 0.505,
+    "win_rate_ci95": [
+      0.435,
+      0.575
+    ],
+    "questions_per_win": 15.930693069306932,
+    "questions_per_win_ci95": [
+      15.852620137299771,
+      15.989693351567432
+    ],
+    "eig_per_question": 0.37350635102180957,
+    "eig_per_question_ci95": [
+      0.368706700363094,
+      0.37829708221831454
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 8.0,
+    "predicate_tokens_ci95": [
+      8.0,
+      8.0
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.3269230769230769,
+    "reask_after_low_probability_rate_ci95": [
+      0.2536206368646663,
+      0.3971699399890889
+    ]
+  },
+  {
+    "domain": "synthetic",
+    "n": 256,
+    "noise": 0.1,
+    "policy": "greedy_single",
+    "games": 200,
+    "questions": 2905,
+    "low_probability_opportunities": 46,
+    "win_rate": 0.785,
+    "win_rate_ci95": [
+      0.725,
+      0.84
+    ],
+    "questions_per_win": 14.229299363057326,
+    "questions_per_win_ci95": [
+      13.969116268166902,
+      14.48083053691275
+    ],
+    "eig_per_question": 0.47894948924487873,
+    "eig_per_question_ci95": [
+      0.47389078904956355,
+      0.4838307772155146
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 8.0,
+    "predicate_tokens_ci95": [
+      8.0,
+      8.0
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.8695652173913043,
+    "reask_after_low_probability_rate_ci95": [
+      0.775,
+      0.9534883720930233
+    ]
+  },
+  {
+    "domain": "synthetic",
+    "n": 256,
+    "noise": 0.1,
+    "policy": "greedy_predicate",
+    "games": 200,
+    "questions": 2734,
+    "low_probability_opportunities": 16,
+    "win_rate": 0.78,
+    "win_rate_ci95": [
+      0.72,
+      0.835
+    ],
+    "questions_per_win": 13.102564102564102,
+    "questions_per_win_ci95": [
+      12.74389040436457,
+      13.444461382113822
+    ],
+    "eig_per_question": 0.5087388688833431,
+    "eig_per_question_ci95": [
+      0.5060462117174058,
+      0.5112908412196798
+    ],
+    "enumeration_rate": 0.0,
+    "enumeration_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "predicate_tokens": 17.2286027798098,
+    "predicate_tokens_ci95": [
+      17.090070841361957,
+      17.37235324450568
+    ],
+    "invalid_rate": 0.0,
+    "invalid_rate_ci95": [
+      0.0,
+      0.0
+    ],
+    "reask_after_low_probability_rate": 0.9375,
+    "reask_after_low_probability_rate_ci95": [
+      0.8125,
+      1.0
+    ]
+  }
+]

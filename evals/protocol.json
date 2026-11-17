@@ -1,0 +1,52 @@
+{
+  "version": "v1",
+  "domains": {
+    "animals": [
+      32,
+      128
+    ],
+    "synthetic": [
+      32,
+      128,
+      256
+    ]
+  },
+  "noise": [
+    0,
+    0.1
+  ],
+  "games_per_cell_in_bank": 200,
+  "prior": "uniform",
+  "question_budget": "2*ceil(log2(N))",
+  "final_guess_after_budget": true,
+  "reward": {
+    "win": 1.0,
+    "question": -0.03,
+    "invalid": -0.1
+  },
+  "eig_in_reward": false,
+  "low_probability_threshold": 0.2,
+  "noisy_baseline_guess_threshold": 0.95,
+  "proposed_policy_output_cap": 2048,
+  "proposed_qwen_thinking": false,
+  "reference_output_cap": 512,
+  "tokenizer_revisions": [
+    {
+      "model": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "local_cache": ".cache/tokenizers/Qwen3-8B"
+    },
+    {
+      "model": "Qwen/Qwen3.5-4B",
+      "revision": "851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a",
+      "local_cache": ".cache/tokenizers/Qwen3.5-4B"
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "revision": "b5c939de8f754692c1647ca79fbf85e8c1e70f8a",
+      "local_cache": ".cache/tokenizers/gpt-oss-120b"
+    }
+  ],
+  "prompt_hashes_sha256": "cf7b0a23629c3f1f79231440d7dd73fcdecabc78091e3d1b6bb3adc9983cc03f",
+  "status": "environment and public prompts fixed; paid sampling configuration requires plan approval"
+}

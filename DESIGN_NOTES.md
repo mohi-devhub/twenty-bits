@@ -51,3 +51,7 @@ Prepare a separate animals development split for reward tuning, threshold select
 For seeded answer flips, pre-generate a per-game flip stream by question index so policies share the same flip schedule on paired games. Their questions can still differ. Confirm and cross-check rates need a fixed definition of a low-probability answer and a semantic predicate equivalence check over table rows. Repetition alone is not evidence of useful error recovery.
 
 With only three training seeds, intervals across seeds will be unstable. Phase 5 should resample seeds and paired games at their appropriate levels, preserve base-versus-trained game pairing, and avoid treating thousands of games from one checkpoint as thousands of independent training runs.
+
+## Phase 1 resolution
+
+These Phase 0 notes are historical context. PROTOCOL.md now records the implemented rules. The user approved larger worlds, a fixed 200-row animals training pool, a ten-cell paid bank, outcome-only rewards, and a Phase 1 replay. The semantic tables use explicit profiles and larger descriptive vocabularies; their coverage and limitations are in data/WORLDS.md. Paid scope remains unapproved until a plan is chosen.

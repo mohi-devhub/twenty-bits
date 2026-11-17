@@ -1,0 +1,20 @@
+[
+  {
+    "label": "noiseless",
+    "mp4": "replays/baseline-noiseless.mp4",
+    "gif": "replays/baseline-noiseless.gif",
+    "duration_seconds": 22.0,
+    "width": 1600,
+    "height": 1200,
+    "frames": 264
+  },
+  {
+    "label": "noisy",
+    "mp4": "replays/baseline-noisy.mp4",
+    "gif": "replays/baseline-noisy.gif",
+    "duration_seconds": 22.0,
+    "width": 1600,
+    "height": 1200,
+    "frames": 264
+  }
+]

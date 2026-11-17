@@ -1,0 +1,62 @@
+{
+  "completed_on": "2026-11-18",
+  "unit_tests": 60,
+  "unit_test_command": "python3 -m unittest discover -s tests -v",
+  "lint": "Ruff passed",
+  "frozen_bank": {
+    "cells": 10,
+    "games": 2000,
+    "public_prompt_hashes": 2000
+  },
+  "baseline_sweeps": {
+    "full_grid_cells": 120,
+    "full_grid_games": 24000,
+    "frozen_reference_cells": 30,
+    "frozen_reference_games": 6000
+  },
+  "ledger_and_guard_unchanged_from_phase0": {
+    "ledger.json": true,
+    "twenty_bits/budget.py": true,
+    "tests/test_budget.py": true
+  },
+  "ledger_status": {
+    "cap_usd": "30.000000",
+    "spent_usd": "0.000000",
+    "held_usd": "0.000000",
+    "available_usd": "30.000000",
+    "blocked": false,
+    "entries": []
+  },
+  "browser": "desktop and 390px narrow layout; controls, reversible seeking, noise selector, outcomes, and no console errors verified",
+  "hyperframes_check": {
+    "ok": true,
+    "runtime_errors": 0,
+    "layout_errors": 0,
+    "contrast_errors": 0,
+    "reviewed_warnings": [
+      "dense text",
+      "deliberate silence",
+      "single continuous scene"
+    ]
+  },
+  "exports": [
+    {
+      "label": "noiseless",
+      "mp4": "replays/baseline-noiseless.mp4",
+      "gif": "replays/baseline-noiseless.gif",
+      "duration_seconds": 22.0,
+      "width": 1600,
+      "height": 1200,
+      "frames": 264
+    },
+    {
+      "label": "noisy",
+      "mp4": "replays/baseline-noisy.mp4",
+      "gif": "replays/baseline-noisy.gif",
+      "duration_seconds": 22.0,
+      "width": 1600,
+      "height": 1200,
+      "frames": 264
+    }
+  ]
+}
