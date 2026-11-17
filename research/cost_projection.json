@@ -1,0 +1,133 @@
+{
+  "models": {
+    "small": "Qwen/Qwen3-8B",
+    "large_reference_only": "openai/gpt-oss-120b"
+  },
+  "assumptions": {
+    "cells": 40,
+    "small_games_per_cell": 200,
+    "large_games_per_cell": 20,
+    "prompt_tokens": "512 + 24*N; planning assumption until the Phase 1 tables are tokenized",
+    "expected_turns": "log2(N) questions + one final guess",
+    "stress_turns": "2*log2(N) questions + one final guess",
+    "expected_output_tokens_per_turn": 128,
+    "stress_output_tokens_per_turn": 256,
+    "history_overhead_tokens_per_turn": 32,
+    "pilot": "32 steps * 2 groups * 4 games; half at N=16, half at N=32; two 200-game eval slices",
+    "main": "six runs, each 100 steps * 2 groups * 4 games; equal allocation at N=16,32,64,128",
+    "kept_main_checkpoints": "one final checkpoint per run, the minimum for six runs",
+    "training_tokens": "conservative sum of per-turn input and output, including masked prompt tokens",
+    "storage": "zero only if the organization has free-plan headroom; account not verified",
+    "status": "unapproved planning scenarios, not frozen experimental settings or guaranteed bills"
+  },
+  "scenarios": {
+    "expected_no_cache": {
+      "phases": {
+        "0": {
+          "research_and_budget": "0.00000000",
+          "total_usd": "0.00000000"
+        },
+        "1": {
+          "offline_environment_and_baselines": "0.00000000",
+          "total_usd": "0.00000000"
+        },
+        "2": {
+          "small_zero_shot_8000_games": "45.69446400",
+          "large_zero_shot_800_games": "7.60719360",
+          "total_usd": "53.30165760"
+        },
+        "3": {
+          "pilot_256_training_games": "1.50091776",
+          "pilot_400_eval_games": "2.28472320",
+          "total_usd": "3.78564096"
+        },
+        "4": {
+          "main_4800_training_games": "55.21344000",
+          "six_final_full_evals_48000_games": "274.16678400",
+          "total_usd": "329.38022400"
+        },
+        "5": {
+          "offline_analysis": "0.00000000",
+          "total_usd": "0.00000000"
+        }
+      },
+      "total_usd": "386.46752256",
+      "total_times_1_5_usd": "579.70128384"
+    },
+    "optimistic_all_prefill_cached": {
+      "phases": {
+        "0": {
+          "research_and_budget": "0.00000000",
+          "total_usd": "0.00000000"
+        },
+        "1": {
+          "offline_environment_and_baselines": "0.00000000",
+          "total_usd": "0.00000000"
+        },
+        "2": {
+          "small_zero_shot_8000_games": "12.57953280",
+          "large_zero_shot_800_games": "2.00312832",
+          "total_usd": "14.58266112"
+        },
+        "3": {
+          "pilot_256_training_games": "1.17823488",
+          "pilot_400_eval_games": "0.62897664",
+          "total_usd": "1.80721152"
+        },
+        "4": {
+          "main_4800_training_games": "42.66954240",
+          "six_final_full_evals_48000_games": "75.47719680",
+          "total_usd": "118.14673920"
+        },
+        "5": {
+          "offline_analysis": "0.00000000",
+          "total_usd": "0.00000000"
+        }
+      },
+      "total_usd": "134.53661184",
+      "total_times_1_5_usd": "201.80491776"
+    },
+    "stress_no_cache": {
+      "phases": {
+        "0": {
+          "research_and_budget": "0.00000000",
+          "total_usd": "0.00000000"
+        },
+        "1": {
+          "offline_environment_and_baselines": "0.00000000",
+          "total_usd": "0.00000000"
+        },
+        "2": {
+          "small_zero_shot_8000_games": "120.10752000",
+          "large_zero_shot_800_games": "19.85894400",
+          "total_usd": "139.96646400"
+        },
+        "3": {
+          "pilot_256_training_games": "4.61162496",
+          "pilot_400_eval_games": "6.00537600",
+          "total_usd": "10.61700096"
+        },
+        "4": {
+          "main_4800_training_games": "153.59270400",
+          "six_final_full_evals_48000_games": "720.64512000",
+          "total_usd": "874.23782400"
+        },
+        "5": {
+          "offline_analysis": "0.00000000",
+          "total_usd": "0.00000000"
+        }
+      },
+      "total_usd": "1024.82128896",
+      "total_times_1_5_usd": "1537.23193344"
+    }
+  },
+  "unapproved_smaller_diagnostic": {
+    "phase_2_usd": "3.04416000",
+    "phase_3_usd": "1.20740352",
+    "phase_4_usd": "13.47978240",
+    "total_usd": "17.73134592",
+    "total_times_1_5_usd": "26.59701888",
+    "assumptions": "no cache savings; 5 games/cell/model; pilot 32 updates x 1 group x 4 games at N=16,32; two 40-game eval slices; six main runs of 24 updates x 1 group x 4 games across N=16,32,64,128; one final checkpoint/run",
+    "status": "proposal only; weak cell-level power; real token maxima can still make it unaffordable"
+  }
+}

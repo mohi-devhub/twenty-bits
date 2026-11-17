@@ -1,0 +1,58 @@
+{
+  "checked_on": "2026-11-17",
+  "tinker_service_calls": 0,
+  "authenticated_account_check": "not performed; SDK, environment key, and default stored credentials absent",
+  "catalog": {
+    "source": "https://tinker-docs.thinkingmachines.ai/tinker/models.json",
+    "snapshot": "research/tinker-models-2026-11-17.json",
+    "sha256": "6ee9db5093484004a194a08633d206eb96d2d1c05b4e03b0012b0476bd9c9736",
+    "listed_ids": 39,
+    "names_before_context_variants": 26,
+    "ids_not_marked_retired": 36,
+    "deprecations_source": "https://tinker-docs.thinkingmachines.ai/tinker/model-deprecations/",
+    "listed_but_retired": [
+      "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16",
+      "Qwen/Qwen3.6-27B",
+      "deepseek-ai/DeepSeek-V3.1"
+    ]
+  },
+  "cookbook": {
+    "repository": "https://github.com/thinking-machines-lab/tinker-cookbook",
+    "commit": "6c081121b90dbc290b4550eb9fd9f646f8e4960a",
+    "commit_date": "2026-11-17T01:09:48Z",
+    "recipe": "tinker_cookbook/recipes/multiplayer_rl/twenty_questions",
+    "license": "Apache-2.0",
+    "inspected": [
+      "AGENTS.md",
+      "pyproject.toml",
+      "tinker_cookbook/recipes/multiplayer_rl/README.md",
+      "tinker_cookbook/recipes/multiplayer_rl/twenty_questions/README.md",
+      "tinker_cookbook/recipes/multiplayer_rl/twenty_questions/env.py",
+      "tinker_cookbook/recipes/multiplayer_rl/twenty_questions/train.py",
+      "tinker_cookbook/rl/types.py",
+      "tinker_cookbook/rl/rollouts.py",
+      "tinker_cookbook/rl/data_processing.py",
+      "tinker_cookbook/rl/train.py",
+      "tinker_cookbook/model_info.py"
+    ]
+  },
+  "sdk": {
+    "repository": "https://github.com/thinking-machines-lab/tinker",
+    "commit": "1969e0b4ff462717f154347b0c1094269426514d",
+    "commit_date": "2026-11-17T01:37:40Z",
+    "inspected": [
+      "src/tinker/lib/api_future_impl.py",
+      "src/tinker/lib/public_interfaces/rest_client.py",
+      "src/tinker/types/billing_usage_response.py",
+      "src/tinker/types/billing_usage_request.py",
+      "src/tinker/lib/credentials.py",
+      "src/tinker/auth.py"
+    ],
+    "retrieve_future_408": "pending retrieval; retry same request_id; never resubmit original operation"
+  },
+  "model_proposals": {
+    "small": "Qwen/Qwen3-8B",
+    "large_zero_shot_only": "openai/gpt-oss-120b",
+    "status": "public listings only; authenticated capabilities not verified"
+  }
+}

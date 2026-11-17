@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+.ruff_cache/
+.env
+.env.*
+!.env.example
+.DS_Store
+ledger.json.lock
+ledger.json.*.tmp
+runs/
+.cache/
