@@ -1,0 +1,29 @@
+{
+  "approval_date": "2026-11-18",
+  "approved_total_cap_usd": 50,
+  "phase2": {
+    "primary_model": "Qwen/Qwen3-8B",
+    "primary_games": 280,
+    "reference_model": "openai/gpt-oss-120b",
+    "reference_games": 20,
+    "alternative_screen_games": 0,
+    "forecast_usd": 2.95805922,
+    "forecast_with_margin_usd": 4.43708883,
+    "uncached_token_cap_envelope_usd": 17.647606000000003,
+    "forecast_basis": "Phase 1 measured maximum prefixes, full question budgets; Qwen 64 and reference 128 generated tokens/turn. No cache credit."
+  },
+  "training": {
+    "authorized": false,
+    "games_per_group": 8,
+    "groups_per_update": 1,
+    "pilot_condition": "A",
+    "pilot_A_32_updates_games": 256,
+    "pilot_A_32_updates_forecast_usd": 2.40705664,
+    "pilot_A_24_development_games_forecast_usd": 0.09204228,
+    "main_32_updates_games_per_seed": 256,
+    "main_32_updates_forecast_per_seed_usd": 5.01572,
+    "old_five_seed_schedule_with_A_only_pilot_usd": 44.54113274,
+    "old_five_seed_schedule_with_margin_usd": 66.81169911,
+    "status": "Over cap at 32 main updates. Choose S or U after the A pilot using actual usage and learning speed; no main schedule is active."
+  }
+}

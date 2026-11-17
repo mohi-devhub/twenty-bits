@@ -1,0 +1,30 @@
+{
+  "config_sha256": "cf4ec0f71533f6f9bdfb959e367521563f35c7457d94509f3ee90b43d5a95b25",
+  "cookbook_commit": "6c081121b90dbc290b4550eb9fd9f646f8e4960a",
+  "sdk_version": "0.39.1",
+  "reference_template_date": "2026-11-18",
+  "models": [
+    {
+      "model": "Qwen/Qwen3-8B",
+      "initial_prompts_equal": 280,
+      "histories_equal": 194,
+      "phase1_native_token_counts_equal": 280,
+      "initial_token_sequences_sha256": "079853c57fdf7148fc8800306e44f2fac36f62eda97c27a2059cc32bb917630f",
+      "stop_ids": [
+        151645
+      ]
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "initial_prompts_equal": 20,
+      "histories_equal": 65,
+      "phase1_native_token_counts_equal": 20,
+      "initial_token_sequences_sha256": "3d6c3d73a16aa1edeb14f2192ba2d01663ee4ddfe8d8b58afa042ec83ae13a45",
+      "stop_ids": [
+        200002,
+        200012
+      ]
+    }
+  ],
+  "paid_samples": 0
+}

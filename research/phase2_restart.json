@@ -1,0 +1,12 @@
+{
+  "reason": "Load tested truncated-Harmony parsing before reference sampling; increase independent-game execution parallelism from 4 to 12",
+  "pid": 83137,
+  "active_request_ids": [
+    "77f8fb18-7987-5ab0-8aa4-9de2a638a040:sample:0:1296",
+    "77f8fb18-7987-5ab0-8aa4-9de2a638a040:sample:0:1297",
+    "77f8fb18-7987-5ab0-8aa4-9de2a638a040:sample:0:1298",
+    "77f8fb18-7987-5ab0-8aa4-9de2a638a040:sample:0:1299"
+  ],
+  "all_active_paid_requests_have_receipts": true,
+  "reference_calls_so_far": 0
+}

@@ -1,8 +1,18 @@
-# Two paid plans for approval
+# Approved $50 budget and Phase 2
+
+The user approved a $50 total cap, including active holds, on 2026-11-18. Phase 2 uses Qwen3-8B with thinking disabled, a 2,048-token output cap, 28 games in each of ten frozen cells, and a 20-game gpt-oss-120b reference. The 4B screen was dropped. [phase2.json](evals/phase2.json) fixes the sampling configuration. Training is not authorized yet.
+
+All pilot and main groups now contain eight games. The next training gate proposes condition A only. At the pilot gate, Option S retains A seeds 11, 23, 37 and B seeds 41, 53; Option U uses A seeds 11, 23 and B seed 41. Update counts and the recommendation will use measured learning speed and the remaining budget. A visible learning curve takes priority over additional seeds.
+
+[approved_plan.json](research/approved_plan.json) reprices the approved changes. Phase 2 forecasts $2.95805922 before margin and $4.43708883 with margin. Its conservative uncached token-cap envelope is $17.647606. The earlier 32-update, five-seed schedule with groups of eight and an A-only pilot would cost $66.81 with margin, so it is not an active main-run plan. The measured output lengths will replace the earlier 64-token training forecast at the Phase 2 gate.
+
+The five uncertain submissions from the adapter incident remain **orphaned, possibly billed**, with $0.007195 held. Their outputs are permanently excluded. The user authorized five exact replacements with the same prompts and sampling seeds. [Incident and authorization](research/phase2_incident.json) records the request mismatch and recovery rules. The ledger's reservation and 408 rules still apply.
+
+## Historical Phase 1 proposals
 
 Both proposals use the measured native chat-template token counts in [token_measurements.json](research/token_measurements.json), the pinned [tokenizers](research/tokenizers.json), and the published [Tinker rate card](https://tinker-docs.thinkingmachines.ai/tinker/models.json). All arithmetic and sample-size assumptions are reproducible with `python3 scripts/build_paid_plans.py`.
 
-**No paid plan is active. The ledger still enforces $30, and spend remains $0.** Plan 50 requires the user's approval and cap change. The ledger, reservation logic, and 408 handling are unchanged.
+The tables below preserve the Phase 1 proposals, which used four games per group and included a 4B screen. Their $30 cap status and output-length assumptions describe that earlier gate. They are superseded by the approval above.
 
 ## Workloads and costs
 

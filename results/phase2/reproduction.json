@@ -1,0 +1,12 @@
+{
+  "completed_run_resubmitted_calls": 0,
+  "ledger_bytes_unchanged_on_cached_run": true,
+  "analysis_identical_without_local_run_cache": true,
+  "files_sha256": {
+    "summary.json": "cb082988e740a77544ffa3e8457ad5319e9bedec6a0a1b963c0c2213729a218e",
+    "summary.csv": "949967672c18b7e8f316da0a0ff28f2bb0b869f07e581f9dd6d83291558f29c5",
+    "games.jsonl.gz": "95aea038b651c0d42ec04393f9ae19191b8bdc61c976903241c7004881b42dc1",
+    "requests.jsonl.gz": "f243d8ec073182ca493df2f2b341f92320f66c1c767df91001e138a6f95d2d0a",
+    "ledger_reconciliation.json": "c3fc6174da2de3e5525fc990690bea26e4e48c56caced0dd36c38d9b73faf658"
+  }
+}

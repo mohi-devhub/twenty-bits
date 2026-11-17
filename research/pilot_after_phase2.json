@@ -1,0 +1,147 @@
+{
+  "status": "proposals only; no training authorized",
+  "source_model": "Qwen/Qwen3-8B",
+  "source_games": 28,
+  "observed_output_tokens_per_call": 1303.1363636363637,
+  "observed_output_tokens_per_call_p95": 2048.0,
+  "source_invalid_rate": 0.6571428571428571,
+  "available_after_spend_and_holds_usd": "44.199580",
+  "assumptions": "Full question budget plus guess; measured maximum training-pool table prefix; per-turn full contexts charged for sampling and training; no cache credit. N=16 output length is an unmeasured proxy from N=32. Learning may shorten outputs. Storage allowance assumes at most four sampler snapshots, each no larger than 64 GB with a two-hour TTL. At $0.10/GB/month that bound costs $0.071112; reserve $0.10 even if the organization has free storage. No optimizer-state checkpoint or storage-plan change is included. Verify this bound and reserve storage before creating snapshots.",
+  "storage_pricing_source": "https://tinker-docs.thinkingmachines.ai/administration/checkpoint-storage-pricing/",
+  "pilot_options": [
+    {
+      "updates": 8,
+      "condition": "A",
+      "games_per_group": 8,
+      "training_games": 64,
+      "curriculum": "N=16 then N=32, equal update counts",
+      "development_games": 32,
+      "estimates": {
+        "short_64_token_sensitivity": {
+          "output_tokens_per_turn": 64,
+          "training_usd": 0.60176416,
+          "development_usd": 0.12272304,
+          "checkpoint_storage_allowance_usd": 0.1,
+          "total_usd": 0.8244872,
+          "with_margin_usd": 1.2367308,
+          "fits_remaining_usd": true
+        },
+        "observed_base_output_proxy": {
+          "output_tokens_per_turn": 1303.1363636363637,
+          "training_usd": 3.7178451563636368,
+          "development_usd": 0.8097002400000001,
+          "checkpoint_storage_allowance_usd": 0.1,
+          "total_usd": 4.627545396363637,
+          "with_margin_usd": 6.941318094545455,
+          "fits_remaining_usd": true
+        },
+        "output_cap_stress": {
+          "output_tokens_per_turn": 2048,
+          "training_usd": 5.59096864,
+          "development_usd": 1.22265264,
+          "checkpoint_storage_allowance_usd": 0.1,
+          "total_usd": 6.913621279999999,
+          "with_margin_usd": 10.370431919999998,
+          "fits_remaining_usd": true
+        }
+      }
+    },
+    {
+      "updates": 16,
+      "condition": "A",
+      "games_per_group": 8,
+      "training_games": 128,
+      "curriculum": "N=16 then N=32, equal update counts",
+      "development_games": 32,
+      "estimates": {
+        "short_64_token_sensitivity": {
+          "output_tokens_per_turn": 64,
+          "training_usd": 1.20352832,
+          "development_usd": 0.12272304,
+          "checkpoint_storage_allowance_usd": 0.1,
+          "total_usd": 1.4262513600000002,
+          "with_margin_usd": 2.1393770400000003,
+          "fits_remaining_usd": true
+        },
+        "observed_base_output_proxy": {
+          "output_tokens_per_turn": 1303.1363636363637,
+          "training_usd": 7.4356903127272735,
+          "development_usd": 0.8097002400000001,
+          "checkpoint_storage_allowance_usd": 0.1,
+          "total_usd": 8.345390552727274,
+          "with_margin_usd": 12.51808582909091,
+          "fits_remaining_usd": true
+        },
+        "output_cap_stress": {
+          "output_tokens_per_turn": 2048,
+          "training_usd": 11.18193728,
+          "development_usd": 1.22265264,
+          "checkpoint_storage_allowance_usd": 0.1,
+          "total_usd": 12.504589919999999,
+          "with_margin_usd": 18.756884879999998,
+          "fits_remaining_usd": true
+        }
+      }
+    },
+    {
+      "updates": 32,
+      "condition": "A",
+      "games_per_group": 8,
+      "training_games": 256,
+      "curriculum": "N=16 then N=32, equal update counts",
+      "development_games": 32,
+      "estimates": {
+        "short_64_token_sensitivity": {
+          "output_tokens_per_turn": 64,
+          "training_usd": 2.40705664,
+          "development_usd": 0.12272304,
+          "checkpoint_storage_allowance_usd": 0.1,
+          "total_usd": 2.62977968,
+          "with_margin_usd": 3.9446695199999997,
+          "fits_remaining_usd": true
+        },
+        "observed_base_output_proxy": {
+          "output_tokens_per_turn": 1303.1363636363637,
+          "training_usd": 14.871380625454547,
+          "development_usd": 0.8097002400000001,
+          "checkpoint_storage_allowance_usd": 0.1,
+          "total_usd": 15.781080865454546,
+          "with_margin_usd": 23.67162129818182,
+          "fits_remaining_usd": true
+        },
+        "output_cap_stress": {
+          "output_tokens_per_turn": 2048,
+          "training_usd": 22.36387456,
+          "development_usd": 1.22265264,
+          "checkpoint_storage_allowance_usd": 0.1,
+          "total_usd": 23.6865272,
+          "with_margin_usd": 35.5297908,
+          "fits_remaining_usd": true
+        }
+      }
+    }
+  ],
+  "main_options_at_pilot_gate": {
+    "S": {
+      "A_seeds": [
+        11,
+        23,
+        37
+      ],
+      "B_seeds": [
+        41,
+        53
+      ]
+    },
+    "U": {
+      "A_seeds": [
+        11,
+        23
+      ],
+      "B_seeds": [
+        41
+      ]
+    },
+    "decision": "Price updates and recommend only after measuring the pilot learning speed and cost. Visible curves take priority over seed count."
+  }
+}

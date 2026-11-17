@@ -108,3 +108,15 @@ The inspected SDK exposes hourly [billing usage events](https://github.com/think
 The offline engine and baselines now exist. PAID_PLANS.md replaces the old paid-grid proposal. Its tokenizer counts use native HF chat templates at pinned revisions; the cookbook adapter and its token-parity check are still pending Phase 2. No SDK or Tinker service operation was used in Phase 1.
 
 Public pricing was rechecked on 2026-11-18. The three costed models have unchanged rates, recorded in research/rate_recheck.json. Caching is supported for shared prefixes within a sampling client, but no cache hit or authenticated availability has been observed for this project. Both paid forecasts assume no cache savings.
+
+## Phase 2 update
+
+On 2026-11-18 the user approved a $50 cap and provided a local ignored credential. Authenticated capabilities listed 38 models, including Qwen3-8B and gpt-oss-120b with 32,768-token contexts and sampling enabled. [The saved capabilities](research/phase2_capabilities.json) and [verified rates](research/phase2_rates.json) replace the earlier unverified availability assumptions.
+
+The bridge reuses cookbook commit 6c081121b90dbc290b4550eb9fd9f646f8e4960a and SDK 0.39.1. Cookbook/native token parity passed for all 300 approved initial prompts and 259 histories before sampling. An independent pinned environment reproduced those token hashes. The exact replay later reconstructed all 3,779 submitted token sequences and sampling settings. [Verification](results/phase2/verification.json) records that check.
+
+Live responses report cache hits in every evaluated cell. Counts, fractions, token costs, and CIs appear in [the gate report](PHASE2.md) and [cell data](results/phase2/summary.json). The output-length assumption missed badly; the next pilot is priced using observed lengths with explicit sensitivity bounds.
+
+The adapter had omitted the native sampling-backpressure header. Matching the SDK request fields and header resolved the misleading outdated-SDK rejection. Five originals stay orphaned, possibly billed; their $0.007195 holds stay until billing resolves them, and their outputs are never used. New sampling future IDs are persisted before HTTP dispatch and verified against receipts. A 408 still re-polls the same request. [The incident record](research/phase2_incident.json) includes the approved replacements and local restart repair.
+
+The final billing snapshot currently contains no attributable rows and may lag usage by hours. It is not evidence of free sampling and does not release orphan holds. The ledger records observed token usage at the verified published rates, with invoice reconciliation pending. No storage plan was changed and no training or checkpoint save occurred.

@@ -1,0 +1,24 @@
+{
+  "verified_date": "2026-11-18",
+  "source": "https://tinker-docs.thinkingmachines.ai/tinker/models.json",
+  "verification": "Read public rate card with the web tool; direct urllib access returned HTTP 403. These entries match the Phase 1 snapshot numerically.",
+  "rates_match_phase1": true,
+  "models": [
+    {
+      "tinker_id": "Qwen/Qwen3-8B",
+      "context": "32K",
+      "prefill": "$0.195",
+      "cached_prefill": "$0.039",
+      "sample": "$0.60",
+      "train": "$0.44"
+    },
+    {
+      "tinker_id": "openai/gpt-oss-120b",
+      "context": "32K",
+      "prefill": "$0.33",
+      "cached_prefill": "$0.066",
+      "sample": "$0.84",
+      "train": "$0.737"
+    }
+  ]
+}

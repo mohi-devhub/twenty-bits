@@ -1,0 +1,8 @@
+{
+  "declared_before_training": "2026-11-18",
+  "selection": "Index 0 in both animals N=32 noise cells. Chosen by fixed index, before any training; retain even if no visible improvement.",
+  "examples": [
+    {"game_id": "paid-v1/animals/32/0/p0", "base": "Qwen/Qwen3-8B", "trained_role": "condition A seed 11 scheduled endpoint"},
+    {"game_id": "paid-v1/animals/32/0/p0.1", "base": "Qwen/Qwen3-8B", "trained_role": "condition B seed 41 scheduled endpoint"}
+  ]
+}

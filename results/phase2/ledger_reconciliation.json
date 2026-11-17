@@ -1,0 +1,49 @@
+{
+  "cap_usd": "50.000000",
+  "spent_usd": "5.793225",
+  "held_usd": "0.007195",
+  "available_usd": "44.199580",
+  "orphaned_entries": [
+    {
+      "id": "fa5ec920-1085-46e2-bd9e-0e5b0a78cebf",
+      "operation": "sample Qwen/Qwen3-8B Qwen/Qwen3-8B/paid-v1/animals/32/0/p0/turn-0",
+      "reserved_usd": "0.001441",
+      "state": "dispatching",
+      "incident_status": "orphaned, possibly billed",
+      "output_allowed": false
+    },
+    {
+      "id": "78715f8c-59c0-4a1f-9f3f-c8102f4043d1",
+      "operation": "sample Qwen/Qwen3-8B Qwen/Qwen3-8B/paid-v1/animals/32/1/p0/turn-0",
+      "reserved_usd": "0.001436",
+      "state": "dispatching",
+      "incident_status": "orphaned, possibly billed",
+      "output_allowed": false
+    },
+    {
+      "id": "1189868a-f5b6-48eb-b6e1-a31529964760",
+      "operation": "sample Qwen/Qwen3-8B Qwen/Qwen3-8B/paid-v1/animals/32/2/p0/turn-0",
+      "reserved_usd": "0.001435",
+      "state": "dispatching",
+      "incident_status": "orphaned, possibly billed",
+      "output_allowed": false
+    },
+    {
+      "id": "ebf4dda4-1b3f-4fc6-b5bc-b2886bf5b869",
+      "operation": "sample Qwen/Qwen3-8B Qwen/Qwen3-8B/paid-v1/animals/32/3/p0/turn-0",
+      "reserved_usd": "0.001437",
+      "state": "dispatching",
+      "incident_status": "orphaned, possibly billed",
+      "output_allowed": false
+    },
+    {
+      "id": "e07652e7-cb4d-40de-bce0-c0251e75be1d",
+      "operation": "sample Qwen/Qwen3-8B Qwen/Qwen3-8B/paid-v1/animals/32/4/p0/turn-0",
+      "reserved_usd": "0.001446",
+      "state": "dispatching",
+      "incident_status": "orphaned, possibly billed",
+      "output_allowed": false
+    }
+  ],
+  "usage_sha256": "ace5ad8bd532634e48ecdfbae839d9d6c012f153a31e2e2aee40a154399ee95e"
+}

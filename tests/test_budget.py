@@ -7,7 +7,7 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from twenty_bits.budget import BudgetError, Ledger, money
+from twenty_bits.budget import CAP, BudgetError, Ledger, money
 
 
 def reserve_in_process(path: str) -> bool:
@@ -29,7 +29,7 @@ class BudgetTests(unittest.TestCase):
             json.dumps(
                 {
                     "schema_version": 1,
-                    "cap_usd": "30.000000",
+                    "cap_usd": str(CAP),
                     "reservation_multiplier": "1.5",
                     "entries": [],
                     "blocks": [],
@@ -59,7 +59,7 @@ class BudgetTests(unittest.TestCase):
         self.assertEqual(self.ledger.status()["held_usd"], "4.000000")
 
     def test_exact_cap_allowed_but_one_microdollar_more_refused(self):
-        self.reserve("20", "20")
+        self.reserve("20", str(CAP))
         before = self.path.read_bytes()
         with self.assertRaises(BudgetError):
             self.reserve("0.000001", "0.000001")
@@ -93,7 +93,7 @@ class BudgetTests(unittest.TestCase):
         self.assertEqual(result, "fake response")
 
     def test_over_budget_never_invokes_callback(self):
-        self.reserve("20", "20")
+        self.reserve("20", str(CAP))
         calls = []
         with self.assertRaises(BudgetError):
             self.ledger.call(
@@ -138,7 +138,7 @@ class BudgetTests(unittest.TestCase):
         status = self.ledger.status()
         self.assertEqual(status["spent_usd"], "2.250000")
         self.assertEqual(status["held_usd"], "0.000000")
-        self.assertEqual(status["available_usd"], "27.750000")
+        self.assertEqual(status["available_usd"], str(CAP - Decimal("2.25")))
         self.assertEqual(status["entries"][0]["evidence"], "fake-billing.json")
 
     def test_pending_and_settled_money_both_count(self):
@@ -146,7 +146,7 @@ class BudgetTests(unittest.TestCase):
         self.settle(entry_id, "10")
         self.reserve("10", "10")
         with self.assertRaises(BudgetError):
-            self.reserve("4", "4")
+            self.reserve("17", "17")
 
     def test_settlement_is_idempotent_and_cannot_lower_recorded_cost(self):
         entry_id = self.reserve()
@@ -181,7 +181,7 @@ class BudgetTests(unittest.TestCase):
     def test_void_only_releases_unsubmitted_work(self):
         entry_id = self.reserve()
         self.ledger.void(entry_id, reason="The offline preflight rejected the run.")
-        self.assertEqual(self.ledger.status()["available_usd"], "30.000000")
+        self.assertEqual(self.ledger.status()["available_usd"], str(CAP))
         with self.assertRaises(BudgetError):
             self.ledger.dispatch(entry_id, lambda: self.fail("Voided work"))
 
@@ -202,7 +202,7 @@ class BudgetTests(unittest.TestCase):
             None,
             "{",
             '{"schema_version": 0}',
-            self.path.read_text().replace("30.000000", "300.000000"),
+            self.path.read_text().replace(str(CAP), "300.000000"),
         ]:
             with self.subTest(content=content):
                 if content is None:
@@ -228,15 +228,15 @@ class BudgetTests(unittest.TestCase):
 
     def test_whole_run_preflight_refuses_unaffordable_schedule(self):
         with self.assertRaises(BudgetError):
-            self.ledger.check_run(estimate_usd="21", max_cost_usd="21")
+            self.ledger.check_run(estimate_usd="34", max_cost_usd="34")
         self.assertEqual(self.ledger.status()["entries"], [])
 
     def test_parallel_processes_cannot_overbook(self):
         with ProcessPoolExecutor(max_workers=4) as pool:
-            outcomes = list(pool.map(reserve_in_process, [str(self.path)] * 28))
-        self.assertEqual(sum(outcomes), 20)
-        self.assertEqual(self.ledger.status()["held_usd"], "30.000000")
-        self.assertEqual(len(self.ledger.status()["entries"]), 20)
+            outcomes = list(pool.map(reserve_in_process, [str(self.path)] * 40))
+        self.assertEqual(sum(outcomes), 33)
+        self.assertEqual(self.ledger.status()["held_usd"], "49.500000")
+        self.assertEqual(len(self.ledger.status()["entries"]), 33)
 
 
 if __name__ == "__main__":

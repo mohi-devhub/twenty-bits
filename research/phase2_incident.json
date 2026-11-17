@@ -1,0 +1,99 @@
+{
+  "date": "2026-11-18",
+  "status": "adapter fixed; original costs unresolved",
+  "root_cause": "The low-level adapter omitted X-Tinker-Sampling-Backpressure: 1, which the stock SDK sends. Sampling was rejected with a misleading outdated-SDK message. Adding the SDK version header alone did not resolve it. A native SDK wire comparison exposed the missing backpressure header; adding it allowed the approved game to complete.",
+  "fix": "Match native SDK sampling fields and backpressure header, pin SDK 0.39.1, and compare the wire body in a local HTTP mock test.",
+  "failed_submissions": 9,
+  "original_orphaned_submissions": [
+    {
+      "entry_id": "ebf4dda4-1b3f-4fc6-b5bc-b2886bf5b869",
+      "key": "Qwen/Qwen3-8B/paid-v1/animals/32/3/p0/turn-0",
+      "status": "orphaned, possibly billed",
+      "output_allowed": false
+    },
+    {
+      "entry_id": "78715f8c-59c0-4a1f-9f3f-c8102f4043d1",
+      "key": "Qwen/Qwen3-8B/paid-v1/animals/32/1/p0/turn-0",
+      "status": "orphaned, possibly billed",
+      "output_allowed": false
+    },
+    {
+      "entry_id": "1189868a-f5b6-48eb-b6e1-a31529964760",
+      "key": "Qwen/Qwen3-8B/paid-v1/animals/32/2/p0/turn-0",
+      "status": "orphaned, possibly billed",
+      "output_allowed": false
+    },
+    {
+      "entry_id": "e07652e7-cb4d-40de-bce0-c0251e75be1d",
+      "key": "Qwen/Qwen3-8B/paid-v1/animals/32/4/p0/turn-0",
+      "status": "orphaned, possibly billed",
+      "output_allowed": false
+    },
+    {
+      "entry_id": "fa5ec920-1085-46e2-bd9e-0e5b0a78cebf",
+      "key": "Qwen/Qwen3-8B/paid-v1/animals/32/0/p0/turn-0",
+      "status": "orphaned, possibly billed",
+      "output_allowed": false
+    }
+  ],
+  "retained_original_holds_usd": "0.007195",
+  "known_http422_rejections": [
+    {
+      "entry_id": "ad5222ae-4683-49a5-b8f7-e7fc1bad8410",
+      "key": "Qwen/Qwen3-8B/paid-v1/animals/32/6/p0/turn-0",
+      "actual_usd": "0.000000",
+      "http_status": 422
+    },
+    {
+      "entry_id": "a5d54911-ced7-450c-994b-65f2eb46118b",
+      "key": "Qwen/Qwen3-8B/paid-v1/animals/32/5/p0/turn-0",
+      "actual_usd": "0.000000",
+      "http_status": 422
+    },
+    {
+      "entry_id": "0892ffe7-e849-41ac-ad3f-eb9e2f75af87",
+      "key": "Qwen/Qwen3-8B/paid-v1/animals/32/8/p0/turn-0",
+      "actual_usd": "0.000000",
+      "http_status": 422
+    },
+    {
+      "entry_id": "2790b2ef-8f41-4ece-9e08-fd812f75719e",
+      "key": "Qwen/Qwen3-8B/paid-v1/animals/32/7/p0/turn-0",
+      "actual_usd": "0.000000",
+      "http_status": 422
+    }
+  ],
+  "original_outputs": "Never inspect for policy actions, score, train on, or include in evaluation, even if they become available. Billing metadata only.",
+  "approved_replacements": {
+    "Qwen/Qwen3-8B/paid-v1/animals/32/3/p0/turn-0": "Qwen/Qwen3-8B/paid-v1/animals/32/3/p0/turn-0/approved-replacement-2026-11-18",
+    "Qwen/Qwen3-8B/paid-v1/animals/32/1/p0/turn-0": "Qwen/Qwen3-8B/paid-v1/animals/32/1/p0/turn-0/approved-replacement-2026-11-18",
+    "Qwen/Qwen3-8B/paid-v1/animals/32/2/p0/turn-0": "Qwen/Qwen3-8B/paid-v1/animals/32/2/p0/turn-0/approved-replacement-2026-11-18",
+    "Qwen/Qwen3-8B/paid-v1/animals/32/4/p0/turn-0": "Qwen/Qwen3-8B/paid-v1/animals/32/4/p0/turn-0/approved-replacement-2026-11-18",
+    "Qwen/Qwen3-8B/paid-v1/animals/32/0/p0/turn-0": "Qwen/Qwen3-8B/paid-v1/animals/32/0/p0/turn-0/approved-replacement-2026-11-18"
+  },
+  "replacement_approval_date": "2026-11-18",
+  "replacement_settings": "Identical game seeds, prompts, output caps, temperature and sampling seeds; only transport attempt IDs differ.",
+  "request_id_policy_effective_at": "2026-11-17T19:14:58.275494+00:00",
+  "request_id_rule": "Save sampler_id:sequence_number in the journal and ledger before creating the HTTP task. Verify the server receipt equals it; retrieve the saved ID after a timeout, never submit it again.",
+  "accepted_calls_before_this_rule": 11,
+  "request_id_pattern_checks": 11,
+  "preliminary_recovery_evidence": {
+    "completion_queue": {
+      "completions": [],
+      "cursor": 0
+    },
+    "billing_events_observed": 0,
+    "trace_sha256": "fb4a98568b80447dc1892118bf7ebf7d7965e6baf87875f6c579bac4df84dc37",
+    "note": "Empty queue/trace and lagged billing do not release orphan holds."
+  },
+  "local_restart_interruption": {
+    "entry_id": "a43ba2f9-d2de-411a-9e2e-476f72c2a40c",
+    "request_id": "77f8fb18-7987-5ab0-8aa4-9de2a638a040:sample:0:1300",
+    "status": "confirmed not accepted",
+    "actual_usd": "0.000000",
+    "proof": "research/phase2_restart_recovery.json",
+    "cause": "A signal cancellation allowed a newly allocated local request to be cancelled before server acceptance.",
+    "fix": "SIGINT and SIGTERM now stop new submissions and drain active requests without cancelling HTTP tasks.",
+    "same_prompt_and_seed_retry": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "date": "2026-11-18",
+  "unit_tests": {
+    "passed": 76,
+    "failed": 0,
+    "command": ".venv/bin/python -m unittest discover -s tests -q",
+    "environment": "fresh Python 3.12 virtual environment with paid dependencies"
+  },
+  "ruff": "passed",
+  "frozen_cells_verified": 10,
+  "frozen_games_verified": 2000,
+  "paid_games_completed": 300,
+  "turns_and_token_sequences_verified": 3779,
+  "sampling_ids_durable_before_http_dispatch": 3768,
+  "accepted_calls_before_write_ahead_change": 11,
+  "original_orphan_holds_usd": "0.007195",
+  "orphan_outputs_used": 0,
+  "no_training": true,
+  "completed_runner_additional_calls": 0,
+  "analysis_without_local_caches_identical": true,
+  "chart_png_and_svg_visually_checked": true,
+  "billing_invoice_reconciliation": "pending",
+  "dotenv_ignored": true,
+  "dotenv_tracked": false
+}

@@ -14,6 +14,10 @@ dependencies = [
 
 [project.optional-dependencies]
 replay = ["playwright==1.58.0"]
+paid = [
+  "tinker==0.39.1",
+  "tinker-cookbook @ git+https://github.com/thinking-machines-lab/tinker-cookbook.git@6c081121b90dbc290b4550eb9fd9f646f8e4960a",
+]
 
 [build-system]
 requires = ["setuptools>=68"]
@@ -24,3 +28,4 @@ include = ["twenty_bits*"]
 
 [tool.ruff.lint.per-file-ignores]
 "scripts/*.py" = ["E402"]
+"tests/test_paid_adapter.py" = ["E402"]

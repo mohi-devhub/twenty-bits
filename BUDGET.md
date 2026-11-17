@@ -1,13 +1,11 @@
 # Current budget
 
-The ledger cap is **$30**, actual Tinker spend is **$0.00**, and outstanding holds are **$0.00**. Phase 1 made no Tinker service calls. The ledger and its guard code remain byte-for-byte unchanged from Phase 0.
+The user approved **$50 total Tinker spend including active holds on 2026-11-18**. The approval is recorded in ledger.json. Phase 2 recorded **$5.793225** in gross token-usage charges; **$0.007195 remains held** for five originals labeled orphaned, possibly billed. Available under the cap is **$44.199580**. Invoice reconciliation remains pending. Original outputs are permanently excluded.
 
-[PAID_PLANS.md](PAID_PLANS.md) replaces the earlier workload estimate with two measured-token proposals. Plan 30 forecasts $19.52 before margin and $29.28 with 1.5 times margin. Plan 50 forecasts $32.34 and $48.51. Neither plan is active. The user must approve one before any service operation, and a $50 cap is not authorized yet.
+The Phase 2 forecast was $2.95805922, or $4.437088830 with margin. Its token-capped uncached envelope was $17.647606. Every paid call reserved the larger of its estimate times 1.5 and its full declared maximum before I/O. The reservation, dispatch, settlement, and 408 rules in twenty_bits/budget.py are unchanged apart from the explicitly approved $50 cap and matching validation messages.
 
-The complete assumptions, per-phase totals, model alternatives, reference slice, and precision estimates are in that plan document and research/paid_plans.json. The arithmetic uses measured public prompts, full question budgets, no caching credit, and explicit output-length assumptions. Long outputs can consume the allowance faster. The current estimates do not replace a token-bounded per-call reservation.
+The current gate is [PHASE2.md](PHASE2.md). [Per-cell actual versus forecast costs](results/phase2/summary.csv), [usage evidence](results/phase2/usage.jsonl), and [reconciliation](results/phase2/ledger_reconciliation.json) are saved. Pending work keeps its hold; a retrieve_future 408 re-polls the same request ID. New sampling IDs are durable before HTTP dispatch.
 
-`twenty_bits/budget.py` continues to require settled costs plus outstanding holds plus a new reservation to stay within the cap. Each reservation is the larger of estimate times 1.5 and the call's declared maximum. A missing ledger, corrupt reservation, uncertain submission, or cost discrepancy must never lead to another unguarded call. Keep pending holds, persist the request ID, and re-poll that same future after a retrieve_future 408.
+The next pilot is condition A with groups of eight and still needs approval. [Measured pilot forecasts](research/pilot_after_phase2.json) include output-length sensitivity, 1.5× margin, and checkpoint storage. Option S and Option U will be priced after measuring pilot learning speed. No training or main schedule is active.
 
-Run `python3 -m twenty_bits.budget status` to inspect the account-independent project ledger. It does not contact Tinker. Plan approval starts Phase 2 only. Reconcile actual usage and stop at every later gate.
-
-The Phase 0 scenario remains reproducible from research/cost_projection.json and twenty_bits/costs.py as historical context. It uses the superseded 40-cell paid grid and is not a current run plan.
+[PAID_PLANS.md](PAID_PLANS.md) records the approval and preserves the superseded Phase 1 proposals. The earlier 32-update, five-seed schedule no longer fits after doubling group size. Historical cost_projection.json and twenty_bits/costs.py use the earlier 40-cell grid and are not current plans.

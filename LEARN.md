@@ -29,3 +29,15 @@ Random and greedy policies give us executable references before any model call. 
 The table prompt lists only true column codes and maps them to attribute names. This is much shorter for sparse semantic rows than printing every zero. The table stays at the beginning of the conversation so a sampler can cache it. Real tokenizers price that repeated context; caching gets no credit in the paid forecasts until actual hits are observed.
 
 The replay is a view of saved state. Both panels read the same target and their own logged posterior after each action. The animation clock changes which saved turn is shown; it does not simulate answers. That lets us reuse it for base and trained models without rewriting the game logic. Thinking is disabled in the proposed Qwen runs, so a later zero-reasoning chart will reflect that setting, not a discovery about internal computation.
+
+## Phase 2: see what the base models actually do
+
+We connected the exact game to the cookbook's environment and rollout interfaces, then played 280 Qwen games and 20 reference games. No model was trained. All questions, answers, posteriors, and token counts are saved, so we can replay the games without paying again. The adapter checked that its prompt token IDs matched the native tokenizer before sending them.
+
+The base model did not win. All 447 valid Qwen questions used item equalities, and 311 gave zero expected information. Many other questions were invalid or too long. This is why a valid question is not automatically a useful question, and why we measure bits alongside wins and format errors. A repeated uninformative predicate can also look like a re-check without helping search.
+
+The real output was much longer than the 64-token forecast: about 1,303 generated tokens per call on noiseless animals at N=32. Caching helped, but recorded usage still cost $5.793225. The approved cap is now $50. Five uncertain originals remain labeled orphaned, possibly billed, with $0.007195 held; their outputs are excluded permanently. The approved replacements used the same inputs and seeds.
+
+A request is more than an HTTP call. The sampler ID and sequence number let us write its future ID to disk before sending. We verify the returned ID and keep polling it after a 408. A wire mismatch with the stock SDK's backpressure header caused the initial failures. Shutdown now lets active requests finish and saves their results before stopping.
+
+Bootstrap intervals resample whole games. With zero wins, that bootstrap gives a zero-width interval, so we also report Wilson bounds rather than imply that the population win rate is known to be zero. Thinking was disabled for Qwen; zero visible reasoning tokens reflects that setting. The next step is an A-only pilot with groups of eight, after approval. Its reward still contains only wins, question cost, and invalid penalties. EIG stays a measurement.

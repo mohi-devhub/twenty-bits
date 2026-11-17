@@ -1,5 +1,5 @@
 {
-  "status": "proposals only; ledger cap remains $30 until approval",
+  "status": "Historical Phase 1 proposals, superseded by research/approved_plan.json; current cap and spend are in ledger.json",
   "forecast_method": "no cache credit; measured maximum initial prompt in each frozen cell; full question budget plus guess; 64 output tokens per turn plus 32 chat/answer tokens in later prompts; full per-turn contexts charged for training; margin 1.5",
   "uncertainty": "Output lengths and model success have not been measured. 2048 is a universal output cap, not the 64-token forecast. If actual usage consumes the held budget, stop before submitting more work; do not silently cut an approved evaluation.",
   "zero_shot_choice": "8B is cheaper on the published rate card. Task ability remains unknown without paid calls. Phase 2 screens 4B on 50 matched games before any training; switching models requires a reviewed plan at that gate.",

@@ -1,0 +1,15 @@
+{
+  "games_replayed": 300,
+  "turns_replayed": 3779,
+  "submitted_token_sequences_and_sampling_settings_reconstructed": 3779,
+  "new_calls_with_id_saved_before_dispatch_and_matching_receipt": 3768,
+  "accepted_calls_before_write_ahead_id_change": 11,
+  "replacement_prompt_and_seed_signatures_equal": 5,
+  "orphaned_outputs_used": 0,
+  "context_limit_losses_verified": 132,
+  "orphaned_holds_usd": "0.007195",
+  "actual_usage_cost_usd": "5.793225",
+  "unexpected_pending_entries": 0,
+  "no_training_operations": true,
+  "frozen_bank_sha256": "96cbff2993f3ffcd5f6f6151571a8786e8ef2606c26c30180a753c944b9511eb"
+}

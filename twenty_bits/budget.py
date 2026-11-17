@@ -19,7 +19,7 @@ import tempfile
 from typing import TypeVar
 import uuid
 
-CAP = Decimal("30.000000")
+CAP = Decimal("50.000000")
 MULTIPLIER = Decimal("1.5")
 MICRODOLLAR = Decimal("0.000001")
 ACTIVE_STATES = {"reserved", "dispatching", "submitted"}
@@ -73,7 +73,9 @@ class Ledger:
             if data["schema_version"] != 1:
                 raise BudgetError("Unsupported ledger schema.")
             if data["cap_usd"] != str(CAP) or data["reservation_multiplier"] != "1.5":
-                raise BudgetError("The $30 cap and 1.5 multiplier cannot be changed.")
+                raise BudgetError(
+                    "The approved $50 cap and 1.5 multiplier cannot be changed."
+                )
             if not isinstance(data["entries"], list) or not isinstance(
                 data["blocks"], list
             ):
@@ -165,7 +167,7 @@ class Ledger:
             )
         if spent + held + extra > CAP:
             raise BudgetError(
-                f"Refused: ${spent} spent + ${held} held + ${extra} new exceeds $30."
+                f"Refused: ${spent} spent + ${held} held + ${extra} new exceeds $50."
             )
 
     def status(self) -> dict:

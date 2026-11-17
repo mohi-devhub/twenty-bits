@@ -1,0 +1,1490 @@
+{
+  "status": "complete",
+  "expected_games": 300,
+  "completed_games": 300,
+  "missing_games": [],
+  "bootstrap_draws": 10000,
+  "bootstrap_unit": "complete games within each cell",
+  "cost_basis": "Observed tokens and reported cache hits at the verified rate card, upward microdollar rounding per call; invoice reconciliation pending",
+  "cells": [
+    {
+      "model": "Qwen/Qwen3-8B",
+      "domain": "animals",
+      "n": 32,
+      "noise": 0,
+      "games": 28,
+      "questions": 280,
+      "low_probability_opportunities": 0,
+      "win_rate": 0.0,
+      "win_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "questions_per_win": null,
+      "questions_per_win_ci95": null,
+      "eig_per_question": 0.018007144010716413,
+      "eig_per_question_ci95": [
+        0.00481853755496022,
+        0.03592911375513394
+      ],
+      "enumeration_rate": 0.34285714285714286,
+      "enumeration_rate_ci95": [
+        0.18214285714285713,
+        0.5178571428571429
+      ],
+      "predicate_tokens": 1297.6214285714286,
+      "predicate_tokens_ci95": [
+        1003.5600000000001,
+        1590.768482142857
+      ],
+      "invalid_rate": 0.6571428571428571,
+      "invalid_rate_ci95": [
+        0.48214285714285715,
+        0.8178571428571428
+      ],
+      "reask_after_low_probability_rate": null,
+      "reask_after_low_probability_rate_ci95": null,
+      "format_error_rate": 0.09090909090909091,
+      "format_error_rate_ci95": [
+        0.09090909090909091,
+        0.09090909090909091
+      ],
+      "truncation_rate": 0.5551948051948052,
+      "truncation_rate_ci95": [
+        0.37662337662337664,
+        0.7272727272727273
+      ],
+      "prompt_tokens_per_game": 84740.96428571429,
+      "prompt_tokens_per_game_ci95": [
+        68475.76517857143,
+        100412.01517857143
+      ],
+      "output_tokens_per_game": 14334.5,
+      "output_tokens_per_game_ci95": [
+        11018.314285714287,
+        17535.790178571428
+      ],
+      "prompt_cache_hit_fraction": 0.8259119071692009,
+      "prompt_cache_hit_fraction_ci95": [
+        0.8232917432970177,
+        0.8297367783438966
+      ],
+      "reasoning_tokens_per_game": 0.0,
+      "reasoning_tokens_per_game_ci95": [
+        0.0,
+        0.0
+      ],
+      "action_tokens_per_game": 14329.607142857143,
+      "action_tokens_per_game_ci95": [
+        11011.491964285713,
+        17532.790178571428
+      ],
+      "context_overflow_rate": 0.0,
+      "context_overflow_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "raw_item_equality_attempt_rate": 1.0,
+      "raw_item_equality_attempt_rate_ci95": [
+        1.0,
+        1.0
+      ],
+      "sampling_calls": 308,
+      "prompt_tokens": 2372747,
+      "output_tokens": 401366,
+      "prompt_cache_hit_tokens": 1959680,
+      "actual_usage_cost_usd": "0.397946",
+      "wins": 0,
+      "low_probability_reasks": 0,
+      "invalid_questions": 184,
+      "format_errors": 28,
+      "truncated_outputs": 171,
+      "early_guesses": 0,
+      "singleton_enumeration_questions": 0,
+      "large_name_list_questions": 92,
+      "valid_questions": 96,
+      "valid_attribute_only_questions": 0,
+      "zero_eig_valid_questions": 87,
+      "forecast_usd": "0.11044572",
+      "forecast_with_margin_usd": "0.165668580",
+      "win_rate_wilson_ci95": [
+        0,
+        0.12064720365810762
+      ]
+    },
+    {
+      "model": "Qwen/Qwen3-8B",
+      "domain": "animals",
+      "n": 32,
+      "noise": 0.1,
+      "games": 28,
+      "questions": 278,
+      "low_probability_opportunities": 18,
+      "win_rate": 0.0,
+      "win_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "questions_per_win": null,
+      "questions_per_win_ci95": null,
+      "eig_per_question": 0.024948928086135302,
+      "eig_per_question_ci95": [
+        0.008861810339482492,
+        0.04453980501193544
+      ],
+      "enumeration_rate": 0.49280575539568344,
+      "enumeration_rate_ci95": [
+        0.31654676258992803,
+        0.6702898550724637
+      ],
+      "predicate_tokens": 975.615107913669,
+      "predicate_tokens_ci95": [
+        700.2194713794182,
+        1275.0806391315516
+      ],
+      "invalid_rate": 0.5071942446043165,
+      "invalid_rate_ci95": [
+        0.32971014492753625,
+        0.6834532374100719
+      ],
+      "reask_after_low_probability_rate": 0.7777777777777778,
+      "reask_after_low_probability_rate_ci95": [
+        0.6,
+        0.9444444444444444
+      ],
+      "format_error_rate": 0.08823529411764706,
+      "format_error_rate_ci95": [
+        0.08278145695364239,
+        0.09090909090909091
+      ],
+      "truncation_rate": 0.37254901960784315,
+      "truncation_rate_ci95": [
+        0.20915032679738563,
+        0.5422077922077922
+      ],
+      "prompt_tokens_per_game": 65744.82142857143,
+      "prompt_tokens_per_game_ci95": [
+        50718.52767857142,
+        81409.56874999999
+      ],
+      "output_tokens_per_game": 10661.142857142857,
+      "output_tokens_per_game_ci95": [
+        7607.788392857143,
+        13844.398214285715
+      ],
+      "prompt_cache_hit_fraction": 0.8387754603159945,
+      "prompt_cache_hit_fraction_ci95": [
+        0.8328595177442152,
+        0.8470336906572807
+      ],
+      "reasoning_tokens_per_game": 0.0,
+      "reasoning_tokens_per_game_ci95": [
+        0.0,
+        0.0
+      ],
+      "action_tokens_per_game": 10654.285714285714,
+      "action_tokens_per_game_ci95": [
+        7599.040178571428,
+        13839.395535714286
+      ],
+      "context_overflow_rate": 0.0,
+      "context_overflow_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "raw_item_equality_attempt_rate": 1.0,
+      "raw_item_equality_attempt_rate_ci95": [
+        1.0,
+        1.0
+      ],
+      "sampling_calls": 306,
+      "prompt_tokens": 1840855,
+      "output_tokens": 298512,
+      "prompt_cache_hit_tokens": 1544064,
+      "actual_usage_cost_usd": "0.297355",
+      "wins": 0,
+      "low_probability_reasks": 14,
+      "invalid_questions": 141,
+      "format_errors": 27,
+      "truncated_outputs": 114,
+      "early_guesses": 0,
+      "singleton_enumeration_questions": 0,
+      "large_name_list_questions": 132,
+      "valid_questions": 137,
+      "valid_attribute_only_questions": 0,
+      "zero_eig_valid_questions": 61,
+      "forecast_usd": "0.11044572",
+      "forecast_with_margin_usd": "0.165668580",
+      "win_rate_wilson_ci95": [
+        0,
+        0.12064720365810762
+      ]
+    },
+    {
+      "model": "Qwen/Qwen3-8B",
+      "domain": "animals",
+      "n": 128,
+      "noise": 0,
+      "games": 28,
+      "questions": 386,
+      "low_probability_opportunities": 0,
+      "win_rate": 0.0,
+      "win_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "questions_per_win": null,
+      "questions_per_win_ci95": null,
+      "eig_per_question": 0.0032138668248110655,
+      "eig_per_question_ci95": [
+        0.0,
+        0.007506867333488671
+      ],
+      "enumeration_rate": 0.16062176165803108,
+      "enumeration_rate_ci95": [
+        0.03626943005181347,
+        0.3010204081632653
+      ],
+      "predicate_tokens": 1550.0466321243523,
+      "predicate_tokens_ci95": [
+        1305.382189119171,
+        1768.3765943877547
+      ],
+      "invalid_rate": 0.8393782383419689,
+      "invalid_rate_ci95": [
+        0.6989795918367347,
+        0.9637305699481865
+      ],
+      "reask_after_low_probability_rate": null,
+      "reask_after_low_probability_rate_ci95": null,
+      "format_error_rate": 0.06234413965087282,
+      "format_error_rate_ci95": [
+        0.024875621890547265,
+        0.1259259259259259
+      ],
+      "truncation_rate": 0.5660847880299252,
+      "truncation_rate_ci95": [
+        0.4014481101394811,
+        0.7277230871942156
+      ],
+      "prompt_tokens_per_game": 194821.25,
+      "prompt_tokens_per_game_ci95": [
+        170946.89107142857,
+        214960.9392857143
+      ],
+      "output_tokens_per_game": 21910.5,
+      "output_tokens_per_game_ci95": [
+        18304.458035714284,
+        25104.208035714288
+      ],
+      "prompt_cache_hit_fraction": 0.8744132671065693,
+      "prompt_cache_hit_fraction_ci95": [
+        0.8710235758039171,
+        0.8785100251801313
+      ],
+      "reasoning_tokens_per_game": 0.0,
+      "reasoning_tokens_per_game_ci95": [
+        0.0,
+        0.0
+      ],
+      "action_tokens_per_game": 21904.285714285714,
+      "action_tokens_per_game_ci95": [
+        18295.308928571427,
+        25100.323214285712
+      ],
+      "context_overflow_rate": 0.4642857142857143,
+      "context_overflow_rate_ci95": [
+        0.2857142857142857,
+        0.6428571428571429
+      ],
+      "raw_item_equality_attempt_rate": 0.6813471502590673,
+      "raw_item_equality_attempt_rate_ci95": [
+        0.5076530612244898,
+        0.8549222797927462
+      ],
+      "sampling_calls": 401,
+      "prompt_tokens": 5454995,
+      "output_tokens": 613494,
+      "prompt_cache_hit_tokens": 4769920,
+      "actual_usage_cost_usd": "0.687930",
+      "wins": 0,
+      "low_probability_reasks": 0,
+      "invalid_questions": 324,
+      "format_errors": 25,
+      "truncated_outputs": 227,
+      "early_guesses": 0,
+      "singleton_enumeration_questions": 0,
+      "large_name_list_questions": 56,
+      "valid_questions": 62,
+      "valid_attribute_only_questions": 0,
+      "zero_eig_valid_questions": 58,
+      "forecast_usd": "0.3336543",
+      "forecast_with_margin_usd": "0.50048145",
+      "win_rate_wilson_ci95": [
+        0,
+        0.12064720365810762
+      ]
+    },
+    {
+      "model": "Qwen/Qwen3-8B",
+      "domain": "animals",
+      "n": 128,
+      "noise": 0.1,
+      "games": 28,
+      "questions": 389,
+      "low_probability_opportunities": 8,
+      "win_rate": 0.0,
+      "win_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "questions_per_win": null,
+      "questions_per_win_ci95": null,
+      "eig_per_question": 0.00794376967092896,
+      "eig_per_question_ci95": [
+        1.416100796715761e-17,
+        0.022255105062865446
+      ],
+      "enumeration_rate": 0.13367609254498714,
+      "enumeration_rate_ci95": [
+        0.03571428571428571,
+        0.2647814910025707
+      ],
+      "predicate_tokens": 1445.6246786632391,
+      "predicate_tokens_ci95": [
+        1167.456619537275,
+        1701.044442349562
+      ],
+      "invalid_rate": 0.8663239074550129,
+      "invalid_rate_ci95": [
+        0.7352185089974294,
+        0.9642857142857143
+      ],
+      "reask_after_low_probability_rate": 0.625,
+      "reask_after_low_probability_rate_ci95": [
+        0.0,
+        1.0
+      ],
+      "format_error_rate": 0.03225806451612903,
+      "format_error_rate_ci95": [
+        0.020100502512562814,
+        0.04411764705882353
+      ],
+      "truncation_rate": 0.5037220843672456,
+      "truncation_rate_ci95": [
+        0.33415233415233414,
+        0.6768447837150128
+      ],
+      "prompt_tokens_per_game": 185247.25,
+      "prompt_tokens_per_game_ci95": [
+        161514.6205357143,
+        206553.60803571428
+      ],
+      "output_tokens_per_game": 20429.85714285714,
+      "output_tokens_per_game_ci95": [
+        16490.258928571428,
+        23988.45892857143
+      ],
+      "prompt_cache_hit_fraction": 0.8906582958721384,
+      "prompt_cache_hit_fraction_ci95": [
+        0.8851988560707564,
+        0.8977228661646817
+      ],
+      "reasoning_tokens_per_game": 0.0,
+      "reasoning_tokens_per_game_ci95": [
+        0.0,
+        0.0
+      ],
+      "action_tokens_per_game": 20422.714285714286,
+      "action_tokens_per_game_ci95": [
+        16482.41607142857,
+        23982.336607142857
+      ],
+      "context_overflow_rate": 0.5,
+      "context_overflow_rate_ci95": [
+        0.32142857142857145,
+        0.6785714285714286
+      ],
+      "raw_item_equality_attempt_rate": 0.7840616966580977,
+      "raw_item_equality_attempt_rate_ci95": [
+        0.6281096059113306,
+        0.9280205655526992
+      ],
+      "sampling_calls": 403,
+      "prompt_tokens": 5186923,
+      "output_tokens": 572036,
+      "prompt_cache_hit_tokens": 4619776,
+      "actual_usage_cost_usd": "0.634191",
+      "wins": 0,
+      "low_probability_reasks": 5,
+      "invalid_questions": 337,
+      "format_errors": 13,
+      "truncated_outputs": 203,
+      "early_guesses": 0,
+      "singleton_enumeration_questions": 0,
+      "large_name_list_questions": 38,
+      "valid_questions": 52,
+      "valid_attribute_only_questions": 0,
+      "zero_eig_valid_questions": 28,
+      "forecast_usd": "0.3336543",
+      "forecast_with_margin_usd": "0.50048145",
+      "win_rate_wilson_ci95": [
+        0,
+        0.12064720365810762
+      ]
+    },
+    {
+      "model": "Qwen/Qwen3-8B",
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0,
+      "games": 28,
+      "questions": 280,
+      "low_probability_opportunities": 0,
+      "win_rate": 0.0,
+      "win_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "questions_per_win": null,
+      "questions_per_win_ci95": null,
+      "eig_per_question": 0.0,
+      "eig_per_question_ci95": [
+        0.0,
+        0.0
+      ],
+      "enumeration_rate": 0.03571428571428571,
+      "enumeration_rate_ci95": [
+        0.0,
+        0.10714285714285714
+      ],
+      "predicate_tokens": 649.85,
+      "predicate_tokens_ci95": [
+        546.5928571428572,
+        781.0289285714287
+      ],
+      "invalid_rate": 0.9642857142857143,
+      "invalid_rate_ci95": [
+        0.8928571428571429,
+        1.0
+      ],
+      "reask_after_low_probability_rate": null,
+      "reask_after_low_probability_rate_ci95": null,
+      "format_error_rate": 0.09090909090909091,
+      "format_error_rate_ci95": [
+        0.09090909090909091,
+        0.09090909090909091
+      ],
+      "truncation_rate": 0.03571428571428571,
+      "truncation_rate_ci95": [
+        0.0,
+        0.10714285714285714
+      ],
+      "prompt_tokens_per_game": 46936.92857142857,
+      "prompt_tokens_per_game_ci95": [
+        41213.333928571425,
+        54395.838392857135
+      ],
+      "output_tokens_per_game": 7191.5,
+      "output_tokens_per_game_ci95": [
+        6048.4625,
+        8682.432142857142
+      ],
+      "prompt_cache_hit_fraction": 0.827469080848616,
+      "prompt_cache_hit_fraction_ci95": [
+        0.8257386335865382,
+        0.8292602217296178
+      ],
+      "reasoning_tokens_per_game": 0.0,
+      "reasoning_tokens_per_game_ci95": [
+        0.0,
+        0.0
+      ],
+      "action_tokens_per_game": 7180.892857142857,
+      "action_tokens_per_game_ci95": [
+        6037.4625,
+        8672.75625
+      ],
+      "context_overflow_rate": 0.0,
+      "context_overflow_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "raw_item_equality_attempt_rate": 0.7857142857142857,
+      "raw_item_equality_attempt_rate_ci95": [
+        0.6428571428571429,
+        0.9285714285714286
+      ],
+      "sampling_calls": 308,
+      "prompt_tokens": 1314234,
+      "output_tokens": 201362,
+      "prompt_cache_hit_tokens": 1087488,
+      "actual_usage_cost_usd": "0.207596",
+      "wins": 0,
+      "low_probability_reasks": 0,
+      "invalid_questions": 270,
+      "format_errors": 28,
+      "truncated_outputs": 11,
+      "early_guesses": 0,
+      "singleton_enumeration_questions": 0,
+      "large_name_list_questions": 10,
+      "valid_questions": 10,
+      "valid_attribute_only_questions": 0,
+      "zero_eig_valid_questions": 10,
+      "forecast_usd": "0.09903432",
+      "forecast_with_margin_usd": "0.148551480",
+      "win_rate_wilson_ci95": [
+        0,
+        0.12064720365810762
+      ]
+    },
+    {
+      "model": "Qwen/Qwen3-8B",
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0.1,
+      "games": 28,
+      "questions": 280,
+      "low_probability_opportunities": 4,
+      "win_rate": 0.0,
+      "win_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "questions_per_win": null,
+      "questions_per_win_ci95": null,
+      "eig_per_question": 0.002683409465697701,
+      "eig_per_question_ci95": [
+        -1.1895246692412391e-17,
+        0.008050228397093117
+      ],
+      "enumeration_rate": 0.07142857142857142,
+      "enumeration_rate_ci95": [
+        0.0,
+        0.17857142857142858
+      ],
+      "predicate_tokens": 582.7678571428571,
+      "predicate_tokens_ci95": [
+        533.140625,
+        641.1683035714285
+      ],
+      "invalid_rate": 0.9285714285714286,
+      "invalid_rate_ci95": [
+        0.8214285714285714,
+        1.0
+      ],
+      "reask_after_low_probability_rate": 0.5,
+      "reask_after_low_probability_rate_ci95": [
+        0.0,
+        0.6666666666666666
+      ],
+      "format_error_rate": 0.09090909090909091,
+      "format_error_rate_ci95": [
+        0.09090909090909091,
+        0.09090909090909091
+      ],
+      "truncation_rate": 0.0,
+      "truncation_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "prompt_tokens_per_game": 43209.53571428572,
+      "prompt_tokens_per_game_ci95": [
+        40541.989285714284,
+        46398.87053571429
+      ],
+      "output_tokens_per_game": 6458.642857142857,
+      "output_tokens_per_game_ci95": [
+        5906.95,
+        7103.9776785714275
+      ],
+      "prompt_cache_hit_fraction": 0.8499711125272448,
+      "prompt_cache_hit_fraction_ci95": [
+        0.8434389690435649,
+        0.8612861990358276
+      ],
+      "reasoning_tokens_per_game": 0.0,
+      "reasoning_tokens_per_game_ci95": [
+        0.0,
+        0.0
+      ],
+      "action_tokens_per_game": 6447.642857142857,
+      "action_tokens_per_game_ci95": [
+        5895.95,
+        7092.9776785714275
+      ],
+      "context_overflow_rate": 0.0,
+      "context_overflow_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "raw_item_equality_attempt_rate": 0.8571428571428571,
+      "raw_item_equality_attempt_rate_ci95": [
+        0.7142857142857143,
+        0.9642857142857143
+      ],
+      "sampling_calls": 308,
+      "prompt_tokens": 1209867,
+      "output_tokens": 180842,
+      "prompt_cache_hit_tokens": 1028352,
+      "actual_usage_cost_usd": "0.184160",
+      "wins": 0,
+      "low_probability_reasks": 2,
+      "invalid_questions": 260,
+      "format_errors": 28,
+      "truncated_outputs": 0,
+      "early_guesses": 0,
+      "singleton_enumeration_questions": 0,
+      "large_name_list_questions": 20,
+      "valid_questions": 20,
+      "valid_attribute_only_questions": 0,
+      "zero_eig_valid_questions": 11,
+      "forecast_usd": "0.09903432",
+      "forecast_with_margin_usd": "0.148551480",
+      "win_rate_wilson_ci95": [
+        0,
+        0.12064720365810762
+      ]
+    },
+    {
+      "model": "Qwen/Qwen3-8B",
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0,
+      "games": 28,
+      "questions": 392,
+      "low_probability_opportunities": 0,
+      "win_rate": 0.0,
+      "win_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "questions_per_win": null,
+      "questions_per_win_ci95": null,
+      "eig_per_question": 0.0001681490110796982,
+      "eig_per_question_ci95": [
+        0.0,
+        0.0005044470332390945
+      ],
+      "enumeration_rate": 0.14285714285714285,
+      "enumeration_rate_ci95": [
+        0.03571428571428571,
+        0.2857142857142857
+      ],
+      "predicate_tokens": 2007.357142857143,
+      "predicate_tokens_ci95": [
+        1970.6607142857142,
+        2035.4107142857142
+      ],
+      "invalid_rate": 0.8571428571428571,
+      "invalid_rate_ci95": [
+        0.7142857142857143,
+        0.9642857142857143
+      ],
+      "reask_after_low_probability_rate": null,
+      "reask_after_low_probability_rate_ci95": null,
+      "format_error_rate": 0.010101010101010102,
+      "format_error_rate_ci95": [
+        0.002544529262086514,
+        0.02
+      ],
+      "truncation_rate": 0.7474747474747475,
+      "truncation_rate_ci95": [
+        0.5739348370927319,
+        0.8908629441624365
+      ],
+      "prompt_tokens_per_game": 225651.2857142857,
+      "prompt_tokens_per_game_ci95": [
+        225155.67410714287,
+        226280.90089285714
+      ],
+      "output_tokens_per_game": 28404.214285714286,
+      "output_tokens_per_game_ci95": [
+        28145.0,
+        28600.714285714286
+      ],
+      "prompt_cache_hit_fraction": 0.8673205622581999,
+      "prompt_cache_hit_fraction_ci95": [
+        0.8663316877488791,
+        0.8685670314899476
+      ],
+      "reasoning_tokens_per_game": 0.0,
+      "reasoning_tokens_per_game_ci95": [
+        0.0,
+        0.0
+      ],
+      "action_tokens_per_game": 28400.64285714286,
+      "action_tokens_per_game_ci95": [
+        28139.285714285714,
+        28598.785714285714
+      ],
+      "context_overflow_rate": 0.8571428571428571,
+      "context_overflow_rate_ci95": [
+        0.7142857142857143,
+        0.9642857142857143
+      ],
+      "raw_item_equality_attempt_rate": 0.6785714285714286,
+      "raw_item_equality_attempt_rate_ci95": [
+        0.5,
+        0.8571428571428571
+      ],
+      "sampling_calls": 396,
+      "prompt_tokens": 6318236,
+      "output_tokens": 795318,
+      "prompt_cache_hit_tokens": 5479936,
+      "actual_usage_cost_usd": "0.854564",
+      "wins": 0,
+      "low_probability_reasks": 0,
+      "invalid_questions": 336,
+      "format_errors": 4,
+      "truncated_outputs": 296,
+      "early_guesses": 0,
+      "singleton_enumeration_questions": 0,
+      "large_name_list_questions": 56,
+      "valid_questions": 56,
+      "valid_attribute_only_questions": 0,
+      "zero_eig_valid_questions": 55,
+      "forecast_usd": "0.2955708",
+      "forecast_with_margin_usd": "0.44335620",
+      "win_rate_wilson_ci95": [
+        0,
+        0.12064720365810762
+      ]
+    },
+    {
+      "model": "Qwen/Qwen3-8B",
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0.1,
+      "games": 28,
+      "questions": 392,
+      "low_probability_opportunities": 0,
+      "win_rate": 0.0,
+      "win_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "questions_per_win": null,
+      "questions_per_win_ci95": null,
+      "eig_per_question": 0.0014854304022185935,
+      "eig_per_question_ci95": [
+        0.0,
+        0.004456291206655781
+      ],
+      "enumeration_rate": 0.03571428571428571,
+      "enumeration_rate_ci95": [
+        0.0,
+        0.10714285714285714
+      ],
+      "predicate_tokens": 2016.4642857142858,
+      "predicate_tokens_ci95": [
+        1960.0,
+        2044.982142857143
+      ],
+      "invalid_rate": 0.9642857142857143,
+      "invalid_rate_ci95": [
+        0.8928571428571429,
+        1.0
+      ],
+      "reask_after_low_probability_rate": null,
+      "reask_after_low_probability_rate_ci95": null,
+      "format_error_rate": 0.002544529262086514,
+      "format_error_rate_ci95": [
+        0.0,
+        0.007594936708860759
+      ],
+      "truncation_rate": 0.9007633587786259,
+      "truncation_rate_ci95": [
+        0.7862595419847328,
+        0.9974489795918368
+      ],
+      "prompt_tokens_per_game": 223227.5357142857,
+      "prompt_tokens_per_game_ci95": [
+        219514.58839285714,
+        225137.75625
+      ],
+      "output_tokens_per_game": 28318.928571428572,
+      "output_tokens_per_game_ci95": [
+        27620.285714285714,
+        28671.785714285714
+      ],
+      "prompt_cache_hit_fraction": 0.877147292536715,
+      "prompt_cache_hit_fraction_ci95": [
+        0.876628279006182,
+        0.8780543713545865
+      ],
+      "reasoning_tokens_per_game": 0.0,
+      "reasoning_tokens_per_game_ci95": [
+        0.0,
+        0.0
+      ],
+      "action_tokens_per_game": 28317.535714285714,
+      "action_tokens_per_game_ci95": [
+        27617.35714285714,
+        28671.75
+      ],
+      "context_overflow_rate": 0.9642857142857143,
+      "context_overflow_rate_ci95": [
+        0.8928571428571429,
+        1.0
+      ],
+      "raw_item_equality_attempt_rate": 0.6785714285714286,
+      "raw_item_equality_attempt_rate_ci95": [
+        0.5,
+        0.8571428571428571
+      ],
+      "sampling_calls": 393,
+      "prompt_tokens": 6250371,
+      "output_tokens": 792930,
+      "prompt_cache_hit_tokens": 5482496,
+      "actual_usage_cost_usd": "0.839507",
+      "wins": 0,
+      "low_probability_reasks": 0,
+      "invalid_questions": 378,
+      "format_errors": 1,
+      "truncated_outputs": 354,
+      "early_guesses": 0,
+      "singleton_enumeration_questions": 0,
+      "large_name_list_questions": 14,
+      "valid_questions": 14,
+      "valid_attribute_only_questions": 0,
+      "zero_eig_valid_questions": 1,
+      "forecast_usd": "0.2955708",
+      "forecast_with_margin_usd": "0.44335620",
+      "win_rate_wilson_ci95": [
+        0,
+        0.12064720365810762
+      ]
+    },
+    {
+      "model": "Qwen/Qwen3-8B",
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0,
+      "games": 28,
+      "questions": 367,
+      "low_probability_opportunities": 0,
+      "win_rate": 0.0,
+      "win_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "questions_per_win": null,
+      "questions_per_win_ci95": null,
+      "eig_per_question": 0.0,
+      "eig_per_question_ci95": [
+        0.0,
+        0.0
+      ],
+      "enumeration_rate": 0.0,
+      "enumeration_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "predicate_tokens": 1957.125340599455,
+      "predicate_tokens_ci95": [
+        1785.6166219839142,
+        2045.0
+      ],
+      "invalid_rate": 1.0,
+      "invalid_rate_ci95": [
+        1.0,
+        1.0
+      ],
+      "reask_after_low_probability_rate": null,
+      "reask_after_low_probability_rate_ci95": null,
+      "format_error_rate": 0.002717391304347826,
+      "format_error_rate_ci95": [
+        0.0,
+        0.007978723404255319
+      ],
+      "truncation_rate": 0.9538043478260869,
+      "truncation_rate_ci95": [
+        0.8643617021276596,
+        1.0
+      ],
+      "prompt_tokens_per_game": 221138.07142857142,
+      "prompt_tokens_per_game_ci95": [
+        211464.57142857142,
+        226030.54732142857
+      ],
+      "output_tokens_per_game": 25693.285714285714,
+      "output_tokens_per_game_ci95": [
+        23831.85714285714,
+        26624.0
+      ],
+      "prompt_cache_hit_fraction": 0.8665200441999229,
+      "prompt_cache_hit_fraction_ci95": [
+        0.8655503630732292,
+        0.8684589880094515
+      ],
+      "reasoning_tokens_per_game": 0.0,
+      "reasoning_tokens_per_game_ci95": [
+        0.0,
+        0.0
+      ],
+      "action_tokens_per_game": 25692.678571428572,
+      "action_tokens_per_game_ci95": [
+        23830.035714285714,
+        26624.0
+      ],
+      "context_overflow_rate": 0.9642857142857143,
+      "context_overflow_rate_ci95": [
+        0.8928571428571429,
+        1.0
+      ],
+      "raw_item_equality_attempt_rate": 0.36239782016348776,
+      "raw_item_equality_attempt_rate_ci95": [
+        0.18528610354223432,
+        0.5432432432432432
+      ],
+      "sampling_calls": 368,
+      "prompt_tokens": 6191866,
+      "output_tokens": 719412,
+      "prompt_cache_hit_tokens": 5365376,
+      "actual_usage_cost_usd": "0.802240",
+      "wins": 0,
+      "low_probability_reasks": 0,
+      "invalid_questions": 367,
+      "format_errors": 1,
+      "truncated_outputs": 351,
+      "early_guesses": 0,
+      "singleton_enumeration_questions": 0,
+      "large_name_list_questions": 0,
+      "valid_questions": 0,
+      "valid_attribute_only_questions": 0,
+      "zero_eig_valid_questions": 0,
+      "forecast_usd": "0.56183232",
+      "forecast_with_margin_usd": "0.842748480",
+      "win_rate_wilson_ci95": [
+        0,
+        0.12064720365810762
+      ]
+    },
+    {
+      "model": "Qwen/Qwen3-8B",
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0.1,
+      "games": 28,
+      "questions": 367,
+      "low_probability_opportunities": 0,
+      "win_rate": 0.0,
+      "win_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "questions_per_win": null,
+      "questions_per_win_ci95": null,
+      "eig_per_question": 0.0,
+      "eig_per_question_ci95": [
+        0.0,
+        0.0
+      ],
+      "enumeration_rate": 0.0,
+      "enumeration_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "predicate_tokens": 1956.542234332425,
+      "predicate_tokens_ci95": [
+        1783.8954423592493,
+        2045.0
+      ],
+      "invalid_rate": 1.0,
+      "invalid_rate_ci95": [
+        1.0,
+        1.0
+      ],
+      "reask_after_low_probability_rate": null,
+      "reask_after_low_probability_rate_ci95": null,
+      "format_error_rate": 0.002717391304347826,
+      "format_error_rate_ci95": [
+        0.0,
+        0.007978723404255319
+      ],
+      "truncation_rate": 0.9538043478260869,
+      "truncation_rate_ci95": [
+        0.8643617021276596,
+        1.0
+      ],
+      "prompt_tokens_per_game": 221071.7142857143,
+      "prompt_tokens_per_game_ci95": [
+        211261.7857142857,
+        226033.32142857142
+      ],
+      "output_tokens_per_game": 25685.285714285714,
+      "output_tokens_per_game_ci95": [
+        23807.85714285714,
+        26624.0
+      ],
+      "prompt_cache_hit_fraction": 0.8880169460201021,
+      "prompt_cache_hit_fraction_ci95": [
+        0.8865334902921972,
+        0.891022483014012
+      ],
+      "reasoning_tokens_per_game": 0.0,
+      "reasoning_tokens_per_game_ci95": [
+        0.0,
+        0.0
+      ],
+      "action_tokens_per_game": 25684.678571428572,
+      "action_tokens_per_game_ci95": [
+        23806.035714285714,
+        26624.0
+      ],
+      "context_overflow_rate": 0.9642857142857143,
+      "context_overflow_rate_ci95": [
+        0.8928571428571429,
+        1.0
+      ],
+      "raw_item_equality_attempt_rate": 0.4332425068119891,
+      "raw_item_equality_attempt_rate_ci95": [
+        0.25,
+        0.6135135135135135
+      ],
+      "sampling_calls": 368,
+      "prompt_tokens": 6190008,
+      "output_tokens": 719188,
+      "prompt_cache_hit_tokens": 5496832,
+      "actual_usage_cost_usd": "0.781229",
+      "wins": 0,
+      "low_probability_reasks": 0,
+      "invalid_questions": 367,
+      "format_errors": 1,
+      "truncated_outputs": 351,
+      "early_guesses": 0,
+      "singleton_enumeration_questions": 0,
+      "large_name_list_questions": 0,
+      "valid_questions": 0,
+      "valid_attribute_only_questions": 0,
+      "zero_eig_valid_questions": 0,
+      "forecast_usd": "0.56183232",
+      "forecast_with_margin_usd": "0.842748480",
+      "win_rate_wilson_ci95": [
+        0,
+        0.12064720365810762
+      ]
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "domain": "animals",
+      "n": 32,
+      "noise": 0,
+      "games": 5,
+      "questions": 50,
+      "low_probability_opportunities": 0,
+      "win_rate": 0.0,
+      "win_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "questions_per_win": null,
+      "questions_per_win_ci95": null,
+      "eig_per_question": 0.06694618708184726,
+      "eig_per_question_ci95": [
+        0.031845009853194065,
+        0.09167583378684992
+      ],
+      "enumeration_rate": 0.0,
+      "enumeration_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "predicate_tokens": 0.36,
+      "predicate_tokens_ci95": [
+        0.18,
+        0.5804999999999927
+      ],
+      "invalid_rate": 0.92,
+      "invalid_rate_ci95": [
+        0.9,
+        0.96
+      ],
+      "reask_after_low_probability_rate": null,
+      "reask_after_low_probability_rate_ci95": null,
+      "format_error_rate": 0.8181818181818182,
+      "format_error_rate_ci95": [
+        0.7272727272727273,
+        0.8909090909090909
+      ],
+      "truncation_rate": 0.7636363636363637,
+      "truncation_rate_ci95": [
+        0.6545454545454545,
+        0.8545454545454545
+      ],
+      "prompt_tokens_per_game": 13344.8,
+      "prompt_tokens_per_game_ci95": [
+        13166.0,
+        13535.8
+      ],
+      "output_tokens_per_game": 5247.2,
+      "output_tokens_per_game_ci95": [
+        4991.0,
+        5419.4
+      ],
+      "prompt_cache_hit_fraction": 0.8632575984653198,
+      "prompt_cache_hit_fraction_ci95": [
+        0.8588942450752842,
+        0.8672034027039344
+      ],
+      "reasoning_tokens_per_game": 5187.0,
+      "reasoning_tokens_per_game_ci95": [
+        4916.8,
+        5370.4
+      ],
+      "action_tokens_per_game": 9.0,
+      "action_tokens_per_game_ci95": [
+        4.8,
+        13.2
+      ],
+      "context_overflow_rate": 0.0,
+      "context_overflow_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "raw_item_equality_attempt_rate": 0.0,
+      "raw_item_equality_attempt_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "sampling_calls": 55,
+      "prompt_tokens": 66724,
+      "output_tokens": 26236,
+      "prompt_cache_hit_tokens": 57600,
+      "actual_usage_cost_usd": "0.028878",
+      "wins": 0,
+      "low_probability_reasks": 0,
+      "invalid_questions": 46,
+      "format_errors": 45,
+      "truncated_outputs": 42,
+      "early_guesses": 0,
+      "singleton_enumeration_questions": 0,
+      "large_name_list_questions": 0,
+      "valid_questions": 4,
+      "valid_attribute_only_questions": 4,
+      "zero_eig_valid_questions": 0,
+      "forecast_usd": "0.04295775",
+      "forecast_with_margin_usd": "0.064436625",
+      "win_rate_wilson_ci95": [
+        0,
+        0.43449149475208104
+      ]
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "domain": "animals",
+      "n": 32,
+      "noise": 0.1,
+      "games": 5,
+      "questions": 50,
+      "low_probability_opportunities": 0,
+      "win_rate": 0.0,
+      "win_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "questions_per_win": null,
+      "questions_per_win_ci95": null,
+      "eig_per_question": 0.007591051694106692,
+      "eig_per_question_ci95": [
+        0.0,
+        0.022773155082320074
+      ],
+      "enumeration_rate": 0.0,
+      "enumeration_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "predicate_tokens": 0.46,
+      "predicate_tokens_ci95": [
+        0.28,
+        0.64
+      ],
+      "invalid_rate": 0.98,
+      "invalid_rate_ci95": [
+        0.94,
+        1.0
+      ],
+      "reask_after_low_probability_rate": null,
+      "reask_after_low_probability_rate_ci95": null,
+      "format_error_rate": 0.7090909090909091,
+      "format_error_rate_ci95": [
+        0.6181818181818182,
+        0.7818181818181819
+      ],
+      "truncation_rate": 0.6181818181818182,
+      "truncation_rate_ci95": [
+        0.5272727272727272,
+        0.6909090909090909
+      ],
+      "prompt_tokens_per_game": 13367.6,
+      "prompt_tokens_per_game_ci95": [
+        13211.0,
+        13550.2
+      ],
+      "output_tokens_per_game": 4723.4,
+      "output_tokens_per_game_ci95": [
+        4510.0,
+        4889.6
+      ],
+      "prompt_cache_hit_fraction": 0.9345581854633591,
+      "prompt_cache_hit_fraction_ci95": [
+        0.9314969627713959,
+        0.9394703099438475
+      ],
+      "reasoning_tokens_per_game": 4646.2,
+      "reasoning_tokens_per_game_ci95": [
+        4421.2,
+        4817.8
+      ],
+      "action_tokens_per_game": 14.4,
+      "action_tokens_per_game_ci95": [
+        11.2,
+        17.6
+      ],
+      "context_overflow_rate": 0.0,
+      "context_overflow_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "raw_item_equality_attempt_rate": 0.0,
+      "raw_item_equality_attempt_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "sampling_calls": 55,
+      "prompt_tokens": 66838,
+      "output_tokens": 23617,
+      "prompt_cache_hit_tokens": 62464,
+      "actual_usage_cost_usd": "0.025432",
+      "wins": 0,
+      "low_probability_reasks": 0,
+      "invalid_questions": 49,
+      "format_errors": 39,
+      "truncated_outputs": 34,
+      "early_guesses": 0,
+      "singleton_enumeration_questions": 0,
+      "large_name_list_questions": 0,
+      "valid_questions": 1,
+      "valid_attribute_only_questions": 1,
+      "zero_eig_valid_questions": 0,
+      "forecast_usd": "0.04295775",
+      "forecast_with_margin_usd": "0.064436625",
+      "win_rate_wilson_ci95": [
+        0,
+        0.43449149475208104
+      ]
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0,
+      "games": 5,
+      "questions": 50,
+      "low_probability_opportunities": 0,
+      "win_rate": 0.0,
+      "win_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "questions_per_win": null,
+      "questions_per_win_ci95": null,
+      "eig_per_question": 0.09847624358188614,
+      "eig_per_question_ci95": [
+        0.05198094743664816,
+        0.1436169593753544
+      ],
+      "enumeration_rate": 0.02,
+      "enumeration_rate_ci95": [
+        0.0,
+        0.06
+      ],
+      "predicate_tokens": 1.14,
+      "predicate_tokens_ci95": [
+        0.88,
+        1.4
+      ],
+      "invalid_rate": 0.84,
+      "invalid_rate_ci95": [
+        0.8,
+        0.88
+      ],
+      "reask_after_low_probability_rate": null,
+      "reask_after_low_probability_rate_ci95": null,
+      "format_error_rate": 0.6909090909090909,
+      "format_error_rate_ci95": [
+        0.6363636363636364,
+        0.7636363636363637
+      ],
+      "truncation_rate": 0.6727272727272727,
+      "truncation_rate_ci95": [
+        0.6363636363636364,
+        0.7454545454545455
+      ],
+      "prompt_tokens_per_game": 9576.4,
+      "prompt_tokens_per_game_ci95": [
+        9509.4,
+        9641.0
+      ],
+      "output_tokens_per_game": 4990.4,
+      "output_tokens_per_game_ci95": [
+        4842.6,
+        5193.4
+      ],
+      "prompt_cache_hit_fraction": 0.8500898041017502,
+      "prompt_cache_hit_fraction_ci95": [
+        0.8481222997673645,
+        0.8523212019060699
+      ],
+      "reasoning_tokens_per_game": 4913.2,
+      "reasoning_tokens_per_game_ci95": [
+        4760.2,
+        5127.0
+      ],
+      "action_tokens_per_game": 19.0,
+      "action_tokens_per_game_ci95": [
+        14.8,
+        22.8
+      ],
+      "context_overflow_rate": 0.0,
+      "context_overflow_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "raw_item_equality_attempt_rate": 0.02,
+      "raw_item_equality_attempt_rate_ci95": [
+        0.0,
+        0.06
+      ],
+      "sampling_calls": 55,
+      "prompt_tokens": 47882,
+      "output_tokens": 24952,
+      "prompt_cache_hit_tokens": 40704,
+      "actual_usage_cost_usd": "0.026043",
+      "wins": 0,
+      "low_probability_reasks": 0,
+      "invalid_questions": 42,
+      "format_errors": 38,
+      "truncated_outputs": 37,
+      "early_guesses": 0,
+      "singleton_enumeration_questions": 1,
+      "large_name_list_questions": 0,
+      "valid_questions": 8,
+      "valid_attribute_only_questions": 7,
+      "zero_eig_valid_questions": 2,
+      "forecast_usd": "0.0355344",
+      "forecast_with_margin_usd": "0.05330160",
+      "win_rate_wilson_ci95": [
+        0,
+        0.43449149475208104
+      ]
+    },
+    {
+      "model": "openai/gpt-oss-120b",
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0.1,
+      "games": 5,
+      "questions": 50,
+      "low_probability_opportunities": 0,
+      "win_rate": 0.0,
+      "win_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "questions_per_win": null,
+      "questions_per_win_ci95": null,
+      "eig_per_question": 0.057213822426420445,
+      "eig_per_question_ci95": [
+        0.05292002854535288,
+        0.06572924535026799
+      ],
+      "enumeration_rate": 0.0,
+      "enumeration_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "predicate_tokens": 0.58,
+      "predicate_tokens_ci95": [
+        0.46,
+        0.74
+      ],
+      "invalid_rate": 0.88,
+      "invalid_rate_ci95": [
+        0.84,
+        0.9
+      ],
+      "reask_after_low_probability_rate": null,
+      "reask_after_low_probability_rate_ci95": null,
+      "format_error_rate": 0.8,
+      "format_error_rate_ci95": [
+        0.7454545454545455,
+        0.8545454545454545
+      ],
+      "truncation_rate": 0.8,
+      "truncation_rate_ci95": [
+        0.7454545454545455,
+        0.8545454545454545
+      ],
+      "prompt_tokens_per_game": 9532.2,
+      "prompt_tokens_per_game_ci95": [
+        9475.4,
+        9587.0
+      ],
+      "output_tokens_per_game": 5203.0,
+      "output_tokens_per_game_ci95": [
+        5025.8,
+        5380.2
+      ],
+      "prompt_cache_hit_fraction": 0.9104299112481904,
+      "prompt_cache_hit_fraction_ci95": [
+        0.903002990355052,
+        0.9161800715765681
+      ],
+      "reasoning_tokens_per_game": 5144.4,
+      "reasoning_tokens_per_game_ci95": [
+        4963.2,
+        5325.6
+      ],
+      "action_tokens_per_game": 10.2,
+      "action_tokens_per_game_ci95": [
+        7.8,
+        13.2
+      ],
+      "context_overflow_rate": 0.0,
+      "context_overflow_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "raw_item_equality_attempt_rate": 0.0,
+      "raw_item_equality_attempt_rate_ci95": [
+        0.0,
+        0.0
+      ],
+      "sampling_calls": 55,
+      "prompt_tokens": 47661,
+      "output_tokens": 26015,
+      "prompt_cache_hit_tokens": 43392,
+      "actual_usage_cost_usd": "0.026154",
+      "wins": 0,
+      "low_probability_reasks": 0,
+      "invalid_questions": 44,
+      "format_errors": 44,
+      "truncated_outputs": 44,
+      "early_guesses": 0,
+      "singleton_enumeration_questions": 0,
+      "large_name_list_questions": 0,
+      "valid_questions": 6,
+      "valid_attribute_only_questions": 6,
+      "zero_eig_valid_questions": 0,
+      "forecast_usd": "0.0355344",
+      "forecast_with_margin_usd": "0.05330160",
+      "win_rate_wilson_ci95": [
+        0,
+        0.43449149475208104
+      ]
+    }
+  ]
+}

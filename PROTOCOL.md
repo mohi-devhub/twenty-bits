@@ -1,6 +1,6 @@
 # Phase 1 protocol
 
-This protocol is fixed before paid evaluation. A paid plan chooses its declared common slice from the frozen bank. No Tinker operations are authorized by this document.
+This protocol was fixed before paid evaluation. The user approved Phase 2 on 2026-11-18: indices 0 through 27 in all ten primary cells and five games in each of four N=32 reference cells. The public prompts and game rules stay fixed. evals/phase2.json records the approved models, output caps, and frozen sampling configuration. Training still needs the next gate approval.
 
 ## Game and observations
 
@@ -42,6 +42,6 @@ The bank has 200 games in each of ten cells. Animals uses N=32 and 128; relabele
 
 Training accepts animals only, from the fixed 200-row pool, at N=16,32,64,128. Paid animals candidates come from the disjoint 200 held-out rows. Tools, foods, synthetic, and every frozen game are excluded from training. Pilot development games use a separate namespace and are never counted as confirmatory evaluation. Checkpoint choice does not depend on frozen test scores: keep the scheduled endpoint for each seed.
 
-The planned policy cap is 2,048 generated tokens per turn, with thinking disabled and a 32K context window. If a rendered prompt plus allowed output cannot fit, log a context-limit loss before any service submission; never truncate the table. Output truncation is logged even when a complete legal action is recoverable. The gpt-oss reference is a limited 512-token sanity slice including reasoning, so its truncation rate must accompany any result.
+The approved policy cap is 2,048 generated tokens per turn, with thinking disabled and a 32K context window. If a rendered prompt plus allowed output cannot fit, log a context-limit loss before any service submission; never truncate the table. Output truncation is logged even when a complete legal action is recoverable. The gpt-oss reference is a limited 512-token sanity slice including reasoning, so its truncation rate must accompany any result.
 
 The native HF tokenizer revisions and chat templates are measured offline. The Phase 2 cookbook adapter must check token parity before paid sampling. Sampling settings will be fixed in the approved Phase 2 configuration. Any change after a run begins requires stopping at a gate.
