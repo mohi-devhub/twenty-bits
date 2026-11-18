@@ -1,0 +1,72 @@
+{
+  "counts": {
+    "games_reaching_singleton": 13,
+    "singleton_games_won": 2,
+    "early_guesses": 5,
+    "guesses": 29,
+    "guesses_with_singleton_posterior": 12,
+    "guesses_outside_candidate_table": 2,
+    "guesses_of_eliminated_candidates": 17,
+    "wrong_guesses_despite_singleton": 8,
+    "wins_with_singleton_posterior": 2,
+    "wins_without_singleton_posterior": 1
+  },
+  "examples": [
+    {
+      "game_id": "train-v1/seed20261120/animals/4/600002/p0",
+      "correct_item": "adult_male_short_beaked_echidna",
+      "remaining_item": "adult_male_short_beaked_echidna",
+      "guess": "juvenile_female_pelican",
+      "turns": [
+        {
+          "action": "ASK: adult",
+          "answer": "YES"
+        },
+        {
+          "action": "ASK: adult_female",
+          "answer": "INVALID"
+        },
+        {
+          "action": "ASK: adult_female",
+          "answer": "INVALID"
+        },
+        {
+          "action": "ASK: female",
+          "answer": "NO"
+        },
+        {
+          "action": "GUESS: juvenile_female_pelican",
+          "answer": "LOSS"
+        }
+      ]
+    },
+    {
+      "game_id": "train-v1/seed20261120/animals/4/600003/p0",
+      "correct_item": "juvenile_male_llama",
+      "remaining_item": "juvenile_male_llama",
+      "guess": "juvenile_male_humpback_whale",
+      "turns": [
+        {
+          "action": "ASK: long_neck",
+          "answer": "YES"
+        },
+        {
+          "action": "ASK: large",
+          "answer": "YES"
+        },
+        {
+          "action": "GUESS: juvenile_male_humpback_whale",
+          "answer": "LOSS"
+        }
+      ]
+    }
+  ],
+  "service_calls": 0,
+  "paired_greedy_reference": {
+    "games": 32,
+    "wins": 32,
+    "mean_questions_per_win": 2.5,
+    "mean_eig_per_question": 1.0
+  },
+  "interpretation": "Diagnostic observations on development games, not a paid frozen-set comparison. The greedy policy uses only logical consequences of the public table and answers. Selected singleton failures illustrate consistency errors and are not a performance sample."
+}

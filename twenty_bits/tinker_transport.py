@@ -172,7 +172,7 @@ class GuardedTinker:
                 > self.run_cap
             ):
                 raise BudgetError(
-                    "The probe's $1.50 limit, including active holds, would be exceeded."
+                    f"The run's ${self.run_cap} limit, including active holds, would be exceeded."
                 )
         return self.ledger.call(
             send,

@@ -1,0 +1,21 @@
+{
+  "tests_passed": 98,
+  "frozen_games_verified": 2000,
+  "historical_phase2_games_replayed": 300,
+  "historical_phase2_turns_replayed": 3779,
+  "alias_games_replayed": 32,
+  "qualification_games_replayed": 32,
+  "new_sampling_attempts_with_pre_dispatch_ids": 363,
+  "sft_forward_backward_operations": 36,
+  "sft_optimizer_operations": 36,
+  "full_context_training_tokens": 827254,
+  "all_mutations_single_dispatch_verified": true,
+  "all_supervised_losses_cross_entropy": true,
+  "rl_updates": 0,
+  "prior_ledger_entries_and_cap_approval_unchanged": true,
+  "older_excluded_holds_usd": "0.012813",
+  "bounded_checkpoint_storage_holds_usd": "0.100000",
+  "unexpected_active_entries": 0,
+  "completed_runners_service_calls": 0,
+  "completed_runner_ledger_bytes_unchanged": true
+}

@@ -1,6 +1,12 @@
 # Approved $50 budget and Phase 2
 
-The later learnability gate is [LEARNABILITY.md](LEARNABILITY.md). The authorized $1.50 prompt probe completed 32 games for $0.069563 in recorded usage, with $0.005618 in additional unresolved holds. Total project usage is $5.862788, holds are $0.012813, and $44.124399 remains. Its [new forecasts](research/learnability_forecast.json) supersede the Phase 2 pilot proposal below. No SFT or RL is approved. Main-run seed/update options still wait for measured pilot learning speed.
+The gpt-oss-120b reference is removed from all future plans. Its completed 20-game slice remains historical failure data because 157 of 220 generated turns exhausted the reasoning cap without an action. No further reference games or reference-model budget are allocated. The active model remains Qwen3-8B.
+
+The user approved an exact attribute-code alias probe capped at $0.25 including holds, followed conditionally by format SFT and qualification. The alias probe completed for $0.082031 and reached 72.6% pooled valid turns, below the declared 80% trigger. SFT and qualification then completed for $0.370867 with $0.100000 in storage holds, inside the conservative $2.51 combined cap. Qualification passed format at 92.0% but failed wins at 3/32. [ALIAS_GATE.md](ALIAS_GATE.md) is the current gate. Total usage is $6.315686, holds are $0.112813, and $43.571501 remains. No RL is authorized or scheduled.
+
+The earlier [LEARNABILITY.md](LEARNABILITY.md) and [forecasts](research/learnability_forecast.json) remain historical. Main-run seed/update options wait for a learnable policy and measured pilot learning speed.
+
+## Historical Phase 2 approval
 
 The user approved a $50 total cap, including active holds, on 2026-11-18. Phase 2 uses Qwen3-8B with thinking disabled, a 2,048-token output cap, 28 games in each of ten frozen cells, and a 20-game gpt-oss-120b reference. The 4B screen was dropped. [phase2.json](evals/phase2.json) fixes the sampling configuration. Training is not authorized yet.
 

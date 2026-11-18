@@ -32,14 +32,15 @@ def wilson(wins, total):
     return [max(0, middle - half), min(1, middle + half)]
 
 
-def main(partial=False):
-    config = json.loads((ROOT / "experiments/learnability_probe.json").read_text())
+def main(partial=False, *, config_path=None, games_path=None, output_path=None):
+    config_path = config_path or ROOT / "experiments/learnability_probe.json"
+    config = json.loads(config_path.read_text())
     records = json.loads(
-        (ROOT / "experiments/learnability_probe_games.json").read_text()
+        (games_path or ROOT / "experiments/learnability_probe_games.json").read_text()
     )
     records = {r["id"]: r for r in records}
     directory = ROOT / "runs" / config["run_id"]
-    out = ROOT / "results/learnability_probe"
+    out = output_path or ROOT / "results/learnability_probe"
     out.mkdir(parents=True, exist_ok=True)
     paths = sorted((directory / "games").glob("*.json"))
     source = (
@@ -71,7 +72,7 @@ def main(partial=False):
     used, valid_by_game = set(), {}
     for game in games:
         record = records[game["game_id"]]
-        replay = Game(record)
+        replay = Game(record, grammar_version=config.get("grammar_version", "names-v1"))
         valid = 0
         for index, turn in enumerate(game["turns"]):
             prompt = rendering.prompt(probe_messages(record, replay.turns))
@@ -140,7 +141,7 @@ def main(partial=False):
         )
         valid_by_game[game["game_id"]] = valid
     cells = []
-    for n in (8, 16):
+    for n in sorted({r["n"] for r in records.values()}):
         gs = [g for g in games if g["n"] == n]
         if not gs:
             continue
@@ -219,11 +220,30 @@ def main(partial=False):
         ),
         Decimal(0),
     )
-    assert run_spent + run_held <= Decimal("1.500000")
+    assert run_spent + run_held <= Decimal(config["run_cap_usd"])
     known_total = sum(
         (Decimal(r["actual_usd"]) for r in requests.values() if r.get("settled")),
         Decimal(0),
     )
+    operations = []
+    if config.get("training_kind") == "format_sft":
+        operation_paths = sorted((directory / "operations").glob("*.json"))
+        if operation_paths:
+            operations = [json.loads(p.read_text()) for p in operation_paths]
+        else:
+            operations = [
+                json.loads(line)
+                for line in gzip.open(out / "operations.jsonl.gz", "rt")
+            ]
+        known_total += sum(
+            (Decimal(op["actual_usd"]) for op in operations if op.get("settled")),
+            Decimal(0),
+        )
+        for op in operations:
+            assert op["completed"]
+            if op["key"].startswith("forward-"):
+                assert op["payload"]["loss_fn"] == "cross_entropy"
+                assert op["payload"]["dataset_sha256"] == config["training_data_sha256"]
     assert known_total == run_spent
     ledger_entries = {e["id"]: e for e in run_entries}
     for request in requests.values():
@@ -246,9 +266,19 @@ def main(partial=False):
         } or operation.startswith(
             ("create sampler ", "retrieve ", "inspect saved future ")
         )
+        if config.get("training_kind") == "format_sft":
+            allowed_metadata |= (
+                operation == "external weight download URLs"
+                or operation.startswith(("SFT ", "download adapter file "))
+            )
         assert allowed_metadata or operation.startswith("sample Qwen/Qwen3-8B ")
-    incident = json.loads(
-        (ROOT / "research/learnability_probe_incident.json").read_text()
+    incident_name = config.get(
+        "incident_record", "research/learnability_probe_incident.json"
+    )
+    incident = (
+        json.loads((ROOT / incident_name).read_text())
+        if incident_name
+        else {"approved_replacements": {}}
     )
     by_key = {r["key"]: r for r in requests.values()}
     for old_key, new_key in incident["approved_replacements"].items():
@@ -259,9 +289,7 @@ def main(partial=False):
         assert replacement["settled"] and replacement["entry_id"] in used
     assert used <= {e["id"] for e in run_entries if e["state"] == "settled"}
     result = {
-        "sampling_config_sha256": hashlib.sha256(
-            (ROOT / "experiments/learnability_probe.json").read_bytes()
-        ).hexdigest(),
+        "sampling_config_sha256": hashlib.sha256(config_path.read_bytes()).hexdigest(),
         "complete": not missing,
         "missing_games": missing,
         "games": len(games),
@@ -269,14 +297,16 @@ def main(partial=False):
         "cost": {
             "probe_spent_usd": str(run_spent),
             "probe_held_usd": str(run_held),
-            "probe_cap_usd": "1.500000",
+            "probe_cap_usd": config["run_cap_usd"],
             "project": {k: status[k] for k in status if k != "entries"},
         },
         "verification": {
             "replayed_turns": len(used),
             "used_entry_ids": sorted(used),
             "orphan_or_unavailable_outputs_used": 0,
-            "training_operations": 0,
+            "training_operations": sum(
+                op["key"].startswith("forward-") for op in operations
+            ),
             "pre_dispatch_ids_verified": len(used),
             "all_attempts_with_pre_dispatch_ids_verified": len(requests),
             "native_rendering_and_request_signatures_verified": len(used),
@@ -286,6 +316,81 @@ def main(partial=False):
         },
         "interpretation": "Training-pool development probe, noiseless only, no remaining-candidate feedback. Prompt and size differ from Phase 2, so this is not an isolated prompt treatment effect. Intervals resample complete games; missing games are listed and not scored as losses or wins.",
     }
+    if config.get("grammar_version") == "attribute-codes-v2":
+        valid = sum(c["valid_turns"] for c in cells)
+        total = sum(c["turns"] for c in cells)
+        n8_wins = sum(g["won"] for g in games if g["n"] == 8)
+        result.update(
+            grammar_version=config["grammar_version"],
+            pooled_valid_turns=valid,
+            pooled_turns=total,
+            pooled_valid_turn_rate=valid / total,
+            decision="pending"
+            if missing
+            else "skip_sft_propose_rl"
+            if valid / total >= 0.8 and n8_wins >= 1
+            else "run_approved_sft_then_qualify",
+            interpretation="Parser-only development re-probe. Initial prompts, candidate subsets, targets and requested generation seeds match the earlier prompt probe. No remaining-candidate feedback and no frozen-eval service calls.",
+        )
+        if config.get("evaluation_kind") == "format_qualification":
+            wins = sum(g["won"] for g in games)
+            result.update(
+                decision="pending"
+                if missing
+                else "qualified_stop_before_rl"
+                if valid / total >= config["qualification"]["valid_turn_rate_minimum"]
+                and wins >= config["qualification"]["wins_minimum"]
+                else "qualification_failed_stop_before_rl",
+                qualification_wins=wins,
+                interpretation="Post-SFT qualification on separate training-pool animals cases at N=4 and N=8. Neither these games nor frozen/held-out rows entered SFT gradients. The SFT uses fresh procedural toy tables and cross_entropy only; this is not RL.",
+            )
+            result["verification"].update(
+                sft_optimizer_operations=sum(
+                    op["key"].startswith("optim-") for op in operations
+                ),
+                rl_training_operations=0,
+            )
+            result["cost"].update(
+                scope="format SFT plus qualification",
+                gradient_usd=str(
+                    sum(
+                        (
+                            Decimal(op["actual_usd"])
+                            for op in operations
+                            if op["key"].startswith("forward-") and op.get("settled")
+                        ),
+                        Decimal(0),
+                    )
+                ),
+                sampling_usd=str(
+                    sum(
+                        (
+                            Decimal(r["actual_usd"])
+                            for r in requests.values()
+                            if r.get("settled")
+                        ),
+                        Decimal(0),
+                    )
+                ),
+            )
+        for cell in cells:
+            causes = Counter()
+            for game in games:
+                if game["n"] != cell["n"]:
+                    continue
+                names = records[game["game_id"]]["world"]["names"]
+                for turn in game["turns"]:
+                    if turn["invalid"]:
+                        causes[turn.get("error", "INVALID without diagnostic")] += 1
+                    elif turn["action"].startswith("GUESS: "):
+                        if "\n" in turn["action"]:
+                            causes["GUESS contains extra lines"] += 1
+                        elif turn["action"][7:].strip() not in names:
+                            causes["GUESS name outside candidate table"] += 1
+                    elif not turn["is_question"]:
+                        causes["Non-GUESS action after question budget"] += 1
+            assert sum(causes.values()) == cell["turns"] - cell["valid_turns"]
+            cell["remaining_invalid_turn_causes"] = dict(causes)
     (out / "summary.json").write_text(json.dumps(result, indent=2) + "\n")
     (out / "games.jsonl.gz").write_bytes(
         gzip.compress(
@@ -326,6 +431,28 @@ def main(partial=False):
             mtime=0,
         )
     )
+    if operations:
+        compact_operations = []
+        for op in operations:
+            row = {k: v for k, v in op.items() if k != "response"}
+            if "response" in op:
+                row["response_sha256"] = hashlib.sha256(
+                    json.dumps(op["response"], sort_keys=True).encode()
+                ).hexdigest()
+                if not op["key"].startswith("forward-"):
+                    row["response"] = op["response"]
+                else:
+                    row["reported_metrics"] = op["response"].get("metrics", {})
+            compact_operations.append(row)
+        (out / "operations.jsonl.gz").write_bytes(
+            gzip.compress(
+                "".join(
+                    json.dumps(row, separators=(",", ":")) + "\n"
+                    for row in compact_operations
+                ).encode(),
+                mtime=0,
+            )
+        )
     print(
         json.dumps(
             {

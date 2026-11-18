@@ -1,0 +1,148 @@
+{
+  "config_sha256": "d21178d6bcb1200a0a7ac85616f7b7090be61d588a9c395788f567082414b9d4",
+  "data_sha256": "4b013d7c8ead2bb8d596d1fa0bb3b759cc49cfda68e073c4d08296ff6ead7826",
+  "qualification_games_sha256": "6a4e1f0b5a8002da447b440ca3d73707dc223d66fe9c6a346c1a69acf5c16b49",
+  "native_supervision_prefixes_verified": 554,
+  "trainable_prompt_tokens": 0,
+  "cross_entropy_only": true,
+  "service_calls": 0,
+  "implementation_sha256": {
+    "twenty_bits/supervised.py": "5779866a83ec66c42fb5818afccfb188b1ecb6673cbd32847cb89038a6f7930a",
+    "twenty_bits/predicates.py": "498e0f3246273fedc4a9baf20b8ea63826209ab4705ed899d8cac06a3f56f977",
+    "twenty_bits/attributes.py": "4fea3de19f7763d26d85e8cf7bd86b450e3e625b9f49d1447909ab1fb3d1d2f2",
+    "twenty_bits/game.py": "117853df865b022482235290caa080b45effae6aa67b4a4324c7f23e45e37e79",
+    "twenty_bits/learnability.py": "f73a412bfee21edf81c218e907b46dd93a10420ea4d85e0fc5214ca0fe30da0f"
+  },
+  "forecast_usd": "0.500000",
+  "run_cap_usd": "2.510000",
+  "qualification_checks": [
+    {
+      "id": "train-v1/seed20261120/animals/4/600000/p0",
+      "initial_prompt_tokens": 534
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600001/p0",
+      "initial_prompt_tokens": 554
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600002/p0",
+      "initial_prompt_tokens": 569
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600003/p0",
+      "initial_prompt_tokens": 542
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600004/p0",
+      "initial_prompt_tokens": 564
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600005/p0",
+      "initial_prompt_tokens": 529
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600006/p0",
+      "initial_prompt_tokens": 555
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600007/p0",
+      "initial_prompt_tokens": 513
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600008/p0",
+      "initial_prompt_tokens": 542
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600009/p0",
+      "initial_prompt_tokens": 567
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600010/p0",
+      "initial_prompt_tokens": 506
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600011/p0",
+      "initial_prompt_tokens": 563
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600012/p0",
+      "initial_prompt_tokens": 504
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600013/p0",
+      "initial_prompt_tokens": 513
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600014/p0",
+      "initial_prompt_tokens": 529
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600015/p0",
+      "initial_prompt_tokens": 559
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600000/p0",
+      "initial_prompt_tokens": 687
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600001/p0",
+      "initial_prompt_tokens": 696
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600002/p0",
+      "initial_prompt_tokens": 656
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600003/p0",
+      "initial_prompt_tokens": 670
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600004/p0",
+      "initial_prompt_tokens": 670
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600005/p0",
+      "initial_prompt_tokens": 653
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600006/p0",
+      "initial_prompt_tokens": 667
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600007/p0",
+      "initial_prompt_tokens": 630
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600008/p0",
+      "initial_prompt_tokens": 633
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600009/p0",
+      "initial_prompt_tokens": 626
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600010/p0",
+      "initial_prompt_tokens": 656
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600011/p0",
+      "initial_prompt_tokens": 661
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600012/p0",
+      "initial_prompt_tokens": 693
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600013/p0",
+      "initial_prompt_tokens": 643
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600014/p0",
+      "initial_prompt_tokens": 669
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600015/p0",
+      "initial_prompt_tokens": 617
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 # Learnability gate
 
+This is the earlier gate report. The later conditional SFT approval, execution and failed qualification are recorded in [ALIAS_GATE.md](ALIAS_GATE.md). Statements below about unapproved proposals describe that earlier gate, not the current authorization state.
+
 Completed 2026-11-18. The 32-game prompt-only probe is complete. No SFT, RL, optimizer update, or extra reference evaluation ran. Training is not approved.
 
 The prompt change gives Qwen one win at N=8 and none at N=16. Valid-turn rates remain 22.2% and 9.9%. Most invalid questions still use table column codes instead of full attribute names. Recommend a short grammar warm start, followed by a qualification check, before any RL. Prompt and size both differ from Phase 2, so the probe is not a controlled estimate of the prompt's effect.

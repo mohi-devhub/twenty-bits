@@ -13,7 +13,9 @@ from .worlds import seed_for
 
 class TableEnv(Env):
     def __init__(self, record: dict, model: str, config: dict, *, message_builder=None):
-        self.game = Game(record)
+        self.game = Game(
+            record, grammar_version=config.get("grammar_version", "names-v1")
+        )
         self.model = model
         self.config = config
         self.rendering = Rendering(model, config)

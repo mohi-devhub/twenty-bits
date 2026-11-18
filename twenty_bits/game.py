@@ -6,6 +6,7 @@ import random
 from .information import entropy, expected_gain, update
 from .predicates import ParseError, lex, parse
 from .worlds import World
+from .attributes import attribute_aliases
 import numpy as np
 
 LOW_PROBABILITY = 0.20
@@ -13,9 +14,17 @@ CONFIDENCE = 0.95
 
 
 class Game:
-    def __init__(self, record: dict):
+    def __init__(self, record: dict, *, grammar_version="attribute-codes-v2"):
         self.record = record
         self.world = World.from_dict(record["world"])
+        if grammar_version not in {"names-v1", "attribute-codes-v2"}:
+            raise ValueError("Unknown grammar version.")
+        self.grammar_version = grammar_version
+        self.aliases = (
+            attribute_aliases(self.world.attributes)
+            if grammar_version == "attribute-codes-v2"
+            else {}
+        )
         self.target = record["target"]
         self.noise = record["noise"]
         if self.noise not in (0, 0.10) or not 0 <= self.target < len(self.world.names):
@@ -95,9 +104,12 @@ class Game:
                         "Only a final guess is allowed after the question budget."
                     )
                 text = action[5:].strip()
-                expression = parse(text)
+                expression = parse(text, aliases=self.aliases)
                 mask = expression.evaluate(
-                    self.world.attributes, self.world.names, self.world.rows
+                    self.world.attributes,
+                    self.world.names,
+                    self.world.rows,
+                    aliases=self.aliases,
                 )
                 turn["enumeration"] = expression.named_items > 0
                 turn["named_items"] = expression.named_items

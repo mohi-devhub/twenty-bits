@@ -1,0 +1,356 @@
+{
+  "sampling_config_sha256": "d21178d6bcb1200a0a7ac85616f7b7090be61d588a9c395788f567082414b9d4",
+  "complete": true,
+  "missing_games": [],
+  "games": 32,
+  "cells": [
+    {
+      "n": 4,
+      "noise": 0,
+      "games": 16,
+      "expected_games": 16,
+      "wins": 2,
+      "win_rate": 0.125,
+      "win_wilson_ci95": [
+        0.03497748774324047,
+        0.36022827265758695
+      ],
+      "valid_turns": 58,
+      "turns": 61,
+      "valid_turn_rate": 0.9508196721311475,
+      "valid_turn_ci95_game_bootstrap": [
+        0.8769230769230769,
+        1.0
+      ],
+      "outcomes": {
+        "valid_ASK": 43,
+        "other": 1,
+        "valid_GUESS": 15,
+        "INVALID": 2
+      },
+      "parse_errors": {
+        "Unknown attribute: adult_female": 2
+      },
+      "actual_usd_complete_games": "0.002829",
+      "cost_per_complete_game_usd": 0.0001768125,
+      "cost_per_game_ci95": [
+        0.0001605625,
+        0.0001925625
+      ],
+      "prompt_tokens": 34240,
+      "output_tokens": 391,
+      "prompt_cache_hit_tokens": 26368,
+      "reasoning_tokens": 0,
+      "mean_calls_per_game": 3.8125,
+      "mean_output_tokens_per_call": 6.409836065573771,
+      "format_error_rate": 0.0,
+      "truncation_rate": 0.0,
+      "metrics": {
+        "games": 16,
+        "questions": 45,
+        "low_probability_opportunities": 0,
+        "win_rate": 0.125,
+        "win_rate_ci95": [
+          0.0,
+          0.3125
+        ],
+        "questions_per_win": 3.0,
+        "questions_per_win_ci95": [
+          2.0,
+          4.0
+        ],
+        "eig_per_question": 0.48832636569667004,
+        "eig_per_question_ci95": [
+          0.4032760814571816,
+          0.5892192810738064
+        ],
+        "enumeration_rate": 0.0,
+        "enumeration_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "predicate_tokens": 2.088888888888889,
+        "predicate_tokens_ci95": [
+          1.836734693877551,
+          2.369565217391304
+        ],
+        "invalid_rate": 0.044444444444444446,
+        "invalid_rate_ci95": [
+          0.0,
+          0.13636363636363635
+        ],
+        "reask_after_low_probability_rate": null,
+        "reask_after_low_probability_rate_ci95": null
+      },
+      "remaining_invalid_turn_causes": {
+        "GUESS name outside candidate table": 1,
+        "Unknown attribute: adult_female": 2
+      }
+    },
+    {
+      "n": 8,
+      "noise": 0,
+      "games": 16,
+      "expected_games": 16,
+      "wins": 1,
+      "win_rate": 0.0625,
+      "win_wilson_ci95": [
+        0.01111934476464252,
+        0.28328737570298945
+      ],
+      "valid_turns": 68,
+      "turns": 76,
+      "valid_turn_rate": 0.8947368421052632,
+      "valid_turn_ci95_game_bootstrap": [
+        0.8289473684210527,
+        0.9518072289156626
+      ],
+      "outcomes": {
+        "valid_ASK": 56,
+        "other": 4,
+        "valid_GUESS": 12,
+        "INVALID": 4
+      },
+      "parse_errors": {
+        "Unknown attribute: sprays": 1,
+        "Unknown attribute: large_tongue": 1,
+        "Unknown attribute: adult_female_mallard": 1,
+        "Unknown attribute: herivore": 1
+      },
+      "actual_usd_complete_games": "0.004028",
+      "cost_per_complete_game_usd": 0.00025175,
+      "cost_per_game_ci95": [
+        0.0002209359375,
+        0.000284625
+      ],
+      "prompt_tokens": 52369,
+      "output_tokens": 446,
+      "prompt_cache_hit_tokens": 41600,
+      "reasoning_tokens": 0,
+      "mean_calls_per_game": 4.75,
+      "mean_output_tokens_per_call": 5.868421052631579,
+      "format_error_rate": 0.039473684210526314,
+      "truncation_rate": 0.0,
+      "metrics": {
+        "games": 16,
+        "questions": 60,
+        "low_probability_opportunities": 2,
+        "win_rate": 0.0625,
+        "win_rate_ci95": [
+          0.0,
+          0.1875
+        ],
+        "questions_per_win": 5.0,
+        "questions_per_win_ci95": [
+          5.0,
+          5.0
+        ],
+        "eig_per_question": 0.45321213572214597,
+        "eig_per_question_ci95": [
+          0.38097890717591304,
+          0.5415644087956006
+        ],
+        "enumeration_rate": 0.0,
+        "enumeration_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "predicate_tokens": 2.183333333333333,
+        "predicate_tokens_ci95": [
+          1.7930519814719508,
+          2.6333333333333333
+        ],
+        "invalid_rate": 0.06666666666666667,
+        "invalid_rate_ci95": [
+          0.015384615384615385,
+          0.13793103448275862
+        ],
+        "reask_after_low_probability_rate": 0.5,
+        "reask_after_low_probability_rate_ci95": [
+          0.0,
+          1.0
+        ]
+      },
+      "remaining_invalid_turn_causes": {
+        "Non-GUESS action after question budget": 3,
+        "Unknown attribute: sprays": 1,
+        "Unknown attribute: large_tongue": 1,
+        "Unknown attribute: adult_female_mallard": 1,
+        "Unknown attribute: herivore": 1,
+        "GUESS name outside candidate table": 1
+      }
+    }
+  ],
+  "cost": {
+    "probe_spent_usd": "0.370867",
+    "probe_held_usd": "0.100000",
+    "probe_cap_usd": "2.510000",
+    "project": {
+      "cap_usd": "50.000000",
+      "spent_usd": "6.315686",
+      "held_usd": "0.112813",
+      "available_usd": "43.571501",
+      "blocked": false
+    },
+    "scope": "format SFT plus qualification",
+    "gradient_usd": "0.364010",
+    "sampling_usd": "0.006857"
+  },
+  "verification": {
+    "replayed_turns": 137,
+    "used_entry_ids": [
+      "00fd5478-fc68-46d5-9d34-cfc762f44563",
+      "017c2fd4-65cb-47cf-a04c-1e31f77b8853",
+      "02340850-fa41-4a03-ae86-3b251b215b85",
+      "056baa04-317c-40af-911c-9948a8b229ae",
+      "059bebbb-ddc3-4c94-a514-98e252e661f3",
+      "06f3ed6b-e807-468b-80ad-ff2e8d042eab",
+      "08ac1b00-c468-4cff-a8fd-700baad185a1",
+      "09a3fc0f-1f55-4ee1-8407-157bbb8d151a",
+      "09fe9125-3bb1-4035-b476-35501121e3b0",
+      "0a9dbfcc-b7c2-46ab-bb57-69a42474f783",
+      "0ffa780f-ded3-4756-9910-6eb8f07e93f5",
+      "1063a082-515f-4a64-987a-7eeed06ecbf3",
+      "108c1125-8479-4a6d-ba5e-14b91ff2440a",
+      "10b8e12a-2573-4e10-a64f-5bbbff2a7d36",
+      "13aed2c7-beb6-4510-80a5-c5d5efa3f12e",
+      "14201523-6725-492b-8735-116ecc18e2dd",
+      "1450e7a7-3a8d-4ed1-8944-f1574261a228",
+      "155a1261-c314-405e-8188-db774389936d",
+      "1596cb7f-638c-4a1b-a9dc-3a1f4f7a99fe",
+      "187c9c81-1c43-490b-bc5d-323baaabdf76",
+      "194e7334-4200-486c-8992-af688ca8cc1a",
+      "1cd6ba73-3d26-46e6-a7fc-077d29023fdb",
+      "210aeb6a-8cdd-4a76-96d0-fd9ab961d3d6",
+      "2177e79a-ec77-4700-a88d-51f64053ffd5",
+      "236eacb4-bdfa-42a9-80a9-6f74d7527114",
+      "23919260-33c2-4e0b-868e-8dbaaf54a402",
+      "24bdaf92-cbbc-4e45-ba3b-4aae8af0e93c",
+      "2669e4fd-2c4a-4ed2-b0e9-b3ef271f47ce",
+      "26e8b4a4-4e4d-4b74-9f49-bb39ce43226a",
+      "295c9173-6f27-4e80-b839-8a69cbcc4b17",
+      "29dc4394-1e25-4038-80de-24471045acbe",
+      "2b8cd007-3eb0-4641-8c10-830c2fc0431f",
+      "2dd26127-e1e2-4810-8620-4828247d18e4",
+      "2f762c10-0b94-4997-be22-71b8e477b0fd",
+      "2f972c4f-9a58-44e9-a6a6-f7682e8c8747",
+      "30de956e-8735-4a28-b910-52e8de3e6045",
+      "32e03604-96af-4b94-a9db-a667b63b142f",
+      "330dfe66-528d-47a3-841f-b9a1599c5b98",
+      "3bc07025-07a5-483d-946c-f64099afccb2",
+      "3c2ffd51-ecbf-46cb-ab97-a96714e00c43",
+      "3e52fe7b-0ac7-49fd-af85-7836a3bdb61a",
+      "4232e578-079b-4a3c-93c3-c42e9642e250",
+      "4313c289-65b1-4e57-a1b8-eb45434899d5",
+      "4367d80a-3a21-4dd0-a114-e06fb77fcbd5",
+      "4430fa8d-49fe-4322-915a-c38deeee8d61",
+      "4597be55-9b97-48ed-bd45-b47485dcf104",
+      "462966aa-79b2-48f1-a33f-cfb8ae3a1963",
+      "47753905-06a4-4817-ae1c-d64944ff290f",
+      "4afa03b0-5dfe-4588-ad90-7d9199fa4548",
+      "4c0f99f6-04d4-4305-ba93-4a3f188e4dfe",
+      "4f13e6a5-744e-4285-a8ee-39e95049f1a1",
+      "5513c0ae-3060-45c6-8ddd-22ffe8659366",
+      "55f12519-772a-4bfb-8ec7-74d7115f351a",
+      "5bcae6b8-eeee-46de-ab0d-e6a7e2e57c67",
+      "5d5f7f3d-d725-47cc-aa3c-002bc6728616",
+      "5dcbf28c-614d-4f2a-9693-5e4e3dc73546",
+      "5e5f6b33-5ef7-452a-b3e0-26a53d183516",
+      "6076a33c-930b-4a85-8e61-9d6c165cc8b3",
+      "69a2b2d5-59e9-4f29-9614-25d7ba5f1c3b",
+      "6acc24e5-dd17-4707-b7da-43bc39e5f8c3",
+      "6c34ec73-9873-4df7-8be0-fc57e300aeab",
+      "6d41ffb4-c79c-4578-a2f9-f19d62f1bc31",
+      "6d906a7d-2ca8-4d81-ba95-05dd29f980e1",
+      "6e15dba8-a905-4e02-a546-962eaeb7827f",
+      "6ec079dd-32bf-4055-84c0-66a42c5735ae",
+      "70251d96-183a-43ad-a00c-1d96867d1a5e",
+      "71235f7d-2850-4920-94c7-ba366335ca5c",
+      "727d739e-6680-4af7-afc5-63d8ff9359b6",
+      "75351221-6f59-4a15-9a3b-e3c0da9fb561",
+      "76beb08b-a3e6-4093-8036-1bdee58d406f",
+      "78085c16-3a8a-4286-95b4-dd3d4e48b875",
+      "78dd83af-3dee-4a80-9f1a-d6f4a0d1a6c8",
+      "7942c53b-b536-458d-afcc-187721b02705",
+      "79969ace-8723-4ce9-90e2-fabcc394b310",
+      "79fae950-7fe0-42e4-9380-951d64bb8252",
+      "7e715d5a-676e-4500-a190-e3a03d7902d2",
+      "7f30455e-2642-4167-89f9-3b1b7a39662d",
+      "7fe34a0b-1a41-40db-a5a1-479841a16d04",
+      "7fee6eb6-b95d-4a8b-9649-6ee42f60b21a",
+      "802482a7-399c-464f-98c4-62f202e25f39",
+      "80bcd531-d07f-4d95-b9ef-3af1eb57536a",
+      "8423bf2b-0e77-435f-8a45-9ab7788f167c",
+      "85b62f59-2064-4e8d-ad36-c5b3c0bd0379",
+      "9141f1a3-780a-42d2-a594-1a43d4441c67",
+      "92cb0059-9f5f-4674-87c7-d515ae6ebada",
+      "96060a95-b044-4ef7-b408-316f1c0d1941",
+      "97096007-ee73-4434-a4ca-b79368ce858a",
+      "98834fa4-fdfe-43ec-a97c-b69f9400530e",
+      "995b0d0c-1c84-4fd3-a93c-65b08338fa2b",
+      "99d40a60-bd91-4d0e-a756-c9295224a4c0",
+      "9a4d1510-7455-4153-acf4-42ac4fbdd3d2",
+      "9a5dc924-64e5-4586-98fe-ec77503e0b23",
+      "9c135ab3-7a52-4bc7-ab8b-83476fed6c76",
+      "9f4394bd-1ec8-4c69-944e-651105a20360",
+      "a0230177-390f-49f4-a145-4cadad851742",
+      "a22c08d5-6b4d-4a8d-930e-f6e1f1006fcf",
+      "a4632091-8f63-4041-af08-4dab7ee59a0e",
+      "a5d81511-cd0d-493d-925a-6f3f41d08a08",
+      "a6a45842-a25b-487c-a060-529e5bb1d669",
+      "a6e75303-ff12-4ca9-b5f0-b1df51057eba",
+      "a895bd9e-e64b-4b45-8f3d-14c503348ea2",
+      "a8d80322-4ddc-4649-a452-80f1dcf60b0a",
+      "aae21bd7-e17c-4802-bdc4-0549ec85c94d",
+      "ab05dc2e-f586-4de9-a4af-20d803bed07f",
+      "ab9e3ada-7285-4813-aa9b-51715d9a4305",
+      "ac6bcd3a-30ee-47a7-b80e-f5698f24110d",
+      "ac7f12f7-d316-435c-9cd3-ac47118be6c2",
+      "acbab13e-c22e-4f07-8310-4cb740f29ce6",
+      "afe2b5fc-88f6-4676-b672-495018855888",
+      "b095bfb1-59ca-4312-baa4-4fe0a4ddba44",
+      "b2e22763-0a62-4f7b-8a10-60ca21aa9356",
+      "b57fb08a-dfd4-4493-a665-2452454d0030",
+      "b5c8a91d-f8f8-4cf7-8914-5c42bab2084f",
+      "ba66fcfe-f7f4-4ac1-8d89-af1cf5592a81",
+      "c02c6278-9903-41b3-b0c1-45d43a2a2797",
+      "c26ce2cb-0dd4-4103-b1a8-7a6392aa591a",
+      "c57a2062-3217-447e-ada6-2e223760dbea",
+      "ca9fd3a1-cb8b-43d0-acf7-ccfd5315a22d",
+      "cffaa1bd-66ea-4a11-b9ad-1499586fbc26",
+      "d00cdf53-ce79-437d-95f9-93223140cd8f",
+      "d17e3119-2de8-43f1-9709-067d21c58f88",
+      "d18bc1f4-6c6d-4a93-a483-b95680240ba6",
+      "d24edbbc-9291-478b-ba95-7edbb0bbf2d5",
+      "d2931c0d-7ae7-47c4-87a6-0f8deb2047fd",
+      "d39d77d2-6e9e-4dbf-b72b-401c43c84bd1",
+      "d80cf055-a508-4531-bf48-1cb5d195af89",
+      "de0c24b9-1dab-4b81-8728-2374d6704d0a",
+      "dffd9492-1db1-48cf-9491-31473d2360bb",
+      "e14cf2be-d5ec-4234-9f7f-eb92b0e4cebe",
+      "e30cf49c-476e-4989-9e12-67371173f28d",
+      "f0d07b8f-3c48-4f5f-932e-4c3916f81ebb",
+      "f7dce4d7-fdeb-4878-b229-856eea1cff1d",
+      "f8449109-b10d-424b-bcce-590f6acbb770",
+      "f87e006d-5468-4fd4-b72f-35c76a4de0c4",
+      "fa70fc95-a68d-4d36-bb18-bc9b7f1b4212",
+      "fc184729-be17-4d7f-a74d-ae17a83b4e90",
+      "ff55ce3d-e63a-4085-a7bb-6d630ff8661e"
+    ],
+    "orphan_or_unavailable_outputs_used": 0,
+    "training_operations": 36,
+    "pre_dispatch_ids_verified": 137,
+    "all_attempts_with_pre_dispatch_ids_verified": 137,
+    "native_rendering_and_request_signatures_verified": 137,
+    "exact_replacement_signatures_verified": 0,
+    "sft_optimizer_operations": 36,
+    "rl_training_operations": 0
+  },
+  "interpretation": "Post-SFT qualification on separate training-pool animals cases at N=4 and N=8. Neither these games nor frozen/held-out rows entered SFT gradients. The SFT uses fresh procedural toy tables and cross_entropy only; this is not RL.",
+  "grammar_version": "attribute-codes-v2",
+  "pooled_valid_turns": 126,
+  "pooled_turns": 137,
+  "pooled_valid_turn_rate": 0.9197080291970803,
+  "decision": "qualification_failed_stop_before_rl",
+  "qualification_wins": 3
+}

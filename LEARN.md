@@ -49,3 +49,11 @@ Valid syntax and useful questions are separate. The saved base games mostly repe
 Random valid single-attribute play wins 89.7% at N=4 and 76.3% at N=8 under the declared final-guess rule. Smaller games can supply wins once syntax works. A group's returns can still vary through question costs when every game loses, so reward variance alone does not prove a useful win signal. The proposed format warm start teaches grammar, table tracking, and when to guess. It chooses no question for information gain. Its synthetic toy data would change how we describe later synthetic transfer, and it still needs approval.
 
 A future ID does not preserve a result forever. Network failures left three probe responses expired and another unavailable. The user approved exact replacements while keeping their cost holds. Recovery now recreates the client and collects all recoverable saved futures before sending new work. A 408 keeps the same request and hold. [LEARNABILITY.md](LEARNABILITY.md) records the measured latency, proposed checks, and revised budget.
+
+## Attribute codes and format SFT
+
+The table already showed short column codes, so accepting those codes as exact aliases removed an unnecessary mismatch. One shared function now creates both the header and parser mapping. Names after `item ==` still mean items. Historical results keep their original grammar, and frozen game files and prompt hashes do not change.
+
+The alias probe reached 72.6% valid turns, below the agreed 80% trigger. That activated the user's conditional format SFT approval. We trained only the current assistant action on random-question toy games. Training loss fell and qualification reached 92.0% valid turns, but only 3/32 games won. Seventeen guesses named candidates already ruled out by answers. The greedy script won all 32 of those cases. Valid grammar and informative questions are not enough if the final guess ignores the evidence.
+
+This warm start uses cross-entropy, not RL. It introduces an attribute-question prior and exposure to random-table tasks, so future strategy and transfer claims need that disclosure and a warm-start control. The adapter is saved locally. Qualification missed its win requirement, so we stopped before RL. [ALIAS_GATE.md](ALIAS_GATE.md) records the numbers, holds, and next decision.

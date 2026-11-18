@@ -5,20 +5,13 @@ from functools import cache
 import json
 from transformers import AutoTokenizer
 from .worlds import ROOT, World
+from .attributes import attribute_code
 
 RULES = """You play Twenty Questions. Identify one hidden item from the table. After each item name, the listed column codes are true; every omitted code is false. Use full attribute names from the code=name mapping in questions. The table defines truth, even if your world knowledge differs. Output exactly one line: ASK: <Boolean expression> or GUESS: <exact item name>. Expressions use attribute identifiers, AND, OR, NOT, parentheses, and item == <item name>. Quote names containing spaces with JSON double quotes. A wrong guess ends the game. An invalid question costs a question. You may use any legal Boolean expression, including lists of item equalities. Do not explain or show reasoning."""
 
 
 def prefix(world: World) -> str:
-    def code(index: int) -> str:
-        result = ""
-        while True:
-            result = chr(97 + index % 26) + result
-            index = index // 26 - 1
-            if index < 0:
-                return result
-
-    codes = [code(i) for i in range(len(world.attributes))]
+    codes = [attribute_code(i) for i in range(len(world.attributes))]
     header = (
         "DOMAIN "
         + world.domain

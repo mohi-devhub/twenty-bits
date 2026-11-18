@@ -2,6 +2,7 @@
 
 import asyncio
 import argparse
+from decimal import Decimal
 import fcntl
 import hashlib
 import json
@@ -17,27 +18,38 @@ from twenty_bits.tinker_transport import GuardedTinker, NetworkInterruption, sav
 from twenty_bits.worlds import ROOT
 
 
-async def run_once(defer_unrecoverable=False):
-    config_path = ROOT / "experiments/learnability_probe.json"
+async def run_once(
+    defer_unrecoverable=False,
+    *,
+    config_path=None,
+    proof_path=None,
+    games_path=None,
+    results_path=None,
+    approved_run_cap="1.500000",
+):
+    config_path = config_path or ROOT / "experiments/learnability_probe.json"
+    games_path = games_path or ROOT / "experiments/learnability_probe_games.json"
+    results_path = results_path or ROOT / "results/learnability_probe"
     config = json.loads(config_path.read_text())
     proof = json.loads(
-        (ROOT / "research/learnability_probe_rendering.json").read_text()
+        (proof_path or ROOT / "research/learnability_probe_rendering.json").read_text()
     )
     for path, field in [
         (config_path, "config_sha256"),
-        (ROOT / "experiments/learnability_probe_games.json", "games_sha256"),
+        (games_path, "games_sha256"),
         (ROOT / "twenty_bits/learnability.py", "prompt_code_sha256"),
     ]:
         if hashlib.sha256(path.read_bytes()).hexdigest() != proof[field]:
             raise RuntimeError("The prepared probe changed. No service call was made.")
-    if config["training_authorized"] or config["run_cap_usd"] != "1.500000":
-        raise RuntimeError("This runner authorizes inference only, within $1.50.")
-    records = json.loads(
-        (ROOT / "experiments/learnability_probe_games.json").read_text()
-    )
+    for name, digest in proof.get("implementation_sha256", {}).items():
+        if hashlib.sha256((ROOT / name).read_bytes()).hexdigest() != digest:
+            raise RuntimeError("The declared grammar implementation changed.")
+    if config["training_authorized"] or config["run_cap_usd"] != approved_run_cap:
+        raise RuntimeError("This runner authorizes only the approved inference cap.")
+    records = json.loads(games_path.read_text())
     if records != probe_records():
         raise RuntimeError("The probe no longer matches its training-pool factory.")
-    saved_summary = ROOT / "results/learnability_probe/summary.json"
+    saved_summary = results_path / "summary.json"
     if saved_summary.exists():
         summary = json.loads(saved_summary.read_text())
         if summary.get("complete") and summary.get("games") == 32:
@@ -88,9 +100,14 @@ async def run_once(defer_unrecoverable=False):
                 flush=True,
             )
             return
-        incident_path = ROOT / "research/learnability_probe_incident.json"
+        incident_name = config.get(
+            "incident_record", "research/learnability_probe_incident.json"
+        )
+        incident_path = ROOT / incident_name if incident_name else None
         incident = (
-            json.loads(incident_path.read_text()) if incident_path.exists() else {}
+            json.loads(incident_path.read_text())
+            if incident_path and incident_path.exists()
+            else {}
         )
         approved = incident.get("approved_replacements", {})
         if approved and incident.get("replacement_approval") != "approved":
@@ -98,13 +115,19 @@ async def run_once(defer_unrecoverable=False):
         transport = GuardedTinker(
             config,
             directory,
-            usage_path=ROOT / "results/learnability_probe/usage.jsonl",
+            usage_path=results_path / "usage.jsonl",
             run_cap_usd=config["run_cap_usd"],
             approved_replacements=approved,
         )
-        # A complete run's sum of maximum per-call holds is below this limit.
+        # Admission uses a forecast. The per-call guard enforces the run cap.
         transport.ledger.check_run(
-            estimate_usd="0", max_cost_usd=proof["full_cap_hold_envelope_usd"]
+            estimate_usd=proof.get("forecast_usd", "0"),
+            max_cost_usd=str(
+                min(
+                    Decimal(proof["full_cap_hold_envelope_usd"]),
+                    Decimal(approved_run_cap),
+                )
+            ),
         )
         try:
             # This runs before even checking capabilities or making a new sampler.
@@ -150,10 +173,12 @@ async def run_once(defer_unrecoverable=False):
                     raise RuntimeError("Cookbook rollout returned an incomplete game.")
                 result = env.result()
                 result.update(
-                    policy="prompt_probe",
+                    policy=config.get("policy", "prompt_probe"),
                     prompt_version=config["prompt_version"],
                     trajectory_transitions=len(trajectory.transitions),
                 )
+                if "grammar_version" in config:
+                    result["grammar_version"] = config["grammar_version"]
                 save_json(path, result)
                 completed += 1
                 print(
@@ -210,10 +235,10 @@ async def run_once(defer_unrecoverable=False):
             raise failure
 
 
-async def main(defer_unrecoverable=False):
+async def main(defer_unrecoverable=False, **run_options):
     while True:
         try:
-            return await run_once(defer_unrecoverable)
+            return await run_once(defer_unrecoverable, **run_options)
         except NetworkInterruption:
             print(
                 "Network interrupted. HTTP tasks drained; reconnecting to collect all pending futures before new submissions.",

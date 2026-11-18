@@ -1,0 +1,81 @@
+{
+  "run_id": "format-warmstart-v1",
+  "approval_date": "2026-11-18",
+  "approved_cap_usd": "50.000000",
+  "primary_model": "Qwen/Qwen3-8B",
+  "primary_games_per_cell": 28,
+  "primary_output_cap": 2048,
+  "primary_thinking": false,
+  "reference_model": null,
+  "reference_games_per_cell": 0,
+  "reference_sizes": [],
+  "reference_output_cap": 512,
+  "reference_reasoning_effort": "medium",
+  "reference_template_date": "2026-11-18",
+  "temperature": 0.7,
+  "top_p": 1.0,
+  "top_k": -1,
+  "context_window": 32768,
+  "sampling_seed_namespace": "format-qualification-policy-v1",
+  "groups_per_training_update": 1,
+  "games_per_training_group": 8,
+  "training_authorized": true,
+  "pilot_condition": "A",
+  "concurrent_games": 4,
+  "cost_source": "research/tinker-models-2026-11-17.json",
+  "rendering_proof": "research/phase2_rendering.json",
+  "prompt_version": "grammar-examples-v1",
+  "active_models": [
+    "Qwen/Qwen3-8B"
+  ],
+  "display_name": "Twenty Bits conditional format warm start",
+  "run_cap_usd": "2.510000",
+  "sizes": [
+    8,
+    16
+  ],
+  "games_per_size": 16,
+  "noise": 0,
+  "remaining_candidate_feedback": false,
+  "grammar_version": "attribute-codes-v2",
+  "policy": "format_sft",
+  "incident_record": null,
+  "rl_training_authorized": false,
+  "training_kind": "format_sft",
+  "evaluation_kind": "format_qualification",
+  "training_data": "experiments/format_warmstart_proposal.jsonl.gz",
+  "training_data_sha256": "4b013d7c8ead2bb8d596d1fa0bb3b759cc49cfda68e073c4d08296ff6ead7826",
+  "examples": 554,
+  "tokens_per_epoch": 413627,
+  "epochs": 2,
+  "batch_size": 32,
+  "updates": 36,
+  "lora": {
+    "rank": 32,
+    "seed": 11,
+    "train_mlp": true,
+    "train_attn": true,
+    "train_unembed": true
+  },
+  "adam": {
+    "learning_rate": 0.0001,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "eps": 1e-12,
+    "weight_decay": 0.0,
+    "grad_clip_norm": 0.0
+  },
+  "shuffle_seed": 11,
+  "checkpoint_ttl_seconds": 7200,
+  "qualification": {
+    "valid_turn_rate_minimum": 0.9,
+    "wins_minimum": 8,
+    "games": 32,
+    "sizes": [
+      4,
+      8
+    ],
+    "stop_before_rl": true
+  },
+  "decision_source_sha256": "c9f81d4c92684a036e0d5f33244fbaee60b339f91ffbe79460396ccd34a5aa53"
+}

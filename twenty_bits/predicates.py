@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 from dataclasses import dataclass
+from collections.abc import Mapping
 import json
 import re
 import numpy as np
@@ -21,7 +22,12 @@ class Expr:
     children: tuple[Expr, ...] = ()
 
     def evaluate(
-        self, attributes: tuple[str, ...], names: tuple[str, ...], rows: np.ndarray
+        self,
+        attributes: tuple[str, ...],
+        names: tuple[str, ...],
+        rows: np.ndarray,
+        *,
+        aliases: Mapping[str, str] | None = None,
     ) -> np.ndarray:
         values = {}
         stack = [(self, False)]
@@ -32,9 +38,10 @@ class Expr:
                 stack.extend((child, False) for child in reversed(node.children))
                 continue
             if node.kind == "attribute":
-                if node.value not in attributes:
+                name = (aliases or {}).get(node.value, node.value)
+                if name not in attributes:
                     raise ParseError(f"Unknown attribute: {node.value}")
-                value = rows[:, attributes.index(node.value)].astype(bool)
+                value = rows[:, attributes.index(name)].astype(bool)
             elif node.kind == "item":
                 if node.value not in names:
                     raise ParseError(f"Unknown item: {node.value}")
@@ -73,7 +80,7 @@ def lex(text: str) -> list[str]:
     return tokens
 
 
-def parse(text: str) -> Expr:
+def parse(text: str, *, aliases: Mapping[str, str] | None = None) -> Expr:
     tokens = lex(text)
     position = 0
 
@@ -96,7 +103,10 @@ def parse(text: str) -> Expr:
         elif token == "(":
             left = expression(0, depth + 1)
             take(")")
-        elif token == "item":
+        elif token == "item" and (
+            token not in (aliases or {})
+            or (position < len(tokens) and tokens[position] == "==")
+        ):
             take("==")
             name = take()
             if name in {"AND", "OR", "NOT", "(", ")", "=="}:
@@ -105,7 +115,9 @@ def parse(text: str) -> Expr:
                 left = Expr("item", json.loads(name) if name.startswith('"') else name)
             except (ValueError, TypeError) as exc:
                 raise ParseError("Malformed quoted item name.") from exc
-        elif re.fullmatch(r"[a-z_][a-z_0-9]*", token) and token != "item":
+        elif token in (aliases or {}) or (
+            re.fullmatch(r"[a-z_][a-z_0-9]*", token) and token != "item"
+        ):
             left = Expr("attribute", token)
         else:
             raise ParseError(

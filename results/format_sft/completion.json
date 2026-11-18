@@ -1,0 +1,35 @@
+{
+  "config_sha256": "d21178d6bcb1200a0a7ac85616f7b7090be61d588a9c395788f567082414b9d4",
+  "training_model_id": "710e923c-7d82-5df6-8e70-f37f778c9e88:train:0",
+  "sampler_id": "710e923c-7d82-5df6-8e70-f37f778c9e88:sample:0",
+  "checkpoints": {
+    "native": {
+      "type": "save_weights_for_sampler",
+      "path": "tinker://710e923c-7d82-5df6-8e70-f37f778c9e88:train:0/sampler_weights/format-warmstart",
+      "size_bytes": null,
+      "sampling_session_id": null
+    },
+    "external": {
+      "type": "save_weights_external",
+      "path": "tinker://710e923c-7d82-5df6-8e70-f37f778c9e88:train:0/external_weights/format-warmstart",
+      "size_bytes": 369221544
+    }
+  },
+  "adapter_files": {
+    "adapter_config.json": {
+      "bytes": 934,
+      "sha256": "7c4821f8f443de1d52d092093c5bdb57bafcfe431bd83b0c28b51852283a86bd"
+    },
+    "adapter_model.safetensors": {
+      "bytes": 369220610,
+      "sha256": "eb793c19a29e6737aba31fad03ba5c296081a4eed59baea55fc8a07ff2fa3c50"
+    }
+  },
+  "updates": 36,
+  "qualification_games": 32,
+  "rl_updates": 0,
+  "run_budget": {
+    "spent_usd": "0.370867",
+    "held_usd": "0.100000"
+  }
+}

@@ -61,7 +61,7 @@ def main():
     }
     cost = Decimal(0)
     for saved in games:
-        game = Game(records[saved["game_id"]])
+        game = Game(records[saved["game_id"]], grammar_version="names-v1")
         for turn_index, turn in enumerate(saved["turns"]):
             journal = by_entry[turn["usage"]["entry_id"]]
             rendering = renderings[saved["model"]]
