@@ -46,5 +46,8 @@
   "sample_text": "READY.<|im_end|>",
   "sample_request_id": "b94f0db9-db63-5778-8f9b-aa824d853a8d:sample:0:0",
   "sample_cost_usd": "0.000006",
-  "sample_output_tokens": 3
+  "sample_output_tokens": 3,
+  "api_listing_verification": "research/native_persistence_api_verification.json",
+  "api_verified_at": "2026-11-18T20:24:43.218534+00:00",
+  "user_console_confirmation_pending": true
 }

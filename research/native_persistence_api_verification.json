@@ -1,0 +1,58 @@
+{
+  "requested_at": "2026-11-18T20:24:29.425749+00:00",
+  "browser_used": false,
+  "listing_endpoint": "/api/v1/checkpoints",
+  "checkpoint_rows": [
+    {
+      "checkpoint_type": "sampler",
+      "time": "2026-11-18T20:13:01.970181Z",
+      "size_bytes": 369266765,
+      "public": false,
+      "user_metadata": null,
+      "expires_at": null,
+      "deleted_at": null,
+      "checkpoint_id": "sampler_weights/persistence-smoke-20261119",
+      "tinker_path": "tinker://0bf5f21e-507e-50ac-94f6-50cb387aa043:train:0/sampler_weights/persistence-smoke-20261119",
+      "base_model": "Qwen/Qwen3-8B",
+      "owner": "tml:organization_user:b91ce9f2-ec42-4d67-9e54-063e8d3ba6ee"
+    },
+    {
+      "checkpoint_type": "training",
+      "time": "2026-11-18T20:12:52.594641Z",
+      "size_bytes": 1107556469,
+      "public": false,
+      "user_metadata": null,
+      "expires_at": null,
+      "deleted_at": null,
+      "checkpoint_id": "weights/persistence-smoke-20261119",
+      "tinker_path": "tinker://0bf5f21e-507e-50ac-94f6-50cb387aa043:train:0/weights/persistence-smoke-20261119",
+      "base_model": "Qwen/Qwen3-8B",
+      "owner": "tml:organization_user:b91ce9f2-ec42-4d67-9e54-063e8d3ba6ee"
+    }
+  ],
+  "list_pages": [
+    {
+      "offset": 0,
+      "returned": 5,
+      "cursor": {
+        "offset": 0,
+        "limit": 100,
+        "total_count": 5
+      }
+    }
+  ],
+  "user_console_confirmation_pending": true,
+  "A23_started": false,
+  "test_files_deleted": false,
+  "listing_collected_at": "2026-11-18T20:24:36.536882+00:00",
+  "fresh_client_sample_passed": true,
+  "sample_collected_at": "2026-11-18T20:24:43.218534+00:00",
+  "source_finished_before_listing_and_sampling": true,
+  "fresh_session_id": "75be327f-297d-5e99-9578-f625990f71d6",
+  "sampler_path": "tinker://0bf5f21e-507e-50ac-94f6-50cb387aa043:train:0/sampler_weights/persistence-smoke-20261119",
+  "sample_request_id": "75be327f-297d-5e99-9578-f625990f71d6:sample:0:0",
+  "request_id_saved_before_dispatch": true,
+  "raw_sample_text": "READY.<|im_end|>",
+  "output_tokens": 3,
+  "sample_cost_usd": "0.000006"
+}

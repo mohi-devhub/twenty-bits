@@ -1,11 +1,11 @@
 {
-  "recorded_at": "2026-11-18T20:22:26.001138+00:00",
+  "recorded_at": "2026-11-18T20:25:28.876148+00:00",
   "prior_ledger_entries_and_approvals_unchanged": true,
   "budget": {
     "cap_usd": "50.000000",
-    "spent_usd": "11.015856",
+    "spent_usd": "11.015862",
     "held_usd": "1.131236",
-    "available_usd": "37.852908",
+    "available_usd": "37.852902",
     "blocked": false
   },
   "A23_sampling_or_training_submitted": false,
@@ -17,6 +17,12 @@
   "in_flight_HTTP_operations": 0,
   "A11_suffix_and_hard_mode": "not run: A11 checkpoint wasn't persisted, external uploads unavailable",
   "remaining_U_including_margin_and_suffix_ceiling_usd": "28.463185505159925",
-  "next_action": "Console verification, exact test checkpoint cleanup, then run scripts/run_A23_stage.py with caffeinate.",
-  "unit_tests_passed": 154
+  "next_action": "User cross-checks both saved test files in the console and confirms. Keep the files; no A23 work until confirmation.",
+  "unit_tests_passed": 154,
+  "browser_authorized": false,
+  "verification_method": "SDK/API only",
+  "user_confirmation_required_before_A23": true,
+  "native_account_wide_API_listing_passed": true,
+  "fresh_client_sample_after_listing_passed": true,
+  "fresh_API_verification_session_finished": true
 }

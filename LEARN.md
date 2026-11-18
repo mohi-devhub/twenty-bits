@@ -91,3 +91,7 @@ Transfer got worse. Every one of the trained model's 276 synthetic invalid quest
 ## Permanent endpoint storage, before A23
 
 A downloaded adapter is useful only when the platform permits loading it again. This account cannot upload external weights, and A11's hosted files expired. We keep its local archive, but its deferred suffix and hard-mode evaluations cannot run. Named native saves solve that availability problem. The smoke test saves both training state and sampler weights without expiry, finishes the source session, and samples from a new client. The console must also show the files and their expiry before the test files are deleted and A23 starts. Storage has its own priced holds; removing a file does not settle an unknown bill. The science settings stay fixed, and the diagnostic parser stays outside primary training and scoring.
+
+## API verification before the A23 confirmation
+
+We can verify persistence without opening a browser. The API lists the saved test files with their exact names, paths, byte counts and expiration values. A new client then samples from the listed sampler path after the saving session has finished. The user checks the console separately and confirms before A23. We leave both test files in place for that check, and the existing storage holds stay reserved.

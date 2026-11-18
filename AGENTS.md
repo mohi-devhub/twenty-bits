@@ -1,3 +1,7 @@
+# Verification update (2026-11-19)
+
+The user forbids browser access. Verify test checkpoint metadata through the SDK/API, report checkpoint_id, tinker_path, size_bytes and expires_at exactly, then sample in a fresh client. The user will cross-check the console and must confirm before A23. Do not delete the test files until that cross-check; do not start A23 from API success alone. Read research/native_persistence_api_verification.json when available.
+
 # Latest approved scope (2026-11-19)
 
 Read research/native_persistence_approval.json. A11 suffix and hard mode are not run because its checkpoint was not persisted and external uploads are unavailable. Keep the local adapter archive only. Verify native no-expiry training and sampler checkpoints in a throwaway session, confirm console bytes/Never/path, finish its source and sample with a fresh client, then delete only the test files. Before A23, this test must pass. A23 is approved for 30 unchanged updates; save both native endpoint types with no expiry, then immediately run frozen primary, suffix diagnostic (separate $1.50 cap), and raw/endpoint hard-mode evaluations. Stop at A23 gate before B41. Never mutate Pixel Miser checkpoints. Older scope/pause records below are historical and superseded by explicit resume and continuation approvals.

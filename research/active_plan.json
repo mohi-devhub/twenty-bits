@@ -1,5 +1,5 @@
 {
-  "status": "Verify native persistence, then run unchanged A23 and its three endpoint evaluations; stop before B41.",
+  "status": "Native API listing and fresh-client sample verified; waiting for user console confirmation.",
   "initial_policy": "raw_base_no_sft",
   "sft_checkpoint": null,
   "sft_removal_reason": "Paired candidate-set qualification: SFT EIG lower by 0.1444 bits/question; raw base selected by user.",
@@ -49,9 +49,9 @@
   "reference_model": null,
   "project_usage_at_recording": {
     "cap_usd": "50.000000",
-    "spent_usd": "11.015850",
-    "held_usd": "0.467534",
-    "available_usd": "38.516616",
+    "spent_usd": "11.015862",
+    "held_usd": "1.131236",
+    "available_usd": "37.852902",
     "blocked": false
   },
   "pilot_gate": "PILOT_GATE.md",
@@ -108,7 +108,7 @@
       "total_with_1_5_margin_usd": 42.480710971200004
     }
   },
-  "active_stage": "awaiting_native_console_verification",
+  "active_stage": "awaiting_user_checkpoint_confirmation",
   "next_stage_requires_gate_decision": true,
   "main_approval": "research/main_U_approval.json",
   "main_seed_config": "experiments/main_A11.json",
@@ -116,7 +116,7 @@
   "training_updates_completed": 30,
   "raw_control_games_saved": 280,
   "incident": "research/main_A11_recovery_incident.json",
-  "next_action": "Pending Chrome permission or user console confirmation; then delete exact native test checkpoints and start approved A23 without another plan decision.",
+  "next_action": "Await user console confirmation, delete only the two test checkpoints, then begin approved A23.",
   "paused": false,
   "pause_record": "research/main_A11_pause.json",
   "standing_replacement_rule": "research/replacement_policy.json",
@@ -149,5 +149,6 @@
   "continuation_approval": "research/main_U_continuation_approval.json",
   "diagnostic_config": "experiments/A23_suffix_diagnostic.json",
   "B41_confirmation_pending": true,
-  "persistence_approval": "research/native_persistence_approval.json"
+  "persistence_approval": "research/native_persistence_approval.json",
+  "native_API_verification": "research/native_persistence_api_verification.json"
 }

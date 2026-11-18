@@ -45,5 +45,13 @@
     "blocked": false
   },
   "conservative_remaining_forecast_including_margin_usd": "30.677091564759925",
-  "forecast_basis": "Remaining U forecast removes external reupload and old two-hour storage allowance. Adds a conservative 4 GB per native checkpoint for four permanent files, priced for 30 days, plus full diagnostic and test ceilings. Update with measured native sizes before A23. No billing-plan change."
+  "forecast_basis": "Remaining U forecast removes external reupload and old two-hour storage allowance. Adds a conservative 4 GB per native checkpoint for four permanent files, priced for 30 days, plus full diagnostic and test ceilings. Update with measured native sizes before A23. No billing-plan change.",
+  "latest_verification_instruction": {
+    "recorded_at": "2026-11-18T20:24:44.556977+00:00",
+    "source": "User: do not use a browser; list checkpoints through SDK/API and sample with a fresh client; user will cross-check console and confirm before A23.",
+    "browser_authorized": false,
+    "verification_method": "Tinker SDK/API",
+    "user_console_confirmation_required_before_A23": true,
+    "leave_test_files_until_user_cross_check": true
+  }
 }
