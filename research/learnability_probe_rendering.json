@@ -1,0 +1,460 @@
+{
+  "config_sha256": "4455beb8f18fe8b8279783bd90bcef8721352db7db0db4c12c149c14a4014b4f",
+  "games_sha256": "1b78f4fce30401202be87917032b30d20ca290af58fb0be76e04d313eb0aba49",
+  "prompt_code_sha256": "f73a412bfee21edf81c218e907b46dd93a10420ea4d85e0fc5214ca0fe30da0f",
+  "model": "Qwen/Qwen3-8B",
+  "service_calls": 0,
+  "cookbook_native_parity": true,
+  "all_train_pool": true,
+  "full_cap_hold_envelope_usd": "0.748178",
+  "checks": [
+    {
+      "id": "train-v1/seed20261118/animals/8/0/p0",
+      "initial_prompt_tokens": 588,
+      "history_prompt_tokens": [
+        602,
+        620,
+        639,
+        653,
+        671,
+        690
+      ],
+      "public_messages_sha256": "a9709bce33152832773a72dd62165c9f2c8e4467c28366c78a26bcbc1c10dcf8"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/8/1/p0",
+      "initial_prompt_tokens": 656,
+      "history_prompt_tokens": [
+        671,
+        686,
+        705,
+        720,
+        735,
+        754
+      ],
+      "public_messages_sha256": "6e77c199c8635ba57a7c3d773270595ce86a3b739443f1adab91ef334359b2d7"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/8/2/p0",
+      "initial_prompt_tokens": 658,
+      "history_prompt_tokens": [
+        672,
+        687,
+        706,
+        720,
+        735,
+        754
+      ],
+      "public_messages_sha256": "b74783142604badbe10165f5c38cc6a1d9a5e64f30a8dad8a476be244468250f"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/8/3/p0",
+      "initial_prompt_tokens": 669,
+      "history_prompt_tokens": [
+        685,
+        700,
+        722,
+        738,
+        753,
+        775
+      ],
+      "public_messages_sha256": "e83625613a19e541ba96f4be853b5d26b77877925107ca29109051351c12bb78"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/8/4/p0",
+      "initial_prompt_tokens": 674,
+      "history_prompt_tokens": [
+        688,
+        703,
+        724,
+        738,
+        753,
+        774
+      ],
+      "public_messages_sha256": "3f6b7e4524e7db221c1300eb5584fb9877c06f054709892ce2163bc959c0310b"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/8/5/p0",
+      "initial_prompt_tokens": 700,
+      "history_prompt_tokens": [
+        715,
+        731,
+        754,
+        769,
+        785,
+        808
+      ],
+      "public_messages_sha256": "23887979d9c3fb70c6f12577043c946709580f51a5ab08b0734379ed531e3145"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/8/6/p0",
+      "initial_prompt_tokens": 660,
+      "history_prompt_tokens": [
+        675,
+        691,
+        711,
+        726,
+        742,
+        762
+      ],
+      "public_messages_sha256": "bb4718a04ed9904c5e6df07c1103472a1ee08ec690272f09507884de12bcf8a1"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/8/7/p0",
+      "initial_prompt_tokens": 615,
+      "history_prompt_tokens": [
+        631,
+        648,
+        669,
+        685,
+        702,
+        723
+      ],
+      "public_messages_sha256": "f369e16cb61fb64464f48d45bd9d7cae0caecb7be2c21ab00f42c8a4fb05ef5c"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/8/8/p0",
+      "initial_prompt_tokens": 637,
+      "history_prompt_tokens": [
+        652,
+        668,
+        690,
+        705,
+        721,
+        743
+      ],
+      "public_messages_sha256": "bbf7ab361ca90a512a30ac33381c800c5a555307ee3171e6c3d5f3564dc1c1ff"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/8/9/p0",
+      "initial_prompt_tokens": 647,
+      "history_prompt_tokens": [
+        663,
+        678,
+        699,
+        715,
+        730,
+        751
+      ],
+      "public_messages_sha256": "bdd59b1ad7b0a4f8458ce4fda6732947a652434eb779e4a80220f07b452c6136"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/8/10/p0",
+      "initial_prompt_tokens": 688,
+      "history_prompt_tokens": [
+        704,
+        719,
+        739,
+        755,
+        770,
+        790
+      ],
+      "public_messages_sha256": "fe01585f6fed27f1855d64100d554c785abb13166343408429f23c1fa9072c4d"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/8/11/p0",
+      "initial_prompt_tokens": 688,
+      "history_prompt_tokens": [
+        702,
+        719,
+        737,
+        751,
+        768,
+        786
+      ],
+      "public_messages_sha256": "c70d90f36ba0c68f796c9bbd417f3928539c1900e9e4e3f5477444f69d90ebb4"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/8/12/p0",
+      "initial_prompt_tokens": 645,
+      "history_prompt_tokens": [
+        661,
+        678,
+        701,
+        717,
+        734,
+        757
+      ],
+      "public_messages_sha256": "05987246ae49770f09f7a2c129eba9b132fb138a7f9751cc9fa5eccca23a2b19"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/8/13/p0",
+      "initial_prompt_tokens": 681,
+      "history_prompt_tokens": [
+        695,
+        711,
+        732,
+        746,
+        762,
+        783
+      ],
+      "public_messages_sha256": "c7bd47c27851e9381f1c7a3af5f0c0648bc73b0c5484f92fe523f1c979e218bf"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/8/14/p0",
+      "initial_prompt_tokens": 656,
+      "history_prompt_tokens": [
+        672,
+        687,
+        707,
+        723,
+        738,
+        758
+      ],
+      "public_messages_sha256": "0cf03e207d9f7dea1a6bcc77ac5c480ba8652424e204a42e9ea9d6f01870739d"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/8/15/p0",
+      "initial_prompt_tokens": 663,
+      "history_prompt_tokens": [
+        677,
+        692,
+        711,
+        725,
+        740,
+        759
+      ],
+      "public_messages_sha256": "66bc8dbd2f223bf701b7fcb4e48b72c6f31cdb070d80a4d10f2bb014454a4979"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/16/0/p0",
+      "initial_prompt_tokens": 898,
+      "history_prompt_tokens": [
+        914,
+        929,
+        951,
+        967,
+        982,
+        1004,
+        1020,
+        1035
+      ],
+      "public_messages_sha256": "046fc7d84e7b97fb9718a6f90f36e95cae46456098a14245cf8f1b19c56cfe51"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/16/1/p0",
+      "initial_prompt_tokens": 882,
+      "history_prompt_tokens": [
+        896,
+        911,
+        931,
+        945,
+        960,
+        980,
+        994,
+        1009
+      ],
+      "public_messages_sha256": "69305ecdea2ca583bf77df2f7e2078823eb262a9ae9c589838fea8634e283722"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/16/2/p0",
+      "initial_prompt_tokens": 841,
+      "history_prompt_tokens": [
+        857,
+        872,
+        896,
+        912,
+        927,
+        951,
+        967,
+        982
+      ],
+      "public_messages_sha256": "7afefff10774c16ba20f0d912e613c8e33c2635e78ce91e6275d7fb330f018d0"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/16/3/p0",
+      "initial_prompt_tokens": 855,
+      "history_prompt_tokens": [
+        870,
+        885,
+        905,
+        920,
+        935,
+        955,
+        970,
+        985
+      ],
+      "public_messages_sha256": "b66f6d426dc893f8a010e121ad98e384b7d2d2ae83e041148703fb65986115a2"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/16/4/p0",
+      "initial_prompt_tokens": 883,
+      "history_prompt_tokens": [
+        897,
+        912,
+        931,
+        945,
+        960,
+        979,
+        993,
+        1008
+      ],
+      "public_messages_sha256": "c95d3bc37286a0b2d6f9f40f0211e47dedb9abd7fe7ca93bc4306dc141cb5d83"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/16/5/p0",
+      "initial_prompt_tokens": 885,
+      "history_prompt_tokens": [
+        900,
+        915,
+        936,
+        951,
+        966,
+        987,
+        1002,
+        1017
+      ],
+      "public_messages_sha256": "68bbc1ffc14562a18f323a878554acd0fe2a337c3a59629df1cefb9ce0dca631"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/16/6/p0",
+      "initial_prompt_tokens": 851,
+      "history_prompt_tokens": [
+        866,
+        882,
+        901,
+        916,
+        932,
+        951,
+        966,
+        982
+      ],
+      "public_messages_sha256": "6c38e31a507fe7b8d5f60ceabf46341d0794dcc8441575062645338471b5507d"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/16/7/p0",
+      "initial_prompt_tokens": 904,
+      "history_prompt_tokens": [
+        919,
+        934,
+        953,
+        968,
+        983,
+        1002,
+        1017,
+        1032
+      ],
+      "public_messages_sha256": "ef9fea7f40caa0f40c8aedca8473c0635a554d572f8170388a71c33fc1ed826b"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/16/8/p0",
+      "initial_prompt_tokens": 876,
+      "history_prompt_tokens": [
+        890,
+        905,
+        924,
+        938,
+        953,
+        972,
+        986,
+        1001
+      ],
+      "public_messages_sha256": "e550c489777eb0dd70045bb90a1a7dcd277a49e509c6ff8c7fdf5ae584d351e5"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/16/9/p0",
+      "initial_prompt_tokens": 848,
+      "history_prompt_tokens": [
+        862,
+        877,
+        896,
+        910,
+        925,
+        944,
+        958,
+        973
+      ],
+      "public_messages_sha256": "638916603f78990d662e7d387d1adc13a28272369bfe74450c583d52e0173ca0"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/16/10/p0",
+      "initial_prompt_tokens": 849,
+      "history_prompt_tokens": [
+        863,
+        880,
+        898,
+        912,
+        929,
+        947,
+        961,
+        978
+      ],
+      "public_messages_sha256": "d468dd7ab0432b8438be6a330f6db1b99394565d2a385cdbda912a9c0df2068a"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/16/11/p0",
+      "initial_prompt_tokens": 905,
+      "history_prompt_tokens": [
+        921,
+        936,
+        960,
+        976,
+        991,
+        1015,
+        1031,
+        1046
+      ],
+      "public_messages_sha256": "e1e6731ce69438ed186f1f3c24d98479f00e819b7a8b94fb38b788dfe29cd875"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/16/12/p0",
+      "initial_prompt_tokens": 871,
+      "history_prompt_tokens": [
+        885,
+        902,
+        921,
+        935,
+        952,
+        971,
+        985,
+        1002
+      ],
+      "public_messages_sha256": "8fa48e3fb08c2cef1bcbb9dae7ca16738938a86be0415739c47dd346e48cad45"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/16/13/p0",
+      "initial_prompt_tokens": 889,
+      "history_prompt_tokens": [
+        903,
+        919,
+        938,
+        952,
+        968,
+        987,
+        1001,
+        1017
+      ],
+      "public_messages_sha256": "a9e003bfba66ef273a472a53282662dc03516786b8068cf655d8c293190d6d21"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/16/14/p0",
+      "initial_prompt_tokens": 819,
+      "history_prompt_tokens": [
+        836,
+        851,
+        873,
+        890,
+        905,
+        927,
+        944,
+        959
+      ],
+      "public_messages_sha256": "c944a854153259b8b54f599658bf275777e56cd6fe9855adc097156b2f4ba681"
+    },
+    {
+      "id": "train-v1/seed20261118/animals/16/15/p0",
+      "initial_prompt_tokens": 844,
+      "history_prompt_tokens": [
+        858,
+        873,
+        893,
+        907,
+        922,
+        942,
+        956,
+        971
+      ],
+      "public_messages_sha256": "133cbe69f052f982b44e955b10e2de07322d2b228771b6871403ab746d83e0da"
+    }
+  ]
+}

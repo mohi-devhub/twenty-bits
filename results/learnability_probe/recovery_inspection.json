@@ -1,0 +1,45 @@
+{
+  "submissions": 0,
+  "saved_futures": [
+    {
+      "key": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/7/p0/turn-6",
+      "entry_id": "34406b12-f94c-4383-8fe0-e5c16d1339b3",
+      "request_id": "e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:57",
+      "receipt_saved": false,
+      "result": {
+        "exception_type": "NotFoundError",
+        "http_status": 404
+      }
+    },
+    {
+      "key": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/10/p0/turn-0",
+      "entry_id": "bdc5a4e7-57b4-4c59-b1a8-c15530edf862",
+      "request_id": "e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:56",
+      "receipt_saved": false,
+      "result": {
+        "error": "Response expired for request e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:56. The most likely cause is that SDK was stalled for too long. This may be caused by heavy GIL contention in your training script, unstable network connection to Tinker services, or pausing your training script.",
+        "category": "user"
+      }
+    },
+    {
+      "key": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/8/p0/turn-1",
+      "entry_id": "12d0e19a-5dfc-492a-881d-38cb8c6730d5",
+      "request_id": "e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:54",
+      "receipt_saved": true,
+      "result": {
+        "error": "Response expired for request e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:54. The most likely cause is that SDK was stalled for too long. This may be caused by heavy GIL contention in your training script, unstable network connection to Tinker services, or pausing your training script.",
+        "category": "user"
+      }
+    },
+    {
+      "key": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/9/p0/turn-1",
+      "entry_id": "2d5590e3-5e6d-4c12-b255-53f4832e6de6",
+      "request_id": "e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:55",
+      "receipt_saved": true,
+      "result": {
+        "error": "Response expired for request e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:55. The most likely cause is that SDK was stalled for too long. This may be caused by heavy GIL contention in your training script, unstable network connection to Tinker services, or pausing your training script.",
+        "category": "user"
+      }
+    }
+  ]
+}

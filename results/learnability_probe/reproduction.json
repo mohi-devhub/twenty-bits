@@ -1,0 +1,12 @@
+{
+  "committed_archive_analysis_identical_without_run_cache": true,
+  "analysis_service_calls": 0,
+  "completed_runner_service_calls": 0,
+  "ledger_bytes_unchanged": true,
+  "sha256": {
+    "summary.json": "8432d12fc8eb6e171f1c15691946d5db47b2b61e67c672169152c5bbb9e6c776",
+    "games.jsonl.gz": "c89f05979af08c7b7f06b02beb9015633e4ed764efbb75b45088a71134c7728f",
+    "requests.jsonl.gz": "c5851e6db363a37beb107167412ec3e10aa97fe94b416f51080d9d4f0ae733ee",
+    "responses.jsonl.gz": "8565f87415d98d6fe70c03511e32e54c524d8f93aced9bd350a786d7210e5c23"
+  }
+}

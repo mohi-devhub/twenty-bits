@@ -46,6 +46,11 @@ def main():
         row["key"]: row for row in request_rows if row["journal_kind"] == "requests"
     }
     by_entry = {row["entry_id"]: row for row in request_rows}
+    phase2_ids = set(by_entry) | {
+        json.loads(line)["entry_id"]
+        for line in (directory / "usage.jsonl").read_text().splitlines()
+    }
+    phase2_entries = [entries[entry_id] for entry_id in phase2_ids]
     orphan_ids = {r["entry_id"] for r in incident["original_orphaned_submissions"]}
     used = set()
     turns = 0
@@ -137,7 +142,10 @@ def main():
             context_losses += 1
         assert game.done and game.won == saved["won"]
         assert game.questions == saved["questions"] <= game.limit
-    assert cost == Decimal(status["spent_usd"])
+    assert cost == sum(
+        (Decimal(e["actual_usd"]) for e in phase2_entries if e["state"] == "settled"),
+        Decimal(0),
+    )
     assert len(orphan_ids) == 5
     assert sum(Decimal(entries[e]["reserved_usd"]) for e in orphan_ids) == Decimal(
         "0.007195"
@@ -148,7 +156,7 @@ def main():
         assert entries[entry_id]["state"] in {"dispatching", "submitted"}
     pending = {
         e["id"]
-        for e in status["entries"]
+        for e in phase2_entries
         if e["state"] in {"dispatching", "submitted", "reserved"}
     }
     assert pending == orphan_ids
@@ -188,7 +196,7 @@ def main():
         "actual_usage_cost_usd": str(cost),
         "unexpected_pending_entries": 0,
         "no_training_operations": not any(
-            "train" in e["operation"].lower() for e in status["entries"]
+            "train" in e["operation"].lower() for e in phase2_entries
         ),
         "frozen_bank_sha256": hashlib.sha256(
             (ROOT / "evals/frozen/manifest.json").read_bytes()

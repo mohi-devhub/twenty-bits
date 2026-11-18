@@ -6,7 +6,9 @@
 
 Can an outcome-only reward teach a small LLM to search efficiently, and does it learn attribute bisection or item-name enumeration? Does the strategy transfer to relabeled tables, and does noise teach it to re-check answers?
 
-**Phase 2 is complete. No RL training has run. Recorded Tinker token-usage cost: $5.793225 / $50.00, with $0.007195 held**, from [ledger.json](ledger.json). Qwen3-8B won 0/280 games; the 512-token gpt-oss-120b reference won 0/20. Every valid Qwen question used item equalities. The chart compares the base model with matched baselines; the GIF illustrates random versus greedy search. [Per-cell metrics, CIs, token counts, and cost](PHASE2.md) document the failures and the adapter incident. Invoice reconciliation remains pending.
+**No SFT or RL training has run. Recorded Tinker token-usage cost: $5.862788 / $50.00, with $0.012813 held**, from [ledger.json](ledger.json). Phase 2 Qwen3-8B won 0/280 games; the 512-token gpt-oss-120b reference won 0/20. A later prompt-only development probe won 1/16 at N=8 and 0/16 at N=16, with low valid-turn rates. [The diagnosis](DIAGNOSIS.md) explains the failures and cost, with three complete transcripts. [The learnability gate](LEARNABILITY.md) prices a grammar warm start and guarded pilot. Both need approval. Invoice reconciliation remains pending.
+
+The chart compares the original base model with matched baselines; the GIF illustrates random versus greedy search. [Phase 2 metrics, CIs, tokens, and cost](PHASE2.md) preserve the historical evaluation. The development probe uses a different prompt and smaller sizes, so its change is not an isolated prompt effect.
 
 Open the [interactive replay](replays/index.html), [truthful-answer MP4](replays/baseline-noiseless.mp4), or [noisy-answer MP4](replays/baseline-noisy.mp4). The two illustrated games were selected for a visible strategy contrast. The complete sweeps supply the reported numbers.
 
@@ -14,7 +16,7 @@ The offline grid contains 24,000 games, with 200 paired games for each domain, c
 
 These are finite authored worlds. Animals has 400 named age/sex profiles across 100 types; tools and foods each have 320 profiles across 80 types. They use 90, 88, and 71 attributes to stay distinguishable without random identity bits. The synthetic world has 512 unique random 16-bit rows and is relabeled in each game. [World definitions, sample hand checks, and limitations](data/WORLDS.md) describe the construction. Animal training uses a fixed 200-row pool; paid animal evaluation uses disjoint rows, with shared underlying types disclosed.
 
-[PAID_PLANS.md](PAID_PLANS.md) records the approved $50 budget and groups of eight. [PHASE2.md](PHASE2.md) is the current gate report, with a priced condition A pilot proposal. Work is stopped pending pilot approval. Main options S and U will be priced after measuring pilot learning speed. [PRIOR_WORK.md](PRIOR_WORK.md) stays as context; this is a side project for GitHub and X.
+[PAID_PLANS.md](PAID_PLANS.md) records the approved $50 budget and groups of eight. [LEARNABILITY.md](LEARNABILITY.md) is the current gate report. Work is stopped pending a learnability decision. Main options S and U will be priced after measuring pilot learning speed. [PRIOR_WORK.md](PRIOR_WORK.md) stays as context; this is a side project for GitHub and X.
 
 ## Reproduce offline
 
@@ -46,8 +48,12 @@ python3 scripts/verify_rendering.py
 python3 scripts/summarize_phase2.py
 python3 scripts/verify_phase2.py
 python3 scripts/plot_phase2.py
-python3 scripts/price_pilot.py
-python3 scripts/write_phase2_report.py
+python3 scripts/diagnose_phase2.py
+python3 scripts/measure_random_learnability.py
+python3 scripts/price_format_warmstart.py
+python3 scripts/summarize_learnability_probe.py
+python3 scripts/reprice_learnability.py
+python3 scripts/write_learnability_report.py
 ```
 
 These commands use saved traces and request metadata, without service calls or credentials. The tokenizers use pinned local files or download those files from Hugging Face. `build_paid_plans.py` rebuilds the historical Phase 1 proposals; `build_approved_plan.py` reprices the approved group-size changes. [The reproduction check](results/phase2/reproduction.json) confirms analysis is identical without local run caches. The live runner is `scripts/run_phase2.py`; completed games and saved request IDs prevent resubmission. Training still needs the next gate approval. `.env` is ignored and untracked.

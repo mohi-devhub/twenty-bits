@@ -1,0 +1,17 @@
+{
+  "tests_passed": 84,
+  "command": ".venv/bin/python -m unittest discover -s tests -v",
+  "ruff_check_passed": true,
+  "frozen_cells_verified": 10,
+  "frozen_games_verified": 2000,
+  "phase2_games_replayed": 300,
+  "phase2_turns_replayed": 3779,
+  "probe_games_replayed": 32,
+  "probe_turns_replayed": 250,
+  "exact_replacement_signatures_verified": 4,
+  "orphan_or_unavailable_outputs_used": 0,
+  "prior_ledger_entries_and_approval_unchanged": true,
+  "core_ledger_file_unchanged": true,
+  "training_operations": 0,
+  "all_probe_attempts_with_pre_dispatch_ids_verified": 254
+}

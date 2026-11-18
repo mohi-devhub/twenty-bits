@@ -12,7 +12,7 @@ from .worlds import seed_for
 
 
 class TableEnv(Env):
-    def __init__(self, record: dict, model: str, config: dict):
+    def __init__(self, record: dict, model: str, config: dict, *, message_builder=None):
         self.game = Game(record)
         self.model = model
         self.config = config
@@ -25,8 +25,13 @@ class TableEnv(Env):
         self.last_sample = None
         self.usage = []
         self.context_overflow = False
+        self.message_builder = message_builder
 
     def observation(self):
+        if self.message_builder is not None:
+            return self.rendering.prompt(
+                self.message_builder(self.game.record, self.game.turns)
+            )
         return self.rendering.observation(self.game.record, self.game.turns)
 
     def overflow(self):

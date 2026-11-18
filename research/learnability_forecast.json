@@ -1,0 +1,371 @@
+{
+  "authorized": false,
+  "service_calls": 0,
+  "observed_probe_complete": true,
+  "observed_probe_games": 32,
+  "observed_cost_per_game_usd": {
+    "8": 0.0004414375,
+    "16": 0.00390625
+  },
+  "method": "Measured generated tokens/call from each probe size. N=4 uses the N=8 output proxy; larger sizes use N=16, an untested extrapolation. Measure 40 native training prefixes/size and all 280 frozen prefixes under the proposed prompt. Charge full question budget plus guess and full per-turn training contexts, including masked prompt tokens. No cache credit. Stress scenario uses 2048 generated tokens each turn until context loss. A changed policy can have different token usage; per-call holds still enforce the cap.",
+  "storage_assumptions": "Use ephemeral fixed-weight sampler copies between updates. At most five named pilot snapshots and one SFT snapshot, each bounded at 64 GB with a two-hour TTL. At $0.10/GB/month using a 30-day month, those cost at most $0.088889 and $0.017778, below the separate $0.10 allowances. Download retained artifacts before expiry. Recheck size and reserve the storage maximum before each save; no optimizer-state checkpoint is included.",
+  "training_prices": [
+    {
+      "n": 4,
+      "prefix": {
+        "mean": 542.475,
+        "max": 574,
+        "measured_games": 40
+      },
+      "probe_token_proxy": {
+        "sampling_usd": 0.0007115625,
+        "training_usd": 0.00152295,
+        "combined_usd": 0.0022345125,
+        "input_tokens": 3370.833333333333,
+        "output_tokens": 90.41666666666666,
+        "calls": 5,
+        "output_tokens_per_call_proxy": 18.083333333333332
+      },
+      "full_output_cap_stress": {
+        "sampling_usd": 0.01075965,
+        "training_usd": 0.0149204,
+        "combined_usd": 0.025680050000000003,
+        "input_tokens": 23670,
+        "output_tokens": 10240,
+        "calls": 5,
+        "output_tokens_per_call_proxy": 2048
+      }
+    },
+    {
+      "n": 8,
+      "prefix": {
+        "mean": 653.6,
+        "max": 697,
+        "measured_games": 40
+      },
+      "probe_token_proxy": {
+        "sampling_usd": 0.00123244625,
+        "training_usd": 0.0026652266666666665,
+        "combined_usd": 0.0038976729166666666,
+        "input_tokens": 5930.75,
+        "output_tokens": 126.58333333333331,
+        "calls": 7,
+        "output_tokens_per_call_proxy": 18.083333333333332
+      },
+      "full_output_cap_stress": {
+        "sampling_usd": 0.018070605,
+        "training_usd": 0.027673800000000002,
+        "combined_usd": 0.045744405,
+        "input_tokens": 48559,
+        "output_tokens": 14336,
+        "calls": 7,
+        "output_tokens_per_call_proxy": 2048
+      }
+    },
+    {
+      "n": 16,
+      "prefix": {
+        "mean": 871.525,
+        "max": 912,
+        "measured_games": 40
+      },
+      "probe_token_proxy": {
+        "sampling_usd": 0.007146645211267604,
+        "training_usd": 0.01260186338028169,
+        "combined_usd": 0.019748508591549294,
+        "input_tokens": 24784.478873239434,
+        "output_tokens": 3856.1197183098584,
+        "calls": 9,
+        "output_tokens_per_call_proxy": 428.4577464788732
+      },
+      "full_output_cap_stress": {
+        "sampling_usd": 0.02726136,
+        "training_usd": 0.0446688,
+        "combined_usd": 0.07193015999999999,
+        "input_tokens": 83088,
+        "output_tokens": 18432,
+        "calls": 9,
+        "output_tokens_per_call_proxy": 2048
+      }
+    },
+    {
+      "n": 32,
+      "prefix": {
+        "mean": 1259.35,
+        "max": 1317,
+        "measured_games": 40
+      },
+      "probe_token_proxy": {
+        "sampling_usd": 0.010591195457746477,
+        "training_usd": 0.019591092957746477,
+        "combined_usd": 0.030182288415492954,
+        "input_tokens": 39812.17605633802,
+        "output_tokens": 4713.0352112676055,
+        "calls": 11,
+        "output_tokens_per_call_proxy": 428.4577464788732
+      },
+      "full_output_cap_stress": {
+        "sampling_usd": 0.038649765,
+        "training_usd": 0.0666226,
+        "combined_usd": 0.105272365,
+        "input_tokens": 128887,
+        "output_tokens": 22528,
+        "calls": 11,
+        "output_tokens_per_call_proxy": 2048
+      }
+    },
+    {
+      "n": 64,
+      "prefix": {
+        "mean": 1987.275,
+        "max": 2069,
+        "measured_games": 40
+      },
+      "probe_token_proxy": {
+        "sampling_usd": 0.015590447746478872,
+        "training_usd": 0.030088368169014085,
+        "combined_usd": 0.04567881591549296,
+        "input_tokens": 62812.70422535211,
+        "output_tokens": 5569.950704225353,
+        "calls": 13,
+        "output_tokens_per_call_proxy": 428.4577464788732
+      },
+      "full_output_cap_stress": {
+        "sampling_usd": 0.052856115,
+        "training_usd": 0.09493484,
+        "combined_usd": 0.147790955,
+        "input_tokens": 189137,
+        "output_tokens": 26624,
+        "calls": 13,
+        "output_tokens_per_call_proxy": 2048
+      }
+    },
+    {
+      "n": 128,
+      "prefix": {
+        "mean": 3390.975,
+        "max": 3446,
+        "measured_games": 40
+      },
+      "probe_token_proxy": {
+        "sampling_usd": 0.023363542077464793,
+        "training_usd": 0.04684456901408451,
+        "combined_usd": 0.0702081110915493,
+        "input_tokens": 100038.06338028169,
+        "output_tokens": 6426.8661971831,
+        "calls": 15,
+        "output_tokens_per_call_proxy": 428.4577464788732
+      },
+      "full_output_cap_stress": {
+        "sampling_usd": 0.06352038,
+        "training_usd": 0.11712624,
+        "combined_usd": 0.18064662,
+        "input_tokens": 237524,
+        "output_tokens": 28672,
+        "calls": 14,
+        "output_tokens_per_call_proxy": 2048
+      }
+    }
+  ],
+  "pilot": {
+    "measured_token_proxy": {
+      "training_games": 128,
+      "updates": 16,
+      "schedule": [
+        {
+          "n": 4,
+          "updates": 4
+        },
+        {
+          "n": 8,
+          "updates": 8
+        },
+        {
+          "n": 16,
+          "updates": 4
+        }
+      ],
+      "training_sampling_and_gradient_usd": 0.952907741596244,
+      "development_checks": [
+        0,
+        4,
+        8,
+        12,
+        16
+      ],
+      "development_games_per_check": 32,
+      "development_sampling_usd": 0.15552069999999998,
+      "storage_allowance_usd": 0.1,
+      "without_sft_with_margin_usd": 1.812642662394366,
+      "with_sft_with_margin_usd": 2.5086303023943657,
+      "abort_after_four_updates_with_sft_and_margin_usd": 1.04655666,
+      "sft_qualification_only_with_margin_usd": 0.74264385
+    },
+    "full_output_cap_stress": {
+      "training_games": 128,
+      "updates": 16,
+      "schedule": [
+        {
+          "n": 4,
+          "updates": 4
+        },
+        {
+          "n": 8,
+          "updates": 8
+        },
+        {
+          "n": 16,
+          "updates": 4
+        }
+      ],
+      "training_sampling_and_gradient_usd": 6.05116864,
+      "development_checks": [
+        0,
+        4,
+        8,
+        12,
+        16
+      ],
+      "development_games_per_check": 32,
+      "development_sampling_usd": 2.3064204,
+      "storage_allowance_usd": 0.1,
+      "without_sft_with_margin_usd": 12.68638356,
+      "with_sft_with_margin_usd": 13.382371200000001,
+      "abort_after_four_updates_with_sft_and_margin_usd": 3.4624822800000006,
+      "sft_qualification_only_with_margin_usd": 1.38791376
+    }
+  },
+  "pilot_stop_rule": {
+    "groups_per_update": 1,
+    "games_per_group": 8,
+    "evaluate_after_updates": 4,
+    "halt_if_fraction_nonzero_total_return_variance_below": 0.25,
+    "equivalent_at_four_groups": "Halt if zero of the four groups has return variance greater than 1e-12. One of four equals 25% and passes this rule.",
+    "recommended_additional_check": "Require at least one training win in those 32 games. Otherwise cost-only reward variation can pass the requested test. Freeze this extra condition only if approved.",
+    "sft_qualification_proposal": "Before RL, at least 90% valid turns and 8/32 development wins. If this fails, stop after warm start and development sampling."
+  },
+  "full_eval_280_games_usd": 5.6117400371830986,
+  "full_eval_280_games_with_margin_usd": 8.417610055774649,
+  "full_eval_280_full_cap_stress_with_margin_usd": 22.14662688,
+  "eval_cells": [
+    {
+      "domain": "animals",
+      "n": 32,
+      "noise": 0,
+      "games": 28,
+      "initial_prompt_max": 1355,
+      "initial_prompt_mean": 1275.7857142857142,
+      "forecast_usd": 0.2988357528169014,
+      "full_cap_stress_usd": 1.0844756999999998
+    },
+    {
+      "domain": "animals",
+      "n": 32,
+      "noise": 0.1,
+      "games": 28,
+      "initial_prompt_max": 1355,
+      "initial_prompt_mean": 1275.7857142857142,
+      "forecast_usd": 0.2988357528169014,
+      "full_cap_stress_usd": 1.0844756999999998
+    },
+    {
+      "domain": "animals",
+      "n": 128,
+      "noise": 0,
+      "games": 28,
+      "initial_prompt_max": 3400,
+      "initial_prompt_mean": 3347.1071428571427,
+      "forecast_usd": 0.6504117781690142,
+      "full_cap_stress_usd": 1.7750544000000001
+    },
+    {
+      "domain": "animals",
+      "n": 128,
+      "noise": 0.1,
+      "games": 28,
+      "initial_prompt_max": 3400,
+      "initial_prompt_mean": 3347.1071428571427,
+      "forecast_usd": 0.6504117781690142,
+      "full_cap_stress_usd": 1.7750544000000001
+    },
+    {
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0,
+      "games": 28,
+      "initial_prompt_max": 1180,
+      "initial_prompt_mean": 1162.1785714285713,
+      "forecast_usd": 0.2883252528169014,
+      "full_cap_stress_usd": 1.0739652
+    },
+    {
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0.1,
+      "games": 28,
+      "initial_prompt_max": 1180,
+      "initial_prompt_mean": 1162.1785714285713,
+      "forecast_usd": 0.2883252528169014,
+      "full_cap_stress_usd": 1.0739652
+    },
+    {
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0,
+      "games": 28,
+      "initial_prompt_max": 2942,
+      "initial_prompt_mean": 2909.3214285714284,
+      "forecast_usd": 0.6129015781690141,
+      "full_cap_stress_usd": 1.74004488
+    },
+    {
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0.1,
+      "games": 28,
+      "initial_prompt_max": 2942,
+      "initial_prompt_mean": 2909.3214285714284,
+      "forecast_usd": 0.6129015781690141,
+      "full_cap_stress_usd": 1.74004488
+    },
+    {
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0,
+      "games": 28,
+      "initial_prompt_max": 5291,
+      "initial_prompt_mean": 5241.357142857143,
+      "forecast_usd": 0.9553956566197183,
+      "full_cap_stress_usd": 1.70866878
+    },
+    {
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0.1,
+      "games": 28,
+      "initial_prompt_max": 5291,
+      "initial_prompt_mean": 5241.357142857143,
+      "forecast_usd": 0.9553956566197183,
+      "full_cap_stress_usd": 1.70866878
+    }
+  ],
+  "matched_control_requirement": "All RL comparisons require a pre-RL control under the same prompt on the same frozen games. Without SFT that is the newly prompted raw base. With SFT it is the warm-start checkpoint. A full raw-base versus warm-start ablation is optional and separately priced. Keep Phase 2 frozen files and hashes; add an approved prompt-version hash set. Historical Phase 2 cannot isolate RL under a changed prompt.",
+  "available_project_usd": 44.124399,
+  "after_warm_pilot_margin_usd": 41.61576869760563,
+  "planning_example_with_one_control_and_three_main_endpoints_with_margin_usd": 36.17907052549296,
+  "example_is_not_a_main_run_authorization": true,
+  "remaining_list_option": {
+    "authorized": false,
+    "definition": "After every answer, reveal noiseless posterior support as a name list. This supplies state tracking and changes the task. In noisy play support includes every item, so useful Bayesian posterior feedback would be a further task change.",
+    "pricing_only": "Replay the observed actions with list feedback added; no policy was sampled with this feedback. Strategy and output costs could change.",
+    "extra_input_tokens_per_game": {
+      "16": 3985.875,
+      "8": 1082.8125
+    },
+    "extra_uncached_usd_per_game": {
+      "16": 0.0007772456250000001,
+      "8": 0.00021114843750000002
+    },
+    "extra_uncached_usd_32_games": 0.015814305
+  }
+}

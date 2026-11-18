@@ -21,7 +21,7 @@ import tinker
 from tinker import types
 from tinker._client import AsyncTinker
 
-from .budget import BudgetError, Ledger, money, now
+from .budget import ACTIVE_STATES, MULTIPLIER, BudgetError, Ledger, money, now
 from .worlds import ROOT
 
 
@@ -85,8 +85,21 @@ def sample_cost(model: str, prompt: int, output: int, cached: int = 0) -> str:
     )
 
 
+class NetworkInterruption(BudgetError):
+    """Pause producers, drain HTTP tasks, then reconnect and collect futures."""
+
+
 class GuardedTinker:
-    def __init__(self, config: dict, directory: Path, *, ledger: Ledger | None = None):
+    def __init__(
+        self,
+        config: dict,
+        directory: Path,
+        *,
+        ledger: Ledger | None = None,
+        usage_path: Path | None = None,
+        run_cap_usd: str | None = None,
+        approved_replacements: dict[str, str] | None = None,
+    ):
         self.config = config
         self.directory = directory
         self.ledger = ledger or Ledger(ROOT / "ledger.json")
@@ -102,7 +115,11 @@ class GuardedTinker:
                 "finished": False,
             }
         )
-        self.usage_path = ROOT / "results/phase2/usage.jsonl"
+        self.usage_path = usage_path or ROOT / "results/phase2/usage.jsonl"
+        self.run_cap = money(run_cap_usd) if run_cap_usd is not None else None
+        self.operation_prefix = (
+            f"[{config['run_id']}] " if self.run_cap is not None else ""
+        )
         self.usage_path.parent.mkdir(parents=True, exist_ok=True)
         self.client = None
         self.sampler_lock = asyncio.Lock()
@@ -113,6 +130,7 @@ class GuardedTinker:
             if incident_path.exists()
             else {}
         )
+        self.replacements.update(approved_replacements or {})
 
     def evidence(self, entry_id: str, row: dict) -> str:
         row = {"entry_id": entry_id, "recorded_at": now(), **row}
@@ -120,14 +138,55 @@ class GuardedTinker:
             f.write(json.dumps(row, separators=(",", ":"), allow_nan=False) + "\n")
             f.flush()
             os.fsync(f.fileno())
-        return f"results/phase2/usage.jsonl#{entry_id}"
+        path = (
+            self.usage_path.relative_to(ROOT)
+            if self.usage_path.is_relative_to(ROOT)
+            else self.usage_path
+        )
+        return f"{path}#{entry_id}"
+
+    def run_status(self) -> dict:
+        entries = [
+            e
+            for e in self.ledger.status()["entries"]
+            if e["operation"].startswith(self.operation_prefix)
+        ]
+        spent = sum(
+            (money(e["actual_usd"]) for e in entries if e["state"] == "settled"),
+            Decimal(0),
+        )
+        held = sum(
+            (money(e["reserved_usd"]) for e in entries if e["state"] in ACTIVE_STATES),
+            Decimal(0),
+        )
+        return {"spent_usd": str(spent), "held_usd": str(held)}
+
+    def call(self, send, *, operation, estimate_usd, max_cost_usd):
+        # The runner lock permits one coordinator. No await separates this
+        # admission check from the existing, atomic project-ledger reservation.
+        if self.run_cap is not None:
+            status = self.run_status()
+            extra = max(money(money(estimate_usd) * MULTIPLIER), money(max_cost_usd))
+            if (
+                money(status["spent_usd"]) + money(status["held_usd"]) + extra
+                > self.run_cap
+            ):
+                raise BudgetError(
+                    "The probe's $1.50 limit, including active holds, would be exceeded."
+                )
+        return self.ledger.call(
+            send,
+            phase=2,
+            operation=self.operation_prefix + operation,
+            estimate_usd=estimate_usd,
+            max_cost_usd=max_cost_usd,
+        )
 
     async def free(
         self, operation: str, send: Callable[[], Awaitable], *, pending_ok=False
     ):
-        entry_id, task = self.ledger.call(
+        entry_id, task = self.call(
             lambda: asyncio.create_task(send()),
-            phase=2,
             operation=operation,
             estimate_usd="0",
             max_cost_usd="0",
@@ -149,6 +208,11 @@ class GuardedTinker:
                 },
             )
             self.ledger.settle(entry_id, actual_usd="0", evidence=evidence)
+            if self.run_cap is not None and isinstance(exc, tinker.APIConnectionError):
+                self.failed = True
+                raise NetworkInterruption(
+                    "Reconnect and collect pending futures before new sampling."
+                ) from exc
             if pending_ok and (
                 status == 408
                 or status in (429, 500, 502, 503, 504)
@@ -169,9 +233,9 @@ class GuardedTinker:
         self.ledger.settle(entry_id, actual_usd="0", evidence=evidence)
         return result
 
-    async def open(self):
+    async def open(self, *, recover_pending=False):
         load_credentials()
-        entry, self.client = self.ledger.call(
+        entry, self.client = self.call(
             lambda: AsyncTinker(
                 max_retries=0,
                 timeout=45,
@@ -180,7 +244,6 @@ class GuardedTinker:
                     "x-sdk-method": "TwentyBits.GuardedTinker",
                 },
             ),
-            phase=2,
             operation="construct low-level SDK client",
             estimate_usd="0",
             max_cost_usd="0",
@@ -197,12 +260,17 @@ class GuardedTinker:
                 },
             ),
         )
+        if recover_pending:
+            await self.collect_pending()
         capabilities = await self.free(
             "server capabilities", self.client.service.get_server_capabilities
         )
         save_json(self.directory / "capabilities.json", capabilities)
         models = {r["model_name"]: r for r in capabilities["supported_models"]}
-        for model in (self.config["primary_model"], self.config["reference_model"]):
+        for model in self.config.get(
+            "active_models",
+            (self.config["primary_model"], self.config["reference_model"]),
+        ):
             if model not in models or models[model].get("sampleable") is False:
                 raise RuntimeError(f"Approved model is unavailable: {model}")
         if self.state["finished"]:
@@ -222,16 +290,25 @@ class GuardedTinker:
                         },
                         sdk_version=tinker.__version__,
                         project_id=os.environ.get("TINKER_PROJECT_ID"),
-                        display_name="Twenty Bits base evaluation",
+                        display_name=self.config.get(
+                            "display_name", "Twenty Bits base evaluation"
+                        ),
                     )
                 ),
             )
             self.state["session_id"] = result["session_id"]
             save_json(self.state_path, self.state)
 
-    async def heartbeat(self):
+    async def heartbeat(self, stop_event: asyncio.Event | None = None):
         while True:
-            await asyncio.sleep(30)
+            if stop_event is None:
+                await asyncio.sleep(30)
+            else:
+                try:
+                    await asyncio.wait_for(stop_event.wait(), timeout=30)
+                    return
+                except TimeoutError:
+                    pass
             await self.free(
                 "session heartbeat",
                 lambda: self.client.service.session_heartbeat(
@@ -239,6 +316,7 @@ class GuardedTinker:
                     timeout=40,
                     max_retries=0,
                 ),
+                pending_ok=stop_event is not None,
             )
 
     async def sampler(self, model: str):
@@ -288,10 +366,64 @@ class GuardedTinker:
                 await asyncio.sleep(1)
                 continue
             if "error" in result or result.get("type") == "request_failed":
+                save_json(
+                    self.directory
+                    / "future_failures"
+                    / (hashlib.sha256(request_id.encode()).hexdigest() + ".json"),
+                    {
+                        "request_id": request_id,
+                        "observed_at": now(),
+                        "response": result,
+                    },
+                )
                 raise RuntimeError(
                     "Tinker future failed; its sample hold remains for reconciliation."
                 )
             return result
+
+    async def collect_pending(self):
+        """Collect every saved recoverable request before permitting producers."""
+        pending = []
+        for path in sorted((self.directory / "requests").glob("*.json")):
+            journal = json.loads(path.read_text())
+            if (
+                journal.get("settled")
+                or journal.get("orphaned")
+                or journal.get("output_allowed") is False
+            ):
+                continue
+            if not journal.get("request_id") and not journal.get("receipt"):
+                raise BudgetError(
+                    "An uncertain request has no recovery ID. Keep its hold."
+                )
+            pending.append((path, journal))
+        # One failed future must not prevent the others from being retrieved.
+        results = await asyncio.gather(
+            *(self.collect(journal, path) for path, journal in pending),
+            return_exceptions=True,
+        )
+        report = {
+            "observed_at": now(),
+            "pending_requests": [j.get("request_id") for _, j in pending],
+            "collected": sum(not isinstance(r, BaseException) for r in results),
+            "errors": [
+                {
+                    "request_id": pending[i][1].get("request_id"),
+                    "type": type(r).__name__,
+                }
+                for i, r in enumerate(results)
+                if isinstance(r, BaseException)
+            ],
+            "new_submissions": 0,
+        }
+        save_json(self.directory / "latest_collection.json", report)
+        failures = [r for r in results if isinstance(r, BaseException)]
+        if failures:
+            self.failed = True
+            network = next(
+                (r for r in failures if isinstance(r, NetworkInterruption)), None
+            )
+            raise network or failures[0]
 
     async def sample(self, *, model: str, key: str, prompt, params) -> dict:
         if self.failed:
@@ -352,7 +484,8 @@ class GuardedTinker:
                 matching = [
                     e["id"]
                     for e in self.ledger.status()["entries"]
-                    if e["operation"] == operation and e["state"] == "dispatching"
+                    if e["operation"] == self.operation_prefix + operation
+                    and e["state"] == "dispatching"
                 ]
                 if len(matching) != 1:
                     raise BudgetError(
@@ -380,9 +513,12 @@ class GuardedTinker:
                     )
                 )
 
-            entry_id, task = self.ledger.call(
+            if self.failed:
+                raise BudgetError(
+                    "New sampling is paused until pending requests are collected."
+                )
+            entry_id, task = self.call(
                 submit,
-                phase=2,
                 operation=operation,
                 estimate_usd=estimate,
                 max_cost_usd=maximum,
@@ -413,6 +549,12 @@ class GuardedTinker:
                     self.ledger.settle(entry_id, actual_usd="0", evidence=evidence)
                     journal["rejected"] = True
                 save_json(path, journal)
+                if self.run_cap is not None and isinstance(
+                    exc, tinker.APIConnectionError
+                ):
+                    raise NetworkInterruption(
+                        "Sampling connection interrupted; recover its saved ID before new work."
+                    ) from exc
                 raise
             journal["receipt"] = receipt.model_dump(mode="json")
             save_json(path, journal)
@@ -421,12 +563,20 @@ class GuardedTinker:
                 raise BudgetError(
                     "Server receipt differs from the saved deterministic request ID."
                 )
+        return await self.collect(journal, path)
+
+    async def collect(self, journal: dict, path: Path) -> dict:
+        entry_id = journal["entry_id"]
+        model = journal["model"]
         request_id = journal.get("request_id") or journal["receipt"]["request_id"]
         entry = next(e for e in self.ledger.status()["entries"] if e["id"] == entry_id)
         if entry["state"] != "settled":
             self.ledger.attach_request_id(entry_id, request_id)
         if "response" not in journal:
+            journal.setdefault("collection_started_at", now())
+            save_json(path, journal)
             journal["response"] = await self.poll(request_id)
+            journal["response_received_at"] = now()
             save_json(path, journal)
         if not journal.get("receipt"):
             journal["receipt"] = {
@@ -457,7 +607,7 @@ class GuardedTinker:
             entry_id,
             {
                 "operation": "sample",
-                "key": key,
+                "key": journal["key"],
                 "model": model,
                 "request_id": request_id,
                 "prompt_tokens": journal["prompt_tokens"],

@@ -1,0 +1,77 @@
+{
+  "recorded_at": "2026-11-18T04:41:32.408057+00:00",
+  "cause": "Network host-unreachable errors; three saved futures subsequently returned response expired and one returned 404. Original response content cannot be recovered.",
+  "held_usd": "0.005618",
+  "original_outputs_allowed": false,
+  "replacement_approval": "approved",
+  "approved_replacements": {
+    "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/7/p0/turn-6": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/7/p0/turn-6/network-replacement-2026-11-18",
+    "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/10/p0/turn-0": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/10/p0/turn-0/network-replacement-2026-11-18",
+    "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/8/p0/turn-1": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/8/p0/turn-1/network-replacement-2026-11-18",
+    "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/9/p0/turn-1": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/9/p0/turn-1/network-replacement-2026-11-18"
+  },
+  "turns": [
+    {
+      "key": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/7/p0/turn-6",
+      "entry_id": "34406b12-f94c-4383-8fe0-e5c16d1339b3",
+      "request_id": "e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:57",
+      "receipt_saved": false,
+      "result": {
+        "exception_type": "NotFoundError",
+        "http_status": 404
+      },
+      "signature": "a8982174dd2cbaa86e61892015285edcfaf0de0373a7b056dde6c16071ffff5a",
+      "original_key": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/7/p0/turn-6",
+      "proposed_replacement_key": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/7/p0/turn-6/network-replacement-2026-11-18",
+      "status": "response unavailable, possibly billed",
+      "output_allowed": false
+    },
+    {
+      "key": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/10/p0/turn-0",
+      "entry_id": "bdc5a4e7-57b4-4c59-b1a8-c15530edf862",
+      "request_id": "e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:56",
+      "receipt_saved": false,
+      "result": {
+        "error": "Response expired for request e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:56. The most likely cause is that SDK was stalled for too long. This may be caused by heavy GIL contention in your training script, unstable network connection to Tinker services, or pausing your training script.",
+        "category": "user"
+      },
+      "signature": "eded5ddd9a769f727a8e4b0203fa16c79a0a1f42d775845bd3d730af4d7b203d",
+      "original_key": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/10/p0/turn-0",
+      "proposed_replacement_key": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/10/p0/turn-0/network-replacement-2026-11-18",
+      "status": "response unavailable, possibly billed",
+      "output_allowed": false
+    },
+    {
+      "key": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/8/p0/turn-1",
+      "entry_id": "12d0e19a-5dfc-492a-881d-38cb8c6730d5",
+      "request_id": "e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:54",
+      "receipt_saved": true,
+      "result": {
+        "error": "Response expired for request e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:54. The most likely cause is that SDK was stalled for too long. This may be caused by heavy GIL contention in your training script, unstable network connection to Tinker services, or pausing your training script.",
+        "category": "user"
+      },
+      "signature": "9a10c8d888436e0e69dceec33622939a7bb66fbcf6c985e516170836e7cfcf06",
+      "original_key": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/8/p0/turn-1",
+      "proposed_replacement_key": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/8/p0/turn-1/network-replacement-2026-11-18",
+      "status": "response unavailable, possibly billed",
+      "output_allowed": false
+    },
+    {
+      "key": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/9/p0/turn-1",
+      "entry_id": "2d5590e3-5e6d-4c12-b255-53f4832e6de6",
+      "request_id": "e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:55",
+      "receipt_saved": true,
+      "result": {
+        "error": "Response expired for request e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:55. The most likely cause is that SDK was stalled for too long. This may be caused by heavy GIL contention in your training script, unstable network connection to Tinker services, or pausing your training script.",
+        "category": "user"
+      },
+      "signature": "36b5469a2d21ce8e24e8044ce51d8e4e251503aba3807c3702eb4ab01305bb65",
+      "original_key": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/9/p0/turn-1",
+      "proposed_replacement_key": "Qwen/Qwen3-8B/train-v1/seed20261118/animals/8/9/p0/turn-1/network-replacement-2026-11-18",
+      "status": "response unavailable, possibly billed",
+      "output_allowed": false
+    }
+  ],
+  "approved_at": "2026-11-18T04:50:17.911180+00:00",
+  "approval_text": "Approved four exact replacements; retain $0.005618 holds and exclude original outputs. Reconnect and collect every pending future before new submissions after a network drop."
+}

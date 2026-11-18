@@ -1,5 +1,7 @@
 # Phase 1 protocol
 
+The 2026-11-18 learnability probe is a separate approved development run, documented in LEARNABILITY.md. It uses animals training-pool N=8 and 16 with a separately hashed prompt and random grammar examples. It does not change this frozen evaluation protocol. The training factory now also supports N=4 and 8 for proposed follow-up curricula; no training has occurred. Any adopted prompt or SFT change needs matched controls before an RL comparison.
+
 This protocol was fixed before paid evaluation. The user approved Phase 2 on 2026-11-18: indices 0 through 27 in all ten primary cells and five games in each of four N=32 reference cells. The public prompts and game rules stay fixed. evals/phase2.json records the approved models, output caps, and frozen sampling configuration. Training still needs the next gate approval.
 
 ## Game and observations

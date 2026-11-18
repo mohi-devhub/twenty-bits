@@ -1,0 +1,188 @@
+{
+  "seed": 20261119,
+  "namespace": "train-v1",
+  "service_calls": 0,
+  "policy": "Uniform single attributes with replacement; GUESS at singleton (p=0), confidence >= .95 (p=.10), or budget; stable MAP tie break. Same start and noise schedule within each group; independent policy RNGs. CIs resample start states.",
+  "cells": [
+    {
+      "n": 4,
+      "noise": 0,
+      "states": 500,
+      "games_per_state": 8,
+      "games": 4000,
+      "win_rate": 0.89675,
+      "win_ci95_clustered": [
+        0.88225,
+        0.9105
+      ],
+      "nonzero_return_variance_groups": 0.998,
+      "mixed_win_groups": 0.404,
+      "singleton_wins": 3210
+    },
+    {
+      "n": 4,
+      "noise": 0.1,
+      "states": 500,
+      "games_per_state": 8,
+      "games": 4000,
+      "win_rate": 0.77375,
+      "win_ci95_clustered": [
+        0.75,
+        0.797
+      ],
+      "nonzero_return_variance_groups": 0.89,
+      "mixed_win_groups": 0.562,
+      "singleton_wins": 0
+    },
+    {
+      "n": 8,
+      "noise": 0,
+      "states": 500,
+      "games_per_state": 8,
+      "games": 4000,
+      "win_rate": 0.76275,
+      "win_ci95_clustered": [
+        0.742,
+        0.7822562499999999
+      ],
+      "nonzero_return_variance_groups": 0.99,
+      "mixed_win_groups": 0.686,
+      "singleton_wins": 2330
+    },
+    {
+      "n": 8,
+      "noise": 0.1,
+      "states": 500,
+      "games_per_state": 8,
+      "games": 4000,
+      "win_rate": 0.598,
+      "win_ci95_clustered": [
+        0.571,
+        0.6245
+      ],
+      "nonzero_return_variance_groups": 0.868,
+      "mixed_win_groups": 0.768,
+      "singleton_wins": 0
+    },
+    {
+      "n": 16,
+      "noise": 0,
+      "states": 500,
+      "games_per_state": 8,
+      "games": 4000,
+      "win_rate": 0.57675,
+      "win_ci95_clustered": [
+        0.5525,
+        0.6015
+      ],
+      "nonzero_return_variance_groups": 0.954,
+      "mixed_win_groups": 0.8,
+      "singleton_wins": 1518
+    },
+    {
+      "n": 16,
+      "noise": 0.1,
+      "states": 500,
+      "games_per_state": 8,
+      "games": 4000,
+      "win_rate": 0.42025,
+      "win_ci95_clustered": [
+        0.39525,
+        0.44525
+      ],
+      "nonzero_return_variance_groups": 0.84,
+      "mixed_win_groups": 0.82,
+      "singleton_wins": 0
+    },
+    {
+      "n": 32,
+      "noise": 0,
+      "states": 500,
+      "games_per_state": 8,
+      "games": 4000,
+      "win_rate": 0.41675,
+      "win_ci95_clustered": [
+        0.3925,
+        0.44150624999999993
+      ],
+      "nonzero_return_variance_groups": 0.89,
+      "mixed_win_groups": 0.852,
+      "singleton_wins": 980
+    },
+    {
+      "n": 32,
+      "noise": 0.1,
+      "states": 500,
+      "games_per_state": 8,
+      "games": 4000,
+      "win_rate": 0.294,
+      "win_ci95_clustered": [
+        0.27175,
+        0.31675
+      ],
+      "nonzero_return_variance_groups": 0.784,
+      "mixed_win_groups": 0.784,
+      "singleton_wins": 0
+    },
+    {
+      "n": 64,
+      "noise": 0,
+      "states": 500,
+      "games_per_state": 8,
+      "games": 4000,
+      "win_rate": 0.28025,
+      "win_ci95_clustered": [
+        0.258,
+        0.30425
+      ],
+      "nonzero_return_variance_groups": 0.752,
+      "mixed_win_groups": 0.734,
+      "singleton_wins": 546
+    },
+    {
+      "n": 64,
+      "noise": 0.1,
+      "states": 500,
+      "games_per_state": 8,
+      "games": 4000,
+      "win_rate": 0.17675,
+      "win_ci95_clustered": [
+        0.159,
+        0.196
+      ],
+      "nonzero_return_variance_groups": 0.604,
+      "mixed_win_groups": 0.604,
+      "singleton_wins": 0
+    },
+    {
+      "n": 128,
+      "noise": 0,
+      "states": 500,
+      "games_per_state": 8,
+      "games": 4000,
+      "win_rate": 0.1865,
+      "win_ci95_clustered": [
+        0.16675,
+        0.20675
+      ],
+      "nonzero_return_variance_groups": 0.572,
+      "mixed_win_groups": 0.572,
+      "singleton_wins": 270
+    },
+    {
+      "n": 128,
+      "noise": 0.1,
+      "states": 500,
+      "games_per_state": 8,
+      "games": 4000,
+      "win_rate": 0.11325,
+      "win_ci95_clustered": [
+        0.09875,
+        0.1285
+      ],
+      "nonzero_return_variance_groups": 0.438,
+      "mixed_win_groups": 0.438,
+      "singleton_wins": 0
+    }
+  ]
+}

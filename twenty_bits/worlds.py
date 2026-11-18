@@ -120,8 +120,8 @@ def sample_game(
 
 def training_game(n: int, index: int, *, seed: int, noise: float) -> dict:
     """Training has no domain argument: only the fixed animals pool is allowed."""
-    if n not in (16, 32, 64, 128):
-        raise ValueError("Training sizes must follow the 16 to 128 curriculum.")
+    if n not in (4, 8, 16, 32, 64, 128):
+        raise ValueError("Training sizes must be 4, 8, 16, 32, 64, or 128.")
     if noise not in (0, 0.10):
         raise ValueError("Training noise must be 0 or 0.10.")
     return sample_game(

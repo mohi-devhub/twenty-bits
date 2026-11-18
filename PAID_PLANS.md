@@ -1,5 +1,7 @@
 # Approved $50 budget and Phase 2
 
+The later learnability gate is [LEARNABILITY.md](LEARNABILITY.md). The authorized $1.50 prompt probe completed 32 games for $0.069563 in recorded usage, with $0.005618 in additional unresolved holds. Total project usage is $5.862788, holds are $0.012813, and $44.124399 remains. Its [new forecasts](research/learnability_forecast.json) supersede the Phase 2 pilot proposal below. No SFT or RL is approved. Main-run seed/update options still wait for measured pilot learning speed.
+
 The user approved a $50 total cap, including active holds, on 2026-11-18. Phase 2 uses Qwen3-8B with thinking disabled, a 2,048-token output cap, 28 games in each of ten frozen cells, and a 20-game gpt-oss-120b reference. The 4B screen was dropped. [phase2.json](evals/phase2.json) fixes the sampling configuration. Training is not authorized yet.
 
 All pilot and main groups now contain eight games. The next training gate proposes condition A only. At the pilot gate, Option S retains A seeds 11, 23, 37 and B seeds 41, 53; Option U uses A seeds 11, 23 and B seed 41. Update counts and the recommendation will use measured learning speed and the remaining budget. A visible learning curve takes priority over additional seeds.

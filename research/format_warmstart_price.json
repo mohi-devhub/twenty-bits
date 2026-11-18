@@ -1,0 +1,1601 @@
+{
+  "authorized": false,
+  "service_calls": 0,
+  "model": "Qwen/Qwen3-8B",
+  "procedural_games": 128,
+  "examples": 554,
+  "question_policy": "Uniform single attributes with replacement; independent of target, posterior and split quality.",
+  "column_probabilities": "Two copies of [.05, .10, .20, .35, .65, .80, .90, .95], shuffled per game. Constant columns are dropped. Random questions are not selected for balance.",
+  "guess_policy": "Correct GUESS only when posterior support has one item. Ambiguous games contribute questions and no guess.",
+  "domain_caveat": "These separate procedural toy tables contain no frozen or held-out world rows. Using them for SFT would nevertheless expose the model to random-table identification. Synthetic transfer would then mean new tables, labels and sizes, rather than an unseen random-table task.",
+  "supervised_behavior_caveat": "This also teaches stopping and table/answer tracking at singleton. It does not demonstrate bisection.",
+  "epochs": 2,
+  "batches_of_32_examples": 36,
+  "full_context_tokens_per_epoch": 413627,
+  "longest_example_tokens": 949,
+  "forward_backward_usd": "0.36399176",
+  "forward_backward_with_margin_usd": "0.545987640",
+  "storage_allowance_usd": "0.100000",
+  "total_with_storage_and_margin_usd": "0.695987640",
+  "data_sha256": "4b013d7c8ead2bb8d596d1fa0bb3b759cc49cfda68e073c4d08296ff6ead7826",
+  "games": [
+    {
+      "id": "format-toy-proposal-v1/4/0",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_349291798",
+        "ASK: property_992211608",
+        "ASK: property_407157169",
+        "ASK: property_356618423",
+        "GUESS: object_371865907"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/1",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_495178134",
+        "GUESS: object_631462841"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/2",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_192532466",
+        "ASK: property_738047498",
+        "GUESS: object_469181580"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/3",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_164820068",
+        "ASK: property_342706534",
+        "ASK: property_591977023",
+        "GUESS: object_433751977"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/4",
+      "n": 4,
+      "won": false,
+      "actions": [
+        "ASK: property_859756267",
+        "ASK: property_859756267",
+        "ASK: property_859756267",
+        "ASK: property_859756267"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/5",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_729329827",
+        "GUESS: object_430954288"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/6",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_655521733",
+        "ASK: property_563895642",
+        "ASK: property_115155956",
+        "ASK: property_761711305",
+        "GUESS: object_183859153"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/7",
+      "n": 4,
+      "won": false,
+      "actions": [
+        "ASK: property_924023525",
+        "ASK: property_918772972",
+        "ASK: property_461982124",
+        "ASK: property_153478263"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/8",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_266721347",
+        "ASK: property_801264348",
+        "GUESS: object_862590017"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/9",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_268240593",
+        "GUESS: object_918310651"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/10",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_214218412",
+        "ASK: property_390368144",
+        "GUESS: object_991667529"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/11",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_396983079",
+        "ASK: property_814210830",
+        "ASK: property_396983079",
+        "ASK: property_290975881",
+        "GUESS: object_713120872"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/12",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_697653979",
+        "ASK: property_844754516",
+        "GUESS: object_822471735"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/13",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_731868766",
+        "ASK: property_385262964",
+        "GUESS: object_914123118"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/14",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_894818385",
+        "ASK: property_729338652",
+        "ASK: property_707188266",
+        "GUESS: object_557293498"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/15",
+      "n": 4,
+      "won": false,
+      "actions": [
+        "ASK: property_875288290",
+        "ASK: property_875288290",
+        "ASK: property_875288290",
+        "ASK: property_875288290"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/16",
+      "n": 4,
+      "won": false,
+      "actions": [
+        "ASK: property_495624455",
+        "ASK: property_495624455",
+        "ASK: property_209357898",
+        "ASK: property_209357898"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/17",
+      "n": 4,
+      "won": false,
+      "actions": [
+        "ASK: property_196176754",
+        "ASK: property_233606651",
+        "ASK: property_962993100",
+        "ASK: property_962993100"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/18",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_848306226",
+        "ASK: property_482467358",
+        "ASK: property_443386036",
+        "GUESS: object_154188387"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/19",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_110711897",
+        "ASK: property_861052491",
+        "GUESS: object_507438741"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/20",
+      "n": 4,
+      "won": false,
+      "actions": [
+        "ASK: property_154113531",
+        "ASK: property_984569031",
+        "ASK: property_470381427",
+        "ASK: property_984569031"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/21",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_802473376",
+        "ASK: property_121643513",
+        "ASK: property_591103239",
+        "GUESS: object_541663888"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/22",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_782232474",
+        "ASK: property_782232474",
+        "ASK: property_252600283",
+        "ASK: property_748328097",
+        "GUESS: object_642241440"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/23",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_463094688",
+        "GUESS: object_494159343"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/24",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_552009562",
+        "ASK: property_214435991",
+        "ASK: property_388231759",
+        "GUESS: object_257874285"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/25",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_113840619",
+        "ASK: property_599433898",
+        "ASK: property_113840619",
+        "ASK: property_469341297",
+        "GUESS: object_229274326"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/26",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_514885671",
+        "ASK: property_514885671",
+        "ASK: property_268442642",
+        "ASK: property_597178588",
+        "GUESS: object_496099462"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/27",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_835943807",
+        "ASK: property_385970254",
+        "GUESS: object_709536589"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/28",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_927155903",
+        "ASK: property_569009418",
+        "GUESS: object_828040205"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/29",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_546012584",
+        "ASK: property_546012584",
+        "ASK: property_270732627",
+        "ASK: property_915247962",
+        "GUESS: object_224722747"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/30",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_135695072",
+        "ASK: property_252312124",
+        "GUESS: object_801737109"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/31",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_645902699",
+        "ASK: property_736595119",
+        "GUESS: object_817398335"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/32",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_536047994",
+        "ASK: property_519308879",
+        "ASK: property_938637590",
+        "GUESS: object_287756274"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/33",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_409852229",
+        "ASK: property_763849132",
+        "GUESS: object_776737495"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/34",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_791765695",
+        "ASK: property_819561719",
+        "ASK: property_150917511",
+        "GUESS: object_819210890"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/35",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_141423952",
+        "ASK: property_141423952",
+        "ASK: property_996079654",
+        "ASK: property_732844565",
+        "GUESS: object_593247476"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/36",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_667580133",
+        "ASK: property_129078406",
+        "GUESS: object_449005655"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/37",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_551467921",
+        "GUESS: object_681556280"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/38",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_439309058",
+        "ASK: property_527404860",
+        "ASK: property_960374306",
+        "GUESS: object_340492342"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/39",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_110424818",
+        "ASK: property_147824839",
+        "GUESS: object_275630223"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/40",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_426076750",
+        "ASK: property_570797808",
+        "ASK: property_948864074",
+        "GUESS: object_181859347"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/41",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_704488080",
+        "ASK: property_121430965",
+        "GUESS: object_265621002"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/42",
+      "n": 4,
+      "won": false,
+      "actions": [
+        "ASK: property_372447597",
+        "ASK: property_642590296",
+        "ASK: property_849891084",
+        "ASK: property_373901282"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/43",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_157513659",
+        "ASK: property_157513659",
+        "ASK: property_575004063",
+        "GUESS: object_666038617"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/44",
+      "n": 4,
+      "won": false,
+      "actions": [
+        "ASK: property_299912973",
+        "ASK: property_310722896",
+        "ASK: property_299912973",
+        "ASK: property_299912973"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/45",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_916557528",
+        "ASK: property_600497007",
+        "GUESS: object_326467074"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/46",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_562681710",
+        "ASK: property_356075393",
+        "ASK: property_330478852",
+        "GUESS: object_146109815"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/47",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_601081594",
+        "GUESS: object_125030575"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/48",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_693707239",
+        "ASK: property_923256094",
+        "GUESS: object_379395372"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/49",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_511809821",
+        "ASK: property_444621425",
+        "ASK: property_323572895",
+        "GUESS: object_901431573"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/50",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_492397536",
+        "GUESS: object_403174910"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/51",
+      "n": 4,
+      "won": false,
+      "actions": [
+        "ASK: property_224573680",
+        "ASK: property_964008952",
+        "ASK: property_964008952",
+        "ASK: property_500150242"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/52",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_654167608",
+        "GUESS: object_170531299"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/53",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_262731344",
+        "ASK: property_251409600",
+        "ASK: property_202673167",
+        "GUESS: object_664488031"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/54",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_391270832",
+        "ASK: property_480050728",
+        "GUESS: object_777851051"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/55",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_201281409",
+        "ASK: property_724796986",
+        "GUESS: object_608263590"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/56",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_637436231",
+        "ASK: property_528143660",
+        "GUESS: object_919067305"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/57",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_557980454",
+        "ASK: property_392136932",
+        "ASK: property_632151618",
+        "GUESS: object_789637299"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/58",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_163380508",
+        "ASK: property_627241472",
+        "ASK: property_501376950",
+        "GUESS: object_828251240"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/59",
+      "n": 4,
+      "won": false,
+      "actions": [
+        "ASK: property_926963310",
+        "ASK: property_181399028",
+        "ASK: property_648776839",
+        "ASK: property_466505361"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/60",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_227034927",
+        "ASK: property_918086730",
+        "ASK: property_657462991",
+        "GUESS: object_107452665"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/61",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_432116180",
+        "GUESS: object_193942696"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/62",
+      "n": 4,
+      "won": true,
+      "actions": [
+        "ASK: property_839566320",
+        "ASK: property_278588284",
+        "GUESS: object_924857544"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/4/63",
+      "n": 4,
+      "won": false,
+      "actions": [
+        "ASK: property_511471113",
+        "ASK: property_408774164",
+        "ASK: property_408774164",
+        "ASK: property_408774164"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/0",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_443064880",
+        "ASK: property_897982900",
+        "GUESS: object_954940280"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/1",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_558692027",
+        "ASK: property_157248815",
+        "ASK: property_837907716",
+        "ASK: property_299546662",
+        "ASK: property_608017605",
+        "GUESS: object_429447567"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/2",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_683151031",
+        "ASK: property_343008414",
+        "ASK: property_343008414",
+        "ASK: property_629718565",
+        "ASK: property_481803271",
+        "GUESS: object_369436187"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/3",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_287879321",
+        "ASK: property_233092511",
+        "ASK: property_707127007",
+        "ASK: property_565332663",
+        "ASK: property_273912207",
+        "ASK: property_273912207"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/4",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_298252977",
+        "ASK: property_344583558",
+        "ASK: property_344583558",
+        "ASK: property_973719930",
+        "ASK: property_973719930",
+        "ASK: property_572233285"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/5",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_825566596",
+        "ASK: property_825566596",
+        "ASK: property_980811583",
+        "ASK: property_447187555",
+        "ASK: property_478980405",
+        "ASK: property_167708968"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/6",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_367054652",
+        "GUESS: object_762282085"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/7",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_130121219",
+        "ASK: property_110427202",
+        "ASK: property_573980977",
+        "GUESS: object_401458320"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/8",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_897705463",
+        "ASK: property_897705463",
+        "ASK: property_930644623",
+        "ASK: property_649424234",
+        "ASK: property_649424234",
+        "ASK: property_913204294"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/9",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_291276862",
+        "ASK: property_700073472",
+        "ASK: property_662939063",
+        "ASK: property_758809752",
+        "ASK: property_291276862",
+        "ASK: property_851789995"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/10",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_309485134",
+        "ASK: property_898363754",
+        "ASK: property_672508593",
+        "GUESS: object_935613297"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/11",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_398045537",
+        "ASK: property_141412194",
+        "ASK: property_398045537",
+        "ASK: property_668269589",
+        "ASK: property_668269589",
+        "ASK: property_932858854"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/12",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_631126442",
+        "ASK: property_915516345",
+        "ASK: property_840598149",
+        "GUESS: object_746807562"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/13",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_447965309",
+        "ASK: property_209460922",
+        "ASK: property_285277072",
+        "ASK: property_936734006",
+        "ASK: property_501517566",
+        "ASK: property_447965309"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/14",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_587914078",
+        "ASK: property_569132595",
+        "ASK: property_569132595",
+        "ASK: property_544899454",
+        "ASK: property_544899454",
+        "ASK: property_154960835",
+        "GUESS: object_154209109"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/15",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_863335414",
+        "ASK: property_550726710",
+        "ASK: property_550726710",
+        "ASK: property_550726710",
+        "ASK: property_629588817",
+        "ASK: property_629588817"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/16",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_872650815",
+        "ASK: property_655199561",
+        "ASK: property_751495383",
+        "ASK: property_360159378",
+        "ASK: property_826121939",
+        "GUESS: object_135346551"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/17",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_842727369",
+        "ASK: property_893342369",
+        "ASK: property_747344630",
+        "ASK: property_184651351",
+        "ASK: property_184651351",
+        "ASK: property_893342369"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/18",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_816624428",
+        "ASK: property_329326583",
+        "GUESS: object_374034805"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/19",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_120707150",
+        "ASK: property_689860022",
+        "ASK: property_689860022",
+        "ASK: property_679005315",
+        "ASK: property_679005315",
+        "ASK: property_120707150"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/20",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_397075576",
+        "ASK: property_470573186",
+        "ASK: property_808716071",
+        "ASK: property_758728844",
+        "ASK: property_623828256",
+        "GUESS: object_972306985"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/21",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_249902201",
+        "ASK: property_712279827",
+        "ASK: property_249902201",
+        "ASK: property_224220036",
+        "ASK: property_249902201",
+        "ASK: property_903148036"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/22",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_217662051",
+        "ASK: property_524382119",
+        "ASK: property_559924170",
+        "GUESS: object_983289894"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/23",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_301432383",
+        "ASK: property_824685478",
+        "ASK: property_301432383",
+        "ASK: property_791378462",
+        "ASK: property_994955575",
+        "ASK: property_994955575"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/24",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_923188865",
+        "ASK: property_730815557",
+        "ASK: property_277226261",
+        "ASK: property_429999832",
+        "GUESS: object_542433530"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/25",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_874226366",
+        "ASK: property_839713576",
+        "ASK: property_566890857",
+        "GUESS: object_845712805"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/26",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_942668656",
+        "ASK: property_848160724",
+        "GUESS: object_645554958"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/27",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_761755013",
+        "ASK: property_417944552",
+        "ASK: property_174493341",
+        "ASK: property_761755013",
+        "ASK: property_882563270",
+        "ASK: property_417944552"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/28",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_684691196",
+        "ASK: property_264907570",
+        "ASK: property_833304068",
+        "ASK: property_246739856",
+        "ASK: property_157884381",
+        "ASK: property_816454146"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/29",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_501278797",
+        "ASK: property_347614470",
+        "ASK: property_305337782",
+        "GUESS: object_470591315"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/30",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_431616984",
+        "ASK: property_358020144",
+        "ASK: property_753029178",
+        "ASK: property_525024940",
+        "ASK: property_167051511",
+        "ASK: property_167051511"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/31",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_388528943",
+        "ASK: property_421144162",
+        "ASK: property_650573045",
+        "ASK: property_315024730",
+        "ASK: property_421144162",
+        "ASK: property_485189043",
+        "GUESS: object_590728855"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/32",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_504008387",
+        "ASK: property_498545575",
+        "ASK: property_753206915",
+        "ASK: property_677386891",
+        "ASK: property_853409108",
+        "ASK: property_504008387"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/33",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_533771814",
+        "ASK: property_956268282",
+        "ASK: property_533771814",
+        "ASK: property_873924539",
+        "GUESS: object_348308874"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/34",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_602061341",
+        "ASK: property_391041203",
+        "ASK: property_502096416",
+        "ASK: property_947048491",
+        "ASK: property_502096416",
+        "ASK: property_716054821",
+        "GUESS: object_385226123"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/35",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_232935344",
+        "GUESS: object_330959962"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/36",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_153089579",
+        "ASK: property_347987017",
+        "ASK: property_870808340",
+        "ASK: property_248229990",
+        "GUESS: object_716585229"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/37",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_334194245",
+        "ASK: property_152779833",
+        "ASK: property_850076946",
+        "ASK: property_334194245",
+        "ASK: property_152779833",
+        "ASK: property_850076946"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/38",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_462850773",
+        "ASK: property_272414450",
+        "ASK: property_272414450",
+        "ASK: property_462850773",
+        "ASK: property_812084420",
+        "ASK: property_521173686"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/39",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_190779030",
+        "ASK: property_439629959",
+        "ASK: property_718770951",
+        "GUESS: object_593148701"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/40",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_619690165",
+        "ASK: property_919187921",
+        "ASK: property_531287044",
+        "ASK: property_764393974",
+        "ASK: property_619690165",
+        "ASK: property_619690165"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/41",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_175357957",
+        "ASK: property_175357957",
+        "ASK: property_166222297",
+        "ASK: property_400837850",
+        "ASK: property_176279977",
+        "ASK: property_631769912"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/42",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_861590459",
+        "ASK: property_938001800",
+        "ASK: property_861590459",
+        "ASK: property_516924200",
+        "ASK: property_843589746",
+        "ASK: property_285497183"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/43",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_567583837",
+        "ASK: property_765484158",
+        "ASK: property_661256336",
+        "ASK: property_650155133",
+        "GUESS: object_880602071"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/44",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_782257311",
+        "ASK: property_714599331",
+        "ASK: property_754354474",
+        "ASK: property_163757714",
+        "ASK: property_754354474",
+        "ASK: property_754354474"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/45",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_291605327",
+        "ASK: property_326551874",
+        "ASK: property_654988705",
+        "ASK: property_569479040",
+        "GUESS: object_878656478"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/46",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_875201323",
+        "ASK: property_277341709",
+        "ASK: property_277341709",
+        "ASK: property_225830886",
+        "ASK: property_277341709",
+        "ASK: property_508696493",
+        "GUESS: object_578184076"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/47",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_535423923",
+        "GUESS: object_326767616"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/48",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_763755731",
+        "ASK: property_109228214",
+        "ASK: property_599858968",
+        "ASK: property_109228214",
+        "ASK: property_854683842",
+        "ASK: property_201711971",
+        "GUESS: object_599048374"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/49",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_299338458",
+        "ASK: property_791583148",
+        "GUESS: object_321585822"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/50",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_813253007",
+        "ASK: property_286494173",
+        "ASK: property_294819162",
+        "ASK: property_767323960",
+        "ASK: property_400824364",
+        "ASK: property_441644312",
+        "GUESS: object_753372440"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/51",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_943253317",
+        "ASK: property_273511351",
+        "ASK: property_308563487",
+        "ASK: property_895806365",
+        "GUESS: object_831718804"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/52",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_876606073",
+        "ASK: property_450708526",
+        "ASK: property_470117102",
+        "ASK: property_584656608",
+        "ASK: property_470117102",
+        "ASK: property_498999289"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/53",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_563962806",
+        "ASK: property_563962806",
+        "ASK: property_563962806",
+        "ASK: property_721172314",
+        "ASK: property_786180567",
+        "ASK: property_759588543",
+        "GUESS: object_504277760"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/54",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_473524307",
+        "ASK: property_292284639",
+        "ASK: property_323838781",
+        "ASK: property_904704495",
+        "ASK: property_279341370",
+        "ASK: property_502274649"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/55",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_599540082",
+        "ASK: property_344190294",
+        "GUESS: object_943036465"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/56",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_315967147",
+        "ASK: property_409986445",
+        "ASK: property_768911601",
+        "GUESS: object_304645612"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/57",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_471882174",
+        "ASK: property_863469630",
+        "ASK: property_341657791",
+        "ASK: property_388909696",
+        "ASK: property_299873497",
+        "ASK: property_471882174"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/58",
+      "n": 8,
+      "won": false,
+      "actions": [
+        "ASK: property_137790987",
+        "ASK: property_144017141",
+        "ASK: property_916973523",
+        "ASK: property_144017141",
+        "ASK: property_733593566",
+        "ASK: property_733593566"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/59",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_206040661",
+        "ASK: property_322995756",
+        "GUESS: object_221178636"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/60",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_875454896",
+        "GUESS: object_374384939"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/61",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_157204780",
+        "ASK: property_999649606",
+        "ASK: property_292011563",
+        "GUESS: object_271154485"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/62",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_352241681",
+        "ASK: property_477749899",
+        "ASK: property_779963933",
+        "GUESS: object_598222227"
+      ],
+      "guesses_only_at_singleton": true
+    },
+    {
+      "id": "format-toy-proposal-v1/8/63",
+      "n": 8,
+      "won": true,
+      "actions": [
+        "ASK: property_147576949",
+        "ASK: property_626664011",
+        "GUESS: object_290638096"
+      ],
+      "guesses_only_at_singleton": true
+    }
+  ]
+}

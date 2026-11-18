@@ -41,3 +41,11 @@ The real output was much longer than the 64-token forecast: about 1,303 generate
 A request is more than an HTTP call. The sampler ID and sequence number let us write its future ID to disk before sending. We verify the returned ID and keep polling it after a 408. A wire mismatch with the stock SDK's backpressure header caused the initial failures. Shutdown now lets active requests finish and saves their results before stopping.
 
 Bootstrap intervals resample whole games. With zero wins, that bootstrap gives a zero-width interval, so we also report Wilson bounds rather than imply that the population win rate is known to be zero. Thinking was disabled for Qwen; zero visible reasoning tokens reflects that setting. The next step is an A-only pilot with groups of eight, after approval. Its reward still contains only wins, question cost, and invalid penalties. EIG stays a measurement.
+
+## Learnability diagnosis and prompt probe
+
+Valid syntax and useful questions are separate. The saved base games mostly repeated malformed expressions, table codes, or name lists that revealed nothing. Long outputs also returned as history on later turns, which explains the cost miss. The probe added random grammar examples and clearer wording. It won one N=8 game with a real singleton, but only 22.2% of N=8 turns and 9.9% of N=16 turns were valid. We stopped before training.
+
+Random valid single-attribute play wins 89.7% at N=4 and 76.3% at N=8 under the declared final-guess rule. Smaller games can supply wins once syntax works. A group's returns can still vary through question costs when every game loses, so reward variance alone does not prove a useful win signal. The proposed format warm start teaches grammar, table tracking, and when to guess. It chooses no question for information gain. Its synthetic toy data would change how we describe later synthetic transfer, and it still needs approval.
+
+A future ID does not preserve a result forever. Network failures left three probe responses expired and another unavailable. The user approved exact replacements while keeping their cost holds. Recovery now recreates the client and collects all recoverable saved futures before sending new work. A 408 keeps the same request and hold. [LEARNABILITY.md](LEARNABILITY.md) records the measured latency, proposed checks, and revised budget.

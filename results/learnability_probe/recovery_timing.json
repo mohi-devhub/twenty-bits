@@ -1,0 +1,65 @@
+{
+  "basis": "Local fsynced journal and guarded operation timestamps, UTC. Server completion and expiry timestamps are not exposed; these ages measure observation latency, not the exact server retention time. Receipt-less requests also have unknown acceptance time.",
+  "futures": [
+    {
+      "request_id": "e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:57",
+      "receipt_saved": false,
+      "saved_before_dispatch_at": "2026-11-18T01:56:29.311095+00:00",
+      "first_collection_attempt_at": "2026-11-18T04:39:31.593123+00:00",
+      "seconds_to_first_collection_attempt": 9782.282028,
+      "earliest_terminal_recovery_reply_at": null,
+      "seconds_to_earliest_terminal_recovery_reply": null,
+      "explicit_inspection_at": "2026-11-18T04:40:12.503449+00:00",
+      "seconds_to_explicit_inspection": 9823.192354,
+      "inspection_result": {
+        "exception_type": "NotFoundError",
+        "http_status": 404
+      }
+    },
+    {
+      "request_id": "e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:56",
+      "receipt_saved": false,
+      "saved_before_dispatch_at": "2026-11-18T01:50:44.208858+00:00",
+      "first_collection_attempt_at": "2026-11-18T04:39:32.917651+00:00",
+      "seconds_to_first_collection_attempt": 10128.708793,
+      "earliest_terminal_recovery_reply_at": "2026-11-18T04:39:34.280877+00:00",
+      "seconds_to_earliest_terminal_recovery_reply": 10130.072019,
+      "explicit_inspection_at": "2026-11-18T04:40:13.188851+00:00",
+      "seconds_to_explicit_inspection": 10168.979993,
+      "inspection_result": {
+        "error": "Response expired for request e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:56. The most likely cause is that SDK was stalled for too long. This may be caused by heavy GIL contention in your training script, unstable network connection to Tinker services, or pausing your training script.",
+        "category": "user"
+      }
+    },
+    {
+      "request_id": "e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:54",
+      "receipt_saved": true,
+      "saved_before_dispatch_at": "2026-11-18T01:50:42.417873+00:00",
+      "first_collection_attempt_at": "2026-11-18T01:50:44.441181+00:00",
+      "seconds_to_first_collection_attempt": 2.023308,
+      "earliest_terminal_recovery_reply_at": "2026-11-18T04:36:32.741432+00:00",
+      "seconds_to_earliest_terminal_recovery_reply": 9950.323559,
+      "explicit_inspection_at": "2026-11-18T04:40:13.883794+00:00",
+      "seconds_to_explicit_inspection": 10171.465921,
+      "inspection_result": {
+        "error": "Response expired for request e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:54. The most likely cause is that SDK was stalled for too long. This may be caused by heavy GIL contention in your training script, unstable network connection to Tinker services, or pausing your training script.",
+        "category": "user"
+      }
+    },
+    {
+      "request_id": "e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:55",
+      "receipt_saved": true,
+      "saved_before_dispatch_at": "2026-11-18T01:50:43.258845+00:00",
+      "first_collection_attempt_at": "2026-11-18T01:50:44.740751+00:00",
+      "seconds_to_first_collection_attempt": 1.481906,
+      "earliest_terminal_recovery_reply_at": "2026-11-18T04:36:33.043528+00:00",
+      "seconds_to_earliest_terminal_recovery_reply": 9949.784683,
+      "explicit_inspection_at": "2026-11-18T04:40:14.577655+00:00",
+      "seconds_to_explicit_inspection": 10171.31881,
+      "inspection_result": {
+        "error": "Response expired for request e6f2a4dc-c721-514c-80fe-de85d337105e:sample:0:55. The most likely cause is that SDK was stalled for too long. This may be caused by heavy GIL contention in your training script, unstable network connection to Tinker services, or pausing your training script.",
+        "category": "user"
+      }
+    }
+  ]
+}

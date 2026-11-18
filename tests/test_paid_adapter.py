@@ -75,7 +75,7 @@ class TransportTests(unittest.IsolatedAsyncioTestCase):
             active = [
                 e
                 for e in self.ledger.status()["entries"]
-                if e["operation"].startswith("sample ")
+                if "sample " in e["operation"]
             ]
             self.assertEqual(active[-1]["state"], "submitted")
             self.assertEqual(active[-1]["request_id"], "sampler:0")
@@ -139,6 +139,130 @@ class TransportTests(unittest.IsolatedAsyncioTestCase):
             all(e["state"] == "settled" for e in self.ledger.status()["entries"])
         )
         await self.sample()
+        self.assertEqual(self.submissions, 1)
+
+    async def test_probe_prefix_keeps_write_ahead_ids_and_settlement(self):
+        from twenty_bits.budget import money
+
+        self.transport.run_cap = money("1.50")
+        self.transport.operation_prefix = "[probe-test] "
+        self.outcomes = [{"type": "try_again"}, self.response]
+        with patch("twenty_bits.tinker_transport.asyncio.sleep", new=AsyncMock()):
+            result = await self.sample()
+        self.assertEqual(self.submissions, 1)
+        self.assertEqual(self.polls, ["sampler:0", "sampler:0"])
+        status = self.transport.run_status()
+        self.assertEqual(money(status["spent_usd"]), money(result["actual_usd"]))
+        self.assertEqual(money(status["held_usd"]), money("0"))
+
+    async def test_reconnect_collects_pending_without_a_new_submission(self):
+        self.outcomes = [RuntimeError("interrupted retrieval")]
+        with self.assertRaises(RuntimeError):
+            await self.sample()
+        self.assertEqual(self.submissions, 1)
+        self.outcomes = [self.response]
+        await self.transport.collect_pending()
+        await self.sample()
+        self.assertEqual(self.submissions, 1)
+        self.assertEqual(self.polls, ["sampler:0", "sampler:0"])
+
+    async def test_failed_future_does_not_prevent_collecting_other_futures(self):
+        self.outcomes = [RuntimeError("interrupted retrieval")]
+        with self.assertRaises(RuntimeError):
+            await self.sample()
+        original = json.loads(
+            next((self.transport.directory / "requests").glob("*.json")).read_text()
+        )
+        ledger_entry = self.ledger.reserve(
+            phase=2,
+            operation="second existing sample",
+            estimate_usd=".001",
+            max_cost_usd=".002",
+        )
+        self.ledger.dispatch(ledger_entry, lambda: None)
+        self.ledger.attach_request_id(ledger_entry, "sampler:1")
+        other = {
+            **original,
+            "entry_id": ledger_entry,
+            "request_id": "sampler:1",
+            "receipt": {"request_id": "sampler:1"},
+            "key": "second-game",
+        }
+        from twenty_bits.tinker_transport import save_json
+
+        save_json(self.transport.directory / "requests/other.json", other)
+
+        async def poll(request_id):
+            if request_id == "sampler:0":
+                raise RuntimeError("expired")
+            return self.response
+
+        with patch.object(self.transport, "poll", new=poll):
+            with self.assertRaises(RuntimeError):
+                await self.transport.collect_pending()
+        recovered = json.loads(
+            (self.transport.directory / "requests/other.json").read_text()
+        )
+        self.assertTrue(recovered["settled"])
+        self.assertFalse(
+            json.loads(
+                next(
+                    p
+                    for p in (self.transport.directory / "requests").glob("*.json")
+                    if p.name != "other.json"
+                ).read_text()
+            ).get("settled", False)
+        )
+
+    async def test_network_failure_pauses_producers_and_retains_sample_hold(self):
+        from twenty_bits.budget import money
+        from twenty_bits.tinker_transport import NetworkInterruption
+
+        self.transport.run_cap = money("1.5")
+        self.transport.operation_prefix = "[probe-test] "
+        self.outcomes = [
+            tinker.APIConnectionError(
+                request=httpx.Request("POST", "https://fake.invalid")
+            )
+        ]
+        with self.assertRaises(NetworkInterruption):
+            await self.sample()
+        self.assertTrue(self.transport.failed)
+        self.assertGreater(float(self.transport.run_status()["held_usd"]), 0)
+        with self.assertRaises(BudgetError):
+            await self.sample()
+        self.assertEqual(self.submissions, 1)
+
+    async def test_startup_recovers_pending_before_capability_requests(self):
+        self.outcomes = [RuntimeError("interrupted retrieval")]
+        with self.assertRaises(RuntimeError):
+            await self.sample()
+        self.outcomes = [self.response]
+
+        async def capabilities():
+            journal = json.loads(
+                next((self.transport.directory / "requests").glob("*.json")).read_text()
+            )
+            self.assertTrue(journal["settled"])
+            return {
+                "supported_models": [
+                    {"model_name": m, "sampleable": True}
+                    for m in (CONFIG["primary_model"], CONFIG["reference_model"])
+                ]
+            }
+
+        self.transport.client.service = SimpleNamespace(
+            get_server_capabilities=capabilities
+        )
+        self.transport.state["session_id"] = "existing-session"
+        with (
+            patch("twenty_bits.tinker_transport.load_credentials"),
+            patch(
+                "twenty_bits.tinker_transport.AsyncTinker",
+                return_value=self.transport.client,
+            ),
+        ):
+            await self.transport.open(recover_pending=True)
         self.assertEqual(self.submissions, 1)
 
     async def test_interrupted_poll_retains_hold_and_resume_uses_saved_receipt(self):

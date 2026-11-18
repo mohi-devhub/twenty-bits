@@ -1,0 +1,15 @@
+model,domain,n,noise,games,turns,valid_ASK,valid_GUESS,INVALID,other,truncated,empty
+Qwen/Qwen3-8B,animals,32,0,28,308,96,0,184,28,171,0
+Qwen/Qwen3-8B,animals,32,0.1,28,306,137,1,141,27,114,0
+Qwen/Qwen3-8B,animals,128,0,28,401,62,1,324,14,227,0
+Qwen/Qwen3-8B,animals,128,0.1,28,403,52,1,337,13,203,0
+Qwen/Qwen3-8B,synthetic,32,0,28,308,10,0,270,28,11,0
+Qwen/Qwen3-8B,synthetic,32,0.1,28,308,20,0,260,28,0,0
+Qwen/Qwen3-8B,synthetic,128,0,28,396,56,0,336,4,296,0
+Qwen/Qwen3-8B,synthetic,128,0.1,28,393,14,0,378,1,354,0
+Qwen/Qwen3-8B,synthetic,256,0,28,368,0,0,367,1,351,0
+Qwen/Qwen3-8B,synthetic,256,0.1,28,368,0,0,367,1,351,0
+openai/gpt-oss-120b,animals,32,0,5,55,4,0,46,5,42,42
+openai/gpt-oss-120b,animals,32,0.1,5,55,1,0,49,5,34,34
+openai/gpt-oss-120b,synthetic,32,0,5,55,8,0,42,5,37,37
+openai/gpt-oss-120b,synthetic,32,0.1,5,55,6,0,44,5,44,44
