@@ -1,0 +1,34 @@
+{
+  "date": "2026-11-18",
+  "stage": "before any gradient dispatch",
+  "root_cause": "Specialized pinned SDK training methods accept request but not max_retries; the local Python argument binder rejected the call before constructing its coroutine or sending HTTP.",
+  "entry_id": "e5318bbe-8ccb-4f38-b3b2-f6c78bef41e6",
+  "request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:1",
+  "original_journal": {
+    "key": "forward-01",
+    "payload": {
+      "model_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0",
+      "seq_id": 1,
+      "tokens": 27154,
+      "loss_fn": "importance_sampling",
+      "data_sha256": "b9ab62bbd1492f2381922e38e907d16dbf79ef9f81a8c3b03d6de193376e8bc8"
+    },
+    "signature": "c4d2f3c903a2b18d12db7e9eea30d7dd99983d3dfb10d80831dee864048ef05a",
+    "request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:1",
+    "request_id_saved_before_dispatch": true,
+    "storage": false,
+    "maximum_usd": "0.011948",
+    "estimated_usd": "0.011948",
+    "entry_id": "e5318bbe-8ccb-4f38-b3b2-f6c78bef41e6",
+    "saved_before_dispatch_at": "2026-11-18T07:08:51.819725+00:00"
+  },
+  "forward_signature": "(self, *, request: 'ForwardBackwardRequest', forward_only: 'bool' = False) -> 'UntypedAPIFuture'",
+  "optim_signature": "(self, *, request: 'OptimStepRequest') -> 'UntypedAPIFuture'",
+  "http_training_posts_dispatched": 0,
+  "actual_usd": "0.000000",
+  "fix": "Remove unsupported per-call arguments on forward_backward and optim_step; AsyncTinker still has max_retries=0 globally. Add a regression test invoking the production GuardedRL.update through native SDK resources.",
+  "sampling_games_already_saved": 16,
+  "resample_saved_games": false,
+  "reward_prompt_cap_or_data_changes": false,
+  "log_sha256": "f76cccba6c5d9dc098f52cb56f82ee593b688df5daba65baf683948478f5ed56"
+}

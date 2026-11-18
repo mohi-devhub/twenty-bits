@@ -1,0 +1,19 @@
+{
+  "policy_step": 8,
+  "games": 8,
+  "mean_reward": 0.78125,
+  "wins": 7,
+  "win_rate": 0.875,
+  "questions_per_win": 3.0,
+  "eig_per_question": 0.6478861432999622,
+  "enumeration_rate": 0.0,
+  "single_item_enumeration_rate": 0.0,
+  "name_list_rate": 0.0,
+  "large_name_list_rate": 0.0,
+  "invalid_question_rate": 0.0,
+  "output_tokens_per_game": 27.375,
+  "reasoning_tokens_per_game": 0.0,
+  "questions": 25,
+  "post_budget_non_guesses": 0,
+  "truncated_turns": 0
+}

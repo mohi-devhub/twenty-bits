@@ -1,6 +1,17 @@
-# Approved $50 budget and Phase 2
+# Approved $50 budget and current choices
 
-The current main condition is candidate set provided. Paired training-pool qualification completed for **$0.019543** against the approved **$0.50 including holds**, with no new holds. Raw base won 23/32 with 98.5% validity; existing SFT won 14/32 with 91.9%. Both pass. [CANDIDATE_GATE.md](CANDIDATE_GATE.md) is the current gate. Total usage is $6.335229, holds are $0.112813, and $43.551958 remains. The proposed 16-update A pilot forecasts $1.56 including margin and checkpoint holds, with a $2.00 spending ceiling; raw base is recommended and initialization awaits approval. No RL is authorized. The frozen primary 28-per-cell slice remains the future main comparison; it must use a newly sampled matched candidate-feedback control. The end-of-project no-list hard slice has 20 games per model and is evaluation-only.
+The current main condition is candidate set provided. The approved raw-base Qwen3-8B A pilot completed all 16 updates, 128 training games and 40 development games for **$0.291204 plus $0.250000 holds**, below its $2.00 ceiling. Random-question SFT is dropped from the main plan because it lowered EIG in the paired qualification. [PILOT_GATE.md](PILOT_GATE.md) is the current gate. Project usage is **$6.626433**, holds are **$0.362813**, and **$43.010754 remains**. No main run is authorized.
+
+| Proposed choice | A / B seeds | Updates per seed | Training games per seed | Total with 1.5x margin and holds |
+| --- | --- | ---: | ---: | ---: |
+| S | 3 / 2 | 12 | 96 | $42.89 |
+| U | 2 / 1 | 30 | 240 | $42.49 |
+
+Amounts round upward to cents. [Measured-cost profiles and curricula](research/main_options_after_pilot.json) include development checks every four updates, a new matched raw-base control and one scheduled endpoint per seed on the unchanged 28-per-cell, ten-cell frozen slice. Both also include 20 no-list hard-mode games each for raw base and the predetermined final A seed 11. Every main seed starts from raw base, never SFT or the pilot adapter. U is recommended for an exploratory continuation with more updates at N=16/32; its single noisy seed cannot estimate between-seed uncertainty. S provides more replication with shorter training. These are forecasts, not guaranteed completion; the ledger enforces the cap. The schedules below are historical proposals and approvals, superseded by this gate.
+
+## Historical candidate-set qualification
+
+Paired training-pool qualification cost $0.019543 against $0.50 including holds. Raw base won 23/32 with 98.5% validity; SFT won 14/32 with 91.9%. [CANDIDATE_GATE.md](CANDIDATE_GATE.md) records that gate and the later-approved pilot proposal. Its $1.56 forecast included margin and checkpoint holds. The full bank was not evaluated under candidate feedback at that gate.
 
 ## Historical alias and SFT gate
 

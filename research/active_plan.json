@@ -1,45 +1,96 @@
 {
-  "status": "candidate-set qualification passed; stopped before RL",
-  "main_claim": "Outcome-only RL for question selection given environment-computed candidate state.",
+  "status": "pilot A completed; stopped for main-run choice",
+  "initial_policy": "raw_base_no_sft",
+  "sft_checkpoint": null,
+  "sft_removal_reason": "Paired candidate-set qualification: SFT EIG lower by 0.1444 bits/question; raw base selected by user.",
   "observation_mode": "candidate_set",
-  "prompt_version": "candidate-set-v1",
   "posterior_threshold": 0.001,
-  "grammar_version": "attribute-codes-v2",
-  "primary_model": "Qwen/Qwen3-8B",
+  "pilot_config": "experiments/pilot_A.json",
+  "pilot_authorization": "research/pilot_A_approval.json",
+  "pilot_ceiling_including_holds_usd": "2.000000",
+  "pilot_updates": 16,
+  "group_size": 8,
+  "curriculum": [
+    {
+      "n": 4,
+      "updates": 4,
+      "games": 32
+    },
+    {
+      "n": 8,
+      "updates": 8,
+      "games": 64
+    },
+    {
+      "n": 16,
+      "updates": 4,
+      "games": 32
+    }
+  ],
+  "training_games": 128,
+  "development_games": 40,
+  "rl_authorized_scope": "The approved A pilot is complete. No further training or main-run evaluation is authorized.",
+  "main_runs_authorized": false,
   "reference_model": null,
-  "frozen_main_games_per_cell": 28,
-  "frozen_main_cells": 10,
-  "hard_mode": "evals/hard_mode.json",
-  "train_on_hard_mode": false,
-  "project_usage": {
+  "project_usage_at_recording": {
     "cap_usd": "50.000000",
-    "spent_usd": "6.335229",
-    "held_usd": "0.112813",
-    "available_usd": "43.551958",
+    "spent_usd": "6.626433",
+    "held_usd": "0.362813",
+    "available_usd": "43.010754",
     "blocked": false
   },
-  "qualification": {
-    "format_sft": {
-      "games": 32,
-      "valid_turn_rate": 0.918918918918919,
-      "wins": 14,
-      "passed": true
-    },
-    "raw_base": {
-      "games": 32,
-      "valid_turn_rate": 0.9854014598540146,
-      "wins": 23,
-      "passed": true
-    }
+  "pilot_gate": "PILOT_GATE.md",
+  "pilot_usage_usd": "0.291204",
+  "pilot_checkpoint_holds_usd": "0.250000",
+  "stop_rule_result": {
+    "after_updates": 4,
+    "groups_with_nonzero_return_variance": 3,
+    "groups": 4,
+    "passed": true
   },
-  "qualification_usage_usd": "0.019543",
-  "qualification_cap_including_holds_usd": ".500000",
-  "new_training_updates": 0,
-  "rl_authorized": false,
-  "recommended_initial_policy": "raw_base",
-  "initialization_approved": false,
-  "pilot_proposal": "research/candidate_set_pilot_proposal.json",
-  "pilot_proposed_cap_including_holds_usd": "2.00",
-  "pilot_forecast_including_margin_and_checkpoint_holds_usd": 1.5644516400000001,
-  "next_gate": "User chooses initialization and approves the A-only 16-update pilot; no automatic training."
+  "main_options": "research/main_options_after_pilot.json",
+  "recommendation": "U",
+  "main_proposed_options": {
+    "S": {
+      "seeds_A": [
+        11,
+        23,
+        37
+      ],
+      "seeds_B": [
+        41,
+        53
+      ],
+      "updates_per_seed": 12,
+      "training_games_per_seed": 96,
+      "development_checks": [
+        4,
+        8,
+        12
+      ],
+      "total_with_1_5_margin_usd": 42.887906317200006
+    },
+    "U": {
+      "seeds_A": [
+        11,
+        23
+      ],
+      "seeds_B": [
+        41
+      ],
+      "updates_per_seed": 30,
+      "training_games_per_seed": 240,
+      "development_checks": [
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        30
+      ],
+      "total_with_1_5_margin_usd": 42.480710971200004
+    }
+  }
 }

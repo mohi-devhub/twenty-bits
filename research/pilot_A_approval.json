@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-18",
+  "status": "approved",
+  "global_cap_including_holds_usd": "50.000000",
+  "pilot_cap_including_holds_usd": "2.000000",
+  "initial_policy": "raw_base_no_sft",
+  "updates": 16,
+  "training_games": 128,
+  "development_games": 40,
+  "group_size": 8,
+  "variance_stop": {
+    "after_updates": 4,
+    "halt_if_fraction_of_nonzero_return_variance_groups_below": 0.25,
+    "nonzero_variance_tolerance": 1e-12
+  },
+  "main_runs_authorized": false,
+  "main_plan_sft_checkpoint": null,
+  "sft_removal_reason": "Random-question SFT lowered EIG on the paired candidate-set qualification: pooled SFT minus raw base = -0.1444299248 bits/question, paired 95% CI [-0.2580291075,-0.0268366927]. SFT remains historical diagnostic data, never loaded into the main policy."
+}

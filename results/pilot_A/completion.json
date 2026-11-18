@@ -1,0 +1,142 @@
+{
+  "config_sha256": "5730eafe739610977a842a133f689e2a8daa51d6504dc4b011039d58d104a8c9",
+  "training_model_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0",
+  "initialization": "raw_base_no_sft",
+  "updates": 16,
+  "stop_reason": "completed_16_updates",
+  "training_games": 128,
+  "development_games": 40,
+  "checkpoints": {
+    "4": {
+      "type": "save_weights_for_sampler",
+      "path": "tinker://e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0/sampler_weights/pilot-A-step-04",
+      "size_bytes": null,
+      "sampling_session_id": null
+    },
+    "8": {
+      "type": "save_weights_for_sampler",
+      "path": "tinker://e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0/sampler_weights/pilot-A-step-08",
+      "size_bytes": null,
+      "sampling_session_id": null
+    },
+    "12": {
+      "type": "save_weights_for_sampler",
+      "path": "tinker://e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0/sampler_weights/pilot-A-step-12",
+      "size_bytes": null,
+      "sampling_session_id": null
+    },
+    "16": {
+      "type": "save_weights_for_sampler",
+      "path": "tinker://e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0/sampler_weights/pilot-A-step-16",
+      "size_bytes": null,
+      "sampling_session_id": null
+    }
+  },
+  "external": {
+    "type": "save_weights_external",
+    "path": "tinker://e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0/external_weights/pilot-A-final-step-16",
+    "size_bytes": 369221544
+  },
+  "adapter_files": {
+    "adapter_config.json": {
+      "bytes": 934,
+      "sha256": "7c4821f8f443de1d52d092093c5bdb57bafcfe431bd83b0c28b51852283a86bd"
+    },
+    "adapter_model.safetensors": {
+      "bytes": 369220610,
+      "sha256": "7c9b1f3fec5aab7e6bf1f2f1327b77943a5f9fe3c3a2a02803a6bc4fd6283ee8"
+    }
+  },
+  "snapshots": {
+    "0": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:0",
+      "next_seq": 71,
+      "policy_step": 0,
+      "initialization": "raw_base"
+    },
+    "1": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:1",
+      "next_seq": 32,
+      "policy_step": 1
+    },
+    "2": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:2",
+      "next_seq": 32,
+      "policy_step": 2
+    },
+    "3": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:3",
+      "next_seq": 24,
+      "policy_step": 3
+    },
+    "4": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:4",
+      "next_seq": 80,
+      "policy_step": 4
+    },
+    "5": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:5",
+      "next_seq": 42,
+      "policy_step": 5
+    },
+    "6": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:6",
+      "next_seq": 39,
+      "policy_step": 6
+    },
+    "7": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:7",
+      "next_seq": 47,
+      "policy_step": 7
+    },
+    "8": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:8",
+      "next_seq": 62,
+      "policy_step": 8
+    },
+    "9": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:9",
+      "next_seq": 24,
+      "policy_step": 9
+    },
+    "10": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:10",
+      "next_seq": 40,
+      "policy_step": 10
+    },
+    "11": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:11",
+      "next_seq": 29,
+      "policy_step": 11
+    },
+    "12": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:12",
+      "next_seq": 81,
+      "policy_step": 12
+    },
+    "13": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:13",
+      "next_seq": 40,
+      "policy_step": 13
+    },
+    "14": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:14",
+      "next_seq": 38,
+      "policy_step": 14
+    },
+    "15": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:15",
+      "next_seq": 44,
+      "policy_step": 15
+    },
+    "16": {
+      "id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:sample:16",
+      "next_seq": 31,
+      "policy_step": 16
+    }
+  },
+  "run_budget": {
+    "spent_usd": "0.291204",
+    "held_usd": "0.250000"
+  }
+}

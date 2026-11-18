@@ -1,0 +1,447 @@
+{
+  "config_sha256": "5730eafe739610977a842a133f689e2a8daa51d6504dc4b011039d58d104a8c9",
+  "games_sha256": "9ca2eb61612218266789cf03915c26356a7c08eb5d27880950b12aa873f10b89",
+  "implementation_sha256": {
+    "twenty_bits/rl_pilot.py": "69d1a86d650e3ffd1aaaa74c6149c16bf315a4c2f3c6cd57c2c904090550093b",
+    "twenty_bits/model_player.py": "cc9acf2378325f7386aeb3d02048a89f19e360c3d8db4a77bbfa77014d5241e4",
+    "twenty_bits/tinker_transport.py": "b1c45aaf08e653ce58bdaab57ae754826d702c96fabf52d3abf20fb2ebfacff3",
+    "twenty_bits/tinker_rendering.py": "bdefa45558a83ceb85d89ef6701001dfeb0e5c90c0508d109ed8850e3cfdd1c4",
+    "twenty_bits/candidate_feedback.py": "5e62867e4dd0bf768c74146c06d1d6cddd755d75bfa852737aa3f0fbf3b581e1",
+    "twenty_bits/game.py": "117853df865b022482235290caa080b45effae6aa67b4a4324c7f23e45e37e79",
+    "twenty_bits/predicates.py": "498e0f3246273fedc4a9baf20b8ea63826209ab4705ed899d8cac06a3f56f977",
+    "twenty_bits/attributes.py": "4fea3de19f7763d26d85e8cf7bd86b450e3e625b9f49d1447909ab1fb3d1d2f2",
+    "twenty_bits/learnability.py": "f73a412bfee21edf81c218e907b46dd93a10420ea4d85e0fc5214ca0fe30da0f",
+    "twenty_bits/worlds.py": "c113f6e383b2f17d6ad9c81cfaa9537b928f1cecd3dcdf57150c637d5189f12b",
+    "scripts/run_rl_pilot.py": "e012d26be721646073636c0504336b00edab907151faf2457285654062e6caeb",
+    "scripts/run_format_sft.py": "beff6f826c26da6fbac74c4c44ba8e5902d737ea48b9f78b049dd97e46a644b8"
+  },
+  "native_initial_prompts": [
+    {
+      "id": "train-v1/seed11/animals/4/800001/p0",
+      "tokens": 662,
+      "sha256": "6856bf811f0e8e9a191860e77f9ed49cf49e1a3cd48b658f594cf819d39c801e"
+    },
+    {
+      "id": "train-v1/seed11/animals/4/800002/p0",
+      "tokens": 634,
+      "sha256": "ba6c2e8027a3ce371e670d5c5fbd89d99611a27e08404e24424f8995b8ed82a6"
+    },
+    {
+      "id": "train-v1/seed11/animals/4/800003/p0",
+      "tokens": 688,
+      "sha256": "fa6d1b7eda70aa05622d6cd93947dd57bd57e3459556390325285682586f7e04"
+    },
+    {
+      "id": "train-v1/seed11/animals/4/800004/p0",
+      "tokens": 673,
+      "sha256": "1c1298677225ba68c23fa182020ef8d04825474586eb1aacce6fa1abc11aef3e"
+    },
+    {
+      "id": "train-v1/seed11/animals/8/800005/p0",
+      "tokens": 777,
+      "sha256": "57515584a05cf6f59e8157e132e559dfe1dc88ae89b2249dcf3d3617610e57f1"
+    },
+    {
+      "id": "train-v1/seed11/animals/8/800006/p0",
+      "tokens": 788,
+      "sha256": "f8457a3b91a53b7d1f6fe110e2c19e167628fb7674e1a4e925f389c3d51c5d1a"
+    },
+    {
+      "id": "train-v1/seed11/animals/8/800007/p0",
+      "tokens": 783,
+      "sha256": "edcf4ea19d1982c0d4b6f067dbbd404dc039551e3dae1d97d14a123375d38851"
+    },
+    {
+      "id": "train-v1/seed11/animals/8/800008/p0",
+      "tokens": 805,
+      "sha256": "c8ad6debda3f27d99cb3bf643c5c0f06a43295515eb117445e547fc7a5c40fd8"
+    },
+    {
+      "id": "train-v1/seed11/animals/8/800009/p0",
+      "tokens": 760,
+      "sha256": "ff4045ce28674b4dc71a4d53fe23f40223d980d0404e38ffb1e2dcebf1c3d1b1"
+    },
+    {
+      "id": "train-v1/seed11/animals/8/800010/p0",
+      "tokens": 800,
+      "sha256": "f5cde319a224dbe905a33f9f5eb22526cc9059fc4dcbc1f282b4d33619f154eb"
+    },
+    {
+      "id": "train-v1/seed11/animals/8/800011/p0",
+      "tokens": 777,
+      "sha256": "31195ddfd5291264c91c2769dff4a3f913ebc011db96f92f3424f34f7b953bdd"
+    },
+    {
+      "id": "train-v1/seed11/animals/8/800012/p0",
+      "tokens": 792,
+      "sha256": "666f998dc97acbd12242924d93d95ea77ac014d4322efe154e1df09b695c3a00"
+    },
+    {
+      "id": "train-v1/seed11/animals/16/800013/p0",
+      "tokens": 984,
+      "sha256": "6f4ac11bea398024779207bc1d84160da6d143d33371d3c2f62f3fcd1fcca677"
+    },
+    {
+      "id": "train-v1/seed11/animals/16/800014/p0",
+      "tokens": 1002,
+      "sha256": "5371e5493316986e109972937ef756f0ead904292f37dcb95f44d28def0c35e7"
+    },
+    {
+      "id": "train-v1/seed11/animals/16/800015/p0",
+      "tokens": 1008,
+      "sha256": "f9bf1462ee325c04a53888cb2318d53691e5dfe47fb2ce3e30b245bc0db9f56e"
+    },
+    {
+      "id": "train-v1/seed11/animals/16/800016/p0",
+      "tokens": 1024,
+      "sha256": "6eba0381d71631adc6aaa4bb88dadbcb5237561e180a1a47d21c729107aed156"
+    },
+    {
+      "id": "train-v1/seed20261122/animals/4/700100/p0",
+      "tokens": 666,
+      "sha256": "777c9523545f18ccd848e5cfdd236fc6d604efe28bbc6ecf610c31e34f04db83"
+    },
+    {
+      "id": "train-v1/seed20261122/animals/4/700101/p0",
+      "tokens": 660,
+      "sha256": "da00585c9a1bc39af402641f1e0bc998b1b3b78136080a663d69e6bc9b014f4e"
+    },
+    {
+      "id": "train-v1/seed20261122/animals/4/700102/p0",
+      "tokens": 678,
+      "sha256": "00fc1cfa6b6d816605630807293eda0626b607cafee9be391ca22d3dc0773ec3"
+    },
+    {
+      "id": "train-v1/seed20261122/animals/4/700103/p0",
+      "tokens": 658,
+      "sha256": "4d6b70fcbd05159ecb14a149896f26e22645acf0719c915e7f207cd505e618f2"
+    },
+    {
+      "id": "train-v1/seed20261122/animals/8/700100/p0",
+      "tokens": 780,
+      "sha256": "2ead6e123eb4489cbe553e86491279c54a8249766bc4ea0aa754ef882a066374"
+    },
+    {
+      "id": "train-v1/seed20261122/animals/8/700101/p0",
+      "tokens": 779,
+      "sha256": "fb9f658f0881df0166a2ceb65f83846c6e797d8623d32b6da6fa08207c70e87c"
+    },
+    {
+      "id": "train-v1/seed20261122/animals/8/700102/p0",
+      "tokens": 785,
+      "sha256": "19bf6a2085d8e364f094095e55a0dbf28bd81bb27c6852aae1f893b6cb891307"
+    },
+    {
+      "id": "train-v1/seed20261122/animals/8/700103/p0",
+      "tokens": 775,
+      "sha256": "b5b3673581c4e9bb9c96cc72699aa44278cc7c8d1bebaeff2cd771719b0c5d5e"
+    }
+  ],
+  "independent_group_seeds": [
+    {
+      "update": 1,
+      "initial_generation_seeds": [
+        1388034081,
+        647161968,
+        1196386197,
+        1750387399,
+        1025614471,
+        2109368589,
+        505596467,
+        1314779205
+      ]
+    },
+    {
+      "update": 2,
+      "initial_generation_seeds": [
+        1377453241,
+        403519889,
+        1648681800,
+        179973588,
+        764667248,
+        683716184,
+        659134967,
+        1753183767
+      ]
+    },
+    {
+      "update": 3,
+      "initial_generation_seeds": [
+        110046846,
+        920341881,
+        1771803001,
+        205720608,
+        778109683,
+        1399131173,
+        801785391,
+        1413164289
+      ]
+    },
+    {
+      "update": 4,
+      "initial_generation_seeds": [
+        2119333011,
+        1831198861,
+        8838481,
+        20508271,
+        1989390885,
+        591796400,
+        1389926884,
+        1238117100
+      ]
+    },
+    {
+      "update": 5,
+      "initial_generation_seeds": [
+        1670477819,
+        1238764431,
+        325825071,
+        1270014304,
+        161264214,
+        322724751,
+        1683755773,
+        1304124849
+      ]
+    },
+    {
+      "update": 6,
+      "initial_generation_seeds": [
+        1555004195,
+        1971875495,
+        1633205183,
+        325682098,
+        179174218,
+        524492674,
+        1910219138,
+        128051969
+      ]
+    },
+    {
+      "update": 7,
+      "initial_generation_seeds": [
+        2031233082,
+        147394072,
+        1262953258,
+        1752825979,
+        2097633887,
+        1529482936,
+        737657219,
+        38852298
+      ]
+    },
+    {
+      "update": 8,
+      "initial_generation_seeds": [
+        961941280,
+        1731870121,
+        1440948681,
+        526182169,
+        871084890,
+        1272424436,
+        234719005,
+        1454080269
+      ]
+    },
+    {
+      "update": 9,
+      "initial_generation_seeds": [
+        968353626,
+        1660302381,
+        1144257382,
+        1248041380,
+        2012874515,
+        1436487748,
+        815282887,
+        298713452
+      ]
+    },
+    {
+      "update": 10,
+      "initial_generation_seeds": [
+        985981164,
+        894248355,
+        1857552503,
+        637912232,
+        1887178516,
+        1680862603,
+        1649703717,
+        1896506497
+      ]
+    },
+    {
+      "update": 11,
+      "initial_generation_seeds": [
+        1893343559,
+        713644441,
+        757572251,
+        864235433,
+        144973940,
+        631154855,
+        1465721116,
+        948611392
+      ]
+    },
+    {
+      "update": 12,
+      "initial_generation_seeds": [
+        2062145566,
+        134948918,
+        1243057465,
+        481415104,
+        1292875973,
+        1652082834,
+        1661060505,
+        700655238
+      ]
+    },
+    {
+      "update": 13,
+      "initial_generation_seeds": [
+        2087313993,
+        1974763389,
+        348543161,
+        322463383,
+        1089983740,
+        1397742646,
+        1813394374,
+        1090077628
+      ]
+    },
+    {
+      "update": 14,
+      "initial_generation_seeds": [
+        410050453,
+        220440078,
+        495863008,
+        1960247652,
+        1946558361,
+        276641062,
+        1509551776,
+        407600158
+      ]
+    },
+    {
+      "update": 15,
+      "initial_generation_seeds": [
+        1796838304,
+        462260750,
+        129820588,
+        1060894878,
+        758863074,
+        284245613,
+        564511566,
+        1166374123
+      ]
+    },
+    {
+      "update": 16,
+      "initial_generation_seeds": [
+        2093653328,
+        61997016,
+        827590680,
+        1339260346,
+        1417161746,
+        799380544,
+        1640849418,
+        226633257
+      ]
+    }
+  ],
+  "cookbook_data_checks": [
+    {
+      "n": 4,
+      "scripted_games": 8,
+      "datums": 29,
+      "packed_training_tokens": 21052,
+      "sum_of_per_turn_training_tokens": 21052,
+      "sampled_tokens_trained_once": 177.0,
+      "prompt_and_environment_loss_tokens": 0,
+      "returns": [
+        0.91,
+        0.97,
+        0.97,
+        0.88,
+        0.88,
+        0.88,
+        0.94,
+        0.94
+      ],
+      "advantages": [
+        -0.30779342141503957,
+        1.333771492798522,
+        1.333771492798522,
+        -1.1285758785218218,
+        -1.1285758785218218,
+        -1.1285758785218218,
+        0.5129890356917397,
+        0.5129890356917397
+      ]
+    },
+    {
+      "n": 8,
+      "scripted_games": 8,
+      "datums": 54,
+      "packed_training_tokens": 51027,
+      "sum_of_per_turn_training_tokens": 51027,
+      "sampled_tokens_trained_once": 309.0,
+      "prompt_and_environment_loss_tokens": 0,
+      "returns": [
+        -0.18,
+        -0.18,
+        -0.18,
+        0.8200000000000001,
+        0.8200000000000001,
+        0.88,
+        -0.18,
+        0.8200000000000001
+      ],
+      "advantages": [
+        -0.9993454268626955,
+        -0.9993454268626955,
+        -0.9993454268626955,
+        0.9698081236056698,
+        0.9698081236056698,
+        1.0879573366337718,
+        -0.9993454268626955,
+        0.9698081236056698
+      ]
+    },
+    {
+      "n": 16,
+      "scripted_games": 8,
+      "datums": 46,
+      "packed_training_tokens": 59541,
+      "sum_of_per_turn_training_tokens": 59541,
+      "sampled_tokens_trained_once": 271.0,
+      "prompt_and_environment_loss_tokens": 0,
+      "returns": [
+        0.79,
+        0.94,
+        -0.24,
+        0.97,
+        -0.24,
+        0.76,
+        0.97,
+        0.91
+      ],
+      "advantages": [
+        0.36889864071144507,
+        0.6721030029400297,
+        -1.713104646591504,
+        0.7327438753857467,
+        -1.713104646591504,
+        0.30825776826572804,
+        0.7327438753857467,
+        0.6114621304943129
+      ]
+    }
+  ],
+  "training_pool_only": true,
+  "frozen_games_in_gradients": 0,
+  "reward_is_outcome_only": true,
+  "service_calls": 0,
+  "forecast_before_margin_usd": "1.04296776",
+  "forecast_including_margin_usd": "1.5644516400000001",
+  "run_cap_including_holds_usd": "2.000000",
+  "optimizer_source": "Pinned cookbook recipes/rl_loop.py default learning rate 4e-5 and Adam beta1=.9 beta2=.95 eps=1e-8, one substep; rank 32. No KL or information shaping."
+}

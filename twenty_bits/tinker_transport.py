@@ -176,7 +176,7 @@ class GuardedTinker:
                 )
         return self.ledger.call(
             send,
-            phase=2,
+            phase=self.config.get("ledger_phase", 2),
             operation=self.operation_prefix + operation,
             estimate_usd=estimate_usd,
             max_cost_usd=max_cost_usd,

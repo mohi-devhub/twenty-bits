@@ -1,0 +1,461 @@
+{
+  "authorized": false,
+  "initialization": "raw_base_no_sft",
+  "observation_mode": "candidate_set",
+  "available_including_existing_holds_usd": 43.010754,
+  "options": {
+    "S": {
+      "option": "S",
+      "seeds_A": [
+        11,
+        23,
+        37
+      ],
+      "seeds_B": [
+        41,
+        53
+      ],
+      "updates_per_seed": 12,
+      "curriculum": [
+        {
+          "n": 4,
+          "updates": 2,
+          "games_per_seed": 16
+        },
+        {
+          "n": 8,
+          "updates": 2,
+          "games_per_seed": 16
+        },
+        {
+          "n": 16,
+          "updates": 2,
+          "games_per_seed": 16
+        },
+        {
+          "n": 32,
+          "updates": 2,
+          "games_per_seed": 16
+        },
+        {
+          "n": 64,
+          "updates": 2,
+          "games_per_seed": 16
+        },
+        {
+          "n": 128,
+          "updates": 2,
+          "games_per_seed": 16
+        }
+      ],
+      "training_games_per_seed": 96,
+      "total_training_games": 480,
+      "training_usd": 12.37034496,
+      "training_usd_per_A_seed": 2.30842416,
+      "training_usd_per_B_seed": 2.72253624,
+      "development_usd": 0.09423,
+      "development_checks": [
+        4,
+        8,
+        12
+      ],
+      "development_games_per_check": 8,
+      "development_games_per_seed": 24,
+      "full_evaluation_usd": 14.261641452000003,
+      "hard_mode_40_games_usd": 1.3657211327999998,
+      "checkpoint_holds_usd": 0.5,
+      "total_before_margin_usd": 28.591937544800004,
+      "total_with_1_5_margin_usd": 42.887906317200006,
+      "zero_cache_total_without_extra_margin_usd": 42.3118379,
+      "remaining_after_margin_usd": 0.1228476827999927,
+      "endpoint_checkpoints_per_seed": 1,
+      "frozen_games_per_cell": 28,
+      "frozen_cells": 10,
+      "authorized": false
+    },
+    "U": {
+      "option": "U",
+      "seeds_A": [
+        11,
+        23
+      ],
+      "seeds_B": [
+        41
+      ],
+      "updates_per_seed": 30,
+      "curriculum": [
+        {
+          "n": 4,
+          "updates": 2,
+          "games_per_seed": 16
+        },
+        {
+          "n": 8,
+          "updates": 2,
+          "games_per_seed": 16
+        },
+        {
+          "n": 16,
+          "updates": 11,
+          "games_per_seed": 88
+        },
+        {
+          "n": 32,
+          "updates": 7,
+          "games_per_seed": 56
+        },
+        {
+          "n": 64,
+          "updates": 4,
+          "games_per_seed": 32
+        },
+        {
+          "n": 128,
+          "updates": 4,
+          "games_per_seed": 32
+        }
+      ],
+      "training_games_per_seed": 240,
+      "total_training_games": 720,
+      "training_usd": 16.996223880000002,
+      "training_usd_per_A_seed": 5.34157036,
+      "training_usd_per_B_seed": 6.313083160000001,
+      "development_usd": 0.15076799999999999,
+      "development_checks": [
+        4,
+        8,
+        12,
+        16,
+        20,
+        24,
+        28,
+        30
+      ],
+      "development_games_per_check": 8,
+      "development_games_per_seed": 64,
+      "full_evaluation_usd": 9.507760968000001,
+      "hard_mode_40_games_usd": 1.3657211327999998,
+      "checkpoint_holds_usd": 0.30000000000000004,
+      "total_before_margin_usd": 28.320473980800003,
+      "total_with_1_5_margin_usd": 42.480710971200004,
+      "zero_cache_total_without_extra_margin_usd": 37.699762320000005,
+      "remaining_after_margin_usd": 0.5300430287999944,
+      "endpoint_checkpoints_per_seed": 1,
+      "frozen_games_per_cell": 28,
+      "frozen_cells": 10,
+      "authorized": false
+    }
+  },
+  "recommendation": "U",
+  "recommendation_reason": "The fixed small-game development EIG improved by update 8 then stayed around 0.62\u20130.65, still below one bit, with substantial ambiguous stopping. U buys more updates and more training start states, especially at N=16/32, while keeping two A seeds. It leaves only one B seed, so noisy-training effects have no between-seed uncertainty estimate. This is an exploratory recommendation; more updates are not guaranteed to improve the policy.",
+  "training_profiles": {
+    "4/p0": {
+      "sampling_usd": 0.0006183299999999999,
+      "sampling_uncached_usd": 0.0006183299999999999,
+      "gradient_usd": 0.00133672,
+      "input_tokens": 2974,
+      "output_tokens": 64,
+      "calls": 4,
+      "measured_reference_games": 16,
+      "output_proxy": 16
+    },
+    "8/p0": {
+      "sampling_usd": 0.00095217,
+      "sampling_uncached_usd": 0.00095217,
+      "gradient_usd": 0.00210188,
+      "input_tokens": 4726,
+      "output_tokens": 51,
+      "calls": 5,
+      "measured_reference_games": 16,
+      "output_proxy": 10
+    },
+    "16/p0": {
+      "sampling_usd": 0.00246219,
+      "sampling_uncached_usd": 0.00246219,
+      "gradient_usd": 0.0054652400000000005,
+      "input_tokens": 12322,
+      "output_tokens": 99,
+      "calls": 9,
+      "measured_reference_games": 16,
+      "output_proxy": 11
+    },
+    "32/p0": {
+      "sampling_usd": 0.004652175000000001,
+      "sampling_uncached_usd": 0.004652175000000001,
+      "gradient_usd": 0.01038664,
+      "input_tokens": 23485,
+      "output_tokens": 121,
+      "calls": 11,
+      "measured_reference_games": 16,
+      "output_proxy": 11
+    },
+    "64/p0": {
+      "sampling_usd": 0.010671960000000001,
+      "sampling_uncached_usd": 0.010671960000000001,
+      "gradient_usd": 0.02394964,
+      "input_tokens": 54288,
+      "output_tokens": 143,
+      "calls": 13,
+      "measured_reference_games": 16,
+      "output_proxy": 11
+    },
+    "128/p0": {
+      "sampling_usd": 0.025129005,
+      "sampling_uncached_usd": 0.025129005,
+      "gradient_usd": 0.05655056,
+      "input_tokens": 128359,
+      "output_tokens": 165,
+      "calls": 15,
+      "measured_reference_games": 16,
+      "output_proxy": 11
+    },
+    "4/p0.1": {
+      "sampling_usd": 0.00087792,
+      "sampling_uncached_usd": 0.00087792,
+      "gradient_usd": 0.00190784,
+      "input_tokens": 4256,
+      "output_tokens": 80,
+      "calls": 5,
+      "measured_reference_games": 16,
+      "output_proxy": 16
+    },
+    "8/p0.1": {
+      "sampling_usd": 0.0015792900000000001,
+      "sampling_uncached_usd": 0.0015792900000000001,
+      "gradient_usd": 0.0034931600000000004,
+      "input_tokens": 7862,
+      "output_tokens": 77,
+      "calls": 7,
+      "measured_reference_games": 16,
+      "output_proxy": 10
+    },
+    "16/p0.1": {
+      "sampling_usd": 0.00295086,
+      "sampling_uncached_usd": 0.00295086,
+      "gradient_usd": 0.006567880000000001,
+      "input_tokens": 14828,
+      "output_tokens": 99,
+      "calls": 9,
+      "measured_reference_games": 16,
+      "output_proxy": 11
+    },
+    "32/p0.1": {
+      "sampling_usd": 0.005928645000000001,
+      "sampling_uncached_usd": 0.005928645000000001,
+      "gradient_usd": 0.01326688,
+      "input_tokens": 30031,
+      "output_tokens": 121,
+      "calls": 11,
+      "measured_reference_games": 16,
+      "output_proxy": 11
+    },
+    "64/p0.1": {
+      "sampling_usd": 0.01270857,
+      "sampling_uncached_usd": 0.01270857,
+      "gradient_usd": 0.02854324,
+      "input_tokens": 64726,
+      "output_tokens": 145,
+      "calls": 13,
+      "measured_reference_games": 16,
+      "output_proxy": 11
+    },
+    "128/p0.1": {
+      "sampling_usd": 0.02840091,
+      "sampling_uncached_usd": 0.02840091,
+      "gradient_usd": 0.06393332,
+      "input_tokens": 145138,
+      "output_tokens": 165,
+      "calls": 15,
+      "measured_reference_games": 16,
+      "output_proxy": 11
+    }
+  },
+  "observed_pilot_uncached_cost_per_game": [
+    {
+      "n": 4,
+      "sampling_usd": 0.000707814375,
+      "gradient_usd": 0.0014935
+    },
+    {
+      "n": 4,
+      "sampling_usd": 0.000556665,
+      "gradient_usd": 0.00123425
+    },
+    {
+      "n": 4,
+      "sampling_usd": 0.000619925625,
+      "gradient_usd": 0.001363125
+    },
+    {
+      "n": 4,
+      "sampling_usd": 0.00046142812500000004,
+      "gradient_usd": 0.00099475
+    },
+    {
+      "n": 8,
+      "sampling_usd": 0.0010124587500000002,
+      "gradient_usd": 0.00225125
+    },
+    {
+      "n": 8,
+      "sampling_usd": 0.00093862125,
+      "gradient_usd": 0.002091125
+    },
+    {
+      "n": 8,
+      "sampling_usd": 0.0008792962500000001,
+      "gradient_usd": 0.00195575
+    },
+    {
+      "n": 8,
+      "sampling_usd": 0.001090925625,
+      "gradient_usd": 0.0024295
+    },
+    {
+      "n": 8,
+      "sampling_usd": 0.000587315625,
+      "gradient_usd": 0.001302875
+    },
+    {
+      "n": 8,
+      "sampling_usd": 0.00051496875,
+      "gradient_usd": 0.0011445
+    },
+    {
+      "n": 8,
+      "sampling_usd": 0.0008806500000000001,
+      "gradient_usd": 0.001959375
+    },
+    {
+      "n": 8,
+      "sampling_usd": 0.000613456875,
+      "gradient_usd": 0.001362625
+    },
+    {
+      "n": 16,
+      "sampling_usd": 0.0014033831250000002,
+      "gradient_usd": 0.00313475
+    },
+    {
+      "n": 16,
+      "sampling_usd": 0.001133334375,
+      "gradient_usd": 0.00252875
+    },
+    {
+      "n": 16,
+      "sampling_usd": 0.001098688125,
+      "gradient_usd": 0.00244825
+    },
+    {
+      "n": 16,
+      "sampling_usd": 0.0013554093750000001,
+      "gradient_usd": 0.003018125
+    }
+  ],
+  "conservative_pilot_correction_factor": 1,
+  "measured_output_tokens_per_call_proxy": {
+    "4": 16,
+    "8": 10,
+    "16": 11
+  },
+  "fixed_model_evaluation_280_games_usd": 2.3769402420000003,
+  "eval_cells": [
+    {
+      "domain": "animals",
+      "n": 32,
+      "noise": 0,
+      "games": 28,
+      "forecast_usd": 0.0653850822,
+      "uncached_forecast_usd": 0.124004235
+    },
+    {
+      "domain": "animals",
+      "n": 32,
+      "noise": 0.1,
+      "games": 28,
+      "forecast_usd": 0.08876203740000001,
+      "uncached_forecast_usd": 0.168812595
+    },
+    {
+      "domain": "animals",
+      "n": 128,
+      "noise": 0,
+      "games": 28,
+      "forecast_usd": 0.30878378100000003,
+      "uncached_forecast_usd": 0.591260625
+    },
+    {
+      "domain": "animals",
+      "n": 128,
+      "noise": 0.1,
+      "games": 28,
+      "forecast_usd": 0.40403788560000004,
+      "uncached_forecast_usd": 0.77443218
+    },
+    {
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0,
+      "games": 28,
+      "forecast_usd": 0.0429252144,
+      "uncached_forecast_usd": 0.08104812
+    },
+    {
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0.1,
+      "games": 28,
+      "forecast_usd": 0.086494809,
+      "uncached_forecast_usd": 0.163708725
+    },
+    {
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0,
+      "games": 28,
+      "forecast_usd": 0.1491744642,
+      "uncached_forecast_usd": 0.28483858500000003
+    },
+    {
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0.1,
+      "games": 28,
+      "forecast_usd": 0.32632073100000003,
+      "uncached_forecast_usd": 0.6242649750000001
+    },
+    {
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0,
+      "games": 28,
+      "forecast_usd": 0.3111819786,
+      "uncached_forecast_usd": 0.596025405
+    },
+    {
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0.1,
+      "games": 28,
+      "forecast_usd": 0.5938742586000001,
+      "uncached_forecast_usd": 1.1388508050000001
+    }
+  ],
+  "stable_weight_eval_cache_fraction": 0.6,
+  "cache_assumption": "Training sampling receives no cache credit. Stable-weight evaluation receives at most 60% cache-hit credit, below the minimum observed trained-snapshot development hit fraction (about 75%). Both the forecast times 1.5 and the separate zero-cache reference total must fit remaining funds with $0.10 additional headroom. Hard mode uses full-cap outputs rather than the short provided-state proxy. Large-N model behavior remains uncertain.",
+  "observed_trained_snapshot_dev_cache_fractions": [
+    0.7670511621462468,
+    0.7626805445563224,
+    0.7626805445563224,
+    0.7542174509645654
+  ],
+  "pricing_source": "https://tinker-docs.thinkingmachines.ai/tinker/models.json",
+  "pricing_rechecked_date": "2026-11-18",
+  "method": "Native candidate-feedback contexts on random and greedy-predicate reference trajectories. Upper-quartile reference cost for training; more expensive reference per frozen case for evaluation. Per-N output proxy is max(mean,p90) observed pilot output length. N>=16 and noisy behavior extrapolate from the largest measured pilot size. Scale upward if reference costs underpredict observed pilot uncached sampling plus gradients; never scale down.",
+  "limits": "No noisy or large-N model pilot was run. Name-list enumeration could lengthen outputs substantially. These are forecasts, not bills or guarantees that all runs finish. Ledger holds enforce $50 regardless. All future settings and schedules must be frozen before paid work; no automatic extension if calls are cheaper.",
+  "main_seed_initialization": "Fresh raw-base LoRA per seed, never resume the pilot. Training game indices and generation namespaces are disjoint from pilot/development/frozen cases.",
+  "endpoint_policy": "Keep and evaluate the scheduled endpoint only for each seed, on all 280 frozen games. Main raw-base control is newly sampled once under candidate-set-v1. Intermediate development samplers are ephemeral, not retained checkpoints.",
+  "development_policy": "The same eight N=4/8 development cases, every four updates plus the scheduled endpoint; reuse the saved raw development control. This descriptive curve does not measure large-N, noisy or transfer performance. Those comparisons use the frozen endpoints.",
+  "hard_mode": "Raw base and the predetermined final A seed 11 endpoint, 20 games each, at the end. No hard-mode training.",
+  "uncertainty": "S has three A and two B seeds; U has two A and one B seed, so U cannot estimate between-seed noise-training variation. Both require game and seed CIs with this limitation disclosed."
+}

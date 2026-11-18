@@ -1,0 +1,1448 @@
+{
+  "complete": true,
+  "initial_policy": "raw_base_no_sft",
+  "updates": [
+    {
+      "update": 1,
+      "n": 4,
+      "start_state": "train-v1/seed11/animals/4/800001/p0",
+      "games": 8,
+      "mean_reward": 0.1275,
+      "wins": 3,
+      "win_rate": 0.375,
+      "questions_per_win": 3.0,
+      "eig_per_question": 0.32752071305088115,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.46153846153846156,
+      "output_tokens_per_game": 111.375,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 26,
+      "post_budget_non_guesses": 2,
+      "truncated_turns": 0,
+      "training_tokens": 27154,
+      "datums": 34,
+      "gradient_usd": "0.011948",
+      "forward_request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:1",
+      "mean_train_minus_sample_logprob": 0.0023700184687135083,
+      "max_abs_train_minus_sample_logprob": 0.9017432928085327,
+      "server_metrics": {
+        "clock_cycle:unique": 1326606.0,
+        "loss:sum": 358.2323179244995
+      },
+      "returns": [
+        -0.29000000000000004,
+        0.81,
+        0.91,
+        -0.09,
+        0.91,
+        -0.42000000000000004,
+        -0.39,
+        -0.42000000000000004
+      ],
+      "advantages": [
+        -0.7083205563671885,
+        1.1579132448397753,
+        1.3275708631313172,
+        -0.3690053197841041,
+        1.3275708631313172,
+        -0.9288754601461934,
+        -0.8779781746587306,
+        -0.9288754601461934
+      ],
+      "reward_variance": 0.34741875,
+      "win_variance": 0.234375,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 1.0
+    },
+    {
+      "update": 2,
+      "n": 4,
+      "start_state": "train-v1/seed11/animals/4/800002/p0",
+      "games": 8,
+      "mean_reward": 0.91,
+      "wins": 8,
+      "win_rate": 1.0,
+      "questions_per_win": 3.0,
+      "eig_per_question": 0.5765246528378741,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 22.0,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 24,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "training_tokens": 22440,
+      "datums": 32,
+      "gradient_usd": "0.009874",
+      "forward_request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:4",
+      "mean_train_minus_sample_logprob": 0.0006340231258143012,
+      "max_abs_train_minus_sample_logprob": 0.014633551239967346,
+      "server_metrics": {
+        "loss:sum": -0.0,
+        "clock_cycle:unique": 1326609.0
+      },
+      "returns": [
+        0.91,
+        0.91,
+        0.91,
+        0.91,
+        0.91,
+        0.91,
+        0.91,
+        0.91
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reward_variance": 0.0,
+      "win_variance": 0.0,
+      "nonzero_group_fraction": 0.0,
+      "cumulative_nonzero_group_fraction": 0.5
+    },
+    {
+      "update": 3,
+      "n": 4,
+      "start_state": "train-v1/seed11/animals/4/800003/p0",
+      "games": 8,
+      "mean_reward": 0.41000000000000003,
+      "wins": 4,
+      "win_rate": 0.5,
+      "questions_per_win": 3.0,
+      "eig_per_question": 0.4392021701238648,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 37.125,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 24,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "training_tokens": 24784,
+      "datums": 32,
+      "gradient_usd": "0.010905",
+      "forward_request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:7",
+      "mean_train_minus_sample_logprob": -0.0010863933749616006,
+      "max_abs_train_minus_sample_logprob": 0.4339423179626465,
+      "server_metrics": {
+        "loss:sum": 7.630844593048096,
+        "clock_cycle:unique": 1326612.0
+      },
+      "returns": [
+        -0.09,
+        0.91,
+        -0.09,
+        0.91,
+        0.91,
+        -0.09,
+        0.91,
+        -0.09
+      ],
+      "advantages": [
+        -0.9999999800000003,
+        0.9999999800000003,
+        -0.9999999800000003,
+        0.9999999800000003,
+        0.9999999800000003,
+        -0.9999999800000003,
+        0.9999999800000003,
+        -0.9999999800000003
+      ],
+      "reward_variance": 0.25,
+      "win_variance": 0.25,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.6666666666666666
+    },
+    {
+      "update": 4,
+      "n": 4,
+      "start_state": "train-v1/seed11/animals/4/800004/p0",
+      "games": 8,
+      "mean_reward": 0.6525,
+      "wins": 6,
+      "win_rate": 0.75,
+      "questions_per_win": 1.6666666666666667,
+      "eig_per_question": 0.6470081379644931,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.1875,
+      "output_tokens_per_game": 49.375,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 16,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "training_tokens": 18086,
+      "datums": 24,
+      "gradient_usd": "0.007958",
+      "forward_request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:10",
+      "mean_train_minus_sample_logprob": -0.0013448441683552724,
+      "max_abs_train_minus_sample_logprob": 0.24326586723327637,
+      "server_metrics": {
+        "clock_cycle:unique": 1326615.0,
+        "loss:sum": 442.50609970092773
+      },
+      "returns": [
+        0.97,
+        -0.09,
+        0.91,
+        0.94,
+        0.94,
+        -0.39,
+        0.97,
+        0.97
+      ],
+      "advantages": [
+        0.6093177202229817,
+        -1.424939865403351,
+        0.49417106443281206,
+        0.5517443923278967,
+        0.5517443923278967,
+        -2.0006731443541996,
+        0.6093177202229817,
+        0.6093177202229817
+      ],
+      "reward_variance": 0.27151875,
+      "win_variance": 0.1875,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.75
+    },
+    {
+      "update": 5,
+      "n": 8,
+      "start_state": "train-v1/seed11/animals/8/800005/p0",
+      "games": 8,
+      "mean_reward": 0.7362500000000001,
+      "wins": 7,
+      "win_rate": 0.875,
+      "questions_per_win": 4.571428571428571,
+      "eig_per_question": 0.34189249788238796,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 33.75,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 37,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "training_tokens": 40931,
+      "datums": 45,
+      "gradient_usd": "0.018010",
+      "forward_request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:14",
+      "mean_train_minus_sample_logprob": 0.004490616801233195,
+      "max_abs_train_minus_sample_logprob": 0.21866703033447266,
+      "server_metrics": {
+        "loss:sum": 51.70313763618469,
+        "clock_cycle:unique": 1326619.0
+      },
+      "returns": [
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        -0.15,
+        0.94,
+        0.85
+      ],
+      "advantages": [
+        0.33827592854272953,
+        0.33827592854272953,
+        0.33827592854272953,
+        0.33827592854272953,
+        0.33827592854272953,
+        -2.6355783883164334,
+        0.6059228170600541,
+        0.33827592854272953
+      ],
+      "reward_variance": 0.1130734375,
+      "win_variance": 0.109375,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8
+    },
+    {
+      "update": 6,
+      "n": 8,
+      "start_state": "train-v1/seed11/animals/8/800006/p0",
+      "games": 8,
+      "mean_reward": 0.7475,
+      "wins": 7,
+      "win_rate": 0.875,
+      "questions_per_win": 4.285714285714286,
+      "eig_per_question": 0.7225342831359589,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 26.875,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 34,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "training_tokens": 38019,
+      "datums": 42,
+      "gradient_usd": "0.016729",
+      "forward_request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:17",
+      "mean_train_minus_sample_logprob": 0.0008518752092945152,
+      "max_abs_train_minus_sample_logprob": 0.40114641189575195,
+      "server_metrics": {
+        "clock_cycle:unique": 1326625.0,
+        "loss:sum": -5.291062951087952
+      },
+      "returns": [
+        0.88,
+        0.88,
+        0.85,
+        0.85,
+        -0.12,
+        0.85,
+        0.88,
+        0.91
+      ],
+      "advantages": [
+        0.403383120347157,
+        0.403383120347157,
+        0.31205109309874396,
+        0.31205109309874396,
+        -2.6410177879332744,
+        0.31205109309874396,
+        0.403383120347157,
+        0.49471514759557
+      ],
+      "reward_variance": 0.10789375,
+      "win_variance": 0.109375,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8333333333333334
+    },
+    {
+      "update": 7,
+      "n": 8,
+      "start_state": "train-v1/seed11/animals/8/800007/p0",
+      "games": 8,
+      "mean_reward": 0.88375,
+      "wins": 8,
+      "win_rate": 1.0,
+      "questions_per_win": 3.875,
+      "eig_per_question": 0.7315988855269181,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 28.75,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 31,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "training_tokens": 35557,
+      "datums": 39,
+      "gradient_usd": "0.015646",
+      "forward_request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:20",
+      "mean_train_minus_sample_logprob": -0.0005195527815711421,
+      "max_abs_train_minus_sample_logprob": 0.13252156972885132,
+      "server_metrics": {
+        "loss:sum": -15.525874972343445,
+        "clock_cycle:unique": 1326632.0
+      },
+      "returns": [
+        0.88,
+        0.88,
+        0.88,
+        0.88,
+        0.91,
+        0.88,
+        0.88,
+        0.88
+      ],
+      "advantages": [
+        -0.377964092057233,
+        -0.377964092057233,
+        -0.377964092057233,
+        -0.377964092057233,
+        2.645748644400609,
+        -0.377964092057233,
+        -0.377964092057233,
+        -0.377964092057233
+      ],
+      "reward_variance": 9.843750000000018e-05,
+      "win_variance": 0.0,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8571428571428571
+    },
+    {
+      "update": 8,
+      "n": 8,
+      "start_state": "train-v1/seed11/animals/8/800008/p0",
+      "games": 8,
+      "mean_reward": 0.47875,
+      "wins": 5,
+      "win_rate": 0.625,
+      "questions_per_win": 5.0,
+      "eig_per_question": 0.6598598637099049,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 32.375,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 39,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "training_tokens": 44171,
+      "datums": 47,
+      "gradient_usd": "0.019436",
+      "forward_request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:23",
+      "mean_train_minus_sample_logprob": -0.0008627457961972063,
+      "max_abs_train_minus_sample_logprob": 0.40009069442749023,
+      "server_metrics": {
+        "clock_cycle:unique": 1326635.0,
+        "loss:sum": 35.89159941673279
+      },
+      "returns": [
+        0.85,
+        -0.15,
+        0.85,
+        0.85,
+        0.85,
+        0.85,
+        -0.15,
+        -0.12
+      ],
+      "advantages": [
+        0.7744702321822884,
+        -1.3116448713390272,
+        0.7744702321822884,
+        0.7744702321822884,
+        0.7744702321822884,
+        0.7744702321822884,
+        -1.3116448713390272,
+        -1.2490614182333877
+      ],
+      "reward_variance": 0.22978593749999998,
+      "win_variance": 0.234375,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.875
+    },
+    {
+      "update": 9,
+      "n": 8,
+      "start_state": "train-v1/seed11/animals/8/800009/p0",
+      "games": 8,
+      "mean_reward": -0.07874999999999999,
+      "wins": 0,
+      "win_rate": 0.0,
+      "questions_per_win": null,
+      "eig_per_question": 0.3090583331272887,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 22.75,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 21,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "training_tokens": 23688,
+      "datums": 29,
+      "gradient_usd": "0.010423",
+      "forward_request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:27",
+      "mean_train_minus_sample_logprob": -0.0013407071083852385,
+      "max_abs_train_minus_sample_logprob": 0.2500002384185791,
+      "server_metrics": {
+        "loss:sum": 24.8931725025177,
+        "clock_cycle:unique": 1326643.0
+      },
+      "returns": [
+        -0.09,
+        -0.09,
+        -0.09,
+        -0.06,
+        -0.09,
+        -0.09,
+        -0.06,
+        -0.06
+      ],
+      "advantages": [
+        -0.774596135908518,
+        -0.774596135908518,
+        -0.774596135908518,
+        1.2909935598475282,
+        -0.774596135908518,
+        -0.774596135908518,
+        1.2909935598475282,
+        1.2909935598475282
+      ],
+      "reward_variance": 0.0002109375,
+      "win_variance": 0.0,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8888888888888888
+    },
+    {
+      "update": 10,
+      "n": 8,
+      "start_state": "train-v1/seed11/animals/8/800010/p0",
+      "games": 8,
+      "mean_reward": 0.94,
+      "wins": 8,
+      "win_rate": 1.0,
+      "questions_per_win": 2.0,
+      "eig_per_question": 0.7476632141219836,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 17.75,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 16,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "training_tokens": 20808,
+      "datums": 24,
+      "gradient_usd": "0.009156",
+      "forward_request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:30",
+      "mean_train_minus_sample_logprob": 0.0006261173907134489,
+      "max_abs_train_minus_sample_logprob": 0.16519713401794434,
+      "server_metrics": {
+        "clock_cycle:unique": 1326646.0,
+        "loss:sum": 26.192559719085693
+      },
+      "returns": [
+        0.97,
+        0.91,
+        0.97,
+        0.91,
+        0.91,
+        0.97,
+        0.91,
+        0.97
+      ],
+      "advantages": [
+        0.9999996666667795,
+        -0.9999996666667759,
+        0.9999996666667795,
+        -0.9999996666667759,
+        -0.9999996666667759,
+        0.9999996666667795,
+        -0.9999996666667759,
+        0.9999996666667795
+      ],
+      "reward_variance": 0.0008999999999999982,
+      "win_variance": 0.0,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.9
+    },
+    {
+      "update": 11,
+      "n": 8,
+      "start_state": "train-v1/seed11/animals/8/800011/p0",
+      "games": 8,
+      "mean_reward": -0.12,
+      "wins": 0,
+      "win_rate": 0.0,
+      "questions_per_win": null,
+      "eig_per_question": 0.8514840140814874,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 28.0,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 32,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "training_tokens": 35624,
+      "datums": 40,
+      "gradient_usd": "0.015675",
+      "forward_request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:33",
+      "mean_train_minus_sample_logprob": -0.002586438484894202,
+      "max_abs_train_minus_sample_logprob": 0.08118820190429688,
+      "server_metrics": {
+        "loss:sum": -0.0,
+        "clock_cycle:unique": 1326652.0
+      },
+      "returns": [
+        -0.12,
+        -0.12,
+        -0.12,
+        -0.12,
+        -0.12,
+        -0.12,
+        -0.12,
+        -0.12
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reward_variance": 0.0,
+      "win_variance": 0.0,
+      "nonzero_group_fraction": 0.0,
+      "cumulative_nonzero_group_fraction": 0.8181818181818182
+    },
+    {
+      "update": 12,
+      "n": 8,
+      "start_state": "train-v1/seed11/animals/8/800012/p0",
+      "games": 8,
+      "mean_reward": 0.29625,
+      "wins": 3,
+      "win_rate": 0.375,
+      "questions_per_win": 2.0,
+      "eig_per_question": 0.49477902502681853,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 21.875,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 21,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "training_tokens": 24775,
+      "datums": 29,
+      "gradient_usd": "0.010901",
+      "forward_request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:36",
+      "mean_train_minus_sample_logprob": 0.0005336861491346017,
+      "max_abs_train_minus_sample_logprob": 0.17913758754730225,
+      "server_metrics": {
+        "clock_cycle:unique": 1326655.0,
+        "loss:sum": 0.1015777587890625
+      },
+      "returns": [
+        -0.09,
+        -0.09,
+        -0.09,
+        0.94,
+        0.94,
+        0.94,
+        -0.09,
+        -0.09
+      ],
+      "advantages": [
+        -0.7745966537075031,
+        -0.7745966537075031,
+        -0.7745966537075031,
+        1.2909944228458385,
+        1.2909944228458385,
+        1.2909944228458385,
+        -0.7745966537075031,
+        -0.7745966537075031
+      ],
+      "reward_variance": 0.24864843749999996,
+      "win_variance": 0.234375,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8333333333333334
+    },
+    {
+      "update": 13,
+      "n": 16,
+      "start_state": "train-v1/seed11/animals/16/800013/p0",
+      "games": 8,
+      "mean_reward": 0.35,
+      "wins": 4,
+      "win_rate": 0.5,
+      "questions_per_win": 5.0,
+      "eig_per_question": 0.7615531216723832,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 32.0,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 40,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "training_tokens": 56995,
+      "datums": 48,
+      "gradient_usd": "0.025078",
+      "forward_request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:40",
+      "mean_train_minus_sample_logprob": 0.004220070482029021,
+      "max_abs_train_minus_sample_logprob": 0.6483027935028076,
+      "server_metrics": {
+        "loss:sum": -5.684257507324219,
+        "clock_cycle:unique": 1326666.0
+      },
+      "returns": [
+        0.85,
+        -0.15,
+        0.85,
+        -0.12,
+        -0.15,
+        0.85,
+        -0.18,
+        0.85
+      ],
+      "advantages": [
+        0.9995502835403509,
+        -0.9995502835403509,
+        0.9995502835403509,
+        -0.9395772665279298,
+        -0.9995502835403509,
+        0.9995502835403509,
+        -1.059523300552772,
+        0.9995502835403509
+      ],
+      "reward_variance": 0.250225,
+      "win_variance": 0.25,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8461538461538461
+    },
+    {
+      "update": 14,
+      "n": 16,
+      "start_state": "train-v1/seed11/animals/16/800014/p0",
+      "games": 8,
+      "mean_reward": 0.88,
+      "wins": 8,
+      "win_rate": 1.0,
+      "questions_per_win": 4.0,
+      "eig_per_question": 0.5984644828679301,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 28.875,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 32,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "training_tokens": 45976,
+      "datums": 40,
+      "gradient_usd": "0.020230",
+      "forward_request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:43",
+      "mean_train_minus_sample_logprob": -0.011100760186213256,
+      "max_abs_train_minus_sample_logprob": 0.5365322828292847,
+      "server_metrics": {
+        "loss:sum": -0.0,
+        "clock_cycle:unique": 1326669.0
+      },
+      "returns": [
+        0.88,
+        0.88,
+        0.88,
+        0.88,
+        0.88,
+        0.88,
+        0.88,
+        0.88
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reward_variance": 0.0,
+      "win_variance": 0.0,
+      "nonzero_group_fraction": 0.0,
+      "cumulative_nonzero_group_fraction": 0.7857142857142857
+    },
+    {
+      "update": 15,
+      "n": 16,
+      "start_state": "train-v1/seed11/animals/16/800015/p0",
+      "games": 8,
+      "mean_reward": -0.11249999999999999,
+      "wins": 0,
+      "win_rate": 0.0,
+      "questions_per_win": null,
+      "eig_per_question": 0.5273370654823641,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 31.5,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 30,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "training_tokens": 44513,
+      "datums": 38,
+      "gradient_usd": "0.019586",
+      "forward_request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:46",
+      "mean_train_minus_sample_logprob": -0.012436756227811398,
+      "max_abs_train_minus_sample_logprob": 1.2500009536743164,
+      "server_metrics": {
+        "clock_cycle:unique": 1326676.0,
+        "loss:sum": 19.383558988571167
+      },
+      "returns": [
+        -0.09,
+        -0.12,
+        -0.12,
+        -0.12,
+        -0.12,
+        -0.12,
+        -0.09,
+        -0.12
+      ],
+      "advantages": [
+        1.7320494742365697,
+        -0.577349824745524,
+        -0.577349824745524,
+        -0.577349824745524,
+        -0.577349824745524,
+        -0.577349824745524,
+        1.7320494742365697,
+        -0.577349824745524
+      ],
+      "reward_variance": 0.00016874999999999998,
+      "win_variance": 0.0,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8
+    },
+    {
+      "update": 16,
+      "n": 16,
+      "start_state": "train-v1/seed11/animals/16/800016/p0",
+      "games": 8,
+      "mean_reward": 0.49,
+      "wins": 5,
+      "win_rate": 0.625,
+      "questions_per_win": 4.6,
+      "eig_per_question": 0.5000662727927767,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 41.5,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 36,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "training_tokens": 54873,
+      "datums": 44,
+      "gradient_usd": "0.024145",
+      "forward_request_id": "e69acfd2-0534-5383-a0d0-e0daed59ab81:train:0:49",
+      "mean_train_minus_sample_logprob": -0.00759984214505126,
+      "max_abs_train_minus_sample_logprob": 0.6201144456863403,
+      "server_metrics": {
+        "clock_cycle:unique": 1326679.0,
+        "loss:sum": 20.08670663833618
+      },
+      "returns": [
+        0.85,
+        0.85,
+        -0.12,
+        0.88,
+        -0.12,
+        0.88,
+        -0.15,
+        0.85
+      ],
+      "advantages": [
+        0.7492686336708135,
+        0.7492686336708135,
+        -1.2695940737199898,
+        0.8117076864767148,
+        -1.2695940737199898,
+        0.8117076864767148,
+        -1.332033126525891,
+        0.7492686336708135
+      ],
+      "reward_variance": 0.23085,
+      "win_variance": 0.234375,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8125
+    }
+  ],
+  "development": {
+    "0": {
+      "point": {
+        "games": 8,
+        "mean_reward": 0.39125,
+        "wins": 4,
+        "win_rate": 0.5,
+        "questions_per_win": 3.25,
+        "eig_per_question": 0.48303015885024386,
+        "enumeration_rate": 0.0,
+        "single_item_enumeration_rate": 0.0,
+        "name_list_rate": 0.0,
+        "large_name_list_rate": 0.0,
+        "invalid_question_rate": 0.0,
+        "output_tokens_per_game": 40.75,
+        "reasoning_tokens_per_game": 0.0,
+        "questions": 29,
+        "post_budget_non_guesses": 0,
+        "truncated_turns": 0
+      },
+      "ci95": {
+        "games": 8,
+        "questions": 29,
+        "low_probability_opportunities": 0,
+        "win_rate": 0.5,
+        "win_rate_ci95": [
+          0.125,
+          0.875
+        ],
+        "questions_per_win": 3.25,
+        "questions_per_win_ci95": [
+          3.0,
+          3.75
+        ],
+        "eig_per_question": 0.48303015885024386,
+        "eig_per_question_ci95": [
+          0.3120844531399198,
+          0.6442870124322783
+        ],
+        "enumeration_rate": 0.0,
+        "enumeration_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "predicate_tokens": 4.793103448275862,
+        "predicate_tokens_ci95": [
+          2.4285714285714284,
+          7.21892641129032
+        ],
+        "invalid_rate": 0.0,
+        "invalid_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "reask_after_low_probability_rate": null,
+        "reask_after_low_probability_rate_ci95": null
+      }
+    },
+    "4": {
+      "point": {
+        "games": 8,
+        "mean_reward": 0.39875000000000005,
+        "wins": 4,
+        "win_rate": 0.5,
+        "questions_per_win": 3.25,
+        "eig_per_question": 0.4887628326739978,
+        "enumeration_rate": 0.0,
+        "single_item_enumeration_rate": 0.0,
+        "name_list_rate": 0.0,
+        "large_name_list_rate": 0.0,
+        "invalid_question_rate": 0.0,
+        "output_tokens_per_game": 36.625,
+        "reasoning_tokens_per_game": 0.0,
+        "questions": 27,
+        "post_budget_non_guesses": 0,
+        "truncated_turns": 0
+      },
+      "ci95": {
+        "games": 8,
+        "questions": 27,
+        "low_probability_opportunities": 0,
+        "win_rate": 0.5,
+        "win_rate_ci95": [
+          0.125,
+          0.875
+        ],
+        "questions_per_win": 3.25,
+        "questions_per_win_ci95": [
+          3.0,
+          3.75
+        ],
+        "eig_per_question": 0.4887628326739978,
+        "eig_per_question_ci95": [
+          0.30752637254591453,
+          0.6591613158477364
+        ],
+        "enumeration_rate": 0.0,
+        "enumeration_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "predicate_tokens": 4.185185185185185,
+        "predicate_tokens_ci95": [
+          2.3076923076923075,
+          6.185185185185185
+        ],
+        "invalid_rate": 0.0,
+        "invalid_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "reask_after_low_probability_rate": null,
+        "reask_after_low_probability_rate_ci95": null
+      }
+    },
+    "8": {
+      "point": {
+        "games": 8,
+        "mean_reward": 0.78125,
+        "wins": 7,
+        "win_rate": 0.875,
+        "questions_per_win": 3.0,
+        "eig_per_question": 0.6478861432999622,
+        "enumeration_rate": 0.0,
+        "single_item_enumeration_rate": 0.0,
+        "name_list_rate": 0.0,
+        "large_name_list_rate": 0.0,
+        "invalid_question_rate": 0.0,
+        "output_tokens_per_game": 27.375,
+        "reasoning_tokens_per_game": 0.0,
+        "questions": 25,
+        "post_budget_non_guesses": 0,
+        "truncated_turns": 0
+      },
+      "ci95": {
+        "games": 8,
+        "questions": 25,
+        "low_probability_opportunities": 0,
+        "win_rate": 0.875,
+        "win_rate_ci95": [
+          0.625,
+          1.0
+        ],
+        "questions_per_win": 3.0,
+        "questions_per_win_ci95": [
+          2.6,
+          3.4
+        ],
+        "eig_per_question": 0.6478861432999622,
+        "eig_per_question_ci95": [
+          0.435473291975882,
+          0.8157326766681665
+        ],
+        "enumeration_rate": 0.0,
+        "enumeration_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "predicate_tokens": 2.2,
+        "predicate_tokens_ci95": [
+          1.0689655172413792,
+          3.9
+        ],
+        "invalid_rate": 0.0,
+        "invalid_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "reask_after_low_probability_rate": null,
+        "reask_after_low_probability_rate_ci95": null
+      }
+    },
+    "12": {
+      "point": {
+        "games": 8,
+        "mean_reward": 0.78125,
+        "wins": 7,
+        "win_rate": 0.875,
+        "questions_per_win": 3.0,
+        "eig_per_question": 0.6478861432999622,
+        "enumeration_rate": 0.0,
+        "single_item_enumeration_rate": 0.0,
+        "name_list_rate": 0.0,
+        "large_name_list_rate": 0.0,
+        "invalid_question_rate": 0.0,
+        "output_tokens_per_game": 27.375,
+        "reasoning_tokens_per_game": 0.0,
+        "questions": 25,
+        "post_budget_non_guesses": 0,
+        "truncated_turns": 0
+      },
+      "ci95": {
+        "games": 8,
+        "questions": 25,
+        "low_probability_opportunities": 0,
+        "win_rate": 0.875,
+        "win_rate_ci95": [
+          0.625,
+          1.0
+        ],
+        "questions_per_win": 3.0,
+        "questions_per_win_ci95": [
+          2.6,
+          3.4
+        ],
+        "eig_per_question": 0.6478861432999622,
+        "eig_per_question_ci95": [
+          0.435473291975882,
+          0.8157326766681665
+        ],
+        "enumeration_rate": 0.0,
+        "enumeration_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "predicate_tokens": 2.2,
+        "predicate_tokens_ci95": [
+          1.0689655172413792,
+          3.9
+        ],
+        "invalid_rate": 0.0,
+        "invalid_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "reask_after_low_probability_rate": null,
+        "reask_after_low_probability_rate_ci95": null
+      }
+    },
+    "16": {
+      "point": {
+        "games": 8,
+        "mean_reward": 0.7887500000000001,
+        "wins": 7,
+        "win_rate": 0.875,
+        "questions_per_win": 2.7142857142857144,
+        "eig_per_question": 0.6172675470651763,
+        "enumeration_rate": 0.0,
+        "single_item_enumeration_rate": 0.0,
+        "name_list_rate": 0.0,
+        "large_name_list_rate": 0.0,
+        "invalid_question_rate": 0.0,
+        "output_tokens_per_game": 26.375,
+        "reasoning_tokens_per_game": 0.0,
+        "questions": 23,
+        "post_budget_non_guesses": 0,
+        "truncated_turns": 0
+      },
+      "ci95": {
+        "games": 8,
+        "questions": 23,
+        "low_probability_opportunities": 0,
+        "win_rate": 0.875,
+        "win_rate_ci95": [
+          0.625,
+          1.0
+        ],
+        "questions_per_win": 2.7142857142857144,
+        "questions_per_win_ci95": [
+          2.3333333333333335,
+          3.0
+        ],
+        "eig_per_question": 0.6172675470651763,
+        "eig_per_question_ci95": [
+          0.4053858040542569,
+          0.7887879692520373
+        ],
+        "enumeration_rate": 0.0,
+        "enumeration_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "predicate_tokens": 2.3043478260869565,
+        "predicate_tokens_ci95": [
+          1.0769230769230769,
+          4.130434782608695
+        ],
+        "invalid_rate": 0.0,
+        "invalid_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "reask_after_low_probability_rate": null,
+        "reask_after_low_probability_rate_ci95": null
+      }
+    }
+  },
+  "paired_development_final_minus_base": {
+    "win_rate": {
+      "final_minus_base": 0.375,
+      "ci95": [
+        0.125,
+        0.75
+      ]
+    },
+    "eig_per_question": {
+      "final_minus_base": 0.13423738821493253,
+      "ci95": [
+        -0.0012669151786026123,
+        0.30462954343130105
+      ]
+    },
+    "mean_reward": {
+      "final_minus_base": 0.3975000000000001,
+      "ci95": [
+        0.13249999999999995,
+        0.77625
+      ]
+    },
+    "eig_per_game_exact_paired_permutation": {
+      "pairs": 8,
+      "two_sided_p": 0.125,
+      "test_statistic": "mean per-game EIG difference on pairs with defined EIG"
+    },
+    "win_rate_exact_paired_test": {
+      "discordant_pairs": 3,
+      "two_sided_p": 0.25,
+      "method": "Exact two-sided paired sign test on discordant wins (McNemar conditional test)."
+    }
+  },
+  "training_audit": {
+    "counts": {
+      "games": 128,
+      "early_guess_games": 16,
+      "early_guess_wins": 11,
+      "zero_question_guesses": 0,
+      "post_budget_non_guesses": 2,
+      "post_budget_asks": 2,
+      "counted_questions": 459,
+      "invalid_questions": 15,
+      "valid_questions": 444,
+      "item_equality_questions": 0,
+      "single_named_item_questions": 0,
+      "name_list_questions": 0,
+      "large_name_lists_original_N": 0,
+      "valid_zero_eig_questions": 120,
+      "repeated_splits": 64,
+      "exact_one_bit_questions": 23,
+      "at_least_0_9_bit_questions": 148,
+      "compound_attribute_questions": 98,
+      "lists_at_least_half_remaining": 0,
+      "consecutive_single_item_transitions": 0,
+      "single_attribute_questions": 341,
+      "early_after_singleton": 11,
+      "early_with_multiple_remaining": 5,
+      "negated_single_attribute_questions": 5
+    },
+    "invalid_causes": {
+      "Expression nesting exceeds 64 levels.": 2,
+      "Unexpected trailing tokens.": 1,
+      "Unknown attribute: long_ears": 6,
+      "Expected ).": 6
+    },
+    "name_list_examples": [],
+    "parser_exploit_assessment": "Every accepted predicate is replayed through the fixed safe AST parser and exact table evaluation. Invalid/malicious strings never execute code. No broader adversarial security guarantee is inferred.",
+    "no_rules_changed": true
+  },
+  "development_audit": {
+    "counts": {
+      "games": 40,
+      "early_guess_games": 3,
+      "early_guess_wins": 3,
+      "zero_question_guesses": 0,
+      "post_budget_non_guesses": 0,
+      "post_budget_asks": 0,
+      "counted_questions": 129,
+      "invalid_questions": 0,
+      "valid_questions": 129,
+      "item_equality_questions": 0,
+      "single_named_item_questions": 0,
+      "name_list_questions": 0,
+      "large_name_lists_original_N": 0,
+      "valid_zero_eig_questions": 46,
+      "repeated_splits": 30,
+      "exact_one_bit_questions": 22,
+      "at_least_0_9_bit_questions": 52,
+      "single_attribute_questions": 84,
+      "lists_at_least_half_remaining": 0,
+      "consecutive_single_item_transitions": 0,
+      "compound_attribute_questions": 45,
+      "early_after_singleton": 3,
+      "early_with_multiple_remaining": 0
+    },
+    "invalid_causes": {},
+    "name_list_examples": [],
+    "parser_exploit_assessment": "Every accepted predicate is replayed through the fixed safe AST parser and exact table evaluation. Invalid/malicious strings never execute code. No broader adversarial security guarantee is inferred.",
+    "no_rules_changed": true
+  },
+  "base_development_audit": {
+    "counts": {
+      "games": 8,
+      "early_guess_games": 0,
+      "early_guess_wins": 0,
+      "zero_question_guesses": 0,
+      "post_budget_non_guesses": 0,
+      "post_budget_asks": 0,
+      "counted_questions": 29,
+      "invalid_questions": 0,
+      "valid_questions": 29,
+      "item_equality_questions": 0,
+      "single_named_item_questions": 0,
+      "name_list_questions": 0,
+      "large_name_lists_original_N": 0,
+      "valid_zero_eig_questions": 13,
+      "repeated_splits": 8,
+      "exact_one_bit_questions": 3,
+      "at_least_0_9_bit_questions": 9,
+      "single_attribute_questions": 13,
+      "lists_at_least_half_remaining": 0,
+      "consecutive_single_item_transitions": 0,
+      "compound_attribute_questions": 16
+    },
+    "invalid_causes": {},
+    "name_list_examples": [],
+    "parser_exploit_assessment": "Every accepted predicate is replayed through the fixed safe AST parser and exact table evaluation. Invalid/malicious strings never execute code. No broader adversarial security guarantee is inferred.",
+    "no_rules_changed": true
+  },
+  "final_development_audit": {
+    "counts": {
+      "games": 8,
+      "early_guess_games": 1,
+      "early_guess_wins": 1,
+      "zero_question_guesses": 0,
+      "post_budget_non_guesses": 0,
+      "post_budget_asks": 0,
+      "counted_questions": 23,
+      "invalid_questions": 0,
+      "valid_questions": 23,
+      "item_equality_questions": 0,
+      "single_named_item_questions": 0,
+      "name_list_questions": 0,
+      "large_name_lists_original_N": 0,
+      "valid_zero_eig_questions": 7,
+      "repeated_splits": 5,
+      "exact_one_bit_questions": 4,
+      "at_least_0_9_bit_questions": 10,
+      "single_attribute_questions": 18,
+      "lists_at_least_half_remaining": 0,
+      "consecutive_single_item_transitions": 0,
+      "compound_attribute_questions": 5,
+      "early_after_singleton": 1,
+      "early_with_multiple_remaining": 0
+    },
+    "invalid_causes": {},
+    "name_list_examples": [],
+    "parser_exploit_assessment": "Every accepted predicate is replayed through the fixed safe AST parser and exact table evaluation. Invalid/malicious strings never execute code. No broader adversarial security guarantee is inferred.",
+    "no_rules_changed": true
+  },
+  "guess_consistency_audit": {
+    "training": {
+      "counts": {
+        "games_reaching_singleton": 45,
+        "singleton_games_won": 45,
+        "early_guesses": 16,
+        "guesses": 126,
+        "guesses_with_singleton_posterior": 45,
+        "guesses_of_eliminated_candidates": 0,
+        "wrong_guesses_despite_singleton": 0,
+        "wins_with_singleton_posterior": 45,
+        "wins_without_singleton_posterior": 31
+      },
+      "examples": []
+    },
+    "base_dev": {
+      "counts": {
+        "games_reaching_singleton": 1,
+        "singleton_games_won": 1,
+        "early_guesses": 0,
+        "guesses": 8,
+        "guesses_with_singleton_posterior": 1,
+        "guesses_of_eliminated_candidates": 0,
+        "wrong_guesses_despite_singleton": 0,
+        "wins_with_singleton_posterior": 1,
+        "wins_without_singleton_posterior": 3
+      },
+      "examples": []
+    },
+    "final_dev": {
+      "counts": {
+        "games_reaching_singleton": 3,
+        "singleton_games_won": 3,
+        "early_guesses": 1,
+        "guesses": 8,
+        "guesses_with_singleton_posterior": 3,
+        "guesses_of_eliminated_candidates": 0,
+        "wrong_guesses_despite_singleton": 0,
+        "wins_with_singleton_posterior": 3,
+        "wins_without_singleton_posterior": 4
+      },
+      "examples": []
+    }
+  },
+  "stopping_confidence_audit": {
+    "training": {
+      "games": 128,
+      "guesses_with_multiple_remaining": 81,
+      "wins_with_multiple_remaining": 31,
+      "mean_posterior_win_probability_at_stopping": 0.6290364583333335,
+      "mean_reward_using_posterior_win_probability": 0.5097395833333334,
+      "interpretation": "Post-hoc stopping audit, not a new primary score or reward. Assign zero to no-guess endings and use the posterior mass of the chosen item otherwise. This separates logged guess confidence from lucky realized wins."
+    },
+    "base_dev": {
+      "games": 8,
+      "guesses_with_multiple_remaining": 7,
+      "wins_with_multiple_remaining": 3,
+      "mean_posterior_win_probability_at_stopping": 0.46875,
+      "mean_reward_using_posterior_win_probability": 0.36000000000000004,
+      "interpretation": "Post-hoc stopping audit, not a new primary score or reward. Assign zero to no-guess endings and use the posterior mass of the chosen item otherwise. This separates logged guess confidence from lucky realized wins."
+    },
+    "final_dev": {
+      "games": 8,
+      "guesses_with_multiple_remaining": 5,
+      "wins_with_multiple_remaining": 4,
+      "mean_posterior_win_probability_at_stopping": 0.65625,
+      "mean_reward_using_posterior_win_probability": 0.5700000000000001,
+      "interpretation": "Post-hoc stopping audit, not a new primary score or reward. Assign zero to no-guess endings and use the posterior mass of the chosen item otherwise. This separates logged guess confidence from lucky realized wins."
+    }
+  },
+  "group_signal_audit": {
+    "nonconstant_return_groups": 13,
+    "groups": 16,
+    "groups_with_win_variance": 9,
+    "zero_win_groups": [
+      9,
+      11,
+      15
+    ],
+    "zero_win_groups_with_cost_only_variance": [
+      9,
+      15
+    ]
+  },
+  "per_update_interpretation": "Training outcomes are on the policy before each update. Eight games within an update share one hidden target and table. Curriculum changes at updates 5 and 13, so the fixed development cases, not raw training slopes alone, assess learning.",
+  "uncertainty": "One pilot seed and eight fixed noiseless development cases. Paired bootstrap resamples complete games within N; no between-seed uncertainty is estimated. No frozen, noisy or transfer model evaluation ran.",
+  "sample_train_logprob_diagnostic": {
+    "mean_difference_range_nats": [
+      -0.012436756227811398,
+      0.004490616801233195
+    ],
+    "maximum_absolute_token_difference_nats": 1.2500009536743164,
+    "interpretation": "Native token sequences match exactly; training and sampling log probabilities are not bit-identical. The backend cause is not established. The standard importance-sampling loss uses the recorded rollout log probabilities; no correction or experiment setting changed."
+  },
+  "cost": {
+    "pilot_spent_usd": "0.291204",
+    "pilot_held_usd": "0.250000",
+    "cap_including_holds_usd": "2.000000",
+    "project": {
+      "cap_usd": "50.000000",
+      "spent_usd": "6.626433",
+      "held_usd": "0.362813",
+      "available_usd": "43.010754",
+      "blocked": false
+    }
+  },
+  "verification": {
+    "sampled_games": 168,
+    "sampling_request_signatures_and_predispatch_ids": 756,
+    "gradient_batches_verified": 16,
+    "outcome_rewards_only": true,
+    "prompt_loss_tokens": 0,
+    "frozen_games_in_gradients": 0
+  }
+}
