@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "status": "Originals excluded and held; replacements approved but deferred until explicit resume",
+  "status": "A11 complete at its gate; both exact replacements collected; original exclusions and holds retained",
   "stage": "raw-control evaluation before any training update",
   "unavailable_originals": [
     {
@@ -13,7 +13,10 @@
       "receipt": null,
       "reserved_usd": "0.002056",
       "observed_recovery": "404 Promise not found",
-      "proposed_replacement_key": "eval_base/Qwen/Qwen3-8B/paid-v1/animals/128/10/p0/turn-2/approved-replacement-v1"
+      "proposed_replacement_key": "eval_base/Qwen/Qwen3-8B/paid-v1/animals/128/10/p0/turn-2/approved-replacement-v1",
+      "replacement_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:0:641",
+      "replacement_entry_id": "ec769855-2d39-431f-bc93-a4f6f48e5209",
+      "original_output_allowed": false
     },
     {
       "key": "eval_base/Qwen/Qwen3-8B/paid-v1/animals/128/2/p0/turn-6",
@@ -25,7 +28,10 @@
       "receipt": null,
       "reserved_usd": "0.002665",
       "observed_recovery": "404 Promise not found",
-      "proposed_replacement_key": "eval_base/Qwen/Qwen3-8B/paid-v1/animals/128/2/p0/turn-6/approved-replacement-v1"
+      "proposed_replacement_key": "eval_base/Qwen/Qwen3-8B/paid-v1/animals/128/2/p0/turn-6/approved-replacement-v1",
+      "replacement_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:0:633",
+      "replacement_entry_id": "fad28bc7-9f76-4f29-a5f1-f3a7ca8b21be",
+      "original_output_allowed": false
     }
   ],
   "unresolved_holds_usd": "0.004721",
@@ -46,5 +52,15 @@
   "standing_rule": "research/replacement_policy.json",
   "pause_requested": true,
   "last_collection_attempt": "2026-11-18T10:16:38Z\u201310:17:22Z: both original IDs returned HTTP 522 after repeated earlier 404s; all recoverable results were already saved",
-  "replacements_submitted": 0
+  "replacements_submitted": 0,
+  "resumed_at": "2026-11-18T13:17:25.850836+00:00",
+  "completion": {
+    "date": "2026-11-19",
+    "updates": 30,
+    "exact_replacements_collected": 2,
+    "new_losses_after_resume": 0,
+    "pending_http_work": 0,
+    "completion_record": "results/main_A11/completion.json",
+    "replacement_registry": "research/main_A11_replacements.json"
+  }
 }

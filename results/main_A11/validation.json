@@ -1,0 +1,37 @@
+{
+  "tests_passed": 135,
+  "training_games": 240,
+  "development_games": 64,
+  "reused_raw_development_games": 8,
+  "frozen_games_per_policy": 280,
+  "updates": 30,
+  "sampling_calls_with_predispatch_ids_and_matching_receipts": 7561,
+  "accepted_mutations_with_predispatch_ids_and_matching_receipts": 93,
+  "locally_rejected_unsubmitted_mutations_settled_at_zero": 0,
+  "raw_base_initialization_no_sft": true,
+  "training_pool_only": true,
+  "frozen_games_in_gradients": 0,
+  "maximum_local_save_to_collection_seconds": 755.448043,
+  "excluded_lost_originals": 2,
+  "lost_original_holds_usd": "0.004721",
+  "recorded_main_stage_usage_usd": "4.389417",
+  "new_checkpoint_holds_usd": "0.100000",
+  "stage_cap_including_holds_usd": "42.490000",
+  "prior_ledger_entries_and_approval_unchanged": true,
+  "old_active_holds_unchanged_usd": ".362813",
+  "frozen_games_verified": 2000,
+  "frozen_and_prompt_hash_files_unchanged": true,
+  "core_budget_implementation_unchanged": true,
+  "completed_runner_service_calls": 0,
+  "completed_runner_ledger_unchanged": true,
+  "final_adapter_manifest": {
+    "adapter_config.json": {
+      "bytes": 934,
+      "sha256": "7c4821f8f443de1d52d092093c5bdb57bafcfe431bd83b0c28b51852283a86bd"
+    },
+    "adapter_model.safetensors": {
+      "bytes": 369220610,
+      "sha256": "76af0d292b679a90369477db91d59f1bf1a037dea557a2842784605ff5e03457"
+    }
+  }
+}

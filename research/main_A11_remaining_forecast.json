@@ -1,0 +1,103 @@
+{
+  "authorized_to_start_now": false,
+  "gate": "User decision required after A11.",
+  "remaining_seeds": {
+    "A": [
+      23
+    ],
+    "B": [
+      41
+    ]
+  },
+  "updates_per_seed": 30,
+  "training_games_per_seed": 240,
+  "training_A23_usd": 5.3491289825,
+  "training_B41_usd": 6.325637222539947,
+  "development_usd": 0.09617736,
+  "two_endpoint_evaluations_usd": 4.248063012,
+  "hard_mode_usd": 1.3657211327999998,
+  "checkpoint_holds_usd": 0.2,
+  "possible_adapter_reupload_hold_usd": 0.05,
+  "total_before_margin_usd": 17.63472770983995,
+  "total_with_1_5_margin_usd": 26.452091564759925,
+  "separate_zero_cache_reference_without_extra_margin_usd": 21.27366919783995,
+  "available_including_holds_usd": "38.516616",
+  "fits_with_margin": true,
+  "training_profiles": {
+    "4": {
+      "A_uncached_sampling_plus_gradient_per_game_usd": 0.00195505,
+      "B_reference_multiplier": 1.424904733894274,
+      "observed_A_group_per_game_costs": [
+        0.0019265875,
+        0.0018532268750000001
+      ],
+      "reference_floor_usd": 0.00195505
+    },
+    "8": {
+      "A_uncached_sampling_plus_gradient_per_game_usd": 0.00352646390625,
+      "B_reference_multiplier": 1.6608929126897074,
+      "observed_A_group_per_game_costs": [
+        0.003742600625,
+        0.0028780537500000002
+      ],
+      "reference_floor_usd": 0.00305405
+    },
+    "16": {
+      "A_uncached_sampling_plus_gradient_per_game_usd": 0.007927430000000001,
+      "B_reference_multiplier": 1.2007346643237469,
+      "observed_A_group_per_game_costs": [
+        0.02317732875,
+        0.006672053125000001,
+        0.0039199050000000004,
+        0.00426814625,
+        0.00591356625,
+        0.00558375625,
+        0.004872388125,
+        0.00656370125,
+        0.00649503125,
+        0.005849134375,
+        0.005429155
+      ],
+      "reference_floor_usd": 0.007927430000000001
+    },
+    "32": {
+      "A_uncached_sampling_plus_gradient_per_game_usd": 0.015038815,
+      "B_reference_multiplier": 1.2763987721107015,
+      "observed_A_group_per_game_costs": [
+        0.012938950000000001,
+        0.009219986874999999,
+        0.008548318124999999,
+        0.00603107375,
+        0.013101391875,
+        0.011208533125,
+        0.0071177918750000005
+      ],
+      "reference_floor_usd": 0.015038815
+    },
+    "64": {
+      "A_uncached_sampling_plus_gradient_per_game_usd": 0.0346216,
+      "B_reference_multiplier": 1.1915050142107817,
+      "observed_A_group_per_game_costs": [
+        0.021166626875,
+        0.023450894375000003,
+        0.012484681875,
+        0.0155195425
+      ],
+      "reference_floor_usd": 0.0346216
+    },
+    "128": {
+      "A_uncached_sampling_plus_gradient_per_game_usd": 0.081679565,
+      "B_reference_multiplier": 1.1304446834407114,
+      "observed_A_group_per_game_costs": [
+        0.0643380475,
+        0.01945415,
+        0.037359879375,
+        0.036987481875
+      ],
+      "reference_floor_usd": 0.081679565
+    }
+  },
+  "stable_endpoint_cache_credit": 0.6,
+  "method": "No training cache credit. Per-N measured mean/upper-quartile uncached sampling plus gradient cost, bounded below by original free-reference forecast. B scales by the original noisy/noiseless reference ratio. Endpoint uses the more expensive observed base/endpoint cell and at most 60% cache credit. No new raw frozen control is needed. Hard mode retains its full-output-cap forecast; a possible local adapter reupload has a separate hold allowance.",
+  "limits": "One A seed measured; B training behavior remains unobserved. These are forecasts, not bills or guarantees. No schedule, reward or cap changes are automatic."
+}

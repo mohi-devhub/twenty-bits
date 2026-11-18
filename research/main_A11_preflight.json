@@ -13,9 +13,10 @@
     "twenty_bits/attributes.py": "4fea3de19f7763d26d85e8cf7bd86b450e3e625b9f49d1447909ab1fb3d1d2f2",
     "twenty_bits/learnability.py": "f73a412bfee21edf81c218e907b46dd93a10420ea4d85e0fc5214ca0fe30da0f",
     "twenty_bits/worlds.py": "c113f6e383b2f17d6ad9c81cfaa9537b928f1cecd3dcdf57150c637d5189f12b",
-    "scripts/run_main_seed.py": "b42a6dbc439c70c07f43055c78cf379663746b4c27f6f2ec3a326e4a2e578b8e",
+    "scripts/run_main_seed.py": "55aa9968fd88fe7f5104af1dd9e35aaa545919c69644b2209f247443ff106f96",
     "scripts/run_rl_pilot.py": "e012d26be721646073636c0504336b00edab907151faf2457285654062e6caeb",
-    "scripts/run_format_sft.py": "beff6f826c26da6fbac74c4c44ba8e5902d737ea48b9f78b049dd97e46a644b8"
+    "scripts/run_format_sft.py": "beff6f826c26da6fbac74c4c44ba8e5902d737ea48b9f78b049dd97e46a644b8",
+    "twenty_bits/recovery.py": "53f0c1b887563be80f47da308c38912f28316f4a21553fdd9c384823a19e4226"
   },
   "native_initial_prompts": [
     {
@@ -2224,6 +2225,12 @@
       "previous_runner_sha256": "014cf5c0f80f1854c7acf13196b507fce07fd89698df44f4f341fe11134330cc",
       "new_runner_sha256": "b42a6dbc439c70c07f43055c78cf379663746b4c27f6f2ec3a326e4a2e578b8e",
       "source": "research/main_A11_pause.json"
+    },
+    {
+      "scope": "Explicit user resume. Apply the standing single exact sampling replacement rule with pre-dispatch signature checks and retained original holds. Retry only transient metadata retrieval under the original ID. No reward, cap, prompt, seed, data or optimizer change.",
+      "previous_runner_sha256": "b42a6dbc439c70c07f43055c78cf379663746b4c27f6f2ec3a326e4a2e578b8e",
+      "new_runner_sha256": "55aa9968fd88fe7f5104af1dd9e35aaa545919c69644b2209f247443ff106f96",
+      "source": "research/main_A11_resume_audit.json"
     }
   ]
 }

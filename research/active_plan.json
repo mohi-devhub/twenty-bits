@@ -1,5 +1,5 @@
 {
-  "status": "PAUSED at user request; do not resume until user says resume",
+  "status": "A11 completed; stopped for the mandatory user gate decision",
   "initial_policy": "raw_base_no_sft",
   "sft_checkpoint": null,
   "sft_removal_reason": "Paired candidate-set qualification: SFT EIG lower by 0.1444 bits/question; raw base selected by user.",
@@ -13,30 +13,45 @@
   "curriculum": [
     {
       "n": 4,
-      "updates": 4,
-      "games": 32
+      "updates": 2,
+      "games_per_seed": 16
     },
     {
       "n": 8,
-      "updates": 8,
-      "games": 64
+      "updates": 2,
+      "games_per_seed": 16
     },
     {
       "n": 16,
+      "updates": 11,
+      "games_per_seed": 88
+    },
+    {
+      "n": 32,
+      "updates": 7,
+      "games_per_seed": 56
+    },
+    {
+      "n": 64,
       "updates": 4,
-      "games": 32
+      "games_per_seed": 32
+    },
+    {
+      "n": 128,
+      "updates": 4,
+      "games_per_seed": 32
     }
   ],
-  "training_games": 128,
-  "development_games": 40,
-  "rl_authorized_scope": "Run A seed 11 only, including raw-base and endpoint frozen evaluations. Stop before A23 or B41.",
+  "training_games": 240,
+  "development_games": 64,
+  "rl_authorized_scope": "A11 is complete. No paid continuation before the mandatory gate decision.",
   "main_runs_authorized": true,
   "reference_model": null,
   "project_usage_at_recording": {
     "cap_usd": "50.000000",
-    "spent_usd": "6.819365",
-    "held_usd": "0.367534",
-    "available_usd": "42.813101",
+    "spent_usd": "11.015850",
+    "held_usd": "0.467534",
+    "available_usd": "38.516616",
     "blocked": false
   },
   "pilot_gate": "PILOT_GATE.md",
@@ -93,16 +108,41 @@
       "total_with_1_5_margin_usd": 42.480710971200004
     }
   },
-  "active_stage": "A11",
+  "active_stage": "A11_gate",
   "next_stage_requires_gate_decision": true,
   "main_approval": "research/main_U_approval.json",
   "main_seed_config": "experiments/main_A11.json",
   "main_seed_preflight": "research/main_A11_preflight.json",
-  "training_updates_completed": 0,
-  "raw_control_games_saved": 52,
+  "training_updates_completed": 30,
+  "raw_control_games_saved": 280,
   "incident": "research/main_A11_recovery_incident.json",
-  "next_action": "Wait for explicit resume; no new requests or background collector.",
-  "paused": true,
+  "next_action": "Wait for user decision before A23, B41, hard mode or other paid work.",
+  "paused": false,
   "pause_record": "research/main_A11_pause.json",
-  "standing_replacement_rule": "research/replacement_policy.json"
+  "standing_replacement_rule": "research/replacement_policy.json",
+  "resume_audit": "research/main_A11_resume_audit.json",
+  "replacement_registry": "research/main_A11_replacements.json",
+  "pilot_curriculum": [
+    {
+      "n": 4,
+      "updates": 4,
+      "games": 32
+    },
+    {
+      "n": 8,
+      "updates": 8,
+      "games": 64
+    },
+    {
+      "n": 16,
+      "updates": 4,
+      "games": 32
+    }
+  ],
+  "pilot_training_games": 128,
+  "pilot_development_games": 40,
+  "dispatch_authorized_now": false,
+  "endpoint_games_saved": 280,
+  "reused_raw_development_games": 8,
+  "current_gate": "MAIN_A11_GATE.md"
 }

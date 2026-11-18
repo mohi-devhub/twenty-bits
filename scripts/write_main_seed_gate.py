@@ -27,6 +27,10 @@ def bins(row):
     ]
 
 
+def paragraphs(parts):
+    return [line for part in parts for line in (part, "")]
+
+
 def main():
     folder = ROOT / "results/main_A11"
     s = json.loads((folder / "summary.json").read_text())
@@ -43,7 +47,7 @@ def main():
         "",
         "Completed the scheduled **30 updates and 240 training games**, with **64 new development games**, **280 new matched raw-base frozen games** and **280 endpoint frozen games**. Eight raw development games are reused from the matched pre-RL control. A seed 23, B seed 41 and hard-mode evaluation have not started. Work stops at this gate.",
         "",
-        *assessment["learning_assessment"],
+        *paragraphs(assessment["learning_assessment"]),
         "",
         "![Main learning curve](results/main_A11/charts/main-learning.png)",
         "",
@@ -62,11 +66,13 @@ def main():
         "",
         "**The curriculum reaches N=32 and N=128**, matching the frozen animal cells. N=256 remains size transfer on relabeled synthetic. Every gradient uses only the fixed 200-row animal training pool; development, held-out profiles and frozen games never enter gradients.",
         "",
-        "Prompt candidate-set-v1, exact attribute aliases, 2,048 output tokens with thinking disabled, 32K context and original-N question budgets stayed fixed. The provided state means the main question is question selection, rather than maintaining state from history. Checkpoints were not selected on frozen scores: only the scheduled update-30 endpoint was retained and evaluated. [Frozen config](experiments/main_A11.json), [cases](experiments/main_A11_games.json), [preflight](research/main_A11_preflight.json).",
+        "Prompt candidate-set-v1, exact attribute aliases, 2,048 output tokens with thinking disabled, 32K context and original-N question budgets stayed fixed. The provided state means the main question is question selection, rather than maintaining state from history. Checkpoints were not selected on frozen scores: only the scheduled update-30 endpoint was retained and evaluated. [Frozen config](experiments/main_A11.json), [cases](experiments/main_A11_games.json.gz), [preflight](research/main_A11_preflight.json).",
         "",
         "## All 30 training updates",
         "",
         "Rows contain eight games sampled before that optimizer update. Each group has a different start state, so the raw training curve mixes learning, difficulty and curriculum. The fixed development curve below supplies a paired comparison. Q/win is conditional on winning; EIG includes every counted question, including INVALID and losses. Undefined values remain undefined.",
+        "",
+        "The log2(N) reference describes uniform-prior search that identifies every target. Individual wins and win-conditioned means can fall below it after lucky unbalanced splits or uncertain guesses; that does not exceed the one-bit EIG ceiling.",
         "",
         "| Update | N | Reward | Wins/8 | EIG/Q | Q/win | Enum % | Invalid % | Nonzero group / cumulative % | Output tokens/game |",
         "| ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: | --- | ---: |",
@@ -137,6 +143,18 @@ def main():
             )
     lines += [
         "",
+        "The declared noiseless animal comparison and noiseless synthetic transfer comparison are also pooled separately with equal weight per size. These implement NUMBERS.md comparisons 1 and 3; they are distinct from the all-cell descriptive headline below.",
+        "",
+        "| Declared subset | Metric | Raw base | Endpoint | Paired change [95% CI] |",
+        "| --- | --- | ---: | ---: | --- |",
+    ]
+    for subset, measurements in frozen["declared_subsets"].items():
+        for key, h in measurements.items():
+            lines.append(
+                f"| {subset} | {key} | {num(h['base'])} | {num(h['endpoint'])} | {interval(h['final_minus_base'], h['ci95'])} |"
+            )
+    lines += [
+        "",
         "The equal-cell EIG and win comparisons pool the declared cells with equal weight; they do not estimate an effect across training seeds.",
         "",
     ]
@@ -163,7 +181,7 @@ def main():
         "",
         "## Behavior audit and limitations",
         "",
-        *assessment["behavior_assessment"],
+        *paragraphs(assessment["behavior_assessment"]),
         "",
         f"Training had {train['invalid_questions']}/{train['counted_questions']} INVALID questions, {train['item_equality_questions']} item-equality questions, {train['name_list_questions']} name lists, {train['valid_zero_eig_questions']} valid zero-EIG questions and {train['post_budget_asks']} extra ASK actions rejected after budget exhaustion. No legal enumeration form was banned. All accepted predicates, answers, posteriors, EIG and rewards were replayed exactly. Malformed outputs stayed in the results; parsing exploits were audited. [Two preselected paired development games](results/main_A11/EXAMPLE_GAMES.md) include all actions and the shared tables.",
         "",
@@ -171,7 +189,7 @@ def main():
         "",
         "## Cost and collection",
         "",
-        f"Stage usage: **${s['cost']['main_A11_spent_usd']}**, plus **${s['cost']['main_A11_held_usd']} checkpoint holds**. The forecast was ${float(proof['stage_forecast_before_margin_usd']):.6f} before margin or ${float(proof['stage_forecast_including_margin_usd']):.6f} with 1.5x margin. Recorded charges use observed tokens at the verified [provider rates](https://tinker-docs.thinkingmachines.ai/tinker/models.json), not reconciled invoices. Budget cap remains $50.",
+        f"Stage usage: **${s['cost']['main_A11_spent_usd']}**, plus **${s['cost']['main_A11_held_usd']} retained holds**. The forecast was ${float(proof['stage_forecast_before_margin_usd']):.6f} before margin or ${float(proof['stage_forecast_including_margin_usd']):.6f} with 1.5x margin. Recorded charges use observed tokens at the verified [provider rates](https://tinker-docs.thinkingmachines.ai/tinker/models.json), not reconciled invoices. Budget cap remains $50.",
         "",
         "| Component | Recorded usage USD |",
         "| --- | ---: |",
@@ -181,15 +199,48 @@ def main():
     lines += [
         f"| Gradients | {s['cost']['gradient_usd']} |",
         "",
+        "| Sampling scope | Calls | Prompt tokens | Cache-hit tokens | Cache-hit % | Generated tokens |",
+        "| --- | ---: | ---: | ---: | ---: | ---: |",
+    ]
+    for kind, usage in s["cost"]["token_usage_by_kind"].items():
+        hit = usage["prompt_cache_hit_tokens"] / usage["prompt_tokens"]
+        lines.append(
+            f"| {kind} | {usage['sampling_calls']:,} | {usage['prompt_tokens']:,} | {usage['prompt_cache_hit_tokens']:,} | {percent(hit)} | {usage['output_tokens']:,} |"
+        )
+    lines += [
+        "",
+        "These token totals cover the newly sampled games; the eight reused raw development games have no new charge. Cache hits are observed response fields, while the remaining-run forecast gives training no cache credit. Thinking remains disabled; generated-token changes describe visible output length.",
+        "",
         f"Project usage is **${p['spent_usd']}**, holds **${p['held_usd']}**, available **${p['available_usd']}**. The nine permanently excluded historical attempts retain $0.012813; old SFT/pilot checkpoint holds remain intact. The new native endpoint and external export retain their storage holds pending billing. The adapter is downloaded locally with hashes; hosted TTL is two hours, while the downloaded export can be uploaded again for the deferred hard-mode evaluation.",
         "",
         "Execution parallelism changed from 4 to 16 after draining all 83 existing sampling requests, before any training update. Those exact outputs were reused, with no sampling resubmission. Configuration, native prompt hashes, requested seeds, sampling parameters and experiment caps did not change. Original preflight and exact prior runner source are preserved in the [execution amendment](research/main_A11_execution_amendment.json). Network recovery retains each request ID and hold; 408 means pending. All sampling and training IDs were saved before dispatch and matched to receipts or recovered results.",
         "",
         "[Validation](results/main_A11/validation.json) checks prior ledger preservation, frozen hashes, all new sampling requests and every gradient batch. [Archive-only reproduction](results/main_A11/reproduction.json) proves saved analysis works without local run caches or service calls. Source, settings, cases and optimizer parameters are pinned. No frozen game entered gradients.",
         "",
+        "## Resume and unavailable requests",
+        "",
+        "The user paused before any main gradient or optimizer update and explicitly resumed with AC power and an open lid. The audit verified seed 11, all 627 original journals, the unchanged data/configuration hashes, raw sampler counter 627 and the same hosted rank-32 model. No initialization or optimizer state was recreated. Cached results stayed unchanged. [Resume audit](research/main_A11_resume_audit.json).",
+        "",
+        "The resume point was update 0 with no main checkpoint, $6.819365 recorded project usage, $0.367534 held and $42.813101 available. Every known unavailable pre-pause ID was checked: the two A11 originals still returned 404; four older probe originals remained expired or unavailable. Five older Phase 2 originals have no known IDs and cannot be queried. Previously completed storage futures retain billing holds despite their collected results. Only the two eligible A11 turns needed replacements for this run. At completion, the runner exited successfully and all active HTTP work was drained.",
+        "",
+        f"The standing rule supplied {s['sampling_recovery']['exact_replacements']} exact sampling replacements. Every original stayed permanently excluded and held; no original output entered an action, score, example or gradient. Replacement prompt/token/seed/parameter signatures matched before dispatch. A 408 always kept its existing ID; a second loss or aggregate lost-original exposure reaching $0.50 requires approval. New original holds are ${s['cost']['lost_original_holds_usd']}; new checkpoint storage holds are ${s['cost']['checkpoint_holds_usd']}.",
+        "",
+        "IDs below show sampler index and request sequence within this run; full IDs, logical keys and ledger entries are in [the replacement registry](research/main_A11_replacements.json).",
+        "",
+        "| Logical request | Original sample | Replacement sample | Original hold USD |",
+        "| --- | --- | --- | ---: |",
+    ]
+    for c in s["sampling_recovery"]["cases"]:
+        lines.append(
+            f"| {c['logical_key'].replace('Qwen/Qwen3-8B/', '')} | {':'.join(c['original_request_id'].split(':')[-2:])} | {':'.join(c['replacement_request_id'].split(':')[-2:])} | {c['original_hold_usd']} |"
+        )
+    lines += [
+        "",
+        "Reproduce offline with `python3 scripts/analyze_main_seed.py`, `python3 scripts/verify_main_seed.py`, `python3 scripts/plot_main_seed.py`, `python3 scripts/reprice_remaining_main.py`, then `python3 scripts/write_main_seed_gate.py`. No credentials or service calls are needed. The compressed case file restores the same manifest bytes. The factual assessment is saved in research/main_A11_assessment.json.",
+        "",
         "## Next decision",
         "",
-        *assessment["next_decision"],
+        *paragraphs(assessment["next_decision"]),
         "",
         "**Stopped after A seed 11. Do not start A seed 23 or B seed 41 until the user decides.**",
         "",

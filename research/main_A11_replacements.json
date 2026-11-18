@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "run_id": "main-U-A11-v1",
+  "legacy_lost_entry_ids": [
+    "fa5ec920-1085-46e2-bd9e-0e5b0a78cebf",
+    "78715f8c-59c0-4a1f-9f3f-c8102f4043d1",
+    "1189868a-f5b6-48eb-b6e1-a31529964760",
+    "ebf4dda4-1b3f-4fc6-b5bc-b2886bf5b869",
+    "e07652e7-cb4d-40de-bce0-c0251e75be1d",
+    "12d0e19a-5dfc-492a-881d-38cb8c6730d5",
+    "2d5590e3-5e6d-4c12-b255-53f4832e6de6",
+    "bdc5a4e7-57b4-4c59-b1a8-c15530edf862",
+    "34406b12-f94c-4383-8fe0-e5c16d1339b3",
+    "319887b8-8731-4762-87ff-336c46857ef5",
+    "4bfd623c-a3ca-4268-904b-bfe2ba552cee"
+  ],
+  "cases": [
+    {
+      "logical_key": "eval_base/Qwen/Qwen3-8B/paid-v1/animals/128/10/p0/turn-2",
+      "original_entry_id": "319887b8-8731-4762-87ff-336c46857ef5",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:0:624",
+      "signature": "748fe79db8b294ecd457fda29a49ff491c38ef55863f1b6998816ba281a81d02",
+      "replacement_key": "eval_base/Qwen/Qwen3-8B/paid-v1/animals/128/10/p0/turn-2/approved-replacement-v1",
+      "requires_approval": false,
+      "replacements_used": 1,
+      "reason": "Explicit approval before pause; 404 reconfirmed during resume audit.",
+      "replacement_entry_id": "ec769855-2d39-431f-bc93-a4f6f48e5209",
+      "replacement_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:0:641"
+    },
+    {
+      "logical_key": "eval_base/Qwen/Qwen3-8B/paid-v1/animals/128/2/p0/turn-6",
+      "original_entry_id": "4bfd623c-a3ca-4268-904b-bfe2ba552cee",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:0:625",
+      "signature": "4eb1d6abf8199e819ce6b5ab6a101873b4716fe4762ef4c9375e11f009fa1fb4",
+      "replacement_key": "eval_base/Qwen/Qwen3-8B/paid-v1/animals/128/2/p0/turn-6/approved-replacement-v1",
+      "requires_approval": false,
+      "replacements_used": 1,
+      "reason": "Explicit approval before pause; 404 reconfirmed during resume audit.",
+      "replacement_entry_id": "fad28bc7-9f76-4f29-a5f1-f3a7ca8b21be",
+      "replacement_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:0:633"
+    }
+  ]
+}

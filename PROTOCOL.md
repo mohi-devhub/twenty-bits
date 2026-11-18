@@ -1,5 +1,7 @@
 # Experiment protocol
 
+Main A seed 11 completed all 30 updates and its scheduled endpoint on 2026-11-19. MAIN_A11_GATE.md is the current mandatory stop. No A23, B41 or hard-mode work starts before the user decides; all scientific settings below remain unchanged.
+
 Option U is approved on 2026-11-18, with a mandatory stop after main A seed 11's 30 updates and endpoint evaluation, before either other seed. experiments/main_A11.json freezes this stage. Its curriculum reaches N=32 at updates 16–22 and N=128 at 27–30, matching frozen animal cells. Reward, output/context/question caps, grammar, prompts and frozen games stay unchanged.
 
 The additional guess-with-k-v1 metric uses public state just before GUESS. Noiseless k is exact consistent support; noisy k is the existing threshold-plus-MAP displayed list, with full positive support recorded separately. Report counts and wins in bins 1,2,3,4+ with all-game and guess denominators at each update/check and for raw versus endpoint frozen evals. This adds no feedback or reward.

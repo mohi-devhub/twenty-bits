@@ -1,5 +1,5 @@
 {
-  "active": true,
+  "active": false,
   "requested_at": "2026-11-18T10:19:30.610605+00:00",
   "reason": "User cannot keep host powered; explicit safe pause",
   "resume_requires_exact_user_instruction": "resume",
@@ -46,5 +46,8 @@
   "resume_order": "Verify ledger, pause snapshot and immutable hashes. On explicit resume, recover any saved recoverable futures before new work. Use the two authorized exact replacements under the standing rule, keeping originals excluded and held. Finish the matched raw control from cached turns, then train updates 1\u201330 in the frozen data order. Stop after A11 endpoint; no A23 or B41 yet.",
   "host_requirement": "Keep Mac powered with lid open; use a scoped caffeinate assertion for idle sleep.",
   "games_archive": "experiments/main_A11_games.json.gz",
-  "games_archive_sha256": "4a85b3e29b47fabf66b794a4270d3998535f32f2b82e94f48d95436374d4998d"
+  "games_archive_sha256": "4a85b3e29b47fabf66b794a4270d3998535f32f2b82e94f48d95436374d4998d",
+  "resumed_at": "2026-11-18T13:17:25.850836+00:00",
+  "resume_authorization": "User explicitly said Resume; Mac on AC power with lid open.",
+  "resume_audit": "research/main_A11_resume_audit.json"
 }

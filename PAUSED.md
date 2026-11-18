@@ -1,4 +1,6 @@
-# Paused — wait for “resume”
+# Historical pause — resumed, then completed A11
+
+The user explicitly resumed with AC power and an open lid. [Resume audit](research/main_A11_resume_audit.json) verified model availability, cached journals, seed, data order and budget. A11 completed all 30 updates and its endpoint evaluation on 2026-11-19. The runner has exited. [MAIN_A11_GATE.md](MAIN_A11_GATE.md) is current; wait for the next gate decision. Everything below describes the earlier pause snapshot, not the current run state.
 
 User-requested pause on 2026-11-18. **No new requests or background collector are running. Do not resume until the user says “resume”.**
 

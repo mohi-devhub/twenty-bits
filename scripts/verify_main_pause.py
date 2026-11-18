@@ -122,7 +122,7 @@ def main():
     before = sha(ROOT / "ledger.json")
     with (
         patch.object(
-            run_main_seed.PilotTransport,
+            run_main_seed.RecoveringTransport,
             "open",
             side_effect=AssertionError("No service calls"),
         ) as opened,

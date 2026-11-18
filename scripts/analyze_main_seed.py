@@ -7,6 +7,7 @@ import hashlib
 import itertools
 import json
 from pathlib import Path
+import re
 import sys
 
 import numpy as np
@@ -25,6 +26,7 @@ from twenty_bits.rl_pilot import group_data, unpack_trajectory
 from twenty_bits.tinker_rendering import Rendering
 from twenty_bits.tinker_transport import rates, sample_cost, save_json
 from twenty_bits.worlds import ROOT, seed_for
+from twenty_bits.attributes import attribute_code
 
 
 def write_gzip(path, rows):
@@ -37,6 +39,68 @@ def write_gzip(path, rows):
             mtime=0,
         )
     )
+
+
+def transfer_identifier_audit(games, records, evaluation):
+    policies = {}
+    for kind in ("eval_base", "eval_endpoint"):
+        counts = {
+            "invalid_questions": 0,
+            "wrong_prefix_on_real_attribute_suffix": 0,
+            "of_those_header_code_prefixed": 0,
+            "other_invalid_questions": 0,
+        }
+        examples = []
+        for g in sorted(games, key=lambda g: g["game_id"]):
+            if g["kind"] != kind or g["domain"] != "synthetic":
+                continue
+            attrs = records[g["game_id"]]["world"]["attributes"]
+            by_suffix = {
+                name.split("_", 1)[1]: (name, attribute_code(i))
+                for i, name in enumerate(attrs)
+            }
+            for turn in g["turns"]:
+                if not (turn["is_question"] and turn["invalid"]):
+                    continue
+                counts["invalid_questions"] += 1
+                expr = turn["raw_action"].removeprefix("ASK:").strip()
+                match = re.fullmatch(r"([a-z]+)_(\d+)", expr)
+                if not match or match[2] not in by_suffix:
+                    counts["other_invalid_questions"] += 1
+                    continue
+                name, code = by_suffix[match[2]]
+                assert expr != name
+                counts["wrong_prefix_on_real_attribute_suffix"] += 1
+                counts["of_those_header_code_prefixed"] += match[1] == code
+                if len(examples) < 3:
+                    examples.append(
+                        {
+                            "game_id": g["game_id"],
+                            "invalid_action": turn["raw_action"],
+                            "valid_full_name": name,
+                            "valid_code": code,
+                        }
+                    )
+        policies[kind] = {**counts, "examples": examples}
+    return {
+        "policies": policies,
+        "valid_question_eig": [
+            {
+                "n": row["n"],
+                "noise": row["noise"],
+                **{
+                    kind: row[kind]["eig_per_question"]
+                    / (1 - row[kind]["invalid_rate"])
+                    if row[kind]["valid_questions"]
+                    else None
+                    for kind in ("base", "endpoint")
+                },
+            }
+            for row in evaluation["cells"]
+            if row["domain"] == "synthetic"
+        ],
+        "interpretation": "Diagnostic only: condition on grammar-valid questions to separate identifier errors from split quality. Primary EIG still includes every counted question and INVALID retains zero EIG. No output was repaired or rescored.",
+    }
 
 
 def paired_change(base, final):
@@ -66,13 +130,15 @@ def paired_change(base, final):
 
     b, f = stats(base, indices), stats(final, indices)
     bp, fp = stats(base, np.arange(len(base))), stats(final, np.arange(len(final)))
-    result = {
-        k: {
-            "final_minus_base": float(fp[k] - bp[k]),
-            "ci95": np.nanquantile(f[k] - b[k], [0.025, 0.975]).tolist(),
+    result = {}
+    for k in b:
+        draws = f[k] - b[k]
+        valid = draws[np.isfinite(draws)]
+        point = fp[k] - bp[k]
+        result[k] = {
+            "final_minus_base": float(point) if np.isfinite(point) else None,
+            "ci95": np.quantile(valid, [0.025, 0.975]).tolist() if len(valid) else None,
         }
-        for k in b
-    }
     changes = [
         f["eig_per_question"] - b["eig_per_question"]
         for b, f in zip(base, final)
@@ -211,7 +277,19 @@ def stopping_confidence(games, records):
 def main():
     out = ROOT / "results/main_A11"
     config = json.loads((ROOT / "experiments/main_A11.json").read_text())
-    manifest = json.loads((ROOT / "experiments/main_A11_games.json").read_text())
+    manifest_path = ROOT / "experiments/main_A11_games.json"
+    manifest_bytes = (
+        manifest_path.read_bytes()
+        if manifest_path.exists()
+        else gzip.decompress((ROOT / "experiments/main_A11_games.json.gz").read_bytes())
+    )
+    assert (
+        hashlib.sha256(manifest_bytes).hexdigest()
+        == json.loads((ROOT / "research/main_A11_preflight.json").read_text())[
+            "games_sha256"
+        ]
+    )
+    manifest = json.loads(manifest_bytes)
     completion = json.loads((out / "completion.json").read_text())
     directory = ROOT / "runs" / config["run_id"]
     paths = sorted((directory / "games").glob("*.json"))
@@ -229,6 +307,17 @@ def main():
         if req_paths
         else [json.loads(line) for line in gzip.open(out / "requests.jsonl.gz", "rt")]
     )
+    excluded = [
+        r for r in requests if r.get("orphaned") or r.get("output_allowed") is False
+    ]
+    requests = [r for r in requests if r not in excluded]
+    if not req_paths and (out / "excluded_originals.jsonl.gz").exists():
+        excluded = [
+            json.loads(line)
+            for line in gzip.open(out / "excluded_originals.jsonl.gz", "rt")
+        ]
+    registry = json.loads((ROOT / "research/main_A11_replacements.json").read_text())
+    aliases = {c["logical_key"]: c["replacement_key"] for c in registry["cases"]}
     if not req_paths:
         responses = {
             r["entry_id"]: r["response"]
@@ -272,14 +361,14 @@ def main():
                 request["request_id"].rsplit(":", 1)[0]
                 == completion["snapshots"][str(expected_step)]["id"]
             )
-            assert (
-                request["key"]
-                == g["scope"]
+            logical_key = (
+                g["scope"]
                 + config["primary_model"]
                 + "/"
                 + g["game_id"]
                 + f"/turn-{index}"
             )
+            assert request["key"] == aliases.get(logical_key, logical_key)
             params = request["parameters"]
             assert params["seed"] == seed_for(
                 g["sampling_seed_namespace"], g["game_id"], index
@@ -345,6 +434,17 @@ def main():
             and abs(replay.reward - g["reward"]) < 1e-10
         )
     assert used == set(by_entry)
+    assert not used & {r["entry_id"] for r in excluded}
+    for case in registry["cases"]:
+        original = next(
+            r for r in excluded if r["entry_id"] == case["original_entry_id"]
+        )
+        replacement = by_entry[case["replacement_entry_id"]]
+        assert original["signature"] == replacement["signature"] == case["signature"]
+        assert (
+            original["parameters"] == replacement["parameters"]
+            and original["output_allowed"] is False
+        )
     op_paths = sorted((directory / "operations").glob("*.json"))
     operations = (
         [json.loads(p.read_text()) for p in op_paths]
@@ -457,6 +557,25 @@ def main():
         },
         "paired_development_final_minus_base": paired_change(dev[0], dev[max(dev)]),
         "frozen_evaluation": evaluation,
+        "transfer_identifier_audit": transfer_identifier_audit(
+            games, records, evaluation
+        ),
+        "sampling_recovery": {
+            "excluded_originals": len(excluded),
+            "exact_replacements": len(registry["cases"]),
+            "cases": [
+                {
+                    **c,
+                    "original_hold_usd": str(
+                        next(e for e in entries if e["id"] == c["original_entry_id"])[
+                            "reserved_usd"
+                        ]
+                    ),
+                }
+                for c in registry["cases"]
+            ],
+            "original_outputs_used": 0,
+        },
         "training_audit": audit(training),
         "development_audit": audit([g for gs in dev.values() for g in gs]),
         "base_development_audit": audit(dev[0]),
@@ -484,7 +603,7 @@ def main():
                 if r["wins"] == 0 and r["reward_variance"] > 1e-12
             ],
         },
-        "per_update_interpretation": "Training outcomes are on the policy before each update. Eight games within an update share one hidden target and table. Curriculum changes at updates 5 and 13, so the fixed development cases, not raw training slopes alone, assess learning.",
+        "per_update_interpretation": "Training outcomes are on the policy before each update. Eight games share one hidden target and table. Curriculum changes at updates 3,5,16,23,27; fixed development cases, not raw training slopes alone, assess learning.",
         "uncertainty": "One main A seed. Development uses eight fixed training-pool games; frozen evaluation uses 28 paired cases in each of ten cells. No between-seed uncertainty is estimated at this gate. No B training, other seed, or hard-mode evaluation ran.",
         "sample_train_logprob_diagnostic": {
             "mean_difference_range_nats": [
@@ -499,6 +618,28 @@ def main():
         "cost": {
             "main_A11_spent_usd": str(spent),
             "main_A11_held_usd": str(held),
+            "lost_original_holds_usd": str(
+                sum(
+                    (
+                        Decimal(e["reserved_usd"])
+                        for e in entries
+                        if e["state"] in ACTIVE_STATES
+                        and e["id"] in {r["entry_id"] for r in excluded}
+                    ),
+                    Decimal(0),
+                )
+            ),
+            "checkpoint_holds_usd": str(
+                sum(
+                    (
+                        Decimal(e["reserved_usd"])
+                        for e in entries
+                        if e["state"] in ACTIVE_STATES
+                        and e["id"] not in {r["entry_id"] for r in excluded}
+                    ),
+                    Decimal(0),
+                )
+            ),
             "sampling_by_kind_usd": {
                 kind: str(
                     sum(
@@ -543,6 +684,9 @@ def main():
     }
     save_json(out / "summary.json", result)
     write_gzip(out / "games.jsonl.gz", games)
+    write_gzip(
+        out / "excluded_originals.jsonl.gz", sorted(excluded, key=lambda r: r["key"])
+    )
     write_gzip(
         out / "requests.jsonl.gz",
         [

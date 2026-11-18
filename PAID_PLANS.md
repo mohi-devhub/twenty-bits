@@ -1,6 +1,8 @@
 # Approved $50 budget and current choices
 
-**Paused at the user's request; do not resume until “resume”.** Option U was approved, with a gate after A seed 11. Its partial raw control saved 52/280 games and 625 results before the host slept; no main update ran. [PAUSED.md](PAUSED.md) records the resume point. Project usage is $6.819365, holds $0.367534 and available budget $42.813101. Two new unavailable originals retain $0.004721, with no replacement submitted. The standing replacement rule is recorded for use after explicit resume.
+**A11 completed on 2026-11-19; stopped for the user's gate decision.** Its 30 updates and paired 280-game frozen endpoint are complete. Project usage is $11.015850, holds $0.467534 and available budget $38.516616. A11 itself used $4.389417 plus $0.104721 retained holds. The two unavailable pre-pause originals remain held and excluded after their exact replacements completed. [MAIN_A11_GATE.md](MAIN_A11_GATE.md) is current; [PAUSED.md](PAUSED.md) is historical.
+
+The unchanged remaining U schedule (A23 and B41, 30 updates each) forecasts **$26.46 including 1.5x margin**, within current funds. It includes both 280-game endpoints, development checks, 40 end-stage hard-mode games and storage/reupload allowances. [Measured assumptions](research/main_A11_remaining_forecast.json) use uncached training costs bounded below by the original forecast and no more than 60% endpoint cache credit. No paid continuation starts before the gate decision.
 
 The main condition is candidate set provided. The preceding raw-base Qwen3-8B pilot completed 16 updates for $0.291204 plus $0.250000 holds. SFT remains excluded because it lowered EIG. The table below preserves the priced choices at that gate; U was selected and S was not.
 
@@ -116,7 +118,7 @@ The primary universal output cap is 2,048 tokens with Qwen thinking disabled. It
 
 Before each actual operation, the existing ledger still reserves the larger of estimate times 1.5 and the call's token-limited maximum. Reconcile actual usage and retain pending holds. If calls will not fit, stop with the approved protocol intact; do not quietly drop games, change caps, or resubmit timed-out work. These schedules are affordable forecasts, not a guarantee that any behavior at the universal cap completes the entire schedule.
 
-## Caching applies, but hits remain unmeasured
+## Historical Phase 1 caching assumptions
 
 Tinker supports [cached prompt prefixes within a sampling client](https://tinker-docs.thinkingmachines.ai/tinker/howto/inflight_sampling/) and exposes [prompt_cache_hit_tokens](https://tinker-docs.thinkingmachines.ai/tinker/api-reference/types/sampleresponse/). The table precedes noise settings and dialogue, so repeated turns and grouped games can reuse it. The exact Qwen3-8B prefix shared between the paired N=32 noise modes is recorded in token_measurements.json. Separate checkpoint clients and cache eviction can remove those savings. No service call has verified hits for this project, and both plans assume none.
 

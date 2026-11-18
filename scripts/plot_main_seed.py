@@ -29,7 +29,9 @@ def main():
     def numeric(value):
         return np.nan if value is None else float(value)
 
-    manifest = json.loads((ROOT / "experiments/main_A11_games.json").read_text())
+    manifest = json.loads(
+        gzip.decompress((ROOT / "experiments/main_A11_games.json.gz").read_bytes())
+    )
     greedy = [play(r, "greedy_predicate") for r in manifest["development"]]
     reference = sum(sum(g["question_eigs"]) for g in greedy) / sum(
         g["questions"] for g in greedy
@@ -78,8 +80,9 @@ def main():
             dx, vals, color="#163c58", marker="o", lw=2, label="Fixed development games"
         )
         if key in ("eig_per_question", "win_rate", "questions_per_win"):
-            lo = np.array([numeric(dev[int(i)]["ci95"][key + "_ci95"][0]) for i in dx])
-            hi = np.array([numeric(dev[int(i)]["ci95"][key + "_ci95"][1]) for i in dx])
+            intervals = [dev[int(i)]["ci95"][key + "_ci95"] for i in dx]
+            lo = np.array([numeric(ci[0]) if ci else np.nan for ci in intervals])
+            hi = np.array([numeric(ci[1]) if ci else np.nan for ci in intervals])
             ax.fill_between(dx, lo, hi, color="#163c58", alpha=0.10, lw=0)
         if key == "eig_per_question":
             ax.axhline(1, color="#2a826b", ls="--", lw=1, label="Noiseless ceiling")
@@ -92,6 +95,9 @@ def main():
             )
         if key in ("eig_per_question", "win_rate", "ambiguous_guesses_per_game"):
             ax.set_ylim(-0.03, 1.06)
+        if key == "output_tokens_per_game":
+            ax.set_yscale("log")
+            title += " (log scale)"
         for boundary in (2.5, 4.5, 15.5, 22.5, 26.5):
             ax.axvline(boundary, color="#d3dce3", lw=1)
         ax.set_title(title, loc="left", pad=10)

@@ -13,6 +13,7 @@ import sys
 
 import httpx
 import numpy as np
+import tinker
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from tinker_cookbook.rl.rollouts import do_single_rollout
@@ -23,12 +24,12 @@ from scripts.run_rl_pilot import game_metrics
 from twenty_bits.model_player import GuardedCompleter, TableEnv
 from twenty_bits.rl_pilot import (
     GuardedRL,
-    PilotTransport,
     SamplingScope,
     group_data,
     pack_trajectory,
     unpack_trajectory,
 )
+from twenty_bits.recovery import RecoveringTransport
 from twenty_bits.tinker_transport import NetworkInterruption, save_json
 from twenty_bits.worlds import ROOT, training_game
 
@@ -117,7 +118,7 @@ async def run_once():
     out = ROOT / "results/main_A11"
     with (directory / "runner.lock").open("w") as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
-        transport = PilotTransport(
+        transport = RecoveringTransport(
             config,
             directory,
             usage_path=out / "usage.jsonl",
@@ -400,6 +401,15 @@ async def main():
                 flush=True,
             )
             await asyncio.sleep(1)
+        except tinker.APIStatusError as exc:
+            if exc.status_code == 429 or exc.status_code >= 500:
+                print(
+                    "Submission interrupted. HTTP operations drained; recovering saved IDs without resubmitting mutations.",
+                    flush=True,
+                )
+                await asyncio.sleep(1)
+                continue
+            raise
 
 
 if __name__ == "__main__":

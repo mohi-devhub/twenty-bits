@@ -1,0 +1,77 @@
+{
+  "policy_step": 8,
+  "games": 8,
+  "mean_reward": 0.7737499999999999,
+  "wins": 7,
+  "win_rate": 0.875,
+  "questions_per_win": 3.2857142857142856,
+  "eig_per_question": 0.6041207427933168,
+  "enumeration_rate": 0.0,
+  "single_item_enumeration_rate": 0.0,
+  "name_list_rate": 0.0,
+  "large_name_list_rate": 0.0,
+  "invalid_question_rate": 0.0,
+  "output_tokens_per_game": 31.5,
+  "reasoning_tokens_per_game": 0.0,
+  "questions": 27,
+  "post_budget_non_guesses": 0,
+  "truncated_turns": 0,
+  "guess_with_k_remaining": {
+    "games": 8,
+    "guesses": 8,
+    "no_guess_games": 0,
+    "ambiguous_guesses": 4,
+    "ambiguous_guess_wins": 3,
+    "ambiguous_guesses_per_game": 0.5,
+    "bins": {
+      "1": {
+        "guesses": 4,
+        "wins": 4,
+        "guesses_per_game": 0.5,
+        "share_of_guesses": 0.5,
+        "win_rate_when_guessed": 1.0
+      },
+      "2": {
+        "guesses": 2,
+        "wins": 2,
+        "guesses_per_game": 0.25,
+        "share_of_guesses": 0.25,
+        "win_rate_when_guessed": 1.0
+      },
+      "3": {
+        "guesses": 1,
+        "wins": 0,
+        "guesses_per_game": 0.125,
+        "share_of_guesses": 0.125,
+        "win_rate_when_guessed": 0.0
+      },
+      "4+": {
+        "guesses": 1,
+        "wins": 1,
+        "guesses_per_game": 0.125,
+        "share_of_guesses": 0.125,
+        "win_rate_when_guessed": 1.0
+      }
+    },
+    "positive_posterior_support_bins": {
+      "1": {
+        "guesses": 4,
+        "wins": 4
+      },
+      "2": {
+        "guesses": 2,
+        "wins": 2
+      },
+      "3": {
+        "guesses": 1,
+        "wins": 0
+      },
+      "4+": {
+        "guesses": 1,
+        "wins": 1
+      }
+    },
+    "guesses_outside_displayed_candidates": 0,
+    "mean_guessed_posterior_probability": 0.6979166666666666
+  }
+}

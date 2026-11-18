@@ -27,7 +27,7 @@ class MainPauseTests(unittest.TestCase):
             with (
                 patch.object(run_main_seed, "ROOT", root),
                 patch.object(
-                    run_main_seed.PilotTransport,
+                    run_main_seed.RecoveringTransport,
                     "open",
                     side_effect=AssertionError("No service access"),
                 ) as opened,

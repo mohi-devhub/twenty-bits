@@ -1,18 +1,20 @@
 # Twenty Bits
 
-**Paused by the user.** Main A seed 11 is at update 0: 52/280 matched control games and 625 results are saved. No main optimizer step ran. [PAUSED.md](PAUSED.md) records the holds, spend, archive and resume point. Nothing resumes until the user says “resume”.
+![Matched raw-base and trained endpoint, including transfer regressions](results/main_A11/charts/frozen-endpoint.png)
 
-![Raw-base RL pilot learning curves with fixed development games](results/pilot_A/charts/pilot-learning.png)
+![Offline random versus greedy predicate replay with noisy answers](replays/baseline-noisy.gif)
 
-![Random versus greedy predicate, with noisy answers](replays/baseline-noisy.gif)
+**Main A seed 11 gate: better animal questions, weaker transfer.** Thirty outcome-only RL updates improved noiseless animal EIG/question from **0.158 → 0.634**, an equal-size paired change of **+0.476 [95% CI +0.413, +0.539]**. Relabeled synthetic EIG fell **0.823 → 0.693**, with wins **82/84 → 49/84**. Across all ten cells, wins fell **141/280 → 104/280** despite higher average EIG. This is one training seed, with no estimate of training-seed uncertainty.
 
-Given the candidate set after each answer, can an outcome-only reward teach a small LLM to select efficient questions? Does it learn attribute bisection or item-name enumeration, transfer to relabeled tables, and re-check noisy answers? The main condition supplies state tracking; no-list play is evaluation-only hard mode.
+The task is question selection given the environment's candidate set after each answer. It does not test learned state tracking. The reward contains only wins, question cost and invalid penalties; EIG is measured, never rewarded. Questions remain attribute predicates: no legal item-name enumeration appeared in training or the frozen comparisons. Large-set guessing remains weak: **27/28** noiseless animal N=128 games guessed with multiple candidates remaining. Synthetic identifier errors and early stopping limit transfer.
 
-**Raw-base RL pilot complete: 16 updates, 128 training games.** On eight fixed development cases, EIG/question rose **0.483 → 0.617**, wins **4/8 → 7/8**, and questions/win **3.25 → 2.71**. The paired EIG change has a 95% CI of **[-0.001, +0.305]**: encouraging but inconclusive. No name enumeration occurred; risky guessing remains, with four final wins while multiple candidates were still possible. [The current gate](PILOT_GATE.md) reports every update, costs, audit and [two preselected paired games](results/pilot_A/EXAMPLE_GAMES.md). Random-question SFT is excluded because it lowered EIG.
+The [full gate](MAIN_A11_GATE.md) contains every update, [the fixed development curve](results/main_A11/charts/main-learning.png), all ten paired frozen cells, guess-with-k counts, CIs, the behavior audit and [two preselected paired games](results/main_A11/EXAMPLE_GAMES.md). Development EIG rose 0.483 → 0.684; progress was concentrated early and later checks fluctuated. [The pilot](PILOT_GATE.md) and earlier gates remain historical. SFT is excluded because random-question SFT lowered EIG on qualification.
 
-**Recorded usage: $6.819365 / $50.00, with $0.367534 held; $42.813101 available**, from [ledger.json](ledger.json). The pilot used $0.291204 plus $0.250000 holds. The user selected U: A:2/B:1 seeds, 30 updates each, with checks every four updates and a gate after A11's endpoint. The original forecast was $42.49 with margin and holds. The partial main control used $0.192932 and retains $0.004721 for two unavailable originals; replacements are approved but deferred by the pause. Invoice reconciliation remains pending.
+**Recorded project usage: $11.015850 / $50.00, with $0.467534 held and $38.516616 available**, from [ledger.json](ledger.json). A11 used $4.389417 plus $0.104721 holds, versus a $15.368560 forecast with margin. These are token-usage charges at the saved provider rates; invoice reconciliation is pending. The two unavailable pre-pause originals remain excluded and held after their exact replacements completed.
 
-The chart shows the pilot; the GIF illustrates offline random versus greedy search. [Phase 2](PHASE2.md), [diagnosis](DIAGNOSIS.md), [alias/SFT gate](ALIAS_GATE.md) and [candidate qualification](CANDIDATE_GATE.md) preserve the earlier results. Pilot development uses one seed and eight N=4/8 training-pool cases, outside gradients. No noisy, transfer or frozen-test model evaluation has run under the new main condition. The gpt-oss-120b reference is removed from future plans.
+**Stopped at the A11 gate.** A23, B41 and hard mode have not started. The remaining U schedule forecasts **$26.46 including 1.5x margin**, within current available funds; it waits for the user's decision. [Forecast and assumptions](research/main_A11_remaining_forecast.json), [budget](BUDGET.md), [resume audit](research/main_A11_resume_audit.json) and [historical pause](PAUSED.md) are saved.
+
+The headline chart uses the same 28 games in each of ten cells for raw base and the scheduled update-30 endpoint. The GIF is an offline baseline illustration; the final model replay and multi-seed report remain later deliverables. [Phase 2](PHASE2.md), [diagnosis](DIAGNOSIS.md), [alias/SFT gate](ALIAS_GATE.md) and [candidate qualification](CANDIDATE_GATE.md) preserve the earlier failed configurations. The gpt-oss-120b reference is removed from future plans.
 
 Open the [interactive replay](replays/index.html), [truthful-answer MP4](replays/baseline-noiseless.mp4), or [noisy-answer MP4](replays/baseline-noisy.mp4). The two illustrated games were selected for a visible strategy contrast. The complete sweeps supply the reported numbers.
 
@@ -20,7 +22,7 @@ The offline grid contains 24,000 games, with 200 paired games for each domain, c
 
 These are finite authored worlds. Animals has 400 named age/sex profiles across 100 types; tools and foods each have 320 profiles across 80 types. They use 90, 88, and 71 attributes to stay distinguishable without random identity bits. The synthetic world has 512 unique random 16-bit rows and is relabeled in each game. [World definitions, sample hand checks, and limitations](data/WORLDS.md) describe the construction. Animal training uses a fixed 200-row pool; paid animal evaluation uses disjoint rows, with shared underlying types disclosed.
 
-[PAID_PLANS.md](PAID_PLANS.md) records the approved $50 cap and selected U plan. [PILOT_GATE.md](PILOT_GATE.md) is the latest completed training gate; [PAUSED.md](PAUSED.md) is current. No main training update has run. [PRIOR_WORK.md](PRIOR_WORK.md) stays as context; this is a side project for GitHub and X.
+[PAID_PLANS.md](PAID_PLANS.md) records the approved $50 cap and selected U plan. [MAIN_A11_GATE.md](MAIN_A11_GATE.md) is the current stop; [PAUSED.md](PAUSED.md) preserves the earlier pause and resume point. [PRIOR_WORK.md](PRIOR_WORK.md) stays as context; this is a side project for GitHub and X.
 
 ## Reproduce offline
 
@@ -44,36 +46,20 @@ Tokenizer downloads come from Hugging Face at the recorded revisions. No weights
 
 Serve the viewer with `python3 -m http.server 8765` and visit `http://localhost:8765/replays/`. Play, scrub, step, change noise mode, hide the target, or load a matched pair in the JSON schema from replays/games.json. Regenerate the local exports with `python3 scripts/export_replays.py`. This uses the pinned HyperFrames CLI and FFmpeg. To rebuild only GIFs from existing MP4s, add `--reuse-mp4`.
 
-## Reproduce the paid analysis offline
+## Reproduce the current paid analysis offline
 
 ```bash
 python3 -m pip install -e '.[paid]'
-python3 scripts/verify_rendering.py
-python3 scripts/summarize_phase2.py
-python3 scripts/verify_phase2.py
-python3 scripts/plot_phase2.py
-python3 scripts/diagnose_phase2.py
-python3 scripts/measure_random_learnability.py
-python3 scripts/price_format_warmstart.py
-python3 scripts/summarize_learnability_probe.py
-python3 scripts/reprice_learnability.py
-python3 scripts/write_learnability_report.py
-python3 scripts/break_down_zero_eig.py
-python3 scripts/summarize_alias_probe.py
-python3 scripts/summarize_format_sft.py
-python3 scripts/audit_qualification.py
-python3 scripts/write_alias_gate.py
-python3 scripts/summarize_candidate_qualification.py
-python3 scripts/price_candidate_pilot.py
-python3 scripts/write_candidate_gate.py
-python3 scripts/analyze_rl_pilot.py
-python3 scripts/verify_rl_pilot.py
-python3 scripts/plot_rl_pilot.py
-python3 scripts/price_main_runs.py
-python3 scripts/write_pilot_gate.py
+python3 scripts/analyze_main_seed.py
+python3 scripts/verify_main_seed.py
+python3 scripts/plot_main_seed.py
+python3 scripts/reprice_remaining_main.py
+python3 scripts/write_main_seed_gate.py
 ```
 
-These commands use saved traces and request metadata, without service calls or credentials. Run historical gate verification at its corresponding commit: later source hashes and project ledger totals have changed. The current pilot analysis reproduces from the committed compressed archives without local run caches or adapter weights; [verification and hashes](results/pilot_A/reproduction.json) record that check. Tokenizers use pinned local files or download those files from Hugging Face. `build_paid_plans.py` rebuilds historical Phase 1 proposals; `build_approved_plan.py` reprices the historical group-size changes. Completed runners return without service access, and saved request IDs prevent resubmission. The main runner is explicitly paused. `.env`, raw run caches and adapter binaries are ignored and untracked.
+These commands use committed compressed traces and request metadata, without service calls, credentials, raw run caches or adapter weights. [Archive-only verification and hashes](results/main_A11/reproduction.json) record that check. The compressed case file restores the identical data manifest. Tokenizers use pinned local files or download those files from Hugging Face. The unit tests use mocked requests and never need Tinker access.
+
+Historical gate files contain their own reproduction commands. Run those checks at their corresponding commits because later source hashes and ledger totals have changed. `build_paid_plans.py` rebuilds historical Phase 1 proposals; it is not the current forecast. Completed paid runners return before service access. `.env`, raw run caches and adapter binaries are ignored and untracked.
 
 ## Read the code
 
@@ -85,4 +71,4 @@ The paid bridge lives in [model_player.py](twenty_bits/model_player.py), [tinker
 
 [rl_pilot.py](twenty_bits/rl_pilot.py) builds group-standardized advantages and guarded SDK training operations. [run_rl_pilot.py](scripts/run_rl_pilot.py) joins cookbook rollouts, training and scheduled development checks. [analyze_rl_pilot.py](scripts/analyze_rl_pilot.py) replays actions, verifies exact rewards and training masks, and builds the audit. The pilot starts from raw base and never loads the historical SFT adapter.
 
-[run_main_seed.py](scripts/run_main_seed.py) adds the full matched control, the 30-update curriculum and mandatory A11 gate. [guess_metrics.py](twenty_bits/guess_metrics.py) measures stopping with k candidates; it changes no reward or observation. `python3 scripts/verify_main_pause.py` verifies the saved pause and proves the paused runner makes no service calls. Main endpoint analysis tools require a completed run and are not a claim of completed main results.
+[run_main_seed.py](scripts/run_main_seed.py) adds the full matched control, the 30-update curriculum and mandatory A11 gate. [guess_metrics.py](twenty_bits/guess_metrics.py) measures stopping with k candidates; it changes no reward or observation. [recovery.py](twenty_bits/recovery.py) enforces one exact replacement per lost logical sample, retained original holds and permanent output exclusion. [analyze_main_seed.py](scripts/analyze_main_seed.py) replays the run and audits transfer identifiers; [verify_main_seed.py](scripts/verify_main_seed.py) verifies the archived analysis and completed-run guard. The historical pause verifier belongs at its pause commit.

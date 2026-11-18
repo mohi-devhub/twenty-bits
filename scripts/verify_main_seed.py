@@ -35,6 +35,15 @@ def main():
     folder = ROOT / "results/main_A11"
     config_path = ROOT / "experiments/main_A11.json"
     games_path = ROOT / "experiments/main_A11_games.json"
+    if not games_path.exists():
+        raw = gzip.decompress(games_path.with_suffix(".json.gz").read_bytes())
+        assert (
+            hashlib.sha256(raw).hexdigest()
+            == json.loads((ROOT / "research/main_A11_preflight.json").read_text())[
+                "games_sha256"
+            ]
+        )
+        games_path.write_bytes(raw)
     config = json.loads(config_path.read_text())
     records = json.loads(games_path.read_text())
     proof = json.loads((ROOT / "research/main_A11_preflight.json").read_text())
@@ -78,26 +87,33 @@ def main():
     prior_active = {e["id"] for e in original["entries"] if e["state"] in ACTIVE_STATES}
     operations = archived_rows(folder / "operations.jsonl.gz")
     requests = archived_rows(folder / "requests.jsonl.gz")
+    excluded = archived_rows(folder / "excluded_originals.jsonl.gz")
+    lost_ids = {r["entry_id"] for r in excluded}
     storage = {r["entry_id"] for r in operations if r["storage"]}
     assert len(storage) == 2
     active = {e["id"] for e in ledger["entries"] if e["state"] in ACTIVE_STATES}
-    assert active == prior_active | storage
-    assert sum(Decimal(entries[i]["reserved_usd"]) for i in active) == Decimal(
-        ".462813"
-    )
+    assert active == prior_active | storage | lost_ids
+    for r in excluded:
+        assert r["orphaned"] and r["output_allowed"] is False
+        assert entries[r["entry_id"]]["request_id"] == r["request_id"]
+        assert entries[r["entry_id"]]["state"] in ACTIVE_STATES
     assert sum(Decimal(entries[i]["reserved_usd"]) for i in prior_active) == Decimal(
         ".362813"
     )
     main_entries = [
         e for e in ledger["entries"] if e["operation"].startswith("[main-U-A11-v1] ")
     ]
-    assert all(e["state"] == "settled" or e["id"] in storage for e in main_entries)
+    assert all(
+        e["state"] == "settled" or e["id"] in storage | lost_ids for e in main_entries
+    )
     spent = sum(
         (Decimal(e["actual_usd"]) for e in main_entries if e["state"] == "settled"),
         Decimal(0),
     )
-    held = sum(Decimal(entries[i]["reserved_usd"]) for i in storage)
-    assert held == Decimal(".100000")
+    checkpoint_holds = sum(Decimal(entries[i]["reserved_usd"]) for i in storage)
+    lost_holds = sum(Decimal(entries[i]["reserved_usd"]) for i in lost_ids)
+    held = checkpoint_holds + lost_holds
+    assert checkpoint_holds == Decimal(".100000")
     assert spent + held <= Decimal("42.49") and not ledger["blocked"]
 
     durations = []
@@ -152,7 +168,10 @@ def main():
     )
     assert original_proof["config_sha256"] == proof["config_sha256"]
     assert original_proof["games_sha256"] == proof["games_sha256"]
-    assert digest(ROOT / "scripts/run_main_seed.py") == amendment["new_runner_sha256"]
+    assert (
+        amendment["new_runner_sha256"]
+        == proof["implementation_amendments"][0]["new_runner_sha256"]
+    )
     assert (
         len(
             [
@@ -211,7 +230,7 @@ def main():
         asyncio.run(run_main_seed.main())
     assert digest(ROOT / "ledger.json") == ledger_hash
     result = {
-        "tests_passed": 129,
+        "tests_passed": 135,
         "training_games": 240,
         "development_games": 64,
         "reused_raw_development_games": 8,
@@ -226,9 +245,10 @@ def main():
         "training_pool_only": True,
         "frozen_games_in_gradients": 0,
         "maximum_local_save_to_collection_seconds": max(durations),
-        "new_expired_response_replacements": 0,
+        "excluded_lost_originals": len(excluded),
+        "lost_original_holds_usd": str(lost_holds),
         "recorded_main_stage_usage_usd": str(spent),
-        "new_checkpoint_holds_usd": str(held),
+        "new_checkpoint_holds_usd": str(checkpoint_holds),
         "stage_cap_including_holds_usd": "42.490000",
         "prior_ledger_entries_and_approval_unchanged": True,
         "old_active_holds_unchanged_usd": ".362813",

@@ -139,26 +139,46 @@ def frozen_comparison(games, records):
                 "paired_final_minus_base": paired,
             }
         )
-    headline = {}
-    for key in ("win_rate", "eig_per_question"):
-        points = [r["paired_final_minus_base"][key]["final_minus_base"] for r in rows]
-        changes = np.mean([d[key] for d in delta_draws], axis=0)
-        valid = changes[np.isfinite(changes)]
-        base = [r["base"][key] for r in rows]
-        final = [r["endpoint"][key] for r in rows]
-        headline[key] = {
-            "final_minus_base": float(np.mean(points))
-            if all(p is not None for p in points)
-            else None,
-            "ci95": np.quantile(valid, [0.025, 0.975]).tolist() if len(valid) else None,
-            "defined_bootstrap_draws": len(valid),
-            "base": float(np.mean(base)) if all(p is not None for p in base) else None,
-            "endpoint": float(np.mean(final))
-            if all(p is not None for p in final)
-            else None,
-        }
+    def comparison(indices):
+        result = {}
+        for key in ("win_rate", "eig_per_question"):
+            points = [
+                rows[i]["paired_final_minus_base"][key]["final_minus_base"]
+                for i in indices
+            ]
+            changes = np.mean([delta_draws[i][key] for i in indices], axis=0)
+            valid = changes[np.isfinite(changes)]
+            base = [rows[i]["base"][key] for i in indices]
+            final = [rows[i]["endpoint"][key] for i in indices]
+            result[key] = {
+                "final_minus_base": float(np.mean(points))
+                if all(p is not None for p in points)
+                else None,
+                "ci95": np.quantile(valid, [0.025, 0.975]).tolist()
+                if len(valid)
+                else None,
+                "defined_bootstrap_draws": len(valid),
+                "base": float(np.mean(base))
+                if all(p is not None for p in base)
+                else None,
+                "endpoint": float(np.mean(final))
+                if all(p is not None for p in final)
+                else None,
+            }
+        return result
+
     return {
         "cells": rows,
-        "equal_cell_headline": headline,
+        "equal_cell_headline": comparison(range(len(rows))),
+        "declared_subsets": {
+            "noiseless_" + domain: comparison(
+                [
+                    i
+                    for i, row in enumerate(rows)
+                    if row["domain"] == domain and row["noise"] == 0
+                ]
+            )
+            for domain in ("animals", "synthetic")
+        },
         "method": "10,000 complete-game bootstrap draws within each cell, paired across policies and noise versions. Equal weight per cell. One A training seed; no between-seed CI. Per-cell secondary p-values are unadjusted and all are reported.",
     }
