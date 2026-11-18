@@ -32,7 +32,14 @@ def wilson(wins, total):
     return [max(0, middle - half), min(1, middle + half)]
 
 
-def main(partial=False, *, config_path=None, games_path=None, output_path=None):
+def main(
+    partial=False,
+    *,
+    config_path=None,
+    games_path=None,
+    output_path=None,
+    message_builder=probe_messages,
+):
     config_path = config_path or ROOT / "experiments/learnability_probe.json"
     config = json.loads(config_path.read_text())
     records = json.loads(
@@ -75,7 +82,7 @@ def main(partial=False, *, config_path=None, games_path=None, output_path=None):
         replay = Game(record, grammar_version=config.get("grammar_version", "names-v1"))
         valid = 0
         for index, turn in enumerate(game["turns"]):
-            prompt = rendering.prompt(probe_messages(record, replay.turns))
+            prompt = rendering.prompt(message_builder(record, replay.turns))
             usage = turn["usage"]
             request = requests[usage["entry_id"]]
             assert request.get("output_allowed") is not False and not request.get(
@@ -332,7 +339,9 @@ def main(partial=False, *, config_path=None, games_path=None, output_path=None):
             else "run_approved_sft_then_qualify",
             interpretation="Parser-only development re-probe. Initial prompts, candidate subsets, targets and requested generation seeds match the earlier prompt probe. No remaining-candidate feedback and no frozen-eval service calls.",
         )
-        if config.get("evaluation_kind") == "format_qualification":
+        if config.get("evaluation_kind") in {
+            "format_qualification", "candidate_set_qualification"
+        }:
             wins = sum(g["won"] for g in games)
             result.update(
                 decision="pending"
@@ -350,8 +359,18 @@ def main(partial=False, *, config_path=None, games_path=None, output_path=None):
                 ),
                 rl_training_operations=0,
             )
+            if config["evaluation_kind"] == "candidate_set_qualification":
+                result["interpretation"] = (
+                    "Candidate-set qualification on the same 32 training-pool animal "
+                    "games for raw base and the existing format-SFT checkpoint. "
+                    "These cases are development data, not frozen-test evaluation. "
+                    "No new training occurred. The main task measures question "
+                    "selection given environment-computed candidate state."
+                )
             result["cost"].update(
-                scope="format SFT plus qualification",
+                scope="format SFT plus qualification"
+                if config["evaluation_kind"] == "format_qualification"
+                else "candidate-set qualification only",
                 gradient_usd=str(
                     sum(
                         (

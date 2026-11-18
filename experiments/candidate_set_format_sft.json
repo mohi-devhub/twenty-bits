@@ -1,0 +1,55 @@
+{
+  "run_id": "candidate-set-v1-format_sft",
+  "approval_date": "2026-11-18",
+  "approved_cap_usd": "50.000000",
+  "primary_model": "Qwen/Qwen3-8B",
+  "primary_games_per_cell": 16,
+  "primary_output_cap": 2048,
+  "primary_thinking": false,
+  "reference_model": null,
+  "reference_games_per_cell": 0,
+  "reference_sizes": [],
+  "reference_output_cap": 512,
+  "reference_reasoning_effort": "medium",
+  "reference_template_date": "2026-11-18",
+  "temperature": 0.7,
+  "top_p": 1.0,
+  "top_k": -1,
+  "context_window": 32768,
+  "sampling_seed_namespace": "format-qualification-policy-v1",
+  "groups_per_training_update": 1,
+  "games_per_training_group": 8,
+  "training_authorized": false,
+  "pilot_condition": "A",
+  "concurrent_games": 4,
+  "cost_source": "research/tinker-models-2026-11-17.json",
+  "rendering_proof": "research/phase2_rendering.json",
+  "prompt_version": "candidate-set-v1",
+  "active_models": [
+    "Qwen/Qwen3-8B"
+  ],
+  "display_name": "Twenty Bits candidate set format_sft",
+  "run_cap_usd": "0.250000",
+  "sizes": [
+    4,
+    8
+  ],
+  "games_per_size": 16,
+  "noise": 0,
+  "remaining_candidate_feedback": true,
+  "grammar_version": "attribute-codes-v2",
+  "policy": "format_sft",
+  "incident_record": null,
+  "rl_training_authorized": false,
+  "evaluation_kind": "candidate_set_qualification",
+  "posterior_threshold": 0.001,
+  "qualification": {
+    "valid_turn_rate_minimum": 0.9,
+    "wins_minimum": 8,
+    "games": 32
+  },
+  "checkpoint_source_sha256": "c6dc0cade64360e4e21819af713ab246c6925036357190346eff22fab1191588",
+  "sampling_checkpoint_paths": {
+    "Qwen/Qwen3-8B": "tinker://710e923c-7d82-5df6-8e70-f37f778c9e88:train:0/sampler_weights/format-warmstart"
+  }
+}

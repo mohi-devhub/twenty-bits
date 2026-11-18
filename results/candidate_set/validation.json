@@ -1,0 +1,22 @@
+{
+  "tests_passed": 107,
+  "qualification_games": 64,
+  "training_pool_only": true,
+  "exact_paired_game_and_generation_seeds_verified": true,
+  "sampling_attempts_with_pre_dispatch_ids": 285,
+  "same_saved_sft_checkpoint_loaded": true,
+  "raw_base_has_no_adapter": true,
+  "native_prompt_signatures_and_replays_verified": 285,
+  "new_training_updates": 0,
+  "rl_updates": 0,
+  "new_run_recorded_usage_usd": "0.019543",
+  "new_run_holds_usd": "0.000000",
+  "combined_cap_including_holds_usd": "0.500000",
+  "prior_ledger_entries_and_approval_unchanged": true,
+  "old_active_holds_unchanged_usd": "0.112813",
+  "frozen_games_verified": 2000,
+  "old_prompt_hashes_unchanged": true,
+  "new_initial_prompt_hashes": 2000,
+  "completed_runners_service_calls": 0,
+  "completed_runner_ledger_unchanged": true
+}

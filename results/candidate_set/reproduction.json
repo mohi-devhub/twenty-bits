@@ -1,0 +1,24 @@
+{
+  "committed_archive_analysis_identical_without_run_cache": true,
+  "service_calls": 0,
+  "sha256": {
+    "results/candidate_set/format_sft/analysis.json": "3acdd3fb5c706465917e4515f00a265b02d2a2c43c1879cec1fd7e961c1c9982",
+    "results/candidate_set/format_sft/completion.json": "f359af2ea688370906647e85ef3e59fe880ddb1d04309dd7dffbef33d4312fae",
+    "results/candidate_set/format_sft/prompt_hashes.json": "367193713762ca3217f2aec8a3c49643ffcecb7f2e1ec6371bd2f8eefff681b4",
+    "results/candidate_set/format_sft/summary.json": "d18db78cccc88631f47688bbb74e61d0c86ab98d2e90b82038328455584b049b",
+    "results/candidate_set/format_sft/token_counts.json": "26d50bdfbefee8473666695f031d4981943ea1a883dca2c38c55c035079fabfe",
+    "results/candidate_set/raw_base/analysis.json": "5392535b1e9a6dbcdf7c6645c9c0946da8d7f9586db9c85644cafb310e434c0c",
+    "results/candidate_set/raw_base/completion.json": "210e234239e6031bc981dcbd6520a02dc55ba92ec23c360bed50d4366f4eeed8",
+    "results/candidate_set/raw_base/prompt_hashes.json": "9f447b280c00fff81d77f4cf36a677edece2914bb2ef83c7f2c926526cfa20bc",
+    "results/candidate_set/raw_base/summary.json": "1f1ab1a7e7ffc02eaa0f804b34216556e28ea938fea8dad1d6e080fce4348c08",
+    "results/candidate_set/raw_base/token_counts.json": "baa01f9d49220a7cc9b6c07471d2a8818e3698979d9f21b34334f76b2152075b",
+    "results/candidate_set/summary.json": "5b1782072416bfa0cba91f0f2c00c20b6f7b6ddcf355fd0663b47d81dc9defc1",
+    "results/candidate_set/validation.json": "46c39ec2d1c8b26de464d3566351773292be3ca64606713b214b818aa5962a15",
+    "results/candidate_set/format_sft/games.jsonl.gz": "cb2bb12f537165e29e142adbf518917e2a2f34745641bd86151a8012930c5ea0",
+    "results/candidate_set/format_sft/requests.jsonl.gz": "cd636a3b866110086b4a6b8e3cf2bb375b52c22684351a6c29094e6bad962458",
+    "results/candidate_set/format_sft/responses.jsonl.gz": "999575fad783dd49ac405e1c525e3ee1aab89b8a878797346297544409da7419",
+    "results/candidate_set/raw_base/games.jsonl.gz": "6eedf5ddd8eed371dcf86a3b375a1eeaacfaa39e6a68a9febeb152ea09d68a66",
+    "results/candidate_set/raw_base/requests.jsonl.gz": "b2c098819096afe827835e52986b2b510f60ee4b8ccfce3f03cd5ff7d5cb0c7d",
+    "results/candidate_set/raw_base/responses.jsonl.gz": "67084b9f5aa6700572df691f023aa5246e016f7ed62fc21041ddbe00df507fad"
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "config_sha256": "b5dc0f73600b86a83b6d505ce668426bc66d519d5c4db3c9cc9619bed94b8f2c",
+  "games_sha256": "6a4e1f0b5a8002da447b440ca3d73707dc223d66fe9c6a346c1a69acf5c16b49",
+  "prompt_code_sha256": "f73a412bfee21edf81c218e907b46dd93a10420ea4d85e0fc5214ca0fe30da0f",
+  "implementation_sha256": {
+    "twenty_bits/candidate_feedback.py": "5e62867e4dd0bf768c74146c06d1d6cddd755d75bfa852737aa3f0fbf3b581e1",
+    "twenty_bits/learnability.py": "f73a412bfee21edf81c218e907b46dd93a10420ea4d85e0fc5214ca0fe30da0f",
+    "twenty_bits/game.py": "117853df865b022482235290caa080b45effae6aa67b4a4324c7f23e45e37e79",
+    "twenty_bits/predicates.py": "498e0f3246273fedc4a9baf20b8ea63826209ab4705ed899d8cac06a3f56f977",
+    "twenty_bits/attributes.py": "4fea3de19f7763d26d85e8cf7bd86b450e3e625b9f49d1447909ab1fb3d1d2f2",
+    "twenty_bits/tinker_transport.py": "0a367f24129935525ba5a7c033d27e8408c5d515f90cb741e436e69ecc1428da",
+    "twenty_bits/tinker_rendering.py": "bdefa45558a83ceb85d89ef6701001dfeb0e5c90c0508d109ed8850e3cfdd1c4",
+    "twenty_bits/model_player.py": "cc9acf2378325f7386aeb3d02048a89f19e360c3d8db4a77bbfa77014d5241e4",
+    "scripts/run_learnability_probe.py": "8b547b16216e5baac939774502c5ad8dd180c34594529a4a02f1d233553efa3d",
+    "scripts/run_candidate_qualification.py": "835dff442d5ee9c90e14ea93bac63de77791b89fcdbea2d78b928a87cb425129"
+  },
+  "native_initial_checks": [
+    {
+      "id": "train-v1/seed20261120/animals/4/600000/p0",
+      "tokens": 664,
+      "sha256": "50f7fd78613575a5d2b66d913f7916fb86d1160e0f7d094dfcde040b5a746271"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600001/p0",
+      "tokens": 684,
+      "sha256": "d69c0072b35f2d36f25e3380cbb9fb476905010d8c33f96248274f4b0d484a2c"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600002/p0",
+      "tokens": 699,
+      "sha256": "f190813877408c141b8bb834900aa0f1ba3dfa7d232f107db8cc8b44f13839ee"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600003/p0",
+      "tokens": 672,
+      "sha256": "823b62d3a60024a5c396d308678d10c21fb7311e7cfa2cab178e3c396af0c0db"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600004/p0",
+      "tokens": 694,
+      "sha256": "a7011216dee987174348c74540c2f046e4b422ec1d15880053516004273bd091"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600005/p0",
+      "tokens": 659,
+      "sha256": "080b87dc532ae4fc059070303a0d2b4f8eff327ffa9c44469d6215fb25e729f5"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600006/p0",
+      "tokens": 685,
+      "sha256": "7f40794801d4f17d758273d5f5b49b78f999c588f4886f26a27c11778cf39080"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600007/p0",
+      "tokens": 643,
+      "sha256": "3712dc86461877f5a80d4ad0914ab28964e7968ab0986387ebdc888d310d926f"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600008/p0",
+      "tokens": 672,
+      "sha256": "287247dfcda1467803e80e111290422f8935926680480d5a6a47b8b5f1c3ee4a"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600009/p0",
+      "tokens": 697,
+      "sha256": "03a11b815874f8819da65b458db50f85011d4de11677814cac72946461019d0e"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600010/p0",
+      "tokens": 636,
+      "sha256": "1ef01e3a324f042dbe04c0e2348e6542c068dcb90633e61115f7159c280dc0aa"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600011/p0",
+      "tokens": 693,
+      "sha256": "c956b0e30db405cf15dbe7be9862a0f6487392be29ebca88bdb9167400334cfc"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600012/p0",
+      "tokens": 634,
+      "sha256": "25f274caa0250eeeae88cbaf0f86fdd1f3ef3a98872cfeedd83977bdb39e051f"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600013/p0",
+      "tokens": 643,
+      "sha256": "8896af829d7e2f216cccfbebddce63eb92954b12d30df5465d148b7621f594f5"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600014/p0",
+      "tokens": 659,
+      "sha256": "de1ad142529af63478c92589151a3293ec95137971b48734a75080701c00dd6e"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/4/600015/p0",
+      "tokens": 689,
+      "sha256": "61dcd9a7b00a76d90ec9268ebc4cf3eba67bfb7810f24c9f079f94df55b18cb5"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600000/p0",
+      "tokens": 817,
+      "sha256": "26e8139172862dbed77433fe2acb3510efc3600214542fd0924bc95397f544ed"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600001/p0",
+      "tokens": 826,
+      "sha256": "977eaa35e61acd993d380bde36ad72ca1d7b49df0bf017a9fced40a87d269807"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600002/p0",
+      "tokens": 786,
+      "sha256": "2756e0db4903bf006590a11d3bd37e95422e664edecfb7a24cc217c18d7fe45e"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600003/p0",
+      "tokens": 800,
+      "sha256": "70b355b4264e383f840cf5e6a632953bcf24af636ed4f3795931dfa78c36c3b2"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600004/p0",
+      "tokens": 800,
+      "sha256": "d51c7a6e6caf9c56814de33816c44950eef61caef6ed7b01a977b9da3dca8e93"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600005/p0",
+      "tokens": 783,
+      "sha256": "60697b1aa84dfc1bb06d47f1a102c32e97dd5ec1ab828db48fc1d774650c5e1f"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600006/p0",
+      "tokens": 797,
+      "sha256": "6d2d27d30251c1d04486b0624aa8360db4deb182c98ef3ce4db983cdd74b8ce9"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600007/p0",
+      "tokens": 760,
+      "sha256": "0790c37e07d5cb6aef1b723df335493424ba757572ff3cdf4478d6394a4dfd1c"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600008/p0",
+      "tokens": 763,
+      "sha256": "e04c7340ae6984de40c76d183bb617448f27083ae51f6bb5dbc767321993abf6"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600009/p0",
+      "tokens": 756,
+      "sha256": "bd2cb239d5fcbf123e78662e11b38f9eb09cc32ef8952c71a45131471b2a5020"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600010/p0",
+      "tokens": 786,
+      "sha256": "41a16c8a28a36763def59c97b7b39eab68f5289992e3e879a222a4a3550fff7d"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600011/p0",
+      "tokens": 791,
+      "sha256": "ca2382dc42832e369c60ac94f08d18a64552118b8f90c5ecd89e1708d4b306b3"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600012/p0",
+      "tokens": 823,
+      "sha256": "6ff2e37c7c936d2c704deac247a85bcf8b604143f71781318e44277741a24da5"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600013/p0",
+      "tokens": 773,
+      "sha256": "7a6af814cb5153e74ef2d29d96b6e6365bcf8e2e1fc87fa598fb6f921f0c7a8f"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600014/p0",
+      "tokens": 799,
+      "sha256": "92befd7f6ed7d9cdcbecc4bc46c5376c9ae403359fb49310ec69eccfb40dee78"
+    },
+    {
+      "id": "train-v1/seed20261120/animals/8/600015/p0",
+      "tokens": 747,
+      "sha256": "1c4030f63a3082c4d11f290c0697507a49fc7e41a6463e373c0fcecc948cfa8a"
+    }
+  ],
+  "native_history_checks": 137,
+  "forecast_usd": "0.022656",
+  "forecast_basis": "Replay the prior SFT qualification's actual actions and output counts with new candidate-set input tokens, no cache credit. Raw-base behavior remains uncertain.",
+  "full_cap_hold_envelope_usd": "1.386240",
+  "full_cap_envelope_note": "Uncached per-call context/output-cap bound times every allowed action. Admission is limited to the policy cap; per-call holds enforce it. Maximum-length trajectories need not all fit.",
+  "per_policy_cap_including_holds_usd": "0.250000",
+  "combined_cap_including_holds_usd": "0.500000",
+  "rl_updates_authorized": 0,
+  "service_calls": 0
+}

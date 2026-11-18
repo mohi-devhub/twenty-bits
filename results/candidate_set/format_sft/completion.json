@@ -1,0 +1,12 @@
+{
+  "config_sha256": "76e9dbfb7acf108ac1bd2880943cee4450b870d5b5901107a04defdfd4dbed08",
+  "games": 32,
+  "sampler": {
+    "id": "43c4cd80-c17b-5fb8-b414-784bd2e493f7:sample:0",
+    "next_seq": 148,
+    "model_path": "tinker://710e923c-7d82-5df6-8e70-f37f778c9e88:train:0/sampler_weights/format-warmstart"
+  },
+  "session_finished": true,
+  "training_updates": 0,
+  "rl_updates": 0
+}

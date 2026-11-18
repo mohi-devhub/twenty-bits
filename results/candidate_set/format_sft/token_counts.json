@@ -1,0 +1,1334 @@
+[
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600000/p0",
+    "n": 4,
+    "turn": 0,
+    "prompt_tokens": 664,
+    "no_list_tokens": 534,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600000/p0",
+    "n": 4,
+    "turn": 1,
+    "prompt_tokens": 699,
+    "no_list_tokens": 548,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 20
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600001/p0",
+    "n": 4,
+    "turn": 0,
+    "prompt_tokens": 684,
+    "no_list_tokens": 554,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600001/p0",
+    "n": 4,
+    "turn": 1,
+    "prompt_tokens": 727,
+    "no_list_tokens": 568,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 28
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600001/p0",
+    "n": 4,
+    "turn": 2,
+    "prompt_tokens": 764,
+    "no_list_tokens": 582,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 22
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600001/p0",
+    "n": 4,
+    "turn": 3,
+    "prompt_tokens": 803,
+    "no_list_tokens": 598,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 22
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600002/p0",
+    "n": 4,
+    "turn": 0,
+    "prompt_tokens": 699,
+    "no_list_tokens": 569,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600002/p0",
+    "n": 4,
+    "turn": 1,
+    "prompt_tokens": 741,
+    "no_list_tokens": 585,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 25
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600002/p0",
+    "n": 4,
+    "turn": 2,
+    "prompt_tokens": 781,
+    "no_list_tokens": 599,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 25
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600003/p0",
+    "n": 4,
+    "turn": 0,
+    "prompt_tokens": 672,
+    "no_list_tokens": 542,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600003/p0",
+    "n": 4,
+    "turn": 1,
+    "prompt_tokens": 716,
+    "no_list_tokens": 557,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 28
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600003/p0",
+    "n": 4,
+    "turn": 2,
+    "prompt_tokens": 760,
+    "no_list_tokens": 572,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 28
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600003/p0",
+    "n": 4,
+    "turn": 3,
+    "prompt_tokens": 804,
+    "no_list_tokens": 587,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 28
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600003/p0",
+    "n": 4,
+    "turn": 4,
+    "prompt_tokens": 834,
+    "no_list_tokens": 601,
+    "candidates_shown": 1,
+    "latest_feedback_tokens": 15
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600004/p0",
+    "n": 4,
+    "turn": 0,
+    "prompt_tokens": 694,
+    "no_list_tokens": 564,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600004/p0",
+    "n": 4,
+    "turn": 1,
+    "prompt_tokens": 741,
+    "no_list_tokens": 578,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 32
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600004/p0",
+    "n": 4,
+    "turn": 2,
+    "prompt_tokens": 775,
+    "no_list_tokens": 594,
+    "candidates_shown": 1,
+    "latest_feedback_tokens": 17
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600005/p0",
+    "n": 4,
+    "turn": 0,
+    "prompt_tokens": 659,
+    "no_list_tokens": 529,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600005/p0",
+    "n": 4,
+    "turn": 1,
+    "prompt_tokens": 702,
+    "no_list_tokens": 543,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 28
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600005/p0",
+    "n": 4,
+    "turn": 2,
+    "prompt_tokens": 739,
+    "no_list_tokens": 557,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 22
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600005/p0",
+    "n": 4,
+    "turn": 3,
+    "prompt_tokens": 778,
+    "no_list_tokens": 573,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 22
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600006/p0",
+    "n": 4,
+    "turn": 0,
+    "prompt_tokens": 685,
+    "no_list_tokens": 555,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600006/p0",
+    "n": 4,
+    "turn": 1,
+    "prompt_tokens": 724,
+    "no_list_tokens": 571,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 22
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600006/p0",
+    "n": 4,
+    "turn": 2,
+    "prompt_tokens": 763,
+    "no_list_tokens": 587,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 22
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600006/p0",
+    "n": 4,
+    "turn": 3,
+    "prompt_tokens": 802,
+    "no_list_tokens": 603,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 22
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600006/p0",
+    "n": 4,
+    "turn": 4,
+    "prompt_tokens": 841,
+    "no_list_tokens": 619,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 22
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600007/p0",
+    "n": 4,
+    "turn": 0,
+    "prompt_tokens": 643,
+    "no_list_tokens": 513,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600007/p0",
+    "n": 4,
+    "turn": 1,
+    "prompt_tokens": 683,
+    "no_list_tokens": 527,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 25
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600007/p0",
+    "n": 4,
+    "turn": 2,
+    "prompt_tokens": 723,
+    "no_list_tokens": 541,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 25
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600007/p0",
+    "n": 4,
+    "turn": 3,
+    "prompt_tokens": 763,
+    "no_list_tokens": 555,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 25
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600007/p0",
+    "n": 4,
+    "turn": 4,
+    "prompt_tokens": 803,
+    "no_list_tokens": 569,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 25
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600008/p0",
+    "n": 4,
+    "turn": 0,
+    "prompt_tokens": 672,
+    "no_list_tokens": 542,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600008/p0",
+    "n": 4,
+    "turn": 1,
+    "prompt_tokens": 720,
+    "no_list_tokens": 558,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 31
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600008/p0",
+    "n": 4,
+    "turn": 2,
+    "prompt_tokens": 767,
+    "no_list_tokens": 573,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 31
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600008/p0",
+    "n": 4,
+    "turn": 3,
+    "prompt_tokens": 805,
+    "no_list_tokens": 587,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 23
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600009/p0",
+    "n": 4,
+    "turn": 0,
+    "prompt_tokens": 697,
+    "no_list_tokens": 567,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600009/p0",
+    "n": 4,
+    "turn": 1,
+    "prompt_tokens": 742,
+    "no_list_tokens": 581,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 30
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600009/p0",
+    "n": 4,
+    "turn": 2,
+    "prompt_tokens": 775,
+    "no_list_tokens": 597,
+    "candidates_shown": 1,
+    "latest_feedback_tokens": 16
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600010/p0",
+    "n": 4,
+    "turn": 0,
+    "prompt_tokens": 636,
+    "no_list_tokens": 506,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600010/p0",
+    "n": 4,
+    "turn": 1,
+    "prompt_tokens": 684,
+    "no_list_tokens": 520,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 33
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600010/p0",
+    "n": 4,
+    "turn": 2,
+    "prompt_tokens": 722,
+    "no_list_tokens": 534,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 23
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600010/p0",
+    "n": 4,
+    "turn": 3,
+    "prompt_tokens": 760,
+    "no_list_tokens": 548,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 23
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600010/p0",
+    "n": 4,
+    "turn": 4,
+    "prompt_tokens": 798,
+    "no_list_tokens": 562,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 23
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600011/p0",
+    "n": 4,
+    "turn": 0,
+    "prompt_tokens": 693,
+    "no_list_tokens": 563,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600011/p0",
+    "n": 4,
+    "turn": 1,
+    "prompt_tokens": 723,
+    "no_list_tokens": 577,
+    "candidates_shown": 1,
+    "latest_feedback_tokens": 15
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600011/p0",
+    "n": 4,
+    "turn": 2,
+    "prompt_tokens": 755,
+    "no_list_tokens": 593,
+    "candidates_shown": 1,
+    "latest_feedback_tokens": 15
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600012/p0",
+    "n": 4,
+    "turn": 0,
+    "prompt_tokens": 634,
+    "no_list_tokens": 504,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600012/p0",
+    "n": 4,
+    "turn": 1,
+    "prompt_tokens": 675,
+    "no_list_tokens": 518,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 26
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600012/p0",
+    "n": 4,
+    "turn": 2,
+    "prompt_tokens": 707,
+    "no_list_tokens": 532,
+    "candidates_shown": 1,
+    "latest_feedback_tokens": 17
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600012/p0",
+    "n": 4,
+    "turn": 3,
+    "prompt_tokens": 739,
+    "no_list_tokens": 546,
+    "candidates_shown": 1,
+    "latest_feedback_tokens": 17
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600013/p0",
+    "n": 4,
+    "turn": 0,
+    "prompt_tokens": 643,
+    "no_list_tokens": 513,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600013/p0",
+    "n": 4,
+    "turn": 1,
+    "prompt_tokens": 682,
+    "no_list_tokens": 529,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 22
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600013/p0",
+    "n": 4,
+    "turn": 2,
+    "prompt_tokens": 721,
+    "no_list_tokens": 545,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 22
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600013/p0",
+    "n": 4,
+    "turn": 3,
+    "prompt_tokens": 762,
+    "no_list_tokens": 563,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 22
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600013/p0",
+    "n": 4,
+    "turn": 4,
+    "prompt_tokens": 801,
+    "no_list_tokens": 579,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 22
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600014/p0",
+    "n": 4,
+    "turn": 0,
+    "prompt_tokens": 659,
+    "no_list_tokens": 529,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600014/p0",
+    "n": 4,
+    "turn": 1,
+    "prompt_tokens": 706,
+    "no_list_tokens": 544,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 31
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600014/p0",
+    "n": 4,
+    "turn": 2,
+    "prompt_tokens": 746,
+    "no_list_tokens": 560,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 23
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600014/p0",
+    "n": 4,
+    "turn": 3,
+    "prompt_tokens": 784,
+    "no_list_tokens": 574,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 23
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600015/p0",
+    "n": 4,
+    "turn": 0,
+    "prompt_tokens": 689,
+    "no_list_tokens": 559,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600015/p0",
+    "n": 4,
+    "turn": 1,
+    "prompt_tokens": 721,
+    "no_list_tokens": 573,
+    "candidates_shown": 1,
+    "latest_feedback_tokens": 17
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/4/600015/p0",
+    "n": 4,
+    "turn": 2,
+    "prompt_tokens": 755,
+    "no_list_tokens": 589,
+    "candidates_shown": 1,
+    "latest_feedback_tokens": 17
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600000/p0",
+    "n": 8,
+    "turn": 0,
+    "prompt_tokens": 817,
+    "no_list_tokens": 687,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600000/p0",
+    "n": 8,
+    "turn": 1,
+    "prompt_tokens": 890,
+    "no_list_tokens": 701,
+    "candidates_shown": 7,
+    "latest_feedback_tokens": 58
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600000/p0",
+    "n": 8,
+    "turn": 2,
+    "prompt_tokens": 952,
+    "no_list_tokens": 717,
+    "candidates_shown": 5,
+    "latest_feedback_tokens": 45
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600000/p0",
+    "n": 8,
+    "turn": 3,
+    "prompt_tokens": 1005,
+    "no_list_tokens": 733,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 36
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600000/p0",
+    "n": 8,
+    "turn": 4,
+    "prompt_tokens": 1035,
+    "no_list_tokens": 748,
+    "candidates_shown": 1,
+    "latest_feedback_tokens": 14
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600001/p0",
+    "n": 8,
+    "turn": 0,
+    "prompt_tokens": 826,
+    "no_list_tokens": 696,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600001/p0",
+    "n": 8,
+    "turn": 1,
+    "prompt_tokens": 873,
+    "no_list_tokens": 712,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 30
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600001/p0",
+    "n": 8,
+    "turn": 2,
+    "prompt_tokens": 920,
+    "no_list_tokens": 728,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 30
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600001/p0",
+    "n": 8,
+    "turn": 3,
+    "prompt_tokens": 957,
+    "no_list_tokens": 742,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 22
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600001/p0",
+    "n": 8,
+    "turn": 4,
+    "prompt_tokens": 994,
+    "no_list_tokens": 756,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 22
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600001/p0",
+    "n": 8,
+    "turn": 5,
+    "prompt_tokens": 1031,
+    "no_list_tokens": 770,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 22
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600001/p0",
+    "n": 8,
+    "turn": 6,
+    "prompt_tokens": 1068,
+    "no_list_tokens": 784,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 22
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600002/p0",
+    "n": 8,
+    "turn": 0,
+    "prompt_tokens": 786,
+    "no_list_tokens": 656,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600002/p0",
+    "n": 8,
+    "turn": 1,
+    "prompt_tokens": 837,
+    "no_list_tokens": 670,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 36
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600002/p0",
+    "n": 8,
+    "turn": 2,
+    "prompt_tokens": 880,
+    "no_list_tokens": 684,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 28
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600002/p0",
+    "n": 8,
+    "turn": 3,
+    "prompt_tokens": 924,
+    "no_list_tokens": 699,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 28
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600002/p0",
+    "n": 8,
+    "turn": 4,
+    "prompt_tokens": 967,
+    "no_list_tokens": 713,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 28
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600002/p0",
+    "n": 8,
+    "turn": 5,
+    "prompt_tokens": 1010,
+    "no_list_tokens": 727,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 28
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600002/p0",
+    "n": 8,
+    "turn": 6,
+    "prompt_tokens": 1053,
+    "no_list_tokens": 741,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 28
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600003/p0",
+    "n": 8,
+    "turn": 0,
+    "prompt_tokens": 800,
+    "no_list_tokens": 670,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600003/p0",
+    "n": 8,
+    "turn": 1,
+    "prompt_tokens": 842,
+    "no_list_tokens": 684,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 27
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600003/p0",
+    "n": 8,
+    "turn": 2,
+    "prompt_tokens": 874,
+    "no_list_tokens": 700,
+    "candidates_shown": 1,
+    "latest_feedback_tokens": 15
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600004/p0",
+    "n": 8,
+    "turn": 0,
+    "prompt_tokens": 800,
+    "no_list_tokens": 670,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600004/p0",
+    "n": 8,
+    "turn": 1,
+    "prompt_tokens": 857,
+    "no_list_tokens": 684,
+    "candidates_shown": 5,
+    "latest_feedback_tokens": 42
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600004/p0",
+    "n": 8,
+    "turn": 2,
+    "prompt_tokens": 910,
+    "no_list_tokens": 700,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 36
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600004/p0",
+    "n": 8,
+    "turn": 3,
+    "prompt_tokens": 963,
+    "no_list_tokens": 716,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 36
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600004/p0",
+    "n": 8,
+    "turn": 4,
+    "prompt_tokens": 1016,
+    "no_list_tokens": 732,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 36
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600004/p0",
+    "n": 8,
+    "turn": 5,
+    "prompt_tokens": 1069,
+    "no_list_tokens": 748,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 36
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600004/p0",
+    "n": 8,
+    "turn": 6,
+    "prompt_tokens": 1122,
+    "no_list_tokens": 764,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 36
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600005/p0",
+    "n": 8,
+    "turn": 0,
+    "prompt_tokens": 783,
+    "no_list_tokens": 653,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600005/p0",
+    "n": 8,
+    "turn": 1,
+    "prompt_tokens": 853,
+    "no_list_tokens": 669,
+    "candidates_shown": 7,
+    "latest_feedback_tokens": 53
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600005/p0",
+    "n": 8,
+    "turn": 2,
+    "prompt_tokens": 914,
+    "no_list_tokens": 683,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 46
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600005/p0",
+    "n": 8,
+    "turn": 3,
+    "prompt_tokens": 977,
+    "no_list_tokens": 699,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 46
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600005/p0",
+    "n": 8,
+    "turn": 4,
+    "prompt_tokens": 1040,
+    "no_list_tokens": 715,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 46
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600005/p0",
+    "n": 8,
+    "turn": 5,
+    "prompt_tokens": 1101,
+    "no_list_tokens": 729,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 46
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600005/p0",
+    "n": 8,
+    "turn": 6,
+    "prompt_tokens": 1164,
+    "no_list_tokens": 745,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 46
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600006/p0",
+    "n": 8,
+    "turn": 0,
+    "prompt_tokens": 797,
+    "no_list_tokens": 667,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600006/p0",
+    "n": 8,
+    "turn": 1,
+    "prompt_tokens": 865,
+    "no_list_tokens": 683,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 51
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600006/p0",
+    "n": 8,
+    "turn": 2,
+    "prompt_tokens": 933,
+    "no_list_tokens": 699,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 51
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600006/p0",
+    "n": 8,
+    "turn": 3,
+    "prompt_tokens": 999,
+    "no_list_tokens": 713,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 51
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600006/p0",
+    "n": 8,
+    "turn": 4,
+    "prompt_tokens": 1065,
+    "no_list_tokens": 727,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 51
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600006/p0",
+    "n": 8,
+    "turn": 5,
+    "prompt_tokens": 1131,
+    "no_list_tokens": 741,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 51
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600006/p0",
+    "n": 8,
+    "turn": 6,
+    "prompt_tokens": 1199,
+    "no_list_tokens": 757,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 51
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600007/p0",
+    "n": 8,
+    "turn": 0,
+    "prompt_tokens": 760,
+    "no_list_tokens": 630,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600007/p0",
+    "n": 8,
+    "turn": 1,
+    "prompt_tokens": 837,
+    "no_list_tokens": 647,
+    "candidates_shown": 7,
+    "latest_feedback_tokens": 59
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600007/p0",
+    "n": 8,
+    "turn": 2,
+    "prompt_tokens": 914,
+    "no_list_tokens": 664,
+    "candidates_shown": 7,
+    "latest_feedback_tokens": 59
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600007/p0",
+    "n": 8,
+    "turn": 3,
+    "prompt_tokens": 991,
+    "no_list_tokens": 681,
+    "candidates_shown": 7,
+    "latest_feedback_tokens": 59
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600007/p0",
+    "n": 8,
+    "turn": 4,
+    "prompt_tokens": 1038,
+    "no_list_tokens": 695,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 32
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600007/p0",
+    "n": 8,
+    "turn": 5,
+    "prompt_tokens": 1085,
+    "no_list_tokens": 709,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 32
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600007/p0",
+    "n": 8,
+    "turn": 6,
+    "prompt_tokens": 1132,
+    "no_list_tokens": 723,
+    "candidates_shown": 3,
+    "latest_feedback_tokens": 32
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600008/p0",
+    "n": 8,
+    "turn": 0,
+    "prompt_tokens": 763,
+    "no_list_tokens": 633,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600008/p0",
+    "n": 8,
+    "turn": 1,
+    "prompt_tokens": 795,
+    "no_list_tokens": 649,
+    "candidates_shown": 1,
+    "latest_feedback_tokens": 15
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600009/p0",
+    "n": 8,
+    "turn": 0,
+    "prompt_tokens": 756,
+    "no_list_tokens": 626,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600009/p0",
+    "n": 8,
+    "turn": 1,
+    "prompt_tokens": 787,
+    "no_list_tokens": 641,
+    "candidates_shown": 1,
+    "latest_feedback_tokens": 15
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600010/p0",
+    "n": 8,
+    "turn": 0,
+    "prompt_tokens": 786,
+    "no_list_tokens": 656,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600010/p0",
+    "n": 8,
+    "turn": 1,
+    "prompt_tokens": 855,
+    "no_list_tokens": 672,
+    "candidates_shown": 7,
+    "latest_feedback_tokens": 52
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600010/p0",
+    "n": 8,
+    "turn": 2,
+    "prompt_tokens": 917,
+    "no_list_tokens": 687,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 46
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600010/p0",
+    "n": 8,
+    "turn": 3,
+    "prompt_tokens": 979,
+    "no_list_tokens": 702,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 46
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600010/p0",
+    "n": 8,
+    "turn": 4,
+    "prompt_tokens": 1042,
+    "no_list_tokens": 718,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 46
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600010/p0",
+    "n": 8,
+    "turn": 5,
+    "prompt_tokens": 1101,
+    "no_list_tokens": 735,
+    "candidates_shown": 5,
+    "latest_feedback_tokens": 41
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600010/p0",
+    "n": 8,
+    "turn": 6,
+    "prompt_tokens": 1158,
+    "no_list_tokens": 750,
+    "candidates_shown": 5,
+    "latest_feedback_tokens": 41
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600011/p0",
+    "n": 8,
+    "turn": 0,
+    "prompt_tokens": 791,
+    "no_list_tokens": 661,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600011/p0",
+    "n": 8,
+    "turn": 1,
+    "prompt_tokens": 862,
+    "no_list_tokens": 677,
+    "candidates_shown": 7,
+    "latest_feedback_tokens": 54
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600011/p0",
+    "n": 8,
+    "turn": 2,
+    "prompt_tokens": 926,
+    "no_list_tokens": 691,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 49
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600011/p0",
+    "n": 8,
+    "turn": 3,
+    "prompt_tokens": 990,
+    "no_list_tokens": 705,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 49
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600012/p0",
+    "n": 8,
+    "turn": 0,
+    "prompt_tokens": 823,
+    "no_list_tokens": 693,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600012/p0",
+    "n": 8,
+    "turn": 1,
+    "prompt_tokens": 897,
+    "no_list_tokens": 707,
+    "candidates_shown": 7,
+    "latest_feedback_tokens": 59
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600012/p0",
+    "n": 8,
+    "turn": 2,
+    "prompt_tokens": 959,
+    "no_list_tokens": 721,
+    "candidates_shown": 5,
+    "latest_feedback_tokens": 47
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600013/p0",
+    "n": 8,
+    "turn": 0,
+    "prompt_tokens": 773,
+    "no_list_tokens": 643,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600013/p0",
+    "n": 8,
+    "turn": 1,
+    "prompt_tokens": 808,
+    "no_list_tokens": 657,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 20
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600013/p0",
+    "n": 8,
+    "turn": 2,
+    "prompt_tokens": 843,
+    "no_list_tokens": 671,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 20
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600013/p0",
+    "n": 8,
+    "turn": 3,
+    "prompt_tokens": 878,
+    "no_list_tokens": 685,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 20
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600013/p0",
+    "n": 8,
+    "turn": 4,
+    "prompt_tokens": 913,
+    "no_list_tokens": 699,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 20
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600013/p0",
+    "n": 8,
+    "turn": 5,
+    "prompt_tokens": 950,
+    "no_list_tokens": 715,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 20
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600014/p0",
+    "n": 8,
+    "turn": 0,
+    "prompt_tokens": 799,
+    "no_list_tokens": 669,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600014/p0",
+    "n": 8,
+    "turn": 1,
+    "prompt_tokens": 862,
+    "no_list_tokens": 683,
+    "candidates_shown": 5,
+    "latest_feedback_tokens": 48
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600014/p0",
+    "n": 8,
+    "turn": 2,
+    "prompt_tokens": 918,
+    "no_list_tokens": 698,
+    "candidates_shown": 4,
+    "latest_feedback_tokens": 40
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600014/p0",
+    "n": 8,
+    "turn": 3,
+    "prompt_tokens": 962,
+    "no_list_tokens": 714,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 27
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600014/p0",
+    "n": 8,
+    "turn": 4,
+    "prompt_tokens": 1004,
+    "no_list_tokens": 728,
+    "candidates_shown": 2,
+    "latest_feedback_tokens": 27
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600014/p0",
+    "n": 8,
+    "turn": 5,
+    "prompt_tokens": 1038,
+    "no_list_tokens": 742,
+    "candidates_shown": 1,
+    "latest_feedback_tokens": 19
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600015/p0",
+    "n": 8,
+    "turn": 0,
+    "prompt_tokens": 747,
+    "no_list_tokens": 617,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 0
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600015/p0",
+    "n": 8,
+    "turn": 1,
+    "prompt_tokens": 826,
+    "no_list_tokens": 633,
+    "candidates_shown": 8,
+    "latest_feedback_tokens": 62
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600015/p0",
+    "n": 8,
+    "turn": 2,
+    "prompt_tokens": 896,
+    "no_list_tokens": 647,
+    "candidates_shown": 7,
+    "latest_feedback_tokens": 55
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600015/p0",
+    "n": 8,
+    "turn": 3,
+    "prompt_tokens": 966,
+    "no_list_tokens": 661,
+    "candidates_shown": 7,
+    "latest_feedback_tokens": 55
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600015/p0",
+    "n": 8,
+    "turn": 4,
+    "prompt_tokens": 1030,
+    "no_list_tokens": 675,
+    "candidates_shown": 6,
+    "latest_feedback_tokens": 49
+  },
+  {
+    "game_id": "train-v1/seed20261120/animals/8/600015/p0",
+    "n": 8,
+    "turn": 5,
+    "prompt_tokens": 1087,
+    "no_list_tokens": 690,
+    "candidates_shown": 5,
+    "latest_feedback_tokens": 41
+  }
+]

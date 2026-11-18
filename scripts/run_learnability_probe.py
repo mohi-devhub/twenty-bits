@@ -26,6 +26,8 @@ async def run_once(
     games_path=None,
     results_path=None,
     approved_run_cap="1.500000",
+    records_factory=probe_records,
+    message_builder=probe_messages,
 ):
     config_path = config_path or ROOT / "experiments/learnability_probe.json"
     games_path = games_path or ROOT / "experiments/learnability_probe_games.json"
@@ -47,7 +49,7 @@ async def run_once(
     if config["training_authorized"] or config["run_cap_usd"] != approved_run_cap:
         raise RuntimeError("This runner authorizes only the approved inference cap.")
     records = json.loads(games_path.read_text())
-    if records != probe_records():
+    if records != records_factory():
         raise RuntimeError("The probe no longer matches its training-pool factory.")
     saved_summary = results_path / "summary.json"
     if saved_summary.exists():
@@ -164,7 +166,7 @@ async def run_once(
                     record,
                     config["primary_model"],
                     config,
-                    message_builder=probe_messages,
+                    message_builder=message_builder,
                 )
                 trajectory = await do_single_rollout(
                     GuardedCompleter(transport, env), env

@@ -1,0 +1,11 @@
+{
+  "config_sha256": "b5dc0f73600b86a83b6d505ce668426bc66d519d5c4db3c9cc9619bed94b8f2c",
+  "games": 32,
+  "sampler": {
+    "id": "0f98d935-abf9-5b84-84d1-3b86b72794df:sample:0",
+    "next_seq": 137
+  },
+  "session_finished": true,
+  "training_updates": 0,
+  "rl_updates": 0
+}

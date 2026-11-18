@@ -1,0 +1,174 @@
+{
+  "authorized": false,
+  "rl_updates_started": 0,
+  "initial_policy": "format_sft",
+  "observation_mode": "candidate_set",
+  "condition": "A",
+  "seed": 11,
+  "updates": 16,
+  "groups_per_update": 1,
+  "games_per_group": 8,
+  "training_games": 128,
+  "curriculum": [
+    {
+      "n": 4,
+      "updates": 4,
+      "games": 32
+    },
+    {
+      "n": 8,
+      "updates": 8,
+      "games": 64
+    },
+    {
+      "n": 16,
+      "updates": 4,
+      "games": 32
+    }
+  ],
+  "group_definition": "Eight independent generation seeds from one common training_game start state per update.",
+  "advantage": "Subtract the group mean total return and divide by the population standard deviation plus 1e-8. A constant-return group has zero advantages.",
+  "reward": {
+    "win": 1,
+    "per_question": -0.03,
+    "per_invalid": -0.1,
+    "information_shaping": false
+  },
+  "thinking": false,
+  "output_cap": 2048,
+  "grammar_version": "attribute-codes-v2",
+  "development_checks": [
+    0,
+    4,
+    8,
+    12,
+    16
+  ],
+  "development_games_per_check": 8,
+  "development_slice": {
+    "factory": "training_game",
+    "seed": 20261122,
+    "sizes": [
+      4,
+      8
+    ],
+    "indices": [
+      700100,
+      700101,
+      700102,
+      700103
+    ]
+  },
+  "required_stop_rule": {
+    "after_updates": 4,
+    "halt_if_fraction_of_nonzero_return_variance_groups_below": 0.25,
+    "nonzero_variance_tolerance": 1e-12
+  },
+  "stop_rule_note": "With four total groups, zero nonconstant groups halts; one equals 25% and passes. Cost-only return variance can pass, so also report win variation without adding another stop rule.",
+  "method": "Measure native candidate-list contexts on 40 fresh training-pool starts at each N. Retain all candidates via a tautology and charge the full question budget plus final-guess slot. Use the maximum measured context trajectory at each N. Generated-token proxies come from this policy's completed candidate-set qualification; N=16 uses its N=8 proxy and is unmeasured model behavior. Charge full per-turn context plus output for gradients and give sampling caches no credit. No new training is performed by this script.",
+  "gradient_billing_assumption": "Conservatively sum each turn's full input plus sampled output, even with prompt loss masked. The actual cookbook datum packing will be verified before any approved RL call.",
+  "storage_note": "Up to four native kept checkpoints and a final external export, plus one restore upload if using an expired hosted SFT checkpoint, with two-hour TTLs and at most $0.05 held per operation. $0.30 is a conservative common hold allowance, not a storage bill. Preserve and download the final adapter locally.",
+  "profiles": {
+    "4": {
+      "measured_training_pool_prefixes": 40,
+      "initial_tokens_mean": 671.0,
+      "initial_tokens_max": 698,
+      "scenarios": {
+        "measured_output_full_budget": {
+          "sampling_usd": 0.0008097,
+          "gradient_usd": 0.0017996000000000002,
+          "combined_usd": 0.0026093,
+          "input_tokens": 4060,
+          "output_tokens": 30,
+          "calls": 5,
+          "output_tokens_per_call_proxy": 6
+        },
+        "output_cap_stress": {
+          "sampling_usd": 0.01091565,
+          "gradient_usd": 0.0152724,
+          "combined_usd": 0.02618805,
+          "input_tokens": 24470,
+          "output_tokens": 10240,
+          "calls": 5,
+          "output_tokens_per_call_proxy": 2048
+        }
+      }
+    },
+    "8": {
+      "measured_training_pool_prefixes": 40,
+      "initial_tokens_mean": 782.625,
+      "initial_tokens_max": 824,
+      "scenarios": {
+        "measured_output_full_budget": {
+          "sampling_usd": 0.001508955,
+          "gradient_usd": 0.00336644,
+          "combined_usd": 0.004875395,
+          "input_tokens": 7609,
+          "output_tokens": 42,
+          "calls": 7,
+          "output_tokens_per_call_proxy": 6
+        },
+        "output_cap_stress": {
+          "sampling_usd": 0.01844325,
+          "gradient_usd": 0.02851464,
+          "combined_usd": 0.04695789,
+          "input_tokens": 50470,
+          "output_tokens": 14336,
+          "calls": 7,
+          "output_tokens_per_call_proxy": 2048
+        }
+      }
+    },
+    "16": {
+      "measured_training_pool_prefixes": 40,
+      "initial_tokens_mean": 1003.85,
+      "initial_tokens_max": 1038,
+      "scenarios": {
+        "measured_output_full_budget": {
+          "sampling_usd": 0.0028474200000000002,
+          "gradient_usd": 0.0063756,
+          "combined_usd": 0.00922302,
+          "input_tokens": 14436,
+          "output_tokens": 54,
+          "calls": 9,
+          "output_tokens_per_call_proxy": 6
+        },
+        "output_cap_stress": {
+          "sampling_usd": 0.028202039999999998,
+          "gradient_usd": 0.046791360000000004,
+          "combined_usd": 0.0749934,
+          "input_tokens": 87912,
+          "output_tokens": 18432,
+          "calls": 9,
+          "output_tokens_per_call_proxy": 2048
+        }
+      }
+    }
+  },
+  "scenarios": {
+    "measured_output_full_budget": {
+      "training_sampling_usd": 0.21360096,
+      "training_gradient_usd": 0.47705856,
+      "development_sampling_usd": 0.0463731,
+      "checkpoint_holds_usd": 0.3,
+      "total_including_checkpoint_holds_usd": 1.0370326200000002,
+      "total_with_1_5_margin_usd": 1.5555489300000003,
+      "four_update_abort_with_margin_usd": 0.60307026
+    },
+    "output_cap_stress": {
+      "training_sampling_usd": 2.43213408,
+      "training_gradient_usd": 3.8109772800000004,
+      "development_sampling_usd": 0.587178,
+      "checkpoint_holds_usd": 0.3,
+      "total_including_checkpoint_holds_usd": 7.13028936,
+      "total_with_1_5_margin_usd": 10.69543404,
+      "four_update_abort_with_margin_usd": 2.0593332
+    }
+  },
+  "proposed_run_ceiling_including_holds_usd": "2.00",
+  "ceiling_note": "The output-cap stress scenario is not the forecast. If individual reservations would exceed the approved pilot ceiling, halt with pending work retained; do not change caps or rewards mid-run.",
+  "available_project_usd": "43.551958",
+  "after_proposed_pilot_ceiling_usd": "41.551958",
+  "after_measured_forecast_with_margin_usd": "41.9964090699999997",
+  "gate_after_pilot": "Report learning curves and the behavior audit; offer S (A:3,B:2 seeds) versus U (A:2,B:1) priced using observed learning speed. Do not start main runs."
+}

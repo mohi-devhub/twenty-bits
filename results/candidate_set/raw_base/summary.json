@@ -1,0 +1,343 @@
+{
+  "sampling_config_sha256": "b5dc0f73600b86a83b6d505ce668426bc66d519d5c4db3c9cc9619bed94b8f2c",
+  "complete": true,
+  "missing_games": [],
+  "games": 32,
+  "cells": [
+    {
+      "n": 4,
+      "noise": 0,
+      "games": 16,
+      "expected_games": 16,
+      "wins": 12,
+      "win_rate": 0.75,
+      "win_wilson_ci95": [
+        0.5050168346449122,
+        0.8981793250878696
+      ],
+      "valid_turns": 54,
+      "turns": 55,
+      "valid_turn_rate": 0.9818181818181818,
+      "valid_turn_ci95_game_bootstrap": [
+        0.9464285714285714,
+        1.0
+      ],
+      "outcomes": {
+        "valid_ASK": 39,
+        "valid_GUESS": 15,
+        "other": 1
+      },
+      "parse_errors": {},
+      "actual_usd_complete_games": "0.003749",
+      "cost_per_complete_game_usd": 0.0002343125,
+      "cost_per_game_ci95": [
+        0.0002108734375,
+        0.0002595625
+      ],
+      "prompt_tokens": 40432,
+      "output_tokens": 618,
+      "prompt_cache_hit_tokens": 29056,
+      "reasoning_tokens": 0,
+      "mean_calls_per_game": 3.4375,
+      "mean_output_tokens_per_call": 11.236363636363636,
+      "format_error_rate": 0.01818181818181818,
+      "truncation_rate": 0.0,
+      "metrics": {
+        "games": 16,
+        "questions": 39,
+        "low_probability_opportunities": 0,
+        "win_rate": 0.75,
+        "win_rate_ci95": [
+          0.5609375000000014,
+          0.9375
+        ],
+        "questions_per_win": 2.1666666666666665,
+        "questions_per_win_ci95": [
+          1.8461538461538463,
+          2.5
+        ],
+        "eig_per_question": 0.6174795939986029,
+        "eig_per_question_ci95": [
+          0.48778340596163144,
+          0.7637021131003893
+        ],
+        "enumeration_rate": 0.0,
+        "enumeration_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "predicate_tokens": 7.769230769230769,
+        "predicate_tokens_ci95": [
+          5.027009246088194,
+          11.463414634146341
+        ],
+        "invalid_rate": 0.0,
+        "invalid_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "reask_after_low_probability_rate": null,
+        "reask_after_low_probability_rate_ci95": null
+      },
+      "remaining_invalid_turn_causes": {
+        "Non-GUESS action after question budget": 1
+      }
+    },
+    {
+      "n": 8,
+      "noise": 0,
+      "games": 16,
+      "expected_games": 16,
+      "wins": 11,
+      "win_rate": 0.6875,
+      "win_wilson_ci95": [
+        0.44404355834740666,
+        0.8583535614521796
+      ],
+      "valid_turns": 81,
+      "turns": 82,
+      "valid_turn_rate": 0.9878048780487805,
+      "valid_turn_ci95_game_bootstrap": [
+        0.9625,
+        1.0
+      ],
+      "outcomes": {
+        "valid_ASK": 65,
+        "valid_GUESS": 16,
+        "INVALID": 1
+      },
+      "parse_errors": {
+        "Unknown attribute: horn": 1
+      },
+      "actual_usd_complete_games": "0.005804",
+      "cost_per_complete_game_usd": 0.00036275,
+      "cost_per_game_ci95": [
+        0.00032150000000000006,
+        0.00040012656249999997
+      ],
+      "prompt_tokens": 74526,
+      "output_tokens": 620,
+      "prompt_cache_hit_tokens": 58624,
+      "reasoning_tokens": 0,
+      "mean_calls_per_game": 5.125,
+      "mean_output_tokens_per_call": 7.560975609756097,
+      "format_error_rate": 0.0,
+      "truncation_rate": 0.0,
+      "metrics": {
+        "games": 16,
+        "questions": 66,
+        "low_probability_opportunities": 1,
+        "win_rate": 0.6875,
+        "win_rate_ci95": [
+          0.4375,
+          0.875
+        ],
+        "questions_per_win": 3.727272727272727,
+        "questions_per_win_ci95": [
+          2.888888888888889,
+          4.5
+        ],
+        "eig_per_question": 0.5212343624134849,
+        "eig_per_question_ci95": [
+          0.3880075153265495,
+          0.6686736772016086
+        ],
+        "enumeration_rate": 0.0,
+        "enumeration_rate_ci95": [
+          0.0,
+          0.0
+        ],
+        "predicate_tokens": 3.727272727272727,
+        "predicate_tokens_ci95": [
+          2.2156787330316745,
+          5.452117061021169
+        ],
+        "invalid_rate": 0.015151515151515152,
+        "invalid_rate_ci95": [
+          0.0,
+          0.04838709677419355
+        ],
+        "reask_after_low_probability_rate": 0.0,
+        "reask_after_low_probability_rate_ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "remaining_invalid_turn_causes": {
+        "Unknown attribute: horn": 1
+      }
+    }
+  ],
+  "cost": {
+    "probe_spent_usd": "0.009553",
+    "probe_held_usd": "0",
+    "probe_cap_usd": "0.250000",
+    "project": {
+      "cap_usd": "50.000000",
+      "spent_usd": "6.335229",
+      "held_usd": "0.112813",
+      "available_usd": "43.551958",
+      "blocked": false
+    },
+    "scope": "candidate-set qualification only",
+    "gradient_usd": "0",
+    "sampling_usd": "0.009553"
+  },
+  "verification": {
+    "replayed_turns": 137,
+    "used_entry_ids": [
+      "001c79d3-eb15-43d0-a648-bfeb69069ddc",
+      "01d41cff-489a-4512-9785-b82a348842be",
+      "04694a0d-3ff5-4bef-947f-c4900ce4386d",
+      "04e087ed-d40e-469c-a757-e56cff67a0c2",
+      "04e7e90f-c799-46d8-b4a8-b9a86a2a19fc",
+      "0d7f7550-8506-4b44-95ec-8cd6c0139e64",
+      "0e529d5e-719d-451a-973b-ca6c94108b20",
+      "0ec31837-34e7-4235-a5b2-fa03fca5ab67",
+      "11c3d4df-e17c-4406-a3ba-e8eb1bca9072",
+      "1338cfc1-481d-4567-9f0d-7f850bb13169",
+      "136a2d0e-8a1c-4ade-a206-c7b91a9af164",
+      "1381bdb0-9821-427b-a32b-c1a1db67dca5",
+      "142b17c2-21fd-4b1a-a889-e623a9a606e5",
+      "144aa920-cbc2-4536-b77b-192cbc248845",
+      "189a05f2-3095-4b6c-b62e-5a1d9ad60890",
+      "19a4d765-56a4-47f8-983a-234d46b37cce",
+      "19dddf43-d625-4b72-ba48-d05a1e6f38f0",
+      "230f1ab0-407f-4783-b110-709e63405890",
+      "23401e9a-5ced-4a53-851e-bcdf25ff21a7",
+      "23572af0-30d6-455d-89cd-e3b4a3bbf11d",
+      "249b0471-63fd-4e47-bdc8-097280afa905",
+      "2b0a734a-7228-4d5f-a70f-523060e83df7",
+      "2b4da7e5-0583-4166-9440-f9526328ff0c",
+      "2bf84af9-0641-4c0f-85a0-34aefd290f4f",
+      "2cfd3aa2-e1df-4ffb-ba00-4fcd0e9969a7",
+      "2d13b6e9-8777-4c57-b000-e153ccf7565e",
+      "2ece3454-869e-4a43-8f1e-37dd3167b985",
+      "2ef6a36d-c2a6-4b30-ad0e-6a23f8e62228",
+      "2f104982-7f1b-46e2-bcc8-931c4cf4b263",
+      "30cd4961-1553-4985-b30e-769c47ffa668",
+      "31fd1273-8d8a-4dc6-9e13-fd98995f5cf8",
+      "32a8d473-6755-4274-9f09-c647082c7965",
+      "33cea9e9-88c9-456e-98ca-f601b14e5e10",
+      "348e18b5-8fb6-4c72-b26e-51709c26c879",
+      "37d25255-5db2-498c-a919-a56e5445ee75",
+      "381f37a7-d9e8-4595-98c5-3e9302ecf782",
+      "3b0ba15a-90f5-47a1-b062-c1be007b3cfb",
+      "3bfaa941-3050-4fd1-866c-fcbdf802c760",
+      "3ec1dd7c-3831-4eeb-a50c-6789d9500d2b",
+      "420aa48f-7cd0-4170-85e1-bb557ccb4997",
+      "42390cb6-1e39-40d0-830a-ad4f28edf425",
+      "47ea5635-ad8e-4630-bda4-294a60804d56",
+      "48305588-f637-4888-98c5-1dd1d2d9b81e",
+      "48483c93-ba38-40fd-aab9-f1d92ac675bd",
+      "4894c5c2-acf1-4371-94ba-bcff7893bb67",
+      "48db964d-3ab0-4a81-94f9-42b4691f57a8",
+      "4935b738-b94d-4f8a-a35d-56a7a252e484",
+      "4a214de4-08fc-4eaf-96ba-66b9c5155e34",
+      "4ac7600b-52f9-4512-b0ba-672a217f4c77",
+      "4de69259-2113-4648-b7df-b8ba0725d4c5",
+      "4e92e860-09b7-4a33-bce0-1fda61292f1e",
+      "5531d43e-6e84-47f6-a882-f130de42c4a6",
+      "554c3baf-d229-42b4-97d3-41a5f1384cb0",
+      "575d0109-4ec1-4fa8-b262-bfec40a890da",
+      "57c7fc22-fe4e-4f84-982d-239f9b0ecc46",
+      "586182b2-1415-4676-bdaf-691bda54c085",
+      "594e6784-e661-4f13-9dc8-ddeb24b090f7",
+      "59e5a6fb-9b07-4e4b-84b1-de746d163115",
+      "5d8dbb36-9c60-4a1c-8f9b-c54892f6152b",
+      "5dcc48aa-e66c-45c9-a042-1149fc1b19a3",
+      "6134df16-fab1-461c-9172-993cb4a91986",
+      "6141cda0-959a-4adc-8c7f-dec4efd0f7f1",
+      "63b21e2a-3b29-4a5e-be7e-66b96be8165a",
+      "63caa851-6679-4b48-b453-68ff33cd4bea",
+      "6474c3ae-63e7-44c7-baa7-44a4ba67805e",
+      "662f32fd-03cc-4cc6-8745-d54655069947",
+      "68599f66-fe5e-4de0-9f25-50e6c701f412",
+      "6f39130b-c421-4764-89e5-eec6ecc0a001",
+      "70052860-b81b-44bf-a3dd-1ae81284c2d9",
+      "71aa75f7-93d5-4509-bda1-0aaae93dd5c8",
+      "72e66db5-e438-41ed-9f47-cfc6186419e7",
+      "75fd5619-6f3d-4082-b3df-e55035122b3e",
+      "79f143e3-57db-47f4-bb68-6bb100114b1e",
+      "79f6c5b1-fd44-4ffc-8e9b-824d68181cee",
+      "7b5f4cac-1f2d-4269-a948-c62813d45c74",
+      "7ba51881-3d08-4d4f-be45-8e18722f7afb",
+      "80c921e7-5a42-48f9-acfa-756f35a10c5b",
+      "84fe8da2-617f-4a51-9fe9-801838797410",
+      "901af7ce-3e3d-461d-a9f6-51d8cfe129ce",
+      "93bdc4d8-1c73-435f-9871-555727652e8e",
+      "95b9d446-b2e9-4b43-a654-43efef15ddb5",
+      "97d0828f-3709-438b-a0f8-2cb2282e3078",
+      "97d0b092-bd54-4ad7-af37-38fe98f1ac07",
+      "99786538-7d63-4a92-9792-f8c45c1e71b6",
+      "9d317b87-3d3b-40b1-b672-2a16f145e29f",
+      "9f7ac8fd-1752-4ccf-8837-2023412f10fc",
+      "9fbd792c-3d23-4067-95ad-29bd7846a033",
+      "a39b0681-a811-4372-aa55-6b320fb8bf79",
+      "a509c9e8-c41f-4d68-9df3-7ac831cfb380",
+      "a60b6cf3-08ad-41a5-ad9b-0a7aab62c644",
+      "a666c22f-4e8d-4691-91b9-c3ae00b8bb6a",
+      "a806b123-280b-400b-b871-2cbbd17a1b5c",
+      "a9a9c71e-f66d-498c-92a1-381e48f81d0c",
+      "aad60a2d-8cd9-4cb1-a393-8503ff910dc6",
+      "abcab9f3-6110-4d2c-ad52-7dcf37537e42",
+      "affdac32-69db-4d97-8b3e-88fa66ba1641",
+      "b17e7a06-11bf-4d18-8182-8462deb0956d",
+      "b3104994-2609-4be0-8a29-0b778fc22c16",
+      "b3b9cd1e-47fe-4d34-adfd-147c85c15aa8",
+      "b62803fe-821b-4743-9272-a2884f4ce6f6",
+      "b8316806-d4e0-489f-9a19-85759e4c4579",
+      "bc472747-bd1f-4302-b4c1-caa788d2886d",
+      "bc4eaf4b-b9dd-4d03-a667-afd6c159292b",
+      "bc812ee7-7f3b-4d2b-b220-a94429b20ff9",
+      "bd9d9383-c820-48bd-8e05-d1b7d88dc9f4",
+      "be9b02df-22b5-4c7a-a016-8a3446f47e56",
+      "be9dd857-801b-4415-9c7b-3b488f3fdd72",
+      "c0f7f231-4c42-447d-9763-adf5ad745bf6",
+      "c11cf417-7403-4e5d-a5d2-bee9b00f35bf",
+      "c8ce34a0-db2f-46de-afbd-cd813f98223a",
+      "ca140b84-e57c-4015-81ba-b588d0ae26da",
+      "ca5fa675-92ff-409d-b7a3-fb52459aaeec",
+      "ca62bde3-f4f0-4cfb-8d8e-6e6a0c04a09c",
+      "cabc1c33-c7f8-483c-af22-a2ae1dd155b8",
+      "cbd038b3-4118-4dad-873b-48060823b05d",
+      "cc8a9881-e201-4b98-8a73-cdec660a5ea5",
+      "cda15c5a-f2dd-4198-ac8d-06503fcc97af",
+      "d1b19dc4-2403-4fa6-9e08-2e96a19e2e20",
+      "d7c73edb-4a45-4d99-a6fa-17d1724eaf69",
+      "d911769f-8277-45ea-9882-da10d1b3bf55",
+      "dd3c7dee-2352-42e5-9b33-69a306338ef1",
+      "deec6b61-56c4-4eb5-b446-97a4f259332b",
+      "e3f9723a-179d-42fe-a324-613c5d7899f2",
+      "e4d74ef4-3e50-442f-aaae-b0e5e33fba62",
+      "e6c88871-945d-401c-95e3-dd2ed3b2c1ab",
+      "eb63c0d4-31c9-44cd-81ca-4b55fcd97f28",
+      "ec85a234-4355-4712-899e-5f340a713ac5",
+      "ecb9562a-5268-430e-957f-2f7e276384d2",
+      "eef40308-d0f7-4bd9-904c-b631fe278631",
+      "f123b36a-5193-4f11-aa7b-f98e0d9f0c00",
+      "f200a8a8-d625-41e8-a11e-c0b7345c0f23",
+      "f3a86172-d43f-493a-9a30-e1e190adea5f",
+      "f5d3c68d-5c05-4462-9c14-0c702db5d0cf",
+      "f86eaa3d-2f2a-4274-8ac8-fac74e51fa2c",
+      "f8c27cd2-23a4-4141-9276-d4b84b98d057",
+      "fc53bf24-a317-4e1a-bbf0-020bc046a318",
+      "fdd437b7-c29d-44fb-82d5-c0ddd7a164b6"
+    ],
+    "orphan_or_unavailable_outputs_used": 0,
+    "training_operations": 0,
+    "pre_dispatch_ids_verified": 137,
+    "all_attempts_with_pre_dispatch_ids_verified": 137,
+    "native_rendering_and_request_signatures_verified": 137,
+    "exact_replacement_signatures_verified": 0,
+    "sft_optimizer_operations": 0,
+    "rl_training_operations": 0
+  },
+  "interpretation": "Candidate-set qualification on the same 32 training-pool animal games for raw base and the existing format-SFT checkpoint. These cases are development data, not frozen-test evaluation. No new training occurred. The main task measures question selection given environment-computed candidate state.",
+  "grammar_version": "attribute-codes-v2",
+  "pooled_valid_turns": 135,
+  "pooled_turns": 137,
+  "pooled_valid_turn_rate": 0.9854014598540146,
+  "decision": "qualified_stop_before_rl",
+  "qualification_wins": 23
+}

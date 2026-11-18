@@ -335,6 +335,9 @@ class GuardedTinker:
                         session_id=self.state["session_id"],
                         sampling_session_seq_id=seq,
                         base_model=model,
+                        model_path=self.config.get("sampling_checkpoint_paths", {}).get(
+                            model
+                        ),
                     )
                 ),
             )
@@ -342,6 +345,9 @@ class GuardedTinker:
                 "id": result["sampling_session_id"],
                 "next_seq": 0,
             }
+            checkpoint = self.config.get("sampling_checkpoint_paths", {}).get(model)
+            if checkpoint:
+                self.state["samplers"][model]["model_path"] = checkpoint
             save_json(self.state_path, self.state)
         return self.state["samplers"][model]
 

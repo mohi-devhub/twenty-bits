@@ -1,12 +1,15 @@
 # Main comparisons
 
-The main study compares the base policy with scheduled endpoint checkpoints under the approved paid plan. This file records the comparisons before main training.
+The main study concerns question selection **given environment-computed candidate state**, under `candidate-set-v1` in PROTOCOL.md. It does not claim learned state tracking. Main comparisons use the selected pre-RL initialization as the matched control, with the same candidate-feedback prompt, grammar and frozen cases as the RL endpoints. If the user chooses SFT, that checkpoint is the RL control, and raw-base versus final includes both SFT and RL. If the user chooses raw base, it is the direct RL control. Historical no-list Phase 2 is not an isolated RL comparison. This file records comparisons before any RL or main training.
 
 1. Outcome-only RL: paired change in EIG/question, win rate, and questions/win on the same frozen noiseless animal games, with N=128 reported separately.
 2. Strategy: item-equality rate, singleton search, large name lists, and native predicate token length. Transfer is also stratified by enumeration behavior. A legal enumeration strategy is reported as a result.
 3. Transfer: base-versus-trained changes on relabeled synthetic at N=32,128,256. The N=256 result combines domain and size transfer. Held-out animals are profiles, with shared underlying types disclosed in data/WORLDS.md.
 4. Noise: condition B versus A at p=0.10 for paired win rate, EIG, and next-action re-ask rate after unlikely answers. Always report the denominator of re-ask opportunities. A zero or small denominator cannot support a strong behavioral claim.
 5. Tokens: native action and visible reasoning tokens per game. With thinking disabled, zero reasoning is a protocol choice and does not show that training reduced internal computation.
+6. Hard mode: at the end, evaluate raw base and the scheduled final model on the same two frozen games per cell without candidate feedback (20 games per model, evals/hard_mode.json). This is a small descriptive pipeline comparison with wide intervals, not training data or a checkpoint-selection criterion. It tests behavior without supplied state; the main claim remains restricted to the candidate-set condition.
+
+The paired 32-game candidate-set development check uses exactly the previous qualification cases and requested generation seeds for raw base and format SFT. The SFT policy must reach at least 90% pooled valid turns and 8/32 wins before proposing, not starting, a 16-update A pilot. The two slices share a $0.50 cap including holds, implemented as $0.25 per policy. Noisy feedback uses the fixed 0.001 threshold plus MAP; exact EIG still uses the full posterior. All unchanged frozen-game hashes and separately versioned prompt hashes must be checked before evaluation.
 
 Resample complete games, preserve pairing between base and trained outputs and between the two noise versions of each underlying case, and use 10,000 bootstrap draws in the paid analysis. Across training runs, resample seeds before games. Report seed-level point estimates as well as intervals. A condition with one seed has no estimate of between-seed variation. Two or three seeds still give unstable seed uncertainty; the plans show a sensitivity calculation rather than promising a tight interval.
 

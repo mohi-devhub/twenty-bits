@@ -1,0 +1,18 @@
+{
+  "mode": "no_candidate_list",
+  "message_builder": "twenty_bits.learnability.probe_messages",
+  "grammar_version": "attribute-codes-v2",
+  "train_on_this_mode": false,
+  "models": [
+    "raw_base",
+    "final_rl_endpoint"
+  ],
+  "indices_per_cell": [
+    0,
+    1
+  ],
+  "cells": 10,
+  "games_per_model": 20,
+  "sampling_authorized_now": false,
+  "interpretation": "Descriptive pipeline comparison; raw base versus final includes SFT. Use the matched pre-RL SFT control for isolated RL comparisons in the main condition."
+}

@@ -1,5 +1,9 @@
 # Approved $50 budget and Phase 2
 
+The current main condition is candidate set provided. Paired training-pool qualification completed for **$0.019543** against the approved **$0.50 including holds**, with no new holds. Raw base won 23/32 with 98.5% validity; existing SFT won 14/32 with 91.9%. Both pass. [CANDIDATE_GATE.md](CANDIDATE_GATE.md) is the current gate. Total usage is $6.335229, holds are $0.112813, and $43.551958 remains. The proposed 16-update A pilot forecasts $1.56 including margin and checkpoint holds, with a $2.00 spending ceiling; raw base is recommended and initialization awaits approval. No RL is authorized. The frozen primary 28-per-cell slice remains the future main comparison; it must use a newly sampled matched candidate-feedback control. The end-of-project no-list hard slice has 20 games per model and is evaluation-only.
+
+## Historical alias and SFT gate
+
 The gpt-oss-120b reference is removed from all future plans. Its completed 20-game slice remains historical failure data because 157 of 220 generated turns exhausted the reasoning cap without an action. No further reference games or reference-model budget are allocated. The active model remains Qwen3-8B.
 
 The user approved an exact attribute-code alias probe capped at $0.25 including holds, followed conditionally by format SFT and qualification. The alias probe completed for $0.082031 and reached 72.6% pooled valid turns, below the declared 80% trigger. SFT and qualification then completed for $0.370867 with $0.100000 in storage holds, inside the conservative $2.51 combined cap. Qualification passed format at 92.0% but failed wins at 3/32. [ALIAS_GATE.md](ALIAS_GATE.md) is the current gate. Total usage is $6.315686, holds are $0.112813, and $43.571501 remains. No RL is authorized or scheduled.

@@ -57,3 +57,11 @@ The table already showed short column codes, so accepting those codes as exact a
 The alias probe reached 72.6% valid turns, below the agreed 80% trigger. That activated the user's conditional format SFT approval. We trained only the current assistant action on random-question toy games. Training loss fell and qualification reached 92.0% valid turns, but only 3/32 games won. Seventeen guesses named candidates already ruled out by answers. The greedy script won all 32 of those cases. Valid grammar and informative questions are not enough if the final guess ignores the evidence.
 
 This warm start uses cross-entropy, not RL. It introduces an attribute-question prior and exposure to random-table tasks, so future strategy and transfer claims need that disclosure and a warm-start control. The adapter is saved locally. Qualification missed its win requirement, so we stopped before RL. [ALIAS_GATE.md](ALIAS_GATE.md) records the numbers, holds, and next decision.
+
+## Supplying the candidate set
+
+We now give the model the remaining names after each answer. Noiseless lists are exact. Noisy lists use a fixed probability threshold plus the top candidate; names can reappear. The table and old lists stay in the conversation, so a shorter new list does not make the whole prompt shorter. We measured those native token sequences and saved new hashes alongside the old frozen hashes.
+
+Both policies qualified: raw base won 23/32 and format SFT won 14/32. Neither guessed an eliminated item or guessed wrongly at singleton. Repeated uninformative questions and failing to guess at the budget remain useful RL targets. The SFT checkpoint was reused without more training; on this slice its random-attribute prior did not help. Raw base is the recommended pilot initialization, pending approval.
+
+This changes what the project can claim: the main task tests question selection given state, while no-list state tracking is a small evaluation-only hard mode. EIG is still measured, never rewarded. The priced pilot has groups of eight and the unchanged four-update variance stop rule. No RL ran. [CANDIDATE_GATE.md](CANDIDATE_GATE.md) records the qualification and proposal.
