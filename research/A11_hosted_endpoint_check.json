@@ -1,0 +1,29 @@
+{
+  "immutable_A11_sampler": {
+    "available": true,
+    "info": {
+      "sampler_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30",
+      "base_model": "Qwen/Qwen3-8B",
+      "model_path": "tinker://7d53de3c-6abe-51ed-badf-c984e315c365:train:0/sampler_weights/~ephemeral_90"
+    }
+  },
+  "hosted_A11_model": {
+    "available": true,
+    "info": {
+      "type": "get_info",
+      "model_id": "7d53de3c-6abe-51ed-badf-c984e315c365:train:0",
+      "optimizer_config": {
+        "type": "adamw"
+      },
+      "is_lora": true,
+      "lora_rank": 32,
+      "model_data": {
+        "model_name": "Qwen/Qwen3-8B",
+        "tokenizer_id": "Qwen/Qwen3-8B",
+        "max_context_length": null,
+        "trainable": null,
+        "sampleable": null
+      }
+    }
+  }
+}

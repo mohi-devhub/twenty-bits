@@ -1,0 +1,49 @@
+{
+  "recorded_at": "2026-11-18T20:12:14.314933+00:00",
+  "source": "User: skip unavailable A11 endpoint evaluations; verify permanent native persistence, then A23; stop before B41.",
+  "A11_suffix_status": "not run: A11 checkpoint wasn't persisted, external uploads unavailable",
+  "A11_hard_mode_status": "not run: A11 checkpoint wasn't persisted, external uploads unavailable",
+  "A11_local_adapter": "archive only; no external upload or reuse",
+  "persistence_test": {
+    "required_before_A23": true,
+    "throwaway_only": true,
+    "no_expiry": true,
+    "fresh_client_sample": true,
+    "console_verification": true,
+    "delete_test_afterwards": true,
+    "ceiling_including_holds_usd": "0.700000"
+  },
+  "main_endpoints": {
+    "native_training_and_sampler": true,
+    "ttl_seconds": null,
+    "external_reupload": false,
+    "storage_rate_paid_bound_usd_per_GB_month": "0.10",
+    "initial_storage_hold_coverage_days": 30
+  },
+  "A23_updates": 30,
+  "A23_group_size": 8,
+  "primary_protocol_unchanged": true,
+  "A23_endpoint_evaluations": [
+    "frozen_primary_280",
+    "suffix_diagnostic_168",
+    "hard_mode_raw_20_plus_endpoint_20"
+  ],
+  "suffix_cap_including_holds_usd": "1.500000",
+  "global_cap_including_holds_usd": "50.000000",
+  "active_stage": "persistence_test_then_A23",
+  "stop_before_B41": true,
+  "protected_checkpoint_names": [
+    "sampler_weights/evaluation",
+    "weights/final",
+    "weights/B-best"
+  ],
+  "budget_before_test": {
+    "cap_usd": "50.000000",
+    "spent_usd": "11.015850",
+    "held_usd": "0.491234",
+    "available_usd": "38.492916",
+    "blocked": false
+  },
+  "conservative_remaining_forecast_including_margin_usd": "30.677091564759925",
+  "forecast_basis": "Remaining U forecast removes external reupload and old two-hour storage allowance. Adds a conservative 4 GB per native checkpoint for four permanent files, priced for 30 days, plus full diagnostic and test ceilings. Update with measured native sizes before A23. No billing-plan change."
+}

@@ -1,0 +1,9 @@
+{
+  "status": "not run: A11 checkpoint wasn't persisted, external uploads unavailable",
+  "usable_games": 0,
+  "excluded_original_requests": 16,
+  "held_usd": "0.023700",
+  "original_outputs_permanently_excluded": true,
+  "exact_replacements_not_run": true,
+  "A11_hard_mode": "not run: A11 checkpoint wasn't persisted, external uploads unavailable"
+}

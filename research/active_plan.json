@@ -1,5 +1,5 @@
 {
-  "status": "A11 completed; stopped for the mandatory user gate decision",
+  "status": "Verify native persistence, then run unchanged A23 and its three endpoint evaluations; stop before B41.",
   "initial_policy": "raw_base_no_sft",
   "sft_checkpoint": null,
   "sft_removal_reason": "Paired candidate-set qualification: SFT EIG lower by 0.1444 bits/question; raw base selected by user.",
@@ -44,7 +44,7 @@
   ],
   "training_games": 240,
   "development_games": 64,
-  "rl_authorized_scope": "A11 is complete. No paid continuation before the mandatory gate decision.",
+  "rl_authorized_scope": "A23: 30 updates, groups of eight; primary, suffix auxiliary and hard-mode endpoints; B41 requires gate confirmation.",
   "main_runs_authorized": true,
   "reference_model": null,
   "project_usage_at_recording": {
@@ -108,7 +108,7 @@
       "total_with_1_5_margin_usd": 42.480710971200004
     }
   },
-  "active_stage": "A11_gate",
+  "active_stage": "awaiting_native_console_verification",
   "next_stage_requires_gate_decision": true,
   "main_approval": "research/main_U_approval.json",
   "main_seed_config": "experiments/main_A11.json",
@@ -116,7 +116,7 @@
   "training_updates_completed": 30,
   "raw_control_games_saved": 280,
   "incident": "research/main_A11_recovery_incident.json",
-  "next_action": "Wait for user decision before A23, B41, hard mode or other paid work.",
+  "next_action": "Pending Chrome permission or user console confirmation; then delete exact native test checkpoints and start approved A23 without another plan decision.",
   "paused": false,
   "pause_record": "research/main_A11_pause.json",
   "standing_replacement_rule": "research/replacement_policy.json",
@@ -144,5 +144,10 @@
   "dispatch_authorized_now": false,
   "endpoint_games_saved": 280,
   "reused_raw_development_games": 8,
-  "current_gate": "MAIN_A11_GATE.md"
+  "current_gate": null,
+  "next_gate": "MAIN_A23_GATE.md",
+  "continuation_approval": "research/main_U_continuation_approval.json",
+  "diagnostic_config": "experiments/A23_suffix_diagnostic.json",
+  "B41_confirmation_pending": true,
+  "persistence_approval": "research/native_persistence_approval.json"
 }

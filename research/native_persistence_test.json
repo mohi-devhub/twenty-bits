@@ -1,0 +1,50 @@
+{
+  "saved_at": "2026-11-18T20:13:04.659455+00:00",
+  "source_model_id": "0bf5f21e-507e-50ac-94f6-50cb387aa043:train:0",
+  "checkpoints": {
+    "training": {
+      "checkpoint_type": "training",
+      "time": "2026-11-18T20:12:52.594641Z",
+      "size_bytes": 1107556469,
+      "public": false,
+      "user_metadata": null,
+      "expires_at": null,
+      "deleted_at": null,
+      "checkpoint_id": "weights/persistence-smoke-20261119",
+      "tinker_path": "tinker://0bf5f21e-507e-50ac-94f6-50cb387aa043:train:0/weights/persistence-smoke-20261119",
+      "base_model": "Qwen/Qwen3-8B",
+      "owner": "tml:organization_user:b91ce9f2-ec42-4d67-9e54-063e8d3ba6ee",
+      "storage_rate_usd_per_GB_month": "0.10",
+      "monthly_paid_plan_usd": "0.11075564690",
+      "billing_reconciled": false,
+      "retention": "no expiry; hold is a priced reserve, not a settled invoice"
+    },
+    "sampler": {
+      "checkpoint_type": "sampler",
+      "time": "2026-11-18T20:13:01.970181Z",
+      "size_bytes": 369266765,
+      "public": false,
+      "user_metadata": null,
+      "expires_at": null,
+      "deleted_at": null,
+      "checkpoint_id": "sampler_weights/persistence-smoke-20261119",
+      "tinker_path": "tinker://0bf5f21e-507e-50ac-94f6-50cb387aa043:train:0/sampler_weights/persistence-smoke-20261119",
+      "base_model": "Qwen/Qwen3-8B",
+      "owner": "tml:organization_user:b91ce9f2-ec42-4d67-9e54-063e8d3ba6ee",
+      "storage_rate_usd_per_GB_month": "0.10",
+      "monthly_paid_plan_usd": "0.03692667650",
+      "billing_reconciled": false,
+      "retention": "no expiry; hold is a priced reserve, not a settled invoice"
+    }
+  },
+  "gradients_or_optimizer_steps": 0,
+  "console_verified": false,
+  "test_checkpoints_deleted": false,
+  "fresh_client_sample_passed": true,
+  "source_finished_before_sample": true,
+  "fresh_session_id": "b94f0db9-db63-5778-8f9b-aa824d853a8d",
+  "sample_text": "READY.<|im_end|>",
+  "sample_request_id": "b94f0db9-db63-5778-8f9b-aa824d853a8d:sample:0:0",
+  "sample_cost_usd": "0.000006",
+  "sample_output_tokens": 3
+}

@@ -1,0 +1,20 @@
+{
+  "source_weights_info": {
+    "error_type": "NotFoundError",
+    "http_status": 404
+  },
+  "clone": {
+    "expected_sampler_id": "bd496a1d-f410-5a76-948e-bc7522c35804:sample:0",
+    "request": {
+      "session_id": "bd496a1d-f410-5a76-948e-bc7522c35804",
+      "sampling_session_seq_id": 0,
+      "base_model": "Qwen/Qwen3-8B",
+      "model_path": "tinker://7d53de3c-6abe-51ed-badf-c984e315c365:train:0/sampler_weights/~ephemeral_90",
+      "type": "create_sampling_session"
+    },
+    "success": false,
+    "error_type": "NotFoundError",
+    "http_status": 404,
+    "detail": "{'detail': 'Weights not found for model_path tinker://7d53de3c-6abe-51ed-badf-c984e315c365:train:0/sampler_weights/~ephemeral_90'}"
+  }
+}

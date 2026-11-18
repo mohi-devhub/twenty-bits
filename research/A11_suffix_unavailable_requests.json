@@ -1,0 +1,76 @@
+{
+  "date": "2026-11-19",
+  "requests": [
+    {
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2421",
+      "status": "unavailable_original_excluded_hold_retained"
+    },
+    {
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2406",
+      "status": "unavailable_original_excluded_hold_retained"
+    },
+    {
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2417",
+      "status": "unavailable_original_excluded_hold_retained"
+    },
+    {
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2416",
+      "status": "unavailable_original_excluded_hold_retained"
+    },
+    {
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2407",
+      "status": "unavailable_original_excluded_hold_retained"
+    },
+    {
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2411",
+      "status": "unavailable_original_excluded_hold_retained"
+    },
+    {
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2414",
+      "status": "unavailable_original_excluded_hold_retained"
+    },
+    {
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2408",
+      "status": "unavailable_original_excluded_hold_retained"
+    },
+    {
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2415",
+      "status": "unavailable_original_excluded_hold_retained"
+    },
+    {
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2409",
+      "status": "unavailable_original_excluded_hold_retained"
+    },
+    {
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2410",
+      "status": "unavailable_original_excluded_hold_retained"
+    },
+    {
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2419",
+      "status": "unavailable_original_excluded_hold_retained"
+    },
+    {
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2412",
+      "status": "unavailable_original_excluded_hold_retained"
+    },
+    {
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2418",
+      "status": "unavailable_original_excluded_hold_retained"
+    },
+    {
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2413",
+      "status": "unavailable_original_excluded_hold_retained"
+    },
+    {
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2420",
+      "status": "unavailable_original_excluded_hold_retained"
+    }
+  ],
+  "replacements_submitted": 0,
+  "original_outputs_permanently_excluded": true,
+  "run_budget": {
+    "spent_usd": "0.000000",
+    "held_usd": "0.023700"
+  },
+  "lost_original_holds_global_usd": "0.041234"
+}

@@ -1,0 +1,144 @@
+{
+  "run_id": "A11-suffix-diagnostic-v1",
+  "approval_date": "2026-11-18",
+  "approved_cap_usd": "50.000000",
+  "primary_model": "Qwen/Qwen3-8B",
+  "primary_games_per_cell": 28,
+  "primary_output_cap": 2048,
+  "primary_thinking": false,
+  "reference_model": null,
+  "reference_games_per_cell": 0,
+  "reference_sizes": [],
+  "reference_output_cap": 512,
+  "reference_reasoning_effort": "medium",
+  "reference_template_date": "2026-11-18",
+  "temperature": 0.7,
+  "top_p": 1.0,
+  "top_k": -1,
+  "context_window": 32768,
+  "sampling_seed_namespace": "main-U-v1/evaluation",
+  "groups_per_training_update": 1,
+  "games_per_training_group": 8,
+  "training_authorized": false,
+  "pilot_condition": "A",
+  "concurrent_games": 4,
+  "cost_source": "research/tinker-models-2026-11-17.json",
+  "rendering_proof": "research/phase2_rendering.json",
+  "prompt_version": "candidate-set-v1",
+  "active_models": [
+    "Qwen/Qwen3-8B"
+  ],
+  "display_name": "Twenty Bits A11 suffix parser diagnostic ONLY",
+  "run_cap_usd": "1.500000",
+  "sizes": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "noise": 0,
+  "remaining_candidate_feedback": true,
+  "grammar_version": "attribute-codes-v2",
+  "policy": "diagnostic_suffix_only",
+  "incident_record": null,
+  "rl_training_authorized": false,
+  "posterior_threshold": 0.001,
+  "sampling_checkpoint_paths": {},
+  "ledger_phase": 4,
+  "initial_policy": "saved_A11_endpoint",
+  "observation_mode": "candidate_set",
+  "training_kind": "outcome_only_rl",
+  "updates": 30,
+  "curriculum": [
+    {
+      "n": 4,
+      "updates": 2,
+      "games_per_seed": 16
+    },
+    {
+      "n": 8,
+      "updates": 2,
+      "games_per_seed": 16
+    },
+    {
+      "n": 16,
+      "updates": 11,
+      "games_per_seed": 88
+    },
+    {
+      "n": 32,
+      "updates": 7,
+      "games_per_seed": 56
+    },
+    {
+      "n": 64,
+      "updates": 4,
+      "games_per_seed": 32
+    },
+    {
+      "n": 128,
+      "updates": 4,
+      "games_per_seed": 32
+    }
+  ],
+  "development_checks": [
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    30
+  ],
+  "kept_checkpoints": [
+    30
+  ],
+  "checkpoint_ttl_seconds": 7200,
+  "lora": {
+    "rank": 32,
+    "seed": 11,
+    "train_mlp": true,
+    "train_attn": true,
+    "train_unembed": true
+  },
+  "adam": {
+    "learning_rate": 4e-05,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "grad_clip_norm": 0
+  },
+  "loss_fn": "importance_sampling",
+  "loss_fn_config": null,
+  "kl_penalty_coef": 0,
+  "reward": {
+    "win": 1,
+    "per_question": -0.03,
+    "per_invalid": -0.1,
+    "information_shaping": false
+  },
+  "variance_stop": null,
+  "cookbook_pin": "6c081121b90dbc290b4550eb9fd9f646f8e4960a",
+  "sdk_version": "0.39.1",
+  "checkpoint_prefix": "main-A-seed11",
+  "guess_metric_version": "guess-with-k-v1",
+  "stage_gate": "Finish the labelled 168-game diagnostic before A23. B41 remains gated after A23.",
+  "diagnostic_parser_version": "suffix-tolerant-v1",
+  "is_primary_result": false,
+  "source_adapter_files": {
+    "adapter_config.json": {
+      "bytes": 934,
+      "sha256": "7c4821f8f443de1d52d092093c5bdb57bafcfe431bd83b0c28b51852283a86bd"
+    },
+    "adapter_model.safetensors": {
+      "bytes": 369220610,
+      "sha256": "76af0d292b679a90369477db91d59f1bf1a037dea557a2842784605ff5e03457"
+    }
+  },
+  "source_checkpoint": "tinker://7d53de3c-6abe-51ed-badf-c984e315c365:train:0/external_weights/main-A-seed11-final-step-30",
+  "source_primary_config_sha256": "bbe0e0aad7eddb7c29bb6d3279b64209762e31b711fb0cc05c0b7d7cdbf0c6d8"
+}

@@ -1,0 +1,22 @@
+{
+  "recorded_at": "2026-11-18T20:22:26.001138+00:00",
+  "prior_ledger_entries_and_approvals_unchanged": true,
+  "budget": {
+    "cap_usd": "50.000000",
+    "spent_usd": "11.015856",
+    "held_usd": "1.131236",
+    "available_usd": "37.852908",
+    "blocked": false
+  },
+  "A23_sampling_or_training_submitted": false,
+  "B41_started": false,
+  "native_API_save_and_fresh_client_passed": true,
+  "console_verification_pending": true,
+  "test_checkpoint_deletion_pending_console": true,
+  "test_source_and_fresh_client_finished": true,
+  "in_flight_HTTP_operations": 0,
+  "A11_suffix_and_hard_mode": "not run: A11 checkpoint wasn't persisted, external uploads unavailable",
+  "remaining_U_including_margin_and_suffix_ceiling_usd": "28.463185505159925",
+  "next_action": "Console verification, exact test checkpoint cleanup, then run scripts/run_A23_stage.py with caffeinate.",
+  "unit_tests_passed": 154
+}

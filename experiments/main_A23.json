@@ -1,0 +1,151 @@
+{
+  "run_id": "main-U-A23-v1",
+  "approval_date": "2026-11-18",
+  "approved_cap_usd": "50.000000",
+  "primary_model": "Qwen/Qwen3-8B",
+  "primary_games_per_cell": 28,
+  "primary_output_cap": 2048,
+  "primary_thinking": false,
+  "reference_model": null,
+  "reference_games_per_cell": 0,
+  "reference_sizes": [],
+  "reference_output_cap": 512,
+  "reference_reasoning_effort": "medium",
+  "reference_template_date": "2026-11-18",
+  "temperature": 0.7,
+  "top_p": 1.0,
+  "top_k": -1,
+  "context_window": 32768,
+  "sampling_seed_namespace": "main-U-v1",
+  "groups_per_training_update": 1,
+  "games_per_training_group": 8,
+  "training_authorized": true,
+  "pilot_condition": "A",
+  "concurrent_games": 4,
+  "cost_source": "research/tinker-models-2026-11-17.json",
+  "rendering_proof": "research/phase2_rendering.json",
+  "prompt_version": "candidate-set-v1",
+  "active_models": [
+    "Qwen/Qwen3-8B"
+  ],
+  "display_name": "Twenty Bits main A seed 23",
+  "run_cap_usd": "42.490000",
+  "sizes": [
+    4,
+    8,
+    16,
+    32,
+    64,
+    128
+  ],
+  "noise": 0,
+  "remaining_candidate_feedback": true,
+  "grammar_version": "attribute-codes-v2",
+  "policy": "main_A23",
+  "incident_record": null,
+  "rl_training_authorized": true,
+  "posterior_threshold": 0.001,
+  "sampling_checkpoint_paths": {},
+  "ledger_phase": 4,
+  "initial_policy": "raw_base",
+  "observation_mode": "candidate_set",
+  "training_kind": "outcome_only_rl",
+  "updates": 30,
+  "curriculum": [
+    {
+      "n": 4,
+      "updates": 2,
+      "games_per_seed": 16
+    },
+    {
+      "n": 8,
+      "updates": 2,
+      "games_per_seed": 16
+    },
+    {
+      "n": 16,
+      "updates": 11,
+      "games_per_seed": 88
+    },
+    {
+      "n": 32,
+      "updates": 7,
+      "games_per_seed": 56
+    },
+    {
+      "n": 64,
+      "updates": 4,
+      "games_per_seed": 32
+    },
+    {
+      "n": 128,
+      "updates": 4,
+      "games_per_seed": 32
+    }
+  ],
+  "development_checks": [
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    30
+  ],
+  "kept_checkpoints": [
+    30
+  ],
+  "checkpoint_ttl_seconds": null,
+  "lora": {
+    "rank": 32,
+    "seed": 23,
+    "train_mlp": true,
+    "train_attn": true,
+    "train_unembed": true
+  },
+  "adam": {
+    "learning_rate": 4e-05,
+    "beta1": 0.9,
+    "beta2": 0.95,
+    "eps": 1e-08,
+    "weight_decay": 0,
+    "grad_clip_norm": 0
+  },
+  "loss_fn": "importance_sampling",
+  "loss_fn_config": null,
+  "kl_penalty_coef": 0,
+  "reward": {
+    "win": 1,
+    "per_question": -0.03,
+    "per_invalid": -0.1,
+    "information_shaping": false
+  },
+  "variance_stop": null,
+  "cookbook_pin": "6c081121b90dbc290b4550eb9fd9f646f8e4960a",
+  "sdk_version": "0.39.1",
+  "checkpoint_prefix": "main-A-seed23",
+  "guess_metric_version": "guess-with-k-v1",
+  "stage_gate": "Stop after A seed 23 endpoint, before B seed 41 confirmation.",
+  "permanent_storage": {
+    "training": {
+      "measured_test_bytes": 1107556469,
+      "size_multiplier": 2,
+      "coverage_days": 30,
+      "estimated_usd": "0.22151129380",
+      "maximum_usd": "0.22151129380"
+    },
+    "sampler": {
+      "measured_test_bytes": 369266765,
+      "size_multiplier": 2,
+      "coverage_days": 30,
+      "estimated_usd": "0.0738533530",
+      "maximum_usd": "0.0738533530"
+    }
+  },
+  "endpoint_evaluations": [
+    "frozen_primary",
+    "suffix_diagnostic",
+    "hard_mode"
+  ]
+}

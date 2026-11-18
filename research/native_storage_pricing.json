@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-19",
+  "source": "https://tinker-docs.thinkingmachines.ai/administration/checkpoint-storage-pricing/",
+  "paid_usd_per_decimal_GB_month": "0.10",
+  "free_plan_GB_limit": 100,
+  "free_plan_checkpoint_limit": 100,
+  "org_plan_changed": false,
+  "forecast_assumes_paid_bound": true,
+  "test_files_deleted_after_console_verification": true,
+  "no_unknown_hold_released": true,
+  "measured_native_training_bytes": 1107556469,
+  "measured_native_sampler_bytes": 369266765,
+  "monthly_paid_pair_usd": "0.14768232340",
+  "main_hold_coverage_days": 30,
+  "main_size_multiplier": 2,
+  "reservation_multiplier": 1.5,
+  "main_pair_30_day_hold_usd": "0.443047",
+  "permanent_files_future_months": "No expiry is set. Reconcile storage against billing and reserve further months from the remaining project cap; never delete without authorization."
+}

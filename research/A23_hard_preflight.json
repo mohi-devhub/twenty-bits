@@ -1,0 +1,130 @@
+{
+  "config_sha256": "1ef3f58eed9e53a5881adb610d134a8aba2353aaeb1f467a53503eb6c80e6dfb",
+  "games_sha256": "a33ff13f5ac4569c48fe6969ba1ae6738820b363185abc694fada500c95e52a9",
+  "implementation_sha256": {
+    "scripts/run_A23_endpoint_aux.py": "56527a382aff643c2c5b26674c9fb7f608cb556151e84b9ffca92daf3ed522a2",
+    "twenty_bits/suffix_diagnostic.py": "4b21336084ee1916af2995e8112e0ba80c9252023c031641629bfff9149f3210",
+    "twenty_bits/model_player.py": "cc9acf2378325f7386aeb3d02048a89f19e360c3d8db4a77bbfa77014d5241e4",
+    "twenty_bits/game.py": "117853df865b022482235290caa080b45effae6aa67b4a4324c7f23e45e37e79",
+    "twenty_bits/predicates.py": "498e0f3246273fedc4a9baf20b8ea63826209ab4705ed899d8cac06a3f56f977",
+    "twenty_bits/recovery.py": "53f0c1b887563be80f47da308c38912f28316f4a21553fdd9c384823a19e4226",
+    "twenty_bits/tinker_transport.py": "b1c45aaf08e653ce58bdaab57ae754826d702c96fabf52d3abf20fb2ebfacff3",
+    "twenty_bits/budget.py": "85f274bbd5fee51730ab5b995fdd0e9a76acdfd07a3970216bd4ca94107a71c5",
+    "twenty_bits/candidate_feedback.py": "5e62867e4dd0bf768c74146c06d1d6cddd755d75bfa852737aa3f0fbf3b581e1",
+    "twenty_bits/learnability.py": "f73a412bfee21edf81c218e907b46dd93a10420ea4d85e0fc5214ca0fe30da0f",
+    "twenty_bits/tinker_rendering.py": "bdefa45558a83ceb85d89ef6701001dfeb0e5c90c0508d109ed8850e3cfdd1c4",
+    "twenty_bits/guess_metrics.py": "37083efa6522f12246d35a0b45c8ffb25a17121ff046f10be16debd24c84924b",
+    "twenty_bits/replacement_registry.py": "3b6c6ff119eb7b72d1bc9c5c34cb5081cb8edd29922bef71d571593b60399d17"
+  },
+  "native_tokenizer_parity": true,
+  "prompts": [
+    {
+      "id": "paid-v1/animals/32/0/p0",
+      "tokens": 1275,
+      "sha256": "f827e4e0b21ae4243990d4aaef84323806e31c11dd318b4e489d98d3e37e7238"
+    },
+    {
+      "id": "paid-v1/animals/32/1/p0",
+      "tokens": 1251,
+      "sha256": "82609876c053d9568d347f3a0fab98b0c9f232269caa1cc402cc10eae0cafdad"
+    },
+    {
+      "id": "paid-v1/animals/32/0/p0.1",
+      "tokens": 1275,
+      "sha256": "d0329ff88012875b1a4d5c959c0d9daba20e0a2f91c39fd46f60ab039255b40b"
+    },
+    {
+      "id": "paid-v1/animals/32/1/p0.1",
+      "tokens": 1251,
+      "sha256": "c87b7009d8050247e295918c1399872c951fbc29554d7abc3d252a2be6f261ad"
+    },
+    {
+      "id": "paid-v1/animals/128/0/p0",
+      "tokens": 3354,
+      "sha256": "0459822a8c93f6ed2a6cb64b1aebfe063209274ae26fe79ea9cbcd849487bdd9"
+    },
+    {
+      "id": "paid-v1/animals/128/1/p0",
+      "tokens": 3307,
+      "sha256": "1b23b93bc8c70b6f6c65a12d911e58c11cdf565ddca20d2db82c4c9347e14359"
+    },
+    {
+      "id": "paid-v1/animals/128/0/p0.1",
+      "tokens": 3354,
+      "sha256": "a2a681fa8bb6928110ca42cb01652804efabcbc70ef4c945217c79e5c4aec3e7"
+    },
+    {
+      "id": "paid-v1/animals/128/1/p0.1",
+      "tokens": 3307,
+      "sha256": "57b6e5caf426cea3bd1d7e032c2404aaa35b2f9e1eeb193ab12343d27edf8872"
+    },
+    {
+      "id": "paid-v1/synthetic/32/0/p0",
+      "tokens": 1148,
+      "sha256": "d684dca90036759e3f6d84f5c01a2022d1ae1c033716bec5462c3c2fffc3d1ec"
+    },
+    {
+      "id": "paid-v1/synthetic/32/1/p0",
+      "tokens": 1158,
+      "sha256": "ca241a9cdc303c23d68d0e75d8d1e30a63f587a074d5f455831d05ae35ea532c"
+    },
+    {
+      "id": "paid-v1/synthetic/32/0/p0.1",
+      "tokens": 1148,
+      "sha256": "ec9122354f94741bc14287703f8f9fbfdc084f15b93be87c2f2c596723930ad1"
+    },
+    {
+      "id": "paid-v1/synthetic/32/1/p0.1",
+      "tokens": 1158,
+      "sha256": "b6fbbfe238d31eebb2b242f271eee0ee2a339dcb520bc04e79c72b069981599b"
+    },
+    {
+      "id": "paid-v1/synthetic/128/0/p0",
+      "tokens": 2891,
+      "sha256": "930186d054de1bd8f6c58b62faa97777ae06205683f53be66ce247f61270f5d3"
+    },
+    {
+      "id": "paid-v1/synthetic/128/1/p0",
+      "tokens": 2894,
+      "sha256": "ea0aee97d9165d3495532b4e1f3b5ac9046ef08800e85216fe12e9d03aa3363b"
+    },
+    {
+      "id": "paid-v1/synthetic/128/0/p0.1",
+      "tokens": 2891,
+      "sha256": "6638d140b643c5aef1b5167efb5da6e415853faf5b23691454a2e6bda3779a4b"
+    },
+    {
+      "id": "paid-v1/synthetic/128/1/p0.1",
+      "tokens": 2894,
+      "sha256": "81406ac858f4f1fb69b70c1352560212898a2b4684a82578c14ab898d5beae92"
+    },
+    {
+      "id": "paid-v1/synthetic/256/0/p0",
+      "tokens": 5203,
+      "sha256": "605e0e5c6320339a6eecfe3c26de8f4f9f29ea691db23a067696a46fb50c8221"
+    },
+    {
+      "id": "paid-v1/synthetic/256/1/p0",
+      "tokens": 5242,
+      "sha256": "7d0a08dbeb84c512f00aa3aa76f7f397ab060034c4488003e33237237bf56bc0"
+    },
+    {
+      "id": "paid-v1/synthetic/256/0/p0.1",
+      "tokens": 5203,
+      "sha256": "2b7bb2989229af10fe176a49bc55e0965e6a6877f78c5ed2911c129f1a276ab2"
+    },
+    {
+      "id": "paid-v1/synthetic/256/1/p0.1",
+      "tokens": 5242,
+      "sha256": "f175bfa9882f6a5d5fb35c234ef1044f31ecf0a84b94062540aca14ce71f6a30"
+    }
+  ],
+  "games_per_policy": 20,
+  "policies": 2,
+  "mode": "hard",
+  "is_primary_result": false,
+  "service_calls": 0,
+  "frozen_subset_target_noise_seeds_unchanged": true,
+  "source_policy": "A23 scheduled endpoint; fresh client from native permanent sampler",
+  "cap_including_holds_usd": "2.050000"
+}

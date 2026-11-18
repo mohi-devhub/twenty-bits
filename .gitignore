@@ -17,4 +17,9 @@ replays/renders/
 results/baselines/run.log
 research/token_measurements.log
 experiments/main_A11_games.json
+experiments/A11_suffix_diagnostic_games.json
+experiments/main_A23_games.json
 replays/.thumbnails/
+
+experiments/A23_suffix_games.json
+experiments/A23_hard_games.json

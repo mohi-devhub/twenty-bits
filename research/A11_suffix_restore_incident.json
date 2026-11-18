@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-19",
+  "upload_rejection": {
+    "http_status": 400,
+    "detail": "Uploading external weights is not enabled for this organization.",
+    "entry_id": "80ede8c9-2a03-4626-b0e1-10034dc0123c",
+    "files_uploaded": 0,
+    "actual_usd": "0.000000",
+    "known_rejection_settled_at_zero": true
+  },
+  "named_checkpoint_expired": true,
+  "immutable_A11_sampler": {
+    "available": true,
+    "info": {
+      "sampler_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30",
+      "base_model": "Qwen/Qwen3-8B",
+      "model_path": "tinker://7d53de3c-6abe-51ed-badf-c984e315c365:train:0/sampler_weights/~ephemeral_90"
+    }
+  },
+  "hosted_A11_model_available": true,
+  "fallback": "Join the exact immutable A11 endpoint sampler. New request sequences follow every matching ledger ID; no A11 response is reused, no weights or primary parsing rules change.",
+  "samples_submitted_before_fallback": 0,
+  "older_holds_unchanged": true
+}

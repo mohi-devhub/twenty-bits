@@ -1,0 +1,6 @@
+{
+  "date": "2026-11-19",
+  "scope": "Reporting only; no reward, rollout, parser, cap, checkpoint-selection or frozen-case change.",
+  "method": "10,000 bootstrap draws resampling A seeds 11/23 then paired complete frozen games, preserving matching targets/noise across policies and seeds. Equal cell weights. Two seeds limit between-seed inference.",
+  "new_primary_claims": false
+}

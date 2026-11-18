@@ -1,0 +1,193 @@
+{
+  "legacy_lost_entry_ids": [
+    "1189868a-f5b6-48eb-b6e1-a31529964760",
+    "12d0e19a-5dfc-492a-881d-38cb8c6730d5",
+    "2d5590e3-5e6d-4c12-b255-53f4832e6de6",
+    "319887b8-8731-4762-87ff-336c46857ef5",
+    "34406b12-f94c-4383-8fe0-e5c16d1339b3",
+    "4bfd623c-a3ca-4268-904b-bfe2ba552cee",
+    "78715f8c-59c0-4a1f-9f3f-c8102f4043d1",
+    "bdc5a4e7-57b4-4c59-b1a8-c15530edf862",
+    "e07652e7-cb4d-40de-bce0-c0251e75be1d",
+    "ebf4dda4-1b3f-4fc6-b5bc-b2886bf5b869",
+    "fa5ec920-1085-46e2-bd9e-0e5b0a78cebf"
+  ],
+  "cases": [
+    {
+      "logical_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/15/p0/turn-0",
+      "original_entry_id": "4c3b6ec7-c6d0-4c89-bdaf-43ee9269319f",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2421",
+      "signature": "385a775b90e7b8b9ccedf547fbf95f3fc5ce29429efd35cc7b803f3dea79409e",
+      "replacement_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/15/p0/turn-0/approved-replacement-v1",
+      "loss_observed_at": "2026-11-18T19:56:30.451339+00:00",
+      "loss_reason": "HTTP 404: unavailable saved future",
+      "replacements_used": 0,
+      "requires_approval": false
+    },
+    {
+      "logical_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/5/p0/turn-0",
+      "original_entry_id": "2fe7e80f-fad0-4719-a5c0-6dedbc3afab0",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2411",
+      "signature": "990b0c41f7dbcec86a66dd60ff4099ca9db571546ed1ad847e4deca103a042b7",
+      "replacement_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/5/p0/turn-0/approved-replacement-v1",
+      "loss_observed_at": "2026-11-18T19:56:31.108612+00:00",
+      "loss_reason": "HTTP 404: unavailable saved future",
+      "replacements_used": 0,
+      "requires_approval": false
+    },
+    {
+      "logical_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/14/p0/turn-0",
+      "original_entry_id": "6bd1d521-44c8-4d85-b4b2-75a50fe182af",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2420",
+      "signature": "54200b97df10484fce721e2cbb442177e0e7c18a91e585ecb739581547c834b3",
+      "replacement_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/14/p0/turn-0/approved-replacement-v1",
+      "loss_observed_at": "2026-11-18T19:56:31.767061+00:00",
+      "loss_reason": "HTTP 404: unavailable saved future",
+      "replacements_used": 0,
+      "requires_approval": false
+    },
+    {
+      "logical_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/8/p0/turn-0",
+      "original_entry_id": "3bb8dc92-78d5-4def-8e61-37c2435c4e64",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2414",
+      "signature": "a8d1148b66dfcf7cfa8def182c1fa693dd0234b0157937fdcadf87a3ceb02aa3",
+      "replacement_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/8/p0/turn-0/approved-replacement-v1",
+      "loss_observed_at": "2026-11-18T19:56:32.416162+00:00",
+      "loss_reason": "HTTP 404: unavailable saved future",
+      "replacements_used": 0,
+      "requires_approval": false
+    },
+    {
+      "logical_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/7/p0/turn-0",
+      "original_entry_id": "807a69ad-3280-4823-ab3e-602aa62d1918",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2413",
+      "signature": "b73a4d5e947463cc94b9edd80bf2689dd2b1f6c1c21f8cbc09fc57c3761d8cd1",
+      "replacement_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/7/p0/turn-0/approved-replacement-v1",
+      "loss_observed_at": "2026-11-18T19:56:33.076227+00:00",
+      "loss_reason": "HTTP 404: unavailable saved future",
+      "replacements_used": 0,
+      "requires_approval": false
+    },
+    {
+      "logical_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/10/p0/turn-0",
+      "original_entry_id": "f291cd01-29ab-4a1f-9592-58e6228b30c5",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2416",
+      "signature": "c486ca43e398fae9cd5df5373baa8c53e9853bad9b4c2c2200f7fb2e5de81fba",
+      "replacement_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/10/p0/turn-0/approved-replacement-v1",
+      "loss_observed_at": "2026-11-18T19:56:33.743021+00:00",
+      "loss_reason": "HTTP 404: unavailable saved future",
+      "replacements_used": 0,
+      "requires_approval": false
+    },
+    {
+      "logical_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/0/p0/turn-0",
+      "original_entry_id": "656b65ef-b8a0-4082-8b92-ad33a3e628f8",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2406",
+      "signature": "f139896cfdc7a1feb03a46a1f3e924d029c73d699027e3848bef85b13b0e8ea9",
+      "replacement_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/0/p0/turn-0/approved-replacement-v1",
+      "loss_observed_at": "2026-11-18T19:56:34.398760+00:00",
+      "loss_reason": "HTTP 404: unavailable saved future",
+      "replacements_used": 0,
+      "requires_approval": false
+    },
+    {
+      "logical_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/11/p0/turn-0",
+      "original_entry_id": "c05417d6-2e4c-4e58-9644-5102fc4b21bb",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2417",
+      "signature": "f9925f727c0263bf719ac45f329ed977fa3f93e2a2e5bc729d729131ef658bab",
+      "replacement_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/11/p0/turn-0/approved-replacement-v1",
+      "loss_observed_at": "2026-11-18T19:56:35.050167+00:00",
+      "loss_reason": "HTTP 404: unavailable saved future",
+      "replacements_used": 0,
+      "requires_approval": false
+    },
+    {
+      "logical_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/1/p0/turn-0",
+      "original_entry_id": "05498fb0-3ecc-484e-b5dc-39873f99a6f0",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2407",
+      "signature": "abdd611243ecccb044861272dc96a043ea68e5ef8c369440624d00c3faefbeab",
+      "replacement_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/1/p0/turn-0/approved-replacement-v1",
+      "loss_observed_at": "2026-11-18T19:56:35.704794+00:00",
+      "loss_reason": "HTTP 404: unavailable saved future",
+      "replacements_used": 0,
+      "requires_approval": false
+    },
+    {
+      "logical_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/9/p0/turn-0",
+      "original_entry_id": "1e915587-7af0-461e-bec5-62b5e4423343",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2415",
+      "signature": "96a778ff34101b76f06b02b9900b9396a92786665c488e1fa9fcd693fe2adcf3",
+      "replacement_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/9/p0/turn-0/approved-replacement-v1",
+      "loss_observed_at": "2026-11-18T19:56:36.356228+00:00",
+      "loss_reason": "HTTP 404: unavailable saved future",
+      "replacements_used": 0,
+      "requires_approval": false
+    },
+    {
+      "logical_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/13/p0/turn-0",
+      "original_entry_id": "bd5f8a3d-a5b5-4284-b436-1aa337534bf6",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2419",
+      "signature": "1a2a08cbce19ba48d243cb3a027dcca6b031fb89b33558345675e5d9d92543d3",
+      "replacement_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/13/p0/turn-0/approved-replacement-v1",
+      "loss_observed_at": "2026-11-18T19:56:37.012381+00:00",
+      "loss_reason": "HTTP 404: unavailable saved future",
+      "replacements_used": 0,
+      "requires_approval": false
+    },
+    {
+      "logical_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/3/p0/turn-0",
+      "original_entry_id": "ca01d8e2-b5af-4694-ba89-90a52220c2ea",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2409",
+      "signature": "6712030e286995b31e32ab1854242973c41f15d164de7d7f9a8e55243cfc997b",
+      "replacement_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/3/p0/turn-0/approved-replacement-v1",
+      "loss_observed_at": "2026-11-18T19:56:37.672202+00:00",
+      "loss_reason": "HTTP 404: unavailable saved future",
+      "replacements_used": 0,
+      "requires_approval": false
+    },
+    {
+      "logical_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/12/p0/turn-0",
+      "original_entry_id": "2463ba12-b76b-42e3-91e3-f8a3b6d70663",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2418",
+      "signature": "4f00b3b35cc2d9e2d6f72df868eb4abdbd37890c48c43b44f47ab4e1ed30855e",
+      "replacement_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/12/p0/turn-0/approved-replacement-v1",
+      "loss_observed_at": "2026-11-18T19:56:38.337224+00:00",
+      "loss_reason": "HTTP 404: unavailable saved future",
+      "replacements_used": 0,
+      "requires_approval": false
+    },
+    {
+      "logical_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/2/p0/turn-0",
+      "original_entry_id": "f0aeef68-5ed2-4a79-8d19-d60e1b6ed0dd",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2408",
+      "signature": "dcce1c2656b43e54e70584b1ebee2ab486548516576314ad0c03263eb12d9875",
+      "replacement_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/2/p0/turn-0/approved-replacement-v1",
+      "loss_observed_at": "2026-11-18T19:56:39.001822+00:00",
+      "loss_reason": "HTTP 404: unavailable saved future",
+      "replacements_used": 0,
+      "requires_approval": false
+    },
+    {
+      "logical_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/6/p0/turn-0",
+      "original_entry_id": "053ffced-1009-4fd1-aeec-182a399fb750",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2412",
+      "signature": "17b3fc098e209c60cb0b6dcb9527374667b8c03006cb421142270e9fe655c96d",
+      "replacement_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/6/p0/turn-0/approved-replacement-v1",
+      "loss_observed_at": "2026-11-18T19:56:39.660210+00:00",
+      "loss_reason": "HTTP 404: unavailable saved future",
+      "replacements_used": 0,
+      "requires_approval": false
+    },
+    {
+      "logical_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/4/p0/turn-0",
+      "original_entry_id": "55db096f-e1c0-4eeb-9470-dd6c34549c1d",
+      "original_request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:30:2410",
+      "signature": "7f964b5e14556d14fdfb7aab9b7f7d6f25fcf0be697c289b42ecd8ff702d5af4",
+      "replacement_key": "suffix_diagnostic/Qwen/Qwen3-8B/paid-v1/synthetic/32/4/p0/turn-0/approved-replacement-v1",
+      "loss_observed_at": "2026-11-18T19:56:40.313702+00:00",
+      "loss_reason": "HTTP 404: unavailable saved future",
+      "replacements_used": 0,
+      "requires_approval": false
+    }
+  ]
+}

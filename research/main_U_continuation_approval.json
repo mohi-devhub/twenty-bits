@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-19",
+  "source": "User accepted A11 gate and approved unchanged U continuation with a diagnostic followed by A23; stop before B41 for confirmation.",
+  "global_cap_including_holds_usd": "50.000000",
+  "diagnostic_cap_including_holds_usd": "1.500000",
+  "diagnostic_primary_result": false,
+  "diagnostic_before_A23": false,
+  "diagnostic_games": 168,
+  "A23_updates": 30,
+  "A23_group_size": 8,
+  "B41_updates": 30,
+  "stop_after_A23_endpoint": true,
+  "B41_requires_confirmation_at_A23_gate": true,
+  "primary_protocol_unchanged": true,
+  "budget_before_calls": {
+    "cap_usd": "50.000000",
+    "spent_usd": "11.015850",
+    "held_usd": "0.467534",
+    "available_usd": "38.516616",
+    "blocked": false
+  },
+  "remaining_U_with_margin_usd": "26.452091564759925",
+  "headroom_after_diagnostic_ceiling_and_U_margin_usd": "10.564524435240075",
+  "active_stage": "A23",
+  "diagnostic_endpoint": "A23",
+  "persistence_approval": "research/native_persistence_approval.json",
+  "A11_suffix_status": "not run: A11 checkpoint wasn't persisted, external uploads unavailable",
+  "A11_hard_mode_status": "not run: A11 checkpoint wasn't persisted, external uploads unavailable"
+}

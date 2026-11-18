@@ -1,0 +1,11 @@
+{
+  "active": true,
+  "date": "2026-11-19",
+  "reason": "not run: A11 checkpoint wasn't persisted, external uploads unavailable",
+  "required_external_change": "Enable external-weight upload or supply an available checkpoint of the exact A11 endpoint.",
+  "user_question_pending": true,
+  "A23_paid_work_started": false,
+  "B41_paid_work_started": false,
+  "no_automatic_retries_of_finished_source": true,
+  "cancelled_by_user": true
+}
