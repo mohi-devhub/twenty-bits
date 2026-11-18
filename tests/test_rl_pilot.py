@@ -96,6 +96,12 @@ class GroupMathTests(unittest.TestCase):
             seen.extend(v for v in ids.values() if v is not None)
         self.assertEqual(seen, list(range(1, 53)))
 
+    def test_main_endpoint_sequence_has_no_extra_retained_checkpoints(self):
+        seen = []
+        for step in range(1, 31):
+            seen.extend(v for v in sequence_ids(step, [30]).values() if v is not None)
+        self.assertEqual(seen, list(range(1, 92)))
+
 
 class DurableRLTests(unittest.IsolatedAsyncioTestCase):
     def setUp(self):

@@ -1,0 +1,33 @@
+{
+  "paused_at_user_request": true,
+  "last_completed_main_update": 0,
+  "no_partial_update_or_optimizer_step": true,
+  "main_checkpoint": null,
+  "complete_control_games": 52,
+  "collected_saved_results": 625,
+  "unavailable_excluded_originals": 2,
+  "new_original_holds_usd": "0.004721",
+  "new_stage_usage_usd": "0.192932",
+  "sampling_replacements_submitted": 0,
+  "paused_runner_service_calls": 0,
+  "paused_runner_ledger_unchanged": true,
+  "prior_ledger_entries_and_cap_approval_unchanged": true,
+  "frozen_games_and_prompt_hash_files_unchanged": true,
+  "immutable_seed_and_data_order_verified": true,
+  "archive_sha256_verified": {
+    "games.jsonl.gz": "9c2b56eba6c96552d8b958428e542c0d995c26309ad48d896c5933be4c49702e",
+    "requests.jsonl.gz": "77df85f04bdddba4bcfecff16870da874c2bc4a43f31bdc83c55f2f711880154",
+    "operations.jsonl.gz": "ff5aadd597e882f491ed44da7bbdfe8e055ab792c6f74149147b47ab147157d8",
+    "sessions.json": "98641182bb483748ef42f2f73e6249dfa57fe02328272fe732531503800f801e",
+    "execution.json": "efa2eaa55368ad6c9d10078ce549553f82aee51799cd33e0fb569ad41f90bc5b"
+  },
+  "immutable_manifest_restorable_from_compressed_bytes": true,
+  "tests_passed": 130,
+  "project": {
+    "cap_usd": "50.000000",
+    "spent_usd": "6.819365",
+    "held_usd": "0.367534",
+    "available_usd": "42.813101",
+    "blocked": false
+  }
+}

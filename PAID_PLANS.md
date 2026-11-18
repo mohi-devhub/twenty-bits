@@ -1,6 +1,8 @@
 # Approved $50 budget and current choices
 
-The current main condition is candidate set provided. The approved raw-base Qwen3-8B A pilot completed all 16 updates, 128 training games and 40 development games for **$0.291204 plus $0.250000 holds**, below its $2.00 ceiling. Random-question SFT is dropped from the main plan because it lowered EIG in the paired qualification. [PILOT_GATE.md](PILOT_GATE.md) is the current gate. Project usage is **$6.626433**, holds are **$0.362813**, and **$43.010754 remains**. No main run is authorized.
+**Paused at the user's request; do not resume until “resume”.** Option U was approved, with a gate after A seed 11. Its partial raw control saved 52/280 games and 625 results before the host slept; no main update ran. [PAUSED.md](PAUSED.md) records the resume point. Project usage is $6.819365, holds $0.367534 and available budget $42.813101. Two new unavailable originals retain $0.004721, with no replacement submitted. The standing replacement rule is recorded for use after explicit resume.
+
+The main condition is candidate set provided. The preceding raw-base Qwen3-8B pilot completed 16 updates for $0.291204 plus $0.250000 holds. SFT remains excluded because it lowered EIG. The table below preserves the priced choices at that gate; U was selected and S was not.
 
 | Proposed choice | A / B seeds | Updates per seed | Training games per seed | Total with 1.5x margin and holds |
 | --- | --- | ---: | ---: | ---: |

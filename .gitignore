@@ -16,4 +16,5 @@ replays/.hyperframes/
 replays/renders/
 results/baselines/run.log
 research/token_measurements.log
+experiments/main_A11_games.json
 replays/.thumbnails/

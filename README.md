@@ -1,5 +1,7 @@
 # Twenty Bits
 
+**Paused by the user.** Main A seed 11 is at update 0: 52/280 matched control games and 625 results are saved. No main optimizer step ran. [PAUSED.md](PAUSED.md) records the holds, spend, archive and resume point. Nothing resumes until the user says “resume”.
+
 ![Raw-base RL pilot learning curves with fixed development games](results/pilot_A/charts/pilot-learning.png)
 
 ![Random versus greedy predicate, with noisy answers](replays/baseline-noisy.gif)
@@ -8,7 +10,7 @@ Given the candidate set after each answer, can an outcome-only reward teach a sm
 
 **Raw-base RL pilot complete: 16 updates, 128 training games.** On eight fixed development cases, EIG/question rose **0.483 → 0.617**, wins **4/8 → 7/8**, and questions/win **3.25 → 2.71**. The paired EIG change has a 95% CI of **[-0.001, +0.305]**: encouraging but inconclusive. No name enumeration occurred; risky guessing remains, with four final wins while multiple candidates were still possible. [The current gate](PILOT_GATE.md) reports every update, costs, audit and [two preselected paired games](results/pilot_A/EXAMPLE_GAMES.md). Random-question SFT is excluded because it lowered EIG.
 
-**Recorded usage: $6.626433 / $50.00, with $0.362813 held; $43.010754 available**, from [ledger.json](ledger.json). The pilot used $0.291204 plus $0.250000 holds, below its $2.00 ceiling. Main option S proposes A:3/B:2 seeds, 12 updates each, for $42.89 including margin; U proposes A:2/B:1, 30 updates each, for $42.49. Both include development checks every four updates. Work stops for the user's choice. Invoice reconciliation remains pending.
+**Recorded usage: $6.819365 / $50.00, with $0.367534 held; $42.813101 available**, from [ledger.json](ledger.json). The pilot used $0.291204 plus $0.250000 holds. The user selected U: A:2/B:1 seeds, 30 updates each, with checks every four updates and a gate after A11's endpoint. The original forecast was $42.49 with margin and holds. The partial main control used $0.192932 and retains $0.004721 for two unavailable originals; replacements are approved but deferred by the pause. Invoice reconciliation remains pending.
 
 The chart shows the pilot; the GIF illustrates offline random versus greedy search. [Phase 2](PHASE2.md), [diagnosis](DIAGNOSIS.md), [alias/SFT gate](ALIAS_GATE.md) and [candidate qualification](CANDIDATE_GATE.md) preserve the earlier results. Pilot development uses one seed and eight N=4/8 training-pool cases, outside gradients. No noisy, transfer or frozen-test model evaluation has run under the new main condition. The gpt-oss-120b reference is removed from future plans.
 
@@ -18,7 +20,7 @@ The offline grid contains 24,000 games, with 200 paired games for each domain, c
 
 These are finite authored worlds. Animals has 400 named age/sex profiles across 100 types; tools and foods each have 320 profiles across 80 types. They use 90, 88, and 71 attributes to stay distinguishable without random identity bits. The synthetic world has 512 unique random 16-bit rows and is relabeled in each game. [World definitions, sample hand checks, and limitations](data/WORLDS.md) describe the construction. Animal training uses a fixed 200-row pool; paid animal evaluation uses disjoint rows, with shared underlying types disclosed.
 
-[PAID_PLANS.md](PAID_PLANS.md) records the approved $50 cap and proposed main choices. [PILOT_GATE.md](PILOT_GATE.md) is the current gate report. No main run is authorized. [PRIOR_WORK.md](PRIOR_WORK.md) stays as context; this is a side project for GitHub and X.
+[PAID_PLANS.md](PAID_PLANS.md) records the approved $50 cap and selected U plan. [PILOT_GATE.md](PILOT_GATE.md) is the latest completed training gate; [PAUSED.md](PAUSED.md) is current. No main training update has run. [PRIOR_WORK.md](PRIOR_WORK.md) stays as context; this is a side project for GitHub and X.
 
 ## Reproduce offline
 
@@ -71,7 +73,7 @@ python3 scripts/price_main_runs.py
 python3 scripts/write_pilot_gate.py
 ```
 
-These commands use saved traces and request metadata, without service calls or credentials. Run historical gate verification at its corresponding commit: later source hashes and project ledger totals have changed. The current pilot analysis reproduces from the committed compressed archives without local run caches or adapter weights; [verification and hashes](results/pilot_A/reproduction.json) record that check. Tokenizers use pinned local files or download those files from Hugging Face. `build_paid_plans.py` rebuilds historical Phase 1 proposals; `build_approved_plan.py` reprices the historical group-size changes. Completed runners return without service access, and saved request IDs prevent resubmission. No main run is authorized. `.env`, raw run caches and adapter binaries are ignored and untracked.
+These commands use saved traces and request metadata, without service calls or credentials. Run historical gate verification at its corresponding commit: later source hashes and project ledger totals have changed. The current pilot analysis reproduces from the committed compressed archives without local run caches or adapter weights; [verification and hashes](results/pilot_A/reproduction.json) record that check. Tokenizers use pinned local files or download those files from Hugging Face. `build_paid_plans.py` rebuilds historical Phase 1 proposals; `build_approved_plan.py` reprices the historical group-size changes. Completed runners return without service access, and saved request IDs prevent resubmission. The main runner is explicitly paused. `.env`, raw run caches and adapter binaries are ignored and untracked.
 
 ## Read the code
 
@@ -82,3 +84,5 @@ These commands use saved traces and request metadata, without service calls or c
 The paid bridge lives in [model_player.py](twenty_bits/model_player.py), [tinker_rendering.py](twenty_bits/tinker_rendering.py), and [tinker_transport.py](twenty_bits/tinker_transport.py). [candidate_feedback.py](twenty_bits/candidate_feedback.py) supplies the versioned main observation without changing historical prompts. [The candidate-set reproduction check](results/candidate_set/reproduction.json) verifies saved-archive analysis. The transport persists IDs before sampling, reserves the full declared cost, and handles pending retrieval without repeating sampling.
 
 [rl_pilot.py](twenty_bits/rl_pilot.py) builds group-standardized advantages and guarded SDK training operations. [run_rl_pilot.py](scripts/run_rl_pilot.py) joins cookbook rollouts, training and scheduled development checks. [analyze_rl_pilot.py](scripts/analyze_rl_pilot.py) replays actions, verifies exact rewards and training masks, and builds the audit. The pilot starts from raw base and never loads the historical SFT adapter.
+
+[run_main_seed.py](scripts/run_main_seed.py) adds the full matched control, the 30-update curriculum and mandatory A11 gate. [guess_metrics.py](twenty_bits/guess_metrics.py) measures stopping with k candidates; it changes no reward or observation. `python3 scripts/verify_main_pause.py` verifies the saved pause and proves the paused runner makes no service calls. Main endpoint analysis tools require a completed run and are not a claim of completed main results.

@@ -1,0 +1,50 @@
+{
+  "active": true,
+  "requested_at": "2026-11-18T10:19:30.610605+00:00",
+  "reason": "User cannot keep host powered; explicit safe pause",
+  "resume_requires_exact_user_instruction": "resume",
+  "last_completed_update": 0,
+  "next_update": 1,
+  "partial_update": null,
+  "optimizer_steps": 0,
+  "training_games": 0,
+  "saved_checkpoint": null,
+  "training_model_id": "7d53de3c-6abe-51ed-badf-c984e315c365:train:0",
+  "raw_control_complete_games": 52,
+  "raw_control_total_games": 280,
+  "saved_sampling_requests": 627,
+  "collected_sampling_results": 625,
+  "unavailable_excluded_originals": 2,
+  "replacement_attempts_submitted": 0,
+  "stage_usage_usd": "0.192932",
+  "stage_original_holds_usd": "0.004721",
+  "total_unresolved_lost_original_holds_usd": "0.017534",
+  "project": {
+    "cap_usd": "50.000000",
+    "spent_usd": "6.819365",
+    "held_usd": "0.367534",
+    "available_usd": "42.813101",
+    "blocked": false
+  },
+  "config_sha256": "bbe0e0aad7eddb7c29bb6d3279b64209762e31b711fb0cc05c0b7d7cdbf0c6d8",
+  "games_sha256": "caa04fea8661a9136db7cd18fd5c2becf5905ba6d0a7bc1b83e2325c71898b5a",
+  "sampling_state": {
+    "0": {
+      "id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:0",
+      "next_seq": 627,
+      "policy_step": 0,
+      "initialization": "raw_base"
+    }
+  },
+  "archive_sha256": {
+    "games.jsonl.gz": "9c2b56eba6c96552d8b958428e542c0d995c26309ad48d896c5933be4c49702e",
+    "requests.jsonl.gz": "77df85f04bdddba4bcfecff16870da874c2bc4a43f31bdc83c55f2f711880154",
+    "operations.jsonl.gz": "ff5aadd597e882f491ed44da7bbdfe8e055ab792c6f74149147b47ab147157d8",
+    "sessions.json": "98641182bb483748ef42f2f73e6249dfa57fe02328272fe732531503800f801e",
+    "execution.json": "efa2eaa55368ad6c9d10078ce549553f82aee51799cd33e0fb569ad41f90bc5b"
+  },
+  "resume_order": "Verify ledger, pause snapshot and immutable hashes. On explicit resume, recover any saved recoverable futures before new work. Use the two authorized exact replacements under the standing rule, keeping originals excluded and held. Finish the matched raw control from cached turns, then train updates 1\u201330 in the frozen data order. Stop after A11 endpoint; no A23 or B41 yet.",
+  "host_requirement": "Keep Mac powered with lid open; use a scoped caffeinate assertion for idle sleep.",
+  "games_archive": "experiments/main_A11_games.json.gz",
+  "games_archive_sha256": "4a85b3e29b47fabf66b794a4270d3998535f32f2b82e94f48d95436374d4998d"
+}

@@ -1,0 +1,117 @@
+{
+  "date": "2026-11-18",
+  "approved_option": {
+    "option": "U",
+    "seeds_A": [
+      11,
+      23
+    ],
+    "seeds_B": [
+      41
+    ],
+    "updates_per_seed": 30,
+    "curriculum": [
+      {
+        "n": 4,
+        "updates": 2,
+        "games_per_seed": 16
+      },
+      {
+        "n": 8,
+        "updates": 2,
+        "games_per_seed": 16
+      },
+      {
+        "n": 16,
+        "updates": 11,
+        "games_per_seed": 88
+      },
+      {
+        "n": 32,
+        "updates": 7,
+        "games_per_seed": 56
+      },
+      {
+        "n": 64,
+        "updates": 4,
+        "games_per_seed": 32
+      },
+      {
+        "n": 128,
+        "updates": 4,
+        "games_per_seed": 32
+      }
+    ],
+    "training_games_per_seed": 240,
+    "total_training_games": 720,
+    "training_usd": 16.996223880000002,
+    "training_usd_per_A_seed": 5.34157036,
+    "training_usd_per_B_seed": 6.313083160000001,
+    "development_usd": 0.15076799999999999,
+    "development_checks": [
+      4,
+      8,
+      12,
+      16,
+      20,
+      24,
+      28,
+      30
+    ],
+    "development_games_per_check": 8,
+    "development_games_per_seed": 64,
+    "full_evaluation_usd": 9.507760968000001,
+    "hard_mode_40_games_usd": 1.3657211327999998,
+    "checkpoint_holds_usd": 0.30000000000000004,
+    "total_before_margin_usd": 28.320473980800003,
+    "total_with_1_5_margin_usd": 42.480710971200004,
+    "zero_cache_total_without_extra_margin_usd": 37.699762320000005,
+    "remaining_after_margin_usd": 0.5300430287999944,
+    "endpoint_checkpoints_per_seed": 1,
+    "frozen_games_per_cell": 28,
+    "frozen_cells": 10,
+    "authorized": true
+  },
+  "active_stage": "A11",
+  "stop_after_A11_endpoint": true,
+  "A23_or_B41_may_start_before_gate": false,
+  "global_cap_including_holds_usd": "50.000000",
+  "initialization": "fresh_raw_base_no_sft_no_pilot_adapter",
+  "reward_and_caps_unchanged": true,
+  "hard_mode": "Deferred until the end, as approved.",
+  "new_metric": "guess-with-k-v1: exact support when noiseless; displayed posterior-threshold list plus MAP when noisy; also retain full positive support. Counts and wins at k=1,2,3,4+, with all-game and guess denominators.",
+  "main_horizon": "30 scheduled updates per seed; the four-update variance halt was the completed pilot qualification. Main variance remains logged.",
+  "curriculum": [
+    {
+      "n": 4,
+      "update_start": 1,
+      "update_end": 2
+    },
+    {
+      "n": 8,
+      "update_start": 3,
+      "update_end": 4
+    },
+    {
+      "n": 16,
+      "update_start": 5,
+      "update_end": 15
+    },
+    {
+      "n": 32,
+      "update_start": 16,
+      "update_end": 22
+    },
+    {
+      "n": 64,
+      "update_start": 23,
+      "update_end": 26
+    },
+    {
+      "n": 128,
+      "update_start": 27,
+      "update_end": 30
+    }
+  ],
+  "no_further_seed_before_user_gate_decision": true
+}

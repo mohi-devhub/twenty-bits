@@ -437,7 +437,7 @@ class GuardedRL:
             named = types.SaveWeightsForSamplerRequest(
                 model_id=model_id,
                 seq_id=seq["named"],
-                path=f"pilot-A-step-{step:02d}",
+                path=f"{config.get('checkpoint_prefix', 'pilot-A')}-step-{step:02d}",
                 ttl_seconds=config["checkpoint_ttl_seconds"],
             )
             saved = await self.operation(
@@ -457,7 +457,7 @@ class GuardedRL:
         request = types.SaveWeightsExternalRequest(
             model_id=model_id,
             seq_id=3 * step + sum(k <= step for k in config["kept_checkpoints"]) + 1,
-            path=f"pilot-A-final-step-{step:02d}",
+            path=f"{config.get('checkpoint_prefix', 'pilot-A')}-final-step-{step:02d}",
             ttl_seconds=config["checkpoint_ttl_seconds"],
         )
         result = await self.operation(

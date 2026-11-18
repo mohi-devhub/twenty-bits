@@ -1,0 +1,50 @@
+{
+  "date": "2026-11-18",
+  "status": "Originals excluded and held; replacements approved but deferred until explicit resume",
+  "stage": "raw-control evaluation before any training update",
+  "unavailable_originals": [
+    {
+      "key": "eval_base/Qwen/Qwen3-8B/paid-v1/animals/128/10/p0/turn-2",
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:0:624",
+      "entry_id": "319887b8-8731-4762-87ff-336c46857ef5",
+      "signature": "748fe79db8b294ecd457fda29a49ff491c38ef55863f1b6998816ba281a81d02",
+      "saved_before_dispatch_at": "2026-11-18T10:02:40.238740+00:00",
+      "collection_started_at": "2026-11-18T10:04:09.839435+00:00",
+      "receipt": null,
+      "reserved_usd": "0.002056",
+      "observed_recovery": "404 Promise not found",
+      "proposed_replacement_key": "eval_base/Qwen/Qwen3-8B/paid-v1/animals/128/10/p0/turn-2/approved-replacement-v1"
+    },
+    {
+      "key": "eval_base/Qwen/Qwen3-8B/paid-v1/animals/128/2/p0/turn-6",
+      "request_id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:0:625",
+      "entry_id": "4bfd623c-a3ca-4268-904b-bfe2ba552cee",
+      "signature": "4eb1d6abf8199e819ce6b5ab6a101873b4716fe4762ef4c9375e11f009fa1fb4",
+      "saved_before_dispatch_at": "2026-11-18T10:02:41.928642+00:00",
+      "collection_started_at": "2026-11-18T10:04:10.929351+00:00",
+      "receipt": null,
+      "reserved_usd": "0.002665",
+      "observed_recovery": "404 Promise not found",
+      "proposed_replacement_key": "eval_base/Qwen/Qwen3-8B/paid-v1/animals/128/2/p0/turn-6/approved-replacement-v1"
+    }
+  ],
+  "unresolved_holds_usd": "0.004721",
+  "other_futures_collected": true,
+  "same_prompts_seeds_settings_required": true,
+  "replacement_authorized": true,
+  "request_ids_saved_before_dispatch": true,
+  "server_completion_or_deletion_time": "Unknown; 404 does not establish whether dispatch was accepted, billed or later deleted.",
+  "host_power_evidence": {
+    "source": "macOS pmset log",
+    "clamshell_sleep_local": "2026-11-18 15:22:44 +0530",
+    "clamshell_sleep_seconds": 596,
+    "maintenance_sleep_local": "2026-11-18 15:32:45 +0530",
+    "maintenance_sleep_seconds": 68,
+    "wake_local": "2026-11-18 15:33:53 +0530",
+    "interpretation": "The host slept during the transport interruption. This explains a local polling/dispatch gap, but does not establish server acceptance, billing or result deletion times."
+  },
+  "standing_rule": "research/replacement_policy.json",
+  "pause_requested": true,
+  "last_collection_attempt": "2026-11-18T10:16:38Z\u201310:17:22Z: both original IDs returned HTTP 522 after repeated earlier 404s; all recoverable results were already saved",
+  "replacements_submitted": 0
+}

@@ -1,0 +1,5 @@
+{
+  "concurrent_games": 16,
+  "sampling_config_sha256": "bbe0e0aad7eddb7c29bb6d3279b64209762e31b711fb0cc05c0b7d7cdbf0c6d8",
+  "note": "Execution parallelism only; games, prompts, generation seeds, sampling settings and all experiment caps remain unchanged."
+}

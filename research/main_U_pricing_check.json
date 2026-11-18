@@ -1,0 +1,14 @@
+{
+  "date": "2026-11-18",
+  "source": "https://tinker-docs.thinkingmachines.ai/tinker/models.json",
+  "tinker_id": "Qwen/Qwen3-8B",
+  "usd_per_million_tokens": {
+    "prefill": "0.195",
+    "cached_prefill": "0.039",
+    "sample": "0.60",
+    "train": "0.44"
+  },
+  "matches_pinned_rates": true,
+  "authenticated_tinker_service_calls": 0,
+  "method": "Read the current public provider documentation; no model or training request."
+}

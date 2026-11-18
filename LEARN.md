@@ -73,3 +73,9 @@ We trained a fresh Qwen3-8B LoRA adapter for 16 updates. The user chose raw base
 The four-update variance check passed, but variance needs interpretation: two later groups had no wins and differed only in question costs. On eight fixed development cases, wins rose from 4 to 7 and EIG from 0.483 to 0.617, mainly through fewer wasted questions. The paired interval still includes zero change. There was no name enumeration, yet five final guesses had multiple candidates left and four happened to win. Faster winning games alone would hide that risk.
 
 The runner saves training request IDs before dispatch, just as sampling does. One unsupported SDK keyword failed locally before sending a gradient; it was settled at zero and fixed with a production-adapter regression test. Saved games were reused. All later futures were collected and the final adapter downloaded. [PILOT_GATE.md](PILOT_GATE.md) contains every update, uncertainty and cost; main runs wait for the user's choice between more seeds and more updates.
+
+## Main setup and a safe pause
+
+The user chose U and added a gate after A seed 11. Its frozen curriculum reaches N=32 and N=128. We added a measurement of guesses with 1, 2, 3 or 4+ candidates remaining, including wins in each bin. In noisy games the displayed list is approximate, so the log also keeps full posterior support. The reward and prompts did not change.
+
+The Mac slept during the raw-control evaluation. We saved 52 complete games and 625 results; two unavailable requests kept their holds and were excluded. No main training update ran, so there is no partial optimizer state to repair. At the user's request we archived the journals and counters, added a guard that stops before service access, and paused at update 0. PAUSED.md records spending and the exact resume point. The standing replacement permission is saved, but no replacement will run before explicit resume.

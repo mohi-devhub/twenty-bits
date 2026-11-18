@@ -1,0 +1,15 @@
+{
+  "session_id": "7d53de3c-6abe-51ed-badf-c984e315c365",
+  "samplers": {},
+  "next_sampler": 0,
+  "finished": false,
+  "training_model_id": "7d53de3c-6abe-51ed-badf-c984e315c365:train:0",
+  "snapshots": {
+    "0": {
+      "id": "7d53de3c-6abe-51ed-badf-c984e315c365:sample:0",
+      "next_seq": 627,
+      "policy_step": 0,
+      "initialization": "raw_base"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-18",
+  "authorized": true,
+  "one_exact_replacement_per_lost_logical_request": true,
+  "original_hold_until_billing_resolves": true,
+  "original_outputs_permanently_excluded": true,
+  "aggregate_unresolved_lost_original_holds_must_be_below_usd": "0.500000",
+  "same_prompt_seed_settings_required": true,
+  "log_in_ledger_and_next_gate_report": true,
+  "second_loss_or_outside_limits_requires_approval": true,
+  "pause_overrides_all_submission_authorization": true
+}
