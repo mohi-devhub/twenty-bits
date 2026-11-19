@@ -1,0 +1,11 @@
+{
+  "service_calls": 0,
+  "events": 160029,
+  "entries": 73807,
+  "latest_records_equal_completed_export": true,
+  "ledger_json_sha256": "d4cba849b93e7a5dec770715f8fe2ae50a0fd507637fb86abce49d7a8f7c0b63",
+  "archive": "results/visible_budget/ledger_events.jsonl.gz",
+  "archive_sha256": "5e895108a486edf22c3e5e881887303e6ef8367ec6b7c19ab35894f977435b23",
+  "prior_B41_archive_untouched": true,
+  "all_HTTP_work_drained": true
+}

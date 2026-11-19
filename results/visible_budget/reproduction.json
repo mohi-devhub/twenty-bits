@@ -1,0 +1,41 @@
+{
+  "service_calls": 0,
+  "git_only_checkout": true,
+  "input_tree": "8d8721fe7295338a6be4d4109bf2a76a9040cac1",
+  "raw_run_cache_present": false,
+  "live_ledger_database_present": false,
+  "project_credentials_present": false,
+  "tokenizer_network_disabled": true,
+  "unit_tests": 226,
+  "accepted_prompt_sequences_replayed": 9448,
+  "artifacts_identical": {
+    "results/visible_budget/summary.json": "1c89f108a29a49b41f3eb7e9510ecccebac6c8cac89c8d97665b31284fa4e565",
+    "results/visible_budget/games.jsonl.gz": "e54231c8e3759cb04506eff486a36d146097feb712d3a7bce8e0745360fddc4b",
+    "results/visible_budget/prompt_hashes.json.gz": "c793a4cfd00c11907cbba9a859b6445ffce60a6f64fa7a03924a28311f0839c4",
+    "results/visible_budget/requests.jsonl.gz": "9d1795b84fc48895ee61ea9f20a4b11090de3d63645f36466d7cebf92aeb156f",
+    "results/visible_budget/responses.jsonl.gz": "237422168d187e5f4ff4a2918f6f20abf93b2181afe6560d864ccb190daf9b62",
+    "results/visible_budget/excluded_originals.jsonl.gz": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+    "results/visible_budget/sessions.json": "4c630be219b36678095592bbdfdb2a63a58e6580038b1911b9f30b1cafe1a563",
+    "results/visible_budget/validation.json": "5a79ae8709ee1cfbf2b58aa6f10a7b2f17e9847617c780e954fbfdc3ce9e5a14",
+    "VISIBLE_BUDGET_GATE.md": "5cd7ac783945f6c4742c3c7c0c0bf567d38b7256d63c7ec20e82aad43af7dd80"
+  },
+  "commands": [
+    [
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-v"
+    ],
+    [
+      "scripts/analyze_visible_budget.py"
+    ],
+    [
+      "scripts/verify_visible_budget.py"
+    ],
+    [
+      "scripts/write_visible_budget_gate.py"
+    ]
+  ]
+}

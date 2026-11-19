@@ -14,9 +14,11 @@ The task supplies remaining candidates after each answer and measures question s
 
 [MAIN_B41_GATE.md](MAIN_B41_GATE.md) contains every B41 update/check, all three seeds' cell tables, guess-with-k, early guesses, paired CIs, re-check denominators, the invalid name-reference audit and [two preselected paired examples](results/main_B41/EXAMPLE_GAMES.md). [A23](MAIN_A23_GATE.md), [A11](MAIN_A11_GATE.md) and earlier failed configurations remain historical. Hard mode ran on raw base/A23 only (0/20 each); B41 adds its scheduled primary endpoint.
 
-**Recorded project usage: $20.100658 / $50.00; held $2.083181; available $27.816161**, from [ledger.json](ledger.json). Invoice reconciliation is pending. B41 used **$3.974884 plus $0.443049 held**, within its **$13.64 forecast including margin**. Both native endpoint types have no expiry. The live ledger now uses durable SQLite transactions; migration preserved every old entry and hold. The B41 run finished at 16-game concurrency without a lost request or replacement. [Budget](BUDGET.md), [ledger storage and performance](LEDGER.md).
+**Labelled visible-budget follow-up:** an explicit per-turn counter removes every extra final ASK and A23's 136 no-guess endings. Wins change **raw 141→141, A23 138→186, B41 127→156**, out of 280 each. Ambiguous guesses with budget left persist (**raw 104→89, A23 20→27, B41 202→188**), and pooled EIG falls for all three. These fixed-policy prompt effects stay separate from the primary results above. A11 could not be evaluated because its hosted checkpoint was unavailable. [Paired cells, CIs, prompt hashes and limitations](VISIBLE_BUDGET_GATE.md).
 
-**Stopped at the B41 gate. No further paid work is authorized.** The final RESULTS.md and model replay exports remain the next offline phase. The GIF above is a baseline illustration, not a trained-model replay.
+**Recorded project usage: $23.681223 / $50.00; held $2.083181; available $24.235596**, from [ledger.json](ledger.json). Invoice reconciliation is pending. The visible-budget follow-up cost **$3.580565 with no new unresolved holds**, under its **$8 ceiling including holds**. B41's main run used **$3.974884 plus $0.443049 held**, within its **$13.64 forecast including margin**. Both native endpoint types have no expiry. The live ledger uses durable SQLite transactions; migration preserved every old entry and hold. Neither B41's main run nor the visible-budget follow-up lost a request. [Budget](BUDGET.md), [ledger storage and performance](LEDGER.md).
+
+**Stopped at the visible-budget gate. No further paid work or training is authorized.** The user will choose between a training follow-up and final write-up. The final RESULTS.md and model replay exports remain pending. The GIF above is a baseline illustration, not a trained-model replay.
 
 Open the [interactive baseline replay](replays/index.html), [truthful-answer MP4](replays/baseline-noiseless.mp4), or [noisy-answer MP4](replays/baseline-noisy.mp4). The two illustrated games were selected for visible strategy contrast; complete sweeps supply the reported baseline numbers.
 
@@ -24,7 +26,7 @@ The offline grid contains 24,000 games, with 200 paired games for each domain, c
 
 These are finite authored worlds. Animals has 400 named age/sex profiles across 100 types; tools and foods each have 320 profiles across 80 types. They use 90, 88, and 71 attributes to stay distinguishable without random identity bits. The synthetic world has 512 unique random 16-bit rows and is relabeled in each game. [World definitions, sample hand checks, and limitations](data/WORLDS.md) describe the construction. Animal training uses a fixed 200-row pool; paid animal evaluation uses disjoint rows, with shared underlying types disclosed.
 
-[PAID_PLANS.md](PAID_PLANS.md) records the approved $50 cap and selected U plan. [MAIN_B41_GATE.md](MAIN_B41_GATE.md) is the current stop; [PAUSED.md](PAUSED.md) preserves the earlier pause and resume point. [PRIOR_WORK.md](PRIOR_WORK.md) stays as context; this is a side project for GitHub and X.
+[PAID_PLANS.md](PAID_PLANS.md) records the approved $50 cap and selected U plan. [VISIBLE_BUDGET_GATE.md](VISIBLE_BUDGET_GATE.md) is the current stop; [MAIN_B41_GATE.md](MAIN_B41_GATE.md) closes the main study, and [PAUSED.md](PAUSED.md) preserves the earlier pause and resume point. [PRIOR_WORK.md](PRIOR_WORK.md) stays as context; this is a side project for GitHub and X.
 
 ## Reproduce offline
 
@@ -48,7 +50,22 @@ Tokenizer downloads come from Hugging Face at the recorded revisions. No weights
 
 Serve the viewer with `python3 -m http.server 8765` and visit `http://localhost:8765/replays/`. Play, scrub, step, change noise mode, hide the target, or load a matched pair in the JSON schema from replays/games.json. Regenerate the local exports with `python3 scripts/export_replays.py`. This uses the pinned HyperFrames CLI and FFmpeg. To rebuild only GIFs from existing MP4s, add `--reuse-mp4`.
 
-## Reproduce the current paid analysis offline
+## Reproduce the visible-budget follow-up offline
+
+```bash
+python3 -m pip install -e '.[paid,replay]'
+python3 scripts/analyze_visible_budget.py
+python3 scripts/verify_visible_budget.py
+python3 scripts/write_visible_budget_gate.py
+```
+
+These commands use committed traces and the completed ledger export, with no service calls, credentials, adapter files or live SQLite database. [Validation](results/visible_budget/validation.json) checks the frozen slice, every protected artifact, old ledger equality and the $8 peak exposure. [Reproduction proof](results/visible_budget/reproduction.json) records a separate Git-only checkout. The completed paid runner returns before SDK access.
+
+Run `python3 scripts/reproduce_visible_budget.py` to repeat that Git-only audit with cached pinned tokenizers. It creates and removes its own disposable checkout and writes a local reproduction log.
+
+## Historical main-study analysis
+
+Run this block in a checkout of **commit e3bfac1**, the B41 gate. Its checks bind that gate's ledger export; the current export also contains the later follow-up. Preserve the primary artifacts when working in the current checkout.
 
 ```bash
 python3 -m pip install -e '.[paid,replay]'

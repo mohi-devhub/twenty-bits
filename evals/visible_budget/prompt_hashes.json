@@ -1,0 +1,1687 @@
+{
+  "prompt_version": "visible-budget-v1",
+  "games": [
+    {
+      "game_id": "paid-v1/animals/32/0/p0",
+      "tokens": 1415,
+      "visible_budget_tokens_sha256": "984fd2ee6c4e4f9764733cc25f46b03f37f1ade733c2b3ba6c25466c23472677",
+      "primary_tokens_sha256": "ae83a32d7dc6184b5a73119fa4a444a8cd46ad064b8ddf55b579aa4f51a2bf52"
+    },
+    {
+      "game_id": "paid-v1/animals/32/1/p0",
+      "tokens": 1391,
+      "visible_budget_tokens_sha256": "d1cfebb46a0125b77310721be8f4e97520025fbc5b0fd4341e907c76dea697bf",
+      "primary_tokens_sha256": "889974ffefed1a2c6491656f448b236d372ba0de4056a70d4b34a3fd8a4009d2"
+    },
+    {
+      "game_id": "paid-v1/animals/32/2/p0",
+      "tokens": 1390,
+      "visible_budget_tokens_sha256": "ab2cbe8abe174ceeff52817944b5d3f055cfb263232c042599e01275fe980e70",
+      "primary_tokens_sha256": "fb56165950611ff7004c546767b9668f58d79c6332da620c28f6b027bb7a5e8e"
+    },
+    {
+      "game_id": "paid-v1/animals/32/3/p0",
+      "tokens": 1397,
+      "visible_budget_tokens_sha256": "5b07aedd40484470a785502efe51a5e7bd503ee42027bc8787e233e1f9f31903",
+      "primary_tokens_sha256": "15ca82cda9c54a0496c3b69c1f1be6481cb977fb6a7f94b46f54dc16b488390e"
+    },
+    {
+      "game_id": "paid-v1/animals/32/4/p0",
+      "tokens": 1438,
+      "visible_budget_tokens_sha256": "ef942b4ddcddd9e8985460193445f66625a068070a31d3e11e02d7d3590f2651",
+      "primary_tokens_sha256": "6131bc00afff5bb72d4ff0f1c1b4413a75b04d73bb5fa27f88b80e2f0d43358b"
+    },
+    {
+      "game_id": "paid-v1/animals/32/5/p0",
+      "tokens": 1383,
+      "visible_budget_tokens_sha256": "b55ecaada6c0cc922cc7a1fc4e5f1063d7e1227819ba388ed423f45727026245",
+      "primary_tokens_sha256": "e34add011ac72334937e688764eb3507397cbea23adb74ea5da27a01f2249315"
+    },
+    {
+      "game_id": "paid-v1/animals/32/6/p0",
+      "tokens": 1389,
+      "visible_budget_tokens_sha256": "6bb4024f70f756bc5973930aa66e1c035e52b76733e21320c0e83b9b3e806f22",
+      "primary_tokens_sha256": "b91057aa9de66caa4604572d03da36873d0e50fc7c62421ada856f57d5deddc5"
+    },
+    {
+      "game_id": "paid-v1/animals/32/7/p0",
+      "tokens": 1395,
+      "visible_budget_tokens_sha256": "b809dfec12ea83697e01742f6e99bd13f7ae721a98b1fbabcaf7365b93e6f6d0",
+      "primary_tokens_sha256": "d9e5ff54b2d823df0d554a465c00122d6e3ef8471b473d25c1acbca5d23a2597"
+    },
+    {
+      "game_id": "paid-v1/animals/32/8/p0",
+      "tokens": 1379,
+      "visible_budget_tokens_sha256": "2b972356393b169171e3ab9b45102cd3264c2b67f083564a37ef53aab8521057",
+      "primary_tokens_sha256": "a763e931b13747cd9ffaa4d85191a1c6328586ebdf1b09e53e15bcf6e69db7c5"
+    },
+    {
+      "game_id": "paid-v1/animals/32/9/p0",
+      "tokens": 1456,
+      "visible_budget_tokens_sha256": "c02dc7c96d83d56c96ae3824d051d9781c93d15440830cad1186de70b267e8c6",
+      "primary_tokens_sha256": "6e49ac7bd3e6bf4d16a9c3507169d0a8c9eed5bf08aaba64cd9e47d069851796"
+    },
+    {
+      "game_id": "paid-v1/animals/32/10/p0",
+      "tokens": 1423,
+      "visible_budget_tokens_sha256": "780196b43c566e9e6274c157fc626e1530444877b966793939a5a98601399a2b",
+      "primary_tokens_sha256": "d2d6466261cf00bd4eb79056e09748c907455cf9cfdf8826989e2892af704f13"
+    },
+    {
+      "game_id": "paid-v1/animals/32/11/p0",
+      "tokens": 1387,
+      "visible_budget_tokens_sha256": "27a065276a77e4acf393b9e757d67ca975f1de05c4fe2bbcb364b4d4361a127b",
+      "primary_tokens_sha256": "6bbd9b9dd034130b3dcfa7fe1e32fd12659a6cd21e081c03f15b68018f49db72"
+    },
+    {
+      "game_id": "paid-v1/animals/32/12/p0",
+      "tokens": 1428,
+      "visible_budget_tokens_sha256": "b27623ffe238d6bea2707381140c854961448f4f06e4f6400453c5ed9f79cef4",
+      "primary_tokens_sha256": "26b7bd85587509086b0f2cc27258be91896e385961d7f265483ab9f77f0d806d"
+    },
+    {
+      "game_id": "paid-v1/animals/32/13/p0",
+      "tokens": 1468,
+      "visible_budget_tokens_sha256": "3d0450015df48425376b58b5d426702b2ee1fb3e015316072b713636218f4354",
+      "primary_tokens_sha256": "0541451ff20246d9f7d72fb140da453b4ea4568537bcc78d6e5eec8dd7c9957d"
+    },
+    {
+      "game_id": "paid-v1/animals/32/14/p0",
+      "tokens": 1423,
+      "visible_budget_tokens_sha256": "d1d61b6d53fe91f2e47bfa5d331958ecdc99a412a672700d08a06f2504d3750a",
+      "primary_tokens_sha256": "138f82818362aff659f9a7734de6385f82fcaf3781639d1bcb97ffbee184dfa0"
+    },
+    {
+      "game_id": "paid-v1/animals/32/15/p0",
+      "tokens": 1399,
+      "visible_budget_tokens_sha256": "4bee80b438c27af1bd20b7b33619f95088f05a1a712e588882cbc0b1b0785078",
+      "primary_tokens_sha256": "9f905d258fcc72cd5215d479d07d385c41283ba1b4c63583277c292024571bbf"
+    },
+    {
+      "game_id": "paid-v1/animals/32/16/p0",
+      "tokens": 1438,
+      "visible_budget_tokens_sha256": "0b05e7ca13881efbfbf530058fee0f843675f16312426a70a40350f98962f2b1",
+      "primary_tokens_sha256": "ee4c367cad6b227d9f1a2d19d93d950af084b6a5712a7bf8956a7a12c5fc7cb6"
+    },
+    {
+      "game_id": "paid-v1/animals/32/17/p0",
+      "tokens": 1401,
+      "visible_budget_tokens_sha256": "3757e8f5369b36ffaf298bd0fb073c751635e4aa0a89b2c8d7e05ff3f59902ab",
+      "primary_tokens_sha256": "1089b0ed82a3882af9bfd0408c3911c1985b02e03624eee1c3a2545c77536b75"
+    },
+    {
+      "game_id": "paid-v1/animals/32/18/p0",
+      "tokens": 1434,
+      "visible_budget_tokens_sha256": "1b2500bdb9d616be94251bf80c8543d45338ce4905a5e81603e472d2bdf43163",
+      "primary_tokens_sha256": "5444f804497d240971914dbe09c846fb434e312710391c6ad91aa095d78934ac"
+    },
+    {
+      "game_id": "paid-v1/animals/32/19/p0",
+      "tokens": 1436,
+      "visible_budget_tokens_sha256": "17ffdb380f3eb34027ff5f645939890201b570e4a11889f05249c741ab9b190e",
+      "primary_tokens_sha256": "b93c3070eda91ae2dff185d97fdd9b127994ef08184d0db5413b27d23ad84e63"
+    },
+    {
+      "game_id": "paid-v1/animals/32/20/p0",
+      "tokens": 1495,
+      "visible_budget_tokens_sha256": "f734588399ec0b08375f530e8b1aa28ba032edaaca1c93fbf0cb043e7088b794",
+      "primary_tokens_sha256": "d265cb53a5106d48d8c8cb15dbebc3b53f44529d4bed682c7a5fb35f311fcda8"
+    },
+    {
+      "game_id": "paid-v1/animals/32/21/p0",
+      "tokens": 1399,
+      "visible_budget_tokens_sha256": "0871db3ed41b667983e5cadbe4eebdab0859ccf2d7c7cc9e5b5a5fb544b9719c",
+      "primary_tokens_sha256": "25c2f582d347269ad2e17e088f3c5683a6a1f6832bc85ee1109434e4dd70f001"
+    },
+    {
+      "game_id": "paid-v1/animals/32/22/p0",
+      "tokens": 1429,
+      "visible_budget_tokens_sha256": "861d2337414581f5f30e046c95e03170de5bea36d27675b1200a6685be2c5aae",
+      "primary_tokens_sha256": "1918cbacf772b363263cddc00fb4002be4602f2a016e73d1c3d7f1c1f8ca0e42"
+    },
+    {
+      "game_id": "paid-v1/animals/32/23/p0",
+      "tokens": 1435,
+      "visible_budget_tokens_sha256": "1c82ef1d5037564dd0be1829ffbdffe3c5949479e4770a684570ed98fdea3102",
+      "primary_tokens_sha256": "01845e548cd4678926b92a9413744f76ccd333760025baf08628d2128e67cc1a"
+    },
+    {
+      "game_id": "paid-v1/animals/32/24/p0",
+      "tokens": 1378,
+      "visible_budget_tokens_sha256": "34fe6e9809470a57cf01a3e80856ceb969346b756f28e6c2554fffaefe3f9343",
+      "primary_tokens_sha256": "6bd4dea17258f3a532d1f438e7f5e4d13aad31ce02d11d99b9c2bfd32dff054c"
+    },
+    {
+      "game_id": "paid-v1/animals/32/25/p0",
+      "tokens": 1387,
+      "visible_budget_tokens_sha256": "81b5cd2c94212c0c94e1b8bb49b1b2d8cf4346db2f24fc39b5d14ab512622c55",
+      "primary_tokens_sha256": "ba1b871b0a7a503b8f47546f5cc0c3d25492e351965af3ed6c23cd27834f3194"
+    },
+    {
+      "game_id": "paid-v1/animals/32/26/p0",
+      "tokens": 1427,
+      "visible_budget_tokens_sha256": "537af69af39a968091b7f09518f5a9c905e73383847e532039d7c117a282c6fb",
+      "primary_tokens_sha256": "43b0fbc597ff85342d5e766fcdbc2d9de4d6bb0ab8f4fbd9485255464088c93f"
+    },
+    {
+      "game_id": "paid-v1/animals/32/27/p0",
+      "tokens": 1422,
+      "visible_budget_tokens_sha256": "50f0f6481e23e7d49ec71ce1ed1e287e92f82b8de04e66d74afcb2704a2c3356",
+      "primary_tokens_sha256": "b367e89c2383d34d9cdb7aa52da42a03145a6a0f0947821377bb7169dc52306f"
+    },
+    {
+      "game_id": "paid-v1/animals/32/0/p0.1",
+      "tokens": 1415,
+      "visible_budget_tokens_sha256": "1780102e433811b3c811ce1cee14484f0af65fffa1f30d33c3fe21f9cd9ff9e6",
+      "primary_tokens_sha256": "1b3b5f9556d20b6c2876faa836dd1585c8df1bc9f6f5963de5df877eaeed60ae"
+    },
+    {
+      "game_id": "paid-v1/animals/32/1/p0.1",
+      "tokens": 1391,
+      "visible_budget_tokens_sha256": "337e93b7c142a8572fc9b6df092073c054e20ee4fe2cd5ecffe22f726936ef1d",
+      "primary_tokens_sha256": "e3ef081b0f0264b7e1f65ddb89d2d6329885de36176d2dba4668602c52c54c7d"
+    },
+    {
+      "game_id": "paid-v1/animals/32/2/p0.1",
+      "tokens": 1390,
+      "visible_budget_tokens_sha256": "802096d5cf05d84b2cc026a506dfacd1c4f20000c3d2d91ca0eda018204f088b",
+      "primary_tokens_sha256": "fdb8ff864f333df7cd362c47e72ec65aa59b954a275c4b5bc1087aacae5a498e"
+    },
+    {
+      "game_id": "paid-v1/animals/32/3/p0.1",
+      "tokens": 1397,
+      "visible_budget_tokens_sha256": "bd6dbc41fcad7d796ebedea89cef5a2e6c4f7d4e1b36ae7a10e6a55b5c6ba778",
+      "primary_tokens_sha256": "218baa22a5741c884673b705fa5579a2f1d5cad561bb6f51f622e5fdda2d718b"
+    },
+    {
+      "game_id": "paid-v1/animals/32/4/p0.1",
+      "tokens": 1438,
+      "visible_budget_tokens_sha256": "01ae3f6bd015fdd8f302b9c7186bd183b59157b35306730a8d456867469a283d",
+      "primary_tokens_sha256": "4df82b4c4e05faedce4deb9aff74da15d3d2ff3d5c98a651b1481434e816d0c2"
+    },
+    {
+      "game_id": "paid-v1/animals/32/5/p0.1",
+      "tokens": 1383,
+      "visible_budget_tokens_sha256": "4e49ca46267a1ba5b543a9e49bfa0dd002da85cc53018515ee1bcd4fee4f678e",
+      "primary_tokens_sha256": "2bc21768cfd26793767eb97b11e42935bf973778d6d9b04f55c5693bdde51e91"
+    },
+    {
+      "game_id": "paid-v1/animals/32/6/p0.1",
+      "tokens": 1389,
+      "visible_budget_tokens_sha256": "568997ebc1e890156586d3e9d149f992bb8f1043845a33cd46ab3b78926b27cc",
+      "primary_tokens_sha256": "f4b3265de486d10bed7e5c5d5a6a7e3bf6d168d9815fd564289d2355c684be80"
+    },
+    {
+      "game_id": "paid-v1/animals/32/7/p0.1",
+      "tokens": 1395,
+      "visible_budget_tokens_sha256": "87cc37cd75f4c1db55ce1b0e9f5362801fef736d7f934ab354d48084e4121660",
+      "primary_tokens_sha256": "71fac89bd21d2c886d7e5eb0de86f1683ad984e4204c4d92e6c589b4e9accdb1"
+    },
+    {
+      "game_id": "paid-v1/animals/32/8/p0.1",
+      "tokens": 1379,
+      "visible_budget_tokens_sha256": "0b5f599472a95bb61baebbe678c3ad222bc545250243b56be91104493bfb2594",
+      "primary_tokens_sha256": "b6aa23ce04c2b6fd9b9b8db813a87394638e4c665378c00a9b76a58f4df36645"
+    },
+    {
+      "game_id": "paid-v1/animals/32/9/p0.1",
+      "tokens": 1456,
+      "visible_budget_tokens_sha256": "54e5afbaa2fd3d127c4ac16fac25fe081041f0e7f661c0392f2a1df3f997de05",
+      "primary_tokens_sha256": "44fbde388aafd5babc238074a699b5e540e5a669223ed888ac8139d6caad2905"
+    },
+    {
+      "game_id": "paid-v1/animals/32/10/p0.1",
+      "tokens": 1423,
+      "visible_budget_tokens_sha256": "91fc4d817ebddfe472f939fc78e2fcb827380c04a08d8d73e3c29f25a3289260",
+      "primary_tokens_sha256": "1a53eccb28cc2fae300c066d48f896cb987c55ab4b9ab1a444b7f74cc93d0c91"
+    },
+    {
+      "game_id": "paid-v1/animals/32/11/p0.1",
+      "tokens": 1387,
+      "visible_budget_tokens_sha256": "8a722f8f588fe5fa3cd321f40efabdb3dcfb98095a98020f742d5c806f77529e",
+      "primary_tokens_sha256": "25df062fa10b827fc8a8fa5eca70cee01742aadebc3264ff4385446500b0d899"
+    },
+    {
+      "game_id": "paid-v1/animals/32/12/p0.1",
+      "tokens": 1428,
+      "visible_budget_tokens_sha256": "7eba30c83495146a46aff1b4cd2d261077e3f0f0cbf012d953f6c746f432a449",
+      "primary_tokens_sha256": "b52052489bb364aed0c92af8286d8f90fe419b209a4ee762a14a70944e6036fe"
+    },
+    {
+      "game_id": "paid-v1/animals/32/13/p0.1",
+      "tokens": 1468,
+      "visible_budget_tokens_sha256": "86ef89bcc497eef33e1b396020df711930875441e94ca971faa88e5ad1e10032",
+      "primary_tokens_sha256": "5b50e5389f7a8dce729fb2250ba7534e4872d942f16144a9d94e533501979b03"
+    },
+    {
+      "game_id": "paid-v1/animals/32/14/p0.1",
+      "tokens": 1423,
+      "visible_budget_tokens_sha256": "347dcf2c3fce1e824192380968c9c39b02fd6531908dc74e7322c061aca1f4cc",
+      "primary_tokens_sha256": "23611bd621afa50fe50d762982dd106de258ad4ff04123195088119ebb65d929"
+    },
+    {
+      "game_id": "paid-v1/animals/32/15/p0.1",
+      "tokens": 1399,
+      "visible_budget_tokens_sha256": "533530725ab44c76445cfaf68cadd8e4e8f517ca8281846dfb5c9137a2e9b945",
+      "primary_tokens_sha256": "dc1d49ad2835152667fbabe5a98add660bfa982d98b5a3fad7bab58589aec0da"
+    },
+    {
+      "game_id": "paid-v1/animals/32/16/p0.1",
+      "tokens": 1438,
+      "visible_budget_tokens_sha256": "3f116a686e645bb475e19f218a4683c2034422474b7d44b7b82cdf7a39e01fcf",
+      "primary_tokens_sha256": "608f88b2f92e21f5dbef99857960f5e70814a443b01dd9a5bc7e99f2ade0c3ee"
+    },
+    {
+      "game_id": "paid-v1/animals/32/17/p0.1",
+      "tokens": 1401,
+      "visible_budget_tokens_sha256": "225062ad900a9ff727c0c4810739e599ac9e7e9d127fcff79befb235117b95e0",
+      "primary_tokens_sha256": "e6103a40db1b73f82abdeef3b150d54d52b31ed09c7668b32d550ae785cb2b48"
+    },
+    {
+      "game_id": "paid-v1/animals/32/18/p0.1",
+      "tokens": 1434,
+      "visible_budget_tokens_sha256": "43677bca586356897be5e16f6356286ae82f312063165bcab7e313521ae5fd89",
+      "primary_tokens_sha256": "35598e7707e0488725ef492f6f0def174d6c2b3e462ad84e45dc2080b3dd1175"
+    },
+    {
+      "game_id": "paid-v1/animals/32/19/p0.1",
+      "tokens": 1436,
+      "visible_budget_tokens_sha256": "5a8dbb56e7e716c7f2071bb3dcba5c85212bc020cf9d5c52642d837ca72370ce",
+      "primary_tokens_sha256": "47906d4c78b4d68c2410c800642097209cbd2742137a59f99080c8558ab1befd"
+    },
+    {
+      "game_id": "paid-v1/animals/32/20/p0.1",
+      "tokens": 1495,
+      "visible_budget_tokens_sha256": "0bd69042ea28ad4251b1c57eaf261c433a19530229bb9bdad855e6b1ad79862d",
+      "primary_tokens_sha256": "2633a80d5b10054a24c9143be18165586df0dc3e7590eae37adbd685829947fd"
+    },
+    {
+      "game_id": "paid-v1/animals/32/21/p0.1",
+      "tokens": 1399,
+      "visible_budget_tokens_sha256": "20a6c6433b6a545865e65892f971fcc938365b708a4dc9429ac9c68df453cdbb",
+      "primary_tokens_sha256": "ba35019bbb970b47c8145843c0cc454dccbd6800a710d75b18296d2254cd25b0"
+    },
+    {
+      "game_id": "paid-v1/animals/32/22/p0.1",
+      "tokens": 1429,
+      "visible_budget_tokens_sha256": "13d70d0f28d44eeb57f0893624e2d0ffc70ab2f24b71d893c7bcc7850e5d2287",
+      "primary_tokens_sha256": "9fbeb81ad65831075e12457ee20f04c14546d65caaa9b981af13f08b5dfb5546"
+    },
+    {
+      "game_id": "paid-v1/animals/32/23/p0.1",
+      "tokens": 1435,
+      "visible_budget_tokens_sha256": "62a8e0324b81e258ee52d37858995befcbd051f2af229353784ef833deb597e8",
+      "primary_tokens_sha256": "e06ebb0369a5c615e758ee125d56f9cc118bca07fe304bc70fafe2beb2c1fe3b"
+    },
+    {
+      "game_id": "paid-v1/animals/32/24/p0.1",
+      "tokens": 1378,
+      "visible_budget_tokens_sha256": "1dff53f896284363a55c07eed5a5cc1cff21d5bb0c114490a073764c3d140118",
+      "primary_tokens_sha256": "840b50d6a16dd55af4d72d48ec13a090a935c56aa52668296abe534808017754"
+    },
+    {
+      "game_id": "paid-v1/animals/32/25/p0.1",
+      "tokens": 1387,
+      "visible_budget_tokens_sha256": "106ead1527b287369b067189683d896877f34bb74adc568f74bdaed1d5fd316f",
+      "primary_tokens_sha256": "eb11aab6cf2223d0f0a0a7c4fecaf487925b3d2b64cb4ca2c82d4cd0427c500f"
+    },
+    {
+      "game_id": "paid-v1/animals/32/26/p0.1",
+      "tokens": 1427,
+      "visible_budget_tokens_sha256": "c15b655767f70d4d8fef15cfc73253a1b4a4cd47b0f74b33f9736f5f002dcb53",
+      "primary_tokens_sha256": "7232e7d42c8e4e5e5d35293ccaade2388e71c0693664470b3bfc35332f1338f1"
+    },
+    {
+      "game_id": "paid-v1/animals/32/27/p0.1",
+      "tokens": 1422,
+      "visible_budget_tokens_sha256": "4aff30569ff2d5505919e934814c1c1bb04d9a2de3a8ce55db595d0c01cd745d",
+      "primary_tokens_sha256": "689d89ce7389ffcbff08bf2f2c3fe224fa053cdfaf497b6267ba7bcbb2764862"
+    },
+    {
+      "game_id": "paid-v1/animals/128/0/p0",
+      "tokens": 3494,
+      "visible_budget_tokens_sha256": "fa6f599f1fc0014162ad49f6fcfb5209e9cf9d7377c86d9732c7f25df7aee888",
+      "primary_tokens_sha256": "bee4b8876ce6769891a389fc9ceacb513595045d2215f51adb81d8a129dc8629"
+    },
+    {
+      "game_id": "paid-v1/animals/128/1/p0",
+      "tokens": 3447,
+      "visible_budget_tokens_sha256": "e86d15bd5a5c3dce49b41496f2578d42049b9e41218dc1f17292bb5216a75663",
+      "primary_tokens_sha256": "3000459cfd4492ed53fdc2f01519a966bb2750614aed8cad67b5eb802b733437"
+    },
+    {
+      "game_id": "paid-v1/animals/128/2/p0",
+      "tokens": 3447,
+      "visible_budget_tokens_sha256": "a6b9ec29c8a9e2a73131569d0769b5ce30e73683545c7c1d96d487ec287b5d6c",
+      "primary_tokens_sha256": "c7fa0203b2ff0813ec2b3ab2aeab707affdf35481d646ca59aad39c6de6b9a56"
+    },
+    {
+      "game_id": "paid-v1/animals/128/3/p0",
+      "tokens": 3482,
+      "visible_budget_tokens_sha256": "4a26ab7b3ff92eb84e67cdfceb455807c17cff49e3e12fc7912c471bd4b3a523",
+      "primary_tokens_sha256": "b468ee7e9b48e40dba4ab612c1de1693e87a6a0ec8d8814cc79ac203a830695c"
+    },
+    {
+      "game_id": "paid-v1/animals/128/4/p0",
+      "tokens": 3503,
+      "visible_budget_tokens_sha256": "822ec5a1f12041b613f91ff7e20191088a307c914444631af9afdcfec64eec46",
+      "primary_tokens_sha256": "8d893fc66c93e10fc39d01c74c25d270e3e359dcb9f478fb404ed6bd1730d9a2"
+    },
+    {
+      "game_id": "paid-v1/animals/128/5/p0",
+      "tokens": 3469,
+      "visible_budget_tokens_sha256": "0bc12a2228b99b5240c4cdc47f570eb350c81203c043eda9d0bc26a31933a982",
+      "primary_tokens_sha256": "90cf52ba745d5ee0771c6cd3bf737c22a6f315ea241c8eeaac1fdc206a3bcf65"
+    },
+    {
+      "game_id": "paid-v1/animals/128/6/p0",
+      "tokens": 3499,
+      "visible_budget_tokens_sha256": "4c550266d1ae66a02ee9468a774260488da7767166292735c26365ede27e7abe",
+      "primary_tokens_sha256": "ac70da8413c404c037fc222de25abd93cafe9349841a999a452ae15c77b9c5fb"
+    },
+    {
+      "game_id": "paid-v1/animals/128/7/p0",
+      "tokens": 3491,
+      "visible_budget_tokens_sha256": "1062938dc95eb4f82ffe7f54aa84ba00eefe7612d8a0fc9c77ca7dd4a038b948",
+      "primary_tokens_sha256": "ad2c5315061e0a65f3c8938330dc3d5765180235b1100a73ace8eb3794b8343e"
+    },
+    {
+      "game_id": "paid-v1/animals/128/8/p0",
+      "tokens": 3510,
+      "visible_budget_tokens_sha256": "801e8245daed8991e7d43dbf418fda342b87b0d2b10e15c57ebb6d00372368ac",
+      "primary_tokens_sha256": "b65148f00e5040e309d21422e045d2fe686788b631dc49c82e6a24606a2dca20"
+    },
+    {
+      "game_id": "paid-v1/animals/128/9/p0",
+      "tokens": 3455,
+      "visible_budget_tokens_sha256": "60d6d28b514275abdb7e605baa5220ad24ef808350f19215bf1668772855ad66",
+      "primary_tokens_sha256": "40917e66c9fa5bdbeda3f9753a90aff362f74548805146937a967ddf5c53d6d0"
+    },
+    {
+      "game_id": "paid-v1/animals/128/10/p0",
+      "tokens": 3524,
+      "visible_budget_tokens_sha256": "f8697941f075e48781c551ab08b8f610cf7928a7568d7ff8d24c55be063387ae",
+      "primary_tokens_sha256": "6427c668a6443287103a6c0d187620765c911fdc22ed9a0148c2194ff5b22494"
+    },
+    {
+      "game_id": "paid-v1/animals/128/11/p0",
+      "tokens": 3514,
+      "visible_budget_tokens_sha256": "79670c98e8f11945028b4144d8e830f63b068c07e8949a190c7f9d8c612ab2e1",
+      "primary_tokens_sha256": "9dec2839810fabc1d8b16495638886f5b08b8d9e27b57414c9f333066c27ce24"
+    },
+    {
+      "game_id": "paid-v1/animals/128/12/p0",
+      "tokens": 3483,
+      "visible_budget_tokens_sha256": "08f8bcc696fb81d7ab8e54f8b7b72e19c078f8c4622801dbd1951a05b438f67c",
+      "primary_tokens_sha256": "93d3593a00f451f9b65535e2b8a66f107243a1c42bac378340418c7eafd6df54"
+    },
+    {
+      "game_id": "paid-v1/animals/128/13/p0",
+      "tokens": 3459,
+      "visible_budget_tokens_sha256": "5563b5ccdd78eb9f85c4f53fa6a6a843666baa2c323e278b2394f008d8ae3588",
+      "primary_tokens_sha256": "05e0d52149d412e4d1dcd97fa3fbfb4081fd2af8b10af872db8d960f3f18afa3"
+    },
+    {
+      "game_id": "paid-v1/animals/128/14/p0",
+      "tokens": 3494,
+      "visible_budget_tokens_sha256": "0c51c38b35a0b6f98bcbbcd5c80a874fb0363bf81c2a51e6952cb8b6bfcfb2e4",
+      "primary_tokens_sha256": "9c0a7721f3f67634f419785897a468a4d5fc5b805f615791c916463c6f7d264d"
+    },
+    {
+      "game_id": "paid-v1/animals/128/15/p0",
+      "tokens": 3492,
+      "visible_budget_tokens_sha256": "94f58bf53552f971063fe797105d52d5457a5356c3d04a9996a689a99ad9567e",
+      "primary_tokens_sha256": "aa098b2d3b356c769abfa3e16ccc9d01d3e1e4ee0b985c2dd91c2acfa609642d"
+    },
+    {
+      "game_id": "paid-v1/animals/128/16/p0",
+      "tokens": 3474,
+      "visible_budget_tokens_sha256": "f486bcfc77b57c75a3372a9e768d051256661860491f022a889eb84bd68c18bf",
+      "primary_tokens_sha256": "390a703c39af5b5b2e3458b7c569b1a683d08ba0247748e6cc908a8010ea57df"
+    },
+    {
+      "game_id": "paid-v1/animals/128/17/p0",
+      "tokens": 3476,
+      "visible_budget_tokens_sha256": "1e0e1c76fda20a26c9470993219c90a757af8e74d50196672dd25669e3c638ee",
+      "primary_tokens_sha256": "7f3d14afeb8f27ab770c5c1fb07cb0ea85c11a7ff250d344eca2278d66f95835"
+    },
+    {
+      "game_id": "paid-v1/animals/128/18/p0",
+      "tokens": 3451,
+      "visible_budget_tokens_sha256": "5a571d19948a725c5b2948d3847bce314f55a2d8e01fa500adb4dc03bcb3be82",
+      "primary_tokens_sha256": "b23d81c54d7dd085c488cf60debae9707835611c0239bbadf07779e34adb52f1"
+    },
+    {
+      "game_id": "paid-v1/animals/128/19/p0",
+      "tokens": 3473,
+      "visible_budget_tokens_sha256": "b067441f8b0937e9e1237d99ede62b9841e015afcc4978df74941a45645ba752",
+      "primary_tokens_sha256": "6db6fb9e53ddb798e78d1f13040c9bee49d00a7eaf7293be55ccae7fe79b443c"
+    },
+    {
+      "game_id": "paid-v1/animals/128/20/p0",
+      "tokens": 3515,
+      "visible_budget_tokens_sha256": "fb41a32d17360a9327ff85261576b43c951cd4d2ac0d6504b7a0502ed4266fcf",
+      "primary_tokens_sha256": "7b7de6e2eb50bd22e4193a8da21dd060ad33860533122da1d557a1bf0b6c22ef"
+    },
+    {
+      "game_id": "paid-v1/animals/128/21/p0",
+      "tokens": 3483,
+      "visible_budget_tokens_sha256": "16e2257ff111e3ca67a5950348ec1d0b21256ba395e904dcba3b99add959ec94",
+      "primary_tokens_sha256": "8794431bab6493e8a17b9597c9588377f7a86af79bb5cb25a55b4b0a77fdc558"
+    },
+    {
+      "game_id": "paid-v1/animals/128/22/p0",
+      "tokens": 3511,
+      "visible_budget_tokens_sha256": "8ea0c590e9b86c2afeac500ebba439393413c9c8c74717af67c4cab7424e2295",
+      "primary_tokens_sha256": "f12d95d9d6704874b735be72277b5370c149adb5b430a340a04014b93461c4e6"
+    },
+    {
+      "game_id": "paid-v1/animals/128/23/p0",
+      "tokens": 3490,
+      "visible_budget_tokens_sha256": "069426f6047b28871770235cb1d29324b8a8cc2dba7d96ffa2086afeb1b257cd",
+      "primary_tokens_sha256": "b1d11d649e39758ce936b193a89688f01ac1ae8ab01069ac7fcd29d9970ef72e"
+    },
+    {
+      "game_id": "paid-v1/animals/128/24/p0",
+      "tokens": 3498,
+      "visible_budget_tokens_sha256": "18aae3bbb952f007bd0f336f62c25f9c6353d50bbfdcbb67f961f4b49e1fa113",
+      "primary_tokens_sha256": "e48486147bbae5621bb4c94e1b7c0e9b8c73bae8de148c73ee0b35692e69ccd5"
+    },
+    {
+      "game_id": "paid-v1/animals/128/25/p0",
+      "tokens": 3495,
+      "visible_budget_tokens_sha256": "ed6290b3decf091fc6b0a1d79200b5191e37a08fcc737e9a26fa26e0657fae5c",
+      "primary_tokens_sha256": "996011d6efc119148b9487fcd8e571fe4cb29f5e76fbb1f71e8b767e43c4097e"
+    },
+    {
+      "game_id": "paid-v1/animals/128/26/p0",
+      "tokens": 3540,
+      "visible_budget_tokens_sha256": "4fffa166023e37d748d5af24366bff6f9e4a330be97f7d4a684e1ec6b41b8a84",
+      "primary_tokens_sha256": "1a60bef8cefbd36e8e6f63ad2db8d749f53aadde8695da289915c12bacde94f9"
+    },
+    {
+      "game_id": "paid-v1/animals/128/27/p0",
+      "tokens": 3470,
+      "visible_budget_tokens_sha256": "e1db1123a9f4e5652c3bab63f611c51acdb1d882b8df7213fa5266c2d583d89d",
+      "primary_tokens_sha256": "facfbdfab1ac39ff82cb6f0ed0db318a5be4a4a061a9125b461ac6e2beec45a1"
+    },
+    {
+      "game_id": "paid-v1/animals/128/0/p0.1",
+      "tokens": 3494,
+      "visible_budget_tokens_sha256": "933c4ac25e62167c25289d273a5a8bbd3284390c04cdbb850793b13df72d3d23",
+      "primary_tokens_sha256": "46723ea6ffca12583c825dd88d6e66013039cf3a475666a858724460e774f71e"
+    },
+    {
+      "game_id": "paid-v1/animals/128/1/p0.1",
+      "tokens": 3447,
+      "visible_budget_tokens_sha256": "4ea042274f18d2f9b986b88c297d3742b75dd17026b6d64270b9c29407ae42fa",
+      "primary_tokens_sha256": "1948ea70bd463413dccfa631bc2faadcc76de98dacf7e5cba0183bca5d52343d"
+    },
+    {
+      "game_id": "paid-v1/animals/128/2/p0.1",
+      "tokens": 3447,
+      "visible_budget_tokens_sha256": "c53468e49007d382705f3b58f5507283f45ba0049ab8258d35221284917b2855",
+      "primary_tokens_sha256": "e413d62db3121f5a8081442f5356f8de1934d3ff15b026c7c5e8d22742a9b94b"
+    },
+    {
+      "game_id": "paid-v1/animals/128/3/p0.1",
+      "tokens": 3482,
+      "visible_budget_tokens_sha256": "30952ffc522cfc908e103c38dc415996db86d9eb284c021aa861e4be8777aac5",
+      "primary_tokens_sha256": "5244d4e140b234db5aa3017cf9f4958549a387057f75af91a8e26b0a8f174edf"
+    },
+    {
+      "game_id": "paid-v1/animals/128/4/p0.1",
+      "tokens": 3503,
+      "visible_budget_tokens_sha256": "ef7ac95a91daa6cc1fbb51156819382a82424d51cef2d3af4d746373f3714a4f",
+      "primary_tokens_sha256": "a31f9dde86d87078204396f7c4590742326bdeb640cef718896a81399eb3f11d"
+    },
+    {
+      "game_id": "paid-v1/animals/128/5/p0.1",
+      "tokens": 3469,
+      "visible_budget_tokens_sha256": "1984304e59d6853999e2542d2013b973d91bee81cd8ba3a27e9c19a0e36602d1",
+      "primary_tokens_sha256": "75541fd1af59e874dd60ca167a089193824b0f6fdfe5409205657af419f5c605"
+    },
+    {
+      "game_id": "paid-v1/animals/128/6/p0.1",
+      "tokens": 3499,
+      "visible_budget_tokens_sha256": "d251f7c2cf55c764e9fabd00a404b388aec1ba91f7e66d67351e53bfb8f9c7c8",
+      "primary_tokens_sha256": "f72e11183739a4ffba1cc962a10a21468f515dcbbed38552263b6b62d181a19c"
+    },
+    {
+      "game_id": "paid-v1/animals/128/7/p0.1",
+      "tokens": 3491,
+      "visible_budget_tokens_sha256": "863d0844b49de3e99bea1915cf687b775adc751a3953310343afffb80697aa92",
+      "primary_tokens_sha256": "da81e6dafb8032d85200952b1b65236aaaadcfab04b11881d49a99e088dc70fe"
+    },
+    {
+      "game_id": "paid-v1/animals/128/8/p0.1",
+      "tokens": 3510,
+      "visible_budget_tokens_sha256": "12763dd63b055b9d8af355a7eacb9b424da73cb7846ab437a4fc53fdd34d6481",
+      "primary_tokens_sha256": "5222cd8805252201294a7d2185ab37af6cb16fe1440b88779ab2f9761634d236"
+    },
+    {
+      "game_id": "paid-v1/animals/128/9/p0.1",
+      "tokens": 3455,
+      "visible_budget_tokens_sha256": "8c1e0fb0639592f27c8653e7913825d3391bd1a28f50f9a70754fd93f5b6c82e",
+      "primary_tokens_sha256": "d591998378febc2b516e5864cbc45755356c3b53d0045b27106fb26e969e2256"
+    },
+    {
+      "game_id": "paid-v1/animals/128/10/p0.1",
+      "tokens": 3524,
+      "visible_budget_tokens_sha256": "0144f618008b54ff977baae3d9c0514fba5b9d12b9b59f540f3865eca1b49760",
+      "primary_tokens_sha256": "1ca0414be299e5733e51c2ec6f5f0f98d688bac816269597e1e282d2fa11faf3"
+    },
+    {
+      "game_id": "paid-v1/animals/128/11/p0.1",
+      "tokens": 3514,
+      "visible_budget_tokens_sha256": "e209e291b83a2460e50f685135c2c336deaa2d94c98643b92eedcc28300bc409",
+      "primary_tokens_sha256": "040bf4eff908cfc66173bbc565cea4c73c6835d491a53b20d6c8457849844e95"
+    },
+    {
+      "game_id": "paid-v1/animals/128/12/p0.1",
+      "tokens": 3483,
+      "visible_budget_tokens_sha256": "69686dd145a084e68e3f318725913c12df3f6b489448e02c15c6e7c03a74720f",
+      "primary_tokens_sha256": "69c1ea9ed14458c111af5caef7a9d3b1b4ce46a6dea112102e51816d619cbd35"
+    },
+    {
+      "game_id": "paid-v1/animals/128/13/p0.1",
+      "tokens": 3459,
+      "visible_budget_tokens_sha256": "0c20711fefe9e4a72a2c8b694c677e4355192edf8f794bfab78a9b1653e963e3",
+      "primary_tokens_sha256": "8247d62dea534631334a74d18662825aeb66c717029d6682e7221cd03400f457"
+    },
+    {
+      "game_id": "paid-v1/animals/128/14/p0.1",
+      "tokens": 3494,
+      "visible_budget_tokens_sha256": "25bd48447899be4d2e8579ffa3b05e5eb8c7461eac438d428951dc1447250e5a",
+      "primary_tokens_sha256": "823a87e46218a87d9ed8b7af6cacef00b5ac7e5cc2c68bc44254420efefbb038"
+    },
+    {
+      "game_id": "paid-v1/animals/128/15/p0.1",
+      "tokens": 3492,
+      "visible_budget_tokens_sha256": "2101c78f9507ae55e54977b1fbc1a06741a3c198c20eadfa38b120bcca85fa7b",
+      "primary_tokens_sha256": "690f38a4f831f6ec66df2911c81d1bfcb01232b77e14ba38a27f3caa16b295b1"
+    },
+    {
+      "game_id": "paid-v1/animals/128/16/p0.1",
+      "tokens": 3474,
+      "visible_budget_tokens_sha256": "d244a1749aecd33edcea05b071c85db39a2f6adfa0a4cad84d6fb389de45064b",
+      "primary_tokens_sha256": "86d9c82e516a5ba1928fe7f82464381f31528ebc0b60d97b771c077c35b3200e"
+    },
+    {
+      "game_id": "paid-v1/animals/128/17/p0.1",
+      "tokens": 3476,
+      "visible_budget_tokens_sha256": "29eae755ab12878943ceacfcd1c3723df04faac1681311a35bc0743708aeb3d5",
+      "primary_tokens_sha256": "6b6c5f1634dac8f0ea4654c6febdf1aa98e863a60ca5b2c5ffd28ef5214e6be0"
+    },
+    {
+      "game_id": "paid-v1/animals/128/18/p0.1",
+      "tokens": 3451,
+      "visible_budget_tokens_sha256": "62fa864713ed2a574560b10dd2ff97cb41dcc3ba32e44c2682455b5602c04587",
+      "primary_tokens_sha256": "1afa5209d6b130fa9146240b9fedae870daf21c8317671ad3eee8d3ad40c9d04"
+    },
+    {
+      "game_id": "paid-v1/animals/128/19/p0.1",
+      "tokens": 3473,
+      "visible_budget_tokens_sha256": "a2ac67de68b346f20a2635eef56fbce9d4ca800c8db00753d4070d0412ac02bd",
+      "primary_tokens_sha256": "9be6eebc6b4b0c3a0da0ccb30a64a75cabc39af2d43e29e3973b8d923cf5b016"
+    },
+    {
+      "game_id": "paid-v1/animals/128/20/p0.1",
+      "tokens": 3515,
+      "visible_budget_tokens_sha256": "a8b964465f88e37b47b9438348615bb286b006a6888345fdff487ea5ee93d76f",
+      "primary_tokens_sha256": "b97edf6eaf43c2b1a65a552da9184b629c70b8a2fbad71786aef497f69b76f2c"
+    },
+    {
+      "game_id": "paid-v1/animals/128/21/p0.1",
+      "tokens": 3483,
+      "visible_budget_tokens_sha256": "3094f59014c87f121dbb367fe4b5edec98a58a92644f527ea76b191bc751ff95",
+      "primary_tokens_sha256": "88bd643d0b4a17eef2e70c14f573651b000789ca318099435fc85ba12e27637c"
+    },
+    {
+      "game_id": "paid-v1/animals/128/22/p0.1",
+      "tokens": 3511,
+      "visible_budget_tokens_sha256": "4fce15fc3072936dcf6dcf975db9498a654351739f771b8668f40df1a3196e0e",
+      "primary_tokens_sha256": "b1b27adb85bbd8a3dcd598710ed9fb34cc969a103e9dc85683effebdf7d3442f"
+    },
+    {
+      "game_id": "paid-v1/animals/128/23/p0.1",
+      "tokens": 3490,
+      "visible_budget_tokens_sha256": "d86847f9ebf5dcd35fa5e1a747e42e7473adf9e056a7c01236c801a2863cc9ff",
+      "primary_tokens_sha256": "2d136d90f775f3be441ece642c9ab0296b3a53519b78cfcf84b5d04d6f1540f0"
+    },
+    {
+      "game_id": "paid-v1/animals/128/24/p0.1",
+      "tokens": 3498,
+      "visible_budget_tokens_sha256": "064502907a1c54ef296720484125a065c7861735f00f532d574ffd6155d1067b",
+      "primary_tokens_sha256": "2150572a6477bff1a2485ec15ef74c90dcd635508588119261ced2c2cd218611"
+    },
+    {
+      "game_id": "paid-v1/animals/128/25/p0.1",
+      "tokens": 3495,
+      "visible_budget_tokens_sha256": "bdb56767515b3eb173d6b9c8f41f47cd25691449f3b8cea61accbf3d8fe4cf23",
+      "primary_tokens_sha256": "9af0f9288878f4059dddb82aa41f79065e205e641b81e44614c743015593edcf"
+    },
+    {
+      "game_id": "paid-v1/animals/128/26/p0.1",
+      "tokens": 3540,
+      "visible_budget_tokens_sha256": "34e5c65ecc083c7bdb6f725363e676eff81744016546df4fa41a582abbf86c21",
+      "primary_tokens_sha256": "f6370ac47f444e73a34e0d260a9cdfa28b7248de13fb4c6ea60c04e06e1003b8"
+    },
+    {
+      "game_id": "paid-v1/animals/128/27/p0.1",
+      "tokens": 3470,
+      "visible_budget_tokens_sha256": "23d5413e0a7ebb93b9bfca3ce2c98351caf18f69441eea6f5c140556494638e4",
+      "primary_tokens_sha256": "6120bffa6b3f06089721335a8b3235808e669927af900f4fe3ddf67fd760e70f"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/0/p0",
+      "tokens": 1288,
+      "visible_budget_tokens_sha256": "f9d6b73be8a2ecc6dc3116388d4291399a5e9fd2db6d62ac3d75821aeff769f6",
+      "primary_tokens_sha256": "84a8af5471661f80a116c8e1e6b75801a500fdffd5d97d2acaf8ab2e9481e5a0"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/1/p0",
+      "tokens": 1298,
+      "visible_budget_tokens_sha256": "77d6e1711cf8e7d2771079d501aea60b5b8c6f7844d6d59ba9f6b5d0e92a15c5",
+      "primary_tokens_sha256": "14fccedbe3d805e3d549f2789830f454629c463b6fc2bb20521c5629ade82440"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/2/p0",
+      "tokens": 1306,
+      "visible_budget_tokens_sha256": "abe8300f3d37160e2e52994d503d9a88d0e701a5828e9189fdbe14ab5f65c1a7",
+      "primary_tokens_sha256": "025836b7acfda156d16bc4bb8b449697ad0163b73a7739f33ec01e342cc67c7f"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/3/p0",
+      "tokens": 1309,
+      "visible_budget_tokens_sha256": "b0a8fe855961998c56065419f60d55d8c54f78392948d128eac42b00c9fd0d0d",
+      "primary_tokens_sha256": "dc3a2a07f6d953c3d1395881a66940cbfa5d13ae5b9cb0bb914257932f7e5986"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/4/p0",
+      "tokens": 1302,
+      "visible_budget_tokens_sha256": "6645f59b00a841b8584f97adb82e00066a83c851bd791a2a02ac2b66f249d561",
+      "primary_tokens_sha256": "d0d009b700cb3bebb6bf34bf9f6609f0ceba9d6b738b8a432f95b8c2ad3b6cdf"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/5/p0",
+      "tokens": 1311,
+      "visible_budget_tokens_sha256": "aa392e89c6ccca82f93afe98b97822f12f7184112c058ebdd760b4c32e0e7ef6",
+      "primary_tokens_sha256": "4ad6847b63d5a93b8b0d7b087d633d18767739430ace57e60d160e0aa3e47f05"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/6/p0",
+      "tokens": 1292,
+      "visible_budget_tokens_sha256": "ed61097e76f03fd5681f4df42617846e6d8cc24b569738139aa3b53e1f8bef88",
+      "primary_tokens_sha256": "bed1add4c897818d1dae7e9b532bd6a244c0ce1fa2616a44e6b7bb12999da3fd"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/7/p0",
+      "tokens": 1302,
+      "visible_budget_tokens_sha256": "4e6289b4b0f9061b0af0f4569fbaa0ec9f41cb4f943d3594d8d0ffd44ce9826f",
+      "primary_tokens_sha256": "b76b2b090d71a957f240983d7f75251c1b8be5059545e0f1089174b832239a62"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/8/p0",
+      "tokens": 1308,
+      "visible_budget_tokens_sha256": "268c88750d83b1dbf63a2fc357c6984a80be07059f05ef80756d34f48f0f9ec3",
+      "primary_tokens_sha256": "b000f365bb4fbf5d1d69f08d47479f6e4ba6ca6497b9f5745c1fd5942a84e87a"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/9/p0",
+      "tokens": 1310,
+      "visible_budget_tokens_sha256": "ffae421dbfbf247f633cef904138a63d5900ff8bd6809b2cdc5c32d38649839a",
+      "primary_tokens_sha256": "ec466b7ac33b389db5527f5b8d57f36e60f1b11c2acbdf08b6d041eb541c1541"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/10/p0",
+      "tokens": 1297,
+      "visible_budget_tokens_sha256": "9afaac48a1855914d7bc676b63d5633c728dc3dfa29bd2b84647719c343569b0",
+      "primary_tokens_sha256": "7b1cb965a09259d8e064d3313ac890efce58d524d779da8ecdd50be062976da4"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/11/p0",
+      "tokens": 1290,
+      "visible_budget_tokens_sha256": "a92004d2b1c4304ffc74f5d37d52603d14b7de2a5505ee90e8d2ec4f84bfc273",
+      "primary_tokens_sha256": "9187c9816923162fbb24c210e69dbc6f738c415ffb413b5e25e085c96659b3f2"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/12/p0",
+      "tokens": 1297,
+      "visible_budget_tokens_sha256": "601915ef7d8fa0bc613524cce3bf33547393308f5093cf712b5daf26fc43fe9b",
+      "primary_tokens_sha256": "a930e4b67ff121f7c8152432667e5778cacd3f15f609a44588df0e5757890d5a"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/13/p0",
+      "tokens": 1299,
+      "visible_budget_tokens_sha256": "0f8163d6fb7d41f1255099f221e4c079ab14d8284ddcb2cac4c26bbe60ea3892",
+      "primary_tokens_sha256": "e615aa1205ee9a20cc27d3acb7ab2b514ba7884144e1bcfc39b71f5db981890f"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/14/p0",
+      "tokens": 1320,
+      "visible_budget_tokens_sha256": "32e3a1335390a124bf19ea760782ce1683c71bb653345b5bdea00aca44af4ca3",
+      "primary_tokens_sha256": "ab4a960a7c8dbe34dfe1f5479cb189178bc833bbfb81342756098dfc0877e7da"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/15/p0",
+      "tokens": 1306,
+      "visible_budget_tokens_sha256": "abe2ea481f14eec661efad38a34c7637bc81227c4b4fe47dff9f2faccfb53e2d",
+      "primary_tokens_sha256": "b845d8ea2f9dbe85936d13289804b62871bcea8e4fb9de175cf8288ec24bf8ac"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/16/p0",
+      "tokens": 1285,
+      "visible_budget_tokens_sha256": "4f5fa2e7eb2beb013c4b2925f1e859288ce36de7dbe60873510b72c028c78033",
+      "primary_tokens_sha256": "9edbda852b82d263a9abb3135ff277988d364d5c8f1d4b180e6af0368780801d"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/17/p0",
+      "tokens": 1295,
+      "visible_budget_tokens_sha256": "44d286487b438d3d085e33d8329e4e0097b9f5d19791dc91753a2117f65b7b52",
+      "primary_tokens_sha256": "51cde91caa157b8f107b3633388c9f9972b4f8bd0533be31c1662645d500350b"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/18/p0",
+      "tokens": 1299,
+      "visible_budget_tokens_sha256": "1caee89bf511bb6a3c76019c6e054c5d2e17ce33c91adf0a12c81fd82112e7e4",
+      "primary_tokens_sha256": "80920d68ef58dc279ffe891c28423a300c0577ad056b0ea71a055421aed1ea22"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/19/p0",
+      "tokens": 1294,
+      "visible_budget_tokens_sha256": "80b6cce163ea9324a48c86419f28ce6ad937a7989d00ed4b1863d2614d212340",
+      "primary_tokens_sha256": "eb4e980f6d1436914599ce32515e6656fc04af1d376e25ea849b5b49894879f7"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/20/p0",
+      "tokens": 1313,
+      "visible_budget_tokens_sha256": "4135f30bdc5633685900d26bda07e9d2bcfa1b2acadcff9b7c804f8a5680ad9d",
+      "primary_tokens_sha256": "1e8432fa20fde2fe471d483748e47f4d842951aa34953ac2413fae9a9e5b317a"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/21/p0",
+      "tokens": 1288,
+      "visible_budget_tokens_sha256": "8608e25e373ff8ada096db9791f845a6213c7cc4d264ff4a7f98ebc467d5e1b3",
+      "primary_tokens_sha256": "c81c9bc9ae6f28e292ad32532ef33396dce69a64bc2b61f3d1a8c27c1d3d5a87"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/22/p0",
+      "tokens": 1297,
+      "visible_budget_tokens_sha256": "8635c07131aaf8254f3f14b8c8ef519880d1d46b99e8f3c014501e87772723c2",
+      "primary_tokens_sha256": "6cd9203d0ad83a43bf5856fae01255044cff8cf2f938383f39790d9c19252ad6"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/23/p0",
+      "tokens": 1315,
+      "visible_budget_tokens_sha256": "79c3cb88f9a9789809901a31ab9af7a4bc2a9a2df95137538016a3e94330e88e",
+      "primary_tokens_sha256": "64dfe7c643887c8d7d63e2d5b65d87e6a61f5c62beb89da346403bec78d0b670"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/24/p0",
+      "tokens": 1308,
+      "visible_budget_tokens_sha256": "111bc10293864bad13f9ff6d437340943ff6dc1484059d51a3032763d41ff6e6",
+      "primary_tokens_sha256": "39d76ba873646e3f9fae49eae33b952003c16cca935b0ec1d65c9cfb0722a274"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/25/p0",
+      "tokens": 1311,
+      "visible_budget_tokens_sha256": "26db58491451de0bf6c5ff8fa6ed1de3e95267f813e8341cfbf19f86c0d8a628",
+      "primary_tokens_sha256": "93e7d20f23bd28a71b6414346f7d874bdcfb277d26ddaf50318818a291e4adb8"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/26/p0",
+      "tokens": 1302,
+      "visible_budget_tokens_sha256": "96852b5d13fadc6a8906cb51b5f795cc6706e631054c3504f20bb75c5fa61582",
+      "primary_tokens_sha256": "126e4a559e8fffdfce66681a9cb650ded6749d494f31b8231ac65b9782e0bbc6"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/27/p0",
+      "tokens": 1319,
+      "visible_budget_tokens_sha256": "906cc8d5db12b2a586e3d3d8d4f39c3e63c8d9ab765235d4268b87aadde2af39",
+      "primary_tokens_sha256": "be3ab1d27231d44a103f8d77eab81396db3d797bf54d5dceab7340e574f7783e"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/0/p0.1",
+      "tokens": 1288,
+      "visible_budget_tokens_sha256": "97ef99efefc181fa9d364155881e6d613d293de750947b4c1f08ef5031cbcc3e",
+      "primary_tokens_sha256": "ed8f03023f9cefe1a273327986eee53d0adbb71d3e2e7ef22cf3afc4dfe341a4"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/1/p0.1",
+      "tokens": 1298,
+      "visible_budget_tokens_sha256": "4d83703e5d77bdcaf1217ff50dc9f881d9145597054f29b618d0b67754ea303f",
+      "primary_tokens_sha256": "a975fa0af1c935a7a94d5f0344f88434b9b48dbb1bb0bee80b724d723b97a495"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/2/p0.1",
+      "tokens": 1306,
+      "visible_budget_tokens_sha256": "d18cd8e62b973aae2883c6987fb68d7e2a419a13a61e21b3fb1c06d8bedb3941",
+      "primary_tokens_sha256": "13dc992848c236a10d50821df230b1418171e74de0df7669abfe8f2cc08dfea7"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/3/p0.1",
+      "tokens": 1309,
+      "visible_budget_tokens_sha256": "1328b2df20bf7131308cd9c2672377d9c07cff6c48efe76128d20026328e2dcd",
+      "primary_tokens_sha256": "ab18a9c9dcc51aa6f740fb8b4376a3947c48fd46a90cb83c3c5494c7dd039733"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/4/p0.1",
+      "tokens": 1302,
+      "visible_budget_tokens_sha256": "706e2e8d9cc0788e297ea7be0dcdf1c938a77614fb68bc39cc0c1886e5b9772f",
+      "primary_tokens_sha256": "2c8e99ec7f06f7ce58cebed2f51586b49bbacc75c8f4fd01b3d211d1ad399a73"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/5/p0.1",
+      "tokens": 1311,
+      "visible_budget_tokens_sha256": "7c41f6795fa887d3e26cb330208acfef3f6d8f432f8263e7eb18bfcde339a7de",
+      "primary_tokens_sha256": "6f73ccf8c0049e33b4470abfd839aae163501d4f546f4b5261ec82eaed17cccb"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/6/p0.1",
+      "tokens": 1292,
+      "visible_budget_tokens_sha256": "3e187efd38f7375365367a76600edd4b5194e48d94a5062abee65550d8088e95",
+      "primary_tokens_sha256": "ba90d8c904eec2143cd9c390abd96b3d947bbc342d49e33bc6fa99383e430c28"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/7/p0.1",
+      "tokens": 1302,
+      "visible_budget_tokens_sha256": "77b0747545a26503a0536e910c698d2f17ee749486d249e622b23d39df7b8d26",
+      "primary_tokens_sha256": "8a6002624584c6e9bd23b508c633e39b7b51a09c996dc6518260072e5e8b5def"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/8/p0.1",
+      "tokens": 1308,
+      "visible_budget_tokens_sha256": "869a02216083df5011208e444afa2160db8c0b65cb8cba96475372c9b7fa4bb9",
+      "primary_tokens_sha256": "da43f1bed792156ca405e7470120b0296bcc879c52e64b545532319c340eda66"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/9/p0.1",
+      "tokens": 1310,
+      "visible_budget_tokens_sha256": "d8b2e520e19bf053db3abad900eeb7f8842a691d02e5f5a79a5ee7d3838cf471",
+      "primary_tokens_sha256": "93ecd4eb2df5057b2f5ffceabcbf23eec99bd345b0d8622488e252bd6deac3a7"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/10/p0.1",
+      "tokens": 1297,
+      "visible_budget_tokens_sha256": "b029a0ca6f37c07f350f69404774fcd3ab172c62c9f2c1f44730ff615951d433",
+      "primary_tokens_sha256": "92f2c409de59a8d5fe6632a9d68d4657d485229d62068b15e204679a1d800cc3"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/11/p0.1",
+      "tokens": 1290,
+      "visible_budget_tokens_sha256": "2cf93a6e65df90118bd3659311ded56a9315ebff12ca7b1dc6f6319ee1132200",
+      "primary_tokens_sha256": "30df5c9c3f6f71eba180be794a263dd722b94cec028b48596b434686d05abe75"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/12/p0.1",
+      "tokens": 1297,
+      "visible_budget_tokens_sha256": "5a458cd843f0452b3a286c9c2d8ae9b35263873ba36f63f802a353b114a41ca0",
+      "primary_tokens_sha256": "b871c819a7c50d1b5ec6a403de9119870163ca2c68217576a132a8e11407a920"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/13/p0.1",
+      "tokens": 1299,
+      "visible_budget_tokens_sha256": "c43bd3e6e0864057195bc6ae63e9723ca5da2bc86023e8955dff28eee7cd500a",
+      "primary_tokens_sha256": "21f4c509688c2337a3524adc82d105a798136074e9b1f6dfcd916f20ac4f3a02"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/14/p0.1",
+      "tokens": 1320,
+      "visible_budget_tokens_sha256": "85c6fe2b97b24b94c491f2124d6c80ee3fd2440f3cb2f0adb873f894532698ed",
+      "primary_tokens_sha256": "02be3910e5bf0b4f87cc94d0bceeca5becc8c6e39db894f1bcf1086542458822"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/15/p0.1",
+      "tokens": 1306,
+      "visible_budget_tokens_sha256": "a109dcb44b20d109eec58eacbb448d730a5d5f3318c9fa52736abe8eedd953f1",
+      "primary_tokens_sha256": "2f90e8c9241c81ca08ec14f1bc82d98c8df66bccc8ef819f214dde119550c752"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/16/p0.1",
+      "tokens": 1285,
+      "visible_budget_tokens_sha256": "f426348293e698b4788f7ee17ecc1b3ee9a62addca43c5d6ba9ea71e722b474c",
+      "primary_tokens_sha256": "f4d4e58fabf70d0c5c69c998313f19947592f615af93b21208d06ac9f76d54af"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/17/p0.1",
+      "tokens": 1295,
+      "visible_budget_tokens_sha256": "24b19237bb0696092eb72287da26f556ea0a2e406b8ff0075019972511a8df52",
+      "primary_tokens_sha256": "0d0d2a9f8f7a66f12d12b574c655872c9b2204a6ecc8d3b81496939afe42efee"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/18/p0.1",
+      "tokens": 1299,
+      "visible_budget_tokens_sha256": "4af11e07ca9b4745611e92191b998ce09926866e1c7e73332631962c0769e7dc",
+      "primary_tokens_sha256": "6b505745c19719543c9e17bdc1c146fdd14a632aec927d952ec50b52abc23018"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/19/p0.1",
+      "tokens": 1294,
+      "visible_budget_tokens_sha256": "3b47ef8742f968b042a0a860c8ea6a0b8f67898d6280d22c4dd36fa4c8c4a5df",
+      "primary_tokens_sha256": "f3609ebb45384781c496645fae98c7e1ec3d028ba84c66e53b04c83b222c5966"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/20/p0.1",
+      "tokens": 1313,
+      "visible_budget_tokens_sha256": "c169babf83b8ffbe292b9c01792d94ca5314c30241cfff03ede6cdedb3ad9e17",
+      "primary_tokens_sha256": "0a791f81507c2a6e293242fb9e18238483bcdad6259a17d59cb36194733959d0"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/21/p0.1",
+      "tokens": 1288,
+      "visible_budget_tokens_sha256": "98b712f4444b83e3aa53d11687e7c45d416d13c155944e7839822a622c0935c2",
+      "primary_tokens_sha256": "aaa3d36ed1e2cf404bf0e195be2aacca6d4dad6a6f89bedefcccc18cfb55d44c"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/22/p0.1",
+      "tokens": 1297,
+      "visible_budget_tokens_sha256": "1e020c13b54a2604f1bdbb09d19bfc1145aae509af987da65832fc268806140e",
+      "primary_tokens_sha256": "8b6e29da74da1d05a8b974939ad43bd776ad6e35ce4084b6c1504253e30c2c26"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/23/p0.1",
+      "tokens": 1315,
+      "visible_budget_tokens_sha256": "7d38d107e89cb9bb9c3914143c976098db75f58ca9fed2a509cbb210ece4792c",
+      "primary_tokens_sha256": "b031b25d7e3ada7217753ae627ac4c19923688d82c104961053963dbd4b69642"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/24/p0.1",
+      "tokens": 1308,
+      "visible_budget_tokens_sha256": "53d9bb925a772d6ff42b994f376cfceca8704824f2556fcc46015215ce9063c1",
+      "primary_tokens_sha256": "b03e9bca920644f4e4540dd8b5494a77cab5422ed78071bc66bf421af8edbcd8"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/25/p0.1",
+      "tokens": 1311,
+      "visible_budget_tokens_sha256": "045f2a47d29e8a5d93cf38c67f76eab669acd508b26f9d15f530668d1375ed6b",
+      "primary_tokens_sha256": "e09b23a22f5e58493aab29485a16365e4bddc4a34245ae6da304426a985ae353"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/26/p0.1",
+      "tokens": 1302,
+      "visible_budget_tokens_sha256": "777b760ff0bfacce58d36fceea564fb16ad4c5489784ea4f598bd24daac9700e",
+      "primary_tokens_sha256": "0e8722014757159842555f43d0b956932a6b8455f38942944e41e366f001bd7b"
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/27/p0.1",
+      "tokens": 1319,
+      "visible_budget_tokens_sha256": "88b93cd5defad36cd010801aab5be5449099c2387f2555f7db279276818d88f1",
+      "primary_tokens_sha256": "77e8cce1b609781e91431013d7684c2a8da068d1311c369d10d1afafba860c58"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/0/p0",
+      "tokens": 3031,
+      "visible_budget_tokens_sha256": "9f8d89a137572a8807125ec206e12f017d0eb5eaca547f02d09310c99f1826d6",
+      "primary_tokens_sha256": "d1aef4b2f56c960771a8ecab031162897f7826b9cca74bebb48312cd328de409"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/1/p0",
+      "tokens": 3034,
+      "visible_budget_tokens_sha256": "1890fafd21500334b68f982e7b1036b25221edfe7e560f89bd9ab43ac31c9ee5",
+      "primary_tokens_sha256": "53727c3f4022eddd871261aff8346270b5f4998653bf03e30223180042bfd6e4"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/2/p0",
+      "tokens": 3017,
+      "visible_budget_tokens_sha256": "16e96d9874e5f0fe007c94215b4d049fe0eaa5ff5aec5329617c64919061f351",
+      "primary_tokens_sha256": "9b79c85296622de2c170190f4dd6205fbda4d4c5a31b45b48d243a595f033233"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/3/p0",
+      "tokens": 3075,
+      "visible_budget_tokens_sha256": "3118fb1e8c6317eb9c9cd4d44b81445118e9fae5f66251d198a15b8e8da595eb",
+      "primary_tokens_sha256": "7ceaa5caa6cb82a705f3a53cc111b78ba533906dcba8945058c485ee1324910e"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/4/p0",
+      "tokens": 3014,
+      "visible_budget_tokens_sha256": "f8075d0306fd1dfbd3caa69fab1b06078802d1b3205db69a4d4590e14c9b3344",
+      "primary_tokens_sha256": "d2f79868f1ed3c9c7ffa91309d58deb8d91a4d4fcb8019adad1a614b6a113876"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/5/p0",
+      "tokens": 3059,
+      "visible_budget_tokens_sha256": "01271f6371321125da119ba874e16a85afb0633f98c6857a36068c58bc1940ea",
+      "primary_tokens_sha256": "b5d700f1fdaddb5535395a760877a17e0ca111e9f26cc3fa9583413e751c1a45"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/6/p0",
+      "tokens": 3058,
+      "visible_budget_tokens_sha256": "63f106aa18dc8ea70a330590385194696ebbdcdd0320b3ffe078403d862922e3",
+      "primary_tokens_sha256": "aa1d6745e6c32202bb94824d5095cd183d954b1becc124d1699d28c06c908666"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/7/p0",
+      "tokens": 3065,
+      "visible_budget_tokens_sha256": "852af6ac83361f284535671f4fcc0023b7c1f841c50a8934617f9d5e702ffab9",
+      "primary_tokens_sha256": "9008b03455ef536c0a74f7142eec27bb9e6673f53864ff837fda1943545596a8"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/8/p0",
+      "tokens": 3027,
+      "visible_budget_tokens_sha256": "830eb978a15daa543dedaec4b541668201a1739f203ae04528a97979fe456d8c",
+      "primary_tokens_sha256": "d9b31f500405adb2a0ba732200fceed1af26a62c9e3196e63e1c48d9550d2695"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/9/p0",
+      "tokens": 3042,
+      "visible_budget_tokens_sha256": "a6c4f0500c14a671b14bd642c1f3b4b1d7a8d0a9af52d388e4edcbe44e928b4f",
+      "primary_tokens_sha256": "07aca375e2d41d3b60791ed10de70d9568732d03ea335cd6566e68dcd4e0d10e"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/10/p0",
+      "tokens": 3082,
+      "visible_budget_tokens_sha256": "7c03e8f668c1a3a9ed589e5b575ad5c8666af4980b5ade23124464a37f35e9c7",
+      "primary_tokens_sha256": "5e0097a9b702c61185f97b974ef632c3ad03d203a090b73021a4ba9576d8eb8e"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/11/p0",
+      "tokens": 3070,
+      "visible_budget_tokens_sha256": "baa63b99b86c3304c9ef94ae2239f7a98d178eaaff3fa93eaeb072b86316b956",
+      "primary_tokens_sha256": "74bc8abc15f0fc13dff26d4125c45b36583b646e3c3ecd309d1b1aa453961738"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/12/p0",
+      "tokens": 3069,
+      "visible_budget_tokens_sha256": "9b9fbe4113c5ba984171be79a75394c2c80bfc03a2a61661cceeb8498bd5809b",
+      "primary_tokens_sha256": "10853bec321095476bdc97c36bbf5d7587e1963215c2c5ad802fe5617519d13e"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/13/p0",
+      "tokens": 3068,
+      "visible_budget_tokens_sha256": "9f336071e1dd6f05ad8d75e02267d964fb1b00edb063300d6402c5a3ab8375e2",
+      "primary_tokens_sha256": "249ede9853046ff41661a55425bbfbba86882384842ce366e88b31db64273b1f"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/14/p0",
+      "tokens": 3040,
+      "visible_budget_tokens_sha256": "6a0f4cb19abad5c62ee68102fd8012d8c9401b0dfcd7043fa2837f5f185f5a90",
+      "primary_tokens_sha256": "8dbb61363af70700da4aa1f19f8b4d46a20b7a44213453cfcdc5cef30e302ca4"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/15/p0",
+      "tokens": 3039,
+      "visible_budget_tokens_sha256": "a9b081025eafa5daed6862ff91d94fe071a00006835ad71537f7a6e87f0e68b6",
+      "primary_tokens_sha256": "61253ec42bb7eae6cb9c976ea552156903d97b0cc3bf7fe44b0d6a5b5fc018e2"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/16/p0",
+      "tokens": 3038,
+      "visible_budget_tokens_sha256": "7f453e904e7a6b64f605df6ed95ecfc9e1f2b8a636ae069c7dc36763a6ff3670",
+      "primary_tokens_sha256": "8403c1ff6a2f7c5f6e9cf203c435019c500e77fc1c701484a94749d8631ba2d9"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/17/p0",
+      "tokens": 3036,
+      "visible_budget_tokens_sha256": "0a802ca79d47447d4b023ef72c2d5c9c34f90773122c09ff2fcd1cfbd35cfb1b",
+      "primary_tokens_sha256": "3a29681daeb602b50cb74bd5f79ccba9b429f29e52cdd4e7de6061cfd4f8b382"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/18/p0",
+      "tokens": 3040,
+      "visible_budget_tokens_sha256": "30f8ec5aa191f5169a4a460fe9d5c633365352c9fd7b001d75db04e6ad35e8af",
+      "primary_tokens_sha256": "b56db4b0fe04495ce3708f8820f7e129f7795a5aa3584d1061f0e68a8e1acc76"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/19/p0",
+      "tokens": 3062,
+      "visible_budget_tokens_sha256": "ca6b7d7916f76c7e1c5d985e7e2a5197d550608e271a2fff7fe336bdb350f1bd",
+      "primary_tokens_sha256": "65ec6663d66e9ed45457d5200d63eb86059d71f66991437e77a9d80221b4c0f6"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/20/p0",
+      "tokens": 3055,
+      "visible_budget_tokens_sha256": "16f410cb050dac5f7643aee68c3d90df35720e7f9f43d45d785d1e42eca2f109",
+      "primary_tokens_sha256": "c504b881f5c85057a7716975b7881e6278ff5c4e516da658f2fdc454cf0bde93"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/21/p0",
+      "tokens": 3062,
+      "visible_budget_tokens_sha256": "5ac875cc630d5758a0750dff33ed9633f334aa0fdd4468cefd0d29536b833d6d",
+      "primary_tokens_sha256": "e0b1c9975096d2ae781d3a5f8daa7f8445bc3f00514078ea313281fde82041c8"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/22/p0",
+      "tokens": 3066,
+      "visible_budget_tokens_sha256": "c3818e5a948f75367bf8f5517e544f202fbb3129afe26883b07d709e2e6cb3b2",
+      "primary_tokens_sha256": "8a54ac6a8e5e84e86b4ca5138c1675602786076ffb5ab21114d34a758d63086e"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/23/p0",
+      "tokens": 3044,
+      "visible_budget_tokens_sha256": "ddde3bd1677e04343ca5ed3dbbcaeb027c3692d261bcd508aa04a35f0ec7b904",
+      "primary_tokens_sha256": "bcdc8e9e6f8bd8ff11daa9a6caf7e3e6831555ddd75e9f6bca155481fbeabebb"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/24/p0",
+      "tokens": 3037,
+      "visible_budget_tokens_sha256": "d4e8e24369f1cbe71caec418d148b884923d5c03d8e1ac12b808d85e34663705",
+      "primary_tokens_sha256": "078ff66500bfae3014f3b0cc46390b06e598be7d0a92d21d7752bcc66da6b832"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/25/p0",
+      "tokens": 3057,
+      "visible_budget_tokens_sha256": "84f5f7e9d3169757b9dddd5fc56491e654d180a891f9d1b3f2cc299111221425",
+      "primary_tokens_sha256": "32cc1b3fea9b66b604231ca79c31524e6270d121fff79d91039682a6f4ac782e"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/26/p0",
+      "tokens": 3029,
+      "visible_budget_tokens_sha256": "d3db858a0ce81e4c77517101fb9b0265707f32ead2b66116a4870daea93f4e95",
+      "primary_tokens_sha256": "501762d048123da7b38e963d2db1290e40ddee2f085c2b0c74822e7345eacd26"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/27/p0",
+      "tokens": 3065,
+      "visible_budget_tokens_sha256": "f362dbe91a87dfe650921febe1b17126b520729be3d7c5ab9e400a5fa776b24f",
+      "primary_tokens_sha256": "5595256d3e5133e688f511b8ae0b9356b9bda41930f690e34d09c731ac4ec7ed"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/0/p0.1",
+      "tokens": 3031,
+      "visible_budget_tokens_sha256": "08405823ac53f35f2aa6101c602364892f8900c50adbfb8d59e5048bfcf15106",
+      "primary_tokens_sha256": "1e55457de6ca1cc2fe9d80cf63968d8daa8435be0d20739bbc50c4bf555caad7"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/1/p0.1",
+      "tokens": 3034,
+      "visible_budget_tokens_sha256": "35dfb239508a1908d18fc3c7f5b850ace18ef01d12c84d62692ce30206faabcd",
+      "primary_tokens_sha256": "3689867636463d404b45275085d93e5be9ec52f9b2b7c44f08cd4b6d35d88340"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/2/p0.1",
+      "tokens": 3017,
+      "visible_budget_tokens_sha256": "9abacaff3640c2e3e18e78cc3680b584e07bfe64c0c701c9099b0158082ecc07",
+      "primary_tokens_sha256": "7165a6537b5467335feb445cf486d8ae2d85bf0dafadd919a3038529458b2263"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/3/p0.1",
+      "tokens": 3075,
+      "visible_budget_tokens_sha256": "43d648b8972d868673acf6a0542d261450193cdb8c529d1379eaf043e2162e1b",
+      "primary_tokens_sha256": "75c2f5580dc2b87e5d2f155c409d52d6933e4d2034a8042dcab78595daf6283b"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/4/p0.1",
+      "tokens": 3014,
+      "visible_budget_tokens_sha256": "ee420afa5ece9f4caacd09a24532113f65dcde335525c89f9a6f847d936ae0f5",
+      "primary_tokens_sha256": "83cb1aa7d755757d8ecdc5e1dc5d9e565ad0a83f545842b48d87950cf421fd7b"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/5/p0.1",
+      "tokens": 3059,
+      "visible_budget_tokens_sha256": "d7bf1e48f43a6f374e25866c0c3c76b4d745fe2ae2e0bf030ddae45fa3ef1192",
+      "primary_tokens_sha256": "1c8299f6c0aac578b041bcd6eccab57c824424255c4c7cecc7e1ab1f334693ed"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/6/p0.1",
+      "tokens": 3058,
+      "visible_budget_tokens_sha256": "c4e89f70e086a0737910ce03fa7665cd5a16c348869b4b0cdd3f4966ba9a9968",
+      "primary_tokens_sha256": "d070aa3b432b1154f674994c319d23555db9e741755bf543253c0da911c06cac"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/7/p0.1",
+      "tokens": 3065,
+      "visible_budget_tokens_sha256": "e599812b457588476618e5f3af75f1b06303b02730948ea78dd1a0f5d941a75b",
+      "primary_tokens_sha256": "5ce8d16f094f22305327b77b2218038d01ccbdba0bb8727b24fa91e997396c2f"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/8/p0.1",
+      "tokens": 3027,
+      "visible_budget_tokens_sha256": "a1fdb0549a9f357be295d5569162336b496d745231690dd1b6ab73c85ad8b7c7",
+      "primary_tokens_sha256": "ecf847cd6543e04acd538061dd4199df20076258ff283bba7f6a5339c43f5256"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/9/p0.1",
+      "tokens": 3042,
+      "visible_budget_tokens_sha256": "6d6d9c06c82530b193595360e6313b3ef4434f7b1a01c6c8567f7a8987ef2bac",
+      "primary_tokens_sha256": "f034ff6e7ea83abcb1012d16eb1260a2f19c8f7b87f4d7d6bfc51b1aac5370b7"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/10/p0.1",
+      "tokens": 3082,
+      "visible_budget_tokens_sha256": "1083af831d5c5ad93b9225318ae79fe11a38c4e0d3f0ea58ee87ced35f337f00",
+      "primary_tokens_sha256": "d714d1cf03635ee7a8086c9a7261e942a5e4cc39a4c0443b3bc91e944cec5714"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/11/p0.1",
+      "tokens": 3070,
+      "visible_budget_tokens_sha256": "3c820ac76ecc61ba334bcd5eaf4fe4ac2d1f7cb7ece745272ab4d1725f00d653",
+      "primary_tokens_sha256": "d1f2ae9a3a1ad5cb45d95806abfb99808ceef87ecda02dbebcbec7ab0e9d50fa"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/12/p0.1",
+      "tokens": 3069,
+      "visible_budget_tokens_sha256": "a82f7428008cce2d65d8c8ff80beb01ccebc896dd3ae76f81bfb17c8dc3632ad",
+      "primary_tokens_sha256": "31e883197bebaac1875c8a92290e8333b8fbd5158589566a6859c2ea752c1759"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/13/p0.1",
+      "tokens": 3068,
+      "visible_budget_tokens_sha256": "e72e40e1c5a5cfc8a72775005be0088633ed09a463fdd805ab72aec71fae64e7",
+      "primary_tokens_sha256": "340e0d18bd9a2cde7992028459530a9b5e288961b2607947979cf2b93fcabc69"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/14/p0.1",
+      "tokens": 3040,
+      "visible_budget_tokens_sha256": "8d427f6b30a2c9534524ffbdb0b860b5819194fd58f817b82a87bbacf1e48aa5",
+      "primary_tokens_sha256": "8add8296f51a67182b1fa66ce235807e7e6c889b41bb10f0f5b821e563679040"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/15/p0.1",
+      "tokens": 3039,
+      "visible_budget_tokens_sha256": "c88a19cdd9e54b2585bdcc2fdea7e86830539487dee91d144a2e5f697aab2d15",
+      "primary_tokens_sha256": "c8e2efe9080a065a0a366f57c397d20b35ad3f5588061613dd4ec5abc9812b8c"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/16/p0.1",
+      "tokens": 3038,
+      "visible_budget_tokens_sha256": "41321a04f7181b0f44314f8df2489de5bf867aa0fec9660575c22c3aa6846f3a",
+      "primary_tokens_sha256": "9a39ab060e370c43d754e07177f372f510b5d8c412079f4517a54855a4c873c2"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/17/p0.1",
+      "tokens": 3036,
+      "visible_budget_tokens_sha256": "5b1d97722f7a7e3fee9d7844171ca0d95b5fdbecf80b426d84b13a9b619dfb9e",
+      "primary_tokens_sha256": "f21b875fb20452fc69fb666513dc6d22356ad546c899d23943a8604a27d76b20"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/18/p0.1",
+      "tokens": 3040,
+      "visible_budget_tokens_sha256": "d6cd127b09b0d713af11b25e383f9513ac6631e65e034db6c1dda68e80bb1dd7",
+      "primary_tokens_sha256": "056cca073f432afe02be13b9a708e0805af61544a049732d4b8bb370358d4e54"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/19/p0.1",
+      "tokens": 3062,
+      "visible_budget_tokens_sha256": "160b162ace96087ac78b4f6c480198c91b53d0850b181cf8a7228aafb1621ae2",
+      "primary_tokens_sha256": "09af65939fbb46ad17f269b5469c9c21a6941b9cd9b27903c1b7f6a260688c80"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/20/p0.1",
+      "tokens": 3055,
+      "visible_budget_tokens_sha256": "e8c9017a2db91b841c7c380f6df6e45180b451eab1a345c424ca906005bcf7ca",
+      "primary_tokens_sha256": "06bdaa1bf5425720a8786459b8405545683fc1604d55a72a40c85080e5e4df9c"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/21/p0.1",
+      "tokens": 3062,
+      "visible_budget_tokens_sha256": "9ac63484e11e7526e4103d5875b06d0a32bb727e395c6e66185c6d4b4116efdb",
+      "primary_tokens_sha256": "8f4bc781a7492ff1242766c3746b0ae3f3c603155215f7124607552c190a472f"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/22/p0.1",
+      "tokens": 3066,
+      "visible_budget_tokens_sha256": "1f5adc233ac5df59ab86a1cf6be6ee5cde6657639f5c2b9025b4290d78379307",
+      "primary_tokens_sha256": "17807de81ec0bb0080a2dcf8f1f5b3ae682ab6efb5d88dd5514c49bbda9a117b"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/23/p0.1",
+      "tokens": 3044,
+      "visible_budget_tokens_sha256": "ec188214a9f5561bb33e1c0f89be12b38a8b99b7e16cb92e4726c6b5f60e6f13",
+      "primary_tokens_sha256": "9a1286f1a25a341d7a40c9e8bc50ba2dc9c0493640680141d71c22026daafa74"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/24/p0.1",
+      "tokens": 3037,
+      "visible_budget_tokens_sha256": "ef837e0c79d70de6f000bda4f87c2f020c086ed4f20dda340e7d4c9c50a08112",
+      "primary_tokens_sha256": "66b85a0f8fc448309ea8f26b9fd34e6850f0c80de56b4ee6a2b189fd910e21d7"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/25/p0.1",
+      "tokens": 3057,
+      "visible_budget_tokens_sha256": "c9d39eb8097fa380df2558be06c722aa402b6f74174c009fed89f66583c82e80",
+      "primary_tokens_sha256": "7eaa6eb5ccb5069b2e02577b1715d99223cefa2f63700865ed58e2b339858815"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/26/p0.1",
+      "tokens": 3029,
+      "visible_budget_tokens_sha256": "321e21be3b7d83fcd5a87c625f24e565a21f00190b7cf41f1eaadaf7a5ca1454",
+      "primary_tokens_sha256": "3be19c2d006499b8f0a4dbe16044fef2158b3c95a32354abe07f9296e886311d"
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/27/p0.1",
+      "tokens": 3065,
+      "visible_budget_tokens_sha256": "42e930a64a4d7c26d96dcb7e3d5504a08f69f3f88a2acec6148afacf25963d07",
+      "primary_tokens_sha256": "6f7e96d3abf657b849b0ab940e37a3d95a46caca6e1bcc592e8c0d9209fac004"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/0/p0",
+      "tokens": 5343,
+      "visible_budget_tokens_sha256": "9ab857ae8ffd416da7e6a143797dcc1e1f60d7754bf7ad0f1e066ae9f6d04e4b",
+      "primary_tokens_sha256": "b396410515596e22e1655e5c7296dd75880acc98372c445494ca1c92113c7e65"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/1/p0",
+      "tokens": 5382,
+      "visible_budget_tokens_sha256": "1c5531b7d90ca553b5a7de235176169aa253ce522dcf1ca67a69af2bb260700d",
+      "primary_tokens_sha256": "1ab93ace1b246343d9e85669282df9c58576d1f81637932ac59da7cf6d902726"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/2/p0",
+      "tokens": 5428,
+      "visible_budget_tokens_sha256": "c59ca0cff7f7fefaa40425b66ce2eea917e3f2db0bbd7f0e431e466937cd03c8",
+      "primary_tokens_sha256": "90b434b84328e7e6ffe56a67cdb19411a9099ad88c24ec1fa266324ff17b4eb2"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/3/p0",
+      "tokens": 5395,
+      "visible_budget_tokens_sha256": "80855e75da100d23af4056daab5868713948388db4ccea955ed0e514025bc312",
+      "primary_tokens_sha256": "0d82e6503318e606ada3b15dc3236cfd5e45e92a5b5d36e5f75fbe38a6fdcc7f"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/4/p0",
+      "tokens": 5431,
+      "visible_budget_tokens_sha256": "3dac7cb528b454545ecf700ba338dd5561e1e74f69a4f3b138040e4c4ae73d98",
+      "primary_tokens_sha256": "59a58dc680a06d5b5984097655c5babe80bfc8d052798cdb6892936247822f53"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/5/p0",
+      "tokens": 5354,
+      "visible_budget_tokens_sha256": "40f9538cae453a0ca52f409ca7cf0fc9b881ad8c092c4325c177b15304df5bd3",
+      "primary_tokens_sha256": "60c038d398dc6aff413ff516b820b3928664c59b3f675af839729a9987a8a7df"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/6/p0",
+      "tokens": 5367,
+      "visible_budget_tokens_sha256": "74215e0720865edaac6143264d36a0a1ca1a9e00057dcfc0ed4344a8ddebbfdb",
+      "primary_tokens_sha256": "15790030828219f52cc141682cf2d83ec56c0defec1cbbeb30eb56b0581318a9"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/7/p0",
+      "tokens": 5385,
+      "visible_budget_tokens_sha256": "c2c567c5d596625505f0557095b0178def97e3fc3047d90f97b61ebc1ca245ee",
+      "primary_tokens_sha256": "7fd4154e9a7f3bc377948a93372a8c33dc677526c26b313c0d1f0746fed350be"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/8/p0",
+      "tokens": 5393,
+      "visible_budget_tokens_sha256": "6caf94cc8c094587acf4a9b7ce63197849ccf707dfac69f4112257539db08d56",
+      "primary_tokens_sha256": "bedd21c650f13d0daf49ca88fcb8fc1b2a0c70d690320a141870615e2750aea7"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/9/p0",
+      "tokens": 5378,
+      "visible_budget_tokens_sha256": "045ba24c8dd6a2e908365639edeeaffe0a714605cfab29038401f0ef56218e36",
+      "primary_tokens_sha256": "14c02a185457a81c7f130ff680cd475698c7d7a5144bd21d0d4e49baf51c1d36"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/10/p0",
+      "tokens": 5370,
+      "visible_budget_tokens_sha256": "53fac9e83c4009bc9fa778909254dce69b1e64e5dc6f6a9b6fe133c34a21587f",
+      "primary_tokens_sha256": "16f099b68a442902b7728d36e1e88b7b2bee53d0975d6d1d4b9c5cdead47da63"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/11/p0",
+      "tokens": 5358,
+      "visible_budget_tokens_sha256": "a7c819499fcd63585afbdab438ee1389f289a4d0b878e2d540d4e830060b4aa5",
+      "primary_tokens_sha256": "2da46719e1f0a17d5f5bcc84d9e26f970e967ff78e60dda94c60bfb05d75f833"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/12/p0",
+      "tokens": 5367,
+      "visible_budget_tokens_sha256": "bbc289bb5296f42e4803a8f493a4593b804d4ad75de1885f1f3cfa39131fc103",
+      "primary_tokens_sha256": "871dda1ad873c0dd5d79525557ec09234948bf5a4be35345480dd6655a7551e0"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/13/p0",
+      "tokens": 5403,
+      "visible_budget_tokens_sha256": "041796d6c630ef5b69049eb996b2f785038c8b60df2ab3dae3bb7fd1a2e28889",
+      "primary_tokens_sha256": "71e2d233a964cc7f32bf8336339b3cc31dbeb625376f5c61cd989163c5800391"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/14/p0",
+      "tokens": 5420,
+      "visible_budget_tokens_sha256": "4ec66d8fc9e8f9b2dd18156530047e553ae575ef63a392fa8bece1321ffd0f00",
+      "primary_tokens_sha256": "f5137a980480dadba5437cdbd487ee4b19e10869090e1d2723b284250e7f1675"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/15/p0",
+      "tokens": 5393,
+      "visible_budget_tokens_sha256": "10881285d2a894cb5b333bc56d442352f82acc531b06a35103122f4e3e2c07be",
+      "primary_tokens_sha256": "d3e811bb01de599dbb8aca9d62c1d05561d32209cccbae2a2387a610e66cb0fa"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/16/p0",
+      "tokens": 5375,
+      "visible_budget_tokens_sha256": "8cf8f67209c89af239ba4bea61ab284f2ad9e921d7441f7099ad925444c00e77",
+      "primary_tokens_sha256": "99c049ff88a2dbda9dfac2bcdeceaba28e8e36599aa6f23c8dc7a99b35a45f9c"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/17/p0",
+      "tokens": 5405,
+      "visible_budget_tokens_sha256": "c9d68a95f3a6e8d1620d2199fd5ad2808b04b33b904325a3502fa1c7e9ca30a3",
+      "primary_tokens_sha256": "afb97ad44f40a6ff201cceb14e3e43a1f28375ea55ad51a9e11b16409348e8bd"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/18/p0",
+      "tokens": 5381,
+      "visible_budget_tokens_sha256": "ed4be2b6cbbc2af60256263a27fc291d1724a8cdf9e1dabc7bcea4d2885cf2c7",
+      "primary_tokens_sha256": "c6a495efdc4fc558633d618d3e04704027fb4cc2afe71d94f7199387e5985026"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/19/p0",
+      "tokens": 5349,
+      "visible_budget_tokens_sha256": "8522f5a3698a68b03673d3658fed619fed9b722b4178361e40af89ee53d870a2",
+      "primary_tokens_sha256": "b424c74097f3ba06de08723c21c416d989d8af6c5ab9e1cb443f0c3a7c02fda0"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/20/p0",
+      "tokens": 5392,
+      "visible_budget_tokens_sha256": "a50208453d052a581e59bd4922f0a2f744a15f6da590f077f9a7bb91f635dc8c",
+      "primary_tokens_sha256": "69d0e73a6996f03bb6a8e6067b54565f7eb70812617bb31ed5b473e7651bd228"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/21/p0",
+      "tokens": 5381,
+      "visible_budget_tokens_sha256": "6aef0d44eb3be07f500eef286bd1744bc3f78187160ebbf9d4fcc0e4fe57e8aa",
+      "primary_tokens_sha256": "d7d670e300b9e26611490b8bcaec2e250d1e77a6af635fc25f5c0816f24b4110"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/22/p0",
+      "tokens": 5360,
+      "visible_budget_tokens_sha256": "7688f77ebd428b61d4be407ad4d013232ba343b477adae5d83aa2572209b5bfc",
+      "primary_tokens_sha256": "d449ad634bbc3a7d6c43a260d63285d5ce18cb883528bc4ce7d470b5b56465fa"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/23/p0",
+      "tokens": 5345,
+      "visible_budget_tokens_sha256": "cdd1bc812c01bfe812044861772f3f6a3038da99c338306675c0c62020094ac0",
+      "primary_tokens_sha256": "edce74b69e95e2f98e77eecb6e2ae5d38fd81b43a187fd800f3d7af603f42167"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/24/p0",
+      "tokens": 5361,
+      "visible_budget_tokens_sha256": "eaccbe45173c150370f37959cef46f6fee77bfb4e15b6d2394b71c42832b3e51",
+      "primary_tokens_sha256": "10b292bf5b8d83e9298dd190c336054677ff2a3cba3e78fa4cbbc3a1c28cdcd7"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/25/p0",
+      "tokens": 5397,
+      "visible_budget_tokens_sha256": "98eb78a33fde8a496b9bfbfa532e42a5130b4bd278cce1565f0c6e468ccefcc6",
+      "primary_tokens_sha256": "f8645b706d614c97f4cee28512a8fcddf6d7dd40856226838c2d1a44702937f0"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/26/p0",
+      "tokens": 5376,
+      "visible_budget_tokens_sha256": "bfd31ab236acd63666a4b8305b636b14ce5f9f71632c9011ef4fa80da2a2318a",
+      "primary_tokens_sha256": "0a76916ae945d2dc61d63c228e72f5e363120f46f4f3aef35c9db29d8a2edf89"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/27/p0",
+      "tokens": 5389,
+      "visible_budget_tokens_sha256": "7bcf9e9cc61a5d69276ea641502b21f333cbb10cc06195eb404ce648b304898d",
+      "primary_tokens_sha256": "18e0c51d8277b9fa7df3e054536d2d74381e8e4996281d4411723a58aa36ae31"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/0/p0.1",
+      "tokens": 5343,
+      "visible_budget_tokens_sha256": "c59616a9e5c57dd7ca818f2d150304a0e63fac45c4a6ff77dd6dbdf27f47f1d2",
+      "primary_tokens_sha256": "487bc28f16628aaad2994120e8ac1ad1fd0ac7c672f602b022b4d267bea16207"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/1/p0.1",
+      "tokens": 5382,
+      "visible_budget_tokens_sha256": "6c614c4fc776248e878425ec7b9677f839d66e52ba0bde3bb291d9fdbda03df9",
+      "primary_tokens_sha256": "a5a695463bd3c6143e49be53909b2f562d4330a3d0b0243344121e56b01df6cf"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/2/p0.1",
+      "tokens": 5428,
+      "visible_budget_tokens_sha256": "6cd5217d35ef4c5980b0dc2e36fc1e7e69cf40f27380145ea07b89bba58c2fe8",
+      "primary_tokens_sha256": "c54a78a964af18ecc7d47b5860065dfeecc1b9582872b323bc21af3b7a7d4829"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/3/p0.1",
+      "tokens": 5395,
+      "visible_budget_tokens_sha256": "590806e8efdb0af35baeaf851334b249ef69b4a084bf7e17f1cde03d475535c2",
+      "primary_tokens_sha256": "8cc7d27e949b566bf9d5b20722454c8d3eee0380a52c52403e64762ed80bf017"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/4/p0.1",
+      "tokens": 5431,
+      "visible_budget_tokens_sha256": "2ee816965ba75162ad107dac2f4a64afef69dae75e26d05f39fbf098f3ccc85e",
+      "primary_tokens_sha256": "ec3bd1b1748e8476408d28a13d48e0b066a312bb6883af199ff092a9eb6f3d1e"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/5/p0.1",
+      "tokens": 5354,
+      "visible_budget_tokens_sha256": "cc7a132e7ad3a9a8cd518c564e21fd43903d1380b161b81cfdd8c92c6ea7f34f",
+      "primary_tokens_sha256": "4a1de2bec6eaffbaf7133aad15a4e14e7a2e9869a53135cff5688cdbc0dbf3a9"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/6/p0.1",
+      "tokens": 5367,
+      "visible_budget_tokens_sha256": "a2ee09993af86582f022f7aca8b7a12468d6fd0fe16a909fd3abcb2e31c547d0",
+      "primary_tokens_sha256": "5eeb953eecbd6d196e51c72b16aa08da01c9d2c8de1b5358842f6265cb202722"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/7/p0.1",
+      "tokens": 5385,
+      "visible_budget_tokens_sha256": "268bf5dd797d61a8d5ccf890e3b43682249e92114b3a1c2f08cbbcf28652caba",
+      "primary_tokens_sha256": "8fc5fe2e193895cc37ff50aa484d33ad2441cb4d24a9daf8536b04cd812f4617"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/8/p0.1",
+      "tokens": 5393,
+      "visible_budget_tokens_sha256": "e8a01f4eb68316569990caca6ea17f7ca5bce09b3835fde14a5c9fb7bc6663b7",
+      "primary_tokens_sha256": "cec83473c09af3cf151c5d27dab5bc6d848d5f3617794edff642dd838f2d0dbe"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/9/p0.1",
+      "tokens": 5378,
+      "visible_budget_tokens_sha256": "d3e3343e8047e80f023d64af7880080f060f6e337effb9621d5e1c332912b409",
+      "primary_tokens_sha256": "78f60f45506ad5e5c64b1bea64835fb5ccf744c07f1c1ccf83b4b9bafb60df7f"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/10/p0.1",
+      "tokens": 5370,
+      "visible_budget_tokens_sha256": "bc4d0c74cfef88158d7b01d2a5bc0525a1c5af9a9fd514aeacc1ef042f98debc",
+      "primary_tokens_sha256": "da73902cbd5dabe56e911834a90e7fc1c1f29031a510279d2b22fdccafee9c48"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/11/p0.1",
+      "tokens": 5358,
+      "visible_budget_tokens_sha256": "d20aee147e7f00edba7c44ad5eeb1909daf7a988a5855cf3367ac338d7cd2cf1",
+      "primary_tokens_sha256": "19c56f7249e67ef851f929a042b7ccfd0a180ae9d3630e4552f523fdb84a1407"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/12/p0.1",
+      "tokens": 5367,
+      "visible_budget_tokens_sha256": "5991f6992df588988549639783ac6748b529275c830f0f9813a1da426812f182",
+      "primary_tokens_sha256": "1a68a36ed50717a0361f2a076d1b998ede73b88a8e44204e7c7a21df52249e6a"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/13/p0.1",
+      "tokens": 5403,
+      "visible_budget_tokens_sha256": "18982880b4e92f3af8eb8efd759a1efb2e4d5186fe4b44e491a8ad4699445352",
+      "primary_tokens_sha256": "eb1ce8ff54687d391769440eea0b188d882fc63da2cbe8dd17efe4f599969fe8"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/14/p0.1",
+      "tokens": 5420,
+      "visible_budget_tokens_sha256": "f56e9ce65371c16669f63747d93eaf9dcb22391083bc585afd357e4bfb4b22e7",
+      "primary_tokens_sha256": "d2f01afd961a804e0423bc0eb2e6f8d69888e58c9abfe31cdfea694e51d1e6a9"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/15/p0.1",
+      "tokens": 5393,
+      "visible_budget_tokens_sha256": "2da7b37ede7cb8c67507faf66fd5b8f2aab302c2776f4b8f2e5848ffb9e57e40",
+      "primary_tokens_sha256": "e1d68b622c21647848db901c273dd2e72857ee1db71dfd00e2c646860231d200"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/16/p0.1",
+      "tokens": 5375,
+      "visible_budget_tokens_sha256": "233fb1f5ad6637f26b24bbb8276ccdeb99e4b822d37079cd1083dc04b4a3f2a7",
+      "primary_tokens_sha256": "164185604025f8bb49fa0a5120a1cec3e17045aaca85fb15712f72c2914b920d"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/17/p0.1",
+      "tokens": 5405,
+      "visible_budget_tokens_sha256": "d4ef4049b720582b15888792432c617f5f0d6c19684424c5b03167eebe0c6b8a",
+      "primary_tokens_sha256": "9f296745a45dc8a3e54781dc768e5faeb1b1980ebd8faeb73b09b943fc21bdd5"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/18/p0.1",
+      "tokens": 5381,
+      "visible_budget_tokens_sha256": "3252f5608348f3236551660de481d372c79985bbbed0b0d5dfb622af68429721",
+      "primary_tokens_sha256": "e381a346a4fd3fbbd55dead71accb12e5447c1d7dd7466070d054c255fb2d69c"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/19/p0.1",
+      "tokens": 5349,
+      "visible_budget_tokens_sha256": "90348b6a70e102ee443044a6f1474a746512afa47aca896475418d37ab808a90",
+      "primary_tokens_sha256": "d2d36ef928fdadaf39357fa1e2330f4d8440621ef8f76befc58ec5b9ca98add7"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/20/p0.1",
+      "tokens": 5392,
+      "visible_budget_tokens_sha256": "1ff1b13fb9eca61b75339d97efe0e12e3c091b4fa260cb45ebfba512f9793c18",
+      "primary_tokens_sha256": "cfe6f521d775f89ee27961ecee1d6484d2372d49fa0b192e413682742ff10df2"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/21/p0.1",
+      "tokens": 5381,
+      "visible_budget_tokens_sha256": "f24c934c4a60606efbae14ea2f7e4f5e7e325c09664a5317fae600ed276002ee",
+      "primary_tokens_sha256": "ed5727051d274c8b6fabe57462a01ed4c6c2644276c3c413410cf000909f4011"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/22/p0.1",
+      "tokens": 5360,
+      "visible_budget_tokens_sha256": "b2ef9a2059ce9151bad4e71860ed80cab81c57c77cb8507558216c29e188aedb",
+      "primary_tokens_sha256": "0466bc1875995dba1ef75703420c3677f6cd4793254c5d9c4588af2e4fb821de"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/23/p0.1",
+      "tokens": 5345,
+      "visible_budget_tokens_sha256": "393779cfa6cdccae0232c5ccbf2d95125f19f3dd9c477853cdf669d9a420e131",
+      "primary_tokens_sha256": "0b5f2eb3151ad243113f34ac06e9d9c71f0606ce9b25130a98edfdc1f0a9d7d3"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/24/p0.1",
+      "tokens": 5361,
+      "visible_budget_tokens_sha256": "7c6bf1bb93e79be971156db5778c0655c41edc69deb7934f7d0a1bb06f9b6cfe",
+      "primary_tokens_sha256": "1e8ccf44bedd68c0342211239dca562ce123366d9fd1ff54eca29cc1410be483"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/25/p0.1",
+      "tokens": 5397,
+      "visible_budget_tokens_sha256": "c36e739eceee60df774fe51ee5a4160fa45810495ae45bff3b3bd127ac3e7b7e",
+      "primary_tokens_sha256": "c8b390a2b3bfbddeda519b017e9ab352be93b5b177010e2d7b589a9732745909"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/26/p0.1",
+      "tokens": 5376,
+      "visible_budget_tokens_sha256": "1584b8ad5130a31bebdc38f87fc5602eb485cfb254d107b4a5e40770cd6905a6",
+      "primary_tokens_sha256": "c3d91e65c611c6116c08bc255fcc84c4b92517cb285181a3a19ff8ee91751dd0"
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/27/p0.1",
+      "tokens": 5389,
+      "visible_budget_tokens_sha256": "ec69f2616787c57d33c3330444fca9319eb7fa0ccc3cc38fbbaa0f43977c6d6b",
+      "primary_tokens_sha256": "9169cd60aefa91cb096cd7831c294409e1851a42a89fcc929cde91151ea1e408"
+    }
+  ],
+  "dynamic_hashes": "results/visible_budget/prompt_hashes.json.gz after collection",
+  "old_hashes_untouched": true
+}

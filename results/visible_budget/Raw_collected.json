@@ -1,0 +1,14 @@
+{
+  "games": 280,
+  "wins": 141,
+  "policy": {
+    "name": "Raw",
+    "snapshot_key": 0,
+    "training_updates": 0,
+    "model_path": null
+  },
+  "run_budget": {
+    "spent_usd": "1.607880",
+    "held_usd": "0.000000"
+  }
+}

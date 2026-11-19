@@ -1,5 +1,21 @@
 # Notes for the later write-up
 
+## Accepted main study and visible-budget follow-up (2026-11-19)
+
+RL improves question quality across all three seeds. No seed learns stopping reliably: A11 gambles and develops synthetic identifier errors, A23 stalls, and B41 gambles despite noisy training. Every trained seed has fewer noisy wins than raw base (A11 31/140, A23 29/140, B41 36/140 versus base 52/140). B41's noisy training does not clearly help noisy winning or re-checking; one noisy seed limits that comparison.
+
+The primary prompt states the maximum question count but never displays the remaining budget. That observation motivates the labelled, evaluation-only visible-budget follow-up. It adds a counter on each user turn and an explicit GUESS instruction when the counter reaches zero. Primary scores and prompt hashes stay archived unchanged; any follow-up difference combines this observation amendment with the same fixed policies, rather than further learning.
+
+## Visible-budget results (labelled follow-up, 2026-11-19)
+
+All 840 available-policy games completed for $3.580565, against $7.845394 forecast with margin and an $8 ceiling. No training ran. A11 was skipped because its checkpoint was not persisted and external uploads are unavailable. All 264 preflight artifacts and 54,866 older ledger entries remain unchanged.
+
+Explicit budget state removes every extra ASK at the final opportunity: raw 65→0, A23 136→0, B41 1→0. A23 no-guess endings fall 136→0 and wins rise 138→186. Raw no-guess endings fall 70→12; all 12 remaining losses exhaust context, versus five previously. B41 no-guess endings fall 1→0 and wins rise 127→156. Raw wins remain 141/280.
+
+Gambling persists: ambiguous guesses with budget left change raw 104→89, A23 20→27, B41 202→188. A23 introduces eight such noiseless guesses, versus zero previously. B41 still makes 136/140 noisy guesses while its displayed list is ambiguous and questions remain. Calling the counter a complete stopping fix would hide that behavior.
+
+Pooled EIG falls for every available policy: raw 0.405→0.353, A23 0.466→0.457, B41 0.540→0.491. Noisy wins change raw 52→57, A23 29→74 and B41 36→55 out of 140. The primary observation that every trained seed has fewer noisy wins than base must stay explicitly tied to the original prompt. Under visible budget, A23 exceeds base in noisy wins. The full prompt intervention can alter question choices as well as stopping, so do not attribute every extra win solely to the terminal instruction. These are fixed-policy prompt effects, not more RL. Per-cell paired CIs and complete counts are in VISIBLE_BUDGET_GATE.md.
+
 These are observations and hypotheses to revisit, not changes to the experiment.
 
 - Gambling: A11 frequently guesses with multiple candidates remaining at large N, including games with unused question budget. The main curriculum allocates only 32 games to N=128, compared with 88 at N=16. Limited large-N exposure is a possible cause, stated as a hypothesis; this allocation has not been manipulated, so the current data do not establish causality. Keep the curriculum and rewards unchanged for A23/B41.

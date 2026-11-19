@@ -1,0 +1,15 @@
+{
+  "games": 280,
+  "wins": 156,
+  "policy": {
+    "name": "B41",
+    "snapshot_key": 41,
+    "training_updates": 30,
+    "model_path": "tinker://cc4809a4-91d9-5e85-8f72-025c25387c38:train:0/sampler_weights/main-B-seed41-step-30",
+    "checkpoint_evidence": "results/main_B41/completion.json"
+  },
+  "run_budget": {
+    "spent_usd": "3.580565",
+    "held_usd": "0.000000"
+  }
+}

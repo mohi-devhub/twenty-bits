@@ -1,8 +1,12 @@
 # Current budget
 
-The user approved **$50 total Tinker spend including active holds on 2026-11-18**. All declared U main runs are now complete. Recorded usage is **$20.100658**, active holds **$2.083181**, and **$27.816161 remains**. Usage uses observed tokens at pinned rates, pending invoice reconciliation. **Stopped at MAIN_B41_GATE.md; no further paid work is authorized.**
+The user approved **$50 total Tinker spend including active holds on 2026-11-18**. All declared U main runs and the separately approved visible-budget evaluation are complete. Recorded usage is **$23.681223**, active holds **$2.083181**, and **$24.235596 remains**. Usage uses observed tokens at pinned rates, pending invoice reconciliation. **Stopped at VISIBLE_BUDGET_GATE.md; no further paid work or training is authorized.**
 
-Live state is in ignored `ledger.sqlite3`. The completed `ledger.json` audit export matches it. During a run, that JSON is stale; use Ledger.summary/status for live numbers. Migration preserved all 45,033 prior entries, approvals and holds. The final append-only history has 84,310 events and reconstructs 54,866 current records exactly. [Storage rules](LEDGER.md), [migration equality](research/ledger_migration.json), [event archive](research/ledger_events_archive.json).
+Live state is in ignored `ledger.sqlite3`. The completed `ledger.json` audit export matches it. During a run, that JSON is stale; use Ledger.summary/status for live numbers. Migration preserved all 45,033 prior entries, approvals and holds. The B41 archive preserves its 84,310 events and 54,866 records; the follow-up has a separate completed event archive. [Storage rules](LEDGER.md), [migration equality](research/ledger_migration.json), [B41 archive](research/ledger_events_archive.json), [follow-up archive](research/visible_budget_ledger_archive.json).
+
+## Visible-budget evaluation
+
+The 840-game fixed-policy follow-up used **$3.580565**, with **$0.000000 new unresolved holds**, versus **$7.845394 forecast including a 15% behavior allowance and 1.5 margin**, under its explicit **$8 ceiling including holds**. Raw sampling used $1.607880, A23 $1.084586 and B41 $0.888099. The forecast credited 70% cached input, below the prior observed minimum of 88.6%; it did not assume unchanged actions were guaranteed. No training, checkpoint saves, storage reservations, lost requests or replacements ran. Every older hold remains unchanged. [Forecast](research/visible_budget_forecast.json), [gate](VISIBLE_BUDGET_GATE.md).
 
 ## B41 actual versus forecast
 

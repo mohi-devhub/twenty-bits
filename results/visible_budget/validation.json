@@ -1,0 +1,19 @@
+{
+  "service_calls": 0,
+  "unit_tests": 226,
+  "primary_artifact_hashes_verified": 264,
+  "same_frozen_games": 280,
+  "followup_games": 840,
+  "old_ledger_entries_unchanged": 54866,
+  "all_new_operations_within_followup": true,
+  "new_ledger_entries": 18941,
+  "append_only_ledger_events_verified": 160029,
+  "followup_peak_spent_plus_holds_usd": "3.593789",
+  "lost_originals": 51,
+  "lost_original_holds_usd": "0.107081",
+  "completed_runner_returns_before_SDK": true,
+  "new_training_calls": 0,
+  "project_spent_usd": "23.681223",
+  "project_held_usd": "2.083181",
+  "project_available_usd": "24.235596"
+}

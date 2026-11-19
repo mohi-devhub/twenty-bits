@@ -1,0 +1,43 @@
+{
+  "eval_only": true,
+  "is_primary_result": false,
+  "games": 840,
+  "config_sha256": "bb23d90e64d3a1cdc548d37b3b4c668aa197ea57cb0b9eabc4033cd235956057",
+  "policies": [
+    {
+      "name": "Raw",
+      "snapshot_key": 0,
+      "training_updates": 0,
+      "model_path": null
+    },
+    {
+      "name": "A23",
+      "snapshot_key": 23,
+      "training_updates": 30,
+      "model_path": "tinker://19a7c48f-02fe-556c-8cc5-404284b8da40:train:0/sampler_weights/main-A-seed23-step-30",
+      "checkpoint_evidence": "results/main_A23/completion.json"
+    },
+    {
+      "name": "B41",
+      "snapshot_key": 41,
+      "training_updates": 30,
+      "model_path": "tinker://cc4809a4-91d9-5e85-8f72-025c25387c38:train:0/sampler_weights/main-B-seed41-step-30",
+      "checkpoint_evidence": "results/main_B41/completion.json"
+    }
+  ],
+  "A11": "not run: A11 checkpoint wasn't persisted, external uploads unavailable",
+  "run_budget": {
+    "spent_usd": "3.580565",
+    "held_usd": "0.000000"
+  },
+  "finished_session": true,
+  "project_budget": {
+    "cap_usd": "50.000000",
+    "spent_usd": "23.681223",
+    "held_usd": "2.083181",
+    "available_usd": "24.235596",
+    "blocked": false
+  },
+  "all_HTTP_work_drained": true,
+  "ledger_export_complete": true
+}

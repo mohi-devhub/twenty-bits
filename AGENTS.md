@@ -1,6 +1,12 @@
-# Twenty Bits working rules — B41 gate
+# Twenty Bits working rules — visible-budget follow-up
 
-## Current stop
+## Current stop (2026-11-19)
+
+The main study and approved visible-budget follow-up are complete. **Stop at VISIBLE_BUDGET_GATE.md. Do not make any new Tinker call, run more main seeds or start training.** Raw, A23 and B41 each completed 280 counter-rendered frozen games. A11 was skipped because its hosted endpoint is unavailable. The follow-up used $3.580565 with zero new holds or replacements, below its $8 ceiling and $7.845394 forecast with margin. Project usage is $23.681223, old holds $2.083181, and available budget $24.235596. Every old hold, primary artifact, frozen game and old prompt hash remains unchanged. The service session is finished and HTTP work drained. research/active_plan.json and research/visible_budget_approval.json disable dispatch; completed runners return before SDK access. The user will decide between a training follow-up and final write-up. Neither is authorized now. The standing replacement rule applies only within authorized work and cannot override this gate.
+
+The counter removes all extra final ASK actions; A23 no-guess endings fall 136→0 and wins rise 138→186. B41 wins rise 127→156, raw stays 141. Ambiguous guesses with budget left remain: raw 104→89, A23 20→27, B41 202→188. Raw's remaining 12 no-guess endings are context losses. Pooled EIG falls under this fixed-policy prompt intervention. New hashes, paired CIs, all 30 policy/cell comparisons, 9,448 accepted request signatures and exact scoring replays are separate from primary results. All 226 tests pass. The follow-up event archive has 160,029 events reconstructing 73,807 entries; 54,866 older entries are identical. Use the current follow-up verifier; historical main gate checks belong at their commits.
+
+## Historical B41 gate
 
 All declared U main seeds are complete: A11, A23 and B41, 30 updates and 240 training games each. B41 also completed 64 development games and its immediate 280-game frozen primary endpoint. Its service session finished, every HTTP operation drained, and both native endpoint types have no expiry. **Stop at MAIN_B41_GATE.md. Do not make any new Tinker call before the user's next decision.** research/active_plan.json records dispatch_authorized_now=false. Completed-run guards return before SDK access. The user accepted A23 and authorized this exact B41 stage on 2026-11-19; that authorization is now fulfilled.
 

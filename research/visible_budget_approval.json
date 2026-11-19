@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-19",
+  "source": "User accepted B41 and authorized a labelled visible-budget evaluation only, provided the forecast fits $8 including holds. Main study complete; no more main seeds.",
+  "dispatch_authorized_now": false,
+  "eval_only": true,
+  "training_authorized": false,
+  "followup_cap_including_holds_usd": "8.000000",
+  "global_cap_including_holds_usd": "50.000000",
+  "forecast_including_margin_usd": "7.845394",
+  "new_games": 840,
+  "policy_names": [
+    "Raw",
+    "A23",
+    "B41"
+  ],
+  "A11_skip": "not run: A11 checkpoint wasn't persisted, external uploads unavailable",
+  "stop_at_gate": "VISIBLE_BUDGET_GATE.md",
+  "standing_replacement_policy": "research/replacement_policy.json",
+  "budget_before": {
+    "cap_usd": "50.000000",
+    "spent_usd": "20.100658",
+    "held_usd": "2.083181",
+    "available_usd": "27.816161",
+    "blocked": false
+  },
+  "primary_commit": "e3bfac1848915a7e563ec2cf5843f61bd396cf41",
+  "status": "Completed and stopped at VISIBLE_BUDGET_GATE.md.",
+  "actual_usage_usd": "3.580565",
+  "new_unresolved_holds_usd": "0.000000",
+  "all_HTTP_work_drained": true,
+  "primary_artifacts_unchanged": true
+}

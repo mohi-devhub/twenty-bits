@@ -1,0 +1,68 @@
+{
+  "primary_model": "Qwen/Qwen3-8B",
+  "primary_output_cap": 2048,
+  "primary_thinking": false,
+  "reference_model": null,
+  "reference_output_cap": 512,
+  "reference_reasoning_effort": "medium",
+  "reference_template_date": "2026-11-18",
+  "temperature": 0.7,
+  "top_p": 1.0,
+  "top_k": -1,
+  "context_window": 32768,
+  "cost_source": "research/tinker-models-2026-11-17.json",
+  "rendering_proof": "research/phase2_rendering.json",
+  "active_models": [
+    "Qwen/Qwen3-8B"
+  ],
+  "grammar_version": "attribute-codes-v2",
+  "posterior_threshold": 0.001,
+  "sdk_version": "0.39.1",
+  "cookbook_pin": "6c081121b90dbc290b4550eb9fd9f646f8e4960a",
+  "reward": {
+    "win": 1,
+    "per_question": -0.03,
+    "per_invalid": -0.1,
+    "information_shaping": false
+  },
+  "run_id": "visible-budget-v1",
+  "approval_date": "2026-11-19",
+  "display_name": "Twenty Bits visible-budget eval only",
+  "approved_cap_usd": "50.000000",
+  "run_cap_usd": "8.000000",
+  "ledger_phase": 5,
+  "prompt_version": "visible-budget-v1",
+  "sampling_seed_namespace": "main-U-v1/evaluation",
+  "training_authorized": false,
+  "rl_training_authorized": false,
+  "eval_only": true,
+  "is_primary_result": false,
+  "concurrent_games": 16,
+  "policies": [
+    {
+      "name": "Raw",
+      "snapshot_key": 0,
+      "training_updates": 0,
+      "model_path": null
+    },
+    {
+      "name": "A23",
+      "snapshot_key": 23,
+      "training_updates": 30,
+      "model_path": "tinker://19a7c48f-02fe-556c-8cc5-404284b8da40:train:0/sampler_weights/main-A-seed23-step-30",
+      "checkpoint_evidence": "results/main_A23/completion.json"
+    },
+    {
+      "name": "B41",
+      "snapshot_key": 41,
+      "training_updates": 30,
+      "model_path": "tinker://cc4809a4-91d9-5e85-8f72-025c25387c38:train:0/sampler_weights/main-B-seed41-step-30",
+      "checkpoint_evidence": "results/main_B41/completion.json"
+    }
+  ],
+  "skipped_policies": {
+    "A11": "not run: A11 checkpoint wasn't persisted, external uploads unavailable"
+  },
+  "primary_games_per_cell": 28,
+  "stage_gate": "Stop after visible-budget follow-up; no training or write-up phase continuation."
+}

@@ -1,0 +1,29 @@
+{
+  "session_id": "f240a7cc-259c-56cf-8a52-d278be0bac8e",
+  "samplers": {},
+  "next_sampler": 0,
+  "finished": true,
+  "snapshots": {
+    "0": {
+      "id": "f240a7cc-259c-56cf-8a52-d278be0bac8e:sample:0",
+      "next_seq": 3268,
+      "policy_step": 0,
+      "native_checkpoint_path": null,
+      "policy": "Raw"
+    },
+    "23": {
+      "id": "f240a7cc-259c-56cf-8a52-d278be0bac8e:sample:1",
+      "next_seq": 3308,
+      "policy_step": 30,
+      "native_checkpoint_path": "tinker://19a7c48f-02fe-556c-8cc5-404284b8da40:train:0/sampler_weights/main-A-seed23-step-30",
+      "policy": "A23"
+    },
+    "41": {
+      "id": "f240a7cc-259c-56cf-8a52-d278be0bac8e:sample:2",
+      "next_seq": 2872,
+      "policy_step": 30,
+      "native_checkpoint_path": "tinker://cc4809a4-91d9-5e85-8f72-025c25387c38:train:0/sampler_weights/main-B-seed41-step-30",
+      "policy": "B41"
+    }
+  }
+}
