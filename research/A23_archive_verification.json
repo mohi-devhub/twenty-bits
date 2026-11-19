@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-11-19T08:34:52.035997+00:00",
+  "base_commit": "208c32321545a1fd851164714cdde9fd69ca2fea",
+  "checkout_method": "Separate detached Git worktree with the staged project changes applied; no ignored files copied.",
+  "raw_runs_present": false,
+  "env_file_present": false,
+  "TINKER_API_KEY_removed_from_verifier_environment": true,
+  "compressed_auxiliary_manifests_rehydrated_temporarily_and_removed": true,
+  "paid_runner_implementations_unchanged": true,
+  "unit_tests_passed": 158,
+  "archive_replay_identical": true,
+  "service_calls": 0,
+  "proof": "results/main_A23/reproduction.json",
+  "validation": "results/main_A23/validation.json"
+}

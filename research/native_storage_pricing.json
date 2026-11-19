@@ -14,6 +14,7 @@
   "main_hold_coverage_days": 30,
   "main_size_multiplier": 2,
   "reservation_multiplier": 1.5,
-  "main_pair_30_day_hold_usd": "0.443047",
-  "permanent_files_future_months": "No expiry is set. Reconcile storage against billing and reserve further months from the remaining project cap; never delete without authorization."
+  "main_pair_30_day_hold_usd": "0.443049",
+  "permanent_files_future_months": "No expiry is set. Reconcile storage against billing and reserve further months from the remaining project cap; never delete without authorization.",
+  "hold_rounding": "Each operation estimate is rounded upward to a microdollar before applying the 1.5 reservation multiplier; summing only the aggregate rounded forecast would understate holds by $0.000002."
 }

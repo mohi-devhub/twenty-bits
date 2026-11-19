@@ -1,0 +1,235 @@
+{
+  "training": {
+    "games": 240,
+    "mean_reward": 0.10333333333333326,
+    "wins": 105,
+    "win_rate": 0.4375,
+    "questions_per_win": 5.961904761904762,
+    "eig_per_question": 0.3461736554682856,
+    "enumeration_rate": 0.0,
+    "single_item_enumeration_rate": 0.0,
+    "name_list_rate": 0.0,
+    "large_name_list_rate": 0.0,
+    "invalid_question_rate": 0.09900497512437811,
+    "output_tokens_per_game": 274.9625,
+    "reasoning_tokens_per_game": 0.0,
+    "questions": 2010,
+    "post_budget_non_guesses": 110,
+    "truncated_turns": 24,
+    "guess_with_k_remaining": {
+      "games": 240,
+      "guesses": 128,
+      "no_guess_games": 112,
+      "ambiguous_guesses": 39,
+      "ambiguous_guess_wins": 16,
+      "ambiguous_guesses_per_game": 0.1625,
+      "bins": {
+        "1": {
+          "guesses": 89,
+          "wins": 89,
+          "guesses_per_game": 0.37083333333333335,
+          "share_of_guesses": 0.6953125,
+          "win_rate_when_guessed": 1.0
+        },
+        "2": {
+          "guesses": 16,
+          "wins": 9,
+          "guesses_per_game": 0.06666666666666667,
+          "share_of_guesses": 0.125,
+          "win_rate_when_guessed": 0.5625
+        },
+        "3": {
+          "guesses": 7,
+          "wins": 4,
+          "guesses_per_game": 0.029166666666666667,
+          "share_of_guesses": 0.0546875,
+          "win_rate_when_guessed": 0.5714285714285714
+        },
+        "4+": {
+          "guesses": 16,
+          "wins": 3,
+          "guesses_per_game": 0.06666666666666667,
+          "share_of_guesses": 0.125,
+          "win_rate_when_guessed": 0.1875
+        }
+      },
+      "positive_posterior_support_bins": {
+        "1": {
+          "guesses": 89,
+          "wins": 89
+        },
+        "2": {
+          "guesses": 16,
+          "wins": 9
+        },
+        "3": {
+          "guesses": 7,
+          "wins": 4
+        },
+        "4+": {
+          "guesses": 16,
+          "wins": 3
+        }
+      },
+      "guesses_outside_displayed_candidates": 0,
+      "mean_guessed_posterior_probability": 0.7988720914502164
+    }
+  },
+  "training_audit": {
+    "counts": {
+      "games": 240,
+      "early_guess_games": 7,
+      "early_guess_wins": 7,
+      "zero_question_guesses": 0,
+      "post_budget_non_guesses": 110,
+      "post_budget_asks": 110,
+      "counted_questions": 2010,
+      "invalid_questions": 199,
+      "valid_questions": 1811,
+      "item_equality_questions": 0,
+      "single_named_item_questions": 0,
+      "name_list_questions": 0,
+      "large_name_lists_original_N": 0,
+      "valid_zero_eig_questions": 931,
+      "repeated_splits": 630,
+      "exact_one_bit_questions": 87,
+      "at_least_0_9_bit_questions": 389,
+      "single_attribute_questions": 1093,
+      "lists_at_least_half_remaining": 0,
+      "consecutive_single_item_transitions": 0,
+      "compound_attribute_questions": 718,
+      "early_after_singleton": 7,
+      "early_with_multiple_remaining": 0
+    },
+    "invalid_causes": {
+      "Unknown attribute: claws": 3,
+      "Unknown attribute: horn": 1,
+      "Unknown attribute: parrot": 7,
+      "Unknown attribute: adult_female_parrot": 7,
+      "Unknown attribute: adult_female_squirrel": 7,
+      "Unknown attribute: adult_female_raccoon": 7,
+      "Unknown attribute: adult_female_chimpanzee": 7,
+      "Unknown attribute: adult_female_gorilla": 7,
+      "Unknown attribute: adult_female_bottlenose_dolphin": 7,
+      "Unknown attribute: adult_female_vampire_bat": 7,
+      "Unknown attribute: adult_female_silky_anteater": 7,
+      "Unknown attribute: adult_female_giant_panda": 6,
+      "Unknown attribute: adult_female_red_kangaroo": 5,
+      "Unknown attribute: adult_female_hippopotamus": 6,
+      "Expression nesting exceeds 64 levels.": 2,
+      "Unexpected text at character 6251.": 12,
+      "Unknown attribute: hook_beak": 2,
+      "Unknown attribute: adult_female_polar_bear": 31,
+      "Unknown attribute: an_earlier_item_in_table_order": 2,
+      "Unknown attribute: juvenile": 2,
+      "Unknown attribute: long_tail": 2,
+      "Unknown attribute: big_ears": 1,
+      "Unknown attribute: no_carnivore": 1,
+      "Expected ).": 34,
+      "Unexpected trailing tokens.": 11,
+      "Unknown attribute: has_flippers": 2,
+      "Unknown attribute: anatidae": 2,
+      "Unknown attribute: male": 3,
+      "Unknown attribute: adult_female": 3,
+      "Unknown attribute: adult_male": 2,
+      "Unknown attribute: adult_female_chameleon": 1,
+      "Unknown attribute: juvenile_male": 1,
+      "Unknown attribute: juvenile_male_bactrian_camel": 1
+    },
+    "name_list_examples": [],
+    "parser_exploit_assessment": "Every accepted predicate is replayed through the fixed safe AST parser and exact table evaluation. Invalid/malicious strings never execute code. No broader adversarial security guarantee is inferred.",
+    "no_rules_changed": true
+  },
+  "paired_development": {
+    "win_rate": {
+      "final_minus_base": 0.375,
+      "ci95": [
+        0.0,
+        0.75
+      ]
+    },
+    "eig_per_question": {
+      "final_minus_base": 0.1447805445451084,
+      "ci95": [
+        -0.03954306485076786,
+        0.34563213303514745
+      ]
+    },
+    "mean_reward": {
+      "final_minus_base": 0.3600000000000001,
+      "ci95": [
+        -0.030000000000000027,
+        0.74625
+      ]
+    },
+    "eig_per_game_exact_paired_permutation": {
+      "pairs": 8,
+      "two_sided_p": 0.328125,
+      "test_statistic": "mean per-game EIG difference on pairs with defined EIG"
+    },
+    "win_rate_exact_paired_test": {
+      "discordant_pairs": 5,
+      "two_sided_p": 0.375,
+      "method": "Exact two-sided paired sign test on discordant wins (McNemar conditional test)."
+    }
+  },
+  "training_groups": 30,
+  "zero_win_groups": [
+    18,
+    19,
+    23,
+    24,
+    25
+  ],
+  "constant_return_groups": [
+    2,
+    19,
+    24,
+    25
+  ],
+  "model_logprob_gap_max": 1.6210007667541504,
+  "raw_candidate_name_reference_audit": {
+    "counts": {
+      "counted_questions": 2010,
+      "questions_with_exact_candidate_name_references": 142,
+      "invalid_questions_with_name_references": 142,
+      "name_list_questions": 25,
+      "invalid_name_list_questions": 25,
+      "lists_at_least_quarter_original_N": 24,
+      "bare_candidate_name_questions": 78,
+      "invalid_bare_candidate_name_questions": 78,
+      "bare_candidate_name_at_singleton": 0,
+      "consecutive_different_bare_names": 66
+    },
+    "examples": [
+      {
+        "game_id": "train-v1/seed23/animals/16/1000007/p0",
+        "update": 7,
+        "raw_action": "ASK: adult_female_chameleon",
+        "distinct_candidate_names": 1,
+        "posterior_support": 16,
+        "error": "Unknown attribute: adult_female_chameleon"
+      },
+      {
+        "game_id": "train-v1/seed23/animals/32/1000021/p0",
+        "update": 21,
+        "raw_action": "ASK: as AND juvenile_male_bactrian_camel",
+        "distinct_candidate_names": 1,
+        "posterior_support": 8,
+        "error": "Unknown attribute: juvenile_male_bactrian_camel"
+      },
+      {
+        "game_id": "train-v1/seed23/animals/64/1000023/p0",
+        "update": 23,
+        "raw_action": "ASK: (adult_female_polar_bear == \"adult_female_polar_bear\") AND (adult_male_polar_bear == \"adult_male_polar_bear\") AND (juvenile_female_polar_bear == \"juvenile_female_polar_bear\") AND (juvenile_male_polar_bear == \"juvenile_male_polar_bear\") AND (adult_female_polar_bear == \"adult_female_polar_bear\") AND (adult_male_polar_bear == \"adult_male_polar_bear\") AND (juvenile_female_polar_bear == \"juvenile_female_polar_bear\") AND (juvenile_male_polar_bear == \"juvenile_male_polar_bear\") AND (adult_female_polar_bear == \"adult_female_polar_bear\") AND (adult_male_polar_bear == \"adult_male_polar_bear\") AND (juvenile_female_polar_bear == \"juvenile_female_polar_bear\") AND (juvenile_male_polar_bear == \"juvenile_male_polar_bear\")",
+        "distinct_candidate_names": 3,
+        "posterior_support": 64,
+        "error": "Expected )."
+      }
+    ],
+    "definition": "Post-hoc raw exact-name reference audit; identifiers and quoted names must match a candidate literally. It includes malformed ASK bodies, which are still INVALID with zero EIG. A raw name reference is not proof of intended enumeration. Legal item-equality enumeration remains the unchanged primary metric.",
+    "primary_scoring_changed": false
+  },
+  "status": "Verified descriptive training audit; all 30 gradient batches reconstructed from accepted archives",
+  "primary_replay_validated": true
+}

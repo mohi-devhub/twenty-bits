@@ -95,3 +95,13 @@ A downloaded adapter is useful only when the platform permits loading it again. 
 ## API verification before the A23 confirmation
 
 We can verify persistence without opening a browser. The API lists the saved test files with their exact names, paths, byte counts and expiration values. A new client then samples from the listed sampler path after the saving session has finished. The user checks the console separately and confirms before A23. We leave both test files in place for that check, and the existing storage holds stay reserved.
+
+## A23: replication, stopping and durable endpoints
+
+We repeated the unchanged 30-update A condition from fresh base weights with seed 23. Its animal questions improve relative to base, but less than A11. Synthetic search stays close to the already strong base policy instead of reproducing A11's copying failures. Repeating a training seed matters: one successful curve does not describe every outcome. The same eight development cases show an early improvement followed by fluctuations, and remain too small to settle the size of that gain.
+
+Guess-with-k reveals two ways to fail. A11 often guesses too early at large N. A23 usually keeps asking until the budget ends and never guesses. Zero legal item-equality questions also hides malformed attempts: a separate raw-text audit finds bare candidate names and name lists, while the parser continues to reject and penalize them. Measuring those attempts changes no reward or score. EIG remains measurement only.
+
+Both native A23 checkpoint types were saved without expiry and used by fresh clients after the training session ended. We collected every scheduled endpoint evaluation immediately. The API confirmed deletion of the two smoke files, but deletion does not settle storage billing, so their holds remain. The suffix parser is a labelled diagnostic only. Some matching prompts and seeds still produce different fresh-session actions before any parser mapping; we report that variation rather than assigning every score difference to the parser.
+
+A growing JSON ledger also made its synchronous bookkeeping slow enough to delay the HTTP collector. A disposable-copy profile measured that work without changing the live ledger. After draining requests, we reduced execution concurrency from 16 games to 2; reservations, polling, prompts, rewards, seeds and model caps stayed unchanged. All paid work is now drained, the results reproduce from Git archives without credentials or raw caches, and we stop before B41. [MAIN_A23_GATE.md](MAIN_A23_GATE.md) records the measurements and remaining budget.

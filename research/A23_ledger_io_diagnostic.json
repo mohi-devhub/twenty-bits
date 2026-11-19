@@ -1,0 +1,57 @@
+{
+  "claim_tested": "The existing synchronous guard blocks the collector event loop for seconds at the current ledger size.",
+  "source_ledger_bytes": 23354125,
+  "source_snapshot_sha256": "01e82f29b06eb8be08301dc0519879669ee104b2b63cc9481e59337e3b39398b",
+  "source_entries": 39163,
+  "service_calls": 0,
+  "live_ledger_mutations": 0,
+  "unprofiled_runs": [
+    {
+      "durable_admission_and_ID_seconds": 7.245288874997641,
+      "settlement_seconds": 1.7988763329994981,
+      "total_blocking_seconds": 9.044165207997139
+    },
+    {
+      "durable_admission_and_ID_seconds": 6.730878875001508,
+      "settlement_seconds": 1.9032604999956675,
+      "total_blocking_seconds": 8.634139374997176
+    },
+    {
+      "durable_admission_and_ID_seconds": 7.127011208998738,
+      "settlement_seconds": 1.7848672500040266,
+      "total_blocking_seconds": 8.911878459002764
+    },
+    {
+      "durable_admission_and_ID_seconds": 6.812021165998885,
+      "settlement_seconds": 1.7962245840026299,
+      "total_blocking_seconds": 8.608245750001515
+    },
+    {
+      "durable_admission_and_ID_seconds": 7.6719601250006235,
+      "settlement_seconds": 2.1882166669965954,
+      "total_blocking_seconds": 9.860176791997219
+    }
+  ],
+  "median_seconds": {
+    "durable_admission_and_ID_seconds": 7.127011208998738,
+    "settlement_seconds": 1.7988763329994981,
+    "total_blocking_seconds": 8.911878459002764
+  },
+  "range_seconds": {
+    "durable_admission_and_ID_seconds": [
+      6.730878875001508,
+      7.6719601250006235
+    ],
+    "settlement_seconds": [
+      1.7848672500040266,
+      2.1882166669965954
+    ],
+    "total_blocking_seconds": [
+      8.608245750001515,
+      9.860176791997219
+    ]
+  },
+  "profile_is_separate_from_reported_timings": true,
+  "profile": "         65049669 function calls (56896653 primitive calls) in 29.466 seconds\n\n   Ordered by: cumulative time\n   List reduced from 142 to 18 due to restriction <18>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.016    0.016   29.466   29.466 /Users/mohith/Projects/twenty-bits/scripts/profile_ledger_io.py:19(guarded_operation)\n        4    0.000    0.000   23.272    5.818 /Users/mohith/Projects/twenty-bits/twenty_bits/budget.py:111(_write)\n        4    4.541    1.135   23.182    5.796 /Users/mohith/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/__init__.py:120(dump)\n        1    0.022    0.022   21.836   21.836 /Users/mohith/Projects/twenty-bits/twenty_bits/budget.py:269(call)\n        3    0.007    0.002   20.284    6.761 /Users/mohith/Projects/twenty-bits/twenty_bits/budget.py:238(_update)\n        1    0.020    0.020   15.122   15.122 /Users/mohith/Projects/twenty-bits/twenty_bits/budget.py:252(dispatch)\n  8152080    2.556    0.000   13.512    0.000 /Users/mohith/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py:414(_iterencode)\n16305064/8152080    5.992    0.000   10.957    0.000 /Users/mohith/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py:334(_iterencode_dict)\n8152024/8151992    2.855    0.000    8.270    0.000 /Users/mohith/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/json/encoder.py:278(_iterencode_list)\n        1    0.036    0.036    8.094    8.094 /Users/mohith/Projects/twenty-bits/scripts/profile_ledger_io.py:24(send)\n        1    0.020    0.020    6.888    6.888 /Users/mohith/Projects/twenty-bits/twenty_bits/budget.py:274(attach_request_id)\n        1    0.002    0.002    6.692    6.692 /Users/mohith/Projects/twenty-bits/twenty_bits/budget.py:205(reserve)\n        1    0.019    0.019    6.427    6.427 /Users/mohith/Projects/twenty-bits/twenty_bits/budget.py:292(settle)\n  8152088    2.499    0.000    5.129    0.000 /Users/mohith/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/tempfile.py:497(func_wrapper)\n        6    0.873    0.145    4.567    0.761 /Users/mohith/Projects/twenty-bits/twenty_bits/budget.py:70(_read)\n  1644144    2.020    0.000    3.475    0.000 /Users/mohith/Projects/twenty-bits/twenty_bits/budget.py:34(money)\n  8152080    2.629    0.000    2.629    0.000 {method 'write' of '_io.TextIOWrapper' objects}\n        2    0.005    0.002    2.357    1.178 /Users/mohith/Projects/twenty-bits/twenty_bits/budget.py:173(status)\n\n\n",
+  "limits": "Copied ledger on the same busy laptop while the paid collector continues. This isolates guard CPU/file work, not network latency, and is not an end-to-end speedup claim."
+}

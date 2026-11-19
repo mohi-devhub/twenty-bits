@@ -1,0 +1,14 @@
+{
+  "session_id": "f1e19e95-72a2-578c-8dd3-f1f140efa552",
+  "samplers": {},
+  "next_sampler": 0,
+  "finished": true,
+  "snapshots": {
+    "30": {
+      "id": "f1e19e95-72a2-578c-8dd3-f1f140efa552:sample:1",
+      "next_seq": 1905,
+      "policy_step": 30,
+      "native_checkpoint_path": "tinker://19a7c48f-02fe-556c-8cc5-404284b8da40:train:0/sampler_weights/main-A-seed23-step-30"
+    }
+  }
+}

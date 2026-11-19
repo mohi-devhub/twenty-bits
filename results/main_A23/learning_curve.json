@@ -1,0 +1,3394 @@
+{
+  "updates": [
+    {
+      "update": 1,
+      "n": 4,
+      "start_state": "train-v1/seed23/animals/4/1000001/p0",
+      "games": 8,
+      "mean_reward": 0.81125,
+      "wins": 7,
+      "win_rate": 0.875,
+      "questions_per_win": 2.0,
+      "eig_per_question": 0.5120153185213986,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 30.625,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 17,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 8,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 3,
+        "ambiguous_guess_wins": 2,
+        "ambiguous_guesses_per_game": 0.375,
+        "bins": {
+          "1": {
+            "guesses": 5,
+            "wins": 5,
+            "guesses_per_game": 0.625,
+            "share_of_guesses": 0.625,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 2,
+            "wins": 1,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.25,
+            "win_rate_when_guessed": 0.5
+          },
+          "3": {
+            "guesses": 1,
+            "wins": 1,
+            "guesses_per_game": 0.125,
+            "share_of_guesses": 0.125,
+            "win_rate_when_guessed": 1.0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 5,
+            "wins": 5
+          },
+          "2": {
+            "guesses": 2,
+            "wins": 1
+          },
+          "3": {
+            "guesses": 1,
+            "wins": 1
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.7916666666666666
+      },
+      "training_tokens": 17898,
+      "datums": 25,
+      "gradient_usd": "0.007876",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:1",
+      "mean_train_minus_sample_logprob": 3.4520752943980705e-05,
+      "max_abs_train_minus_sample_logprob": 0.25,
+      "server_metrics": {
+        "loss:sum": 39.01332640647888,
+        "clock_cycle:unique": 4927501.0
+      },
+      "returns": [
+        0.91,
+        0.94,
+        0.94,
+        0.94,
+        0.97,
+        -0.09,
+        0.97,
+        0.91
+      ],
+      "advantages": [
+        0.2893345801305363,
+        0.37723369308158505,
+        0.37723369308158505,
+        0.37723369308158505,
+        0.4651328060326341,
+        -2.640635851571097,
+        0.4651328060326341,
+        0.2893345801305363
+      ],
+      "reward_variance": 0.11648593749999998,
+      "win_variance": 0.109375,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 1.0
+    },
+    {
+      "update": 2,
+      "n": 4,
+      "start_state": "train-v1/seed23/animals/4/1000002/p0",
+      "games": 8,
+      "mean_reward": 0.94,
+      "wins": 8,
+      "win_rate": 1.0,
+      "questions_per_win": 2.0,
+      "eig_per_question": 1.0,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 19.0,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 16,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 8,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 8,
+            "wins": 8,
+            "guesses_per_game": 1.0,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 8,
+            "wins": 8
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "training_tokens": 16480,
+      "datums": 24,
+      "gradient_usd": "0.007252",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:4",
+      "mean_train_minus_sample_logprob": 0.0016594569570299027,
+      "max_abs_train_minus_sample_logprob": 0.0872989296913147,
+      "server_metrics": {
+        "clock_cycle:unique": 4927535.0,
+        "loss:sum": -0.0
+      },
+      "returns": [
+        0.94,
+        0.94,
+        0.94,
+        0.94,
+        0.94,
+        0.94,
+        0.94,
+        0.94
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reward_variance": 0.0,
+      "win_variance": 0.0,
+      "nonzero_group_fraction": 0.0,
+      "cumulative_nonzero_group_fraction": 0.5
+    },
+    {
+      "update": 3,
+      "n": 8,
+      "start_state": "train-v1/seed23/animals/8/1000003/p0",
+      "games": 8,
+      "mean_reward": 0.1075,
+      "wins": 2,
+      "win_rate": 0.25,
+      "questions_per_win": 4.0,
+      "eig_per_question": 0.4383947754708567,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 46.875,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 38,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 8,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 7,
+        "ambiguous_guess_wins": 1,
+        "ambiguous_guesses_per_game": 0.875,
+        "bins": {
+          "1": {
+            "guesses": 1,
+            "wins": 1,
+            "guesses_per_game": 0.125,
+            "share_of_guesses": 0.125,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 2,
+            "wins": 1,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.25,
+            "win_rate_when_guessed": 0.5
+          },
+          "4+": {
+            "guesses": 5,
+            "wins": 0,
+            "guesses_per_game": 0.625,
+            "share_of_guesses": 0.625,
+            "win_rate_when_guessed": 0.0
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 1,
+            "wins": 1
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 2,
+            "wins": 1
+          },
+          "4+": {
+            "guesses": 5,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.34375
+      },
+      "training_tokens": 43086,
+      "datums": 46,
+      "gradient_usd": "0.018958",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:7",
+      "mean_train_minus_sample_logprob": -0.0077882553630832475,
+      "max_abs_train_minus_sample_logprob": 0.4873223304748535,
+      "server_metrics": {
+        "clock_cycle:unique": 4927580.0,
+        "loss:sum": 23.480767011642456
+      },
+      "returns": [
+        -0.15,
+        -0.15,
+        0.91,
+        -0.15,
+        -0.15,
+        -0.15,
+        -0.15,
+        0.85
+      ],
+      "advantages": [
+        -0.5770240082001467,
+        -0.5770240082001467,
+        1.7982981226431756,
+        -0.5770240082001467,
+        -0.5770240082001467,
+        -0.5770240082001467,
+        -0.5770240082001467,
+        1.6638459265577044
+      ],
+      "reward_variance": 0.19914375,
+      "win_variance": 0.1875,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.6666666666666666
+    },
+    {
+      "update": 4,
+      "n": 8,
+      "start_state": "train-v1/seed23/animals/8/1000004/p0",
+      "games": 8,
+      "mean_reward": 0.61125,
+      "wins": 6,
+      "win_rate": 0.75,
+      "questions_per_win": 4.833333333333333,
+      "eig_per_question": 0.4912172213852241,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 58.375,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 37,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 8,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 4,
+        "ambiguous_guess_wins": 2,
+        "ambiguous_guesses_per_game": 0.5,
+        "bins": {
+          "1": {
+            "guesses": 4,
+            "wins": 4,
+            "guesses_per_game": 0.5,
+            "share_of_guesses": 0.5,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 2,
+            "wins": 2,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.25,
+            "win_rate_when_guessed": 1.0
+          },
+          "4+": {
+            "guesses": 2,
+            "wins": 0,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.25,
+            "win_rate_when_guessed": 0.0
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 4,
+            "wins": 4
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 2,
+            "wins": 2
+          },
+          "4+": {
+            "guesses": 2,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.6333333333333333
+      },
+      "training_tokens": 40819,
+      "datums": 45,
+      "gradient_usd": "0.017961",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:10",
+      "mean_train_minus_sample_logprob": -9.935108857513851e-05,
+      "max_abs_train_minus_sample_logprob": 0.5407308340072632,
+      "server_metrics": {
+        "clock_cycle:unique": 4795820.0,
+        "loss:sum": 100.38610410690308
+      },
+      "returns": [
+        0.85,
+        0.85,
+        -0.12,
+        0.85,
+        -0.12,
+        0.85,
+        0.88,
+        0.85
+      ],
+      "advantages": [
+        0.5653585121592335,
+        0.5653585121592335,
+        -1.7315954430007934,
+        0.5653585121592335,
+        -1.7315954430007934,
+        0.5653585121592335,
+        0.63639832520542,
+        0.5653585121592335
+      ],
+      "reward_variance": 0.17833593749999999,
+      "win_variance": 0.1875,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.75
+    },
+    {
+      "update": 5,
+      "n": 16,
+      "start_state": "train-v1/seed23/animals/16/1000005/p0",
+      "games": 8,
+      "mean_reward": 0.5625,
+      "wins": 6,
+      "win_rate": 0.75,
+      "questions_per_win": 6.0,
+      "eig_per_question": 0.6261854820561212,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 62.75,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 50,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 8,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 2,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.25,
+        "bins": {
+          "1": {
+            "guesses": 6,
+            "wins": 6,
+            "guesses_per_game": 0.75,
+            "share_of_guesses": 0.75,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 2,
+            "wins": 0,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.25,
+            "win_rate_when_guessed": 0.0
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 6,
+            "wins": 6
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 2,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.7727272727272727
+      },
+      "training_tokens": 76102,
+      "datums": 58,
+      "gradient_usd": "0.033485",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:13",
+      "mean_train_minus_sample_logprob": -0.0023928012601921534,
+      "max_abs_train_minus_sample_logprob": 0.527848482131958,
+      "server_metrics": {
+        "loss:sum": 176.98835062980652,
+        "clock_cycle:unique": 1111378.0
+      },
+      "returns": [
+        -0.21,
+        0.8200000000000001,
+        0.8200000000000001,
+        -0.21,
+        0.8200000000000001,
+        0.8200000000000001,
+        0.8200000000000001,
+        0.8200000000000001
+      ],
+      "advantages": [
+        -1.7320507687339266,
+        0.5773502562446423,
+        0.5773502562446423,
+        -1.7320507687339266,
+        0.5773502562446423,
+        0.5773502562446423,
+        0.5773502562446423,
+        0.5773502562446423
+      ],
+      "reward_variance": 0.19891875000000003,
+      "win_variance": 0.1875,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8
+    },
+    {
+      "update": 6,
+      "n": 16,
+      "start_state": "train-v1/seed23/animals/16/1000006/p0",
+      "games": 8,
+      "mean_reward": 0.31125,
+      "wins": 4,
+      "win_rate": 0.5,
+      "questions_per_win": 4.5,
+      "eig_per_question": 0.6329901339260802,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.02127659574468085,
+      "output_tokens_per_game": 42.125,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 47,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 8,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 4,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.5,
+        "bins": {
+          "1": {
+            "guesses": 4,
+            "wins": 4,
+            "guesses_per_game": 0.5,
+            "share_of_guesses": 0.5,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 1,
+            "wins": 0,
+            "guesses_per_game": 0.125,
+            "share_of_guesses": 0.125,
+            "win_rate_when_guessed": 0.0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 3,
+            "wins": 0,
+            "guesses_per_game": 0.375,
+            "share_of_guesses": 0.375,
+            "win_rate_when_guessed": 0.0
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 4,
+            "wins": 4
+          },
+          "2": {
+            "guesses": 1,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 3,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.6303571428571428
+      },
+      "training_tokens": 71968,
+      "datums": 55,
+      "gradient_usd": "0.031666",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:16",
+      "mean_train_minus_sample_logprob": 0.0017891189608953537,
+      "max_abs_train_minus_sample_logprob": 1.0000002086162567,
+      "server_metrics": {
+        "loss:sum": 63.52837324142456,
+        "clock_cycle:unique": 4927827.0
+      },
+      "returns": [
+        0.85,
+        0.88,
+        -0.31,
+        -0.18,
+        -0.24,
+        0.88,
+        -0.24,
+        0.85
+      ],
+      "advantages": [
+        0.9710581811380807,
+        1.0251310264914775,
+        -1.1197585058599218,
+        -0.8854428426618696,
+        -0.9935885333686628,
+        1.0251310264914775,
+        -0.9935885333686628,
+        0.9710581811380807
+      ],
+      "reward_variance": 0.3078109375,
+      "win_variance": 0.25,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8333333333333334
+    },
+    {
+      "update": 7,
+      "n": 16,
+      "start_state": "train-v1/seed23/animals/16/1000007/p0",
+      "games": 8,
+      "mean_reward": 0.1175,
+      "wins": 4,
+      "win_rate": 0.5,
+      "questions_per_win": 5.25,
+      "eig_per_question": 0.15685675521534914,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.28846153846153844,
+      "output_tokens_per_game": 206.0,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 52,
+      "post_budget_non_guesses": 3,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 5,
+        "no_guess_games": 3,
+        "ambiguous_guesses": 5,
+        "ambiguous_guess_wins": 4,
+        "ambiguous_guesses_per_game": 0.625,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 4,
+            "wins": 3,
+            "guesses_per_game": 0.5,
+            "share_of_guesses": 0.8,
+            "win_rate_when_guessed": 0.75
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 1,
+            "wins": 1,
+            "guesses_per_game": 0.125,
+            "share_of_guesses": 0.2,
+            "win_rate_when_guessed": 1.0
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 4,
+            "wins": 3
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 1,
+            "wins": 1
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.45
+      },
+      "training_tokens": 90330,
+      "datums": 60,
+      "gradient_usd": "0.039746",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:19",
+      "mean_train_minus_sample_logprob": -0.0018845831803938915,
+      "max_abs_train_minus_sample_logprob": 0.4909179210662842,
+      "server_metrics": {
+        "loss:sum": 1437.7385659217834,
+        "clock_cycle:unique": 7406450.0
+      },
+      "returns": [
+        -0.24,
+        0.88,
+        0.8200000000000001,
+        0.85,
+        -0.9400000000000001,
+        -0.21,
+        0.8200000000000001,
+        -1.04
+      ],
+      "advantages": [
+        -0.4616194759565328,
+        0.9845730081590385,
+        0.9070984107957045,
+        0.9458357094773714,
+        -1.3654897785287652,
+        -0.42288217727486577,
+        0.9070984107957045,
+        -1.4946141074676553
+      ],
+      "reward_variance": 0.5997687500000001,
+      "win_variance": 0.25,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8571428571428571
+    },
+    {
+      "update": 8,
+      "n": 16,
+      "start_state": "train-v1/seed23/animals/16/1000008/p0",
+      "games": 8,
+      "mean_reward": 0.15375000000000005,
+      "wins": 3,
+      "win_rate": 0.375,
+      "questions_per_win": 6.333333333333333,
+      "eig_per_question": 0.28066030528518077,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 102.625,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 59,
+      "post_budget_non_guesses": 4,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 4,
+        "no_guess_games": 4,
+        "ambiguous_guesses": 2,
+        "ambiguous_guess_wins": 1,
+        "ambiguous_guesses_per_game": 0.25,
+        "bins": {
+          "1": {
+            "guesses": 2,
+            "wins": 2,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.5,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 2,
+            "wins": 1,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.5,
+            "win_rate_when_guessed": 0.5
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 2,
+            "wins": 2
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 2,
+            "wins": 1
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.5535714285714286
+      },
+      "training_tokens": 97610,
+      "datums": 67,
+      "gradient_usd": "0.042949",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:22",
+      "mean_train_minus_sample_logprob": -0.0011135523222587282,
+      "max_abs_train_minus_sample_logprob": 0.7315311431884766,
+      "server_metrics": {
+        "loss:sum": 351.56945276260376,
+        "clock_cycle:unique": 1111721.0
+      },
+      "returns": [
+        0.79,
+        0.85,
+        -0.24,
+        0.79,
+        -0.24,
+        -0.24,
+        -0.24,
+        -0.24
+      ],
+      "advantages": [
+        1.2509238821538105,
+        1.3688891991349161,
+        -0.7741473926885075,
+        1.2509238821538105,
+        -0.7741473926885075,
+        -0.7741473926885075,
+        -0.7741473926885075,
+        -0.7741473926885075
+      ],
+      "reward_variance": 0.2586984375,
+      "win_variance": 0.234375,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.875
+    },
+    {
+      "update": 9,
+      "n": 16,
+      "start_state": "train-v1/seed23/animals/16/1000009/p0",
+      "games": 8,
+      "mean_reward": 0.4225,
+      "wins": 5,
+      "win_rate": 0.625,
+      "questions_per_win": 6.0,
+      "eig_per_question": 0.5487374487639152,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 36.25,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 54,
+      "post_budget_non_guesses": 2,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 6,
+        "no_guess_games": 2,
+        "ambiguous_guesses": 1,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.125,
+        "bins": {
+          "1": {
+            "guesses": 5,
+            "wins": 5,
+            "guesses_per_game": 0.625,
+            "share_of_guesses": 0.8333333333333334,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 1,
+            "wins": 0,
+            "guesses_per_game": 0.125,
+            "share_of_guesses": 0.16666666666666666,
+            "win_rate_when_guessed": 0.0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 5,
+            "wins": 5
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 1,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.8888888888888888
+      },
+      "training_tokens": 77554,
+      "datums": 62,
+      "gradient_usd": "0.034124",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:25",
+      "mean_train_minus_sample_logprob": -0.0018963228135337252,
+      "max_abs_train_minus_sample_logprob": 0.6341713666915894,
+      "server_metrics": {
+        "loss:sum": 11.430832862854004,
+        "clock_cycle:unique": 3039704.0
+      },
+      "returns": [
+        0.8200000000000001,
+        -0.24,
+        0.8200000000000001,
+        0.85,
+        0.79,
+        -0.24,
+        -0.24,
+        0.8200000000000001
+      ],
+      "advantages": [
+        0.7742659596796492,
+        -1.2904432661327483,
+        0.7742659596796492,
+        0.8327011264479244,
+        0.7158307929113737,
+        -1.2904432661327483,
+        -1.2904432661327483,
+        0.7742659596796492
+      ],
+      "reward_variance": 0.26356875,
+      "win_variance": 0.234375,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8888888888888888
+    },
+    {
+      "update": 10,
+      "n": 16,
+      "start_state": "train-v1/seed23/animals/16/1000010/p0",
+      "games": 8,
+      "mean_reward": 0.01874999999999999,
+      "wins": 2,
+      "win_rate": 0.25,
+      "questions_per_win": 4.0,
+      "eig_per_question": 0.19441089155715038,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.03636363636363636,
+      "output_tokens_per_game": 99.625,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 55,
+      "post_budget_non_guesses": 5,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 3,
+        "no_guess_games": 5,
+        "ambiguous_guesses": 1,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.125,
+        "bins": {
+          "1": {
+            "guesses": 2,
+            "wins": 2,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.6666666666666666,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 1,
+            "wins": 0,
+            "guesses_per_game": 0.125,
+            "share_of_guesses": 0.3333333333333333,
+            "win_rate_when_guessed": 0.0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 2,
+            "wins": 2
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 1,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.7777777777777778
+      },
+      "training_tokens": 89202,
+      "datums": 63,
+      "gradient_usd": "0.039249",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:28",
+      "mean_train_minus_sample_logprob": 0.0017649728074644968,
+      "max_abs_train_minus_sample_logprob": 0.38986873626708984,
+      "server_metrics": {
+        "loss:sum": 318.9195864200592,
+        "clock_cycle:unique": 3039812.0
+      },
+      "returns": [
+        -0.24,
+        -0.24,
+        -0.24,
+        -0.44000000000000017,
+        0.85,
+        -0.21,
+        -0.24,
+        0.91
+      ],
+      "advantages": [
+        -0.5154567098706271,
+        -0.5154567098706271,
+        -0.5154567098706271,
+        -0.9138773551812572,
+        1.6559358070723047,
+        -0.45569361307403267,
+        -0.5154567098706271,
+        1.7754620006654938
+      ],
+      "reward_variance": 0.25198593750000003,
+      "win_variance": 0.1875,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.9
+    },
+    {
+      "update": 11,
+      "n": 16,
+      "start_state": "train-v1/seed23/animals/16/1000011/p0",
+      "games": 8,
+      "mean_reward": 0.83125,
+      "wins": 8,
+      "win_rate": 1.0,
+      "questions_per_win": 5.625,
+      "eig_per_question": 0.9259720354241238,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 33.5,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 45,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 8,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 8,
+            "wins": 8,
+            "guesses_per_game": 1.0,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 8,
+            "wins": 8
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "training_tokens": 64680,
+      "datums": 53,
+      "gradient_usd": "0.028460",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:31",
+      "mean_train_minus_sample_logprob": -0.001889013208344108,
+      "max_abs_train_minus_sample_logprob": 0.34780681133270264,
+      "server_metrics": {
+        "clock_cycle:unique": 3039910.0,
+        "loss:sum": 17.104959726333618
+      },
+      "returns": [
+        0.8200000000000001,
+        0.85,
+        0.8200000000000001,
+        0.8200000000000001,
+        0.8200000000000001,
+        0.85,
+        0.85,
+        0.8200000000000001
+      ],
+      "advantages": [
+        -0.7745961359085182,
+        1.2909935598475277,
+        -0.7745961359085182,
+        -0.7745961359085182,
+        -0.7745961359085182,
+        1.2909935598475277,
+        1.2909935598475277,
+        -0.7745961359085182
+      ],
+      "reward_variance": 0.00021093749999999883,
+      "win_variance": 0.0,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.9090909090909091
+    },
+    {
+      "update": 12,
+      "n": 16,
+      "start_state": "train-v1/seed23/animals/16/1000012/p0",
+      "games": 8,
+      "mean_reward": 0.5587500000000001,
+      "wins": 6,
+      "win_rate": 0.75,
+      "questions_per_win": 6.166666666666667,
+      "eig_per_question": 0.6659362958506682,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 47.25,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 51,
+      "post_budget_non_guesses": 0,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 8,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 2,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.25,
+        "bins": {
+          "1": {
+            "guesses": 6,
+            "wins": 6,
+            "guesses_per_game": 0.75,
+            "share_of_guesses": 0.75,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 2,
+            "wins": 0,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.25,
+            "win_rate_when_guessed": 0.0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 6,
+            "wins": 6
+          },
+          "2": {
+            "guesses": 2,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.875
+      },
+      "training_tokens": 72440,
+      "datums": 59,
+      "gradient_usd": "0.031874",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:34",
+      "mean_train_minus_sample_logprob": -0.002745479909847284,
+      "max_abs_train_minus_sample_logprob": 0.21305549889802933,
+      "server_metrics": {
+        "clock_cycle:unique": 3040000.0,
+        "loss:sum": 5.163761854171753
+      },
+      "returns": [
+        -0.21,
+        0.8200000000000001,
+        0.85,
+        0.8200000000000001,
+        0.79,
+        -0.21,
+        0.79,
+        0.8200000000000001
+      ],
+      "advantages": [
+        -1.7306511646272464,
+        0.5881399892798285,
+        0.6556775957043062,
+        0.5881399892798285,
+        0.5206023828553504,
+        -1.7306511646272464,
+        0.5206023828553504,
+        0.5881399892798285
+      ],
+      "reward_variance": 0.1973109375,
+      "win_variance": 0.1875,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.9166666666666666
+    },
+    {
+      "update": 13,
+      "n": 16,
+      "start_state": "train-v1/seed23/animals/16/1000013/p0",
+      "games": 8,
+      "mean_reward": 0.695,
+      "wins": 7,
+      "win_rate": 0.875,
+      "questions_per_win": 5.714285714285714,
+      "eig_per_question": 0.4841683644134307,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 43.625,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 48,
+      "post_budget_non_guesses": 1,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 7,
+        "no_guess_games": 1,
+        "ambiguous_guesses": 1,
+        "ambiguous_guess_wins": 1,
+        "ambiguous_guesses_per_game": 0.125,
+        "bins": {
+          "1": {
+            "guesses": 6,
+            "wins": 6,
+            "guesses_per_game": 0.75,
+            "share_of_guesses": 0.8571428571428571,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 1,
+            "wins": 1,
+            "guesses_per_game": 0.125,
+            "share_of_guesses": 0.14285714285714285,
+            "win_rate_when_guessed": 1.0
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 6,
+            "wins": 6
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 1,
+            "wins": 1
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.8928571428571429
+      },
+      "training_tokens": 69775,
+      "datums": 56,
+      "gradient_usd": "0.030701",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:37",
+      "mean_train_minus_sample_logprob": 0.0005779406788552923,
+      "max_abs_train_minus_sample_logprob": 0.6821660995483398,
+      "server_metrics": {
+        "loss:sum": -13.181545495986938,
+        "clock_cycle:unique": 3040149.0
+      },
+      "returns": [
+        0.85,
+        0.85,
+        0.76,
+        0.85,
+        0.85,
+        0.8200000000000001,
+        -0.24,
+        0.8200000000000001
+      ],
+      "advantages": [
+        0.43714031791309116,
+        0.43714031791309116,
+        0.18331690751194157,
+        0.43714031791309116,
+        0.43714031791309116,
+        0.3525325144460415,
+        -2.636943208056388,
+        0.3525325144460415
+      ],
+      "reward_variance": 0.125725,
+      "win_variance": 0.109375,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.9230769230769231
+    },
+    {
+      "update": 14,
+      "n": 16,
+      "start_state": "train-v1/seed23/animals/16/1000014/p0",
+      "games": 8,
+      "mean_reward": 0.51,
+      "wins": 6,
+      "win_rate": 0.75,
+      "questions_per_win": 8.0,
+      "eig_per_question": 0.38278850278220006,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 49.125,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 64,
+      "post_budget_non_guesses": 2,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 6,
+        "no_guess_games": 2,
+        "ambiguous_guesses": 4,
+        "ambiguous_guess_wins": 4,
+        "ambiguous_guesses_per_game": 0.5,
+        "bins": {
+          "1": {
+            "guesses": 2,
+            "wins": 2,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.3333333333333333,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 4,
+            "wins": 4,
+            "guesses_per_game": 0.5,
+            "share_of_guesses": 0.6666666666666666,
+            "win_rate_when_guessed": 1.0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 2,
+            "wins": 2
+          },
+          "2": {
+            "guesses": 4,
+            "wins": 4
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.6666666666666666
+      },
+      "training_tokens": 90999,
+      "datums": 72,
+      "gradient_usd": "0.040040",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:40",
+      "mean_train_minus_sample_logprob": -0.00101142504874654,
+      "max_abs_train_minus_sample_logprob": 0.6619480848312378,
+      "server_metrics": {
+        "clock_cycle:unique": 3040266.0,
+        "loss:sum": 22.69036602973938
+      },
+      "returns": [
+        -0.24,
+        0.76,
+        -0.24,
+        0.76,
+        0.76,
+        0.76,
+        0.76,
+        0.76
+      ],
+      "advantages": [
+        -1.7320507675688783,
+        0.5773502558562927,
+        -1.7320507675688783,
+        0.5773502558562927,
+        0.5773502558562927,
+        0.5773502558562927,
+        0.5773502558562927,
+        0.5773502558562927
+      ],
+      "reward_variance": 0.1875,
+      "win_variance": 0.1875,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.9285714285714286
+    },
+    {
+      "update": 15,
+      "n": 16,
+      "start_state": "train-v1/seed23/animals/16/1000015/p0",
+      "games": 8,
+      "mean_reward": 0.6575,
+      "wins": 7,
+      "win_rate": 0.875,
+      "questions_per_win": 7.142857142857143,
+      "eig_per_question": 0.49548978962974854,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 51.875,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 58,
+      "post_budget_non_guesses": 1,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 7,
+        "no_guess_games": 1,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 7,
+            "wins": 7,
+            "guesses_per_game": 0.875,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 7,
+            "wins": 7
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "training_tokens": 82851,
+      "datums": 66,
+      "gradient_usd": "0.036455",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:43",
+      "mean_train_minus_sample_logprob": 0.0014773650665730184,
+      "max_abs_train_minus_sample_logprob": 0.28430527448654175,
+      "server_metrics": {
+        "clock_cycle:unique": 3040371.0,
+        "loss:sum": 3.025943875312805
+      },
+      "returns": [
+        -0.24,
+        0.8200000000000001,
+        0.76,
+        0.8200000000000001,
+        0.76,
+        0.8200000000000001,
+        0.76,
+        0.76
+      ],
+      "advantages": [
+        -2.636927203834897,
+        0.47743807311773934,
+        0.3011532461204201,
+        0.47743807311773934,
+        0.3011532461204201,
+        0.47743807311773934,
+        0.3011532461204201,
+        0.3011532461204201
+      ],
+      "reward_variance": 0.11584375000000001,
+      "win_variance": 0.109375,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.9333333333333333
+    },
+    {
+      "update": 16,
+      "n": 32,
+      "start_state": "train-v1/seed23/animals/32/1000016/p0",
+      "games": 8,
+      "mean_reward": -0.29625000000000007,
+      "wins": 1,
+      "win_rate": 0.125,
+      "questions_per_win": 9.0,
+      "eig_per_question": 0.26857217770142316,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.12658227848101267,
+      "output_tokens_per_game": 78.875,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 79,
+      "post_budget_non_guesses": 7,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 1,
+        "no_guess_games": 7,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 1,
+            "wins": 1,
+            "guesses_per_game": 0.125,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 1,
+            "wins": 1
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "training_tokens": 203739,
+      "datums": 87,
+      "gradient_usd": "0.089646",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:46",
+      "mean_train_minus_sample_logprob": -0.0027413609266631403,
+      "max_abs_train_minus_sample_logprob": 1.6210007667541504,
+      "server_metrics": {
+        "clock_cycle:unique": 3040534.0,
+        "loss:sum": 26.19663494825363
+      },
+      "returns": [
+        -0.4,
+        -0.6,
+        -0.30000000000000004,
+        -0.5000000000000001,
+        -0.40000000000000013,
+        -0.5,
+        0.73,
+        -0.40000000000000013
+      ],
+      "advantages": [
+        -0.2613437634103455,
+        -0.7651389699845056,
+        -0.009446160123265443,
+        -0.5132413666974258,
+        -0.26134376341034576,
+        -0.5132413666974256,
+        2.58509915373366,
+        -0.26134376341034576
+      ],
+      "reward_variance": 0.15759843750000002,
+      "win_variance": 0.109375,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.9375
+    },
+    {
+      "update": 17,
+      "n": 32,
+      "start_state": "train-v1/seed23/animals/32/1000017/p0",
+      "games": 8,
+      "mean_reward": 0.24874999999999997,
+      "wins": 4,
+      "win_rate": 0.5,
+      "questions_per_win": 6.75,
+      "eig_per_question": 0.40035979006665556,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 74.375,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 67,
+      "post_budget_non_guesses": 4,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 4,
+        "no_guess_games": 4,
+        "ambiguous_guesses": 1,
+        "ambiguous_guess_wins": 1,
+        "ambiguous_guesses_per_game": 0.125,
+        "bins": {
+          "1": {
+            "guesses": 3,
+            "wins": 3,
+            "guesses_per_game": 0.375,
+            "share_of_guesses": 0.75,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 1,
+            "wins": 1,
+            "guesses_per_game": 0.125,
+            "share_of_guesses": 0.25,
+            "win_rate_when_guessed": 1.0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 3,
+            "wins": 3
+          },
+          "2": {
+            "guesses": 1,
+            "wins": 1
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.875
+      },
+      "training_tokens": 143506,
+      "datums": 75,
+      "gradient_usd": "0.063143",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:49",
+      "mean_train_minus_sample_logprob": -0.0007034510100458953,
+      "max_abs_train_minus_sample_logprob": 0.4082951545715332,
+      "server_metrics": {
+        "clock_cycle:unique": 3040737.0,
+        "loss:sum": 64.99169540405273
+      },
+      "returns": [
+        0.73,
+        0.79,
+        -0.30000000000000004,
+        0.85,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        0.8200000000000001,
+        -0.30000000000000004
+      ],
+      "advantages": [
+        0.8755632211355185,
+        0.9847243500043623,
+        -0.9983694911129679,
+        1.0938854788732064,
+        -0.9983694911129679,
+        -0.9983694911129679,
+        1.0393049144387843,
+        -0.9983694911129679
+      ],
+      "reward_variance": 0.30211093750000007,
+      "win_variance": 0.25,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.9411764705882353
+    },
+    {
+      "update": 18,
+      "n": 32,
+      "start_state": "train-v1/seed23/animals/32/1000018/p0",
+      "games": 8,
+      "mean_reward": -0.31250000000000006,
+      "wins": 0,
+      "win_rate": 0.0,
+      "questions_per_win": null,
+      "eig_per_question": 0.2626086879813142,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0125,
+      "output_tokens_per_game": 95.25,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 80,
+      "post_budget_non_guesses": 8,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 0,
+        "no_guess_games": 8,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": null
+      },
+      "training_tokens": 184890,
+      "datums": 88,
+      "gradient_usd": "0.081352",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:52",
+      "mean_train_minus_sample_logprob": -0.0014720627493785866,
+      "max_abs_train_minus_sample_logprob": 0.6821393966674805,
+      "server_metrics": {
+        "clock_cycle:unique": 3040897.0,
+        "loss:sum": 151.0880002975464
+      },
+      "returns": [
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.4,
+        -0.30000000000000004
+      ],
+      "advantages": [
+        0.37796435872354794,
+        0.37796435872354794,
+        0.37796435872354794,
+        0.37796435872354794,
+        0.37796435872354794,
+        0.37796435872354794,
+        -2.6457505110648323,
+        0.37796435872354794
+      ],
+      "reward_variance": 0.0010937499999999995,
+      "win_variance": 0.0,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.9444444444444444
+    },
+    {
+      "update": 19,
+      "n": 32,
+      "start_state": "train-v1/seed23/animals/32/1000019/p0",
+      "games": 8,
+      "mean_reward": -0.30000000000000004,
+      "wins": 0,
+      "win_rate": 0.0,
+      "questions_per_win": null,
+      "eig_per_question": 0.2207870123975618,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 67.0,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 80,
+      "post_budget_non_guesses": 8,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 0,
+        "no_guess_games": 8,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": null
+      },
+      "training_tokens": 190526,
+      "datums": 88,
+      "gradient_usd": "0.083832",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:55",
+      "mean_train_minus_sample_logprob": -0.0007627898544393813,
+      "max_abs_train_minus_sample_logprob": 0.4398767948150635,
+      "server_metrics": {
+        "loss:sum": -0.0,
+        "clock_cycle:unique": 3041039.0
+      },
+      "returns": [
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.30000000000000004
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reward_variance": 0.0,
+      "win_variance": 0.0,
+      "nonzero_group_fraction": 0.0,
+      "cumulative_nonzero_group_fraction": 0.8947368421052632
+    },
+    {
+      "update": 20,
+      "n": 32,
+      "start_state": "train-v1/seed23/animals/32/1000020/p0",
+      "games": 8,
+      "mean_reward": 0.27874999999999994,
+      "wins": 4,
+      "win_rate": 0.5,
+      "questions_per_win": 4.75,
+      "eig_per_question": 0.3247343309258627,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 77.625,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 59,
+      "post_budget_non_guesses": 3,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 5,
+        "no_guess_games": 3,
+        "ambiguous_guesses": 1,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.125,
+        "bins": {
+          "1": {
+            "guesses": 4,
+            "wins": 4,
+            "guesses_per_game": 0.5,
+            "share_of_guesses": 0.8,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 1,
+            "wins": 0,
+            "guesses_per_game": 0.125,
+            "share_of_guesses": 0.2,
+            "win_rate_when_guessed": 0.0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 4,
+            "wins": 4
+          },
+          "2": {
+            "guesses": 1,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.9
+      },
+      "training_tokens": 122447,
+      "datums": 67,
+      "gradient_usd": "0.053877",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:58",
+      "mean_train_minus_sample_logprob": -0.0008094705563561026,
+      "max_abs_train_minus_sample_logprob": 0.3671325445175171,
+      "server_metrics": {
+        "clock_cycle:unique": 3041155.0,
+        "loss:sum": 283.55360984802246
+      },
+      "returns": [
+        -0.30000000000000004,
+        0.91,
+        -0.30000000000000004,
+        0.85,
+        -0.30000000000000004,
+        0.79,
+        0.88,
+        -0.30000000000000004
+      ],
+      "advantages": [
+        -0.9985337848101855,
+        1.0891135233890794,
+        -0.9985337848101855,
+        0.985593822156058,
+        -0.9985337848101855,
+        0.8820741209230366,
+        1.0373536727725687,
+        -0.9985337848101855
+      ],
+      "reward_variance": 0.33593593750000006,
+      "win_variance": 0.25,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.9
+    },
+    {
+      "update": 21,
+      "n": 32,
+      "start_state": "train-v1/seed23/animals/32/1000021/p0",
+      "games": 8,
+      "mean_reward": -0.26250000000000007,
+      "wins": 1,
+      "win_rate": 0.125,
+      "questions_per_win": 10.0,
+      "eig_per_question": 0.4016208862163089,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0875,
+      "output_tokens_per_game": 66.25,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 80,
+      "post_budget_non_guesses": 7,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 1,
+        "no_guess_games": 7,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 1,
+            "wins": 1,
+            "guesses_per_game": 0.125,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 1,
+            "wins": 1
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "training_tokens": 173526,
+      "datums": 88,
+      "gradient_usd": "0.076352",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:61",
+      "mean_train_minus_sample_logprob": 1.972140490735524e-05,
+      "max_abs_train_minus_sample_logprob": 0.36882126331329346,
+      "server_metrics": {
+        "clock_cycle:unique": 3041359.0,
+        "loss:sum": 15.583438336849213
+      },
+      "returns": [
+        -1.0,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        0.7
+      ],
+      "advantages": [
+        -1.7153771837586997,
+        -0.08722256866569655,
+        -0.08722256866569655,
+        -0.08722256866569655,
+        -0.08722256866569655,
+        -0.08722256866569655,
+        -0.08722256866569655,
+        2.2387125957528795
+      ],
+      "reward_variance": 0.18484375000000003,
+      "win_variance": 0.109375,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.9047619047619048
+    },
+    {
+      "update": 22,
+      "n": 32,
+      "start_state": "train-v1/seed23/animals/32/1000022/p0",
+      "games": 8,
+      "mean_reward": -0.28750000000000003,
+      "wins": 1,
+      "win_rate": 0.125,
+      "questions_per_win": 10.0,
+      "eig_per_question": 0.24651995203064514,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.1125,
+      "output_tokens_per_game": 91.5,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 80,
+      "post_budget_non_guesses": 7,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 1,
+        "no_guess_games": 7,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 1,
+            "wins": 1,
+            "guesses_per_game": 0.125,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 1,
+            "wins": 1
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "training_tokens": 208551,
+      "datums": 88,
+      "gradient_usd": "0.091763",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:64",
+      "mean_train_minus_sample_logprob": -0.004862906140507121,
+      "max_abs_train_minus_sample_logprob": 0.7818739414215088,
+      "server_metrics": {
+        "loss:sum": 153.71167558431625,
+        "clock_cycle:unique": 3041507.0
+      },
+      "returns": [
+        -0.7,
+        0.7,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.30000000000000004,
+        -0.6,
+        -0.5,
+        -0.30000000000000004
+      ],
+      "advantages": [
+        -1.0277431631698872,
+        2.4603548451642765,
+        -0.031143732217269345,
+        -0.031143732217269345,
+        -0.031143732217269345,
+        -0.7785933054317329,
+        -0.5294434476935783,
+        -0.031143732217269345
+      ],
+      "reward_variance": 0.16109374999999998,
+      "win_variance": 0.109375,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.9090909090909091
+    },
+    {
+      "update": 23,
+      "n": 64,
+      "start_state": "train-v1/seed23/animals/64/1000023/p0",
+      "games": 8,
+      "mean_reward": -1.1975000000000002,
+      "wins": 0,
+      "win_rate": 0.0,
+      "questions_per_win": null,
+      "eig_per_question": 0.08870948975906669,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.6979166666666666,
+      "output_tokens_per_game": 6312.75,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 96,
+      "post_budget_non_guesses": 6,
+      "truncated_turns": 24,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 0,
+        "no_guess_games": 8,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": null
+      },
+      "training_tokens": 803116,
+      "datums": 102,
+      "gradient_usd": "0.353372",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:67",
+      "mean_train_minus_sample_logprob": -6.47331481295051e-05,
+      "max_abs_train_minus_sample_logprob": 0.531153678894043,
+      "server_metrics": {
+        "clock_cycle:unique": 3041722.0,
+        "loss:sum": 35316.37886202335
+      },
+      "returns": [
+        -1.5600000000000005,
+        -1.5600000000000005,
+        -1.0600000000000003,
+        -0.3600000000000001,
+        -1.5600000000000005,
+        -1.5600000000000005,
+        -0.3600000000000001,
+        -1.5600000000000005
+      ],
+      "advantages": [
+        -0.7111346903415601,
+        -0.7111346903415601,
+        0.2697407446123156,
+        1.6429663535477412,
+        -0.7111346903415601,
+        -0.7111346903415601,
+        1.6429663535477412,
+        -0.7111346903415601
+      ],
+      "reward_variance": 0.25984375000000015,
+      "win_variance": 0.0,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.9130434782608695
+    },
+    {
+      "update": 24,
+      "n": 64,
+      "start_state": "train-v1/seed23/animals/64/1000024/p0",
+      "games": 8,
+      "mean_reward": -0.3600000000000001,
+      "wins": 0,
+      "win_rate": 0.0,
+      "questions_per_win": null,
+      "eig_per_question": 0.052105200435285264,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 52.0,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 96,
+      "post_budget_non_guesses": 8,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 0,
+        "no_guess_games": 8,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": null
+      },
+      "training_tokens": 477672,
+      "datums": 104,
+      "gradient_usd": "0.210176",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:70",
+      "mean_train_minus_sample_logprob": -0.00016973522838285775,
+      "max_abs_train_minus_sample_logprob": 0.012540534138679504,
+      "server_metrics": {
+        "clock_cycle:unique": 95299.0,
+        "loss:sum": -0.0
+      },
+      "returns": [
+        -0.3600000000000001,
+        -0.3600000000000001,
+        -0.3600000000000001,
+        -0.3600000000000001,
+        -0.3600000000000001,
+        -0.3600000000000001,
+        -0.3600000000000001,
+        -0.3600000000000001
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reward_variance": 0.0,
+      "win_variance": 0.0,
+      "nonzero_group_fraction": 0.0,
+      "cumulative_nonzero_group_fraction": 0.875
+    },
+    {
+      "update": 25,
+      "n": 64,
+      "start_state": "train-v1/seed23/animals/64/1000025/p0",
+      "games": 8,
+      "mean_reward": -0.3600000000000001,
+      "wins": 0,
+      "win_rate": 0.0,
+      "questions_per_win": null,
+      "eig_per_question": 0.1782106517755522,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 52.625,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 96,
+      "post_budget_non_guesses": 8,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 0,
+        "no_guess_games": 8,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": null
+      },
+      "training_tokens": 445144,
+      "datums": 104,
+      "gradient_usd": "0.195864",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:73",
+      "mean_train_minus_sample_logprob": -0.0009893749891651774,
+      "max_abs_train_minus_sample_logprob": 0.2747398614883423,
+      "server_metrics": {
+        "clock_cycle:unique": 95602.0,
+        "loss:sum": -0.0
+      },
+      "returns": [
+        -0.3600000000000001,
+        -0.3600000000000001,
+        -0.3600000000000001,
+        -0.3600000000000001,
+        -0.3600000000000001,
+        -0.3600000000000001,
+        -0.3600000000000001,
+        -0.3600000000000001
+      ],
+      "advantages": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "reward_variance": 0.0,
+      "win_variance": 0.0,
+      "nonzero_group_fraction": 0.0,
+      "cumulative_nonzero_group_fraction": 0.84
+    },
+    {
+      "update": 26,
+      "n": 64,
+      "start_state": "train-v1/seed23/animals/64/1000026/p0",
+      "games": 8,
+      "mean_reward": 0.4275,
+      "wins": 6,
+      "win_rate": 0.75,
+      "questions_per_win": 10.333333333333334,
+      "eig_per_question": 0.42453222190575113,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 53.0,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 86,
+      "post_budget_non_guesses": 2,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 6,
+        "no_guess_games": 2,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 6,
+            "wins": 6,
+            "guesses_per_game": 0.75,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 6,
+            "wins": 6
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "training_tokens": 287787,
+      "datums": 94,
+      "gradient_usd": "0.126627",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:76",
+      "mean_train_minus_sample_logprob": 0.0003576787484195512,
+      "max_abs_train_minus_sample_logprob": 0.40317702293395996,
+      "server_metrics": {
+        "clock_cycle:unique": 95729.0,
+        "loss:sum": -0.4429212808609009
+      },
+      "returns": [
+        -0.3600000000000001,
+        0.6699999999999999,
+        0.76,
+        -0.3600000000000001,
+        0.6399999999999999,
+        0.6399999999999999,
+        0.76,
+        0.6699999999999999
+      ],
+      "advantages": [
+        -1.7239388057615475,
+        0.5308636957424446,
+        0.7278852735437644,
+        -1.7239388057615475,
+        0.46518983647533796,
+        0.46518983647533796,
+        0.7278852735437644,
+        0.5308636957424446
+      ],
+      "reward_variance": 0.20866875000000004,
+      "win_variance": 0.1875,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8461538461538461
+    },
+    {
+      "update": 27,
+      "n": 128,
+      "start_state": "train-v1/seed23/animals/128/1000027/p0",
+      "games": 8,
+      "mean_reward": -1.3150000000000004,
+      "wins": 1,
+      "win_rate": 0.125,
+      "questions_per_win": 6.0,
+      "eig_per_question": 0.17757844480610577,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.8076923076923077,
+      "output_tokens_per_game": 107.5,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 104,
+      "post_budget_non_guesses": 7,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 1,
+        "no_guess_games": 7,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 1,
+            "wins": 1,
+            "guesses_per_game": 0.125,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 1,
+            "wins": 1
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "training_tokens": 649564,
+      "datums": 112,
+      "gradient_usd": "0.285809",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:79",
+      "mean_train_minus_sample_logprob": 0.0001920301508962901,
+      "max_abs_train_minus_sample_logprob": 0.3302903175354004,
+      "server_metrics": {
+        "clock_cycle:unique": 3041819.0,
+        "loss:sum": 206.39273071289062
+      },
+      "returns": [
+        -1.6200000000000006,
+        -1.6200000000000006,
+        0.8200000000000001,
+        -1.6200000000000006,
+        -1.6200000000000006,
+        -1.6200000000000006,
+        -1.6200000000000006,
+        -1.6200000000000006
+      ],
+      "advantages": [
+        -0.3779644683253866,
+        -0.3779644683253866,
+        2.6457512782777055,
+        -0.3779644683253866,
+        -0.3779644683253866,
+        -0.3779644683253866,
+        -0.3779644683253866,
+        -0.3779644683253866
+      ],
+      "reward_variance": 0.6511750000000004,
+      "win_variance": 0.109375,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8518518518518519
+    },
+    {
+      "update": 28,
+      "n": 128,
+      "start_state": "train-v1/seed23/animals/128/1000028/p0",
+      "games": 8,
+      "mean_reward": -0.14375000000000013,
+      "wins": 2,
+      "win_rate": 0.25,
+      "questions_per_win": 10.5,
+      "eig_per_question": 0.3324862529812005,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 58.0,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 105,
+      "post_budget_non_guesses": 6,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 2,
+        "no_guess_games": 6,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 2,
+            "wins": 2,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 2,
+            "wins": 2
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "training_tokens": 531532,
+      "datums": 113,
+      "gradient_usd": "0.233875",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:82",
+      "mean_train_minus_sample_logprob": -0.0005099341104155927,
+      "max_abs_train_minus_sample_logprob": 0.3329393267631531,
+      "server_metrics": {
+        "clock_cycle:unique": 96162.0,
+        "loss:sum": 32.66886353492737
+      },
+      "returns": [
+        0.73,
+        -0.42000000000000015,
+        -0.42000000000000015,
+        -0.42000000000000015,
+        0.6399999999999999,
+        -0.42000000000000015,
+        -0.42000000000000015,
+        -0.42000000000000015
+      ],
+      "advantages": [
+        1.8240831325197475,
+        -0.5767129789511647,
+        -0.5767129789511647,
+        -0.5767129789511647,
+        1.6361947411872413,
+        -0.5767129789511647,
+        -0.5767129789511647,
+        -0.5767129789511647
+      ],
+      "reward_variance": 0.22944843750000005,
+      "win_variance": 0.1875,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8571428571428571
+    },
+    {
+      "update": 29,
+      "n": 128,
+      "start_state": "train-v1/seed23/animals/128/1000029/p0",
+      "games": 8,
+      "mean_reward": -0.17375000000000013,
+      "wins": 2,
+      "win_rate": 0.25,
+      "questions_per_win": 9.5,
+      "eig_per_question": 0.3634347211677913,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.02912621359223301,
+      "output_tokens_per_game": 73.25,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 103,
+      "post_budget_non_guesses": 5,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 3,
+        "no_guess_games": 5,
+        "ambiguous_guesses": 1,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.125,
+        "bins": {
+          "1": {
+            "guesses": 2,
+            "wins": 2,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.6666666666666666,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 1,
+            "wins": 0,
+            "guesses_per_game": 0.125,
+            "share_of_guesses": 0.3333333333333333,
+            "win_rate_when_guessed": 0.0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 2,
+            "wins": 2
+          },
+          "2": {
+            "guesses": 1,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.8333333333333334
+      },
+      "training_tokens": 611473,
+      "datums": 111,
+      "gradient_usd": "0.269049",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:85",
+      "mean_train_minus_sample_logprob": -0.011955972905381546,
+      "max_abs_train_minus_sample_logprob": 1.1882524490356445,
+      "server_metrics": {
+        "clock_cycle:unique": 96223.0,
+        "loss:sum": 108.54608523845673
+      },
+      "returns": [
+        -0.42000000000000015,
+        -0.42000000000000015,
+        -0.42000000000000015,
+        0.5799999999999998,
+        -0.42000000000000015,
+        -0.7200000000000001,
+        -0.42000000000000015,
+        0.85
+      ],
+      "advantages": [
+        -0.4676934188128331,
+        -0.4676934188128331,
+        -0.4676934188128331,
+        1.4315691956555245,
+        -0.4676934188128331,
+        -1.03747220315334,
+        -0.4676934188128331,
+        1.9443701015619814
+      ],
+      "reward_variance": 0.27722343750000006,
+      "win_variance": 0.1875,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8620689655172413
+    },
+    {
+      "update": 30,
+      "n": 128,
+      "start_state": "train-v1/seed23/animals/128/1000030/p0",
+      "games": 8,
+      "mean_reward": -0.15500000000000014,
+      "wins": 2,
+      "win_rate": 0.25,
+      "questions_per_win": 12.0,
+      "eig_per_question": 0.3924982380867964,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 59.25,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 108,
+      "post_budget_non_guesses": 6,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 8,
+        "guesses": 2,
+        "no_guess_games": 6,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 2,
+            "wins": 2,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 2,
+            "wins": 2
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "training_tokens": 607437,
+      "datums": 116,
+      "gradient_usd": "0.267273",
+      "forward_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:88",
+      "mean_train_minus_sample_logprob": -0.0026351339608883186,
+      "max_abs_train_minus_sample_logprob": 0.6621454954147339,
+      "server_metrics": {
+        "loss:sum": 5.876128911972046,
+        "clock_cycle:unique": 3041865.0
+      },
+      "returns": [
+        -0.42000000000000015,
+        -0.42000000000000015,
+        -0.42000000000000015,
+        -0.42000000000000015,
+        -0.42000000000000015,
+        0.6099999999999999,
+        0.6699999999999999,
+        -0.42000000000000015
+      ],
+      "advantages": [
+        -0.5770421995446819,
+        -0.5770421995446819,
+        -0.5770421995446819,
+        -0.5770421995446819,
+        -0.5770421995446819,
+        1.6658010666101195,
+        1.7964521306579722,
+        -0.5770421995446819
+      ],
+      "reward_variance": 0.21090000000000003,
+      "win_variance": 0.1875,
+      "nonzero_group_fraction": 1.0,
+      "cumulative_nonzero_group_fraction": 0.8666666666666667
+    }
+  ]
+}

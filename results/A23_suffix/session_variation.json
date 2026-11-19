@@ -1,0 +1,125 @@
+{
+  "service_calls": 0,
+  "paired_synthetic_games": 168,
+  "shared_turn_parameter_checks": 1897,
+  "hard_mode_shared_turn_parameter_checks": 225,
+  "supplied_parameter_mismatches": 0,
+  "identical_complete_action_pairs": 152,
+  "initial_action_divergence_before_mapping": [
+    {
+      "game_id": "paid-v1/synthetic/128/17/p0.1",
+      "turn_index": 8,
+      "same_prompt_tokens": true,
+      "same_supplied_parameters": true,
+      "earlier_suffix_mapping": false
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/24/p0.1",
+      "turn_index": 7,
+      "same_prompt_tokens": true,
+      "same_supplied_parameters": true,
+      "earlier_suffix_mapping": false
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/7/p0.1",
+      "turn_index": 12,
+      "same_prompt_tokens": true,
+      "same_supplied_parameters": true,
+      "earlier_suffix_mapping": false
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/15/p0.1",
+      "turn_index": 16,
+      "same_prompt_tokens": true,
+      "same_supplied_parameters": true,
+      "earlier_suffix_mapping": false
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/20/p0.1",
+      "turn_index": 15,
+      "same_prompt_tokens": true,
+      "same_supplied_parameters": true,
+      "earlier_suffix_mapping": false
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/25/p0.1",
+      "turn_index": 9,
+      "same_prompt_tokens": true,
+      "same_supplied_parameters": true,
+      "earlier_suffix_mapping": false
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/26/p0.1",
+      "turn_index": 10,
+      "same_prompt_tokens": true,
+      "same_supplied_parameters": true,
+      "earlier_suffix_mapping": false
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/27/p0",
+      "turn_index": 6,
+      "same_prompt_tokens": true,
+      "same_supplied_parameters": true,
+      "earlier_suffix_mapping": false
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/3/p0.1",
+      "turn_index": 7,
+      "same_prompt_tokens": true,
+      "same_supplied_parameters": true,
+      "earlier_suffix_mapping": false
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/6/p0",
+      "turn_index": 0,
+      "same_prompt_tokens": true,
+      "same_supplied_parameters": true,
+      "earlier_suffix_mapping": false
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/6/p0.1",
+      "turn_index": 15,
+      "same_prompt_tokens": true,
+      "same_supplied_parameters": true,
+      "earlier_suffix_mapping": false
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/5/p0.1",
+      "turn_index": 0,
+      "same_prompt_tokens": true,
+      "same_supplied_parameters": true,
+      "earlier_suffix_mapping": false
+    },
+    {
+      "game_id": "paid-v1/synthetic/32/9/p0.1",
+      "turn_index": 4,
+      "same_prompt_tokens": true,
+      "same_supplied_parameters": true,
+      "earlier_suffix_mapping": false
+    }
+  ],
+  "initial_action_divergence_after_mapping": [
+    {
+      "game_id": "paid-v1/synthetic/128/24/p0",
+      "turn_index": 2,
+      "same_prompt_tokens": false,
+      "same_supplied_parameters": true,
+      "earlier_suffix_mapping": true
+    },
+    {
+      "game_id": "paid-v1/synthetic/128/27/p0",
+      "turn_index": 2,
+      "same_prompt_tokens": false,
+      "same_supplied_parameters": true,
+      "earlier_suffix_mapping": true
+    },
+    {
+      "game_id": "paid-v1/synthetic/256/11/p0.1",
+      "turn_index": 2,
+      "same_prompt_tokens": false,
+      "same_supplied_parameters": true,
+      "earlier_suffix_mapping": true
+    }
+  ],
+  "interpretation": "13 pairs differ in action before any parser mapping despite identical prompt tokens and supplied sampling parameters, including seed. The backend/restore cause is unestablished. These fresh diagnostic rollouts contain session reproduction variation, so small score differences cannot all be attributed to parser tolerance. Primary scores and rewards are unchanged."
+}

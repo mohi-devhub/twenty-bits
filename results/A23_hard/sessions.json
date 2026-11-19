@@ -1,0 +1,20 @@
+{
+  "session_id": "a3b2dad7-1c6b-58bc-abfb-d34abe0f72e9",
+  "samplers": {},
+  "next_sampler": 0,
+  "finished": true,
+  "snapshots": {
+    "0": {
+      "id": "a3b2dad7-1c6b-58bc-abfb-d34abe0f72e9:sample:0",
+      "next_seq": 225,
+      "policy_step": 0,
+      "native_checkpoint_path": null
+    },
+    "30": {
+      "id": "a3b2dad7-1c6b-58bc-abfb-d34abe0f72e9:sample:1",
+      "next_seq": 267,
+      "policy_step": 30,
+      "native_checkpoint_path": "tinker://19a7c48f-02fe-556c-8cc5-404284b8da40:train:0/sampler_weights/main-A-seed23-step-30"
+    }
+  }
+}

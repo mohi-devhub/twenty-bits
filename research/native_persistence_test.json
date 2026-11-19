@@ -38,8 +38,8 @@
     }
   },
   "gradients_or_optimizer_steps": 0,
-  "console_verified": false,
-  "test_checkpoints_deleted": false,
+  "console_verified": true,
+  "test_checkpoints_deleted": true,
   "fresh_client_sample_passed": true,
   "source_finished_before_sample": true,
   "fresh_session_id": "b94f0db9-db63-5778-8f9b-aa824d853a8d",
@@ -49,5 +49,13 @@
   "sample_output_tokens": 3,
   "api_listing_verification": "research/native_persistence_api_verification.json",
   "api_verified_at": "2026-11-18T20:24:43.218534+00:00",
-  "user_console_confirmation_pending": true
+  "user_console_confirmation_pending": false,
+  "console_confirmation": {
+    "recorded_at": "2026-11-18T20:31:30.630172+00:00",
+    "source": "User confirmed both persistence-smoke checkpoints appear in the console with Never expiry, explicitly authorized deletion and A23 start.",
+    "browser_used": false
+  },
+  "deletion_verified_at": "2026-11-18T20:31:43.279594+00:00",
+  "passed": true,
+  "storage_holds_retained_pending_billing": true
 }

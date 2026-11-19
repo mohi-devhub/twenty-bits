@@ -1,5 +1,5 @@
 {
-  "recorded_at": "2026-11-18T20:25:28.876148+00:00",
+  "recorded_at": "2026-11-18T20:32:29.383089+00:00",
   "prior_ledger_entries_and_approvals_unchanged": true,
   "budget": {
     "cap_usd": "50.000000",
@@ -11,18 +11,20 @@
   "A23_sampling_or_training_submitted": false,
   "B41_started": false,
   "native_API_save_and_fresh_client_passed": true,
-  "console_verification_pending": true,
-  "test_checkpoint_deletion_pending_console": true,
+  "console_verification_pending": false,
+  "test_checkpoint_deletion_pending_console": false,
   "test_source_and_fresh_client_finished": true,
   "in_flight_HTTP_operations": 0,
   "A11_suffix_and_hard_mode": "not run: A11 checkpoint wasn't persisted, external uploads unavailable",
   "remaining_U_including_margin_and_suffix_ceiling_usd": "28.463185505159925",
-  "next_action": "User cross-checks both saved test files in the console and confirms. Keep the files; no A23 work until confirmation.",
+  "next_action": "Execute approved A23 stage.",
   "unit_tests_passed": 154,
   "browser_authorized": false,
   "verification_method": "SDK/API only",
-  "user_confirmation_required_before_A23": true,
+  "user_confirmation_required_before_A23": false,
   "native_account_wide_API_listing_passed": true,
   "fresh_client_sample_after_listing_passed": true,
-  "fresh_API_verification_session_finished": true
+  "fresh_API_verification_session_finished": true,
+  "native_persistence_test_passed": true,
+  "smoke_checkpoints_deleted_API_verified": true
 }

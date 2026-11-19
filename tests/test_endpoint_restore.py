@@ -7,9 +7,14 @@ import unittest
 from unittest.mock import patch
 
 from twenty_bits.budget import BudgetError
-from twenty_bits.endpoint_restore import restore_A11_endpoint
+try:
+    from twenty_bits.endpoint_restore import restore_A11_endpoint
+    AVAILABLE = True
+except ImportError:
+    AVAILABLE = False
 
 
+@unittest.skipUnless(AVAILABLE, "paid SDK extras are optional")
 class EndpointReuseTests(unittest.IsolatedAsyncioTestCase):
     async def setup_case(self, root):
         sampler = "unit:sample:30"

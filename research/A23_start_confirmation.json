@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-11-18T20:31:30.630947+00:00",
+  "source": "User confirmed console Never expiry, authorized exact two-file smoke cleanup, then unchanged A23 and all three endpoint evaluations; stop before B41.",
+  "seed": 23,
+  "condition": "A",
+  "updates": 30,
+  "group_size": 8,
+  "stop_before_B41": true,
+  "protocol_unchanged": true,
+  "permanent_training_and_sampler_checkpoints": true,
+  "budget_before_start": {
+    "cap_usd": "50.000000",
+    "spent_usd": "11.015862",
+    "held_usd": "1.131236",
+    "available_usd": "37.852902",
+    "blocked": false
+  },
+  "remaining_forecast_with_margin_usd": "28.463185505159925",
+  "config_and_implementation_hashes_verified": true
+}

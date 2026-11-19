@@ -1,0 +1,131 @@
+{
+  "authorized_to_start_now": false,
+  "requires_user_confirmation_at_A23_gate": true,
+  "condition": "B",
+  "seed": 41,
+  "noise": 0.1,
+  "updates": 30,
+  "group_size": 8,
+  "training_games": 240,
+  "new_development_games": 64,
+  "frozen_endpoint_games": 280,
+  "new_raw_control_games": 0,
+  "hard_mode_already_completed_on_A23": true,
+  "training_usd": 6.3780078004584,
+  "development_usd": 0.05594184000000001,
+  "endpoint_usd": 2.360166837,
+  "native_no_expiry_checkpoint_storage_estimate_usd": 0.2953646468,
+  "storage_reserve_coverage_days": 30,
+  "total_before_margin_usd": 9.089481124258398,
+  "total_with_1_5_margin_usd": 13.634221686387598,
+  "zero_cache_reference_before_extra_margin_usd": 11.1559777122584,
+  "available_usd": "32.234094",
+  "fits_with_margin": true,
+  "training_profiles": {
+    "4": {
+      "uncached_A_sampling_plus_gradient_per_game_usd": 0.00195505,
+      "B_reference_multiplier": 1.424904733894274,
+      "observed_A_group_per_game_costs": [
+        0.0019265875,
+        0.0018532268750000001,
+        0.00143377625,
+        0.00131648
+      ],
+      "reference_floor_usd": 0.00195505
+    },
+    "8": {
+      "uncached_A_sampling_plus_gradient_per_game_usd": 0.0035157078125,
+      "B_reference_multiplier": 1.6608929126897074,
+      "observed_A_group_per_game_costs": [
+        0.003742600625,
+        0.0028780537500000002,
+        0.003440076875,
+        0.003264826875
+      ],
+      "reference_floor_usd": 0.00305405
+    },
+    "16": {
+      "uncached_A_sampling_plus_gradient_per_game_usd": 0.007927430000000001,
+      "B_reference_multiplier": 1.2007346643237469,
+      "observed_A_group_per_game_costs": [
+        0.02317732875,
+        0.006672053125000001,
+        0.0039199050000000004,
+        0.00426814625,
+        0.00591356625,
+        0.00558375625,
+        0.004872388125,
+        0.00656370125,
+        0.00649503125,
+        0.005849134375,
+        0.005429155,
+        0.00606743875,
+        0.00573087125,
+        0.00725493625,
+        0.007791065,
+        0.00617207125,
+        0.0071223075,
+        0.005148934375,
+        0.005770549375,
+        0.00555742375,
+        0.0072447512500000005,
+        0.00659898625
+      ],
+      "reference_floor_usd": 0.007927430000000001
+    },
+    "32": {
+      "uncached_A_sampling_plus_gradient_per_game_usd": 0.015038815,
+      "B_reference_multiplier": 1.2763987721107015,
+      "observed_A_group_per_game_costs": [
+        0.012938950000000001,
+        0.009219986874999999,
+        0.008548318124999999,
+        0.00603107375,
+        0.013101391875,
+        0.011208533125,
+        0.0071177918750000005,
+        0.016205953125,
+        0.011422783750000002,
+        0.014716415,
+        0.015152351250000001,
+        0.009752341875,
+        0.013802672500000002,
+        0.016593008125
+      ],
+      "reference_floor_usd": 0.015038815
+    },
+    "64": {
+      "uncached_A_sampling_plus_gradient_per_game_usd": 0.03600263734375,
+      "B_reference_multiplier": 1.1915050142107817,
+      "observed_A_group_per_game_costs": [
+        0.021166626875,
+        0.023450894375000003,
+        0.012484681875,
+        0.0155195425,
+        0.0663066025,
+        0.03793885,
+        0.035357233125,
+        0.022866939375
+      ],
+      "reference_floor_usd": 0.0346216
+    },
+    "128": {
+      "uncached_A_sampling_plus_gradient_per_game_usd": 0.081679565,
+      "B_reference_multiplier": 1.1304446834407114,
+      "observed_A_group_per_game_costs": [
+        0.0643380475,
+        0.01945415,
+        0.037359879375,
+        0.036987481875,
+        0.051605515,
+        0.042216711875,
+        0.04856815125,
+        0.048242225624999996
+      ],
+      "reference_floor_usd": 0.081679565
+    }
+  },
+  "endpoint_cache_credit": 0.6,
+  "method": "Two observed A seeds; uncached sampling plus gradient cost by N, using max(original floor, pooled mean, pooled upper quartile), multiplied by the original noisy/noiseless free-reference cost ratio. Endpoint uses the most expensive strict primary cohort per cell and at most 60% cache credit. No extra hard mode, raw endpoint, suffix diagnostic or external reupload is forecast.",
+  "limits": "B training behavior is still unobserved; its noisy-reference multiplier may miss new behavior. Per-call ledger holds still bound dispatch. No protocol changes or B41 authorization follow from this forecast."
+}

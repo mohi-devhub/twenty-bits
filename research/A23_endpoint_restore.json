@@ -1,0 +1,64 @@
+{
+  "recorded_at": "2026-11-19T04:19:58.308389+00:00",
+  "source_session_finished": true,
+  "source_session_id": "19a7c48f-02fe-556c-8cc5-404284b8da40",
+  "fresh_session_id": "f1e19e95-72a2-578c-8dd3-f1f140efa552",
+  "native_checkpoints": {
+    "training": {
+      "checkpoint_type": "training",
+      "time": "2026-11-18T23:11:32.465326Z",
+      "size_bytes": 1107556469,
+      "public": false,
+      "user_metadata": null,
+      "expires_at": null,
+      "deleted_at": null,
+      "checkpoint_id": "weights/main-A-seed23-step-30",
+      "tinker_path": "tinker://19a7c48f-02fe-556c-8cc5-404284b8da40:train:0/weights/main-A-seed23-step-30",
+      "base_model": "Qwen/Qwen3-8B",
+      "owner": "tml:organization_user:b91ce9f2-ec42-4d67-9e54-063e8d3ba6ee",
+      "storage_rate_usd_per_GB_month": "0.10",
+      "monthly_paid_plan_usd": "0.11075564690",
+      "billing_reconciled": false,
+      "retention": "no expiry; hold is a priced reserve, not a settled invoice"
+    },
+    "sampler": {
+      "checkpoint_type": "sampler",
+      "time": "2026-11-18T23:11:43.602185Z",
+      "size_bytes": 369266765,
+      "public": false,
+      "user_metadata": null,
+      "expires_at": null,
+      "deleted_at": null,
+      "checkpoint_id": "sampler_weights/main-A-seed23-step-30",
+      "tinker_path": "tinker://19a7c48f-02fe-556c-8cc5-404284b8da40:train:0/sampler_weights/main-A-seed23-step-30",
+      "base_model": "Qwen/Qwen3-8B",
+      "owner": "tml:organization_user:b91ce9f2-ec42-4d67-9e54-063e8d3ba6ee",
+      "storage_rate_usd_per_GB_month": "0.10",
+      "monthly_paid_plan_usd": "0.03692667650",
+      "billing_reconciled": false,
+      "retention": "no expiry; hold is a priced reserve, not a settled invoice"
+    }
+  },
+  "external_upload_used": false,
+  "service_calls_for_this_audit": 0,
+  "example_saved_auxiliary_game_id": "paid-v1/synthetic/32/4/p0",
+  "example_saved_auxiliary_request_id": "f1e19e95-72a2-578c-8dd3-f1f140efa552:sample:1:28",
+  "ledger_chronology_verified": [
+    {
+      "mode": "suffix",
+      "source_finish_entry_id": "fc31b433-85cb-4e87-860a-c0e1804e7742",
+      "source_finish_settled_at": "2026-11-19T04:16:42.811657+00:00",
+      "fresh_sampler_entry_id": "b2c72aa8-443b-4dc9-ae75-57e9cbc52723",
+      "fresh_sampler_created_at": "2026-11-19T04:16:54.998077+00:00",
+      "fresh_session_id": "f1e19e95-72a2-578c-8dd3-f1f140efa552"
+    },
+    {
+      "mode": "hard",
+      "source_finish_entry_id": "fc31b433-85cb-4e87-860a-c0e1804e7742",
+      "source_finish_settled_at": "2026-11-19T04:16:42.811657+00:00",
+      "fresh_sampler_entry_id": "0a643546-229c-4a3d-9609-4f7466b5c26d",
+      "fresh_sampler_created_at": "2026-11-19T07:48:54.906211+00:00",
+      "fresh_session_id": "a3b2dad7-1c6b-58bc-abfb-d34abe0f72e9"
+    }
+  ]
+}

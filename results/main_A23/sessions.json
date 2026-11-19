@@ -1,0 +1,165 @@
+{
+  "session_id": "19a7c48f-02fe-556c-8cc5-404284b8da40",
+  "samplers": {},
+  "next_sampler": 0,
+  "finished": true,
+  "training_model_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0",
+  "snapshots": {
+    "0": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:0",
+      "next_seq": 25,
+      "policy_step": 0,
+      "initialization": "raw_base"
+    },
+    "1": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:1",
+      "next_seq": 24,
+      "policy_step": 1
+    },
+    "2": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:2",
+      "next_seq": 46,
+      "policy_step": 2
+    },
+    "3": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:3",
+      "next_seq": 45,
+      "policy_step": 3
+    },
+    "4": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:4",
+      "next_seq": 94,
+      "policy_step": 4
+    },
+    "5": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:5",
+      "next_seq": 55,
+      "policy_step": 5
+    },
+    "6": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:6",
+      "next_seq": 60,
+      "policy_step": 6
+    },
+    "7": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:7",
+      "next_seq": 67,
+      "policy_step": 7
+    },
+    "8": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:8",
+      "next_seq": 100,
+      "policy_step": 8
+    },
+    "9": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:9",
+      "next_seq": 63,
+      "policy_step": 9
+    },
+    "10": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:10",
+      "next_seq": 53,
+      "policy_step": 10
+    },
+    "11": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:11",
+      "next_seq": 59,
+      "policy_step": 11
+    },
+    "12": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:12",
+      "next_seq": 93,
+      "policy_step": 12
+    },
+    "13": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:13",
+      "next_seq": 72,
+      "policy_step": 13
+    },
+    "14": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:14",
+      "next_seq": 66,
+      "policy_step": 14
+    },
+    "15": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:15",
+      "next_seq": 87,
+      "policy_step": 15
+    },
+    "16": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:16",
+      "next_seq": 112,
+      "policy_step": 16
+    },
+    "17": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:17",
+      "next_seq": 88,
+      "policy_step": 17
+    },
+    "18": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:18",
+      "next_seq": 88,
+      "policy_step": 18
+    },
+    "19": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:19",
+      "next_seq": 67,
+      "policy_step": 19
+    },
+    "20": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:20",
+      "next_seq": 128,
+      "policy_step": 20
+    },
+    "21": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:21",
+      "next_seq": 88,
+      "policy_step": 21
+    },
+    "22": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:22",
+      "next_seq": 102,
+      "policy_step": 22
+    },
+    "23": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:23",
+      "next_seq": 104,
+      "policy_step": 23
+    },
+    "24": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:24",
+      "next_seq": 146,
+      "policy_step": 24
+    },
+    "25": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:25",
+      "next_seq": 94,
+      "policy_step": 25
+    },
+    "26": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:26",
+      "next_seq": 112,
+      "policy_step": 26
+    },
+    "27": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:27",
+      "next_seq": 113,
+      "policy_step": 27
+    },
+    "28": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:28",
+      "next_seq": 151,
+      "policy_step": 28
+    },
+    "29": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:29",
+      "next_seq": 116,
+      "policy_step": 29
+    },
+    "30": {
+      "id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30",
+      "next_seq": 3350,
+      "policy_step": 30
+    }
+  }
+}

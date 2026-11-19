@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-11-19T03:26:47.613337+00:00",
+  "reason": "Synchronous ledger CPU/file work blocks the collector event loop. Five copied-ledger trials measured 8.911878459 seconds median per complete guarded operation; 16 concurrent games can exceed the unchanged 45-second HTTP timeout.",
+  "diagnostic": "research/A23_ledger_io_diagnostic.json",
+  "previous_execution": {
+    "concurrent_games": 16,
+    "sampling_config_sha256": "02a512fe4d3f1068d68e5f7db2b7137865c89646ae91b75bcac699de25fa7e25",
+    "note": "Execution parallelism only; games, prompts, generation seeds, sampling settings and all experiment caps remain unchanged."
+  },
+  "next_concurrent_games": 2,
+  "operation": "SIGINT to the child coordinator; drain every active HTTP operation before restarting the same stage wrapper from its journals.",
+  "training_updates_complete": 30,
+  "checkpoint_step": 30,
+  "config_sha256": "02a512fe4d3f1068d68e5f7db2b7137865c89646ae91b75bcac699de25fa7e25",
+  "ledger_code_changed": false,
+  "experimental_protocol_changed": false,
+  "sampling_settings_changed": false,
+  "B41_started": false,
+  "drain_complete": true,
+  "resumed": true,
+  "drained_at": "2026-11-19T03:30:07.518787+00:00",
+  "pending_saved_futures_before_resume": [],
+  "completed_mutations": 93,
+  "optimizer_updates_complete": 30,
+  "old_process_exit": "Handled stop after draining HTTP work; wrapper returned 1 as expected",
+  "resumed_at": "2026-11-19T03:30:46.004430+00:00",
+  "resume_command": "TWENTY_BITS_CONCURRENT_GAMES=2 caffeinate -i .venv/bin/python scripts/run_A23_stage.py",
+  "pending_before_new_submissions": 0,
+  "user_authorized_continuing_on_battery": true,
+  "user_power_message": "i'll reconnect when possible, u can continue"
+}

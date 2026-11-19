@@ -1,0 +1,541 @@
+{
+  "tests_passed": 158,
+  "primary_sampling_requests_verified": 5846,
+  "all_new_sampling_requests_verified": 8241,
+  "primary_mutations_verified": 93,
+  "gradient_batches_reconstructed": 30,
+  "frozen_games_in_gradients": 0,
+  "frozen_games_verified": 2000,
+  "frozen_and_prompt_hashes_unchanged": true,
+  "old_ledger_entries_and_approval_unchanged": true,
+  "old_holds_retained": true,
+  "replacement_cases": {
+    "primary": {
+      "cases": [
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/19/p0.1/turn-11",
+          "original_entry_id": "64cf0c7c-a573-4461-8ed0-4aaf5a143a84",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2533",
+          "signature": "2ef0abbe616924e296f0801fee83a4f1739c2048903d98d3cdf10d1a1431b70c",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/19/p0.1/turn-11/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T01:59:15.670610+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "5170aef9-2460-436f-8218-857247766622",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2538",
+          "original_hold_usd": "0.002951",
+          "saved_before_dispatch_at": "2026-11-19T01:58:09.255808+00:00",
+          "collection_started_at": "2026-11-19T01:58:54.525593+00:00",
+          "submission_error": {
+            "type": "APIConnectionError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 66.414802
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/27/p0.1/turn-5",
+          "original_entry_id": "e6227d12-228a-4ec8-a57d-5daf76c8ec71",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2527",
+          "signature": "333a32731bb7b5fc3ae099556bb81b47a470200f1a724fd644c4a13c142909c2",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/27/p0.1/turn-5/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T01:59:17.399643+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "855e41dc-e080-4be2-9095-4404e2f65d59",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2546",
+          "original_hold_usd": "0.002602",
+          "saved_before_dispatch_at": "2026-11-19T01:57:50.423544+00:00",
+          "collection_started_at": "2026-11-19T01:58:49.921542+00:00",
+          "submission_error": {
+            "type": "APIConnectionError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 86.976099
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/25/p0.1/turn-7",
+          "original_entry_id": "175c3b09-e660-416b-a363-f68b5fd352f3",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2529",
+          "signature": "60c9594178ae98404861b43a82bbce47927e32bd3aab326e386a50ec9dece9c7",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/25/p0.1/turn-7/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T01:59:18.337435+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "0f97b7d3-e9c6-4c1a-bfa7-b582cee46173",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2544",
+          "original_hold_usd": "0.002728",
+          "saved_before_dispatch_at": "2026-11-19T01:57:58.225454+00:00",
+          "collection_started_at": "2026-11-19T01:58:45.287757+00:00",
+          "submission_error": {
+            "type": "APIConnectionError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 80.111981
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/17/p0.1/turn-12",
+          "original_entry_id": "21142026-0740-4aaa-b24e-ba49e8ead5b3",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2532",
+          "signature": "f823c9b477c99e11d34bf3cedab22c6dab7847163f4e463a429ceb043fd9ad9f",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/17/p0.1/turn-12/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T01:59:19.256306+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "0da37595-4a38-4e61-89a4-5e0ba43410a2",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2536",
+          "original_hold_usd": "0.003090",
+          "saved_before_dispatch_at": "2026-11-19T01:58:06.896199+00:00",
+          "collection_started_at": "2026-11-19T01:58:59.135386+00:00",
+          "submission_error": {
+            "type": "APIConnectionError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 72.360107
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/20/p0.1/turn-10",
+          "original_entry_id": "eaee0833-3190-4c9a-81f3-2fc597c0072b",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2530",
+          "signature": "f4872ab7d2ba3d086bbcedf9826d10f9bd13c0496a9d52f009e0cf86128b1ffa",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/20/p0.1/turn-10/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T01:59:20.196961+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "6989384e-5bcd-48f5-bd77-30e668bcd128",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2539",
+          "original_hold_usd": "0.003093",
+          "saved_before_dispatch_at": "2026-11-19T01:58:02.173833+00:00",
+          "collection_started_at": "2026-11-19T01:58:57.599909+00:00",
+          "submission_error": {
+            "type": "APIConnectionError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 78.023128
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/1/p0/turn-2",
+          "original_entry_id": "d4390806-f35f-48aa-b1cc-90f176738d47",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2525",
+          "signature": "05e327c6ca84a3b1944358415cfe47ee81eb8d4ea074a2055dc48da93d80bd90",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/1/p0/turn-2/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T01:59:21.129305+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "120b2fd1-23f6-435e-85b2-c41d5f279a44",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2548",
+          "original_hold_usd": "0.002612",
+          "saved_before_dispatch_at": "2026-11-19T01:57:42.154961+00:00",
+          "collection_started_at": "2026-11-19T01:59:08.279651+00:00",
+          "submission_error": {
+            "type": "APIConnectionError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 98.974344
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/23/p0.1/turn-9",
+          "original_entry_id": "df8dffed-9cce-4046-93fd-5e8bc450e0e0",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2528",
+          "signature": "199a8826018f33b2f3f587b042f6072b25733166939d9cd81ca2efb13c5552b1",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/23/p0.1/turn-9/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T01:59:22.064052+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "afa67ac1-bab7-4d8e-a48d-8fe4f8b717b5",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2542",
+          "original_hold_usd": "0.002844",
+          "saved_before_dispatch_at": "2026-11-19T01:57:55.850849+00:00",
+          "collection_started_at": "2026-11-19T01:59:03.709280+00:00",
+          "submission_error": {
+            "type": "APIConnectionError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 86.213203
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/22/p0.1/turn-9",
+          "original_entry_id": "1a2bd387-bb7e-480e-a802-3a69a2e4a586",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2526",
+          "signature": "7145c1296bbef75efddcca5b9d192014e23510b449b21952357c9230836c54d4",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/22/p0.1/turn-9/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T01:59:22.995093+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "295afc38-8608-4916-bc4c-9f341aa46b58",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2541",
+          "original_hold_usd": "0.002929",
+          "saved_before_dispatch_at": "2026-11-19T01:57:46.108417+00:00",
+          "collection_started_at": "2026-11-19T01:59:02.189745+00:00",
+          "submission_error": {
+            "type": "APIConnectionError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 96.886676
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/21/p0.1/turn-10",
+          "original_entry_id": "73a06b9c-b466-48c6-8a6d-a651a8982d47",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2531",
+          "signature": "fbe2995db4c69b438a9fdf0e1805ea27da96d6e98a8532fc5e1a46f6432cb6d0",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/21/p0.1/turn-10/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T01:59:23.932389+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "a112c585-167d-4e55-806c-974c0efa003d",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2540",
+          "original_hold_usd": "0.002883",
+          "saved_before_dispatch_at": "2026-11-19T01:58:04.542315+00:00",
+          "collection_started_at": "2026-11-19T01:59:05.230076+00:00",
+          "submission_error": {
+            "type": "APIConnectionError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 79.390074
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/18/p0.1/turn-11",
+          "original_entry_id": "08d73579-ee4e-4db6-aa04-ebb4437c67a4",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2534",
+          "signature": "ca1aa97c415af938e7337ded6282503baa1ae6cf02bdcd2a6f66d1c090200f18",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/18/p0.1/turn-11/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T01:59:24.864721+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "239b2317-c1f8-4196-bcef-c22c1c54609d",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2537",
+          "original_hold_usd": "0.002988",
+          "saved_before_dispatch_at": "2026-11-19T01:58:13.150288+00:00",
+          "collection_started_at": "2026-11-19T01:58:51.461341+00:00",
+          "submission_error": {
+            "type": "APIConnectionError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 71.714433
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/4/p0/turn-5",
+          "original_entry_id": "2a554f47-582f-4432-be40-7ffa783c1d6f",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2654",
+          "signature": "c71a9e9e5bb2cdc17a0eef8a49cc950fb351645fcf7d271d0e520994c31d69ac",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/4/p0/turn-5/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T02:09:53.874421+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "3b9e132e-c0f6-4f77-866f-664d0d890363",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2669",
+          "original_hold_usd": "0.002770",
+          "saved_before_dispatch_at": "2026-11-19T02:07:33.150525+00:00",
+          "collection_started_at": "2026-11-19T02:09:46.658916+00:00",
+          "submission_error": {
+            "type": "APITimeoutError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 140.723896
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/26/p0.1/turn-13",
+          "original_entry_id": "d05eb75c-09e6-4618-966d-86e0eee91fe8",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2650",
+          "signature": "ca88c3e99c77e690264369f5a89e22fd119abfe77479ac2282814e24c4fded91",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/26/p0.1/turn-13/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T02:09:55.630464+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "3770f876-5277-41c0-b26a-f82beaaa7b08",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2663",
+          "original_hold_usd": "0.002979",
+          "saved_before_dispatch_at": "2026-11-19T02:07:22.911597+00:00",
+          "collection_started_at": "2026-11-19T02:09:40.616942+00:00",
+          "submission_error": {
+            "type": "APITimeoutError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 152.718867
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/27/p0.1/turn-12",
+          "original_entry_id": "e7e4bcc2-fb49-4b47-a9e3-ca1b356ab7b2",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2658",
+          "signature": "b7d61999c997997cbc422c1e38d088122952121bbbe171224edd3720b6de908b",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/27/p0.1/turn-12/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T02:09:58.202524+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "0225283a-42bd-4531-8331-0a4bb6132e75",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2664",
+          "original_hold_usd": "0.003066",
+          "saved_before_dispatch_at": "2026-11-19T02:07:45.103382+00:00",
+          "collection_started_at": "2026-11-19T02:09:39.082612+00:00",
+          "submission_error": {
+            "type": "APITimeoutError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 133.099142
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/7/p0/turn-3",
+          "original_entry_id": "b895fa8c-8c2e-4a5d-8b8b-59c2f86154a4",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2656",
+          "signature": "10fe22e18cbf377a717388b970825a1d53dff25e951969b1a3c0913818651d4e",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/7/p0/turn-3/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T02:09:59.117780+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "8eb1f01c-5f48-4111-8c38-dfd29784f3a9",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2672",
+          "original_hold_usd": "0.002752",
+          "saved_before_dispatch_at": "2026-11-19T02:07:38.266863+00:00",
+          "collection_started_at": "2026-11-19T02:09:51.202314+00:00",
+          "submission_error": {
+            "type": "APITimeoutError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 140.850917
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/3/p0/turn-8",
+          "original_entry_id": "ae90ac0c-e542-4984-8fac-bee1d809a477",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2657",
+          "signature": "0b809d3fbb7808b33d6edc8ad7424aba1f0dafb8cf77226047b051c64e1e5e75",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/3/p0/turn-8/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T02:10:00.849186+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "f04ccb47-e50e-40b9-8811-16271c640921",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2668",
+          "original_hold_usd": "0.002782",
+          "saved_before_dispatch_at": "2026-11-19T02:07:42.549223+00:00",
+          "collection_started_at": "2026-11-19T02:09:42.118246+00:00",
+          "submission_error": {
+            "type": "APITimeoutError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 138.299963
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/10/p0/turn-1",
+          "original_entry_id": "0a37ad11-25d7-41c9-a1d6-0e13b16db990",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2659",
+          "signature": "95ad5e96ffa52d75189d0cfd8aa881aa655b5e4d5da20f42caf866fb617c8b77",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/10/p0/turn-1/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T02:10:01.789261+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "60cc0dae-94e9-4c10-aa1f-157e2f70b4dd",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2675",
+          "original_hold_usd": "0.002516",
+          "saved_before_dispatch_at": "2026-11-19T02:07:48.763019+00:00",
+          "collection_started_at": "2026-11-19T02:09:37.567284+00:00",
+          "submission_error": {
+            "type": "APITimeoutError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 133.026242
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/6/p0/turn-4",
+          "original_entry_id": "e7fb3cd4-f981-459f-b8fa-a38817c95b5e",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2661",
+          "signature": "4a984d2b3bf323e7f33ddf539749298cb039962f57e2e47852461f72b60515bd",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/6/p0/turn-4/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T02:10:02.707257+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "2aa9d1fb-806a-46c4-9691-339a913c1290",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2671",
+          "original_hold_usd": "0.002767",
+          "saved_before_dispatch_at": "2026-11-19T02:07:53.959689+00:00",
+          "collection_started_at": "2026-11-19T02:09:48.173275+00:00",
+          "submission_error": {
+            "type": "APIConnectionError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 128.747568
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/25/p0.1/turn-14",
+          "original_entry_id": "09634c80-0d36-48e3-bfe0-b3a2fc83e854",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2653",
+          "signature": "30e3ae3ecf5647a76542fb35b1f77021b0cdf579ab814fbcc9dae9c4c1c78a62",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/128/25/p0.1/turn-14/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T02:10:03.676470+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "3f8275d2-fa59-4d13-8b35-e15b224e91f1",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2662",
+          "original_hold_usd": "0.003093",
+          "saved_before_dispatch_at": "2026-11-19T02:07:30.611242+00:00",
+          "collection_started_at": "2026-11-19T02:09:45.150976+00:00",
+          "submission_error": {
+            "type": "APITimeoutError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 153.065228
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/2/p0/turn-9",
+          "original_entry_id": "84c16f2a-486b-46bf-b014-9dce2cfcd06c",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2655",
+          "signature": "3197f51cbca3ba3aa459f261055495b3f8720ef708f092fae2ccae4857f5ba91",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/2/p0/turn-9/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T02:10:04.599948+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "edb5d0d3-24a3-4228-aa7a-ef0ca6b18776",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2667",
+          "original_hold_usd": "0.002874",
+          "saved_before_dispatch_at": "2026-11-19T02:07:35.680311+00:00",
+          "collection_started_at": "2026-11-19T02:09:49.683182+00:00",
+          "submission_error": {
+            "type": "APITimeoutError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 148.919637
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/0/p0/turn-11",
+          "original_entry_id": "ff69e08f-fd85-4c93-afb8-f76bd2bd47d7",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2660",
+          "signature": "356ce614c25bb750dc47906f6780bb4cb41194412b61b2ff51811c3efe28772d",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/0/p0/turn-11/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T02:10:05.532883+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "a8247be1-884a-4949-838c-cbbf389b7df1",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2665",
+          "original_hold_usd": "0.002769",
+          "saved_before_dispatch_at": "2026-11-19T02:07:51.386667+00:00",
+          "collection_started_at": "2026-11-19T02:09:31.504990+00:00",
+          "submission_error": {
+            "type": "APIConnectionError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 134.146216
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/1/p0/turn-9",
+          "original_entry_id": "064296d4-6552-4dd6-bff3-72034b45d413",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2652",
+          "signature": "6030ae03f6cf15eb66f1b3618ea4245a430187e512fdb67157fa403687108403",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/1/p0/turn-9/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T02:10:06.456374+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "cc72425c-cc5a-412b-8986-73c210ec7901",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2666",
+          "original_hold_usd": "0.002831",
+          "saved_before_dispatch_at": "2026-11-19T02:07:28.078795+00:00",
+          "collection_started_at": "2026-11-19T02:09:36.059052+00:00",
+          "submission_error": {
+            "type": "APITimeoutError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 158.377579
+        },
+        {
+          "logical_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/8/p0/turn-3",
+          "original_entry_id": "0b4e6173-ec78-42f4-8fe4-96086488709b",
+          "original_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2651",
+          "signature": "5cb6a62068f702d3f41dc3bf1a948fb05df816f740dd3f7465ce7c6943ccefb8",
+          "replacement_key": "eval_endpoint/Qwen/Qwen3-8B/paid-v1/synthetic/256/8/p0/turn-3/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T02:10:07.399998+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "4354fb27-13d2-46e3-a609-124ea6a9a730",
+          "replacement_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:sample:30:2673",
+          "original_hold_usd": "0.002608",
+          "saved_before_dispatch_at": "2026-11-19T02:07:25.508849+00:00",
+          "collection_started_at": "2026-11-19T02:09:34.547910+00:00",
+          "submission_error": {
+            "type": "APITimeoutError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 161.891149
+        }
+      ],
+      "original_holds_usd": "0.062527"
+    },
+    "suffix": {
+      "cases": [
+        {
+          "logical_key": "suffix/A23_suffix_DIAGNOSTIC_ONLY/Qwen/Qwen3-8B/paid-v1/synthetic/32/17/p0.1/turn-1",
+          "original_entry_id": "5123cef7-2c4b-4a9a-adc9-8c3b7ca936fb",
+          "original_request_id": "f1e19e95-72a2-578c-8dd3-f1f140efa552:sample:1:372",
+          "signature": "1d4c156fb1c268351708fc377cb79d999df61d956eabdb28922cf3f45ed99c89",
+          "replacement_key": "suffix/A23_suffix_DIAGNOSTIC_ONLY/Qwen/Qwen3-8B/paid-v1/synthetic/32/17/p0.1/turn-1/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T05:08:04.476812+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "41f3e011-7c82-48dc-b0ab-4cfe0baee8bc",
+          "replacement_request_id": "f1e19e95-72a2-578c-8dd3-f1f140efa552:sample:1:375",
+          "original_hold_usd": "0.001547",
+          "saved_before_dispatch_at": "2026-11-19T05:06:13.838847+00:00",
+          "collection_started_at": "2026-11-19T05:07:59.673193+00:00",
+          "submission_error": {
+            "type": "APITimeoutError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 110.637965
+        },
+        {
+          "logical_key": "suffix/A23_suffix_DIAGNOSTIC_ONLY/Qwen/Qwen3-8B/paid-v1/synthetic/32/16/p0.1/turn-6",
+          "original_entry_id": "1ed3f479-ee8c-4c65-8ae2-24b13b5aaa0a",
+          "original_request_id": "f1e19e95-72a2-578c-8dd3-f1f140efa552:sample:1:373",
+          "signature": "bf1599ff1f4ea17dfc2c388073ddd70e41adc8690f80ae83e39939e406c17eda",
+          "replacement_key": "suffix/A23_suffix_DIAGNOSTIC_ONLY/Qwen/Qwen3-8B/paid-v1/synthetic/32/16/p0.1/turn-6/approved-replacement-v1",
+          "loss_observed_at": "2026-11-19T05:08:05.570586+00:00",
+          "loss_reason": "HTTP 404: unavailable saved future",
+          "replacements_used": 1,
+          "requires_approval": false,
+          "replacement_entry_id": "6890674f-3c5e-4e4d-a484-4acc12daa306",
+          "replacement_request_id": "f1e19e95-72a2-578c-8dd3-f1f140efa552:sample:1:374",
+          "original_hold_usd": "0.001773",
+          "saved_before_dispatch_at": "2026-11-19T05:06:23.612013+00:00",
+          "collection_started_at": "2026-11-19T05:08:01.373426+00:00",
+          "submission_error": {
+            "type": "APITimeoutError",
+            "http_status": null
+          },
+          "save_to_loss_observed_seconds": 101.958573
+        }
+      ],
+      "original_holds_usd": "0.003320"
+    },
+    "hard": {
+      "cases": [],
+      "original_holds_usd": "0"
+    }
+  },
+  "maximum_save_to_collection_seconds": 320.202394,
+  "native_training_and_sampler_no_expiry": true,
+  "smoke_files_deleted_API_verified": true,
+  "source_finished_before_auxiliary_fresh_clients": true,
+  "completed_runner_service_calls": 0,
+  "session_metadata_from_committed_archives": true,
+  "raw_run_cache_present_during_verification": false,
+  "B41_started": false,
+  "all_HTTP_work_drained": true
+}

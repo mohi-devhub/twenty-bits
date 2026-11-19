@@ -30,3 +30,5 @@ Project usage **$11.015862**, holds **$1.131236**, available **$37.852902** unde
 Validation: real account-wide listing, exact-path/type/size/expiry checks, a real fresh-client sample, matching pre-dispatch request ID and receipt, and no pending HTTP work. Existing science settings, frozen games and primary code are unchanged.
 
 [Exact API evidence](research/native_persistence_api_verification.json), [guarded verification script](scripts/verify_native_checkpoint_api.py), [prior persistence correction](CHECKPOINT_PERSISTENCE.md).
+
+Later confirmation: the user cross-checked both files and confirmed Never expiry, then authorized cleanup and A23. Both exact smoke files were deleted; the API returned zero checkpoints for the test training run. The existing storage holds remain. [Deletion evidence](research/native_persistence_deletion.json), [A23 start approval](research/A23_start_confirmation.json).

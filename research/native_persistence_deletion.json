@@ -1,0 +1,13 @@
+{
+  "confirmed_at": "2026-11-18T20:31:43.279594+00:00",
+  "checkpoint_paths": [
+    "tinker://0bf5f21e-507e-50ac-94f6-50cb387aa043:train:0/weights/persistence-smoke-20261119",
+    "tinker://0bf5f21e-507e-50ac-94f6-50cb387aa043:train:0/sampler_weights/persistence-smoke-20261119"
+  ],
+  "verification_endpoint": "/api/v1/training_runs/0bf5f21e-507e-50ac-94f6-50cb387aa043:train:0/checkpoints",
+  "remaining_checkpoint_count": 0,
+  "verification_method": "Guarded SDK weights.list after exact-path DELETEs; cleanup raises if any checkpoint remains.",
+  "storage_holds_retained": true,
+  "Pixel_Miser_mutated": false,
+  "source_evidence": "results/native_persistence_test/usage.jsonl"
+}

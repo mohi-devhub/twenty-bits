@@ -29,3 +29,10 @@ class SeedBootstrapTests(unittest.TestCase):
                23:[{**g,"question_eigs":[0]} for g in raw]}
         result=across_seed_intervals(raw,final,[("animals",32,0),("synthetic",32,0)],draws=200)
         self.assertEqual(result["ci95_mean_A_endpoint_minus_raw"]["noiseless_animals"]["eig_per_question"],[-1,-.5])
+
+    def test_no_question_endpoints_have_undefined_information_change(self):
+        raw=self.games(1)
+        raw += [{**g,"domain":"synthetic","game_id":"s"+g["game_id"]} for g in raw]
+        final=[{**g,"questions":0,"question_eigs":[]} for g in raw]
+        result=across_seed_intervals(raw,{11:final,23:final},[("animals",32,0),("synthetic",32,0)],draws=200)
+        self.assertIsNone(result["ci95_mean_A_endpoint_minus_raw"]["noiseless_animals"]["eig_per_question"])

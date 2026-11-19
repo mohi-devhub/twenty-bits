@@ -126,7 +126,7 @@ def main():
         axes,
         ["enumeration_rate", "invalid_question_rate", "post_budget_non_guesses"],
         [
-            "Item-name enumeration / question",
+            "Legal name enumeration / question",
             "Invalid questions / question",
             "Non-GUESS actions after budget",
         ],
@@ -286,6 +286,9 @@ def main():
         )
         + "\n"
     )
+
+    for path in charts.glob("*.svg"):
+        path.write_text("\n".join(line.rstrip() for line in path.read_text().splitlines()) + "\n")
 
 
 if __name__ == "__main__":

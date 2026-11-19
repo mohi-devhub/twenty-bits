@@ -1,0 +1,89 @@
+{
+  "mode": "suffix",
+  "games": 168,
+  "diagnostic_only": true,
+  "native_endpoint_path": "tinker://19a7c48f-02fe-556c-8cc5-404284b8da40:train:0/sampler_weights/main-A-seed23-step-30",
+  "config_sha256": "980716c3cbb31e95e750550ed8cf7ec9911bb5547d472bf0d9e1a78b707c406f",
+  "run_budget": {
+    "spent_usd": "0.671128",
+    "held_usd": "0.003320"
+  },
+  "metrics": {
+    "A23_suffix_DIAGNOSTIC_ONLY": {
+      "games": 168,
+      "mean_reward": 0.33898809523809514,
+      "wins": 109,
+      "win_rate": 0.6488095238095238,
+      "questions_per_win": 9.18348623853211,
+      "eig_per_question": 0.587997308838473,
+      "enumeration_rate": 0.0,
+      "single_item_enumeration_rate": 0.0,
+      "name_list_rate": 0.0,
+      "large_name_list_rate": 0.0,
+      "invalid_question_rate": 0.0,
+      "output_tokens_per_game": 119.30952380952381,
+      "reasoning_tokens_per_game": 0.0,
+      "questions": 1735,
+      "post_budget_non_guesses": 56,
+      "truncated_turns": 0,
+      "guess_with_k_remaining": {
+        "games": 168,
+        "guesses": 112,
+        "no_guess_games": 56,
+        "ambiguous_guesses": 28,
+        "ambiguous_guess_wins": 25,
+        "ambiguous_guesses_per_game": 0.16666666666666666,
+        "bins": {
+          "1": {
+            "guesses": 84,
+            "wins": 84,
+            "guesses_per_game": 0.5,
+            "share_of_guesses": 0.75,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 25,
+            "guesses_per_game": 0.16666666666666666,
+            "share_of_guesses": 0.25,
+            "win_rate_when_guessed": 0.8928571428571429
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 84,
+            "wins": 84
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 25
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.9474964429436495
+      }
+    }
+  }
+}

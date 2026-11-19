@@ -1,0 +1,37 @@
+{
+  "source": "Guarded runner journal and usage evidence",
+  "event": "Network interruption during final snapshot retrieval; all HTTP work drained before reconnect.",
+  "last_optimizer_completed_at": "2026-11-18T23:08:45.891972+00:00",
+  "recovered_snapshot_request_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:90",
+  "snapshot_saved_before_dispatch_at": "2026-11-18T23:08:47.264328+00:00",
+  "snapshot_response_received_at": "2026-11-18T23:10:43.093920+00:00",
+  "snapshot_request_saved_before_dispatch": true,
+  "same_training_model_id": "19a7c48f-02fe-556c-8cc5-404284b8da40:train:0",
+  "training_or_sampling_resubmitted": false,
+  "lost_originals": 0,
+  "exact_replacements": 0,
+  "transient_errors": [
+    {
+      "entry_id": "28159cc6-4496-4a19-b151-8ac1f382442d",
+      "recorded_at": "2026-11-18T23:10:19.568926+00:00",
+      "operation": "retrieve 19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:90",
+      "error_type": "APITimeoutError",
+      "http_status": null
+    },
+    {
+      "entry_id": "8b1da67e-496c-4418-9039-68e1ee70308e",
+      "recorded_at": "2026-11-18T23:10:33.214870+00:00",
+      "operation": "session heartbeat",
+      "error_type": "APIConnectionError",
+      "http_status": null
+    },
+    {
+      "entry_id": "2fb93994-bc91-4633-b755-ddaa1fbdbfd7",
+      "recorded_at": "2026-11-18T23:11:35.096403+00:00",
+      "operation": "retrieve 19a7c48f-02fe-556c-8cc5-404284b8da40:train:0:91",
+      "error_type": "APIStatusError",
+      "http_status": 408
+    }
+  ],
+  "curve_rebuilt_from_cached_journals": "The run loop replays cached completed games and mutations; temporary shortened curve files during reconstruction do not indicate repeated optimizer steps."
+}

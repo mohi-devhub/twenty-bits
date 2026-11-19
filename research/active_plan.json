@@ -1,5 +1,5 @@
 {
-  "status": "Native API listing and fresh-client sample verified; waiting for user console confirmation.",
+  "status": "A23 complete and stopped at gate; B41 awaits explicit confirmation. No further Tinker operations authorized now.",
   "initial_policy": "raw_base_no_sft",
   "sft_checkpoint": null,
   "sft_removal_reason": "Paired candidate-set qualification: SFT EIG lower by 0.1444 bits/question; raw base selected by user.",
@@ -45,13 +45,13 @@
   "training_games": 240,
   "development_games": 64,
   "rl_authorized_scope": "A23: 30 updates, groups of eight; primary, suffix auxiliary and hard-mode endpoints; B41 requires gate confirmation.",
-  "main_runs_authorized": true,
+  "main_runs_authorized": false,
   "reference_model": null,
   "project_usage_at_recording": {
     "cap_usd": "50.000000",
-    "spent_usd": "11.015862",
-    "held_usd": "1.131236",
-    "available_usd": "37.852902",
+    "spent_usd": "16.125774",
+    "held_usd": "1.640132",
+    "available_usd": "32.234094",
     "blocked": false
   },
   "pilot_gate": "PILOT_GATE.md",
@@ -108,20 +108,20 @@
       "total_with_1_5_margin_usd": 42.480710971200004
     }
   },
-  "active_stage": "awaiting_user_checkpoint_confirmation",
+  "active_stage": "A23_gate",
   "next_stage_requires_gate_decision": true,
   "main_approval": "research/main_U_approval.json",
-  "main_seed_config": "experiments/main_A11.json",
-  "main_seed_preflight": "research/main_A11_preflight.json",
+  "main_seed_config": "experiments/main_A23.json",
+  "main_seed_preflight": "research/main_A23_preflight.json",
   "training_updates_completed": 30,
   "raw_control_games_saved": 280,
-  "incident": "research/main_A11_recovery_incident.json",
-  "next_action": "Await user console confirmation, delete only the two test checkpoints, then begin approved A23.",
+  "incident": "research/main_A23_network_recovery.json",
+  "next_action": "Await user decision at MAIN_A23_GATE.md before B41 or any other Tinker operation.",
   "paused": false,
   "pause_record": "research/main_A11_pause.json",
   "standing_replacement_rule": "research/replacement_policy.json",
   "resume_audit": "research/main_A11_resume_audit.json",
-  "replacement_registry": "research/main_A11_replacements.json",
+  "replacement_registry": "research/main_A23_replacements.json",
   "pilot_curriculum": [
     {
       "n": 4,
@@ -144,11 +144,17 @@
   "dispatch_authorized_now": false,
   "endpoint_games_saved": 280,
   "reused_raw_development_games": 8,
-  "current_gate": null,
-  "next_gate": "MAIN_A23_GATE.md",
+  "current_gate": "MAIN_A23_GATE.md",
+  "next_gate": null,
   "continuation_approval": "research/main_U_continuation_approval.json",
   "diagnostic_config": "experiments/A23_suffix_diagnostic.json",
   "B41_confirmation_pending": true,
   "persistence_approval": "research/native_persistence_approval.json",
-  "native_API_verification": "research/native_persistence_api_verification.json"
+  "native_API_verification": "research/native_persistence_api_verification.json",
+  "start_confirmation": "research/A23_start_confirmation.json",
+  "native_persistence_deletion": "research/native_persistence_deletion.json",
+  "suffix_diagnostic_games_saved": 168,
+  "hard_mode_games_saved": 40,
+  "completion_record": "results/main_A23/completion.json",
+  "B41_forecast": "research/B41_forecast_after_A23.json"
 }

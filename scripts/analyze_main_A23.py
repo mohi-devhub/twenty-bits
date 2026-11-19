@@ -22,6 +22,7 @@ from twenty_bits.rl_pilot import group_data, unpack_trajectory
 from twenty_bits.tinker_rendering import Rendering
 from twenty_bits.tinker_transport import rates, sample_cost, save_json
 from twenty_bits.worlds import ROOT, seed_for
+from twenty_bits.name_reference_audit import audit_name_references
 
 def main():
     out = ROOT / "results/main_A23"
@@ -41,6 +42,11 @@ def main():
     manifest = json.loads(manifest_bytes)
     completion = json.loads((out / "primary_completion.json").read_text())
     directory = ROOT / "runs" / config["run_id"]
+    session_archive = out / "sessions.json"
+    if not session_archive.exists():
+        session = json.loads((directory / "sessions.json").read_text())
+        assert session["finished"]
+        save_json(session_archive, session)
     paths = sorted((directory / "games").glob("*.json"))
     games = (
         [json.loads(p.read_text()) for p in paths]
@@ -330,6 +336,11 @@ def main():
             "original_outputs_used": 0,
         },
         "training_audit": audit(training),
+        "raw_candidate_name_reference_audit": {
+            "training": audit_name_references(training, records),
+            "raw_frozen_control": audit_name_references(raw_control, records),
+            "frozen_endpoint": audit_name_references([g for g in games if g["kind"]=="eval_endpoint"], records),
+        },
         "development_audit": audit([g for gs in dev.values() for g in gs]),
         "base_development_audit": audit(dev[0]),
         "final_development_audit": audit(dev[max(dev)]),
