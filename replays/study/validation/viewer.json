@@ -1,0 +1,43 @@
+{
+  "new_model_calls": 0,
+  "turn_states_verified": 24,
+  "policies_in_comparisons": [
+    3,
+    2
+  ],
+  "exact_actions_answers_posteriors": true,
+  "canvas_widths_match": true,
+  "footer_within_canvas": true,
+  "mobile_width": 390,
+  "mobile_horizontal_overflow": false,
+  "example_switch_and_target_toggle": true,
+  "page_errors": [],
+  "media": [
+    {
+      "name": "gamble-stall",
+      "mp4": "replays/study/gamble-stall.mp4",
+      "gif": "replays/study/gamble-stall.gif",
+      "duration_seconds": 24.0,
+      "width": 1600,
+      "height": 1200,
+      "frames": 288,
+      "fps": "12/1",
+      "renderer": "hyperframes@0.9.63",
+      "source": "replays/study/compositions/gamble-stall.html",
+      "new_model_calls": 0
+    },
+    {
+      "name": "budget-fix",
+      "mp4": "replays/study/budget-fix.mp4",
+      "gif": "replays/study/budget-fix.gif",
+      "duration_seconds": 24.0,
+      "width": 1600,
+      "height": 1200,
+      "frames": 288,
+      "fps": "12/1",
+      "renderer": "hyperframes@0.9.63",
+      "source": "replays/study/compositions/budget-fix.html",
+      "new_model_calls": 0
+    }
+  ]
+}

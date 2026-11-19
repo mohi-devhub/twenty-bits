@@ -13,6 +13,7 @@ runs/
 
 *.egg-info/
 replays/.hyperframes/
+replays/study/.hyperframes/
 replays/renders/
 results/baselines/run.log
 research/token_measurements.log

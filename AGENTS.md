@@ -1,6 +1,12 @@
-# Twenty Bits working rules — visible-budget follow-up
+# Twenty Bits working rules: write-up complete
 
-## Current stop (2026-11-19)
+## Current stop after write-up (2026-11-19)
+
+The user accepted the visible-budget gate and closed the experimental phase. **No training, sampling, evaluation or other Tinker operation is authorized unless the user asks.** The final offline write-up is complete: RESULTS.md, the six PNG/SVG figure pairs, two rule-selected GIF/MP4 replay pairs, the compact README and X_THREAD.md. The thread is a draft for user review and must not be posted automatically. The GitHub link remains [REPO_URL] while this checkout has no configured remote.
+
+The write-up adds zero Tinker spend. Project usage stays $23.681223, holds $2.083181 and available budget $24.235596. Every ledger entry, hold, primary result, frozen case and original prompt hash remains intact. The new write-up data is derived from archived results, with 10,000 game-bootstrap draws and explicit conditional/seed-uncertainty limits. Replays use numeric-order behavior filters disclosed in replays/study/README.md, not resampling or new model calls. Their viewer annotations do not enter model prompts. Verify with scripts/verify_writeup.py; older experimental gates remain historical. Append the write-up note to LEARN.md and commit, then stop for review.
+
+## Historical visible-budget gate (2026-11-19)
 
 The main study and approved visible-budget follow-up are complete. **Stop at VISIBLE_BUDGET_GATE.md. Do not make any new Tinker call, run more main seeds or start training.** Raw, A23 and B41 each completed 280 counter-rendered frozen games. A11 was skipped because its hosted endpoint is unavailable. The follow-up used $3.580565 with zero new holds or replacements, below its $8 ceiling and $7.845394 forecast with margin. Project usage is $23.681223, old holds $2.083181, and available budget $24.235596. Every old hold, primary artifact, frozen game and old prompt hash remains unchanged. The service session is finished and HTTP work drained. research/active_plan.json and research/visible_budget_approval.json disable dispatch; completed runners return before SDK access. The user will decide between a training follow-up and final write-up. Neither is authorized now. The standing replacement rule applies only within authorized work and cannot override this gate.
 

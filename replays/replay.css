@@ -239,7 +239,7 @@ h1 em {
 }
 .players {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  grid-template-columns: repeat(var(--players, 2), minmax(0, 1fr));
   gap: 40px;
 }
 .player {

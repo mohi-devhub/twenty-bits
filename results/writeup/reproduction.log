@@ -1,0 +1,224 @@
+Command: scripts/build_writeup_data.py
+{
+  "animal": {
+    "Raw": {
+      "eig_per_question": 0.1579259253504653,
+      "ci95": [
+        0.11158316652441364,
+        0.2109828944344098
+      ],
+      "games": 56,
+      "wins": 7,
+      "outcomes": {
+        "win": 7,
+        "ambiguous_wrong_guess": 15,
+        "no_guess": 34,
+        "other": 0
+      }
+    },
+    "A11": {
+      "eig_per_question": 0.6343241095076058,
+      "ci95": [
+        0.5940649812795071,
+        0.6774128030534514
+      ],
+      "games": 56,
+      "wins": 24,
+      "outcomes": {
+        "win": 24,
+        "ambiguous_wrong_guess": 32,
+        "no_guess": 0,
+        "other": 0
+      },
+      "paired_change_from_raw": {
+        "final_minus_base": 0.4763981841571404,
+        "ci95": [
+          0.4126828663614973,
+          0.5391351007546277
+        ],
+        "defined_bootstrap_draws": 10000,
+        "base": 0.1579259253504653,
+        "endpoint": 0.6343241095076058
+      }
+    },
+    "A23": {
+      "eig_per_question": 0.3904375761005189,
+      "ci95": [
+        0.33295813987192513,
+        0.45007859189950694
+      ],
+      "games": 56,
+      "wins": 25,
+      "outcomes": {
+        "win": 25,
+        "ambiguous_wrong_guess": 0,
+        "no_guess": 31,
+        "other": 0
+      },
+      "paired_change_from_raw": {
+        "final_minus_base": 0.2325116507500536,
+        "ci95": [
+          0.16468858149971569,
+          0.30155632285269635
+        ],
+        "defined_bootstrap_draws": 10000,
+        "base": 0.1579259253504653,
+        "endpoint": 0.39043757610051893
+      }
+    },
+    "B41": {
+      "eig_per_question": 0.43684219768060206,
+      "ci95": [
+        0.38370574023805576,
+        0.48996804885253525
+      ],
+      "games": 56,
+      "wins": 19,
+      "outcomes": {
+        "win": 19,
+        "ambiguous_wrong_guess": 36,
+        "no_guess": 1,
+        "other": 0
+      },
+      "paired_change_from_raw": {
+        "final_minus_base": 0.27891627233013677,
+        "ci95": [
+          0.20743522617690308,
+          0.348425575926985
+        ],
+        "defined_bootstrap_draws": 10000,
+        "base": 0.1579259253504653,
+        "endpoint": 0.4368421976806021
+      }
+    }
+  },
+  "examples": [
+    {
+      "id": "gamble-stall",
+      "game_id": "paid-v1/animals/32/1/p0",
+      "target": "juvenile_female_arctic_fox",
+      "selection": "Animals, p=0. Sort N ascending, then frozen index numerically ascending. Take the earliest case where A11 makes an ambiguous wrong guess with questions left and A23 never guesses. The raw control uses that same case, without an outcome filter.",
+      "eligible_cases": 23,
+      "policies": [
+        {
+          "label": "Raw",
+          "outcome": "win",
+          "questions": 7,
+          "guess_state": {
+            "k_remaining": 1,
+            "bin": "1",
+            "won": true,
+            "definition": "exact_support",
+            "positive_posterior_support": 1,
+            "guessed_in_displayed_candidates": true,
+            "guessed_in_table": true,
+            "guessed_posterior_probability": 1.0
+          }
+        },
+        {
+          "label": "A11",
+          "outcome": "ambiguous_wrong_guess",
+          "questions": 5,
+          "guess_state": {
+            "k_remaining": 2,
+            "bin": "2",
+            "won": false,
+            "definition": "exact_support",
+            "positive_posterior_support": 2,
+            "guessed_in_displayed_candidates": true,
+            "guessed_in_table": true,
+            "guessed_posterior_probability": 0.5
+          }
+        },
+        {
+          "label": "A23",
+          "outcome": "no_guess",
+          "questions": 10,
+          "guess_state": null
+        }
+      ]
+    },
+    {
+      "id": "budget-fix",
+      "game_id": "paid-v1/animals/32/1/p0.1",
+      "target": "juvenile_female_arctic_fox",
+      "selection": "Animals, p=0.10. Sort N ascending, then frozen index numerically ascending. Take the earliest case where A23 primary never guesses and its visible-budget rollout wins. Do not filter question text, target, EIG or game length.",
+      "eligible_cases": 13,
+      "policies": [
+        {
+          "label": "A23 primary",
+          "outcome": "no_guess",
+          "questions": 10,
+          "guess_state": null
+        },
+        {
+          "label": "A23 visible budget",
+          "outcome": "win",
+          "questions": 10,
+          "guess_state": {
+            "k_remaining": 13,
+            "bin": "4+",
+            "won": true,
+            "definition": "displayed_threshold_plus_top",
+            "positive_posterior_support": 32,
+            "guessed_in_displayed_candidates": true,
+            "guessed_in_table": true,
+            "guessed_posterior_probability": 0.5709409808168316
+          }
+        }
+      ]
+    }
+  ],
+  "ledger": {
+    "cap_usd": "50.000000",
+    "spent_usd": "23.681223",
+    "held_usd": "2.083181",
+    "available_usd": "24.235596"
+  }
+}
+Command: scripts/plot_writeup.py
+Saved six figures as PNG and SVG under results/writeup/charts.
+Command: scripts/build_study_replays.py
+[('gamble-stall', 'paid-v1/animals/32/1/p0'), ('budget-fix', 'paid-v1/animals/32/1/p0.1')]
+Command: scripts/write_x_thread.py
+{"posts": 8, "character_counts": [257, 258, 260, 272, 243, 271, 273, 194], "posted": false}
+Command: scripts/verify_writeup.py
+{
+  "new_Tinker_calls": 0,
+  "new_Tinker_spend_usd": "0.000000",
+  "new_ledger_entries": 0,
+  "ledger_entries": 73807,
+  "project_budget": {
+    "cap_usd": "50.000000",
+    "spent_usd": "23.681223",
+    "held_usd": "2.083181",
+    "available_usd": "24.235596"
+  },
+  "protected_artifact_hashes": 264,
+  "source_hashes": 19,
+  "all_scheduled_endpoints_included": true,
+  "primary_game_outcomes_recomputed": 1120,
+  "example_selection_rule_recomputed": true,
+  "examples": [
+    "paid-v1/animals/32/1/p0",
+    "paid-v1/animals/32/1/p0.1"
+  ],
+  "chart_pairs": 6,
+  "replay_pairs": 2,
+  "turn_states_checked": 24,
+  "local_links_checked": 139,
+  "thread_posts": 8,
+  "thread_character_counts": [
+    257,
+    258,
+    260,
+    272,
+    243,
+    271,
+    273,
+    194
+  ],
+  "thread_posted": false,
+  "repo_link_placeholder": true,
+  "unit_tests": 226
+}

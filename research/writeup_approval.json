@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-19",
+  "source": "User accepted visible-budget gate, closed the experimental phase and requested offline results, charts, saved-game exports, README and an X thread draft; commit and stop.",
+  "offline_only": true,
+  "training_authorized": false,
+  "evaluation_authorized": false,
+  "Tinker_operations_authorized": false,
+  "posting_authorized": false,
+  "project_budget": {
+    "cap_usd": "50.000000",
+    "spent_usd": "23.681223",
+    "held_usd": "2.083181",
+    "available_usd": "24.235596",
+    "blocked": false
+  },
+  "ledger_entries": 73807,
+  "ledger_events": 160029,
+  "new_Tinker_spend_usd": "0.000000",
+  "next_step": "User review. No automatic posting or experiments."
+}

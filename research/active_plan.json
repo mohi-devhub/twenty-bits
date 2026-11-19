@@ -1,5 +1,5 @@
 {
-  "status": "Main study and visible-budget follow-up complete; stopped at the visible-budget gate.",
+  "status": "Experimental phase closed; offline write-up complete and stopped for user review.",
   "initial_policy": "raw_base_no_sft",
   "sft_checkpoint": null,
   "sft_removal_reason": "Paired candidate-set qualification: SFT EIG lower by 0.1444 bits/question; raw base selected by user.",
@@ -44,7 +44,7 @@
   ],
   "training_games": 240,
   "development_games": 64,
-  "rl_authorized_scope": "None: the three main seeds are complete.",
+  "rl_authorized_scope": "None. The experimental phase is complete.",
   "main_runs_authorized": false,
   "reference_model": null,
   "project_usage_at_recording": {
@@ -108,7 +108,7 @@
       "total_with_1_5_margin_usd": 42.480710971200004
     }
   },
-  "active_stage": "visible_budget_gate",
+  "active_stage": "writeup_gate",
   "next_stage_requires_gate_decision": true,
   "main_approval": "research/main_B41_approval.json",
   "main_seed_config": "experiments/main_B41.json",
@@ -116,7 +116,7 @@
   "training_updates_completed": 30,
   "raw_control_games_saved": 280,
   "incident": "research/main_A23_network_recovery.json",
-  "next_action": "Wait for the user to choose a training follow-up or final write-up. No further service calls, main seeds or training.",
+  "next_action": "Wait for review of RESULTS.md, media and X_THREAD.md. No new Tinker calls, training, evals or posting without an explicit user request.",
   "paused": false,
   "pause_record": "research/main_A11_pause.json",
   "standing_replacement_rule": "research/replacement_policy.json",
@@ -144,7 +144,7 @@
   "dispatch_authorized_now": false,
   "endpoint_games_saved": 280,
   "reused_raw_development_games": 8,
-  "current_gate": "VISIBLE_BUDGET_GATE.md",
+  "current_gate": "RESULTS.md",
   "next_gate": null,
   "continuation_approval": "research/main_U_continuation_approval.json",
   "diagnostic_config": "experiments/A23_suffix_diagnostic.json",
@@ -166,5 +166,9 @@
   "followup_approval": "research/visible_budget_approval.json",
   "followup_config": "experiments/visible_budget.json",
   "followup_eval_games_saved": 840,
-  "followup_completion_record": "results/visible_budget/completion.json"
+  "followup_completion_record": "results/visible_budget/completion.json",
+  "experimental_phase_complete": true,
+  "writeup_complete": true,
+  "writeup_added_tinker_spend_usd": "0.000000",
+  "external_posting_authorized": false
 }

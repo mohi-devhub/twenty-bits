@@ -1,0 +1,2144 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"sheet\"> is a timeline element that contains nested <header>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#sheet",
+        "dataAttributes": {},
+        "sourceFile": "replays/study/index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"sheet\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 24,
+    "samples": [
+      1.333,
+      4,
+      6.667,
+      9.333,
+      12,
+      14.667,
+      17.333,
+      20,
+      22.667
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      1.333,
+      6.667,
+      12,
+      17.333,
+      22.667
+    ],
+    "checked": 1242,
+    "passed": 1242
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 31 px (2.6% of the 1200 px short side, what a phone can read) and 245 text elements stay under it for 0.5 s or more, the smallest \"Juvenile Male\" at 10 px: set reading text to at least 31 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Juvenile Male",
+        "selector": "#left > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 52,
+          "y": 353.25,
+          "width": 61.75,
+          "height": 14
+        },
+        "time": 0,
+        "times": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "fontPx": 10,
+        "floorPx": 31,
+        "seconds": 24,
+        "elements": [
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(2) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(3) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(4) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(5) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(6) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(7) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(8) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(9) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(10) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(11) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(12) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(13) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(14) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(15) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(16) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(17) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(18) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(19) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(20) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(21) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(22) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(23) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(24) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(25) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(26) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(27) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(28) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(29) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(30) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(31) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(32) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(2) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(3) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(4) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(5) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(6) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(7) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(8) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(9) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(10) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(11) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(12) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(13) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(14) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(15) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(16) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(17) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(18) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(19) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(20) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(21) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(22) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(23) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(24) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(25) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(26) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(27) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(28) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(29) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(30) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(31) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(32) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(2) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(3) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(4) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(5) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(6) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(7) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(8) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(9) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(10) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(11) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(12) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(13) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(14) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(15) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(16) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(17) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(18) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(19) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(20) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(21) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(22) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(23) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(24) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(25) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(26) > span:nth-of-type(2)",
+            "text": "Adult Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(27) > span:nth-of-type(2)",
+            "text": "Juvenile Female",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(28) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(29) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(30) > span:nth-of-type(2)",
+            "text": "Juvenile Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(31) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(32) > span:nth-of-type(2)",
+            "text": "Adult Male",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "span.ceiling",
+            "text": "BINARY ANSWER CEILING",
+            "fontPx": 10,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "NO BUDGET COUNTER",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(1) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "consistent candidates",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(3) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "READY TO SEARCH",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(4) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Questions used (viewer)",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(4) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "Mean EIG / question",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(4) > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "Outcome",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "NO BUDGET COUNTER",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(1) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "consistent candidates",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(3) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "READY TO SEARCH",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(4) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Questions used (viewer)",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(4) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "Mean EIG / question",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(4) > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "Outcome",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(1) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "NO BUDGET COUNTER",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(1) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "consistent candidates",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(3) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "READY TO SEARCH",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(4) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Questions used (viewer)",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(4) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "Mean EIG / question",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(4) > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "Outcome",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "p.provenance",
+            "text": "Saved frozen-game logs · Rule-selected contrast · No new model calls",
+            "fontPx": 11,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(3) > div:nth-of-type(2)",
+            "text": "am = mammal",
+            "fontPx": 11,
+            "time": 2,
+            "seconds": 14
+          },
+          {
+            "selector": "#right > div:nth-of-type(3) > div:nth-of-type(2)",
+            "text": "w = fur",
+            "fontPx": 11,
+            "time": 2,
+            "seconds": 10
+          },
+          {
+            "selector": "#third > div:nth-of-type(3) > div:nth-of-type(2)",
+            "text": "am = mammal",
+            "fontPx": 11,
+            "time": 2,
+            "seconds": 22
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Platypus",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "Polar Bear",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "Flamingo",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(4) > span:nth-of-type(1)",
+            "text": "Barn Owl",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(5) > span:nth-of-type(1)",
+            "text": "Common Wombat",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(6) > span:nth-of-type(1)",
+            "text": "Reindeer",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(7) > span:nth-of-type(1)",
+            "text": "Giant Panda",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(8) > span:nth-of-type(1)",
+            "text": "Brown Hare",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(9) > span:nth-of-type(1)",
+            "text": "Chameleon",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(10) > span:nth-of-type(1)",
+            "text": "Walrus",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(11) > span:nth-of-type(1)",
+            "text": "Howler Monkey",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(12) > span:nth-of-type(1)",
+            "text": "Nine Banded Armadillo",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(13) > span:nth-of-type(1)",
+            "text": "Chameleon",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(14) > span:nth-of-type(1)",
+            "text": "Cheetah",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(15) > span:nth-of-type(1)",
+            "text": "Pangolin",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(16) > span:nth-of-type(1)",
+            "text": "Howler Monkey",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(17) > span:nth-of-type(1)",
+            "text": "Zebra",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(18) > span:nth-of-type(1)",
+            "text": "Lion",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(19) > span:nth-of-type(1)",
+            "text": "Brown Hare",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(20) > span:nth-of-type(1)",
+            "text": "Aardvark",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(21) > span:nth-of-type(1)",
+            "text": "Capybara",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(22) > span:nth-of-type(1)",
+            "text": "Howler Monkey",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(23) > span:nth-of-type(1)",
+            "text": "Fruit Bat",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(24) > span:nth-of-type(1)",
+            "text": "Arctic Fox",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(25) > span:nth-of-type(1)",
+            "text": "King Cobra",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(26) > span:nth-of-type(1)",
+            "text": "Cheetah",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(27) > span:nth-of-type(1)",
+            "text": "Bald Eagle",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(28) > span:nth-of-type(1)",
+            "text": "Red Fox",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(29) > span:nth-of-type(1)",
+            "text": "Silky Anteater",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(30) > span:nth-of-type(1)",
+            "text": "Raven",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(31) > span:nth-of-type(1)",
+            "text": "Giant Anteater",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(2) > div:nth-of-type(32) > span:nth-of-type(1)",
+            "text": "Walrus",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(3) > div:nth-of-type(4)",
+            "text": "Model feedback has no remaining-budget counter.",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Platypus",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "Polar Bear",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "Flamingo",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(4) > span:nth-of-type(1)",
+            "text": "Barn Owl",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(5) > span:nth-of-type(1)",
+            "text": "Common Wombat",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(6) > span:nth-of-type(1)",
+            "text": "Reindeer",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(7) > span:nth-of-type(1)",
+            "text": "Giant Panda",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(8) > span:nth-of-type(1)",
+            "text": "Brown Hare",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(9) > span:nth-of-type(1)",
+            "text": "Chameleon",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(10) > span:nth-of-type(1)",
+            "text": "Walrus",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(11) > span:nth-of-type(1)",
+            "text": "Howler Monkey",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(12) > span:nth-of-type(1)",
+            "text": "Nine Banded Armadillo",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(13) > span:nth-of-type(1)",
+            "text": "Chameleon",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(14) > span:nth-of-type(1)",
+            "text": "Cheetah",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(15) > span:nth-of-type(1)",
+            "text": "Pangolin",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(16) > span:nth-of-type(1)",
+            "text": "Howler Monkey",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(17) > span:nth-of-type(1)",
+            "text": "Zebra",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(18) > span:nth-of-type(1)",
+            "text": "Lion",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(19) > span:nth-of-type(1)",
+            "text": "Brown Hare",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(20) > span:nth-of-type(1)",
+            "text": "Aardvark",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(21) > span:nth-of-type(1)",
+            "text": "Capybara",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(22) > span:nth-of-type(1)",
+            "text": "Howler Monkey",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(23) > span:nth-of-type(1)",
+            "text": "Fruit Bat",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(24) > span:nth-of-type(1)",
+            "text": "Arctic Fox",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(25) > span:nth-of-type(1)",
+            "text": "King Cobra",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(26) > span:nth-of-type(1)",
+            "text": "Cheetah",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(27) > span:nth-of-type(1)",
+            "text": "Bald Eagle",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(28) > span:nth-of-type(1)",
+            "text": "Red Fox",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(29) > span:nth-of-type(1)",
+            "text": "Silky Anteater",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(30) > span:nth-of-type(1)",
+            "text": "Raven",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(31) > span:nth-of-type(1)",
+            "text": "Giant Anteater",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(2) > div:nth-of-type(32) > span:nth-of-type(1)",
+            "text": "Walrus",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(3) > div:nth-of-type(4)",
+            "text": "Model feedback has no remaining-budget counter.",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(1) > span:nth-of-type(1)",
+            "text": "Platypus",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(2) > span:nth-of-type(1)",
+            "text": "Polar Bear",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(3) > span:nth-of-type(1)",
+            "text": "Flamingo",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(4) > span:nth-of-type(1)",
+            "text": "Barn Owl",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(5) > span:nth-of-type(1)",
+            "text": "Common Wombat",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(6) > span:nth-of-type(1)",
+            "text": "Reindeer",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(7) > span:nth-of-type(1)",
+            "text": "Giant Panda",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(8) > span:nth-of-type(1)",
+            "text": "Brown Hare",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(9) > span:nth-of-type(1)",
+            "text": "Chameleon",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(10) > span:nth-of-type(1)",
+            "text": "Walrus",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(11) > span:nth-of-type(1)",
+            "text": "Howler Monkey",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(12) > span:nth-of-type(1)",
+            "text": "Nine Banded Armadillo",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(13) > span:nth-of-type(1)",
+            "text": "Chameleon",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(14) > span:nth-of-type(1)",
+            "text": "Cheetah",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(15) > span:nth-of-type(1)",
+            "text": "Pangolin",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(16) > span:nth-of-type(1)",
+            "text": "Howler Monkey",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(17) > span:nth-of-type(1)",
+            "text": "Zebra",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(18) > span:nth-of-type(1)",
+            "text": "Lion",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(19) > span:nth-of-type(1)",
+            "text": "Brown Hare",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(20) > span:nth-of-type(1)",
+            "text": "Aardvark",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(21) > span:nth-of-type(1)",
+            "text": "Capybara",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(22) > span:nth-of-type(1)",
+            "text": "Howler Monkey",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(23) > span:nth-of-type(1)",
+            "text": "Fruit Bat",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(24) > span:nth-of-type(1)",
+            "text": "Arctic Fox",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(25) > span:nth-of-type(1)",
+            "text": "King Cobra",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(26) > span:nth-of-type(1)",
+            "text": "Cheetah",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(27) > span:nth-of-type(1)",
+            "text": "Bald Eagle",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(28) > span:nth-of-type(1)",
+            "text": "Red Fox",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(29) > span:nth-of-type(1)",
+            "text": "Silky Anteater",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(30) > span:nth-of-type(1)",
+            "text": "Raven",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(31) > span:nth-of-type(1)",
+            "text": "Giant Anteater",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(2) > div:nth-of-type(32) > span:nth-of-type(1)",
+            "text": "Walrus",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(3) > div:nth-of-type(4)",
+            "text": "Model feedback has no remaining-budget counter.",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#legend",
+            "text": "Grey candidates are ruled out by the answers. The outlined candidate is the target.",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#ceiling",
+            "text": "1.000 bits",
+            "fontPx": 12,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(3) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "YES",
+            "fontPx": 13,
+            "time": 2,
+            "seconds": 22
+          },
+          {
+            "selector": "#right > div:nth-of-type(3) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "YES",
+            "fontPx": 13,
+            "time": 2,
+            "seconds": 22
+          },
+          {
+            "selector": "#third > div:nth-of-type(3) > div:nth-of-type(1) > span:nth-of-type(2)",
+            "text": "YES",
+            "fontPx": 13,
+            "time": 2,
+            "seconds": 22
+          },
+          {
+            "selector": "span.edition",
+            "text": "THE SEARCH REPLAY",
+            "fontPx": 14,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "span.phase",
+            "text": "Saved model games",
+            "fontPx": 14,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#scenario-label",
+            "text": "Truthful answers · p = 0",
+            "fontPx": 14,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "div.context > p:nth-of-type(1)",
+            "text": "Candidate state is supplied to every policy. Viewer metrics below are not model observations.",
+            "fontPx": 14,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "div.target > span:nth-of-type(1)",
+            "text": "Target",
+            "fontPx": 14,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#target-name",
+            "text": "Juvenile Female Arctic Fox",
+            "fontPx": 16,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(4) > div:nth-of-type(1) > strong:nth-of-type(1)",
+            "text": "0 / 10",
+            "fontPx": 16,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(4) > div:nth-of-type(3) > strong:nth-of-type(1)",
+            "text": "In progress",
+            "fontPx": 16,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(4) > div:nth-of-type(1) > strong:nth-of-type(1)",
+            "text": "0 / 10",
+            "fontPx": 16,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(4) > div:nth-of-type(3) > strong:nth-of-type(1)",
+            "text": "In progress",
+            "fontPx": 16,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(4) > div:nth-of-type(1) > strong:nth-of-type(1)",
+            "text": "0 / 10",
+            "fontPx": 16,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(4) > div:nth-of-type(3) > strong:nth-of-type(1)",
+            "text": "In progress",
+            "fontPx": 16,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(4) > div:nth-of-type(2) > strong:nth-of-type(1)",
+            "text": "0.758 bits",
+            "fontPx": 16,
+            "time": 2,
+            "seconds": 22
+          },
+          {
+            "selector": "#right > div:nth-of-type(4) > div:nth-of-type(2) > strong:nth-of-type(1)",
+            "text": "0.928 bits",
+            "fontPx": 16,
+            "time": 2,
+            "seconds": 22
+          },
+          {
+            "selector": "#third > div:nth-of-type(4) > div:nth-of-type(2) > strong:nth-of-type(1)",
+            "text": "0.758 bits",
+            "fontPx": 16,
+            "time": 2,
+            "seconds": 22
+          },
+          {
+            "selector": "span.brand",
+            "text": "Twenty Bits",
+            "fontPx": 22,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(1) > div:nth-of-type(1) > h2:nth-of-type(1)",
+            "text": "Raw",
+            "fontPx": 23,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#left > div:nth-of-type(3) > code:nth-of-type(1)",
+            "text": "Every candidate is equally likely.",
+            "fontPx": 23,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(1) > div:nth-of-type(1) > h2:nth-of-type(1)",
+            "text": "A11",
+            "fontPx": 23,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#right > div:nth-of-type(3) > code:nth-of-type(1)",
+            "text": "Every candidate is equally likely.",
+            "fontPx": 23,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(1) > div:nth-of-type(1) > h2:nth-of-type(1)",
+            "text": "A23",
+            "fontPx": 23,
+            "time": 0,
+            "seconds": 24
+          },
+          {
+            "selector": "#third > div:nth-of-type(3) > code:nth-of-type(1)",
+            "text": "Every candidate is equally likely.",
+            "fontPx": 23,
+            "time": 0,
+            "seconds": 24
+          }
+        ]
+      },
+      {
+        "code": "film_silent",
+        "severity": "warning",
+        "message": "This 24 s film has no sound source (no <audio>, no <video> with sound): add a music bed and sounds on the visible actions unless the person asked for silence; see references/sound.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 192
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "audio_none",
+        "severity": "info",
+        "message": "The film has no sound: no clip in it plays audio.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ]
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "saved": {
+    "id": "5e894e17-9fb3-4cfa-9466-9bbb5e74c286",
+    "revision": "67ba3346-c8d9-4ef9-bbef-1ed28ca63975",
+    "report": "replays/study/.hyperframes/artifacts/checks/5e894e17-9fb3-4cfa-9466-9bbb5e74c286.json",
+    "attribution": "recorded-revision"
+  },
+  "_meta": {
+    "version": "0.9.63",
+    "latestVersion": "0.9.70",
+    "updateAvailable": true,
+    "checkedAt": "2026-11-19T13:43:03.423Z",
+    "skillsOutdated": 7,
+    "skillsMissing": 2,
+    "updateNotice": "For the user: HyperFrames CLI 0.9.70 is available (this run is 0.9.63), and 7 installed HyperFrames skills are out of date and 2 core skills are missing. To update both, run: npx hyperframes@latest update"
+  }
+}

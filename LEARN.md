@@ -129,3 +129,13 @@ The original prompt told the model the maximum number of questions but made it c
 This small observation change removes every final extra ASK. A23's no-guess endings fall from 136 to zero and its wins rise from 138 to 186. B41 wins rise from 127 to 156, while raw stays at 141. The counter still leaves gambling: B41 makes 188 ambiguous guesses with questions left, and A23's count increases from 20 to 27. Raw also has 12 context-limit losses. A model following an explicit final instruction does not show that RL taught it when enough evidence has been gathered.
 
 We keep both conditions because the difference teaches us something about the experiment: supplied state included candidate names, but omitted a running budget. Winning, choosing informative questions and deciding when to guess are distinct measurements. EIG falls under the counter even where wins improve. The follow-up cost $3.580565, every old hold remains, and all 226 tests plus exact replay checks pass. The project is stopped at this gate before further training or the final write-up.
+
+## Write-up: connect claims to saved evidence
+
+We built one derived data file with hashes of its sources, then used it for six chart designs in PNG and SVG. The report keeps the primary prompt and the visible-budget prompt separate. This matters because A23's noisy winning changes when budget state is shown, even though its weights do not change. Better questions, winning and deciding when to stop are separate outcomes.
+
+The confidence intervals resample complete games within cells. They describe each saved endpoint. A separate analysis resamples the two A seeds before games, but there are too few seeds to estimate training variability well. The small development curves get a clear label so they do not stand in for noisy or large-candidate evaluation.
+
+The videos replay saved actions and posterior arrays through the existing viewer. A11's missing hosted checkpoint does not prevent replaying its collected transcript. A numeric-order rule selects the behavior contrasts. It picks a case where base wins and both trained models lose. The noisy budget example ends in a correct guess while several candidates remain, so a win is not a certificate of certainty.
+
+Every new figure, media export and thread post has a local source or validation record. The thread stays a draft for the user's review. All 226 tests pass, the ledger and primary artifacts stay unchanged, and the write-up adds zero Tinker usage. The experimental phase is closed.

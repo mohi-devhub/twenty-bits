@@ -1,0 +1,46 @@
+{
+  "status": "draft for user review; do not post",
+  "repo_url": "[REPO_URL]",
+  "posts": [
+    {
+      "text": "I trained an 8B model to play 20 Questions. Reward: win, minus question cost and invalid-question penalties.\n\nQuestion quality improved in every seed. Stopping stayed unreliable: one seed gambled, another stalled, and the noisy-trained seed gambled too.",
+      "media": "results/writeup/charts/headline.png",
+      "source": "RESULTS.md"
+    },
+    {
+      "text": "The game uses a binary attribute table and an exact Boolean grammar. The model sees the table and gets candidate state after each answer.\n\nWe measure expected information gain per question. It never enters the reward. No judge model scores the questions.",
+      "media": "replays/study/gamble-stall.mp4",
+      "source": "PROTOCOL.md"
+    },
+    {
+      "text": "On noiseless animals, expected bits/question rose from base 0.158 to 0.634, 0.390 and 0.437 across the three seeds. The ceiling is 1 bit.\n\nAll improved; none reached optimal search. Error bars resample games within each fitted endpoint, not training seeds.",
+      "media": "results/writeup/charts/animal-eig.png",
+      "source": "results/writeup/numbers.json"
+    },
+    {
+      "text": "Win rate hides the policy. Two truthful-trained seeds won 24/56 and 25/56 noiseless animal games.\n\nA11 lost the other 32 through ambiguous wrong guesses. A23 left 31 without guessing. Nearly the same wins, opposite failures. The replay uses a disclosed selection rule.",
+      "media": "results/writeup/charts/different-failures.png",
+      "source": "results/writeup/numbers.json"
+    },
+    {
+      "text": "Then we added one observation: Questions left: k of K. At zero: You must GUESS now. No more training.\n\nA23's no-guess endings fell from 136 to 0. Wins rose from 138 to 186 out of 280. Its stalling depended on missing explicit budget state.",
+      "media": "replays/study/budget-fix.mp4",
+      "source": "VISIBLE_BUDGET_GATE.md"
+    },
+    {
+      "text": "Gambling persisted: B41 still made ambiguous guesses with budget left in 188/280 games, down from 202.\n\nUnder the primary prompt it won 36/140 noisy games, versus base 52/140. No clear noise-training benefit. The budget fix and question quality are separate findings.",
+      "media": "results/writeup/charts/visible-budget.png",
+      "source": "results/visible_budget/summary.json"
+    },
+    {
+      "text": "Limits: 2 truthful-training seeds, 1 noisy seed, 28 games per cell. Candidate state is supplied; thinking is disabled.\n\nSynthetic transfer was mixed. A11's identifier errors did not repeat at the same scale in A23. Small development curves also missed large-N failures.",
+      "media": "results/writeup/charts/development.png",
+      "source": "RESULTS.md"
+    },
+    {
+      "text": "$23.68 recorded Tinker usage, plus $2.08 held pending reconciliation.\n\nCode, frozen games, CIs, failures and rule-selected replays are in the repo. No eval case entered training.\n\n[REPO_URL]",
+      "media": null,
+      "source": "ledger.json"
+    }
+  ]
+}

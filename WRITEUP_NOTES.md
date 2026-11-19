@@ -55,3 +55,7 @@ All 110 A23 extra ASK inputs retain the fixed maximum and final-guess instructio
 - Noiseless synthetic wins are B41 72/84 versus base 82/84. Its 28 synthetic invalid questions include 13 copied code=name header pairs and 15 code_suffix hybrids. The severe A11 identifier regression is absent in A23 and smaller/mixed in B41. Do not silently repair primary scores or treat conditional valid-question EIG as a repaired policy result.
 - The B41 sampler/trainer maximum logprob gap is 3.802663 nats at update 26; update means range from -0.018576 to +0.002337. Native token parity and the unchanged objective are verified. Cause and behavioral impact remain unestablished.
 - Ledger bookkeeping is now transactional and indexed. B41 has no lost request or replacement, and all older holds remain. The local benchmark does not establish a controlled model-throughput speedup. Both B41 native endpoint file types have no expiry; the paid stage is stopped.
+
+## Final write-up handoff
+
+RESULTS.md keeps the main and visible-budget findings separate, includes every seed, and ties numeric statements to saved files. The budget display identifies a practical budget-tracking fix for A23's final-ASK stalling. Gambling remains a trained-policy behavior under both observations. Its internal cause and a specific reward-term mechanism remain unestablished. The thread is an eight-post draft, with media assignments, character checks and a repository-link placeholder pending the user's URL. No experiment or posting is authorized.

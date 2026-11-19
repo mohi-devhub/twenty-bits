@@ -41,18 +41,22 @@
         : pair.record.world.names.map(() => 1 / pair.record.n);
       const max = Math.max(...posterior);
       const h = -posterior.reduce((s, p) => s + (p ? p * Math.log2(p) : 0), 0);
-      $(".remaining", panel).textContent = pair.record.noise
-        ? (2 ** h).toFixed(1)
+      const shown = pair.record.noise
+        ? posterior.filter((p, i) => p > 0.001 || i === posterior.indexOf(max)).length
         : posterior.filter((p) => p > 0).length;
-      $(".population-label", panel).textContent = pair.record.noise
-        ? "effective candidates"
-        : "candidates remain";
+      $(".remaining", panel).textContent = window.REPLAY_STUDY
+        ? shown
+        : pair.record.noise ? (2 ** h).toFixed(1) : shown;
+      $(".population-label", panel).textContent = window.REPLAY_STUDY
+        ? pair.record.noise ? "displayed candidates" : "consistent candidates"
+        : pair.record.noise ? "effective candidates" : "candidates remain";
       [...$(".candidate-grid", panel).children].forEach((cell, i) => {
         cell.classList.toggle("eliminated", posterior[i] === 0);
         cell.classList.toggle(
           "target-cell",
           reveal && i === pair.record.target,
         );
+        cell.classList.toggle("guessed-cell", Boolean(turn?.action.startsWith("GUESS: ") && turn.action.slice(7).trim() === pair.record.world.names[i]));
         cell.style.setProperty(
           "--mass",
           pair.record.noise
@@ -64,11 +68,25 @@
       $(".turn-type", panel).textContent = turn
         ? turn.is_question
           ? `QUESTION ${turn.questions_used}`
-          : "FINAL GUESS"
+          : turn.action.startsWith("GUESS: ") ? "FINAL GUESS" : "EXTRA ASK · NO BUDGET"
         : "READY TO SEARCH";
       $(".question", panel).textContent = turn
         ? turn.action
         : "Every candidate is equally likely.";
+      const meaning = $(".action-meaning", panel);
+      if (meaning) {
+        const words = (turn?.action || "").match(/\b[a-z]+\b/g) || [];
+        const codes = pair.attribute_codes || {};
+        meaning.textContent = [...new Set(words)].filter((w) => codes[w]).map((w) => `${w} = ${codes[w]}`).join(" · ");
+      }
+      const budget = $(".prompt-budget", panel);
+      if (budget) {
+        const used = trace.turns.slice(0, completed).filter((t) => t.is_question).length;
+        const limit = 2 * Math.ceil(Math.log2(pair.record.n));
+        budget.textContent = player.budget_visible_to_model
+          ? `Model feedback: Questions left: ${limit - used} of ${limit}${limit === used ? ". You must GUESS now." : ""}`
+          : "Model feedback has no remaining-budget counter.";
+      }
       $(".answer", panel).textContent = turn ? turn.answer : "—";
       $(".surprise", panel).textContent = turn?.reask_after_low_probability
         ? "Re-check after an unlikely reply"
@@ -89,7 +107,8 @@
       $(".outcome", panel).textContent = finished
         ? trace.won
           ? "Correct guess"
-          : "Wrong guess"
+          : trace.guess_state === null ? trace.context_overflow ? "No guess: context limit" : "No guess: extra ASK"
+            : "Wrong guess"
         : "In progress";
       $(".outcome", panel).classList.toggle("won", finished && trace.won);
     });
@@ -101,8 +120,17 @@
   }
   function loadPair() {
     const pair = pairs[selected];
-    if (!pair || pair.players.length !== 2)
-      throw new Error("Choose a saved match containing two players.");
+    if (!pair || ![2, 3].includes(pair.players.length))
+      throw new Error("Choose a saved match containing two or three players.");
+    if (pair.players.length === 3 && panels.length === 2) {
+      const third = panels[0].cloneNode(true);
+      third.id = "third";
+      third.classList.add("third");
+      $(".players").append(third);
+      panels.push(third);
+    }
+    panels.forEach((panel, index) => { panel.hidden = index >= pair.players.length; });
+    $(".players").style.setProperty("--players", pair.players.length);
     $("#example").value = selected;
     $("#scenario-label").textContent = pair.record.noise
       ? "Independent answer flips · p = 0.10"
@@ -112,7 +140,7 @@
       : "Grey candidates are ruled out by the answers. The outlined candidate is the target.";
     $("#ceiling").textContent = `${pair.record.noise ? "0.531" : "1.000"} bits`;
     $("#scrubber").max = maxSteps();
-    panels.forEach((panel, i) => {
+    panels.slice(0, pair.players.length).forEach((panel, i) => {
       $(".policy-name", panel).textContent = pair.players[i].label;
       $(".policy-type", panel).textContent = [
         "random",
@@ -120,7 +148,9 @@
         "greedy_predicate",
       ].includes(pair.players[i].trace.policy)
         ? `BASELINE ${i ? "B" : "A"}`
-        : `PLAYER ${i ? "B" : "A"}`;
+        : window.REPLAY_STUDY
+          ? pair.players[i].budget_visible_to_model ? "MODEL SEES BUDGET" : "NO BUDGET COUNTER"
+          : `PLAYER ${String.fromCharCode(65 + i)}`;
       const grid = $(".candidate-grid", panel);
       grid.replaceChildren();
       pair.record.world.names.forEach((name) => {
@@ -146,9 +176,10 @@
         $("#play").textContent = "Replay again";
       },
     });
+    const duration = window.REPLAY_STUDY ? 2 * (maxSteps() + 1) : 22;
     timeline.to(clock, {
-      t: 22,
-      duration: 22,
+      t: duration,
+      duration,
       ease: "none",
       onUpdate: () => renderStep(clock.t / 2),
     });
@@ -211,7 +242,7 @@
       list.forEach((pair) => {
         if (
           !Array.isArray(pair.record?.world?.names) ||
-          pair.players?.length !== 2 ||
+          ![2, 3].includes(pair.players?.length) ||
           pair.players.some((p) => !Array.isArray(p.trace?.turns))
         )
           throw new Error(

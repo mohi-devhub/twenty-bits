@@ -1,0 +1,38 @@
+{
+  "new_Tinker_calls": 0,
+  "git_only_checkout": true,
+  "input_tree": "052fed44518b9584df2df3d4e64826c75a0519c8",
+  "project_credentials_present": false,
+  "raw_run_cache_present": false,
+  "live_ledger_database_present": false,
+  "commands": [
+    "scripts/build_writeup_data.py",
+    "scripts/plot_writeup.py",
+    "scripts/build_study_replays.py",
+    "scripts/write_x_thread.py",
+    "scripts/verify_writeup.py"
+  ],
+  "identical_artifacts": {
+    "results/writeup/numbers.json": "5853b28e18783247e8d003acbf475e48a2aad5c897c641886ec4a1be6dd8a2cb",
+    "results/writeup/validation.json": "4039dc064fea5c1a2ecddd2db8738d8c7d3130c8249b25f87cff26c81538b9ea",
+    "X_THREAD.md": "84ecc4275dfd968dbf8b54c92d9d1a253d87d1ff2517e269290c4e8bdbe3f895",
+    "replays/study/games.json": "12ff98ff95a8ac82efce4dda9908c42365667beacf964ec0906f5bc884e74f20",
+    "replays/study/games.js": "a4d5d99fa864f2bf90dec1621a0ba9029bd724c0b7d70cb36c016fc47320a645",
+    "replays/study/index.html": "75bd0b4831c10c6954f0062e50c9ac91cb161ae3ba4ef6b136a4ae529ca88ce4",
+    "replays/study/compositions/gamble-stall.html": "253e4314b1aff53c227b286a664c24b623da39c654a7bee0fd4a6b242317f204",
+    "replays/study/compositions/budget-fix.html": "be536e58a5bc53629155d6dfcba9388a1a94aac3af97d902143c6ceb8093a0b0",
+    "replays/study/viewer/index.html": "d01a05f4bef585a701050d23dbbffe824129023697e7eb79a0a9d1abd9ce72f0",
+    "results/writeup/charts/animal-eig.png": "ff724ec4a23cb9db81fdac765bdd57f0faefa548754b4a0a75af8fed5c1f39fd",
+    "results/writeup/charts/animal-eig.svg": "9bc4880d98cb8ef289831e1de20b6cc08486dcd1fc0b0c846cb14757791ad79c",
+    "results/writeup/charts/development.png": "9fcac5f52a198a63feb458c04225839905c2ff408725175378ce6067e8447c9f",
+    "results/writeup/charts/development.svg": "56f9e26f4d8aced5f4fcd41d82e8f6ab2290c4074e959477926f30c70513f264",
+    "results/writeup/charts/different-failures.png": "233293b059f7d1be383491cc90a5d38fa2450067b70097d1cfb6e5535cf9d4fa",
+    "results/writeup/charts/different-failures.svg": "d5ea7e3164032855f59384da6e341ae436f57598383602bc0672497adf0d6768",
+    "results/writeup/charts/headline.png": "468c05a5e7a73de741f2860b9651d1301a9d29b8387a1c376248ed37f6800084",
+    "results/writeup/charts/headline.svg": "7d5d1caf2e596532c8059d80ea55a7b39135c768dbb59b602b8a9ba28c665dfb",
+    "results/writeup/charts/noisy-wins.png": "2db021f314dca98355c1c70a236a3a67373dfb0b74c45b8c01c182c682f3140d",
+    "results/writeup/charts/noisy-wins.svg": "62f5901f9ff692a2b717a2c476594ebdcc4d8d590186804426d52278771f3594",
+    "results/writeup/charts/visible-budget.png": "b572890b8ab9e84de54dcf7fd618f3a5d5b723e7024e9b3010d4b3dade15b5e0",
+    "results/writeup/charts/visible-budget.svg": "e11a40da32f735a413455591e1374f713944bdb3ee662bfa599b9cd8f7486f46"
+  }
+}

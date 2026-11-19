@@ -1,0 +1,77 @@
+{
+  "new_Tinker_calls": 0,
+  "new_Tinker_spend_usd": "0.000000",
+  "new_ledger_entries": 0,
+  "ledger_entries": 73807,
+  "project_budget": {
+    "cap_usd": "50.000000",
+    "spent_usd": "23.681223",
+    "held_usd": "2.083181",
+    "available_usd": "24.235596"
+  },
+  "protected_artifact_hashes": 264,
+  "source_hashes": 19,
+  "all_scheduled_endpoints_included": true,
+  "primary_game_outcomes_recomputed": 1120,
+  "example_selection_rule_recomputed": true,
+  "examples": [
+    "paid-v1/animals/32/1/p0",
+    "paid-v1/animals/32/1/p0.1"
+  ],
+  "charts": {
+    "headline": {
+      "png_sha256": "468c05a5e7a73de741f2860b9651d1301a9d29b8387a1c376248ed37f6800084",
+      "svg_sha256": "7d5d1caf2e596532c8059d80ea55a7b39135c768dbb59b602b8a9ba28c665dfb",
+      "width": 2470,
+      "height": 912
+    },
+    "animal-eig": {
+      "png_sha256": "ff724ec4a23cb9db81fdac765bdd57f0faefa548754b4a0a75af8fed5c1f39fd",
+      "svg_sha256": "9bc4880d98cb8ef289831e1de20b6cc08486dcd1fc0b0c846cb14757791ad79c",
+      "width": 1596,
+      "height": 912
+    },
+    "different-failures": {
+      "png_sha256": "233293b059f7d1be383491cc90a5d38fa2450067b70097d1cfb6e5535cf9d4fa",
+      "svg_sha256": "d5ea7e3164032855f59384da6e341ae436f57598383602bc0672497adf0d6768",
+      "width": 2280,
+      "height": 950
+    },
+    "visible-budget": {
+      "png_sha256": "b572890b8ab9e84de54dcf7fd618f3a5d5b723e7024e9b3010d4b3dade15b5e0",
+      "svg_sha256": "e11a40da32f735a413455591e1374f713944bdb3ee662bfa599b9cd8f7486f46",
+      "width": 2280,
+      "height": 1007
+    },
+    "noisy-wins": {
+      "png_sha256": "2db021f314dca98355c1c70a236a3a67373dfb0b74c45b8c01c182c682f3140d",
+      "svg_sha256": "62f5901f9ff692a2b717a2c476594ebdcc4d8d590186804426d52278771f3594",
+      "width": 1634,
+      "height": 893
+    },
+    "development": {
+      "png_sha256": "9fcac5f52a198a63feb458c04225839905c2ff408725175378ce6067e8447c9f",
+      "svg_sha256": "56f9e26f4d8aced5f4fcd41d82e8f6ab2290c4074e959477926f30c70513f264",
+      "width": 2280,
+      "height": 1444
+    }
+  },
+  "chart_pairs": 6,
+  "replay_pairs": 2,
+  "turn_states_checked": 24,
+  "local_links_checked": 139,
+  "thread_posts": 8,
+  "thread_character_counts": [
+    257,
+    258,
+    260,
+    272,
+    243,
+    271,
+    273,
+    194
+  ],
+  "thread_posted": false,
+  "repo_link_placeholder": true,
+  "unit_tests": 226
+}

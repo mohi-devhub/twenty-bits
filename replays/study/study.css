@@ -1,0 +1,46 @@
+body.study .sheet { width: 100%; max-width: 1600px; padding: 30px 44px 24px; }
+body.study .masthead { padding-bottom: 16px; }
+body.study .intro { padding: 24px 0; }
+body.study h1 { font-size: 58px; line-height: 1.02; }
+body.study h1 em { display: block; }
+body.study .context { max-width: 410px; }
+body.study .context p { font-size: 14px; line-height: 1.5; margin-bottom: 10px; }
+body.study .players { gap: 26px; }
+body.study h2 { font-size: 23px; }
+body.study .population-label { font-size: 11px; }
+body.study .remaining { font-size: 38px; }
+body.study .policy-type { font-size: 11px; letter-spacing: .06em; }
+body.study .candidate-grid { gap: 5px; padding: 15px 0; }
+body.study .candidate { min-height: 44px; padding: 6px 7px; }
+body.study .candidate-name { font-size: 12px; line-height: 1.2; }
+body.study .candidate-detail { font-size: 10px; margin-top: 2px; }
+body.study .candidate.target-cell { padding: 5px 6px; }
+body.study .candidate.target-cell:after { font-size: 8px; top: 1px; right: 2px; }
+body.study .player-head { padding-bottom: 12px; }
+body.study .question-area { min-height: 146px; padding: 11px 0; }
+body.study .question { font-size: 23px; min-height: 59px; line-height: 1.4; }
+body.study .action-meaning { color: #53655b; font-size: 11px; line-height: 1.5; padding: 6px 0; min-height: 24px; }
+body.study .surprise { font-size: 11px; }
+body.study .turn-type { font-size: 11px; letter-spacing: .03em; }
+body.study .answer { font-size: 13px; }
+body.study .player-foot strong { font-size: 16px; }
+body.study .player-foot span { font-size: 11px; }
+body.study .player.third { --accent: #2e6288; }
+body.study .player.third .candidate::before { background: #c4d5df; }
+body.study footer { font-size: 12px; line-height: 1.5; margin-top: 22px; }
+body.study .provenance { font-size: 11px; }
+body.study .ceiling { font-size: 10px; }
+body.study .ceiling strong { font-size: 12px; }
+body.study .target, body.study .context > span { font-size: 14px; }
+body.study .target strong { font-size: 16px; }
+body.study .prompt-budget { font-size: 12px; line-height: 1.5; min-height: 36px; color: #274c45; }
+body.study .candidate.guessed-cell { box-shadow: inset 0 0 0 2px #944122; }
+@media (max-width: 1050px) {
+  body.study:not(.export) .players { grid-template-columns: 1fr; }
+  body.study:not(.export) .sheet { padding: 24px; }
+}
+@media (max-width: 680px) {
+  body.study h1 { font-size: 43px; }
+  body.study:not(.export) .intro { display: block; }
+  body.study:not(.export) .context { margin-top: 20px; }
+}

@@ -1,101 +1,58 @@
 # Twenty Bits
 
-![Every scheduled main endpoint on matched frozen games](results/main_B41/charts/all-endpoints.png)
+![Animal question quality and the different ways games end](results/writeup/charts/headline.png)
 
-![Offline random versus greedy predicate replay with noisy answers](replays/baseline-noisy.gif)
+![Base wins while A11 gambles and A23 stalls on the same target](replays/study/gamble-stall.gif)
 
-**Better questions, different ways to lose.** Outcome-only RL raises noiseless animal EIG/question from raw base **0.158** to **0.634 (A11)**, **0.390 (A23)** and **0.437 (B41)**. Their animal wins are **24/56, 25/56 and 19/56**, versus base **7/56**. A11 and B41 gamble; A23 stalls. Across the full bank, A11 makes 167 wrong guesses, A23 leaves 136 games without guessing, and B41 makes 152 wrong guesses. These are fitted endpoints, not stable estimates of every training seed.
+- Qwen3-8B plays table-based 20 Questions with candidate state supplied. Reward pays for wins and charges for questions and invalids. EIG is measured, never rewarded.
+- Noiseless animal EIG/question improves from raw **0.158** to **0.634, 0.390 and 0.437** across all three seeds. Conditional 95% CIs appear in [RESULTS.md](RESULTS.md).
+- A11 and A23 win **24/56 and 25/56** animal games, but A11 makes **32 ambiguous wrong guesses** and A23 leaves **31 without guessing**.
+- An eval-only budget counter removes A23's **136 no-guess endings** and raises wins **138 to 186/280**. B41's ambiguous guesses with budget left fall only **202 to 188/280**.
+- Under the primary prompt, noisy wins are **raw 52/140, A11 31, A23 29, B41 36**. Noisy training does not clearly help. Under visible budget, A23's noisy wins rise to **74/140**.
 
-The noisy-trained B41 wins **36/140** noisy games, versus A11's 31, A23's 29 and raw base's 52. Relative to mean A, B41's win-rate change is **+0.043 [95% CI -0.018, +0.107]** and noisy EIG change is **+0.031 [0.001, 0.053]**. These paired game/A-seed intervals condition on the only B endpoint. They do not establish a general noise-training or re-checking benefit.
+[Results, confidence intervals and limitations](RESULTS.md) · [Every derived number and source hash](results/writeup/numbers.json) · [X thread draft for review](X_THREAD.md)
 
-Noiseless synthetic transfer wins are **raw 82/84, A11 49/84, A23 84/84, B41 72/84**. Raw base already searches these random tables well. A11's severe identifier-copying regression does not replicate in A23; B41 has fewer, mixed copying/syntax errors. Legal item-name enumeration is absent, while malformed name-query attempts remain logged and penalized. High EIG alone does not guarantee enough evidence before guessing.
+The study has two truthful-training seeds and one noisy-training seed. Each frozen cell has 28 games. Animal rows are authored profiles, the grammar is fixed, and thinking is disabled. Synthetic transfer is mixed. All scheduled endpoints and failed configurations remain available. The examples use a [disclosed selection rule](replays/study/README.md), including a case where the base model wins and both trained models lose.
 
-The task supplies remaining candidates after each answer and measures question selection given that state. Reward is **+1 win, -0.03/question, -0.1/INVALID**; EIG is measured, never rewarded. All three policies start from provider Qwen3-8B without project SFT. The prompt states the fixed question maximum but no dynamic remaining count: all 110 A23 post-budget ASK inputs had the maximum in history, and none had a per-turn remaining count or exhaustion notice. [Exact prompt audit](research/BUDGET_VISIBILITY.md).
+Recorded Tinker usage is **$23.681223**, plus **$2.083181 held** pending reconciliation, under the **$50 cap**. Available budget is **$24.235596**. These are observed-token charges at pinned prices, not a reconciled invoice. The write-up and local exports add zero Tinker spend. [Ledger](ledger.json), [hold breakdown](BUDGET.md).
 
-[MAIN_B41_GATE.md](MAIN_B41_GATE.md) contains every B41 update/check, all three seeds' cell tables, guess-with-k, early guesses, paired CIs, re-check denominators, the invalid name-reference audit and [two preselected paired examples](results/main_B41/EXAMPLE_GAMES.md). [A23](MAIN_A23_GATE.md), [A11](MAIN_A11_GATE.md) and earlier failed configurations remain historical. Hard mode ran on raw base/A23 only (0/20 each); B41 adds its scheduled primary endpoint.
+## Reproduce the write-up offline
 
-**Labelled visible-budget follow-up:** an explicit per-turn counter removes every extra final ASK and A23's 136 no-guess endings. Wins change **raw 141→141, A23 138→186, B41 127→156**, out of 280 each. Ambiguous guesses with budget left persist (**raw 104→89, A23 20→27, B41 202→188**), and pooled EIG falls for all three. These fixed-policy prompt effects stay separate from the primary results above. A11 could not be evaluated because its hosted checkpoint was unavailable. [Paired cells, CIs, prompt hashes and limitations](VISIBLE_BUDGET_GATE.md).
-
-**Recorded project usage: $23.681223 / $50.00; held $2.083181; available $24.235596**, from [ledger.json](ledger.json). Invoice reconciliation is pending. The visible-budget follow-up cost **$3.580565 with no new unresolved holds**, under its **$8 ceiling including holds**. B41's main run used **$3.974884 plus $0.443049 held**, within its **$13.64 forecast including margin**. Both native endpoint types have no expiry. The live ledger uses durable SQLite transactions; migration preserved every old entry and hold. Neither B41's main run nor the visible-budget follow-up lost a request. [Budget](BUDGET.md), [ledger storage and performance](LEDGER.md).
-
-**Stopped at the visible-budget gate. No further paid work or training is authorized.** The user will choose between a training follow-up and final write-up. The final RESULTS.md and model replay exports remain pending. The GIF above is a baseline illustration, not a trained-model replay.
-
-Open the [interactive baseline replay](replays/index.html), [truthful-answer MP4](replays/baseline-noiseless.mp4), or [noisy-answer MP4](replays/baseline-noisy.mp4). The two illustrated games were selected for visible strategy contrast; complete sweeps supply the reported baseline numbers.
-
-The offline grid contains 24,000 games, with 200 paired games for each domain, candidate size, noise setting, and policy. [Every cell](results/baselines/BASELINES.md), [machine-readable metrics and 95% bootstrap CIs](results/baselines/summary.json), and [matched frozen-game references](results/baselines/frozen/summary.json) are saved. Greedy predicate's macro-average EIG is 0.9976 bits/question with truthful answers and 0.4994 with 10% noise. Its observed win rates are 100% and 81.925%. The noisy answer-channel ceiling is 0.5310 bits/question.
-
-These are finite authored worlds. Animals has 400 named age/sex profiles across 100 types; tools and foods each have 320 profiles across 80 types. They use 90, 88, and 71 attributes to stay distinguishable without random identity bits. The synthetic world has 512 unique random 16-bit rows and is relabeled in each game. [World definitions, sample hand checks, and limitations](data/WORLDS.md) describe the construction. Animal training uses a fixed 200-row pool; paid animal evaluation uses disjoint rows, with shared underlying types disclosed.
-
-[PAID_PLANS.md](PAID_PLANS.md) records the approved $50 cap and selected U plan. [VISIBLE_BUDGET_GATE.md](VISIBLE_BUDGET_GATE.md) is the current stop; [MAIN_B41_GATE.md](MAIN_B41_GATE.md) closes the main study, and [PAUSED.md](PAUSED.md) preserves the earlier pause and resume point. [PRIOR_WORK.md](PRIOR_WORK.md) stays as context; this is a side project for GitHub and X.
-
-## Reproduce offline
-
-Use Python 3.11 or later. The game and core tests do not need Tinker credentials or its SDK. Paid-adapter tests require the paid extra and use mocked requests.
+Use Python 3.11 or later. The commands below read saved results and do not construct a service client.
 
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
-python3 -m pip install -e '.[replay]'
+python3 -m pip install -e '.[paid,replay]'
+python3 scripts/build_writeup_data.py
+python3 scripts/plot_writeup.py
+python3 scripts/build_study_replays.py
+python3 scripts/verify_writeup.py
 python3 -m unittest discover -s tests -v
-python3 scripts/verify_frozen.py
-python3 scripts/run_baselines.py
-python3 scripts/run_frozen_baselines.py
-python3 scripts/plot_baselines.py
-python3 scripts/measure_tokens.py
-python3 scripts/build_paid_plans.py
-python3 scripts/status_B41.py --snapshot
 ```
 
-Tokenizer downloads come from Hugging Face at the recorded revisions. No weights are downloaded. The baseline runners reuse the committed per-game results when present and verify their world, tokenizer, and seed provenance. To compute another sweep independently, use `python3 scripts/run_baselines.py --output-directory /tmp/twenty-bits-reproduction`. The frozen bank is already included; `freeze_evals.py` refuses to overwrite it.
+The committed PNG and SVG pairs are in [results/writeup/charts](results/writeup/charts). The development curves use the same small noiseless development slice for all seeds. They do not measure noisy or large-N performance. [Statistical definitions](NUMBERS.md), [write-up verification](results/writeup/validation.json).
 
-Serve the viewer with `python3 -m http.server 8765` and visit `http://localhost:8765/replays/`. Play, scrub, step, change noise mode, hide the target, or load a matched pair in the JSON schema from replays/games.json. Regenerate the local exports with `python3 scripts/export_replays.py`. This uses the pinned HyperFrames CLI and FFmpeg. To rebuild only GIFs from existing MP4s, add `--reuse-mp4`.
+## Watch and rebuild the replays
 
-## Reproduce the visible-budget follow-up offline
+[Interactive viewer](replays/study/viewer/index.html) · [Base / A11 / A23 MP4](replays/study/gamble-stall.mp4) · [A23 primary / visible-budget MP4](replays/study/budget-fix.mp4) · [Budget-fix GIF](replays/study/budget-fix.gif) · [Full example transcripts](replays/study/EXAMPLES.md)
+
+Serve the repository with `python3 -m http.server 8765`, then open `http://localhost:8765/replays/study/viewer/`. Play, scrub, switch between the two cases, or hide the target. Question counters and posterior shading are viewer annotations. The primary policies did not see a remaining-budget counter.
+
+Local video export needs Node.js 22 or later and FFmpeg:
 
 ```bash
-python3 -m pip install -e '.[paid,replay]'
-python3 scripts/analyze_visible_budget.py
-python3 scripts/verify_visible_budget.py
-python3 scripts/write_visible_budget_gate.py
+python3 scripts/export_study_replays.py
 ```
 
-These commands use committed traces and the completed ledger export, with no service calls, credentials, adapter files or live SQLite database. [Validation](results/visible_budget/validation.json) checks the frozen slice, every protected artifact, old ledger equality and the $8 peak exposure. [Reproduction proof](results/visible_budget/reproduction.json) records a separate Git-only checkout. The completed paid runner returns before SDK access.
+The export uses the pinned HyperFrames CLI and the existing replay viewer. It replays saved actions, answers and posteriors. It never samples a model. To rebuild only the GIFs from existing videos, add `--reuse-mp4`. [Replay construction, selection and checks](replays/study/README.md).
 
-Run `python3 scripts/reproduce_visible_budget.py` to repeat that Git-only audit with cached pinned tokenizers. It creates and removes its own disposable checkout and writes a local reproduction log.
+## Read the code and experimental record
 
-## Historical main-study analysis
+[LEARN.md](LEARN.md) explains the phases in plain language. Start with [worlds.py](twenty_bits/worlds.py), [predicates.py](twenty_bits/predicates.py), [information.py](twenty_bits/information.py) and [game.py](twenty_bits/game.py). Then read [candidate_feedback.py](twenty_bits/candidate_feedback.py), [rl_pilot.py](twenty_bits/rl_pilot.py) and [the final data builder](scripts/build_writeup_data.py).
 
-Run this block in a checkout of **commit e3bfac1**, the B41 gate. Its checks bind that gate's ledger export; the current export also contains the later follow-up. Preserve the primary artifacts when working in the current checkout.
+[PROTOCOL.md](PROTOCOL.md) fixes the game and primary observations. [NUMBERS.md](NUMBERS.md) records the declared comparisons. [PRIOR_WORK.md](PRIOR_WORK.md) supplies context. Primary endpoint tables remain in [the B41 gate](MAIN_B41_GATE.md); the separate prompt intervention remains in [the visible-budget gate](VISIBLE_BUDGET_GATE.md). The old no-list failure, SFT, pilot, parser diagnostic and tiny hard-mode results are retained rather than merged into the main RL comparison.
 
-```bash
-python3 -m pip install -e '.[paid,replay]'
-python3 scripts/analyze_main_B41.py
-python3 scripts/analyze_all_main_seeds.py
-python3 scripts/verify_main_B41.py
-python3 scripts/plot_main_B41.py
-python3 scripts/plot_all_main_seeds.py
-python3 scripts/write_main_B41_gate.py
-python3 scripts/status_B41.py --snapshot
-```
+Live spending state uses ignored SQLite storage. [ledger.json](ledger.json) is the completed audit export. Historical gate checks belong at their corresponding commits because their ledger exports and protected source hashes are fixed there. Do not rerun old summary writers against today's ledger. Credentials, run caches and adapter binaries remain ignored.
 
-These commands read committed compressed traces, finished-session metadata and the completed ledger JSON export. They make no service calls and do not need credentials, raw run caches, adapter weights or the live SQLite database. [Reproduction proof](results/main_B41/reproduction.json) includes archive hashes; the check also runs in a separate Git-only checkout. Tokenizers use pinned cached files or download those files from Hugging Face. Unit tests mock service operations.
-
-The live database is ignored and missing live state fails closed. `--snapshot` explicitly reads the completed export; it may be stale during an active run. Do not reconstruct an active ledger from an old export to resume spending. The append-only change history is [archived and checked](research/ledger_events_archive.json).
-
-Historical gate checks belong at their corresponding commits because ledger totals and source hashes have changed. Do not rebuild A11/A23 summaries against today's ledger. Completed paid runners return before service access. `.env`, raw run caches and adapter binaries remain ignored and untracked.
-
-## Read the code
-
-[LEARN.md](LEARN.md) explains each completed phase. Start with [worlds.py](twenty_bits/worlds.py), [predicates.py](twenty_bits/predicates.py), [information.py](twenty_bits/information.py), and [game.py](twenty_bits/game.py), then read [baselines.py](twenty_bits/baselines.py). The public observation is built in [prompts.py](twenty_bits/prompts.py), and frozen-game checks live in [evaluation.py](twenty_bits/evaluation.py).
-
-[PROTOCOL.md](PROTOCOL.md) fixes the grammar, budget, posterior, metrics, and stopping rules. [NUMBERS.md](NUMBERS.md) records the main comparisons. EIG is measured and never rewarded. Legal name enumeration remains allowed, and the approved output cap accommodates the measured half-candidate lists. The final RESULTS.md will tie model claims to charts, paired CIs, spend, and failed attempts after those data exist.
-
-The paid bridge lives in [model_player.py](twenty_bits/model_player.py), [tinker_rendering.py](twenty_bits/tinker_rendering.py), and [tinker_transport.py](twenty_bits/tinker_transport.py). [candidate_feedback.py](twenty_bits/candidate_feedback.py) supplies the versioned main observation without changing historical prompts. [The candidate-set reproduction check](results/candidate_set/reproduction.json) verifies saved-archive analysis. The transport persists IDs before sampling, reserves the full declared cost, and handles pending retrieval without repeating sampling.
-
-[rl_pilot.py](twenty_bits/rl_pilot.py) builds group-standardized advantages and guarded SDK training operations. [run_rl_pilot.py](scripts/run_rl_pilot.py) joins cookbook rollouts, training and scheduled development checks. [analyze_rl_pilot.py](scripts/analyze_rl_pilot.py) replays actions, verifies exact rewards and training masks, and builds the audit. The pilot starts from raw base and never loads the historical SFT adapter.
-
-[run_main_seed.py](scripts/run_main_seed.py) adds the full matched control, the 30-update curriculum and mandatory A11 gate. [guess_metrics.py](twenty_bits/guess_metrics.py) measures stopping with k candidates; it changes no reward or observation. [recovery.py](twenty_bits/recovery.py) enforces one exact replacement per lost logical sample, retained original holds and permanent output exclusion. [analyze_main_seed.py](scripts/analyze_main_seed.py) replays the run and audits transfer identifiers; [verify_main_seed.py](scripts/verify_main_seed.py) verifies the archived analysis and completed-run guard. The historical pause verifier belongs at its pause commit.
-
-[run_main_A23.py](scripts/run_main_A23.py) preserves the second A seed's schedule and native permanent endpoint saves. [run_A23_endpoint_aux.py](scripts/run_A23_endpoint_aux.py) keeps the suffix diagnostic and hard mode separate. [analyze_main_A23.py](scripts/analyze_main_A23.py), [analyze_A23_replication.py](scripts/analyze_A23_replication.py) and [verify_main_A23.py](scripts/verify_main_A23.py) replay accepted outputs, reconstruct all gradient batches and reproduce comparisons from committed archives. [name_reference_audit.py](twenty_bits/name_reference_audit.py) detects malformed name queries without accepting or rewarding them.
-
-[run_main_B41.py](scripts/run_main_B41.py) preserves the declared noisy training condition and scheduled endpoint. [analyze_all_main_seeds.py](scripts/analyze_all_main_seeds.py) reports every cell and distinguishes paired-game uncertainty from the missing B seed variability. [ledger_store.py](twenty_bits/ledger_store.py) stores durable indexed reservations and append-only change records; the financial transitions remain in [budget.py](twenty_bits/budget.py).
+**The experimental phase is complete. No more training or evaluation is authorized unless the user asks. The thread is a draft and has not been posted.**
