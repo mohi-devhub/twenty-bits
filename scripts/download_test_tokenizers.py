@@ -11,9 +11,16 @@ from twenty_bits.worlds import ROOT
 
 
 MODELS = ("Qwen/Qwen3-8B", "openai/gpt-oss-120b")
-REQUIRED_FILES = ("tokenizer.json", "tokenizer_config.json", "chat_template.jinja")
+REQUIRED_FILES = {
+    "Qwen/Qwen3-8B": ("tokenizer.json", "tokenizer_config.json"),
+    "openai/gpt-oss-120b": (
+        "tokenizer.json", "tokenizer_config.json", "chat_template.jinja"
+    ),
+}
 TOKENIZER_FILES = (
-    *REQUIRED_FILES,
+    "tokenizer.json",
+    "tokenizer_config.json",
+    "chat_template.jinja",
     "special_tokens_map.json",
     "added_tokens.json",
     "vocab.json",
@@ -33,7 +40,9 @@ def main():
             allow_patterns=list(TOKENIZER_FILES),
             token=False,
         )
-        missing = [name for name in REQUIRED_FILES if not (directory / name).is_file()]
+        missing = [
+            name for name in REQUIRED_FILES[model] if not (directory / name).is_file()
+        ]
         if missing:
             raise FileNotFoundError(f"Incomplete tokenizer for {model}: {missing}")
         print(f"Ready: {model}@{entry['revision']} in {entry['local_cache']}")

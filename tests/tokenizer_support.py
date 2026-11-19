@@ -15,7 +15,7 @@ def requires_tokenizer(model):
     entry = next(row for row in manifest if row["model"] == model)
     directory = ROOT / entry["local_cache"]
     missing = []
-    for name in REQUIRED_FILES:
+    for name in REQUIRED_FILES[model]:
         if directory.exists():
             present = (directory / name).is_file()
         else:
