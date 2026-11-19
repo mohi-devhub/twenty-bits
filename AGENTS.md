@@ -4,6 +4,8 @@
 
 The user authorized publication to https://github.com/mohi-devhub/twenty-bits after the secret, privacy, size and offline reproduction checks pass. The existing university email in commit author and committer metadata is explicitly approved to remain public. Preserve all history. Add the MIT license, update the repository links, create the public repository, push main and verify its rendered README and linked artifacts. No social posting or Tinker operations are authorized. Local credentials, adapters and live caches stay ignored. Stop after reporting the repository URL and publication checks.
 
+The user approved marking the five real-tokenizer integration tests to skip when their pinned public assets are absent, with explicit missing-file and download instructions. Before publication, verify a clean clone offline with 221 passing tests and five skips, then download the public tokenizer assets without credentials and verify all 226 tests offline. Keep these test prerequisites separate from the saved-result analysis, which needs no tokenizer downloads. No experimental or scoring code changes are authorized by this fix.
+
 ## Completed write-up (2026-11-19)
 
 The user accepted the visible-budget gate and closed the experimental phase. **No training, sampling, evaluation or other Tinker operation is authorized unless the user asks.** The final offline write-up is complete: RESULTS.md, the six PNG/SVG figure pairs, two rule-selected GIF/MP4 replay pairs, the compact README and X_THREAD.md. The thread is a draft for user review and must not be posted automatically. The public repository is https://github.com/mohi-devhub/twenty-bits.

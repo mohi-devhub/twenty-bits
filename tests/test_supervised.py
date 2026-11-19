@@ -22,6 +22,7 @@ from twenty_bits.budget import CAP, BudgetError, Ledger
 from twenty_bits.supervised import GuardedSupervised, supervised_data
 from twenty_bits.tinker_transport import GuardedTinker, save_json
 from twenty_bits.worlds import ROOT
+from tests.tokenizer_support import requires_tokenizer
 
 
 class SupervisedRecoveryTests(unittest.IsolatedAsyncioTestCase):
@@ -209,6 +210,7 @@ class NativeTrainingWireTests(unittest.IsolatedAsyncioTestCase):
 
 
 class SupervisionTests(unittest.TestCase):
+    @requires_tokenizer("Qwen/Qwen3-8B")
     def test_approved_examples_have_no_trainable_prompt_tokens(self):
         config = json.loads((ROOT / "experiments/alias_probe.json").read_text())
         price = json.loads((ROOT / "research/format_warmstart_price.json").read_text())

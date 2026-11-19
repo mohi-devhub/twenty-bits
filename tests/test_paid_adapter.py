@@ -27,6 +27,7 @@ from twenty_bits.budget import CAP, BudgetError, Ledger
 from twenty_bits.tinker_transport import GuardedTinker, sample_cost
 from twenty_bits.tinker_rendering import Rendering
 from twenty_bits.worlds import ROOT
+from tests.tokenizer_support import requires_tokenizer
 
 
 CONFIG = json.loads((ROOT / "evals/phase2.json").read_text())
@@ -463,6 +464,7 @@ class UsageTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             sample_cost("Qwen/Qwen3-8B", 1000, 10, 1001)
 
+    @requires_tokenizer(CONFIG["primary_model"])
     def test_qwen_native_action_spans(self):
         renderer = Rendering(CONFIG["primary_model"], CONFIG)
         tokens = (
@@ -476,6 +478,7 @@ class UsageTests(unittest.TestCase):
             decoded["action_tokens"] + decoded["control_tokens"], len(tokens)
         )
 
+    @requires_tokenizer(CONFIG["reference_model"])
     def test_reference_analysis_is_separate_from_action(self):
         renderer = Rendering(CONFIG["reference_model"], CONFIG)
         tokens = renderer.tokenizer.encode(
@@ -493,6 +496,7 @@ class UsageTests(unittest.TestCase):
             len(tokens),
         )
 
+    @requires_tokenizer(CONFIG["reference_model"])
     def test_truncated_reference_analysis_has_no_action(self):
         renderer = Rendering(CONFIG["reference_model"], CONFIG)
         tokens = renderer.tokenizer.encode(
@@ -504,6 +508,7 @@ class UsageTests(unittest.TestCase):
         self.assertGreater(decoded["reasoning_tokens"], 0)
         self.assertEqual(decoded["parse_termination"], "malformed")
 
+    @requires_tokenizer(CONFIG["reference_model"])
     def test_truncated_reference_final_keeps_complete_action(self):
         renderer = Rendering(CONFIG["reference_model"], CONFIG)
         tokens = renderer.tokenizer.encode(

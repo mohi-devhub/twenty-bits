@@ -145,3 +145,9 @@ Every new figure, media export and thread post has a local source or validation 
 The publication audit checks Git history as well as current files, including compressed game logs. Deleting a credential from a current file would not erase an older copy. The configured API key has no match in the public files or history. Local credentials, run state and adapter weights stay ignored. The user approved keeping the university email already present in commit metadata, so no history rewrite is needed.
 
 The MIT license covers project code and authored data. Bundled assets keep their existing licenses. The README now names FFmpeg as a verification dependency and links to the public repository. Its offline commands read archived results and use mocked service tests. Publication does not authorize new Tinker work or posting the thread.
+
+## Tokenizer tests: make cache requirements explicit
+
+The clean-clone check exposed five tests that use real tokenizer files. Their service requests are mocked, but tokenization still depends on public assets that were only present in the original checkout's ignored cache. Those five tests now skip when their required files are missing. The message names the files and the command that downloads them. A corrupt or incompatible tokenizer still fails its test.
+
+The download command uses the already pinned revisions for Qwen3-8B and the historical reference, requests only tokenizer assets and disables authentication. Archived-result analysis needs none of these assets. The README keeps dependency setup, offline analysis and complete tokenizer integration tests separate. Experimental prompts, scoring, frozen games, ledger entries and training code are unchanged.

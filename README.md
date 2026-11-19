@@ -18,11 +18,11 @@ The study has two truthful-training seeds and one noisy-training seed. Each froz
 
 Recorded Tinker usage is **$23.681223**, plus **$2.083181 held** pending reconciliation, under the **$50 cap**. Available budget is **$24.235596**. These are observed-token charges at pinned prices, not a reconciled invoice. The write-up and local exports add zero Tinker spend. [Ledger](ledger.json), [hold breakdown](BUDGET.md).
 
-## Reproduce the write-up offline
+## Setup
 
 Use Python 3.11 or later and install FFmpeg so `ffprobe` is on your PATH. Verification inspects the committed videos with `ffprobe`.
 
-Dependency installation needs internet access. After installation, the commands below read saved results offline. They need no API key, credentials, model downloads or live ledger database. Service tests use mocked transports.
+Cloning and dependency installation need internet access. These steps do not need credentials.
 
 ```bash
 git clone https://github.com/mohi-devhub/twenty-bits.git
@@ -30,14 +30,37 @@ cd twenty-bits
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -e '.[paid,replay]'
+```
+
+## Offline analysis (no downloads, no credentials)
+
+After setup, these commands read saved results. They need no tokenizer assets, API key or live ledger database.
+
+```bash
 python3 scripts/build_writeup_data.py
 python3 scripts/plot_writeup.py
 python3 scripts/build_study_replays.py
 python3 scripts/verify_writeup.py
-python3 -m unittest discover -s tests -v
 ```
 
 The committed PNG and SVG pairs are in [results/writeup/charts](results/writeup/charts). The development curves use the same small noiseless development slice for all seeds. They do not measure noisy or large-N performance. [Statistical definitions](NUMBERS.md), [write-up verification](results/writeup/validation.json).
+
+## Full test suite
+
+Service requests in the tests use mocked transports. With no tokenizer cache, the following command runs 221 tests and skips five integration tests. Each skip names the missing files and the download command.
+
+```bash
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 python3 -m unittest discover -s tests -v
+```
+
+To run all 226 tests, download the public tokenizer assets at the revisions pinned in [research/tokenizers.json](research/tokenizers.json):
+
+```bash
+python3 scripts/download_test_tokenizers.py
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 python3 -m unittest discover -s tests -v
+```
+
+The download command needs internet access and explicitly disables authentication. It fetches Qwen3-8B and the historical gpt-oss reference's tokenizer files into ignored `.cache/tokenizers/` directories. It downloads no model weights and makes no Tinker calls. After that download, the complete suite runs offline.
 
 ## Watch and rebuild the replays
 
