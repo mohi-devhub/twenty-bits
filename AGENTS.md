@@ -1,8 +1,12 @@
 # Twenty Bits working rules: write-up complete
 
-## Current stop after write-up (2026-11-19)
+## Publication authorization (2026-11-19)
 
-The user accepted the visible-budget gate and closed the experimental phase. **No training, sampling, evaluation or other Tinker operation is authorized unless the user asks.** The final offline write-up is complete: RESULTS.md, the six PNG/SVG figure pairs, two rule-selected GIF/MP4 replay pairs, the compact README and X_THREAD.md. The thread is a draft for user review and must not be posted automatically. The GitHub link remains [REPO_URL] while this checkout has no configured remote.
+The user authorized publication to https://github.com/mohi-devhub/twenty-bits after the secret, privacy, size and offline reproduction checks pass. The existing university email in commit author and committer metadata is explicitly approved to remain public. Preserve all history. Add the MIT license, update the repository links, create the public repository, push main and verify its rendered README and linked artifacts. No social posting or Tinker operations are authorized. Local credentials, adapters and live caches stay ignored. Stop after reporting the repository URL and publication checks.
+
+## Completed write-up (2026-11-19)
+
+The user accepted the visible-budget gate and closed the experimental phase. **No training, sampling, evaluation or other Tinker operation is authorized unless the user asks.** The final offline write-up is complete: RESULTS.md, the six PNG/SVG figure pairs, two rule-selected GIF/MP4 replay pairs, the compact README and X_THREAD.md. The thread is a draft for user review and must not be posted automatically. The public repository is https://github.com/mohi-devhub/twenty-bits.
 
 The write-up adds zero Tinker spend. Project usage stays $23.681223, holds $2.083181 and available budget $24.235596. Every ledger entry, hold, primary result, frozen case and original prompt hash remains intact. The new write-up data is derived from archived results, with 10,000 game-bootstrap draws and explicit conditional/seed-uncertainty limits. Replays use numeric-order behavior filters disclosed in replays/study/README.md, not resampling or new model calls. Their viewer annotations do not enter model prompts. Verify with scripts/verify_writeup.py; older experimental gates remain historical. Append the write-up note to LEARN.md and commit, then stop for review.
 

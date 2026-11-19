@@ -139,3 +139,9 @@ The confidence intervals resample complete games within cells. They describe eac
 The videos replay saved actions and posterior arrays through the existing viewer. A11's missing hosted checkpoint does not prevent replaying its collected transcript. A numeric-order rule selects the behavior contrasts. It picks a case where base wins and both trained models lose. The noisy budget example ends in a correct guess while several candidates remain, so a win is not a certificate of certainty.
 
 Every new figure, media export and thread post has a local source or validation record. The thread stays a draft for the user's review. All 226 tests pass, the ledger and primary artifacts stay unchanged, and the write-up adds zero Tinker usage. The experimental phase is closed.
+
+## Publication: check what a clone exposes
+
+The publication audit checks Git history as well as current files, including compressed game logs. Deleting a credential from a current file would not erase an older copy. The configured API key has no match in the public files or history. Local credentials, run state and adapter weights stay ignored. The user approved keeping the university email already present in commit metadata, so no history rewrite is needed.
+
+The MIT license covers project code and authored data. Bundled assets keep their existing licenses. The README now names FFmpeg as a verification dependency and links to the public repository. Its offline commands read archived results and use mocked service tests. Publication does not authorize new Tinker work or posting the thread.

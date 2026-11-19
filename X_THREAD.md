@@ -2,8 +2,6 @@
 
 For user review only. Nothing has been posted. Text blocks are the posts; media and source notes are outside them.
 
-Replace `[REPO_URL]` with the public repository URL before posting. This checkout has no configured Git remote.
-
 ## Post 1
 
 ```text
@@ -95,9 +93,9 @@ Source: [RESULTS.md](RESULTS.md). Length: 273 characters under URL weighting.
 
 Code, frozen games, CIs, failures and rule-selected replays are in the repo. No eval case entered training.
 
-[REPO_URL]
+https://github.com/mohi-devhub/twenty-bits
 ```
 
 Media: None. Repository link only.
 
-Source: [ledger.json](ledger.json). Length: 194 characters under URL weighting.
+Source: [ledger.json](ledger.json). Length: 207 characters under URL weighting.

@@ -5,11 +5,21 @@ __pycache__/
 .env
 .env.*
 !.env.example
+.tinker/
+.git-credentials
+credentials.json
+credentials/
+*.pem
+*.p12
+*.pfx
+id_rsa
+id_ed25519
 .DS_Store
 ledger.json.lock
 ledger.json.*.tmp
 runs/
 .cache/
+node_modules/
 
 *.egg-info/
 replays/.hyperframes/

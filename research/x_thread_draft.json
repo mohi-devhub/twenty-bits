@@ -1,6 +1,6 @@
 {
   "status": "draft for user review; do not post",
-  "repo_url": "[REPO_URL]",
+  "repo_url": "https://github.com/mohi-devhub/twenty-bits",
   "posts": [
     {
       "text": "I trained an 8B model to play 20 Questions. Reward: win, minus question cost and invalid-question penalties.\n\nQuestion quality improved in every seed. Stopping stayed unreliable: one seed gambled, another stalled, and the noisy-trained seed gambled too.",
@@ -38,7 +38,7 @@
       "source": "RESULTS.md"
     },
     {
-      "text": "$23.68 recorded Tinker usage, plus $2.08 held pending reconciliation.\n\nCode, frozen games, CIs, failures and rule-selected replays are in the repo. No eval case entered training.\n\n[REPO_URL]",
+      "text": "$23.68 recorded Tinker usage, plus $2.08 held pending reconciliation.\n\nCode, frozen games, CIs, failures and rule-selected replays are in the repo. No eval case entered training.\n\nhttps://github.com/mohi-devhub/twenty-bits",
       "media": null,
       "source": "ledger.json"
     }

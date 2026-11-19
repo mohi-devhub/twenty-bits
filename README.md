@@ -1,5 +1,7 @@
 # Twenty Bits
 
+[github.com/mohi-devhub/twenty-bits](https://github.com/mohi-devhub/twenty-bits)
+
 ![Animal question quality and the different ways games end](results/writeup/charts/headline.png)
 
 ![Base wins while A11 gambles and A23 stalls on the same target](replays/study/gamble-stall.gif)
@@ -18,9 +20,13 @@ Recorded Tinker usage is **$23.681223**, plus **$2.083181 held** pending reconci
 
 ## Reproduce the write-up offline
 
-Use Python 3.11 or later. The commands below read saved results and do not construct a service client.
+Use Python 3.11 or later and install FFmpeg so `ffprobe` is on your PATH. Verification inspects the committed videos with `ffprobe`.
+
+Dependency installation needs internet access. After installation, the commands below read saved results offline. They need no API key, credentials, model downloads or live ledger database. Service tests use mocked transports.
 
 ```bash
+git clone https://github.com/mohi-devhub/twenty-bits.git
+cd twenty-bits
 python3 -m venv .venv
 source .venv/bin/activate
 python3 -m pip install -e '.[paid,replay]'
@@ -56,3 +62,5 @@ The export uses the pinned HyperFrames CLI and the existing replay viewer. It re
 Live spending state uses ignored SQLite storage. [ledger.json](ledger.json) is the completed audit export. Historical gate checks belong at their corresponding commits because their ledger exports and protected source hashes are fixed there. Do not rerun old summary writers against today's ledger. Credentials, run caches and adapter binaries remain ignored.
 
 **The experimental phase is complete. No more training or evaluation is authorized unless the user asks. The thread is a draft and has not been posted.**
+
+Code and project-authored data are available under the [MIT License](LICENSE). Bundled third-party assets retain their own license files.

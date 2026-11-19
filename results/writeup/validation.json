@@ -59,7 +59,7 @@
   "chart_pairs": 6,
   "replay_pairs": 2,
   "turn_states_checked": 24,
-  "local_links_checked": 139,
+  "local_links_checked": 140,
   "thread_posts": 8,
   "thread_character_counts": [
     257,
@@ -69,9 +69,9 @@
     243,
     271,
     273,
-    194
+    207
   ],
   "thread_posted": false,
-  "repo_link_placeholder": true,
+  "repo_link_placeholder": false,
   "unit_tests": 226
 }
