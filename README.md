@@ -86,4 +86,4 @@ Live spending state uses ignored SQLite storage. [ledger.json](ledger.json) is t
 
 **The experimental phase is complete. No more training or evaluation is authorized unless the user asks. The thread is a draft and has not been posted.**
 
-Code and project-authored data are available under the [MIT License](LICENSE). Bundled third-party assets retain their own license files.
+Code and project-authored data are available under the [MIT License](LICENSE). Bundled third-party assets retain their own license files. [Publication checks and clean-clone test results](research/publication_checks.json).

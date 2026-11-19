@@ -1,0 +1,310 @@
+{
+  "date": "2026-11-19",
+  "repo_url": "https://github.com/mohi-devhub/twenty-bits",
+  "tested_commit": "4304ca490801fdc0fa186aecab96f8707b12f57a",
+  "secret_scan": {
+    "dedicated_scanner_available": false,
+    "method": "Byte-pattern and configured-key exact/encoded scan of every Git object and publishable working file, including decompressed gzip payloads; manual broad-term and private-file-path review. Incremental scans cover later release changes.",
+    "baseline_commit": "8c6bd66861c5f1a63886bb62bf3446e939d52fc0",
+    "baseline_objects": 1238,
+    "baseline_unique_blobs": 1065,
+    "baseline_gzip_views": 471,
+    "baseline_bytes_inspected": 3922662761,
+    "credential_findings": 0,
+    "configured_key_matches": 0,
+    "env_or_credentials_ever_committed": false,
+    "private_caches_ignored": true
+  },
+  "privacy": {
+    "commit_email_retained_with_explicit_user_approval": true,
+    "phone_or_home_address_found": false,
+    "harmless_local_paths_retained": 30,
+    "third_party_license_contacts_retained": true,
+    "checkpoint_paths_and_request_ids_retained_with_user_approval": true
+  },
+  "history_rewritten": false,
+  "size_at_tested_commit": {
+    "tracked_files": 851,
+    "tracked_bytes": 223300386,
+    "reachable_unique_blob_bytes": 395100331,
+    "tracked_top20": [
+      {
+        "path": "ledger.json",
+        "bytes": 44450468
+      },
+      {
+        "path": "results/visible_budget/games.jsonl.gz",
+        "bytes": 25080035
+      },
+      {
+        "path": "results/main_A11/games.jsonl.gz",
+        "bytes": 13951200
+      },
+      {
+        "path": "results/main_A23/games.jsonl.gz",
+        "bytes": 8818605
+      },
+      {
+        "path": "results/visible_budget/usage.jsonl",
+        "bytes": 8354079
+      },
+      {
+        "path": "results/main_A11/usage.jsonl",
+        "bytes": 6852309
+      },
+      {
+        "path": "results/visible_budget/ledger_events.jsonl.gz",
+        "bytes": 6579265
+      },
+      {
+        "path": "results/main_B41/games.jsonl.gz",
+        "bytes": 6169775
+      },
+      {
+        "path": "results/visible_budget/responses.jsonl.gz",
+        "bytes": 6091600
+      },
+      {
+        "path": "results/main_A23/usage.jsonl",
+        "bytes": 5389472
+      },
+      {
+        "path": "results/main_B41/usage.jsonl",
+        "bytes": 4352879
+      },
+      {
+        "path": "results/A23_suffix/games.jsonl.gz",
+        "bytes": 4295984
+      },
+      {
+        "path": "results/ledger_migration/events_through_B41.jsonl.gz",
+        "bytes": 3975605
+      },
+      {
+        "path": "results/main_A11/responses.jsonl.gz",
+        "bytes": 3716724
+      },
+      {
+        "path": "results/phase2/usage.jsonl",
+        "bytes": 3308186
+      },
+      {
+        "path": "results/A23_suffix/usage.jsonl",
+        "bytes": 1779895
+      },
+      {
+        "path": "replays/study/budget-fix.gif",
+        "bytes": 1518857
+      },
+      {
+        "path": "results/visible_budget/requests.jsonl.gz",
+        "bytes": 1261034
+      },
+      {
+        "path": "results/main_A23/responses.jsonl.gz",
+        "bytes": 1245834
+      },
+      {
+        "path": "results/main_A11/paused/requests.jsonl.gz",
+        "bytes": 1171307
+      }
+    ],
+    "history_top20": [
+      {
+        "oid": "33d2652bd9243e33453c3b183ce121323006d74e",
+        "path": "ledger.json",
+        "bytes": 44450468
+      },
+      {
+        "oid": "693f040c322afce05c8ffdcfb61ddb49acbe54a1",
+        "path": "ledger.json",
+        "bytes": 32842551
+      },
+      {
+        "oid": "2c28fb0f8ab7f3d72f3b27e12b12966d6de294fa",
+        "path": "ledger.json",
+        "bytes": 26893414
+      },
+      {
+        "oid": "598c01cb05bcc89172daf3ca7609dfb2eff39697",
+        "path": "ledger.json",
+        "bytes": 26893150
+      },
+      {
+        "oid": "95caf5df9e5afe775a9fe143d5924410e72b0e27",
+        "path": "results/visible_budget/games.jsonl.gz",
+        "bytes": 25080035
+      },
+      {
+        "oid": "880f8614786990f1d04df928775eb2deceaee65a",
+        "path": "ledger.json",
+        "bytes": 16289861
+      },
+      {
+        "oid": "36d342e7ffb183f6376d51d4229c583310a9dcc4",
+        "path": "ledger.json",
+        "bytes": 16284579
+      },
+      {
+        "oid": "8f2f6da4fb6897a4aa5239b515bb53fd237e51b6",
+        "path": "ledger.json",
+        "bytes": 16229414
+      },
+      {
+        "oid": "7cbe17b961ae59be0bfa665462cfd34f860fe378",
+        "path": "results/main_A11/games.jsonl.gz",
+        "bytes": 13951200
+      },
+      {
+        "oid": "221848c555b3096d9066050d2fb7060394ddd092",
+        "path": "results/main_A23/games.jsonl.gz",
+        "bytes": 8818605
+      },
+      {
+        "oid": "2623bf71b218fb4db241f4993041a3bad1798394",
+        "path": "results/visible_budget/usage.jsonl",
+        "bytes": 8354079
+      },
+      {
+        "oid": "1fecae7337da9e9aab366cb49884e6af343487f6",
+        "path": "ledger.json",
+        "bytes": 7550883
+      },
+      {
+        "oid": "5f81ed5756b7bfc0a18ff4c621a812dcc8c9c9fd",
+        "path": "results/main_A11/usage.jsonl",
+        "bytes": 6852309
+      },
+      {
+        "oid": "0408e44e6c6484fa52c5ebc9d0ebdce77ad82045",
+        "path": "ledger.json",
+        "bytes": 6774215
+      },
+      {
+        "oid": "8c733eb947378c5f040e269da05cc68763608aa7",
+        "path": "results/visible_budget/ledger_events.jsonl.gz",
+        "bytes": 6579265
+      },
+      {
+        "oid": "272605b5d65301f25c5d418339ab1098f8867cc8",
+        "path": "results/main_B41/games.jsonl.gz",
+        "bytes": 6169775
+      },
+      {
+        "oid": "5eed0d6ae0ffe378c2988ad6bbd126f5763ddace",
+        "path": "results/visible_budget/responses.jsonl.gz",
+        "bytes": 6091600
+      },
+      {
+        "oid": "04d0ed93a651d14e6b83e522e843dd57455639da",
+        "path": "ledger.json",
+        "bytes": 5756784
+      },
+      {
+        "oid": "4f924a85d331e6c1876424ec0e1f7d491c463e43",
+        "path": "results/main_A23/usage.jsonl",
+        "bytes": 5389472
+      },
+      {
+        "oid": "52ad783fe50a2f8023499b60f0458b9c7abf0812",
+        "path": "ledger.json",
+        "bytes": 5388124
+      }
+    ],
+    "size_policy": "Keep existing compressed result archives; exclude local credentials, model adapters, dependencies and run caches. No published file exceeds 50 MB and reachable blobs total less than 500 MB."
+  },
+  "offline_analysis": {
+    "passed": true,
+    "downloads": 0,
+    "network_attempts": 0,
+    "credentials_supplied": false,
+    "fresh_clone": true,
+    "fresh_python_environment": true,
+    "python_version": "Python 3.12.12",
+    "commands": [
+      [
+        "python3",
+        "scripts/build_writeup_data.py"
+      ],
+      [
+        "python3",
+        "scripts/plot_writeup.py"
+      ],
+      [
+        "python3",
+        "scripts/build_study_replays.py"
+      ],
+      [
+        "python3",
+        "scripts/verify_writeup.py"
+      ]
+    ],
+    "protected_hashes_verified": 264,
+    "regenerated_artifact_changes": []
+  },
+  "tests_without_tokenizers": {
+    "passed": 221,
+    "skipped": 5,
+    "failed": 0,
+    "log": "results/publication/unit_tests_without_tokenizers.log"
+  },
+  "public_tokenizer_download": {
+    "command": "python3 scripts/download_test_tokenizers.py",
+    "authentication": false,
+    "model_weights_downloaded": false,
+    "pinned_manifest": "research/tokenizers.json",
+    "assets": [
+      {
+        "path": ".cache/tokenizers/Qwen3-8B/merges.txt",
+        "bytes": 1671853,
+        "sha256": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5"
+      },
+      {
+        "path": ".cache/tokenizers/Qwen3-8B/tokenizer.json",
+        "bytes": 11422654,
+        "sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+      },
+      {
+        "path": ".cache/tokenizers/Qwen3-8B/tokenizer_config.json",
+        "bytes": 9732,
+        "sha256": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+      },
+      {
+        "path": ".cache/tokenizers/Qwen3-8B/vocab.json",
+        "bytes": 2776833,
+        "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+      },
+      {
+        "path": ".cache/tokenizers/gpt-oss-120b/chat_template.jinja",
+        "bytes": 16738,
+        "sha256": "a4c9919cbbd4acdd51ccffe22da049264b1b73e59055fa58811a99efbd7c8146"
+      },
+      {
+        "path": ".cache/tokenizers/gpt-oss-120b/special_tokens_map.json",
+        "bytes": 98,
+        "sha256": "dd5e191d20c12d2fee1da5bae14ca1db0f5f4215300af691f23cdee97120a293"
+      },
+      {
+        "path": ".cache/tokenizers/gpt-oss-120b/tokenizer.json",
+        "bytes": 27868174,
+        "sha256": "0614fe83cadab421296e664e1f48f4261fa8fef6e03e63bb75c20f38e37d07d3"
+      },
+      {
+        "path": ".cache/tokenizers/gpt-oss-120b/tokenizer_config.json",
+        "bytes": 4200,
+        "sha256": "9279e942392b742d633c7adbb89ebe002c98399db8926a7af5125c726f404070"
+      }
+    ]
+  },
+  "tests_with_tokenizers": {
+    "passed": 226,
+    "skipped": 0,
+    "failed": 0,
+    "log": "results/publication/unit_tests_with_tokenizers.log",
+    "network_attempts": 0
+  },
+  "license": "MIT",
+  "copyright": "2026 M Mohith",
+  "Tinker_calls": 0,
+  "social_posts": 0
+}
