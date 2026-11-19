@@ -1,5 +1,7 @@
 # Twenty Bits
 
+[Read the illustrated write-up](https://www.mohith.xyz/blog/twenty-bits)
+
 [github.com/mohi-devhub/twenty-bits](https://github.com/mohi-devhub/twenty-bits)
 
 ![Animal question quality and the different ways games end](results/writeup/charts/headline.png)
