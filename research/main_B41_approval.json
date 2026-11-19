@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-19",
+  "source": "User accepted A23 gate and authorized offline ledger migration/audit, then unchanged B41 and stop at its endpoint gate.",
+  "authorized": true,
+  "active_stage": "B41",
+  "condition": "B",
+  "seed": 41,
+  "noise": 0.1,
+  "updates": 30,
+  "group_size": 8,
+  "training_games": 240,
+  "new_development_games": 64,
+  "frozen_endpoint_games": 280,
+  "fresh_provider_base": true,
+  "project_SFT": false,
+  "stop_after_B41_endpoint": true,
+  "primary_protocol_unchanged": true,
+  "ledger_migration_before_dispatch_required": true,
+  "global_cap_including_holds_usd": "50.000000",
+  "forecast_including_1_5_margin_usd": "13.634221686387598",
+  "budget_before_B41": {
+    "cap_usd": "50.000000",
+    "spent_usd": "16.125774",
+    "held_usd": "1.640132",
+    "available_usd": "32.234094",
+    "blocked": false
+  },
+  "standing_replacement_policy": "research/replacement_policy.json",
+  "native_no_expiry_training_and_sampler_required": true,
+  "hard_mode_already_completed_on_A23": true,
+  "suffix_diagnostic_primary": false,
+  "prompt_budget_change_authorized": false
+}

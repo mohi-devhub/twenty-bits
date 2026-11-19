@@ -161,9 +161,7 @@ class GuardedRL:
 
     async def collect(self, journal, path):
         t = self.transport
-        entry = next(
-            e for e in t.ledger.status()["entries"] if e["id"] == journal["entry_id"]
-        )
+        entry = t.ledger.get(journal["entry_id"])
         if entry["state"] != "settled":
             t.ledger.attach_request_id(journal["entry_id"], journal["request_id"])
         journal.setdefault("collection_started_at", now())
@@ -257,9 +255,9 @@ class GuardedRL:
             def submit():
                 entries = [
                     e
-                    for e in t.ledger.status()["entries"]
-                    if e["operation"] == t.operation_prefix + operation
-                    and e["state"] == "dispatching"
+                    for e in t.ledger.entries(
+                        operation=t.operation_prefix + operation, states={"dispatching"}
+                    )
                 ]
                 if len(entries) != 1:
                     raise BudgetError("RL dispatch needs one unique reservation.")

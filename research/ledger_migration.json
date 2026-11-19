@@ -1,0 +1,30 @@
+{
+  "recorded_at": "2026-11-19T08:50:38.323915+00:00",
+  "migrated": true,
+  "engine": "sqlite-v1",
+  "database": "ledger.sqlite3",
+  "audit_export": "ledger.json",
+  "entries": 45033,
+  "entry_records_identical": true,
+  "entry_records_sha256": "0d2379d5bda364387dda401280423681aae8306ef8852dc031fbd203e082d54b",
+  "approvals_unchanged": true,
+  "approvals_sha256": "6354e5ac66ac95da92705ffc9285df4861a56d6975e97c5a00543be13cc796a5",
+  "blocks_unchanged": true,
+  "before": {
+    "cap_usd": "50.000000",
+    "spent_usd": "16.125774",
+    "held_usd": "1.640132",
+    "available_usd": "32.234094",
+    "blocked": false
+  },
+  "after": {
+    "cap_usd": "50.000000",
+    "spent_usd": "16.125774",
+    "held_usd": "1.640132",
+    "available_usd": "32.234094",
+    "blocked": false
+  },
+  "service_calls": 0,
+  "semantics": "Same decimal rounding, estimate x 1.5 or full maximum, cap, dispatch-before-send, request ID, pending 408, settlement and unknown-cost holds. Only indexed live storage and reads change.",
+  "durability": "SQLite FULL synchronous transactions and append-only event records. The live database must exist; missing/corrupt state fails closed. JSON exports occur explicitly outside request collection."
+}

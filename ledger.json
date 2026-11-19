@@ -2,6 +2,37 @@
   "schema_version": 1,
   "cap_usd": "50.000000",
   "reservation_multiplier": "1.5",
+  "blocks": [],
+  "approvals": [
+    {
+      "date": "2026-11-18",
+      "timezone": "Asia/Kolkata",
+      "previous_cap_usd": "30.000000",
+      "approved_cap_usd": "50.000000",
+      "source": "User message accepting Phase 1 and approving Phase 2",
+      "scope": "Total Tinker spend including active holds; Phase 2 base Qwen3-8B 28 games per cell across 10 frozen cells plus 20 gpt-oss-120b reference games. Training requires the next phase approval.",
+      "reservation_multiplier": "1.5"
+    },
+    {
+      "date": "2026-11-18",
+      "timezone": "Asia/Kolkata",
+      "scope": "Five exact replacement attempts; original holds remain until billing reconciliation, original outputs excluded permanently. Every subsequent sampling future ID must be saved before HTTP dispatch.",
+      "original_entry_ids": [
+        "1189868a-f5b6-48eb-b6e1-a31529964760",
+        "78715f8c-59c0-4a1f-9f3f-c8102f4043d1",
+        "e07652e7-cb4d-40de-bce0-c0251e75be1d",
+        "ebf4dda4-1b3f-4fc6-b5bc-b2886bf5b869",
+        "fa5ec920-1085-46e2-bd9e-0e5b0a78cebf"
+      ],
+      "retained_original_holds_usd": "0.007195"
+    }
+  ],
+  "storage": {
+    "engine": "sqlite-v1",
+    "database": "ledger.sqlite3",
+    "source_json_sha256": "35f7e179e0e898051aabc9301b9108a083545bd5a227f1bc497c9e1048ccfae3",
+    "note": "Live state is transactional SQLite; this JSON is an explicit audit export."
+  },
   "entries": [
     {
       "id": "57274d6c-a701-498e-bfe1-8628d25250ac",
@@ -630763,31 +630794,6 @@
       "evidence": "results/A23_hard/usage.jsonl#669ee76e-3361-4f85-a6af-2ecb561abd67",
       "created_at": "2026-11-19T08:11:04.111393+00:00",
       "updated_at": "2026-11-19T08:11:06.003838+00:00"
-    }
-  ],
-  "blocks": [],
-  "approvals": [
-    {
-      "date": "2026-11-18",
-      "timezone": "Asia/Kolkata",
-      "previous_cap_usd": "30.000000",
-      "approved_cap_usd": "50.000000",
-      "source": "User message accepting Phase 1 and approving Phase 2",
-      "scope": "Total Tinker spend including active holds; Phase 2 base Qwen3-8B 28 games per cell across 10 frozen cells plus 20 gpt-oss-120b reference games. Training requires the next phase approval.",
-      "reservation_multiplier": "1.5"
-    },
-    {
-      "date": "2026-11-18",
-      "timezone": "Asia/Kolkata",
-      "scope": "Five exact replacement attempts; original holds remain until billing reconciliation, original outputs excluded permanently. Every subsequent sampling future ID must be saved before HTTP dispatch.",
-      "original_entry_ids": [
-        "1189868a-f5b6-48eb-b6e1-a31529964760",
-        "78715f8c-59c0-4a1f-9f3f-c8102f4043d1",
-        "e07652e7-cb4d-40de-bce0-c0251e75be1d",
-        "ebf4dda4-1b3f-4fc6-b5bc-b2886bf5b869",
-        "fa5ec920-1085-46e2-bd9e-0e5b0a78cebf"
-      ],
-      "retained_original_holds_usd": "0.007195"
     }
   ]
 }

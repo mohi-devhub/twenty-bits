@@ -1,16 +1,22 @@
 # Twenty Bits working rules — A23 gate
 
-## Current stop
+## Current authorization
 
-A23's paid stage is complete: 30 updates, 240 training games, 64 development games, 280 frozen endpoint games, 168 labelled suffix-diagnostic games and 40 hard-mode games (20 raw base, 20 A23). All three service sessions finished and HTTP work drained. **Stop at MAIN_A23_GATE.md. Do not start B41 or make new Tinker calls before the user's gate decision.** Completed-run guards return before SDK construction. research/active_plan.json records this stop.
+The user accepted A23 and authorized B41 on 2026-11-19 after the offline ledger migration and prompt-budget audit. **Run only B seed 41: fresh provider base, training p=0.10, 30 unchanged updates, groups of eight, the same curriculum/reward/prompt/grammar/caps and evaluation. Save both native endpoint types with no expiry, evaluate the unchanged 280-case frozen primary slice immediately, then stop at MAIN_B41_GATE.md. No further paid work follows automatically.** research/main_B41_approval.json records this approval; experiments/main_B41.json and research/main_B41_preflight.json freeze the stage.
 
-The selected plan is U: A seeds 11/23 and B seed 41, 30 updates and groups of eight. A11 and A23 are complete; B41 has not started. A23 reused the unchanged archived raw frozen control (280 games) and raw development control (8 games). Its frozen games, targets, subsets, noise seeds, prompts, grammar, rewards and model settings did not change. The curriculum is N=4: updates 1–2; N=8: 3–4; N=16: 5–15; N=32: 16–22; N=64: 23–26; N=128: 27–30. Both N=32 and N=128 match frozen animal cells.
+Both A seeds (11/23) are complete. B41 reuses the unchanged matched raw controls: 280 frozen games and eight development games. The development checks remain the same eight noiseless N=4/8 cases; B changes training answers to p=0.10 only. The curriculum remains N=4: updates 1–2; N=8: 3–4; N=16: 5–15; N=32: 16–22; N=64: 23–26; N=128: 27–30. No main variance stop is added.
 
-Read PROTOCOL.md, PAID_PLANS.md, NUMBERS.md, PHASE2.md and MAIN_A23_GATE.md before continuing. Append a short plain-language section to LEARN.md and commit at each gate. This is a side project for GitHub and X; PRIOR_WORK.md is context. Do not make research-priority claims. Report every seed, missing evaluation, failure, uncertainty and limitation.
+Live budget state is now in ignored ledger.sqlite3 with durable SQLite transactions and append-only change records. ledger.json is the explicit, committed audit export and is stale during a run. Use Ledger.summary/status for live numbers; do not edit the database or reconstruct it from a stale export. Missing/corrupt live state fails closed. Export only after HTTP work is drained. The migration preserved all 45,033 entries and every approval/hold. At B41 entry: usage $16.125774, held $1.640132, available $32.234094. All 216 tests passed, including the original budget contracts against both backends and mocked SQLite SDK recovery. Execution parallelism returns to 16 after a zero-error local probe (87 ms maximum event-loop lag); scientific settings and 45-second HTTP timeout are unchanged.
+
+The prompt-budget audit verified all 110 A23 post-budget ASK inputs: every history stated the fixed maximum and final-guess rule; none stated a dynamic remaining count or exhaustion notice. Do not change the prompt. research/BUDGET_VISIBILITY.md records exact text and counts.
+
+At the B41 gate, report every update/check and cell, plus all three seeds' wins, EIG, ambiguous-guess rate, no-guess rate and early-guess wins per noiseless/noisy cell. Include B41's invalid name-reference audit and a one-line dominant failure mode per seed. Preserve the A11/A23 observations in WRITEUP_NOTES.md. Append a short plain-language section to LEARN.md and commit. This is a side project for GitHub/X; do not make research-priority claims.
+
+Read PROTOCOL.md, PAID_PLANS.md, NUMBERS.md, PHASE2.md, MAIN_A23_GATE.md and the B41 approval/preflight before paid work.
 
 ## Budget and collection
 
-The user approved a **$50 total cap including active holds on 2026-11-18**. Keep the approval, reservation multiplier 1.5, admission, dispatch, settlement and 408 behavior unchanged. Every Tinker operation, including metadata, passes through Ledger.call. Never run the stock cookbook recipe or bypass the guard through SDK internals. No actual bill is inferred from a forecast.
+The user approved a **$50 total cap including active holds on 2026-11-18**. Keep the approval, reservation multiplier 1.5, admission, dispatch, settlement and 408 behavior unchanged. Every Tinker operation, including metadata, passes through Ledger.call, backed by the migrated transactional store. Never run the stock cookbook recipe or bypass the guard through SDK internals. No actual bill is inferred from a forecast.
 
 At this gate, recorded token usage is **$16.125774**, holds **$1.640132**, available **$32.234094**. Charges use observed tokens and pinned rates; invoice reconciliation is pending. Storage and lost originals remain held until billing resolves them. Do not release a hold because a file expired or was deleted.
 
@@ -50,4 +56,4 @@ A11 suffix diagnostic and hard mode: **not run: A11 checkpoint wasn't persisted,
 
 A23 execution changed 16→2 concurrent games only after draining all HTTP work, collecting every recoverable future (pending 0) and verifying 93 completed mutations. Config, seed/data order, 30 updates, model weights, scientific settings and ledger/transport code stayed unchanged. A disposable-copy diagnostic found median 8.912 seconds of synchronous guard work, dominated by JSON serialization; it can starve a 45-second HTTP collector. This is a local diagnostic, not a full speedup claim or proof that every connection error had that cause. See research/A23_execution_concurrency.json and research/A23_ledger_io_diagnostic.json. The user allowed continuing on battery; AC returned before the announced low-charge drain threshold, so no power stop occurred. Scope caffeinate to authorized runners; it cannot prevent clamshell sleep.
 
-PAUSED.md, research/main_A11_pause.json and the paused A11 archive are historical. The user explicitly resumed A11 and accepted its completed gate before authorizing A23. They do not authorize B41. All old holds, exclusions and hashes remain. Keep credentials, .env and adapter binaries ignored and untracked.
+PAUSED.md, research/main_A11_pause.json and the paused A11 archive are historical. The user explicitly resumed A11, accepted both A gates and authorized B41 separately. Follow the current B41 approval; stop at its gate. All old holds, exclusions and hashes remain. Keep credentials, .env and adapter binaries ignored and untracked.

@@ -1,8 +1,8 @@
 # Experiment protocol
 
-A11 and A23 have completed their scheduled 30-update endpoints. A23 also completed its immediate 168-game suffix diagnostic and 40-game hard-mode comparison. **Stop at MAIN_A23_GATE.md before B41 or any new Tinker operation.** Both A23 native endpoint types have no expiry. The diagnostic parser is excluded from every primary training and scoring result. All scientific settings below remain unchanged.
+A11 and A23 have completed their scheduled 30-update endpoints. A23 also completed its immediate 168-game suffix diagnostic and 40-game hard-mode comparison. The user accepted the A23 gate and authorized B41 on 2026-11-19 after an offline ledger migration and budget-visibility audit. **Stop at MAIN_B41_GATE.md after its scheduled endpoint evaluation.** Both A23 native endpoint types have no expiry. The diagnostic parser is excluded from every primary training and scoring result. All scientific settings below remain unchanged.
 
-Option U was approved on 2026-11-18 with gates between seeds. The user accepted A11, then approved A23 after confirming native persistence and API-verified smoke cleanup on 2026-11-19. experiments/main_A23.json preserves the same curriculum: N=32 at updates 16–22 and N=128 at 27–30, matching frozen animal cells. Reward, output/context/question caps, grammar, prompts and frozen games stayed unchanged. B41 awaits confirmation at the A23 gate.
+Option U was approved on 2026-11-18 with gates between seeds. The user accepted A11, then approved A23 after confirming native persistence and API-verified smoke cleanup on 2026-11-19. experiments/main_A23.json preserves the same curriculum: N=32 at updates 16–22 and N=128 at 27–30, matching frozen animal cells. Reward, output/context/question caps, grammar, prompts and frozen games stayed unchanged. B41 is now authorized with p=0.10 training and the same settings otherwise.
 
 The additional guess-with-k-v1 metric uses public state just before GUESS. Noiseless k is exact consistent support; noisy k is the existing threshold-plus-MAP displayed list, with full positive support recorded separately. Report counts and wins in bins 1,2,3,4+ with all-game and guess denominators at each update/check and for raw versus endpoint frozen evals. This adds no feedback or reward.
 
@@ -18,7 +18,7 @@ The approved attribute-code grammar is `attribute-codes-v2`. Attribute codes are
 
 The historical learnability probe is documented in LEARNABILITY.md. It uses animals training-pool N=8 and 16 with a separately hashed prompt and random grammar examples. The later alias probe and conditional format SFT are documented in ALIAS_GATE.md. No-list SFT qualification failed on wins; after candidate feedback, raw base outperformed SFT in CANDIDATE_GATE.md. The subsequent raw-base RL pilot is documented in PILOT_GATE.md. Any adopted observation, prompt or initialization change needs matched controls before an RL comparison.
 
-The original protocol was fixed before paid evaluation. The user approved Phase 2 on 2026-11-18: indices 0 through 27 in all ten primary cells and five games in each of four N=32 reference cells. evals/phase2.json preserves those historical models, output caps, prompts, grammar and sampling settings. The alias amendment above applies to future evaluation without changing the frozen games. The pilot and both A seeds are complete; B41 remains behind the A23 gate.
+The original protocol was fixed before paid evaluation. The user approved Phase 2 on 2026-11-18: indices 0 through 27 in all ten primary cells and five games in each of four N=32 reference cells. evals/phase2.json preserves those historical models, output caps, prompts, grammar and sampling settings. The alias amendment above applies to future evaluation without changing the frozen games. The pilot and both A seeds are complete; B41 is the remaining authorized main seed.
 
 ## Game and observations
 

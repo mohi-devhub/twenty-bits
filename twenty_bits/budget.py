@@ -12,8 +12,10 @@ from contextlib import contextmanager
 from datetime import datetime, timezone
 from decimal import Decimal, InvalidOperation, ROUND_CEILING
 import fcntl
+import hashlib
 import json
 import os
+import sqlite3
 from pathlib import Path
 import tempfile
 from typing import TypeVar
@@ -57,6 +59,31 @@ class Ledger:
 
     def __init__(self, path: str | Path = "ledger.json") -> None:
         self.path = Path(path).resolve()
+        self._database = None
+        # Legacy exports remain readable. Live ledgers opt in through migration.
+        try:
+            header = json.loads(self.path.read_text())
+        except (OSError, ValueError):
+            return
+        storage = header.get("storage")
+        if storage is None and self.path.with_suffix(".sqlite3").exists():
+            raise BudgetError(
+                "An unfinished ledger migration exists. Stop and reconcile it."
+            )
+        if storage is not None:
+            if storage.get("engine") != "sqlite-v1":
+                raise BudgetError("Unsupported live ledger storage.")
+            database = self.path.parent / storage["database"]
+            if (
+                database.parent != self.path.parent
+                or database.name != storage["database"]
+            ):
+                raise BudgetError(
+                    "Live ledger database must be beside its audit export."
+                )
+            from .ledger_store import SQLiteStore
+
+            self._database = SQLiteStore(database, self.path, BudgetError)
 
     @contextmanager
     def _locked(self) -> Iterator[None]:
@@ -68,8 +95,13 @@ class Ledger:
                 fcntl.flock(lock, fcntl.LOCK_UN)
 
     def _read(self) -> dict:
+        return self.read_snapshot(self.path)
+
+    @staticmethod
+    def read_snapshot(path: str | Path) -> dict:
+        """Read an audit export offline; never use it to admit live requests."""
         try:
-            data = json.loads(self.path.read_text())
+            data = json.loads(Path(path).read_text())
             if data["schema_version"] != 1:
                 raise BudgetError("Unsupported ledger schema.")
             if data["cap_usd"] != str(CAP) or data["reservation_multiplier"] != "1.5":
@@ -154,6 +186,25 @@ class Ledger:
         return spent, held
 
     @staticmethod
+    def snapshot_status(path: str | Path) -> dict:
+        """Offline totals from a completed export, not a live admission check."""
+        data = Ledger.read_snapshot(path)
+        spent, held = Ledger._totals(data)
+        breached = any(
+            e["state"] == "settled"
+            and money(e["actual_usd"]) > money(e["max_cost_usd"])
+            for e in data["entries"]
+        )
+        return {
+            "cap_usd": str(CAP),
+            "spent_usd": str(money(spent)),
+            "held_usd": str(money(held)),
+            "available_usd": str(CAP - spent - held),
+            "blocked": bool(data["blocks"] or breached or spent + held > CAP),
+            "entries": data["entries"],
+        }
+
+    @staticmethod
     def _check_admission(data: dict, extra: Decimal) -> None:
         spent, held = Ledger._totals(data)
         breached = any(
@@ -170,7 +221,105 @@ class Ledger:
                 f"Refused: ${spent} spent + ${held} held + ${extra} new exceeds $50."
             )
 
+    def entries(
+        self, *, operation=None, operation_prefix=None, states=None
+    ) -> list[dict]:
+        """Read only matching reservations; hot callers must not load the history."""
+        with self._locked():
+            if self._database:
+                with self._database.transaction() as (connection, _):
+                    return self._database.entries(
+                        connection,
+                        operation=operation,
+                        operation_prefix=operation_prefix,
+                        states=states,
+                    )
+            return [
+                entry
+                for entry in self._read()["entries"]
+                if (operation is None or entry["operation"] == operation)
+                and (
+                    not operation_prefix
+                    or entry["operation"].startswith(operation_prefix)
+                )
+                and (states is None or entry["state"] in states)
+            ]
+
+    def get(self, entry_id: str) -> dict:
+        with self._locked():
+            if self._database:
+                with self._database.transaction() as (connection, _):
+                    row = connection.execute(
+                        "SELECT data FROM entries WHERE id=?", (entry_id,)
+                    ).fetchone()
+                    if row is None:
+                        raise BudgetError("Unknown reservation ID.")
+                    return json.loads(row[0])
+            entry = next(
+                (e for e in self._read()["entries"] if e["id"] == entry_id), None
+            )
+            if entry is None:
+                raise BudgetError("Unknown reservation ID.")
+            return entry
+
+    def summary(self, *, operation_prefix=None) -> dict:
+        """Totals without entry bodies; filters preserve run-prefix accounting."""
+        with self._locked():
+            if self._database:
+                with self._database.transaction() as (connection, meta):
+                    spent, held = self._database.summary(connection, operation_prefix)
+                    total_spent, total_held, breached = self._database.totals(
+                        connection
+                    )
+                    return {
+                        "cap_usd": str(CAP),
+                        "spent_usd": str(money(spent)),
+                        "held_usd": str(money(held)),
+                        "available_usd": str(CAP - spent - held),
+                        "blocked": bool(
+                            meta["blocks"] or breached or total_spent + total_held > CAP
+                        ),
+                    }
+            data = self._read()
+            entries = data["entries"]
+            if operation_prefix:
+                data = {
+                    **data,
+                    "entries": [
+                        e
+                        for e in entries
+                        if e["operation"].startswith(operation_prefix)
+                    ],
+                }
+            spent, held = self._totals(data)
+            all_spent, all_held = self._totals({"entries": entries})
+            breached = any(
+                e["state"] == "settled"
+                and money(e["actual_usd"]) > money(e["max_cost_usd"])
+                for e in entries
+            )
+            return {
+                "cap_usd": str(CAP),
+                "spent_usd": str(money(spent)),
+                "held_usd": str(money(held)),
+                "available_usd": str(CAP - spent - held),
+                "blocked": bool(
+                    data["blocks"] or breached or all_spent + all_held > CAP
+                ),
+            }
+
     def status(self) -> dict:
+        if self._database:
+            with self._locked(), self._database.transaction() as (connection, meta):
+                spent, held, breached = self._database.totals(connection)
+                return {
+                    "cap_usd": str(CAP),
+                    "spent_usd": str(money(spent)),
+                    "held_usd": str(money(held)),
+                    "available_usd": str(CAP - spent - held),
+                    "blocked": bool(meta["blocks"] or breached or spent + held > CAP),
+                    "entries": self._database.entries(connection),
+                }
         with self._locked():
             data = self._read()
             spent, held = self._totals(data)
@@ -199,7 +348,11 @@ class Ledger:
             raise BudgetError("The maximum cost cannot be below the estimate.")
         required = max(money(estimate * MULTIPLIER), maximum)
         with self._locked():
-            self._check_admission(self._read(), required)
+            if self._database:
+                with self._database.transaction() as (connection, meta):
+                    self._check_database_admission(connection, meta, required)
+            else:
+                self._check_admission(self._read(), required)
         return str(required)
 
     def reserve(
@@ -213,32 +366,134 @@ class Ledger:
             raise BudgetError("The maximum cost cannot be below the estimate.")
         reserved = max(money(estimate * MULTIPLIER), maximum)
         with self._locked():
-            data = self._read()
-            self._check_admission(data, reserved)
             entry_id = str(uuid.uuid4())
-            data["entries"].append(
-                {
-                    "id": entry_id,
-                    "phase": phase,
-                    "operation": operation,
-                    "estimate_usd": str(estimate),
-                    "max_cost_usd": str(maximum),
-                    "reserved_usd": str(reserved),
-                    "state": "reserved",
-                    "request_id": None,
-                    "actual_usd": None,
-                    "evidence": None,
-                    "created_at": now(),
-                    "updated_at": now(),
-                }
-            )
-            self._write(data)
+            entry = {
+                "id": entry_id,
+                "phase": phase,
+                "operation": operation,
+                "estimate_usd": str(estimate),
+                "max_cost_usd": str(maximum),
+                "reserved_usd": str(reserved),
+                "state": "reserved",
+                "request_id": None,
+                "actual_usd": None,
+                "evidence": None,
+                "created_at": now(),
+                "updated_at": now(),
+            }
+            if self._database:
+                with self._database.transaction() as (connection, meta):
+                    self._check_database_admission(connection, meta, reserved)
+                    self._database.put(connection, entry, insert=True)
+            else:
+                data = self._read()
+                self._check_admission(data, reserved)
+                data["entries"].append(entry)
+                self._write(data)
         return entry_id
+
+    def migrate(self) -> bool:
+        """Explicit, offline switch to SQLite; original entries and approvals stay intact."""
+        from .ledger_store import SCHEMA, SQLiteStore
+
+        with self._locked():
+            if self._database:
+                with self._database.transaction():
+                    return False
+            data = self._read()
+            before = self._totals(data)
+            destination = self.path.with_suffix(".sqlite3")
+            if destination.exists():
+                raise BudgetError(
+                    "A database already exists; do not overwrite billing history."
+                )
+            data["storage"] = {
+                "engine": "sqlite-v1",
+                "database": destination.name,
+                "source_json_sha256": hashlib.sha256(
+                    self.path.read_bytes()
+                ).hexdigest(),
+                "note": "Live state is transactional SQLite; this JSON is an explicit audit export.",
+            }
+            encoded = (json.dumps(data, indent=2, allow_nan=False) + "\n").encode()
+            handle = tempfile.NamedTemporaryFile(
+                dir=self.path.parent, suffix=".sqlite3.tmp", delete=False
+            )
+            temporary = Path(handle.name)
+            handle.close()
+            try:
+                with sqlite3.connect(temporary) as connection:
+                    connection.executescript(SCHEMA)
+                    meta = {k: v for k, v in data.items() if k != "entries"}
+                    connection.execute(
+                        "INSERT INTO metadata VALUES(1,?)", (json.dumps(meta),)
+                    )
+                    connection.execute(
+                        "INSERT INTO totals VALUES(1,0,0,0,?)",
+                        (hashlib.sha256(encoded).hexdigest(),),
+                    )
+                    for entry in data["entries"]:
+                        SQLiteStore.put(connection, entry, insert=True)
+                    assert SQLiteStore.totals(connection)[:2] == before
+                    assert (
+                        connection.execute("PRAGMA integrity_check").fetchone()[0]
+                        == "ok"
+                    )
+                connection.close()
+                with temporary.open("rb") as source:
+                    os.fsync(source.fileno())
+                os.replace(temporary, destination)
+                # The same file lock excludes every old and new writer during the switch.
+                # A crash between these files fails closed through the orphan-database check.
+                self._write(data)
+                self._database = SQLiteStore(destination, self.path, BudgetError)
+            finally:
+                temporary.unlink(missing_ok=True)
+            return True
+
+    def export_snapshot(self) -> dict:
+        """Compact the audit export offline, never on the sampling request path."""
+        if not self._database:
+            return self._read()
+        with self._locked(), self._database.transaction() as (connection, meta):
+            data = {**meta, "entries": self._database.entries(connection)}
+            self._write(data)
+            digest = hashlib.sha256(self.path.read_bytes()).hexdigest()
+            connection.execute(
+                "UPDATE totals SET snapshot_sha256=? WHERE id=1", (digest,)
+            )
+            self._database.snapshot_stat = None
+            return data
+
+    def _check_database_admission(self, connection, meta, extra):
+        spent, held, breached = self._database.totals(connection)
+        if meta["blocks"] or breached:
+            raise BudgetError(
+                "Ledger is blocked. Reconcile the cost discrepancy before any new work."
+            )
+        if spent + held + extra > CAP:
+            raise BudgetError(
+                f"Refused: ${spent} spent + ${held} held + ${extra} new exceeds $50."
+            )
 
     def _update(
         self, entry_id: str, edit: Callable[[dict], None], *, admit: bool = False
     ) -> None:
         with self._locked():
+            if self._database:
+                with self._database.transaction() as (connection, meta):
+                    if admit:
+                        self._check_database_admission(connection, meta, Decimal(0))
+                    row = connection.execute(
+                        "SELECT data FROM entries WHERE id=?", (entry_id,)
+                    ).fetchone()
+                    if row is None:
+                        raise BudgetError("Unknown reservation ID.")
+                    entry = json.loads(row[0])
+                    edit(entry)
+                    entry["updated_at"] = now()
+                    self._database.put(connection, entry)
+                return
             data = self._read()
             if admit:
                 self._check_admission(data, Decimal(0))

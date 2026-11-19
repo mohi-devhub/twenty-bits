@@ -1,0 +1,15 @@
+# Live budget storage
+
+`Ledger.call` still reserves at least the larger of estimated cost × 1.5 and the declared maximum, then persists dispatch before calling the provider. Unknown costs remain held. A 408 retains the same request ID and hold. Settlements need evidence, overshoots block further calls, and spent plus held cannot admit a request above $50.
+
+Live state is in `ledger.sqlite3`, using durable transactions, indexed reservations, integer microdollar totals and an append-only `events` table. Guarded sampling, training and recovery use filtered queries or reservation IDs, so collecting a future does not parse the full history. Every SDK operation still passes through `Ledger.call`.
+
+`ledger.json` is the explicit audit export. It retains every original record and approval, plus a storage pointer. It is stale while a run is active. `python3 scripts/status_B41.py` reads live totals. Offline analysis uses `Ledger.read_snapshot` or `Ledger.snapshot_status` on completed exports. Those methods cannot dispatch work.
+
+The live database is ignored by Git. Do not delete it, overwrite it, or reconstruct it from a stale export to resume spending. A missing database, corrupt storage or externally changed audit export fails closed. Requests and their IDs also retain the existing fsynced journals under ignored `runs/`. Export with `Ledger.export_snapshot()` only after HTTP work is drained. The stage wrapper does this at completion. The append-only change history stays in the live database; the JSON export records the current state of each reservation.
+
+[Migration proof](research/ledger_migration.json) shows all 45,033 pre-B41 entries and approvals unchanged: usage $16.125774, held $1.640132 and available $32.234094. [Semantic checks](research/ledger_semantics_validation.json) record 216 passing tests, including the original budget contracts on SQLite, migration/rollback failures and mocked SDK sampling/training/recovery. The financial transition methods, polling and training objective remain unchanged.
+
+[Performance evidence](research/ledger_performance_after_migration.json) uses five alternating trials on disposable copies. Median local guarded-operation time is 4.534 seconds for JSON and 6.695 milliseconds for SQLite. Ranges are 4.464–4.819 seconds and 6.159–7.607 milliseconds. The same host has ten logical CPUs and roughly 2.6 load average. A 16-player simulation completes 160 real local guarded operations without errors; maximum heartbeat delay is 87 ms. A separate profile attributes the remaining cost to small transactions and filesystem work. This is a local bookkeeping measurement, not an LLM or network throughput result. Execution returns to 16 games without changing prompts, seeds, model settings, caps, rewards or the 45-second HTTP timeout.
+
+The [budget-visibility audit](research/BUDGET_VISIBILITY.md) is separate from spending safeguards: the model sees its fixed maximum in history, but no dynamic remaining count. That prompt is unchanged for B41.

@@ -146,20 +146,8 @@ class GuardedTinker:
         return f"{path}#{entry_id}"
 
     def run_status(self) -> dict:
-        entries = [
-            e
-            for e in self.ledger.status()["entries"]
-            if e["operation"].startswith(self.operation_prefix)
-        ]
-        spent = sum(
-            (money(e["actual_usd"]) for e in entries if e["state"] == "settled"),
-            Decimal(0),
-        )
-        held = sum(
-            (money(e["reserved_usd"]) for e in entries if e["state"] in ACTIVE_STATES),
-            Decimal(0),
-        )
-        return {"spent_usd": str(spent), "held_usd": str(held)}
+        status = self.ledger.summary(operation_prefix=self.operation_prefix)
+        return {key: status[key] for key in ("spent_usd", "held_usd")}
 
     def call(self, send, *, operation, estimate_usd, max_cost_usd):
         # The runner lock permits one coordinator. No await separates this
@@ -489,9 +477,10 @@ class GuardedTinker:
             def submit():
                 matching = [
                     e["id"]
-                    for e in self.ledger.status()["entries"]
-                    if e["operation"] == self.operation_prefix + operation
-                    and e["state"] == "dispatching"
+                    for e in self.ledger.entries(
+                        operation=self.operation_prefix + operation,
+                        states={"dispatching"},
+                    )
                 ]
                 if len(matching) != 1:
                     raise BudgetError(
@@ -575,7 +564,7 @@ class GuardedTinker:
         entry_id = journal["entry_id"]
         model = journal["model"]
         request_id = journal.get("request_id") or journal["receipt"]["request_id"]
-        entry = next(e for e in self.ledger.status()["entries"] if e["id"] == entry_id)
+        entry = self.ledger.get(entry_id)
         if entry["state"] != "settled":
             self.ledger.attach_request_id(entry_id, request_id)
         if "response" not in journal:

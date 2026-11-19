@@ -1,0 +1,1120 @@
+{
+  "service_calls": 0,
+  "protocol_changed": false,
+  "native_prompt_parity_cases": 110,
+  "post_budget_ASK_actions": 110,
+  "fixed_maximum_stated_in_history": 110,
+  "fixed_maximum_absent_from_history": 0,
+  "per_turn_remaining_count_stated": 0,
+  "per_turn_remaining_count_not_stated": 110,
+  "explicit_exhaustion_notice_before_action": 0,
+  "by_N": {
+    "16": 18,
+    "32": 44,
+    "64": 24,
+    "128": 24
+  },
+  "interpretation": "The initial user settings state the fixed maximum and final-guess rule. Each later user message contains YES/NO/INVALID plus candidate feedback, with no used/remaining counter or exhaustion notice. All 110 attempts had the maximum in history; none had an explicit per-turn remaining budget. The model could infer usage from played actions in history. No prompt was changed.",
+  "cases": [
+    {
+      "game_id": "train-v1/seed23/animals/16/1000007/p0",
+      "update": 7,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_male_hummingbird\",\"juvenile_male_raccoon\",\"juvenile_male_prairie_dog\",\"adult_female_bald_eagle\",\"juvenile_male_mountain_goat\",\"adult_female_horse\",\"juvenile_female_howler_monkey\",\"adult_female_polar_bear\",\"adult_female_african_wild_dog\",\"juvenile_female_aardvark\",\"adult_female_jaguar\",\"juvenile_female_fruit_bat\",\"adult_male_llama\"]",
+      "prompt_tokens_sha256": "70428364fd067496250c7edaf617790acbc2e5f6c8d1ece7761371c69a246ee0"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000007/p0",
+      "update": 7,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"adult_female_bald_eagle\",\"adult_female_horse\",\"adult_female_polar_bear\",\"adult_female_african_wild_dog\",\"adult_female_jaguar\",\"adult_female_parrot\",\"adult_female_chameleon\",\"adult_male_llama\"]",
+      "prompt_tokens_sha256": "348f1e8db1b413b6f3fa4151f594356d36b04e3ae9c07579eff558ad08f40f2f"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000007/p0",
+      "update": 7,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"juvenile_male_hummingbird\",\"juvenile_male_raccoon\",\"juvenile_male_prairie_dog\",\"juvenile_female_flamingo\",\"adult_female_bald_eagle\",\"juvenile_male_mountain_goat\",\"adult_female_horse\",\"juvenile_female_howler_monkey\",\"adult_female_polar_bear\",\"adult_female_african_wild_dog\",\"juvenile_female_aardvark\",\"adult_female_jaguar\",\"adult_female_parrot\",\"juvenile_female_fruit_bat\",\"adult_female_chameleon\",\"adult_male_llama\"]",
+      "prompt_tokens_sha256": "a6feb914c0b17532260347080ead89c5f7e016d5a8ebd176e5c6db05c52695c4"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000008/p0",
+      "update": 8,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_male_bactrian_camel\",\"juvenile_male_koala\",\"adult_male_jaguar\",\"adult_male_wild_boar\",\"adult_male_llama\",\"juvenile_male_red_panda\",\"juvenile_male_hummingbird\",\"juvenile_male_pangolin\",\"adult_male_crested_porcupine\"]",
+      "prompt_tokens_sha256": "b8230fa44d5d79b7f0dd1a8374c88dfd2a49a145da01e3ec57e74c5299febbf6"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000008/p0",
+      "update": 8,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_male_bactrian_camel\",\"juvenile_male_koala\",\"adult_male_jaguar\",\"adult_male_wild_boar\",\"adult_male_llama\",\"juvenile_male_red_panda\",\"juvenile_male_hummingbird\",\"juvenile_male_pangolin\",\"adult_male_crested_porcupine\"]",
+      "prompt_tokens_sha256": "b8230fa44d5d79b7f0dd1a8374c88dfd2a49a145da01e3ec57e74c5299febbf6"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000008/p0",
+      "update": 8,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"adult_female_chimpanzee\",\"adult_female_red_kangaroo\",\"juvenile_male_bactrian_camel\",\"juvenile_male_koala\",\"juvenile_female_giant_anteater\",\"adult_male_jaguar\",\"juvenile_female_giant_panda\",\"adult_male_wild_boar\",\"adult_male_llama\",\"juvenile_male_red_panda\"]",
+      "prompt_tokens_sha256": "47b2dd90d5023846525ffc05f42a34f0f548bff428d193932edaadb0a16552d0"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000008/p0",
+      "update": 8,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_chimpanzee\",\"adult_female_hummingbird\",\"adult_female_red_kangaroo\",\"juvenile_male_bactrian_camel\",\"juvenile_male_koala\",\"juvenile_female_giant_anteater\",\"adult_male_jaguar\",\"juvenile_female_giant_panda\",\"adult_male_wild_boar\",\"adult_male_llama\",\"juvenile_male_red_panda\",\"juvenile_male_hummingbird\",\"juvenile_male_pangolin\",\"adult_male_crested_porcupine\"]",
+      "prompt_tokens_sha256": "214e8503abad04b8fe049ed5a26333db0e12a107cf009f1f4da258aba46b1c50"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000009/p0",
+      "update": 9,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_male_woodpecker\",\"adult_male_swan\"]",
+      "prompt_tokens_sha256": "f28a7bf74bea9af3f50b3cafa03b9a91fdaa749d993d7243c03e622ac8d7a3f1"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000009/p0",
+      "update": 9,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_male_woodpecker\",\"adult_male_swan\",\"juvenile_male_bald_eagle\"]",
+      "prompt_tokens_sha256": "4944de0f560ba8f7d944351ab034c4015ac948aa7a8125e6e80198667ed4a1f2"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000010/p0",
+      "update": 10,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_prairie_dog\",\"adult_female_african_wild_dog\",\"juvenile_female_red_fox\",\"adult_male_harbor_seal\",\"adult_female_ostrich\",\"adult_female_striped_skunk\",\"juvenile_female_squirrel\",\"adult_male_ostrich\",\"adult_female_pika\",\"juvenile_female_king_cobra\",\"juvenile_female_leopard\",\"adult_female_giant_panda\"]",
+      "prompt_tokens_sha256": "88d067903f238057814467c66f846af142f17c02fe0d6e76e573a6a55944ea99"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000010/p0",
+      "update": 10,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_prairie_dog\",\"adult_female_african_wild_dog\",\"juvenile_female_red_fox\",\"adult_male_harbor_seal\",\"adult_female_ostrich\",\"adult_female_striped_skunk\",\"juvenile_female_squirrel\",\"adult_male_ostrich\",\"adult_female_pika\",\"juvenile_female_king_cobra\",\"juvenile_female_leopard\",\"adult_female_giant_panda\"]",
+      "prompt_tokens_sha256": "88d067903f238057814467c66f846af142f17c02fe0d6e76e573a6a55944ea99"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000010/p0",
+      "update": 10,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_prairie_dog\",\"adult_female_african_wild_dog\",\"juvenile_female_red_fox\",\"adult_male_harbor_seal\",\"adult_female_ostrich\",\"adult_female_striped_skunk\",\"juvenile_female_squirrel\",\"adult_male_ostrich\",\"adult_female_pika\",\"juvenile_female_king_cobra\",\"juvenile_female_leopard\",\"adult_female_giant_panda\"]",
+      "prompt_tokens_sha256": "88d067903f238057814467c66f846af142f17c02fe0d6e76e573a6a55944ea99"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000010/p0",
+      "update": 10,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_prairie_dog\",\"adult_female_african_wild_dog\",\"juvenile_male_wild_boar\",\"juvenile_female_red_fox\",\"adult_male_harbor_seal\",\"adult_female_ostrich\",\"adult_female_striped_skunk\",\"juvenile_female_squirrel\",\"adult_male_ostrich\",\"adult_female_pika\",\"juvenile_female_king_cobra\",\"juvenile_female_leopard\",\"juvenile_male_vampire_bat\",\"adult_female_giant_panda\",\"juvenile_male_mountain_goat\"]",
+      "prompt_tokens_sha256": "662888da5505fc4a8b6802457243ac52fa3f60f442580e4e1d8edb64fa9a0556"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000010/p0",
+      "update": 10,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_prairie_dog\",\"adult_female_african_wild_dog\",\"juvenile_female_red_fox\",\"adult_male_harbor_seal\",\"adult_female_ostrich\",\"adult_female_striped_skunk\",\"juvenile_female_squirrel\",\"adult_male_ostrich\",\"adult_female_pika\",\"juvenile_female_king_cobra\",\"juvenile_female_leopard\",\"adult_female_giant_panda\"]",
+      "prompt_tokens_sha256": "88d067903f238057814467c66f846af142f17c02fe0d6e76e573a6a55944ea99"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000013/p0",
+      "update": 13,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_male_red_panda\",\"juvenile_male_bottlenose_dolphin\",\"juvenile_female_giraffe\",\"juvenile_female_leopard\",\"juvenile_male_baboon\",\"juvenile_female_blue_whale\",\"adult_male_blue_whale\",\"adult_male_meerkat\",\"adult_male_crested_porcupine\",\"juvenile_male_zebra\",\"adult_male_polar_bear\",\"juvenile_female_gorilla\",\"juvenile_female_hippopotamus\",\"juvenile_male_moose\",\"adult_female_honey_badger\"]",
+      "prompt_tokens_sha256": "03b4284713b9e6391907f18ed708343f52fe74d3370df5af938fad72f45a0bd7"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000014/p0",
+      "update": 14,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_peacock\",\"juvenile_female_pelican\"]",
+      "prompt_tokens_sha256": "2b60ca39febd0ad76b16b40b81a60909cfc12ba8f9feb019fdea15b34ff47977"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000014/p0",
+      "update": 14,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_peacock\",\"juvenile_female_pelican\"]",
+      "prompt_tokens_sha256": "f881d9c7364db841a9cb6c713873d782bb814e29c2807d33760f518e0e766da0"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/16/1000015/p0",
+      "update": 15,
+      "turn": 8,
+      "maximum_questions": 8,
+      "questions_used": 8,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 8. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"adult_female_sea_lion\",\"adult_male_sea_lion\",\"juvenile_female_sea_lion\"]",
+      "prompt_tokens_sha256": "39a1a9e30b37d376698aee27357df24018a2d9a27d42e6b84350b244cbdb4668"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000016/p0",
+      "update": 16,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"juvenile_female_meerkat\",\"adult_female_honey_badger\",\"adult_male_lion\",\"adult_male_cougar\",\"adult_female_tasmanian_devil\"]",
+      "prompt_tokens_sha256": "fe4e8fd3667196ccefeed97b680f156d7c151e7a9d3f8231b8d960c00718f02e"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000016/p0",
+      "update": 16,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"juvenile_female_meerkat\",\"adult_female_brown_throated_sloth\",\"adult_female_squirrel\",\"adult_female_honey_badger\",\"juvenile_female_gibbon\",\"juvenile_male_pika\",\"adult_female_gorilla\",\"adult_male_common_wombat\",\"adult_male_lion\",\"adult_female_horse\",\"juvenile_female_prairie_dog\",\"juvenile_female_horse\",\"adult_male_gibbon\",\"adult_male_cougar\",\"adult_female_tasmanian_devil\",\"adult_female_red_panda\",\"juvenile_female_wild_boar\"]",
+      "prompt_tokens_sha256": "51a8ce17280d095e9ffad754f20fe7e7e319397cf411e75388af66618c67a4ae"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000016/p0",
+      "update": 16,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_female_meerkat\",\"adult_female_brown_throated_sloth\",\"adult_female_squirrel\",\"adult_female_green_sea_turtle\",\"juvenile_female_sea_lion\",\"adult_female_honey_badger\",\"adult_female_hippopotamus\",\"juvenile_female_gibbon\",\"juvenile_male_pika\",\"adult_female_gorilla\",\"adult_male_common_wombat\",\"adult_male_parrot\",\"adult_male_lion\",\"juvenile_female_african_elephant\",\"juvenile_female_sea_otter\",\"adult_female_horse\",\"adult_female_emperor_penguin\",\"adult_female_silky_anteater\",\"juvenile_female_prairie_dog\",\"juvenile_female_horse\",\"adult_male_gibbon\",\"adult_male_jaguar\",\"adult_male_cougar\",\"juvenile_male_hedgehog\",\"adult_female_tasmanian_devil\",\"adult_female_red_panda\",\"juvenile_female_blue_whale\",\"juvenile_female_wild_boar\",\"juvenile_male_bald_eagle\",\"juvenile_male_emperor_penguin\",\"juvenile_female_hummingbird\",\"juvenile_female_king_cobra\"]",
+      "prompt_tokens_sha256": "635533e9fa3cad6cbccccef5dab6b7b20fa527ab59ecd79cf1d9bfeaf80897b7"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000016/p0",
+      "update": 16,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_female_meerkat\",\"adult_female_honey_badger\",\"juvenile_female_sea_otter\",\"adult_female_silky_anteater\",\"adult_female_tasmanian_devil\"]",
+      "prompt_tokens_sha256": "4dec11fe9ca1493b5221ac05d97cc7b3738c80ef1ea164c9a497b1911ad9a470"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000016/p0",
+      "update": 16,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_female_meerkat\",\"adult_female_brown_throated_sloth\",\"adult_female_squirrel\",\"adult_female_green_sea_turtle\",\"juvenile_female_sea_lion\",\"adult_female_honey_badger\",\"adult_female_hippopotamus\",\"juvenile_female_gibbon\",\"juvenile_male_pika\",\"adult_female_gorilla\",\"adult_male_common_wombat\",\"adult_male_parrot\",\"adult_male_lion\",\"juvenile_female_african_elephant\",\"juvenile_female_sea_otter\",\"adult_female_horse\",\"adult_female_emperor_penguin\",\"adult_female_silky_anteater\",\"juvenile_female_prairie_dog\",\"juvenile_female_horse\",\"adult_male_gibbon\",\"adult_male_jaguar\",\"adult_male_cougar\",\"juvenile_male_hedgehog\",\"adult_female_tasmanian_devil\",\"adult_female_red_panda\",\"juvenile_female_blue_whale\",\"juvenile_female_wild_boar\",\"juvenile_male_bald_eagle\",\"juvenile_male_emperor_penguin\",\"juvenile_female_king_cobra\"]",
+      "prompt_tokens_sha256": "01dc6a0e64bae398f32732f2b816d63a7650d357c28bb824fc05ddfb9e15206d"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000016/p0",
+      "update": 16,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"juvenile_female_meerkat\",\"adult_female_brown_throated_sloth\",\"adult_female_squirrel\",\"adult_female_honey_badger\",\"juvenile_male_pika\",\"adult_female_gorilla\",\"adult_male_common_wombat\",\"adult_male_lion\",\"juvenile_female_prairie_dog\",\"adult_male_cougar\",\"adult_female_tasmanian_devil\",\"adult_female_red_panda\"]",
+      "prompt_tokens_sha256": "572ffab49d046ee1f666eaa21255d98c8a33c3b198e8e16f28cd1fa60ce5e397"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000016/p0",
+      "update": 16,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_female_meerkat\",\"adult_female_honey_badger\",\"adult_male_lion\",\"adult_male_jaguar\",\"adult_male_cougar\",\"juvenile_male_hedgehog\",\"adult_female_tasmanian_devil\",\"juvenile_female_wild_boar\"]",
+      "prompt_tokens_sha256": "d340b0b9e38971de69b42dabb76f16f7d9a042eeea7d952557514181bc17c3ab"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000017/p0",
+      "update": 17,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_male_hedgehog\",\"juvenile_female_pelican\",\"juvenile_male_hummingbird\",\"adult_male_crested_porcupine\",\"juvenile_male_baboon\",\"juvenile_male_gray_wolf\",\"juvenile_male_lion\",\"adult_female_flamingo\",\"juvenile_male_pangolin\",\"juvenile_female_woodpecker\",\"adult_male_fennec_fox\"]",
+      "prompt_tokens_sha256": "36e60a3f0af339d5a46e93996e45051bbcbb77fc69b78040d53969c4700fb145"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000017/p0",
+      "update": 17,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_male_hedgehog\",\"juvenile_female_pelican\",\"juvenile_female_meerkat\",\"juvenile_male_hummingbird\",\"adult_male_crested_porcupine\",\"juvenile_male_baboon\",\"juvenile_male_gray_wolf\",\"adult_female_tasmanian_devil\",\"juvenile_female_polar_bear\",\"juvenile_male_lion\",\"adult_female_flamingo\",\"juvenile_female_aardvark\",\"adult_female_honey_badger\",\"adult_female_raccoon\",\"juvenile_male_pangolin\",\"adult_female_gray_wolf\",\"juvenile_female_woodpecker\",\"adult_male_fennec_fox\"]",
+      "prompt_tokens_sha256": "a21dab4f601f0750147a1a4d1b10ea2dad60072a3a4fd0131cabb4d06a6ec660"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000017/p0",
+      "update": 17,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_male_gray_wolf\",\"juvenile_male_lion\"]",
+      "prompt_tokens_sha256": "7dc298cbaf077a228788009ed3fe1dbd73450e7e61872080bb60fafd0ed50485"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000017/p0",
+      "update": 17,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_male_gray_wolf\",\"juvenile_female_polar_bear\",\"juvenile_male_lion\",\"adult_female_capybara\",\"adult_male_musk_ox\",\"adult_female_gray_wolf\",\"juvenile_female_giant_panda\"]",
+      "prompt_tokens_sha256": "efd4e78cc5b6974c129840149e3ce2d4e2efa9f48c0d1d1a7d680c0bcd00682a"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000018/p0",
+      "update": 18,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_flamingo\",\"adult_male_cougar\",\"adult_female_harbor_seal\",\"adult_male_spider_monkey\",\"adult_male_harbor_seal\",\"juvenile_female_cougar\",\"juvenile_male_humpback_whale\",\"juvenile_male_sea_lion\",\"adult_female_bottlenose_dolphin\",\"juvenile_male_bottlenose_dolphin\",\"juvenile_female_barn_owl\",\"adult_female_cougar\",\"juvenile_female_crocodile\",\"juvenile_male_african_elephant\",\"juvenile_male_tiger\"]",
+      "prompt_tokens_sha256": "9e30c45afe76d6afd2717f36eafb632f3a8b6e0eb8e1b9b11748e57f3cd5c8fc"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000018/p0",
+      "update": 18,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_flamingo\",\"adult_male_cougar\",\"adult_female_harbor_seal\",\"adult_male_spider_monkey\",\"adult_male_harbor_seal\",\"juvenile_female_cougar\",\"juvenile_male_humpback_whale\",\"juvenile_male_sea_lion\",\"adult_female_bottlenose_dolphin\",\"adult_female_parrot\",\"juvenile_male_vampire_bat\",\"juvenile_male_bottlenose_dolphin\",\"juvenile_female_barn_owl\",\"adult_female_cougar\",\"juvenile_female_crocodile\",\"juvenile_male_african_elephant\",\"adult_male_vampire_bat\",\"juvenile_male_tiger\"]",
+      "prompt_tokens_sha256": "aa327fffcb9dc939319a62adecf400f35ff21a64713065566e815f217da99011"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000018/p0",
+      "update": 18,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_flamingo\",\"adult_male_cougar\",\"adult_female_harbor_seal\",\"adult_male_spider_monkey\",\"adult_male_harbor_seal\",\"adult_male_brown_bear\",\"juvenile_female_cougar\",\"juvenile_male_humpback_whale\",\"juvenile_male_sea_lion\",\"adult_female_bottlenose_dolphin\",\"juvenile_male_vampire_bat\",\"juvenile_male_bottlenose_dolphin\",\"juvenile_female_barn_owl\",\"adult_female_cougar\",\"juvenile_female_crocodile\",\"juvenile_male_african_elephant\",\"adult_male_vampire_bat\",\"juvenile_male_tiger\"]",
+      "prompt_tokens_sha256": "c44b1f65301df03ab6908a54fc80e9612998dfbfb39df832adc9f0c911a41082"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000018/p0",
+      "update": 18,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_flamingo\",\"adult_female_harbor_seal\",\"adult_male_harbor_seal\",\"juvenile_male_humpback_whale\",\"juvenile_male_sea_lion\",\"adult_female_bottlenose_dolphin\",\"adult_female_parrot\",\"juvenile_male_bottlenose_dolphin\",\"juvenile_female_barn_owl\",\"juvenile_female_crocodile\",\"juvenile_male_african_elephant\"]",
+      "prompt_tokens_sha256": "2c5879e1758714761ab0670ffdbf55466964257dbd99ada928a0b77472e5977d"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000018/p0",
+      "update": 18,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_flamingo\",\"adult_female_harbor_seal\",\"adult_male_harbor_seal\",\"adult_male_brown_bear\",\"juvenile_male_humpback_whale\",\"juvenile_male_sea_lion\",\"adult_female_bottlenose_dolphin\",\"adult_female_parrot\",\"juvenile_male_bottlenose_dolphin\",\"juvenile_female_barn_owl\",\"juvenile_female_crocodile\",\"juvenile_male_african_elephant\"]",
+      "prompt_tokens_sha256": "ce0537ce1956e1b62585d2e7e41fbf4390fc1a0115cc2e6173e0ca72c29a3d07"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000018/p0",
+      "update": 18,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_flamingo\",\"adult_female_harbor_seal\",\"adult_male_harbor_seal\",\"juvenile_male_humpback_whale\",\"juvenile_male_sea_lion\",\"adult_female_bottlenose_dolphin\",\"adult_female_parrot\",\"juvenile_male_bottlenose_dolphin\",\"juvenile_female_barn_owl\",\"juvenile_female_crocodile\",\"juvenile_male_african_elephant\"]",
+      "prompt_tokens_sha256": "7606e4b3ba9f98bb08c41688c04cea95905448d828570ddeff5749c12b91beff"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000018/p0",
+      "update": 18,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_harbor_seal\",\"adult_male_harbor_seal\",\"adult_female_bottlenose_dolphin\",\"juvenile_male_bottlenose_dolphin\"]",
+      "prompt_tokens_sha256": "afb74791dbaf6de3577c95582b178d215d229a2de6541bb8c2449a70321a0303"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000018/p0",
+      "update": 18,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_flamingo\",\"adult_female_harbor_seal\",\"adult_male_harbor_seal\",\"juvenile_male_humpback_whale\",\"juvenile_male_sea_lion\",\"adult_female_bottlenose_dolphin\",\"adult_female_parrot\",\"juvenile_male_bottlenose_dolphin\",\"juvenile_female_barn_owl\",\"juvenile_female_crocodile\",\"juvenile_male_african_elephant\"]",
+      "prompt_tokens_sha256": "06cd81cc63e7c53526db9b944c107f6e8fba86d66745fca63bc778a4ad835d43"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000019/p0",
+      "update": 19,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"adult_female_polar_bear\",\"juvenile_male_llama\",\"adult_male_gorilla\",\"adult_male_lion\",\"juvenile_male_gray_wolf\",\"adult_female_capybara\",\"juvenile_female_lion\",\"juvenile_male_giant_anteater\"]",
+      "prompt_tokens_sha256": "9220f052a3f27c976d38fbb20703de7880b7c7a299a6f1bbcbdc84ff87ca2807"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000019/p0",
+      "update": 19,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_male_african_elephant\",\"juvenile_male_brown_throated_sloth\",\"juvenile_female_fruit_bat\",\"adult_female_pika\",\"adult_female_polar_bear\",\"juvenile_female_pika\",\"juvenile_male_harbor_seal\",\"juvenile_male_pangolin\",\"juvenile_male_hedgehog\",\"juvenile_female_sea_lion\",\"juvenile_male_llama\",\"juvenile_male_red_panda\",\"adult_male_gorilla\",\"juvenile_male_wild_boar\",\"juvenile_female_wild_boar\",\"adult_male_honey_badger\",\"juvenile_male_koala\",\"adult_male_lion\",\"juvenile_male_gray_wolf\",\"adult_female_capybara\",\"juvenile_female_lion\",\"juvenile_male_giant_anteater\",\"juvenile_male_brown_hare\",\"adult_male_african_wild_dog\",\"juvenile_male_pika\",\"juvenile_male_baboon\"]",
+      "prompt_tokens_sha256": "e7ae090348b5b9b6194ebf41a539368c4efd70848c979ecbb03d90a3c8b4cd6f"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000019/p0",
+      "update": 19,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_male_african_elephant\",\"juvenile_male_brown_throated_sloth\",\"juvenile_female_fruit_bat\",\"adult_female_pika\",\"adult_female_polar_bear\",\"juvenile_female_pika\",\"juvenile_male_harbor_seal\",\"juvenile_male_pangolin\",\"juvenile_male_hedgehog\",\"juvenile_female_sea_lion\",\"juvenile_male_llama\",\"juvenile_male_red_panda\",\"adult_male_gorilla\",\"juvenile_male_wild_boar\",\"juvenile_female_wild_boar\",\"adult_male_honey_badger\",\"juvenile_male_koala\",\"adult_male_lion\",\"juvenile_male_gray_wolf\",\"adult_female_capybara\",\"juvenile_female_lion\",\"juvenile_male_giant_anteater\",\"juvenile_male_brown_hare\",\"adult_male_african_wild_dog\",\"juvenile_male_pika\",\"juvenile_male_baboon\"]",
+      "prompt_tokens_sha256": "e7ae090348b5b9b6194ebf41a539368c4efd70848c979ecbb03d90a3c8b4cd6f"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000019/p0",
+      "update": 19,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_male_lion\",\"juvenile_female_lion\"]",
+      "prompt_tokens_sha256": "6cb321ca0db8f1a4c0c6362e2aa659b0e9b1d47417d44f8bf22916bff3d075f4"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000019/p0",
+      "update": 19,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"adult_female_polar_bear\",\"juvenile_male_llama\",\"adult_male_gorilla\",\"adult_male_lion\",\"juvenile_male_gray_wolf\",\"adult_female_capybara\",\"juvenile_female_lion\",\"juvenile_male_giant_anteater\"]",
+      "prompt_tokens_sha256": "c9961695b9cf9a63388dd0ee2d809a6ebc49d0737ad90a6e81fb175a76d16019"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000019/p0",
+      "update": 19,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_male_lion\",\"juvenile_female_lion\"]",
+      "prompt_tokens_sha256": "5841a5255bf2faefa031a7838a3420f387a2a5bad5b007ef4a2f2ba7d86406d4"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000019/p0",
+      "update": 19,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_male_african_elephant\",\"juvenile_male_brown_throated_sloth\",\"juvenile_female_fruit_bat\",\"adult_female_pika\",\"adult_female_polar_bear\",\"juvenile_female_pika\",\"juvenile_male_harbor_seal\",\"juvenile_male_pangolin\",\"juvenile_male_hedgehog\",\"juvenile_female_sea_lion\",\"juvenile_male_llama\",\"juvenile_male_red_panda\",\"adult_male_gorilla\",\"juvenile_male_wild_boar\",\"juvenile_female_wild_boar\",\"adult_male_honey_badger\",\"juvenile_male_koala\",\"adult_male_lion\",\"juvenile_male_gray_wolf\",\"adult_female_capybara\",\"juvenile_female_lion\",\"juvenile_male_giant_anteater\",\"juvenile_male_brown_hare\",\"adult_male_african_wild_dog\",\"juvenile_male_pika\",\"juvenile_male_baboon\"]",
+      "prompt_tokens_sha256": "e7ae090348b5b9b6194ebf41a539368c4efd70848c979ecbb03d90a3c8b4cd6f"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000019/p0",
+      "update": 19,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_male_african_elephant\",\"juvenile_male_brown_throated_sloth\",\"juvenile_female_fruit_bat\",\"adult_female_pika\",\"adult_female_polar_bear\",\"juvenile_female_pika\",\"juvenile_male_harbor_seal\",\"juvenile_male_pangolin\",\"juvenile_male_hedgehog\",\"juvenile_female_sea_lion\",\"juvenile_male_llama\",\"juvenile_male_red_panda\",\"adult_male_gorilla\",\"juvenile_male_wild_boar\",\"juvenile_female_wild_boar\",\"adult_male_honey_badger\",\"juvenile_male_koala\",\"adult_male_lion\",\"juvenile_male_gray_wolf\",\"adult_female_capybara\",\"juvenile_female_lion\",\"juvenile_male_giant_anteater\",\"juvenile_male_brown_hare\",\"adult_male_african_wild_dog\",\"juvenile_male_pika\",\"juvenile_male_baboon\"]",
+      "prompt_tokens_sha256": "e7ae090348b5b9b6194ebf41a539368c4efd70848c979ecbb03d90a3c8b4cd6f"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000020/p0",
+      "update": 20,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_male_honey_badger\",\"adult_male_crested_porcupine\",\"adult_female_silky_anteater\",\"adult_male_african_wild_dog\",\"adult_male_lion\",\"adult_female_virginia_opossum\",\"adult_female_raccoon\",\"adult_male_meerkat\"]",
+      "prompt_tokens_sha256": "dfc918fed9da0a39f77f940aa94b3eee48b0bf3ffcf7f8cfb3404daf0353a1e4"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000020/p0",
+      "update": 20,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_male_honey_badger\",\"adult_male_crested_porcupine\",\"adult_female_silky_anteater\",\"adult_male_african_wild_dog\",\"adult_male_lion\",\"adult_female_virginia_opossum\",\"adult_female_raccoon\",\"adult_male_meerkat\"]",
+      "prompt_tokens_sha256": "dfc918fed9da0a39f77f940aa94b3eee48b0bf3ffcf7f8cfb3404daf0353a1e4"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000020/p0",
+      "update": 20,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_male_honey_badger\",\"adult_male_crested_porcupine\",\"adult_male_african_wild_dog\",\"adult_female_virginia_opossum\",\"adult_female_raccoon\"]",
+      "prompt_tokens_sha256": "9acda41c6e4f4cabf0697d6113ff180fc608940760bba79b03da42be90bd88d0"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000021/p0",
+      "update": 21,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"juvenile_male_bactrian_camel\",\"juvenile_male_lion\",\"juvenile_male_african_elephant\",\"juvenile_male_meerkat\",\"juvenile_male_hedgehog\",\"juvenile_male_virginia_opossum\",\"juvenile_male_sun_bear\",\"juvenile_male_sea_lion\"]",
+      "prompt_tokens_sha256": "cdbaf11c9ae28aad6bf97a9ab208009e29f9dfd7cb122b2ae57805ca37fe03f7"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000021/p0",
+      "update": 21,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_male_african_elephant\",\"adult_male_crested_porcupine\",\"adult_male_short_beaked_echidna\",\"juvenile_male_hedgehog\"]",
+      "prompt_tokens_sha256": "ef9d8c6d95e9d9640c84242547d7df3f0d5c3c47cf5bb9bde6b8ff83a77b69c4"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000021/p0",
+      "update": 21,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_male_crested_porcupine\",\"adult_male_short_beaked_echidna\",\"juvenile_male_hedgehog\"]",
+      "prompt_tokens_sha256": "40e37d4580c97a5e06044936ef41dc2f96cda0f435f110b7e5630f7016756da4"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000021/p0",
+      "update": 21,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_male_crested_porcupine\",\"juvenile_male_hedgehog\",\"adult_female_crested_porcupine\"]",
+      "prompt_tokens_sha256": "7e12009b4fdfa593d2b6ea70d56836d88c852122d323f195e78435ecfd7d7fd6"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000021/p0",
+      "update": 21,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_male_african_elephant\",\"adult_male_crested_porcupine\",\"adult_male_short_beaked_echidna\",\"juvenile_male_hedgehog\"]",
+      "prompt_tokens_sha256": "a353880741ac948bbda2989b9fb644f8156deded58854d6cbb71dbc0603d5905"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000021/p0",
+      "update": 21,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_male_african_elephant\",\"adult_male_crested_porcupine\",\"adult_male_short_beaked_echidna\",\"juvenile_male_hedgehog\"]",
+      "prompt_tokens_sha256": "8e1c4657f14e4abc4878cc3eae40cd0cb5d996c886ac557661c2c58664f510a4"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000021/p0",
+      "update": 21,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_male_short_beaked_echidna\",\"juvenile_male_hedgehog\"]",
+      "prompt_tokens_sha256": "cc18aad50a71c354cb226d6f5888394ca9ab4d2440d58a48faaadd509f05d360"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000022/p0",
+      "update": 22,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"adult_male_llama\",\"juvenile_male_lion\",\"adult_male_raccoon\",\"juvenile_female_nine_banded_armadillo\",\"juvenile_female_gray_wolf\",\"juvenile_female_gorilla\",\"juvenile_female_giant_anteater\",\"juvenile_female_lion\",\"adult_male_crested_porcupine\",\"adult_male_red_panda\",\"adult_male_pika\",\"juvenile_male_zebra\",\"adult_female_gray_wolf\",\"juvenile_female_giant_panda\",\"adult_male_aardvark\",\"juvenile_male_hedgehog\",\"juvenile_female_musk_ox\",\"adult_male_giraffe\",\"juvenile_female_chinchilla\",\"juvenile_male_brown_hare\",\"juvenile_male_harbor_seal\",\"adult_female_green_sea_turtle\",\"adult_male_african_wild_dog\",\"adult_female_platypus\",\"adult_male_naked_mole_rat\",\"adult_female_polar_bear\"]",
+      "prompt_tokens_sha256": "48ef15f3f9eb5e5166b296b294ddf05ec94ffcad38887ea29e55d73c8df98adc"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000022/p0",
+      "update": 22,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_male_raccoon\",\"juvenile_female_giant_anteater\",\"adult_male_aardvark\"]",
+      "prompt_tokens_sha256": "58663319148d6d31bf843f38c94b0c767d60f1f698cc6a5be373bb56468e2790"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000022/p0",
+      "update": 22,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_male_lion\",\"adult_male_raccoon\",\"juvenile_female_gray_wolf\",\"juvenile_female_gorilla\",\"juvenile_female_lion\",\"adult_male_red_panda\",\"adult_male_pika\",\"juvenile_male_zebra\",\"adult_female_gray_wolf\",\"juvenile_female_giant_panda\",\"juvenile_female_musk_ox\",\"juvenile_female_chinchilla\",\"adult_male_african_wild_dog\"]",
+      "prompt_tokens_sha256": "858a951caeadffab74a6dec51cf91e62ec5210a7b4c0f55a30a12761e6b7eca5"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000022/p0",
+      "update": 22,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_male_llama\",\"juvenile_male_lion\",\"adult_male_raccoon\",\"juvenile_female_nine_banded_armadillo\",\"juvenile_female_gray_wolf\",\"juvenile_female_gorilla\",\"juvenile_female_giant_anteater\",\"juvenile_female_lion\",\"adult_male_crested_porcupine\",\"adult_male_red_panda\",\"adult_male_pika\",\"juvenile_male_zebra\",\"adult_female_gray_wolf\",\"juvenile_female_giant_panda\",\"adult_male_aardvark\",\"juvenile_male_hedgehog\",\"juvenile_female_musk_ox\",\"adult_male_giraffe\",\"juvenile_female_chinchilla\",\"juvenile_male_brown_hare\",\"juvenile_male_harbor_seal\",\"adult_female_green_sea_turtle\",\"adult_male_african_wild_dog\",\"adult_female_platypus\",\"adult_male_naked_mole_rat\",\"adult_female_polar_bear\"]",
+      "prompt_tokens_sha256": "fd0d15d148edb5ca490a0758b085ef1e0273feaad57d60512b41d4cd76c93da3"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000022/p0",
+      "update": 22,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"adult_male_llama\",\"juvenile_male_lion\",\"adult_male_raccoon\",\"juvenile_female_nine_banded_armadillo\",\"juvenile_female_gray_wolf\",\"juvenile_female_gorilla\",\"juvenile_female_giant_anteater\",\"juvenile_female_lion\",\"adult_male_crested_porcupine\",\"adult_male_red_panda\",\"adult_male_pika\",\"juvenile_male_zebra\",\"adult_female_gray_wolf\",\"juvenile_female_giant_panda\",\"adult_male_aardvark\",\"juvenile_male_hedgehog\",\"juvenile_female_musk_ox\",\"adult_male_giraffe\",\"juvenile_female_chinchilla\",\"juvenile_male_brown_hare\",\"juvenile_male_harbor_seal\",\"adult_female_green_sea_turtle\",\"adult_male_african_wild_dog\",\"adult_female_platypus\",\"adult_male_naked_mole_rat\",\"adult_female_polar_bear\"]",
+      "prompt_tokens_sha256": "586fb8dc36d70d0c93e029d7451a1bbc64ae5d9a428755044e75d5bb39508aeb"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000022/p0",
+      "update": 22,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"adult_male_llama\",\"juvenile_male_lion\",\"adult_male_raccoon\",\"juvenile_female_nine_banded_armadillo\",\"juvenile_female_gray_wolf\",\"juvenile_female_gorilla\",\"juvenile_female_giant_anteater\",\"juvenile_female_lion\",\"adult_male_crested_porcupine\",\"adult_male_red_panda\",\"adult_male_pika\",\"juvenile_male_zebra\",\"adult_female_gray_wolf\",\"juvenile_female_giant_panda\",\"adult_male_aardvark\",\"juvenile_male_hedgehog\",\"juvenile_female_musk_ox\",\"adult_male_giraffe\",\"juvenile_female_chinchilla\",\"juvenile_male_brown_hare\",\"juvenile_male_harbor_seal\",\"adult_female_green_sea_turtle\",\"adult_male_african_wild_dog\",\"adult_female_platypus\",\"adult_male_naked_mole_rat\",\"adult_female_polar_bear\"]",
+      "prompt_tokens_sha256": "2c0e7de099246936de203b17da545dd4e3ee4947d7a5747b2b9aa89898c55bd5"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/32/1000022/p0",
+      "update": 22,
+      "turn": 10,
+      "maximum_questions": 10,
+      "questions_used": 10,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 10. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_male_lion\",\"adult_male_raccoon\",\"juvenile_female_gray_wolf\",\"juvenile_female_gorilla\",\"juvenile_female_lion\",\"adult_male_red_panda\",\"adult_male_pika\",\"adult_female_gray_wolf\",\"juvenile_female_giant_panda\",\"juvenile_female_chinchilla\",\"juvenile_male_brown_hare\",\"adult_male_african_wild_dog\"]",
+      "prompt_tokens_sha256": "9e03939dcdd7fe6318ab96ae6198c711686ec6c21e4d9c40dadb9891b8d99762"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000023/p0",
+      "update": 23,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"adult_male_nine_banded_armadillo\",\"adult_male_vampire_bat\",\"juvenile_male_striped_skunk\",\"juvenile_female_pika\",\"adult_female_crocodile\",\"adult_male_red_kangaroo\",\"juvenile_female_wild_boar\",\"adult_male_brown_bear\",\"adult_female_chimpanzee\",\"adult_female_hummingbird\",\"juvenile_female_squirrel\",\"adult_female_beaver\",\"adult_male_lion\",\"adult_male_polar_bear\",\"adult_female_sun_bear\",\"juvenile_female_sea_lion\",\"juvenile_male_prairie_dog\",\"juvenile_female_flamingo\",\"juvenile_female_sea_otter\",\"adult_female_silky_anteater\",\"juvenile_male_meerkat\",\"adult_male_hippopotamus\",\"juvenile_male_bottlenose_dolphin\",\"adult_female_raccoon\",\"adult_male_giraffe\",\"adult_female_sperm_whale\",\"adult_female_polar_bear\",\"adult_male_wild_boar\",\"adult_female_horse\",\"adult_female_gorilla\",\"adult_male_african_wild_dog\",\"juvenile_female_gorilla\",\"juvenile_male_moose\",\"adult_female_giant_anteater\",\"adult_female_leopard\",\"juvenile_male_white_rhinoceros\",\"juvenile_female_humpback_whale\",\"adult_male_giant_panda\",\"juvenile_female_nine_banded_armadillo\",\"juvenile_female_polar_bear\",\"adult_female_emperor_penguin\",\"juvenile_female_giant_anteater\",\"juvenile_male_pangolin\",\"adult_male_woodpecker\",\"juvenile_female_chinchilla\",\"adult_female_hippopotamus\",\"juvenile_female_gray_wolf\",\"juvenile_male_wild_boar\",\"adult_male_toucan\",\"juvenile_male_virginia_opossum\",\"adult_male_mallard\",\"juvenile_male_mountain_goat\",\"adult_male_spider_monkey\",\"adult_female_ostrich\",\"adult_female_mallard\",\"juvenile_male_zebra\",\"adult_female_vampire_bat\",\"adult_male_flying_squirrel\",\"juvenile_male_tiger\",\"adult_female_komodo_dragon\",\"juvenile_male_raccoon\",\"juvenile_male_squirrel\",\"juvenile_female_ostrich\",\"adult_female_chameleon\"]",
+      "prompt_tokens_sha256": "fd32231c79d077ae6cd50910d75a4352522ebd62e135c68f73e159f86dc449c2"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000023/p0",
+      "update": 23,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"adult_male_nine_banded_armadillo\",\"adult_male_vampire_bat\",\"juvenile_male_striped_skunk\",\"juvenile_female_pika\",\"adult_female_crocodile\",\"adult_male_red_kangaroo\",\"juvenile_female_wild_boar\",\"adult_male_brown_bear\",\"adult_female_chimpanzee\",\"adult_female_hummingbird\",\"juvenile_female_squirrel\",\"adult_female_beaver\",\"adult_male_lion\",\"adult_male_polar_bear\",\"adult_female_sun_bear\",\"juvenile_female_sea_lion\",\"juvenile_male_prairie_dog\",\"juvenile_female_flamingo\",\"juvenile_female_sea_otter\",\"adult_female_silky_anteater\",\"juvenile_male_meerkat\",\"adult_male_hippopotamus\",\"juvenile_male_bottlenose_dolphin\",\"adult_female_raccoon\",\"adult_male_giraffe\",\"adult_female_sperm_whale\",\"adult_female_polar_bear\",\"adult_male_wild_boar\",\"adult_female_horse\",\"adult_female_gorilla\",\"adult_male_african_wild_dog\",\"juvenile_female_gorilla\",\"juvenile_male_moose\",\"adult_female_giant_anteater\",\"adult_female_leopard\",\"juvenile_male_white_rhinoceros\",\"juvenile_female_humpback_whale\",\"adult_male_giant_panda\",\"juvenile_female_nine_banded_armadillo\",\"juvenile_female_polar_bear\",\"adult_female_emperor_penguin\",\"juvenile_female_giant_anteater\",\"juvenile_male_pangolin\",\"adult_male_woodpecker\",\"juvenile_female_chinchilla\",\"adult_female_hippopotamus\",\"juvenile_female_gray_wolf\",\"juvenile_male_wild_boar\",\"adult_male_toucan\",\"juvenile_male_virginia_opossum\",\"adult_male_mallard\",\"juvenile_male_mountain_goat\",\"adult_male_spider_monkey\",\"adult_female_ostrich\",\"adult_female_mallard\",\"juvenile_male_zebra\",\"adult_female_vampire_bat\",\"adult_male_flying_squirrel\",\"juvenile_male_tiger\",\"adult_female_komodo_dragon\",\"juvenile_male_raccoon\",\"juvenile_male_squirrel\",\"juvenile_female_ostrich\",\"adult_female_chameleon\"]",
+      "prompt_tokens_sha256": "1954e1cfd48bf7d4247ac318fb0841bc4de1092710027999bf78fd7eb0607791"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000023/p0",
+      "update": 23,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"adult_male_nine_banded_armadillo\",\"adult_male_vampire_bat\",\"juvenile_male_striped_skunk\",\"juvenile_female_pika\",\"adult_male_red_kangaroo\",\"juvenile_female_wild_boar\",\"adult_male_brown_bear\",\"adult_female_chimpanzee\",\"juvenile_female_squirrel\",\"adult_female_beaver\",\"adult_male_lion\",\"adult_male_polar_bear\",\"adult_female_sun_bear\",\"juvenile_female_sea_lion\",\"juvenile_male_prairie_dog\",\"juvenile_female_sea_otter\",\"adult_female_silky_anteater\",\"juvenile_male_meerkat\",\"adult_male_hippopotamus\",\"juvenile_male_bottlenose_dolphin\",\"adult_female_raccoon\",\"adult_male_giraffe\",\"adult_female_sperm_whale\",\"adult_female_polar_bear\",\"adult_male_wild_boar\",\"adult_female_horse\",\"adult_female_gorilla\",\"adult_male_african_wild_dog\",\"juvenile_female_gorilla\",\"juvenile_male_moose\",\"adult_female_giant_anteater\",\"adult_female_leopard\",\"juvenile_male_white_rhinoceros\",\"juvenile_female_humpback_whale\",\"adult_male_giant_panda\",\"juvenile_female_nine_banded_armadillo\",\"juvenile_female_polar_bear\",\"juvenile_female_giant_anteater\",\"juvenile_male_pangolin\",\"juvenile_female_chinchilla\",\"adult_female_hippopotamus\",\"juvenile_female_gray_wolf\",\"juvenile_male_wild_boar\",\"juvenile_male_virginia_opossum\",\"juvenile_male_mountain_goat\",\"adult_male_spider_monkey\",\"juvenile_male_zebra\",\"adult_female_vampire_bat\",\"adult_male_flying_squirrel\",\"juvenile_male_tiger\",\"juvenile_male_raccoon\",\"juvenile_male_squirrel\"]",
+      "prompt_tokens_sha256": "970635058b46051eade6fb3558b67faab2ed0e768e313c131f84b61e4a94934b"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000023/p0",
+      "update": 23,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_male_nine_banded_armadillo\",\"adult_male_vampire_bat\",\"juvenile_male_striped_skunk\",\"adult_female_crocodile\",\"adult_male_red_kangaroo\",\"adult_male_brown_bear\",\"adult_female_hummingbird\",\"adult_male_lion\",\"adult_male_polar_bear\",\"juvenile_female_sea_lion\",\"juvenile_male_prairie_dog\",\"juvenile_female_flamingo\",\"juvenile_male_meerkat\",\"adult_male_hippopotamus\",\"juvenile_male_bottlenose_dolphin\",\"adult_male_giraffe\",\"adult_female_sperm_whale\",\"adult_male_wild_boar\",\"adult_male_african_wild_dog\",\"juvenile_male_moose\",\"juvenile_male_white_rhinoceros\",\"juvenile_female_humpback_whale\",\"adult_male_giant_panda\",\"juvenile_female_nine_banded_armadillo\",\"adult_female_emperor_penguin\",\"juvenile_male_pangolin\",\"adult_male_woodpecker\",\"adult_female_hippopotamus\",\"juvenile_male_wild_boar\",\"adult_male_toucan\",\"juvenile_male_virginia_opossum\",\"adult_male_mallard\",\"juvenile_male_mountain_goat\",\"adult_male_spider_monkey\",\"adult_female_ostrich\",\"adult_female_mallard\",\"juvenile_male_zebra\",\"adult_male_flying_squirrel\",\"juvenile_male_tiger\",\"adult_female_komodo_dragon\",\"juvenile_male_raccoon\",\"juvenile_male_squirrel\",\"juvenile_female_ostrich\",\"adult_female_chameleon\"]",
+      "prompt_tokens_sha256": "a059fc4418b4f5fb132797eb2f21143183c94d5c01d755b27185e2c96fc6b322"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000023/p0",
+      "update": 23,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"adult_male_nine_banded_armadillo\",\"adult_male_vampire_bat\",\"juvenile_male_striped_skunk\",\"juvenile_female_pika\",\"adult_female_crocodile\",\"adult_male_red_kangaroo\",\"juvenile_female_wild_boar\",\"adult_male_brown_bear\",\"adult_female_chimpanzee\",\"adult_female_hummingbird\",\"juvenile_female_squirrel\",\"adult_female_beaver\",\"adult_male_lion\",\"adult_male_polar_bear\",\"adult_female_sun_bear\",\"juvenile_female_sea_lion\",\"juvenile_male_prairie_dog\",\"juvenile_female_flamingo\",\"juvenile_female_sea_otter\",\"adult_female_silky_anteater\",\"juvenile_male_meerkat\",\"adult_male_hippopotamus\",\"juvenile_male_bottlenose_dolphin\",\"adult_female_raccoon\",\"adult_male_giraffe\",\"adult_female_sperm_whale\",\"adult_female_polar_bear\",\"adult_male_wild_boar\",\"adult_female_horse\",\"adult_female_gorilla\",\"adult_male_african_wild_dog\",\"juvenile_female_gorilla\",\"juvenile_male_moose\",\"adult_female_giant_anteater\",\"adult_female_leopard\",\"juvenile_male_white_rhinoceros\",\"juvenile_female_humpback_whale\",\"adult_male_giant_panda\",\"juvenile_female_nine_banded_armadillo\",\"juvenile_female_polar_bear\",\"adult_female_emperor_penguin\",\"juvenile_female_giant_anteater\",\"juvenile_male_pangolin\",\"adult_male_woodpecker\",\"juvenile_female_chinchilla\",\"adult_female_hippopotamus\",\"juvenile_female_gray_wolf\",\"juvenile_male_wild_boar\",\"adult_male_toucan\",\"juvenile_male_virginia_opossum\",\"adult_male_mallard\",\"juvenile_male_mountain_goat\",\"adult_male_spider_monkey\",\"adult_female_ostrich\",\"adult_female_mallard\",\"juvenile_male_zebra\",\"adult_female_vampire_bat\",\"adult_male_flying_squirrel\",\"juvenile_male_tiger\",\"adult_female_komodo_dragon\",\"juvenile_male_raccoon\",\"juvenile_male_squirrel\",\"juvenile_female_ostrich\",\"adult_female_chameleon\"]",
+      "prompt_tokens_sha256": "2ffb916cb7571c0d518820c6a9eacae6e493b61ac738038fe1b22fab4219a7bf"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000023/p0",
+      "update": 23,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"adult_female_beaver\",\"juvenile_male_moose\"]",
+      "prompt_tokens_sha256": "5f41f79b5bd4cca97a40a8578a87e40098e881b645c2a50ad949ef28ef79aa93"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000024/p0",
+      "update": 24,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_female_aardvark\",\"juvenile_male_llama\",\"juvenile_male_sea_lion\",\"juvenile_female_llama\",\"juvenile_male_mountain_goat\",\"adult_female_prairie_dog\",\"adult_male_wild_boar\",\"adult_male_cougar\",\"juvenile_female_sea_otter\",\"adult_female_crested_porcupine\",\"juvenile_male_sun_bear\",\"juvenile_female_gray_wolf\",\"juvenile_female_red_kangaroo\",\"juvenile_female_hippopotamus\",\"adult_male_rabbit\",\"juvenile_female_pika\",\"adult_male_brown_throated_sloth\",\"adult_male_raccoon\",\"adult_female_jaguar\",\"juvenile_female_african_elephant\",\"adult_male_musk_ox\",\"adult_male_harbor_seal\",\"juvenile_female_cougar\",\"adult_female_virginia_opossum\",\"adult_female_chimpanzee\",\"juvenile_female_orca\",\"adult_female_african_wild_dog\",\"juvenile_male_squirrel\",\"juvenile_female_lion\",\"adult_male_blue_whale\",\"adult_male_hippopotamus\",\"juvenile_male_bactrian_camel\",\"juvenile_female_jaguar\",\"adult_male_pika\",\"adult_male_llama\",\"juvenile_female_humpback_whale\",\"adult_female_beaver\",\"juvenile_male_vampire_bat\",\"juvenile_male_pangolin\",\"adult_female_harbor_seal\",\"juvenile_female_giant_panda\",\"adult_female_leopard\",\"adult_male_naked_mole_rat\",\"juvenile_male_harbor_seal\",\"juvenile_female_giraffe\",\"juvenile_male_brown_hare\",\"juvenile_female_fruit_bat\",\"adult_female_cougar\",\"juvenile_male_orangutan\",\"juvenile_female_howler_monkey\",\"adult_male_giraffe\",\"adult_female_flying_squirrel\",\"adult_male_fennec_fox\",\"adult_female_vampire_bat\"]",
+      "prompt_tokens_sha256": "199294ff883ae6208d29efee0fb0142193a516097abdced7ae9fff9465c3bac0"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000024/p0",
+      "update": 24,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_female_aardvark\",\"juvenile_male_llama\",\"juvenile_male_sea_lion\",\"juvenile_female_llama\",\"juvenile_male_mountain_goat\",\"adult_female_prairie_dog\",\"adult_male_wild_boar\",\"adult_male_cougar\",\"juvenile_female_sea_otter\",\"adult_female_crested_porcupine\",\"juvenile_male_sun_bear\",\"juvenile_female_gray_wolf\",\"juvenile_female_red_kangaroo\",\"juvenile_female_hippopotamus\",\"adult_male_rabbit\",\"juvenile_female_pika\",\"adult_male_brown_throated_sloth\",\"adult_male_raccoon\",\"adult_female_jaguar\",\"juvenile_female_african_elephant\",\"adult_male_musk_ox\",\"adult_male_harbor_seal\",\"juvenile_female_cougar\",\"adult_female_virginia_opossum\",\"adult_female_chimpanzee\",\"juvenile_female_orca\",\"adult_female_african_wild_dog\",\"juvenile_male_squirrel\",\"juvenile_female_lion\",\"adult_male_blue_whale\",\"adult_male_hippopotamus\",\"juvenile_male_bactrian_camel\",\"juvenile_female_jaguar\",\"adult_male_pika\",\"adult_male_llama\",\"juvenile_female_humpback_whale\",\"adult_female_beaver\",\"juvenile_male_vampire_bat\",\"juvenile_male_pangolin\",\"adult_female_harbor_seal\",\"juvenile_female_giant_panda\",\"adult_female_leopard\",\"adult_male_naked_mole_rat\",\"juvenile_male_harbor_seal\",\"juvenile_female_giraffe\",\"juvenile_male_brown_hare\",\"juvenile_female_fruit_bat\",\"adult_female_cougar\",\"juvenile_male_orangutan\",\"juvenile_female_howler_monkey\",\"adult_male_giraffe\",\"adult_female_flying_squirrel\",\"adult_male_fennec_fox\",\"adult_female_vampire_bat\"]",
+      "prompt_tokens_sha256": "199294ff883ae6208d29efee0fb0142193a516097abdced7ae9fff9465c3bac0"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000024/p0",
+      "update": 24,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_female_aardvark\",\"juvenile_male_llama\",\"juvenile_male_sea_lion\",\"juvenile_female_llama\",\"juvenile_male_mountain_goat\",\"adult_female_prairie_dog\",\"adult_male_wild_boar\",\"adult_male_cougar\",\"juvenile_female_sea_otter\",\"adult_female_crested_porcupine\",\"juvenile_male_sun_bear\",\"juvenile_female_gray_wolf\",\"juvenile_female_red_kangaroo\",\"juvenile_female_hippopotamus\",\"adult_male_rabbit\",\"juvenile_female_pika\",\"adult_male_brown_throated_sloth\",\"adult_male_raccoon\",\"adult_female_jaguar\",\"juvenile_female_african_elephant\",\"adult_male_musk_ox\",\"adult_male_harbor_seal\",\"juvenile_female_cougar\",\"adult_female_virginia_opossum\",\"adult_female_chimpanzee\",\"juvenile_female_orca\",\"adult_female_african_wild_dog\",\"juvenile_male_squirrel\",\"juvenile_female_lion\",\"adult_male_blue_whale\",\"adult_male_hippopotamus\",\"juvenile_male_bactrian_camel\",\"juvenile_female_jaguar\",\"adult_male_pika\",\"adult_male_llama\",\"juvenile_female_humpback_whale\",\"adult_female_beaver\",\"juvenile_male_vampire_bat\",\"juvenile_male_pangolin\",\"adult_female_harbor_seal\",\"juvenile_female_giant_panda\",\"adult_female_leopard\",\"adult_male_naked_mole_rat\",\"juvenile_male_harbor_seal\",\"juvenile_female_giraffe\",\"juvenile_male_brown_hare\",\"juvenile_female_fruit_bat\",\"adult_female_cougar\",\"juvenile_male_orangutan\",\"juvenile_female_howler_monkey\",\"adult_male_giraffe\",\"adult_female_flying_squirrel\",\"adult_male_fennec_fox\",\"adult_female_vampire_bat\"]",
+      "prompt_tokens_sha256": "199294ff883ae6208d29efee0fb0142193a516097abdced7ae9fff9465c3bac0"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000024/p0",
+      "update": 24,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_female_aardvark\",\"juvenile_male_llama\",\"juvenile_male_sea_lion\",\"juvenile_female_llama\",\"juvenile_male_mountain_goat\",\"adult_female_prairie_dog\",\"adult_male_wild_boar\",\"adult_male_cougar\",\"juvenile_female_sea_otter\",\"adult_female_crested_porcupine\",\"juvenile_male_sun_bear\",\"juvenile_female_gray_wolf\",\"juvenile_female_red_kangaroo\",\"juvenile_female_hippopotamus\",\"adult_male_rabbit\",\"juvenile_female_pika\",\"adult_male_brown_throated_sloth\",\"adult_male_raccoon\",\"adult_female_jaguar\",\"juvenile_female_african_elephant\",\"adult_male_musk_ox\",\"adult_male_harbor_seal\",\"juvenile_female_cougar\",\"adult_female_virginia_opossum\",\"adult_female_chimpanzee\",\"juvenile_female_orca\",\"adult_female_african_wild_dog\",\"juvenile_male_squirrel\",\"juvenile_female_lion\",\"adult_male_blue_whale\",\"adult_male_hippopotamus\",\"juvenile_male_bactrian_camel\",\"juvenile_female_jaguar\",\"adult_male_pika\",\"adult_male_llama\",\"juvenile_female_humpback_whale\",\"adult_female_beaver\",\"juvenile_male_vampire_bat\",\"juvenile_male_pangolin\",\"adult_female_harbor_seal\",\"juvenile_female_giant_panda\",\"adult_female_leopard\",\"adult_male_naked_mole_rat\",\"juvenile_male_harbor_seal\",\"juvenile_female_giraffe\",\"juvenile_male_brown_hare\",\"juvenile_female_fruit_bat\",\"adult_female_cougar\",\"juvenile_male_orangutan\",\"juvenile_female_howler_monkey\",\"adult_male_giraffe\",\"adult_female_flying_squirrel\",\"adult_male_fennec_fox\",\"adult_female_vampire_bat\"]",
+      "prompt_tokens_sha256": "199294ff883ae6208d29efee0fb0142193a516097abdced7ae9fff9465c3bac0"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000024/p0",
+      "update": 24,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_female_aardvark\",\"juvenile_male_llama\",\"juvenile_male_sea_lion\",\"juvenile_female_llama\",\"juvenile_male_mountain_goat\",\"adult_female_prairie_dog\",\"adult_male_wild_boar\",\"adult_male_cougar\",\"juvenile_female_sea_otter\",\"adult_female_crested_porcupine\",\"juvenile_male_sun_bear\",\"juvenile_female_gray_wolf\",\"juvenile_female_red_kangaroo\",\"juvenile_female_hippopotamus\",\"adult_male_rabbit\",\"juvenile_female_pika\",\"adult_male_brown_throated_sloth\",\"adult_male_raccoon\",\"adult_female_jaguar\",\"juvenile_female_african_elephant\",\"adult_male_musk_ox\",\"adult_male_harbor_seal\",\"juvenile_female_cougar\",\"adult_female_virginia_opossum\",\"adult_female_chimpanzee\",\"juvenile_female_orca\",\"adult_female_african_wild_dog\",\"juvenile_male_squirrel\",\"juvenile_female_lion\",\"adult_male_blue_whale\",\"adult_male_hippopotamus\",\"juvenile_male_bactrian_camel\",\"juvenile_female_jaguar\",\"adult_male_pika\",\"adult_male_llama\",\"juvenile_female_humpback_whale\",\"adult_female_beaver\",\"juvenile_male_vampire_bat\",\"juvenile_male_pangolin\",\"adult_female_harbor_seal\",\"juvenile_female_giant_panda\",\"adult_female_leopard\",\"adult_male_naked_mole_rat\",\"juvenile_male_harbor_seal\",\"juvenile_female_giraffe\",\"juvenile_male_brown_hare\",\"juvenile_female_fruit_bat\",\"adult_female_cougar\",\"juvenile_male_orangutan\",\"juvenile_female_howler_monkey\",\"adult_male_giraffe\",\"adult_female_flying_squirrel\",\"adult_male_fennec_fox\",\"adult_female_vampire_bat\"]",
+      "prompt_tokens_sha256": "199294ff883ae6208d29efee0fb0142193a516097abdced7ae9fff9465c3bac0"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000024/p0",
+      "update": 24,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_female_aardvark\",\"juvenile_male_llama\",\"juvenile_male_sea_lion\",\"juvenile_female_llama\",\"juvenile_male_mountain_goat\",\"adult_female_prairie_dog\",\"adult_male_wild_boar\",\"adult_male_cougar\",\"juvenile_female_sea_otter\",\"adult_female_crested_porcupine\",\"juvenile_male_sun_bear\",\"juvenile_female_gray_wolf\",\"juvenile_female_red_kangaroo\",\"juvenile_female_hippopotamus\",\"adult_male_rabbit\",\"juvenile_female_pika\",\"adult_male_brown_throated_sloth\",\"adult_male_raccoon\",\"adult_female_jaguar\",\"juvenile_female_african_elephant\",\"adult_male_musk_ox\",\"adult_male_harbor_seal\",\"juvenile_female_cougar\",\"adult_female_virginia_opossum\",\"adult_female_chimpanzee\",\"juvenile_female_orca\",\"adult_female_african_wild_dog\",\"juvenile_male_squirrel\",\"juvenile_female_lion\",\"adult_male_blue_whale\",\"adult_male_hippopotamus\",\"juvenile_male_bactrian_camel\",\"juvenile_female_jaguar\",\"adult_male_pika\",\"adult_male_llama\",\"juvenile_female_humpback_whale\",\"adult_female_beaver\",\"juvenile_male_vampire_bat\",\"juvenile_male_pangolin\",\"adult_female_harbor_seal\",\"juvenile_female_giant_panda\",\"adult_female_leopard\",\"adult_male_naked_mole_rat\",\"juvenile_male_harbor_seal\",\"juvenile_female_giraffe\",\"juvenile_male_brown_hare\",\"juvenile_female_fruit_bat\",\"adult_female_cougar\",\"juvenile_male_orangutan\",\"juvenile_female_howler_monkey\",\"adult_male_giraffe\",\"adult_female_flying_squirrel\",\"adult_male_fennec_fox\",\"adult_female_vampire_bat\"]",
+      "prompt_tokens_sha256": "199294ff883ae6208d29efee0fb0142193a516097abdced7ae9fff9465c3bac0"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000024/p0",
+      "update": 24,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_female_aardvark\",\"juvenile_male_llama\",\"juvenile_male_sea_lion\",\"juvenile_female_llama\",\"juvenile_male_mountain_goat\",\"adult_female_prairie_dog\",\"adult_male_wild_boar\",\"adult_male_cougar\",\"juvenile_female_sea_otter\",\"adult_female_crested_porcupine\",\"juvenile_male_sun_bear\",\"juvenile_female_gray_wolf\",\"juvenile_female_red_kangaroo\",\"juvenile_female_hippopotamus\",\"adult_male_rabbit\",\"juvenile_female_pika\",\"adult_male_brown_throated_sloth\",\"adult_male_raccoon\",\"adult_female_jaguar\",\"juvenile_female_african_elephant\",\"adult_male_musk_ox\",\"adult_male_harbor_seal\",\"juvenile_female_cougar\",\"adult_female_virginia_opossum\",\"adult_female_chimpanzee\",\"juvenile_female_orca\",\"adult_female_african_wild_dog\",\"juvenile_male_squirrel\",\"juvenile_female_lion\",\"adult_male_blue_whale\",\"adult_male_hippopotamus\",\"juvenile_male_bactrian_camel\",\"juvenile_female_jaguar\",\"adult_male_pika\",\"adult_male_llama\",\"juvenile_female_humpback_whale\",\"adult_female_beaver\",\"juvenile_male_vampire_bat\",\"juvenile_male_pangolin\",\"adult_female_harbor_seal\",\"juvenile_female_giant_panda\",\"adult_female_leopard\",\"adult_male_naked_mole_rat\",\"juvenile_male_harbor_seal\",\"juvenile_female_giraffe\",\"juvenile_male_brown_hare\",\"juvenile_female_fruit_bat\",\"adult_female_cougar\",\"juvenile_male_orangutan\",\"juvenile_female_howler_monkey\",\"adult_male_giraffe\",\"adult_female_flying_squirrel\",\"adult_male_fennec_fox\",\"adult_female_vampire_bat\"]",
+      "prompt_tokens_sha256": "199294ff883ae6208d29efee0fb0142193a516097abdced7ae9fff9465c3bac0"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000024/p0",
+      "update": 24,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_female_aardvark\",\"juvenile_male_llama\",\"juvenile_male_sea_lion\",\"juvenile_female_llama\",\"juvenile_male_mountain_goat\",\"adult_female_prairie_dog\",\"adult_male_wild_boar\",\"adult_male_cougar\",\"juvenile_female_sea_otter\",\"adult_female_crested_porcupine\",\"juvenile_male_sun_bear\",\"juvenile_female_gray_wolf\",\"juvenile_female_red_kangaroo\",\"juvenile_female_hippopotamus\",\"adult_male_rabbit\",\"juvenile_female_pika\",\"adult_male_brown_throated_sloth\",\"adult_male_raccoon\",\"adult_female_jaguar\",\"juvenile_female_african_elephant\",\"adult_male_musk_ox\",\"adult_male_harbor_seal\",\"juvenile_female_cougar\",\"adult_female_virginia_opossum\",\"adult_female_chimpanzee\",\"juvenile_female_orca\",\"adult_female_african_wild_dog\",\"juvenile_male_squirrel\",\"juvenile_female_lion\",\"adult_male_blue_whale\",\"adult_male_hippopotamus\",\"juvenile_male_bactrian_camel\",\"juvenile_female_jaguar\",\"adult_male_pika\",\"adult_male_llama\",\"juvenile_female_humpback_whale\",\"adult_female_beaver\",\"juvenile_male_vampire_bat\",\"juvenile_male_pangolin\",\"adult_female_harbor_seal\",\"juvenile_female_giant_panda\",\"adult_female_leopard\",\"adult_male_naked_mole_rat\",\"juvenile_male_harbor_seal\",\"juvenile_female_giraffe\",\"juvenile_male_brown_hare\",\"juvenile_female_fruit_bat\",\"adult_female_cougar\",\"juvenile_male_orangutan\",\"juvenile_female_howler_monkey\",\"adult_male_giraffe\",\"adult_female_flying_squirrel\",\"adult_male_fennec_fox\",\"adult_female_vampire_bat\"]",
+      "prompt_tokens_sha256": "199294ff883ae6208d29efee0fb0142193a516097abdced7ae9fff9465c3bac0"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000025/p0",
+      "update": 25,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_male_hippopotamus\",\"adult_male_hippopotamus\",\"juvenile_male_lion\",\"adult_female_gray_wolf\",\"juvenile_female_aardvark\",\"juvenile_male_orca\",\"juvenile_female_llama\",\"juvenile_male_humpback_whale\",\"juvenile_female_gibbon\",\"juvenile_male_mountain_goat\",\"juvenile_female_orca\",\"adult_male_fruit_bat\",\"adult_male_fennec_fox\",\"adult_female_flying_squirrel\",\"adult_male_red_panda\",\"juvenile_male_pangolin\",\"juvenile_female_horse\",\"juvenile_female_squirrel\",\"adult_female_red_kangaroo\",\"juvenile_male_brown_throated_sloth\",\"juvenile_female_honey_badger\",\"adult_male_orangutan\",\"adult_female_ring_tailed_lemur\",\"adult_female_prairie_dog\",\"adult_female_red_panda\",\"juvenile_male_harbor_seal\",\"adult_female_crested_porcupine\",\"juvenile_male_wild_boar\",\"adult_female_vampire_bat\",\"adult_male_giant_panda\",\"adult_male_african_wild_dog\",\"juvenile_female_wild_boar\",\"juvenile_male_giant_anteater\",\"juvenile_male_prairie_dog\",\"juvenile_male_virginia_opossum\",\"adult_female_fruit_bat\",\"juvenile_male_baboon\",\"juvenile_female_prairie_dog\",\"juvenile_female_giant_anteater\",\"juvenile_female_jaguar\",\"adult_male_meerkat\",\"juvenile_female_polar_bear\",\"juvenile_male_squirrel\",\"juvenile_male_reindeer\",\"adult_male_tiger\",\"adult_female_brown_throated_sloth\",\"juvenile_male_llama\",\"adult_female_hippopotamus\",\"adult_male_brown_throated_sloth\"]",
+      "prompt_tokens_sha256": "72ae20f31800b3bf00ef9af7744fb61cae8a95f8b10007965c4ed88305534db4"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000025/p0",
+      "update": 25,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_male_hippopotamus\",\"adult_male_hippopotamus\",\"juvenile_male_lion\",\"adult_female_gray_wolf\",\"juvenile_female_aardvark\",\"juvenile_male_orca\",\"juvenile_female_llama\",\"juvenile_male_humpback_whale\",\"juvenile_female_gibbon\",\"juvenile_male_mountain_goat\",\"juvenile_female_orca\",\"adult_male_fruit_bat\",\"adult_male_fennec_fox\",\"adult_female_flying_squirrel\",\"adult_male_red_panda\",\"juvenile_male_pangolin\",\"juvenile_female_horse\",\"juvenile_female_squirrel\",\"adult_female_red_kangaroo\",\"juvenile_male_brown_throated_sloth\",\"juvenile_female_honey_badger\",\"adult_male_orangutan\",\"adult_female_ring_tailed_lemur\",\"adult_female_prairie_dog\",\"adult_female_red_panda\",\"juvenile_male_harbor_seal\",\"adult_female_crested_porcupine\",\"juvenile_male_wild_boar\",\"adult_female_vampire_bat\",\"adult_male_giant_panda\",\"adult_male_african_wild_dog\",\"juvenile_female_wild_boar\",\"juvenile_male_giant_anteater\",\"juvenile_male_prairie_dog\",\"juvenile_male_virginia_opossum\",\"adult_female_fruit_bat\",\"juvenile_male_baboon\",\"juvenile_female_prairie_dog\",\"juvenile_female_giant_anteater\",\"juvenile_female_jaguar\",\"adult_male_meerkat\",\"juvenile_female_polar_bear\",\"juvenile_male_squirrel\",\"juvenile_male_reindeer\",\"adult_male_tiger\",\"adult_female_brown_throated_sloth\",\"juvenile_male_llama\",\"adult_female_hippopotamus\",\"adult_male_brown_throated_sloth\"]",
+      "prompt_tokens_sha256": "72ae20f31800b3bf00ef9af7744fb61cae8a95f8b10007965c4ed88305534db4"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000025/p0",
+      "update": 25,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_male_hippopotamus\",\"adult_male_hippopotamus\",\"juvenile_male_lion\",\"adult_female_gray_wolf\",\"juvenile_female_aardvark\",\"juvenile_male_orca\",\"juvenile_female_llama\",\"juvenile_male_humpback_whale\",\"juvenile_female_gibbon\",\"juvenile_male_mountain_goat\",\"juvenile_female_orca\",\"adult_male_fruit_bat\",\"adult_male_fennec_fox\",\"adult_female_flying_squirrel\",\"adult_male_red_panda\",\"juvenile_male_pangolin\",\"juvenile_female_horse\",\"juvenile_female_squirrel\",\"adult_female_red_kangaroo\",\"juvenile_male_brown_throated_sloth\",\"juvenile_female_honey_badger\",\"adult_male_orangutan\",\"adult_female_ring_tailed_lemur\",\"adult_female_prairie_dog\",\"adult_female_red_panda\",\"juvenile_male_harbor_seal\",\"adult_female_crested_porcupine\",\"juvenile_male_wild_boar\",\"adult_female_vampire_bat\",\"adult_male_giant_panda\",\"adult_male_african_wild_dog\",\"juvenile_female_wild_boar\",\"juvenile_male_giant_anteater\",\"juvenile_male_prairie_dog\",\"juvenile_male_virginia_opossum\",\"adult_female_fruit_bat\",\"juvenile_male_baboon\",\"juvenile_female_prairie_dog\",\"juvenile_female_giant_anteater\",\"juvenile_female_jaguar\",\"adult_male_meerkat\",\"juvenile_female_polar_bear\",\"juvenile_male_squirrel\",\"juvenile_male_reindeer\",\"adult_male_tiger\",\"adult_female_brown_throated_sloth\",\"juvenile_male_llama\",\"adult_female_hippopotamus\",\"adult_male_brown_throated_sloth\"]",
+      "prompt_tokens_sha256": "72ae20f31800b3bf00ef9af7744fb61cae8a95f8b10007965c4ed88305534db4"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000025/p0",
+      "update": 25,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_male_hippopotamus\",\"adult_male_hippopotamus\",\"juvenile_male_lion\",\"adult_female_gray_wolf\",\"juvenile_female_aardvark\",\"juvenile_male_orca\",\"juvenile_female_llama\",\"juvenile_male_humpback_whale\",\"juvenile_female_gibbon\",\"juvenile_male_mountain_goat\",\"juvenile_female_orca\",\"adult_male_fruit_bat\",\"adult_male_fennec_fox\",\"adult_female_flying_squirrel\",\"adult_male_red_panda\",\"juvenile_male_pangolin\",\"juvenile_female_horse\",\"juvenile_female_squirrel\",\"adult_female_red_kangaroo\",\"juvenile_male_brown_throated_sloth\",\"juvenile_female_honey_badger\",\"adult_male_orangutan\",\"adult_female_ring_tailed_lemur\",\"adult_female_prairie_dog\",\"adult_female_red_panda\",\"juvenile_male_harbor_seal\",\"adult_female_crested_porcupine\",\"juvenile_male_wild_boar\",\"adult_female_vampire_bat\",\"adult_male_giant_panda\",\"adult_male_african_wild_dog\",\"juvenile_female_wild_boar\",\"juvenile_male_giant_anteater\",\"juvenile_male_prairie_dog\",\"juvenile_male_virginia_opossum\",\"adult_female_fruit_bat\",\"juvenile_male_baboon\",\"juvenile_female_prairie_dog\",\"juvenile_female_giant_anteater\",\"juvenile_female_jaguar\",\"adult_male_meerkat\",\"juvenile_female_polar_bear\",\"juvenile_male_squirrel\",\"juvenile_male_reindeer\",\"adult_male_tiger\",\"adult_female_brown_throated_sloth\",\"juvenile_male_llama\",\"adult_female_hippopotamus\",\"adult_male_brown_throated_sloth\"]",
+      "prompt_tokens_sha256": "72ae20f31800b3bf00ef9af7744fb61cae8a95f8b10007965c4ed88305534db4"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000025/p0",
+      "update": 25,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_female_honey_badger\",\"adult_female_ring_tailed_lemur\",\"juvenile_male_virginia_opossum\",\"juvenile_male_baboon\"]",
+      "prompt_tokens_sha256": "b7ca8352587e2e628e5bccb97ed8fa0e9b0742fafb503758152f95bb86e077de"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000025/p0",
+      "update": 25,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_male_hippopotamus\",\"adult_male_hippopotamus\",\"juvenile_male_lion\",\"adult_female_gray_wolf\",\"juvenile_female_aardvark\",\"juvenile_male_orca\",\"juvenile_female_llama\",\"juvenile_male_humpback_whale\",\"juvenile_female_gibbon\",\"juvenile_male_mountain_goat\",\"juvenile_female_orca\",\"adult_male_fruit_bat\",\"adult_male_fennec_fox\",\"adult_female_flying_squirrel\",\"adult_male_red_panda\",\"juvenile_male_pangolin\",\"juvenile_female_horse\",\"juvenile_female_squirrel\",\"adult_female_red_kangaroo\",\"juvenile_male_brown_throated_sloth\",\"juvenile_female_honey_badger\",\"adult_male_orangutan\",\"adult_female_ring_tailed_lemur\",\"adult_female_prairie_dog\",\"adult_female_red_panda\",\"juvenile_male_harbor_seal\",\"adult_female_crested_porcupine\",\"juvenile_male_wild_boar\",\"adult_female_vampire_bat\",\"adult_male_giant_panda\",\"adult_male_african_wild_dog\",\"juvenile_female_wild_boar\",\"juvenile_male_giant_anteater\",\"juvenile_male_prairie_dog\",\"juvenile_male_virginia_opossum\",\"adult_female_fruit_bat\",\"juvenile_male_baboon\",\"juvenile_female_prairie_dog\",\"juvenile_female_giant_anteater\",\"juvenile_female_jaguar\",\"adult_male_meerkat\",\"juvenile_female_polar_bear\",\"juvenile_male_squirrel\",\"juvenile_male_reindeer\",\"adult_male_tiger\",\"adult_female_brown_throated_sloth\",\"juvenile_male_llama\",\"adult_female_hippopotamus\",\"adult_male_brown_throated_sloth\"]",
+      "prompt_tokens_sha256": "72ae20f31800b3bf00ef9af7744fb61cae8a95f8b10007965c4ed88305534db4"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000025/p0",
+      "update": 25,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_male_hippopotamus\",\"adult_male_hippopotamus\",\"juvenile_male_lion\",\"adult_female_gray_wolf\",\"juvenile_female_aardvark\",\"juvenile_male_orca\",\"juvenile_female_llama\",\"juvenile_male_humpback_whale\",\"juvenile_female_gibbon\",\"juvenile_male_mountain_goat\",\"juvenile_female_orca\",\"adult_male_fruit_bat\",\"adult_male_fennec_fox\",\"adult_female_flying_squirrel\",\"adult_male_red_panda\",\"juvenile_male_pangolin\",\"juvenile_female_horse\",\"juvenile_female_squirrel\",\"adult_female_red_kangaroo\",\"juvenile_male_brown_throated_sloth\",\"juvenile_female_honey_badger\",\"adult_male_orangutan\",\"adult_female_ring_tailed_lemur\",\"adult_female_prairie_dog\",\"adult_female_red_panda\",\"juvenile_male_harbor_seal\",\"adult_female_crested_porcupine\",\"juvenile_male_wild_boar\",\"adult_female_vampire_bat\",\"adult_male_giant_panda\",\"adult_male_african_wild_dog\",\"juvenile_female_wild_boar\",\"juvenile_male_giant_anteater\",\"juvenile_male_prairie_dog\",\"juvenile_male_virginia_opossum\",\"adult_female_fruit_bat\",\"juvenile_male_baboon\",\"juvenile_female_prairie_dog\",\"juvenile_female_giant_anteater\",\"juvenile_female_jaguar\",\"adult_male_meerkat\",\"juvenile_female_polar_bear\",\"juvenile_male_squirrel\",\"juvenile_male_reindeer\",\"adult_male_tiger\",\"adult_female_brown_throated_sloth\",\"juvenile_male_llama\",\"adult_female_hippopotamus\",\"adult_male_brown_throated_sloth\"]",
+      "prompt_tokens_sha256": "72ae20f31800b3bf00ef9af7744fb61cae8a95f8b10007965c4ed88305534db4"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000025/p0",
+      "update": 25,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_female_aardvark\",\"juvenile_female_honey_badger\"]",
+      "prompt_tokens_sha256": "6be3d5598ad4e932f822ceed2878b1db22a217721e008a4349a03a207d3a4360"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000026/p0",
+      "update": 26,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_female_red_kangaroo\",\"adult_female_emperor_penguin\",\"adult_female_bottlenose_dolphin\",\"adult_female_green_sea_turtle\",\"adult_female_giant_anteater\",\"adult_female_chameleon\",\"adult_female_squirrel\",\"adult_female_horse\",\"juvenile_female_wild_boar\",\"juvenile_female_parrot\",\"adult_female_raven\",\"juvenile_female_sea_otter\",\"adult_female_sea_lion\",\"adult_female_african_elephant\",\"adult_female_gorilla\",\"adult_female_peacock\",\"adult_female_hummingbird\",\"adult_female_crocodile\",\"adult_female_fruit_bat\",\"juvenile_female_red_fox\",\"adult_female_harbor_seal\",\"juvenile_female_chinchilla\",\"juvenile_female_flamingo\",\"adult_female_crested_porcupine\",\"adult_female_white_rhinoceros\",\"adult_female_red_panda\",\"adult_female_striped_skunk\",\"adult_female_capybara\",\"adult_female_virginia_opossum\"]",
+      "prompt_tokens_sha256": "126db1c4079f6d9a00a29bae6111ef837b6c98ba01bb81adc2b0f81e82f60a58"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/64/1000026/p0",
+      "update": 26,
+      "turn": 12,
+      "maximum_questions": 12,
+      "questions_used": 12,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 12. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_female_red_kangaroo\",\"adult_female_emperor_penguin\",\"adult_female_bottlenose_dolphin\",\"adult_female_green_sea_turtle\",\"adult_female_giant_anteater\",\"adult_female_chameleon\",\"adult_female_squirrel\",\"adult_female_horse\",\"juvenile_female_wild_boar\",\"juvenile_female_parrot\",\"adult_female_raven\",\"juvenile_female_sea_otter\",\"adult_female_sea_lion\",\"adult_female_african_elephant\",\"adult_female_gorilla\",\"adult_female_peacock\",\"adult_female_hummingbird\",\"adult_female_crocodile\",\"adult_female_fruit_bat\",\"juvenile_female_red_fox\",\"adult_female_harbor_seal\",\"juvenile_female_chinchilla\",\"juvenile_female_flamingo\",\"adult_female_crested_porcupine\",\"adult_female_white_rhinoceros\",\"adult_female_red_panda\",\"adult_female_striped_skunk\",\"adult_female_capybara\",\"adult_female_virginia_opossum\"]",
+      "prompt_tokens_sha256": "126db1c4079f6d9a00a29bae6111ef837b6c98ba01bb81adc2b0f81e82f60a58"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000027/p0",
+      "update": 27,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"adult_female_raccoon\",\"adult_female_chimpanzee\",\"adult_female_squirrel\",\"adult_female_parrot\",\"adult_female_gorilla\",\"adult_female_bottlenose_dolphin\",\"adult_female_vampire_bat\",\"adult_female_silky_anteater\",\"adult_female_giant_panda\",\"adult_female_red_kangaroo\",\"adult_female_hippopotamus\",\"adult_female_giant_anteater\",\"adult_female_harbor_seal\",\"adult_female_african_elephant\",\"adult_female_african_wild_dog\",\"adult_female_sperm_whale\",\"adult_female_ring_tailed_lemur\",\"adult_female_tasmanian_devil\",\"adult_female_flamingo\",\"adult_female_barn_owl\",\"adult_female_sea_lion\",\"adult_female_rabbit\",\"adult_female_komodo_dragon\",\"adult_female_crested_porcupine\",\"adult_female_flying_squirrel\",\"adult_female_pika\",\"adult_female_green_sea_turtle\",\"adult_female_fruit_bat\",\"adult_female_prairie_dog\",\"adult_female_honey_badger\",\"adult_female_horse\",\"adult_female_striped_skunk\",\"adult_female_peacock\",\"adult_female_hummingbird\",\"adult_female_bald_eagle\",\"adult_female_beaver\",\"adult_female_chameleon\",\"adult_female_reindeer\",\"adult_female_crocodile\"]",
+      "prompt_tokens_sha256": "415016b4071996cab5b1e082e941282eef6387d6555c116ba6090b88d2012dde"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000027/p0",
+      "update": 27,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"adult_female_raccoon\",\"adult_female_chimpanzee\",\"adult_female_squirrel\",\"adult_female_parrot\",\"adult_female_gorilla\",\"adult_female_bottlenose_dolphin\",\"adult_female_vampire_bat\",\"adult_female_silky_anteater\",\"adult_female_giant_panda\",\"adult_female_red_kangaroo\",\"adult_female_hippopotamus\",\"adult_female_giant_anteater\",\"adult_female_harbor_seal\",\"adult_female_african_elephant\",\"adult_female_african_wild_dog\",\"adult_female_sperm_whale\",\"adult_female_ring_tailed_lemur\",\"adult_female_tasmanian_devil\",\"adult_female_flamingo\",\"adult_female_barn_owl\",\"adult_female_sea_lion\",\"adult_female_rabbit\",\"adult_female_komodo_dragon\",\"adult_female_crested_porcupine\",\"adult_female_flying_squirrel\",\"adult_female_pika\",\"adult_female_green_sea_turtle\",\"adult_female_fruit_bat\",\"adult_female_prairie_dog\",\"adult_female_honey_badger\",\"adult_female_horse\",\"adult_female_striped_skunk\",\"adult_female_peacock\",\"adult_female_hummingbird\",\"adult_female_bald_eagle\",\"adult_female_beaver\",\"adult_female_chameleon\",\"adult_female_reindeer\",\"adult_female_crocodile\"]",
+      "prompt_tokens_sha256": "c35c2c3a579f38ebe73b5723b30f04ce893ec14228ce1391b1fbc72af92966c7"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000027/p0",
+      "update": 27,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"adult_female_raccoon\",\"adult_female_chimpanzee\",\"adult_female_squirrel\",\"adult_female_parrot\",\"adult_female_gorilla\",\"adult_female_bottlenose_dolphin\",\"adult_female_vampire_bat\",\"adult_female_silky_anteater\",\"adult_female_giant_panda\",\"adult_female_red_kangaroo\",\"adult_female_hippopotamus\",\"adult_female_giant_anteater\",\"adult_female_harbor_seal\",\"adult_female_african_elephant\",\"adult_female_african_wild_dog\",\"adult_female_sperm_whale\",\"adult_female_ring_tailed_lemur\",\"adult_female_tasmanian_devil\",\"adult_female_flamingo\",\"adult_female_barn_owl\",\"adult_female_sea_lion\",\"adult_female_rabbit\",\"adult_female_komodo_dragon\",\"adult_female_crested_porcupine\",\"adult_female_flying_squirrel\",\"adult_female_pika\",\"adult_female_green_sea_turtle\",\"adult_female_fruit_bat\",\"adult_female_prairie_dog\",\"adult_female_honey_badger\",\"adult_female_horse\",\"adult_female_striped_skunk\",\"adult_female_peacock\",\"adult_female_hummingbird\",\"adult_female_bald_eagle\",\"adult_female_beaver\",\"adult_female_chameleon\",\"adult_female_reindeer\",\"adult_female_crocodile\"]",
+      "prompt_tokens_sha256": "c35c2c3a579f38ebe73b5723b30f04ce893ec14228ce1391b1fbc72af92966c7"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000027/p0",
+      "update": 27,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"adult_female_raccoon\",\"adult_female_chimpanzee\",\"adult_female_squirrel\",\"adult_female_parrot\",\"adult_female_gorilla\",\"adult_female_bottlenose_dolphin\",\"adult_female_vampire_bat\",\"adult_female_silky_anteater\",\"adult_female_giant_panda\",\"adult_female_red_kangaroo\",\"adult_female_hippopotamus\",\"adult_female_giant_anteater\",\"adult_female_harbor_seal\",\"adult_female_african_elephant\",\"adult_female_african_wild_dog\",\"adult_female_sperm_whale\",\"adult_female_ring_tailed_lemur\",\"adult_female_tasmanian_devil\",\"adult_female_flamingo\",\"adult_female_barn_owl\",\"adult_female_sea_lion\",\"adult_female_rabbit\",\"adult_female_komodo_dragon\",\"adult_female_crested_porcupine\",\"adult_female_flying_squirrel\",\"adult_female_pika\",\"adult_female_green_sea_turtle\",\"adult_female_fruit_bat\",\"adult_female_prairie_dog\",\"adult_female_honey_badger\",\"adult_female_horse\",\"adult_female_striped_skunk\",\"adult_female_peacock\",\"adult_female_hummingbird\",\"adult_female_bald_eagle\",\"adult_female_beaver\",\"adult_female_chameleon\",\"adult_female_reindeer\",\"adult_female_crocodile\"]",
+      "prompt_tokens_sha256": "c35c2c3a579f38ebe73b5723b30f04ce893ec14228ce1391b1fbc72af92966c7"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000027/p0",
+      "update": 27,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"adult_female_raccoon\",\"adult_female_chimpanzee\",\"adult_female_squirrel\",\"adult_female_parrot\",\"adult_female_gorilla\",\"adult_female_bottlenose_dolphin\",\"adult_female_vampire_bat\",\"adult_female_silky_anteater\",\"adult_female_giant_panda\",\"adult_female_red_kangaroo\",\"adult_female_hippopotamus\",\"adult_female_giant_anteater\",\"adult_female_harbor_seal\",\"adult_female_african_elephant\",\"adult_female_african_wild_dog\",\"adult_female_sperm_whale\",\"adult_female_ring_tailed_lemur\",\"adult_female_tasmanian_devil\",\"adult_female_flamingo\",\"adult_female_barn_owl\",\"adult_female_sea_lion\",\"adult_female_rabbit\",\"adult_female_komodo_dragon\",\"adult_female_crested_porcupine\",\"adult_female_flying_squirrel\",\"adult_female_pika\",\"adult_female_green_sea_turtle\",\"adult_female_fruit_bat\",\"adult_female_prairie_dog\",\"adult_female_honey_badger\",\"adult_female_horse\",\"adult_female_striped_skunk\",\"adult_female_peacock\",\"adult_female_hummingbird\",\"adult_female_bald_eagle\",\"adult_female_beaver\",\"adult_female_chameleon\",\"adult_female_reindeer\",\"adult_female_crocodile\"]",
+      "prompt_tokens_sha256": "c35c2c3a579f38ebe73b5723b30f04ce893ec14228ce1391b1fbc72af92966c7"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000027/p0",
+      "update": 27,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"adult_female_raccoon\",\"adult_female_chimpanzee\",\"adult_female_squirrel\",\"adult_female_parrot\",\"adult_female_gorilla\",\"adult_female_bottlenose_dolphin\",\"adult_female_vampire_bat\",\"adult_female_silky_anteater\",\"adult_female_giant_panda\",\"adult_female_red_kangaroo\",\"adult_female_hippopotamus\",\"adult_female_giant_anteater\",\"adult_female_harbor_seal\",\"adult_female_african_elephant\",\"adult_female_african_wild_dog\",\"adult_female_sperm_whale\",\"adult_female_ring_tailed_lemur\",\"adult_female_tasmanian_devil\",\"adult_female_flamingo\",\"adult_female_barn_owl\",\"adult_female_sea_lion\",\"adult_female_rabbit\",\"adult_female_komodo_dragon\",\"adult_female_crested_porcupine\",\"adult_female_flying_squirrel\",\"adult_female_pika\",\"adult_female_green_sea_turtle\",\"adult_female_fruit_bat\",\"adult_female_prairie_dog\",\"adult_female_honey_badger\",\"adult_female_horse\",\"adult_female_striped_skunk\",\"adult_female_peacock\",\"adult_female_hummingbird\",\"adult_female_bald_eagle\",\"adult_female_beaver\",\"adult_female_chameleon\",\"adult_female_reindeer\",\"adult_female_crocodile\"]",
+      "prompt_tokens_sha256": "6d21bd573f2fc1e5cd4b2746ad8ac1f77017e4f775a8318547588c031a882746"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000027/p0",
+      "update": 27,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "INVALID\nREMAINING CANDIDATES: [\"adult_female_raccoon\",\"adult_female_chimpanzee\",\"adult_female_squirrel\",\"adult_female_parrot\",\"adult_female_gorilla\",\"adult_female_bottlenose_dolphin\",\"adult_female_vampire_bat\",\"adult_female_silky_anteater\",\"adult_female_giant_panda\",\"adult_female_red_kangaroo\",\"adult_female_hippopotamus\",\"adult_female_giant_anteater\",\"adult_female_harbor_seal\",\"adult_female_african_elephant\",\"adult_female_african_wild_dog\",\"adult_female_sperm_whale\",\"adult_female_ring_tailed_lemur\",\"adult_female_tasmanian_devil\",\"adult_female_flamingo\",\"adult_female_barn_owl\",\"adult_female_sea_lion\",\"adult_female_rabbit\",\"adult_female_komodo_dragon\",\"adult_female_crested_porcupine\",\"adult_female_flying_squirrel\",\"adult_female_pika\",\"adult_female_green_sea_turtle\",\"adult_female_fruit_bat\",\"adult_female_prairie_dog\",\"adult_female_honey_badger\",\"adult_female_horse\",\"adult_female_striped_skunk\",\"adult_female_peacock\",\"adult_female_hummingbird\",\"adult_female_bald_eagle\",\"adult_female_beaver\",\"adult_female_chameleon\",\"adult_female_reindeer\",\"adult_female_crocodile\"]",
+      "prompt_tokens_sha256": "c35c2c3a579f38ebe73b5723b30f04ce893ec14228ce1391b1fbc72af92966c7"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000028/p0",
+      "update": 28,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_female_blue_whale\",\"juvenile_female_orca\",\"adult_female_harbor_seal\",\"adult_female_sperm_whale\",\"adult_female_bottlenose_dolphin\"]",
+      "prompt_tokens_sha256": "a9157c0e04846be231c1663c0fd17de6b30295eb0b77124efcbe57f86471ee85"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000028/p0",
+      "update": 28,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_female_blue_whale\",\"juvenile_female_orca\",\"adult_female_harbor_seal\",\"adult_female_sperm_whale\",\"adult_female_bottlenose_dolphin\"]",
+      "prompt_tokens_sha256": "73fe282a4a5fcc20a5eea73d228163ae8e7fbdce13afa4875442c7da5d47f0fb"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000028/p0",
+      "update": 28,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_female_blue_whale\",\"juvenile_female_orca\",\"adult_female_harbor_seal\",\"adult_female_sperm_whale\",\"adult_female_bottlenose_dolphin\"]",
+      "prompt_tokens_sha256": "15a2223cb9783295a1fdf68650cc7b85db30620d9b59af9af9d8e83f84834f25"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000028/p0",
+      "update": 28,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_female_orca\",\"adult_female_harbor_seal\",\"adult_female_bottlenose_dolphin\"]",
+      "prompt_tokens_sha256": "2e36fd13c23186628daee078e439c2f59702a031ec3ead67fe64383358c9aa93"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000028/p0",
+      "update": 28,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_female_orca\",\"adult_female_harbor_seal\",\"adult_female_bottlenose_dolphin\"]",
+      "prompt_tokens_sha256": "f1b97bdb21a17be2c9a6059c0a5debdaf4c6f1816f36fe5eea0758fea8b58c29"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000028/p0",
+      "update": 28,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_female_blue_whale\",\"adult_female_african_elephant\",\"juvenile_female_king_cobra\",\"adult_male_short_beaked_echidna\",\"adult_male_woodpecker\",\"adult_male_naked_mole_rat\",\"adult_female_green_sea_turtle\",\"juvenile_female_orca\",\"juvenile_male_harbor_seal\",\"adult_female_harbor_seal\",\"juvenile_female_chameleon\",\"adult_female_emperor_penguin\",\"juvenile_male_african_elephant\",\"juvenile_female_barn_owl\",\"adult_male_swan\",\"adult_female_bald_eagle\",\"juvenile_female_woodpecker\",\"adult_female_hippopotamus\",\"juvenile_female_parrot\",\"juvenile_female_raven\",\"adult_female_crocodile\",\"adult_female_barn_owl\",\"adult_female_crested_porcupine\",\"adult_female_peacock\",\"adult_female_parrot\",\"juvenile_female_flamingo\",\"adult_male_nine_banded_armadillo\",\"adult_female_ostrich\",\"adult_female_sperm_whale\",\"juvenile_female_crocodile\",\"adult_male_harbor_seal\",\"adult_female_raven\",\"adult_female_flamingo\",\"adult_male_hippopotamus\",\"juvenile_male_bottlenose_dolphin\",\"adult_female_bottlenose_dolphin\",\"juvenile_female_swan\",\"juvenile_male_pangolin\",\"adult_male_toucan\",\"adult_female_hummingbird\",\"juvenile_male_orca\",\"adult_female_nine_banded_armadillo\",\"adult_male_blue_whale\",\"juvenile_female_pelican\",\"adult_female_chameleon\",\"adult_male_peacock\",\"juvenile_male_hummingbird\"]",
+      "prompt_tokens_sha256": "0c7b2e8abcc7c0bf9e3c3b7e9b204abb4c41b78106c8873608741e65aeb12f35"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000029/p0",
+      "update": 29,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_male_gorilla\",\"adult_male_giant_panda\"]",
+      "prompt_tokens_sha256": "4056c47a438d8e33c91489aad7870294d512e49f8e955e07c33b61cd07ffc6ea"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000029/p0",
+      "update": 29,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"adult_male_meerkat\",\"adult_male_sea_lion\",\"adult_male_african_wild_dog\",\"adult_male_wild_boar\",\"adult_male_red_kangaroo\",\"adult_male_crested_porcupine\",\"adult_male_brown_bear\",\"adult_male_nine_banded_armadillo\",\"adult_male_hippopotamus\",\"adult_male_tiger\",\"adult_male_platypus\",\"adult_male_orangutan\",\"adult_male_honey_badger\",\"adult_male_chimpanzee\",\"adult_male_giraffe\",\"adult_male_giant_panda\",\"adult_male_musk_ox\",\"adult_male_jaguar\",\"adult_male_cougar\",\"adult_male_harbor_seal\",\"adult_male_llama\",\"adult_male_vampire_bat\",\"adult_male_blue_whale\",\"adult_male_aardvark\",\"adult_male_sun_bear\",\"adult_male_gibbon\",\"adult_male_rabbit\"]",
+      "prompt_tokens_sha256": "5ead4239c5cb06d155a81f9a6b647c7f00f0562dd982a933224e7127ca543ce6"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000029/p0",
+      "update": 29,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_male_orangutan\",\"juvenile_male_red_panda\",\"adult_male_orangutan\",\"juvenile_male_brown_throated_sloth\",\"juvenile_male_gorilla\",\"juvenile_male_squirrel\",\"juvenile_male_koala\",\"adult_male_giant_panda\",\"juvenile_male_mountain_goat\",\"adult_male_gibbon\"]",
+      "prompt_tokens_sha256": "bc2902f93cffa289faf98988df57c8e300213a988f679a5973ff84dc0b22ff24"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000029/p0",
+      "update": 29,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"adult_male_red_kangaroo\",\"juvenile_male_gorilla\",\"adult_male_giant_panda\"]",
+      "prompt_tokens_sha256": "1c4897aff2d3f075f49542ffe51dd8ffafee49c13d4e62df357afec6bf56371a"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000029/p0",
+      "update": 29,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_male_meerkat\",\"adult_male_african_wild_dog\",\"adult_male_wild_boar\",\"adult_male_red_kangaroo\",\"adult_male_brown_bear\",\"adult_male_tiger\",\"adult_male_platypus\",\"adult_male_honey_badger\",\"adult_male_chimpanzee\",\"adult_male_giant_panda\",\"adult_male_musk_ox\",\"adult_male_jaguar\",\"adult_male_cougar\",\"adult_male_vampire_bat\",\"adult_male_sun_bear\",\"adult_male_rabbit\"]",
+      "prompt_tokens_sha256": "701706a9f9d4fe0d9aec6189bd857970dd7b37cc9c8551d547b877d1b48d20b4"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000030/p0",
+      "update": 30,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_female_red_kangaroo\",\"juvenile_female_chinchilla\",\"adult_female_rabbit\"]",
+      "prompt_tokens_sha256": "ab2d5fcdd0f98ac386dba34759f929025e398bef1a5ec61557b75d13a663ad15"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000030/p0",
+      "update": 30,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"adult_female_fruit_bat\",\"juvenile_female_giraffe\",\"juvenile_female_honey_badger\",\"juvenile_female_chinchilla\",\"juvenile_female_aardvark\",\"adult_female_pika\",\"adult_female_rabbit\",\"juvenile_female_prairie_dog\"]",
+      "prompt_tokens_sha256": "3507dc581c6035a8674cf9b179488d57791c9b43cf3ca52653f30dc536c9d88f"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000030/p0",
+      "update": 30,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"juvenile_female_howler_monkey\",\"adult_female_squirrel\",\"juvenile_female_gibbon\",\"juvenile_female_chinchilla\",\"adult_female_red_panda\",\"adult_female_pika\",\"adult_female_rabbit\",\"juvenile_female_prairie_dog\"]",
+      "prompt_tokens_sha256": "62b6712dba3fab1ff164ca773933162b86c563aaecbf205b4791cac612b913e1"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000030/p0",
+      "update": 30,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "NO\nREMAINING CANDIDATES: [\"adult_female_fruit_bat\",\"adult_female_horse\",\"adult_female_reindeer\",\"adult_female_rabbit\"]",
+      "prompt_tokens_sha256": "413e85e1c6eb5352285fa21ed2fc9ee47ced702bc242704a4f604ff36375cfeb"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000030/p0",
+      "update": 30,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_female_howler_monkey\",\"adult_female_squirrel\",\"juvenile_female_gibbon\",\"juvenile_female_giraffe\",\"adult_female_horse\",\"juvenile_female_red_kangaroo\",\"juvenile_female_chinchilla\",\"adult_female_red_panda\",\"adult_female_reindeer\",\"adult_female_pika\",\"adult_female_rabbit\",\"juvenile_female_prairie_dog\",\"juvenile_female_llama\",\"adult_female_capybara\",\"adult_female_giant_panda\",\"adult_female_gorilla\"]",
+      "prompt_tokens_sha256": "f6bd203ee5a0ff23f924170fe0257c1ca0430270ec36660ce5c0550cbdce84d9"
+    },
+    {
+      "game_id": "train-v1/seed23/animals/128/1000030/p0",
+      "update": 30,
+      "turn": 14,
+      "maximum_questions": 14,
+      "questions_used": 14,
+      "initial_settings": "Answer flip probability: 0.00, independently each question. Maximum questions: 14. After the last answer, make one final guess; another question loses. Begin.",
+      "latest_environment_message": "YES\nREMAINING CANDIDATES: [\"juvenile_female_chinchilla\",\"adult_female_rabbit\"]",
+      "prompt_tokens_sha256": "77b4b4bbc742c8873a61cfedee252d3aae73dc5d8f73e670d06343f636585f31"
+    }
+  ]
+}

@@ -40,8 +40,8 @@ class RecoveringTransport(PilotTransport):
         return sum(
             (
                 Decimal(e["reserved_usd"])
-                for e in self.ledger.status()["entries"]
-                if e["id"] in ids and e["state"] in ACTIVE_STATES
+                for e in self.ledger.entries(states=ACTIVE_STATES)
+                if e["id"] in ids
             ),
             Decimal(0),
         )

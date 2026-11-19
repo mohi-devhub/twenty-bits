@@ -21,3 +21,9 @@ A11 suffix diagnostic and hard mode: **not run: A11 checkpoint wasn't persisted,
 - Operations: no-expiry native A23 training and sampler files persist and fresh clients sample them after source completion. All 24 new lost originals remain held and excluded; exact replacements completed. The disposable-ledger I/O diagnostic led only to reduced execution concurrency, with scientific settings and ledger behavior unchanged.
 
 See MAIN_A23_GATE.md and results/main_A23/replication_summary.json for paired game and hierarchical seed/game intervals, all cell counts and the next-stage forecast. B41 has not started.
+
+## Accepted A23 gate: observations to carry into B41
+
+- **Same win rate, opposite failure modes.** Noiseless animal wins are 24/56 for A11 and 25/56 for A23, a one-game difference. A11 gambles: at N=128 it guesses ambiguously in 27/28 games, 26 with unused question budget. A23 stalls: it makes no ambiguous guesses there, but 23/28 games finish without guessing. Similar observed wins hide very different stopping policies.
+- **A11's identifier regression does not replicate in A23.** Synthetic invalid questions are 276 versus four; noiseless synthetic wins are 49/84 versus 84/84 (raw base: 82/84). Keep both endpoints visible and avoid treating either seed as typical.
+- **A23 update-23 collapse at N=64.** That eight-game group has zero wins, 67/96 invalid questions, 24 truncated turns and 6,312.75 generated tokens/game. Mean reward is -1.1975. The protocol stayed unchanged; subsequent checks and groups recover partially. Its cause is unestablished, so do not label it a causal effect of N=64 or the ledger problem.

@@ -23,3 +23,7 @@ replays/.thumbnails/
 
 experiments/A23_suffix_games.json
 experiments/A23_hard_games.json
+
+ledger.sqlite3
+ledger.sqlite3-*
+experiments/main_B41_games.json

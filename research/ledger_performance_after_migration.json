@@ -1,0 +1,63 @@
+{
+  "claim": "The migrated local guard avoids whole-history serialization; this is not an LLM throughput measurement.",
+  "source_entries": 45033,
+  "source_bytes": 26893150,
+  "source_sha256": "35f7e179e0e898051aabc9301b9108a083545bd5a227f1bc497c9e1048ccfae3",
+  "load_average_before": [
+    2.603515625,
+    2.38037109375,
+    2.29296875
+  ],
+  "load_average_after": [
+    2.4892578125,
+    2.37451171875,
+    2.29296875
+  ],
+  "logical_cpus": 10,
+  "service_calls": 0,
+  "live_ledger_mutations": 0,
+  "errors": 0,
+  "trials": {
+    "json": [
+      4.464467666999553,
+      4.818773332997807,
+      4.599921625005663,
+      4.533953499994823,
+      4.519289749994641
+    ],
+    "sqlite": [
+      0.006694875002722256,
+      0.0066507920128060505,
+      0.007606833998579532,
+      0.006158958000014536,
+      0.0067910419893451035
+    ]
+  },
+  "median_seconds": {
+    "json": 4.533953499994823,
+    "sqlite": 0.006694875002722256
+  },
+  "range_seconds": {
+    "json": [
+      4.464467666999553,
+      4.818773332997807
+    ],
+    "sqlite": [
+      0.006158958000014536,
+      0.007606833998579532
+    ]
+  },
+  "event_loop_probe": {
+    "concurrent_players": 16,
+    "guarded_operations": 160,
+    "seconds": 0.85534758400172,
+    "maximum_event_loop_lag_seconds": 0.08683858299104032,
+    "heartbeat_samples": 11,
+    "errors": 0
+  },
+  "profile_separate_from_timing": "         985 function calls in 0.006 seconds\n\n   Ordered by: cumulative time\n   List reduced from 104 to 12 due to restriction <12>\n\n   ncalls  tottime  percall  cumtime  percall filename:lineno(function)\n        1    0.000    0.000    0.006    0.006 /Users/mohith/Projects/twenty-bits/scripts/benchmark_live_ledger.py:24(guarded_operation)\n       28    0.000    0.000    0.004    0.000 {built-in method builtins.next}\n        1    0.000    0.000    0.004    0.004 /Users/mohith/Projects/twenty-bits/twenty_bits/budget.py:524(call)\n       14    0.000    0.000    0.004    0.000 /Users/mohith/Projects/twenty-bits/twenty_bits/ledger_store.py:52(transaction)\n        3    0.000    0.000    0.003    0.001 /Users/mohith/Projects/twenty-bits/twenty_bits/budget.py:479(_update)\n        1    0.000    0.000    0.003    0.003 /Users/mohith/Projects/twenty-bits/twenty_bits/budget.py:507(dispatch)\n       45    0.002    0.000    0.002    0.000 {method 'execute' of 'sqlite3.Connection' objects}\n       14    0.000    0.000    0.002    0.000 /Users/mohith/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/contextlib.py:132(__enter__)\n       14    0.000    0.000    0.002    0.000 /Users/mohith/.local/share/uv/python/cpython-3.12.12-macos-aarch64-none/lib/python3.12/contextlib.py:141(__exit__)\n        7    0.002    0.000    0.002    0.000 {method 'commit' of 'sqlite3.Connection' objects}\n        1    0.000    0.000    0.002    0.002 /Users/mohith/Projects/twenty-bits/scripts/benchmark_live_ledger.py:29(send)\n        1    0.000    0.000    0.001    0.001 /Users/mohith/Projects/twenty-bits/twenty_bits/budget.py:358(reserve)\n\n\n",
+  "all_original_entries_unchanged": true,
+  "limiter": "JSON baseline repeatedly validates and serializes the whole history. SQLite uses indexed reads, integer totals and durable small transactions; filesystem sync/transaction costs remain.",
+  "execution_parallelism_safe_by_local_check": true,
+  "limits": "Five alternating local-copy trials and a simulated 16-player event loop. No network, sampler, trainer or server throughput was measured. Future network failures still require draining and recovery."
+}
