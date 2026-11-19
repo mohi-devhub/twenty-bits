@@ -1,5 +1,6 @@
 """Read B41 progress and current live budget without making service calls."""
 
+import argparse
 import json
 from pathlib import Path
 import sys
@@ -10,13 +11,29 @@ from twenty_bits.worlds import ROOT
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--snapshot",
+        action="store_true",
+        help="Read the explicit JSON audit export; it may be stale during a run.",
+    )
+    args = parser.parse_args()
     out = ROOT / "results/main_B41"
     curve = out / "learning_curve.json"
     updates = json.loads(curve.read_text())["updates"] if curve.exists() else []
     result = {
         "completed_updates": len(updates),
         "endpoint_complete": (out / "completion.json").exists(),
-        "budget": Ledger(ROOT / "ledger.json").summary(),
+        "budget": (
+            {
+                k: v
+                for k, v in Ledger.snapshot_status(ROOT / "ledger.json").items()
+                if k != "entries"
+            }
+            if args.snapshot
+            else Ledger(ROOT / "ledger.json").summary()
+        ),
+        "budget_source": "JSON audit export" if args.snapshot else "live SQLite",
     }
     if updates:
         last = updates[-1]

@@ -1,5 +1,5 @@
 {
-  "status": "B41 authorized after offline ledger migration and budget-visibility audit; stop at its endpoint gate.",
+  "status": "All declared U main seeds complete; stopped at the B41 gate before further paid work.",
   "initial_policy": "raw_base_no_sft",
   "sft_checkpoint": null,
   "sft_removal_reason": "Paired candidate-set qualification: SFT EIG lower by 0.1444 bits/question; raw base selected by user.",
@@ -45,13 +45,13 @@
   "training_games": 240,
   "development_games": 64,
   "rl_authorized_scope": "A23: 30 updates, groups of eight; primary, suffix auxiliary and hard-mode endpoints; B41 requires gate confirmation.",
-  "main_runs_authorized": true,
+  "main_runs_authorized": false,
   "reference_model": null,
   "project_usage_at_recording": {
     "cap_usd": "50.000000",
-    "spent_usd": "16.125774",
-    "held_usd": "1.640132",
-    "available_usd": "32.234094",
+    "spent_usd": "20.100658",
+    "held_usd": "2.083181",
+    "available_usd": "27.816161",
     "blocked": false
   },
   "pilot_gate": "PILOT_GATE.md",
@@ -108,15 +108,15 @@
       "total_with_1_5_margin_usd": 42.480710971200004
     }
   },
-  "active_stage": "B41",
+  "active_stage": "B41_gate",
   "next_stage_requires_gate_decision": true,
   "main_approval": "research/main_B41_approval.json",
   "main_seed_config": "experiments/main_B41.json",
   "main_seed_preflight": "research/main_B41_preflight.json",
-  "training_updates_completed": 0,
+  "training_updates_completed": 30,
   "raw_control_games_saved": 280,
   "incident": "research/main_A23_network_recovery.json",
-  "next_action": "Run only B41 unchanged, save native endpoints without expiry, evaluate the primary frozen slice immediately, then stop.",
+  "next_action": "Complete the offline gate report and commit; wait for the user before the final write-up phase or any further paid work.",
   "paused": false,
   "pause_record": "research/main_A11_pause.json",
   "standing_replacement_rule": "research/replacement_policy.json",
@@ -141,11 +141,11 @@
   ],
   "pilot_training_games": 128,
   "pilot_development_games": 40,
-  "dispatch_authorized_now": true,
-  "endpoint_games_saved": 0,
+  "dispatch_authorized_now": false,
+  "endpoint_games_saved": 280,
   "reused_raw_development_games": 8,
-  "current_gate": null,
-  "next_gate": "MAIN_B41_GATE.md",
+  "current_gate": "MAIN_B41_GATE.md",
+  "next_gate": null,
   "continuation_approval": "research/main_U_continuation_approval.json",
   "diagnostic_config": "experiments/A23_suffix_diagnostic.json",
   "B41_confirmation_pending": false,
@@ -160,5 +160,7 @@
   "ledger_storage": "sqlite-v1",
   "ledger_migration": "research/ledger_migration.json",
   "budget_visibility_audit": "research/A23_budget_visibility.json",
-  "execution_concurrent_games": 16
+  "execution_concurrent_games": 16,
+  "B41_suffix_diagnostic_games": 0,
+  "B41_hard_mode_games": 0
 }

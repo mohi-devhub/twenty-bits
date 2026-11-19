@@ -27,3 +27,15 @@ See MAIN_A23_GATE.md and results/main_A23/replication_summary.json for paired ga
 - **Same win rate, opposite failure modes.** Noiseless animal wins are 24/56 for A11 and 25/56 for A23, a one-game difference. A11 gambles: at N=128 it guesses ambiguously in 27/28 games, 26 with unused question budget. A23 stalls: it makes no ambiguous guesses there, but 23/28 games finish without guessing. Similar observed wins hide very different stopping policies.
 - **A11's identifier regression does not replicate in A23.** Synthetic invalid questions are 276 versus four; noiseless synthetic wins are 49/84 versus 84/84 (raw base: 82/84). Keep both endpoints visible and avoid treating either seed as typical.
 - **A23 update-23 collapse at N=64.** That eight-game group has zero wins, 67/96 invalid questions, 24 truncated turns and 6,312.75 generated tokens/game. Mean reward is -1.1975. The protocol stayed unchanged; subsequent checks and groups recover partially. Its cause is unestablished, so do not label it a causal effect of N=64 or the ledger problem.
+
+## Budget visibility, audited without changing the prompt
+
+All 110 A23 extra ASK inputs retain the fixed maximum and final-guess instruction in their opening history. None has a dynamic used/remaining question count or an exhaustion notice at that turn. The environment supplies candidate state, but budget tracking still requires counting played actions. This is an observation about the task, not an established cause of stalling. B41 keeps the prompt unchanged. research/BUDGET_VISIBILITY.md includes exact text and the verified token-level counts.
+
+## Completed B41 observations
+
+- B41 also gambles: 203/280 games guess ambiguously, with 152 wrong guesses and only one no-guess ending. All 140 noisy games guess with multiple displayed candidates. Noisy animal N=128 wins are 0/28. The small noiseless development curve improves while every N=128 training group has zero wins.
+- Noisy wins are B41 36/140, A11 31/140, A23 29/140 and raw 52/140. B41 minus mean A is +0.042857 with a paired game/A-seed interval [-0.017857, 0.107143], conditional on the single B endpoint. Its noisy EIG difference is +0.030584 [0.001093, 0.053188]. Do not translate this into a general noise-training benefit or learned re-checking claim.
+- Noiseless synthetic wins are B41 72/84 versus base 82/84. Its 28 synthetic invalid questions include 13 copied code=name header pairs and 15 code_suffix hybrids. The severe A11 identifier regression is absent in A23 and smaller/mixed in B41. Do not silently repair primary scores or treat conditional valid-question EIG as a repaired policy result.
+- The B41 sampler/trainer maximum logprob gap is 3.802663 nats at update 26; update means range from -0.018576 to +0.002337. Native token parity and the unchanged objective are verified. Cause and behavioral impact remain unestablished.
+- Ledger bookkeeping is now transactional and indexed. B41 has no lost request or replacement, and all older holds remain. The local benchmark does not establish a controlled model-throughput speedup. Both B41 native endpoint file types have no expiry; the paid stage is stopped.

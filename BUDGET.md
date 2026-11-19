@@ -1,51 +1,55 @@
 # Current budget
 
-The user approved **$50 total Tinker spend including active holds on 2026-11-18**. At the completed A23 gate, recorded usage is **$16.125774**, holds are **$1.640132**, and **$32.234094 remains**. These are observed-token charges at saved provider rates, pending invoice reconciliation. All HTTP work is drained. **The user accepted A23 and authorized unchanged B41 after the offline ledger migration. Stop at its endpoint gate.**
+The user approved **$50 total Tinker spend including active holds on 2026-11-18**. All declared U main runs are now complete. Recorded usage is **$20.100658**, active holds **$2.083181**, and **$27.816161 remains**. Usage uses observed tokens at pinned rates, pending invoice reconciliation. **Stopped at MAIN_B41_GATE.md; no further paid work is authorized.**
 
-A23 used **$5.109912**, with **$0.508896 in new holds**. The primary stage used $4.361613 plus $0.505576 held, compared with its $7.816614 forecast before margin or $11.724921 with 1.5x margin. The primary forecast includes training, development, the frozen endpoint and native storage; the auxiliary evaluations have separate costs below. [Gate](MAIN_A23_GATE.md), [observed token usage](results/main_A23/summary.json), [completion](results/main_A23/completion.json).
+Live state is in ignored `ledger.sqlite3`. The completed `ledger.json` audit export matches it. During a run, that JSON is stale; use Ledger.summary/status for live numbers. Migration preserved all 45,033 prior entries, approvals and holds. The final append-only history has 84,310 events and reconstructs 54,866 current records exactly. [Storage rules](LEDGER.md), [migration equality](research/ledger_migration.json), [event archive](research/ledger_events_archive.json).
 
-| A23 component | Recorded usage USD | New holds USD |
-| --- | ---: | ---: |
-| Training, development, primary endpoint | 4.361613 | 0.505576 |
-| Suffix diagnostic, auxiliary only | 0.671128 | 0.003320 |
-| Hard mode, raw base and A23 | 0.077171 | 0.000000 |
-| Total | **5.109912** | **0.508896** |
+## B41 actual versus forecast
 
-The suffix diagnostic's usage plus holds is $0.674448, below its $1.50 ceiling. A23 total usage plus new holds is $5.618808. The pre-A23 ledger had usage $11.015862 and holds $1.131236; no older entry or approval changed.
+B41 used **$3.974884**, with **$0.443049 held** for its two permanent native endpoints. Combined exposure is **$4.417933**, versus **$9.089482 forecast before margin / $13.634222 with 1.5x margin**. The stage completed 240 training games, 64 development games and all 280 endpoint games, with zero lost requests or replacements. Raw controls were reused without new charges.
 
-| Outstanding exposure | USD held |
+| B41 component | Recorded usage USD |
 | --- | ---: |
-| Five historical Phase 2 originals | 0.007195 |
-| Four historical probe originals | 0.005618 |
+| Training sampling | 0.372437 |
+| Development sampling | 0.018617 |
+| Frozen endpoint sampling | 0.692172 |
+| Forward/backward | 2.891658 |
+| Total | **3.974884** |
+
+Before B41, usage was $16.125774 and holds $1.640132. No older entry or approval changed. [Observed token counts](results/main_B41/summary.json), [forecast assumptions](research/B41_forecast_after_A23.json), [gate](MAIN_B41_GATE.md).
+
+## Outstanding holds
+
+| Exposure | USD held |
+| --- | ---: |
+| Five Phase 2 originals | 0.007195 |
+| Four probe originals | 0.005618 |
 | Two A11 originals | 0.004721 |
 | Sixteen failed A11 diagnostic originals | 0.023700 |
 | Twenty-two A23 primary originals | 0.062527 |
-| Two A23 suffix-diagnostic originals | 0.003320 |
+| Two A23 diagnostic originals | 0.003320 |
 | SFT checkpoint/export operations | 0.100000 |
 | Pilot checkpoint/export operations | 0.250000 |
 | A11 checkpoint/export operations | 0.100000 |
 | Deleted persistence-smoke files | 0.640002 |
-| Permanent A23 training and sampler endpoints | 0.443049 |
-| Total | **1.640132** |
+| Permanent A23 endpoint pair | 0.443049 |
+| Permanent B41 endpoint pair | 0.443049 |
+| Total | **2.083181** |
 
-The **51 lost originals hold $0.107081**, strictly below the standing replacement limit of $0.50. Storage is separate. Each eligible A23 lost logical sample received one exact replacement; originals remain excluded and held. No hard-mode request needed replacement. A 404 or a locally observed collection time does not establish whether work was billed or when a server result disappeared. [Replacement policy](research/replacement_policy.json) and the gate list every new case. Unknown charges stay held after file expiry or deletion.
+The **51 lost originals hold $0.107081**, strictly below the standing replacement rule's $0.50 limit. Storage is separate. Those outputs remain permanently excluded, even if recovered later. All eligible replacements completed. A local 404, timeout or file deletion does not resolve billing; holds remain until reconciliation.
 
-Both A23 checkpoint types have API `expires_at: null`. Their measured combined size is 1,476,823,234 bytes, priced at **$0.1476823234 per month** under the saved paid-plan rate. The active $0.443049 reserve covers 30 days with twice measured smoke sizes and the usual 1.5x margin, including per-operation rounding. Permanent files require future storage reconciliation and another reserved period within the cap; they do not expire when that period ends. [Storage assumptions](research/native_storage_pricing.json). Both smoke files were deleted through the API after user confirmation, and Pixel Miser files were untouched. Their earlier holds are retained.
+Both A23 and B41 native endpoint file types have API `expires_at: null`. B41's combined measured size is 1,476,823,252 bytes, priced at **$0.1476823252/month** under the saved paid-plan rate. Each pair's $0.443049 reserve covers 30 days with twice measured smoke sizes and the usual 1.5x margin, including per-operation rounding. Permanent files do not expire at the end of that reserved period; future storage requires reconciliation within the cap. [Storage assumptions](research/native_storage_pricing.json). Both smoke files were API-verified absent after approved deletion. Pixel Miser files were untouched.
 
-## Authorized B41 forecast
+## Historical gates
 
-The unchanged 30-update noisy seed forecasts **$9.089482 before margin** and **$13.634222 with 1.5x margin**, rounded upward to **$13.64**. That fits $32.234094 available and leaves about $18.60 beyond the forecast margin. It includes 240 training games, 64 new development games, the common 280-game frozen endpoint and both no-expiry native saves with 30-day storage reserves. Raw controls and hard mode are already complete; no extra diagnostic, external upload or new domain is included.
+A23 added $5.109912 in usage and $0.508896 holds: primary $4.361613 + $0.505576 held, suffix diagnostic $0.671128 + $0.003320 held, and hard mode $0.077171. Its primary-only forecast was $7.816614 before margin / $11.724921 with margin; auxiliary work was separate. [MAIN_A23_GATE.md](MAIN_A23_GATE.md) preserves the full scope comparison.
 
-The [measured-cost forecast](research/B41_forecast_after_A23.json) uses both A seeds, uncached training costs, original floors and pooled mean/upper-quartile profiles, then applies the offline noisy/noiseless reference ratio. The endpoint gets at most 60% cache credit; its cache-free reference total is $11.155978 before an extra margin. Noisy RL behavior remains unobserved. Per-call reservations enforce the cap even if the forecast is wrong. The user authorized B41 at this forecast after accepting A23; further paid work still waits at its gate.
+A11 used $4.389417 plus $0.104721 held. Its expired hosted files prevented deferred suffix and hard-mode evaluation; local adapter hashes remain an archive. Sixteen failed diagnostic requests produced no usable game and hold $0.023700. The later persistence samples cost $0.000012. [MAIN_A11_GATE.md](MAIN_A11_GATE.md).
 
-## Historical gates and unchanged safeguards
+The pilot used $0.291204 plus $0.250000 held against a $2.00 ceiling. The alias probe used $0.082031 against $0.25. Historical SFT/qualification used $0.370867 plus $0.100000 held, inside $2.51; SFT was excluded from main policies because it lowered EIG. Paired candidate-set slices cost $0.009990 for SFT and $0.009553 for raw base. The gpt-oss reference has no future allocation.
 
-[MAIN_A11_GATE.md](MAIN_A11_GATE.md) preserves A11's $4.389417 usage and $0.104721 holds. Its expired hosted files prevent the deferred A11 suffix and hard-mode evaluations; local adapter hashes remain an archive. Sixteen failed diagnostic requests hold $0.023700 and produced no usable game. The two persistence samples cost $0.000012 in total; test storage remains held.
+Phase 2 forecast $2.95805922 before margin / $4.437088830 with margin; its uncached cap envelope was $17.647606. [PHASE2.md](PHASE2.md) and [DIAGNOSIS.md](DIAGNOSIS.md) retain the actual cost and forecasting errors. [PAID_PLANS.md](PAID_PLANS.md) preserves earlier proposals, rather than silently repricing history.
 
-The [pilot](PILOT_GATE.md) used $0.291204 plus $0.250000 holds against its $2.00 ceiling. The alias probe used $0.082031 against $0.25. Historical SFT and qualification used $0.370867 plus $0.100000 holds, below their conservative $2.51 ceiling; SFT is excluded from main policies because it lowered qualification EIG. The paired candidate-set slices cost $0.009990 for SFT and $0.009553 for raw base. The gpt-oss reference has no future allocation.
+## Unchanged safeguards
 
-The Phase 2 forecast was $2.95805922 before margin or $4.437088830 with margin; its uncached token-cap envelope was $17.647606. [PHASE2.md](PHASE2.md) and [DIAGNOSIS.md](DIAGNOSIS.md) preserve actual usage and forecast errors. [PAID_PLANS.md](PAID_PLANS.md) retains superseded proposals; historical cost_projection.json and twenty_bits/costs.py use the older grid.
-
-Reservation, admission, dispatch, settlement and 408 behavior remain unchanged apart from the explicitly approved $50 cap. Every SDK operation, including metadata, uses Ledger.call. Sampling and mutation IDs are saved before dispatch and receipts checked. A retrieve_future 408 retains the original request and hold. Network recovery drains HTTP and collects all recoverable saved futures before new submissions. The execution change from 16 to 2 concurrent games altered no ledger code, timeout, experiment setting or token cap.
-
-The live ledger now uses SQLite; ledger.json is an explicit audit export and is stale during a run. Read live totals through Ledger.summary/status or scripts/status_B41.py. Migration preserved all entries and approvals without new spend or released holds. [Storage, validation and local performance](LEDGER.md).
+Every SDK operation, including metadata, still uses Ledger.call. Reservation is at least estimated cost × 1.5 or the declared maximum, whichever is larger. Sampling and mutation IDs are durable before HTTP dispatch; receipts are checked. A retrieve_future 408 re-polls the same ID and retains its hold. Network recovery drains HTTP work and collects saved futures before new submissions. One exact sampling replacement is allowed only under the standing rule, with the original hold and exclusion retained. The migration changes storage and indexed reads, not these rules or the $50 cap.

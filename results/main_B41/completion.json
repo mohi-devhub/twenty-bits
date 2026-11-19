@@ -1,0 +1,228 @@
+{
+  "config_sha256": "5d465b8dbf59b7062e84f663b82cc5cca82822a410492d3fb3035328d2f42312",
+  "training_model_id": "cc4809a4-91d9-5e85-8f72-025c25387c38:train:0",
+  "initialization": "raw_base_no_sft",
+  "updates": 30,
+  "stop_reason": "completed_30_updates",
+  "training_games": 240,
+  "development_games": 64,
+  "reused_raw_development_games": 8,
+  "frozen_base_games": 280,
+  "reused_raw_frozen_games": 280,
+  "new_raw_frozen_games": 0,
+  "frozen_endpoint_games": 280,
+  "next_gate": "Stop at MAIN_B41_GATE.md. No further paid work is authorized.",
+  "endpoint_evaluations_complete": true,
+  "condition": "B",
+  "training_noise": 0.1,
+  "checkpoints": {
+    "30": {
+      "training": {
+        "checkpoint_type": "training",
+        "time": "2026-11-19T09:14:14.414455Z",
+        "size_bytes": 1107556469,
+        "public": false,
+        "user_metadata": null,
+        "expires_at": null,
+        "deleted_at": null,
+        "checkpoint_id": "weights/main-B-seed41-step-30",
+        "tinker_path": "tinker://cc4809a4-91d9-5e85-8f72-025c25387c38:train:0/weights/main-B-seed41-step-30",
+        "base_model": "Qwen/Qwen3-8B",
+        "owner": "tml:organization_user:b91ce9f2-ec42-4d67-9e54-063e8d3ba6ee",
+        "storage_rate_usd_per_GB_month": "0.10",
+        "monthly_paid_plan_usd": "0.11075564690",
+        "billing_reconciled": false,
+        "retention": "no expiry; hold is a priced reserve, not a settled invoice"
+      },
+      "sampler": {
+        "checkpoint_type": "sampler",
+        "time": "2026-11-19T09:14:17.366290Z",
+        "size_bytes": 369266783,
+        "public": false,
+        "user_metadata": null,
+        "expires_at": null,
+        "deleted_at": null,
+        "checkpoint_id": "sampler_weights/main-B-seed41-step-30",
+        "tinker_path": "tinker://cc4809a4-91d9-5e85-8f72-025c25387c38:train:0/sampler_weights/main-B-seed41-step-30",
+        "base_model": "Qwen/Qwen3-8B",
+        "owner": "tml:organization_user:b91ce9f2-ec42-4d67-9e54-063e8d3ba6ee",
+        "storage_rate_usd_per_GB_month": "0.10",
+        "monthly_paid_plan_usd": "0.03692667830",
+        "billing_reconciled": false,
+        "retention": "no expiry; hold is a priced reserve, not a settled invoice"
+      }
+    }
+  },
+  "external_upload_or_export_required": false,
+  "snapshots": {
+    "0": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:0",
+      "next_seq": 32,
+      "policy_step": 0,
+      "initialization": "raw_base"
+    },
+    "1": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:1",
+      "next_seq": 32,
+      "policy_step": 1
+    },
+    "2": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:2",
+      "next_seq": 48,
+      "policy_step": 2
+    },
+    "3": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:3",
+      "next_seq": 46,
+      "policy_step": 3
+    },
+    "4": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:4",
+      "next_seq": 104,
+      "policy_step": 4
+    },
+    "5": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:5",
+      "next_seq": 67,
+      "policy_step": 5
+    },
+    "6": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:6",
+      "next_seq": 70,
+      "policy_step": 6
+    },
+    "7": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:7",
+      "next_seq": 60,
+      "policy_step": 7
+    },
+    "8": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:8",
+      "next_seq": 100,
+      "policy_step": 8
+    },
+    "9": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:9",
+      "next_seq": 61,
+      "policy_step": 9
+    },
+    "10": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:10",
+      "next_seq": 71,
+      "policy_step": 10
+    },
+    "11": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:11",
+      "next_seq": 68,
+      "policy_step": 11
+    },
+    "12": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:12",
+      "next_seq": 98,
+      "policy_step": 12
+    },
+    "13": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:13",
+      "next_seq": 69,
+      "policy_step": 13
+    },
+    "14": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:14",
+      "next_seq": 63,
+      "policy_step": 14
+    },
+    "15": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:15",
+      "next_seq": 84,
+      "policy_step": 15
+    },
+    "16": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:16",
+      "next_seq": 111,
+      "policy_step": 16
+    },
+    "17": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:17",
+      "next_seq": 82,
+      "policy_step": 17
+    },
+    "18": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:18",
+      "next_seq": 76,
+      "policy_step": 18
+    },
+    "19": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:19",
+      "next_seq": 77,
+      "policy_step": 19
+    },
+    "20": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:20",
+      "next_seq": 118,
+      "policy_step": 20
+    },
+    "21": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:21",
+      "next_seq": 88,
+      "policy_step": 21
+    },
+    "22": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:22",
+      "next_seq": 81,
+      "policy_step": 22
+    },
+    "23": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:23",
+      "next_seq": 84,
+      "policy_step": 23
+    },
+    "24": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:24",
+      "next_seq": 134,
+      "policy_step": 24
+    },
+    "25": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:25",
+      "next_seq": 89,
+      "policy_step": 25
+    },
+    "26": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:26",
+      "next_seq": 90,
+      "policy_step": 26
+    },
+    "27": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:27",
+      "next_seq": 86,
+      "policy_step": 27
+    },
+    "28": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:28",
+      "next_seq": 117,
+      "policy_step": 28
+    },
+    "29": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:29",
+      "next_seq": 69,
+      "policy_step": 29
+    },
+    "30": {
+      "id": "cc4809a4-91d9-5e85-8f72-025c25387c38:sample:30",
+      "next_seq": 2421,
+      "policy_step": 30
+    }
+  },
+  "run_budget": {
+    "spent_usd": "3.974884",
+    "held_usd": "0.443049"
+  },
+  "project_budget": {
+    "cap_usd": "50.000000",
+    "spent_usd": "20.100658",
+    "held_usd": "2.083181",
+    "available_usd": "27.816161",
+    "blocked": false
+  },
+  "ledger_export_complete": true,
+  "all_HTTP_work_drained": true
+}

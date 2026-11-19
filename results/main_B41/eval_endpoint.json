@@ -1,0 +1,77 @@
+{
+  "policy_step": 30,
+  "games": 280,
+  "mean_reward": 0.21710714285714283,
+  "wins": 127,
+  "win_rate": 0.45357142857142857,
+  "questions_per_win": 7.181102362204724,
+  "eig_per_question": 0.540307714240778,
+  "enumeration_rate": 0.0,
+  "single_item_enumeration_rate": 0.0,
+  "name_list_rate": 0.0,
+  "large_name_list_rate": 0.0,
+  "invalid_question_rate": 0.014238253440911248,
+  "output_tokens_per_game": 72.66785714285714,
+  "reasoning_tokens_per_game": 0.0,
+  "questions": 2107,
+  "post_budget_non_guesses": 1,
+  "truncated_turns": 0,
+  "guess_with_k_remaining": {
+    "games": 280,
+    "guesses": 279,
+    "no_guess_games": 1,
+    "ambiguous_guesses": 203,
+    "ambiguous_guess_wins": 51,
+    "ambiguous_guesses_per_game": 0.725,
+    "bins": {
+      "1": {
+        "guesses": 76,
+        "wins": 76,
+        "guesses_per_game": 0.2714285714285714,
+        "share_of_guesses": 0.2724014336917563,
+        "win_rate_when_guessed": 1.0
+      },
+      "2": {
+        "guesses": 23,
+        "wins": 9,
+        "guesses_per_game": 0.08214285714285714,
+        "share_of_guesses": 0.08243727598566308,
+        "win_rate_when_guessed": 0.391304347826087
+      },
+      "3": {
+        "guesses": 6,
+        "wins": 2,
+        "guesses_per_game": 0.02142857142857143,
+        "share_of_guesses": 0.021505376344086023,
+        "win_rate_when_guessed": 0.3333333333333333
+      },
+      "4+": {
+        "guesses": 174,
+        "wins": 40,
+        "guesses_per_game": 0.6214285714285714,
+        "share_of_guesses": 0.6236559139784946,
+        "win_rate_when_guessed": 0.22988505747126436
+      }
+    },
+    "positive_posterior_support_bins": {
+      "1": {
+        "guesses": 76,
+        "wins": 76
+      },
+      "2": {
+        "guesses": 23,
+        "wins": 9
+      },
+      "3": {
+        "guesses": 6,
+        "wins": 2
+      },
+      "4+": {
+        "guesses": 174,
+        "wins": 40
+      }
+    },
+    "guesses_outside_displayed_candidates": 0,
+    "mean_guessed_posterior_probability": 0.48517078508500733
+  }
+}

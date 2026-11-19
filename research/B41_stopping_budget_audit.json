@@ -1,0 +1,57 @@
+{
+  "service_calls": 0,
+  "definition": "An ambiguous GUESS with fewer than 2*ceil(log2(N)) counted questions. This is a descriptive stopping audit; it does not establish intent or reward suboptimality.",
+  "policies": {
+    "A11": {
+      "0": {
+        "games": 140,
+        "ambiguous_guesses": 90,
+        "ambiguous_guesses_with_unused_budget": 85
+      },
+      "0.1": {
+        "games": 140,
+        "ambiguous_guesses": 136,
+        "ambiguous_guesses_with_unused_budget": 132
+      },
+      "all": {
+        "games": 280,
+        "ambiguous_guesses": 226,
+        "ambiguous_guesses_with_unused_budget": 217
+      }
+    },
+    "A23": {
+      "0": {
+        "games": 140,
+        "ambiguous_guesses": 0,
+        "ambiguous_guesses_with_unused_budget": 0
+      },
+      "0.1": {
+        "games": 140,
+        "ambiguous_guesses": 35,
+        "ambiguous_guesses_with_unused_budget": 20
+      },
+      "all": {
+        "games": 280,
+        "ambiguous_guesses": 35,
+        "ambiguous_guesses_with_unused_budget": 20
+      }
+    },
+    "B41": {
+      "0": {
+        "games": 140,
+        "ambiguous_guesses": 63,
+        "ambiguous_guesses_with_unused_budget": 63
+      },
+      "0.1": {
+        "games": 140,
+        "ambiguous_guesses": 140,
+        "ambiguous_guesses_with_unused_budget": 139
+      },
+      "all": {
+        "games": 280,
+        "ambiguous_guesses": 203,
+        "ambiguous_guesses_with_unused_budget": 202
+      }
+    }
+  }
+}

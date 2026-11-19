@@ -1,0 +1,6 @@
+{
+  "matched_greedy_development_eig": 1.0,
+  "learning_curve_uses_training_and_development_cases": true,
+  "frozen_endpoint_chart_uses_common_primary_slice": true,
+  "png_and_svg": true
+}

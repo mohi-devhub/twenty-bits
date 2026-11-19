@@ -1,0 +1,20 @@
+{
+  "recorded_at": "2026-11-19T09:17:16.303067+00:00",
+  "changes": {
+    "scripts/verify_main_B41.py": {
+      "planned": "eaaa0619ad0be095e7fe2c52feab9097e5f5572c373b886f3a3564926d673911",
+      "current": "b01e2124a47e6818c275cdf133397a4d9e02b4825de67fe6bde9b3db2c55e5ae"
+    }
+  },
+  "reason": "Add an offline check that the archived append-only SQLite event history reconstructs the completed ledger export. No measurement, score, prompt, reward, cap or evaluation setting changes.",
+  "metric_script_hashes_unchanged": true,
+  "service_calls": 0,
+  "presentation_reference_addendum": {
+    "recorded_at": "2026-11-19T09:28:12.299254+00:00",
+    "reason": "Include the already-declared matched greedy-Bayesian recheck reference, existing questions/win intervals, and clarify the shared within-group noise schedule. Existing model scores and metric algorithms are unchanged.",
+    "files": {
+      "scripts/write_main_B41_gate.py": "178bd5f1ecfc60e74418562fac8ba41c003a04cb3965c8dd8c09c920884f16bf",
+      "scripts/plot_all_main_seeds.py": "21677adb2c9e4d3779ea44cb3780ab75d397a318b776b59bb57228eea05c924a"
+    }
+  }
+}

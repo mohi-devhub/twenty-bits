@@ -1,0 +1,11 @@
+{
+  "service_calls": 0,
+  "events": 84310,
+  "entries": 54866,
+  "latest_records_equal_completed_export": true,
+  "ledger_json_sha256": "d62391ca74d3ce263b658e85983fd603bbe81e5e880e774e530f9d143f286990",
+  "archive": "results/ledger_migration/events_through_B41.jsonl.gz",
+  "archive_sha256": "f8a9f440e5712f2b0d18c760a98ab29af32f879cee5da1d1a908e4606fc3ae89",
+  "archive_bytes": 3975605,
+  "note": "The initial imported snapshot contributes one event per existing entry. Later events preserve every transactional post-state. This archive is for offline audit; it is not permission to reconstruct a lost active ledger and resume spending."
+}

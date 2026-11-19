@@ -1,0 +1,15 @@
+{
+  "recorded_at": "2026-11-19T09:38:27.923587+00:00",
+  "base_commit": "705a2b5",
+  "checkout_method": "Separate detached Git worktree with staged changes applied; no ignored files copied.",
+  "raw_runs_present": false,
+  "env_file_present": false,
+  "live_sqlite_database_present": false,
+  "TINKER_API_KEY_removed_from_verifier_environment": true,
+  "unit_tests_passed": 220,
+  "archive_replay_identical": true,
+  "ledger_event_archive_reconstructs_completed_JSON": true,
+  "service_calls": 0,
+  "proof": "results/main_B41/reproduction.json",
+  "validation": "results/main_B41/validation.json"
+}

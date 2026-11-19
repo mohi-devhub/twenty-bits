@@ -1,0 +1,30 @@
+{
+  "recorded_at": "2026-11-19T09:06:51.859775+00:00",
+  "recorded_before_frozen_B41_evaluation": true,
+  "primary_slice_games_per_cell": 28,
+  "cells": 10,
+  "all_scheduled_seeds": [
+    "A11",
+    "A23",
+    "B41"
+  ],
+  "requested_extra_metrics": [
+    "wins",
+    "EIG_per_question",
+    "ambiguous_guesses_per_all_games",
+    "no_guess_per_all_games",
+    "early_guess_wins_and_attempts",
+    "invalid_name_references"
+  ],
+  "B_vs_mean_A_CI": "10000 paired complete-game bootstrap draws, with A training seeds resampled and B41 conditional as the only B seed; noise variants share case draws.",
+  "noise_pair_tables_and_targets_verified": 140,
+  "scientific_protocol_changed": false,
+  "measurement_scripts_sha256": {
+    "scripts/analyze_main_B41.py": "e341419f172536799511bdb8ea01e0097c90e97e44abf9422c3265980a9dd3d8",
+    "scripts/analyze_all_main_seeds.py": "31fabc0dd486a87464742749c6f7f66d09f8934f76030ea5133fbbfe6b38c61a",
+    "scripts/verify_main_B41.py": "eaaa0619ad0be095e7fe2c52feab9097e5f5572c373b886f3a3564926d673911",
+    "scripts/plot_main_B41.py": "0734b8d6c0d9c7a203b7a571fe4281dee677c16ad36c06e56e8a70a494786755",
+    "scripts/plot_all_main_seeds.py": "0920e8d1f94d57a496ec42979d8d172d8a593cb65ddfabc5a9e3a0d35442dfd1",
+    "scripts/write_main_B41_gate.py": "3fdd75b8b5c5b66db79cd7b9f3f14293c2d6c5d4a7ca23031c52945c35728ba7"
+  }
+}

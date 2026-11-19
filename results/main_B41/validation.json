@@ -1,0 +1,18 @@
+{
+  "tests_passed": 220,
+  "sampling_requests_verified": 4796,
+  "mutation_requests_verified": 93,
+  "gradient_batches_reconstructed": 30,
+  "native_training_and_sampler_no_expiry": true,
+  "previous_entries_approvals_and_holds_unchanged": true,
+  "frozen_hashes_unchanged": true,
+  "frozen_games_in_gradients": 0,
+  "training_pool_only": true,
+  "training_noise": 0.1,
+  "fresh_provider_base": true,
+  "replacement_cases": [],
+  "completed_runner_service_calls": 0,
+  "all_HTTP_work_drained": true,
+  "raw_run_cache_present_during_verification": false,
+  "live_database_present_during_verification": false
+}

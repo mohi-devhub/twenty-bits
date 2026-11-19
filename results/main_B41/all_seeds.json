@@ -1,0 +1,6799 @@
+{
+  "cells": [
+    {
+      "domain": "animals",
+      "n": 32,
+      "noise": 0,
+      "policy": "Raw",
+      "games": 28,
+      "wins": 5,
+      "win_rate": 0.17857142857142858,
+      "eig_per_question": 0.2073134405190021,
+      "questions_per_win": 7.4,
+      "ambiguous_guesses": 9,
+      "ambiguous_guess_rate": 0.32142857142857145,
+      "ambiguous_guess_wins": 1,
+      "no_guess_games": 15,
+      "no_guess_rate": 0.5357142857142857,
+      "early_guesses": 0,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 3,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 13,
+        "no_guess_games": 15,
+        "ambiguous_guesses": 9,
+        "ambiguous_guess_wins": 1,
+        "ambiguous_guesses_per_game": 0.32142857142857145,
+        "bins": {
+          "1": {
+            "guesses": 4,
+            "wins": 4,
+            "guesses_per_game": 0.14285714285714285,
+            "share_of_guesses": 0.3076923076923077,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 1,
+            "wins": 1,
+            "guesses_per_game": 0.03571428571428571,
+            "share_of_guesses": 0.07692307692307693,
+            "win_rate_when_guessed": 1.0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 8,
+            "wins": 0,
+            "guesses_per_game": 0.2857142857142857,
+            "share_of_guesses": 0.6153846153846154,
+            "win_rate_when_guessed": 0.0
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 4,
+            "wins": 4
+          },
+          "2": {
+            "guesses": 1,
+            "wins": 1
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 8,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.42213481307774114
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.03571428571428571,
+            0.32142857142857145
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.12963938639620595,
+            0.29926619422096756
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            6.5,
+            8.5
+          ],
+          "defined_draws": 9970
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 9578
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.14285714285714285,
+            0.5
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.35714285714285715,
+            0.7142857142857143
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.07878501945604277,
+        0.35591424789342946
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": 0.3571428571428571,
+          "ci95": [
+            0.14285714285714288,
+            0.5714285714285714
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.33419844196974385,
+          "ci95": [
+            0.20705722191822876,
+            0.4623987957806033
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -1.666666666666667,
+          "ci95": [
+            -2.9375473484848484,
+            -0.5
+          ],
+          "defined_bootstrap_draws": 9960
+        },
+        "exact_paired_win_p": 0.00634765625,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 9.999000099990002e-05,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "animals",
+      "n": 32,
+      "noise": 0,
+      "policy": "A11",
+      "games": 28,
+      "wins": 17,
+      "win_rate": 0.6071428571428571,
+      "eig_per_question": 0.767254327768226,
+      "questions_per_win": 4.764705882352941,
+      "ambiguous_guesses": 21,
+      "ambiguous_guess_rate": 0.75,
+      "ambiguous_guess_wins": 10,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 12,
+      "early_guess_wins": 8,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 3,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 21,
+        "ambiguous_guess_wins": 10,
+        "ambiguous_guesses_per_game": 0.75,
+        "bins": {
+          "1": {
+            "guesses": 7,
+            "wins": 7,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.25,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 7,
+            "wins": 4,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.25,
+            "win_rate_when_guessed": 0.5714285714285714
+          },
+          "3": {
+            "guesses": 7,
+            "wins": 2,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.25,
+            "win_rate_when_guessed": 0.2857142857142857
+          },
+          "4+": {
+            "guesses": 7,
+            "wins": 4,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.25,
+            "win_rate_when_guessed": 0.5714285714285714
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 7,
+            "wins": 7
+          },
+          "2": {
+            "guesses": 7,
+            "wins": 4
+          },
+          "3": {
+            "guesses": 7,
+            "wins": 2
+          },
+          "4+": {
+            "guesses": 7,
+            "wins": 4
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.5116496598639456
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.42857142857142855,
+            0.7857142857142857
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.7121585758676454,
+            0.8239969807892797
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            4.222222222222222,
+            5.333333333333333
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 9620
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.5714285714285714,
+            0.8928571428571429
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.14285714285714285,
+            0.4642857142857143
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.42409044296597176,
+        0.764343134584204
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.0714285714285714,
+          "ci95": [
+            -0.32142857142857145,
+            0.1785714285714286
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": -0.22574244527947995,
+          "ci95": [
+            -0.33624425744088693,
+            -0.11700077404661106
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": 0.9686274509803923,
+          "ci95": [
+            0.16666666666666696,
+            1.7921581359816652
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "exact_paired_win_p": 0.79052734375,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.0004999500049995,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "animals",
+      "n": 32,
+      "noise": 0,
+      "policy": "A23",
+      "games": 28,
+      "wins": 20,
+      "win_rate": 0.7142857142857143,
+      "eig_per_question": 0.48937793269992536,
+      "questions_per_win": 7.0,
+      "ambiguous_guesses": 0,
+      "ambiguous_guess_rate": 0.0,
+      "ambiguous_guess_wins": 0,
+      "no_guess_games": 8,
+      "no_guess_rate": 0.2857142857142857,
+      "early_guesses": 3,
+      "early_guess_wins": 3,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 2,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 20,
+        "no_guess_games": 8,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 20,
+            "wins": 20,
+            "guesses_per_game": 0.7142857142857143,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 20,
+            "wins": 20
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.5357142857142857,
+            0.8571428571428571
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.39190254635294264,
+            0.5866855373702639
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            6.1875,
+            7.777777777777778
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 8734
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.14285714285714285,
+            0.4642857142857143
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.21428571428571427
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.5294071156670428,
+        0.8474600394333092
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.1785714285714286,
+          "ci95": [
+            -0.42857142857142855,
+            0.0714285714285714
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.05213394978882058,
+          "ci95": [
+            -0.03786027229505499,
+            0.14934211173120557
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -1.2666666666666666,
+          "ci95": [
+            -2.3985571946169766,
+            -0.2727105614973262
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "exact_paired_win_p": 0.266845703125,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.41455854414558546,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "animals",
+      "n": 32,
+      "noise": 0,
+      "policy": "B41",
+      "games": 28,
+      "wins": 15,
+      "win_rate": 0.5357142857142857,
+      "eig_per_question": 0.5415118824887459,
+      "questions_per_win": 5.733333333333333,
+      "ambiguous_guesses": 20,
+      "ambiguous_guess_rate": 0.7142857142857143,
+      "ambiguous_guess_wins": 7,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 4,
+      "early_guess_wins": 4,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 6,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 20,
+        "ambiguous_guess_wins": 7,
+        "ambiguous_guesses_per_game": 0.7142857142857143,
+        "bins": {
+          "1": {
+            "guesses": 8,
+            "wins": 8,
+            "guesses_per_game": 0.2857142857142857,
+            "share_of_guesses": 0.2857142857142857,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 8,
+            "wins": 4,
+            "guesses_per_game": 0.2857142857142857,
+            "share_of_guesses": 0.2857142857142857,
+            "win_rate_when_guessed": 0.5
+          },
+          "3": {
+            "guesses": 2,
+            "wins": 1,
+            "guesses_per_game": 0.07142857142857142,
+            "share_of_guesses": 0.07142857142857142,
+            "win_rate_when_guessed": 0.5
+          },
+          "4+": {
+            "guesses": 10,
+            "wins": 2,
+            "guesses_per_game": 0.35714285714285715,
+            "share_of_guesses": 0.35714285714285715,
+            "win_rate_when_guessed": 0.2
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 8,
+            "wins": 8
+          },
+          "2": {
+            "guesses": 8,
+            "wins": 4
+          },
+          "3": {
+            "guesses": 2,
+            "wins": 1
+          },
+          "4+": {
+            "guesses": 10,
+            "wins": 2
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.510078379177758
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.35714285714285715,
+            0.7142857142857143
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.4480870258613938,
+            0.6315046470472332
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            4.785714285714286,
+            6.666666666666667
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 9987
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.5357142857142857,
+            0.8571428571428571
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.03571428571428571,
+            0.2857142857142857
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.358126892344679,
+        0.7046843001720462
+      ],
+      "B41_minus_this_policy": null
+    },
+    {
+      "domain": "animals",
+      "n": 32,
+      "noise": 0.1,
+      "policy": "Raw",
+      "games": 28,
+      "wins": 4,
+      "win_rate": 0.14285714285714285,
+      "eig_per_question": 0.12129743403419689,
+      "questions_per_win": 8.25,
+      "ambiguous_guesses": 13,
+      "ambiguous_guess_rate": 0.4642857142857143,
+      "ambiguous_guess_wins": 4,
+      "no_guess_games": 15,
+      "no_guess_rate": 0.5357142857142857,
+      "early_guesses": 0,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 8,
+      "low_probability_opportunities": 23,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 13,
+        "no_guess_games": 15,
+        "ambiguous_guesses": 13,
+        "ambiguous_guess_wins": 4,
+        "ambiguous_guesses_per_game": 0.4642857142857143,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 13,
+            "wins": 4,
+            "guesses_per_game": 0.4642857142857143,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.3076923076923077
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 13,
+            "wins": 4
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.24483339644162014
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.03571428571428571,
+            0.2857142857142857
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.0815766625366643,
+            0.1622123681204574
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            7.0,
+            9.0
+          ],
+          "defined_draws": 9839
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.08,
+            0.5555555555555556
+          ],
+          "defined_draws": 10000
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.2857142857142857,
+            0.6428571428571429
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.35714285714285715,
+            0.7142857142857143
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.05699005319749392,
+        0.31489802163525293
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": 0.07142857142857142,
+          "ci95": [
+            -0.14285714285714285,
+            0.25
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.19578646131875638,
+          "ci95": [
+            0.15523360941323383,
+            0.2372455645478305
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -1.75,
+          "ci95": [
+            -3.0,
+            -0.625
+          ],
+          "defined_bootstrap_draws": 9851
+        },
+        "exact_paired_win_p": 0.7265625,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 9.999000099990002e-05,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "animals",
+      "n": 32,
+      "noise": 0.1,
+      "policy": "A11",
+      "games": 28,
+      "wins": 5,
+      "win_rate": 0.17857142857142858,
+      "eig_per_question": 0.3742800195373943,
+      "questions_per_win": 6.4,
+      "ambiguous_guesses": 28,
+      "ambiguous_guess_rate": 1.0,
+      "ambiguous_guess_wins": 5,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 2,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 5,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 28,
+        "ambiguous_guess_wins": 5,
+        "ambiguous_guesses_per_game": 1.0,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 5,
+            "guesses_per_game": 1.0,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.17857142857142858
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 5
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.30776880630009745
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.03571428571428571,
+            0.32142857142857145
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.34591184009173304,
+            0.4012596957779801
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            6.0,
+            7.0
+          ],
+          "defined_draws": 9965
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 9966
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.07878501945604277,
+        0.35591424789342946
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": 0.0357142857142857,
+          "ci95": [
+            -0.10714285714285715,
+            0.1785714285714286
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": -0.05719612418444103,
+          "ci95": [
+            -0.0965013661896308,
+            -0.01989389623856712
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": 0.09999999999999964,
+          "ci95": [
+            -0.75,
+            1.0
+          ],
+          "defined_bootstrap_draws": 9959
+        },
+        "exact_paired_win_p": 1.0,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.0082991700829917,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "animals",
+      "n": 32,
+      "noise": 0.1,
+      "policy": "A23",
+      "games": 28,
+      "wins": 2,
+      "win_rate": 0.07142857142857142,
+      "eig_per_question": 0.3195874415638512,
+      "questions_per_win": 9.0,
+      "ambiguous_guesses": 3,
+      "ambiguous_guess_rate": 0.10714285714285714,
+      "ambiguous_guess_wins": 2,
+      "no_guess_games": 25,
+      "no_guess_rate": 0.8928571428571429,
+      "early_guesses": 0,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 2,
+      "low_probability_opportunities": 14,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 3,
+        "no_guess_games": 25,
+        "ambiguous_guesses": 3,
+        "ambiguous_guess_wins": 2,
+        "ambiguous_guesses_per_game": 0.10714285714285714,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 2,
+            "wins": 2,
+            "guesses_per_game": 0.07142857142857142,
+            "share_of_guesses": 0.6666666666666666,
+            "win_rate_when_guessed": 1.0
+          },
+          "4+": {
+            "guesses": 1,
+            "wins": 0,
+            "guesses_per_game": 0.03571428571428571,
+            "share_of_guesses": 0.3333333333333333,
+            "win_rate_when_guessed": 0.0
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 3,
+            "wins": 2
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.7885726079514491
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.0,
+            0.17857142857142858
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.2943311224894801,
+            0.3424875764036861
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            8.0,
+            10.0
+          ],
+          "defined_draws": 8721
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.36363636363636365
+          ],
+          "defined_draws": 10000
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.0,
+            0.21428571428571427
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.7857142857142857,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.019812064115305755,
+        0.22645362568399052
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": 0.14285714285714285,
+          "ci95": [
+            0.03571428571428571,
+            0.2857142857142857
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": -0.0025035462108979334,
+          "ci95": [
+            -0.033585802121143926,
+            0.026311567181965305
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -2.5,
+          "ci95": [
+            -4.0,
+            -1.0
+          ],
+          "defined_bootstrap_draws": 8712
+        },
+        "exact_paired_win_p": 0.125,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.9716028397160283,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "animals",
+      "n": 32,
+      "noise": 0.1,
+      "policy": "B41",
+      "games": 28,
+      "wins": 6,
+      "win_rate": 0.21428571428571427,
+      "eig_per_question": 0.3170838953529533,
+      "questions_per_win": 6.5,
+      "ambiguous_guesses": 28,
+      "ambiguous_guess_rate": 1.0,
+      "ambiguous_guess_wins": 6,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 1,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 1,
+      "low_probability_opportunities": 11,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 28,
+        "ambiguous_guess_wins": 6,
+        "ambiguous_guesses_per_game": 1.0,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 6,
+            "guesses_per_game": 1.0,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.21428571428571427
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 6
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.2915045904625824
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.07142857142857142,
+            0.39285714285714285
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.2879264997501062,
+            0.3456834931233822
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            5.666666666666667,
+            7.333333333333333
+          ],
+          "defined_draws": 9987
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.3333333333333333
+          ],
+          "defined_draws": 10000
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.1021246033289788,
+        0.3953858565372187
+      ],
+      "B41_minus_this_policy": null
+    },
+    {
+      "domain": "animals",
+      "n": 128,
+      "noise": 0,
+      "policy": "Raw",
+      "games": 28,
+      "wins": 2,
+      "win_rate": 0.07142857142857142,
+      "eig_per_question": 0.10853841018192853,
+      "questions_per_win": 8.5,
+      "ambiguous_guesses": 8,
+      "ambiguous_guess_rate": 0.2857142857142857,
+      "ambiguous_guess_wins": 1,
+      "no_guess_games": 19,
+      "no_guess_rate": 0.6785714285714286,
+      "early_guesses": 0,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 1,
+      "low_probability_opportunities": 3,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 9,
+        "no_guess_games": 19,
+        "ambiguous_guesses": 8,
+        "ambiguous_guess_wins": 1,
+        "ambiguous_guesses_per_game": 0.2857142857142857,
+        "bins": {
+          "1": {
+            "guesses": 1,
+            "wins": 1,
+            "guesses_per_game": 0.03571428571428571,
+            "share_of_guesses": 0.1111111111111111,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 2,
+            "wins": 1,
+            "guesses_per_game": 0.07142857142857142,
+            "share_of_guesses": 0.2222222222222222,
+            "win_rate_when_guessed": 0.5
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 6,
+            "wins": 0,
+            "guesses_per_game": 0.21428571428571427,
+            "share_of_guesses": 0.6666666666666666,
+            "win_rate_when_guessed": 0.0
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 1,
+            "wins": 1
+          },
+          "2": {
+            "guesses": 2,
+            "wins": 1
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 6,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.245540111550548
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.0,
+            0.17857142857142858
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.06285595365221279,
+            0.16294996976302484
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            7.0,
+            10.0
+          ],
+          "defined_draws": 8812
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            1.0
+          ],
+          "defined_draws": 9562
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.14285714285714285,
+            0.4642857142857143
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.5,
+            0.8571428571428571
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.019812064115305755,
+        0.22645362568399052
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": 0.07142857142857142,
+          "ci95": [
+            -0.10714285714285714,
+            0.25
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.22363410269052972,
+          "ci95": [
+            0.1619147926915997,
+            0.2842036713541309
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": 1.25,
+          "ci95": [
+            -1.25,
+            4.0
+          ],
+          "defined_bootstrap_draws": 8685
+        },
+        "exact_paired_win_p": 0.6875,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 9.999000099990002e-05,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "animals",
+      "n": 128,
+      "noise": 0,
+      "policy": "A11",
+      "games": 28,
+      "wins": 7,
+      "win_rate": 0.25,
+      "eig_per_question": 0.5013938912469856,
+      "questions_per_win": 7.857142857142857,
+      "ambiguous_guesses": 27,
+      "ambiguous_guess_rate": 0.9642857142857143,
+      "ambiguous_guess_wins": 6,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 6,
+      "early_guess_wins": 2,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 5,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 27,
+        "ambiguous_guess_wins": 6,
+        "ambiguous_guesses_per_game": 0.9642857142857143,
+        "bins": {
+          "1": {
+            "guesses": 1,
+            "wins": 1,
+            "guesses_per_game": 0.03571428571428571,
+            "share_of_guesses": 0.03571428571428571,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 3,
+            "wins": 2,
+            "guesses_per_game": 0.10714285714285714,
+            "share_of_guesses": 0.10714285714285714,
+            "win_rate_when_guessed": 0.6666666666666666
+          },
+          "3": {
+            "guesses": 4,
+            "wins": 2,
+            "guesses_per_game": 0.14285714285714285,
+            "share_of_guesses": 0.14285714285714285,
+            "win_rate_when_guessed": 0.5
+          },
+          "4+": {
+            "guesses": 20,
+            "wins": 2,
+            "guesses_per_game": 0.7142857142857143,
+            "share_of_guesses": 0.7142857142857143,
+            "win_rate_when_guessed": 0.1
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 1,
+            "wins": 1
+          },
+          "2": {
+            "guesses": 3,
+            "wins": 2
+          },
+          "3": {
+            "guesses": 4,
+            "wins": 2
+          },
+          "4+": {
+            "guesses": 20,
+            "wins": 2
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.23151109802895517
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.10714285714285714,
+            0.42857142857142855
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.44168359972587073,
+            0.5663263444927593
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            6.123611111111111,
+            10.333333333333334
+          ],
+          "defined_draws": 9997
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 9960
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.8928571428571429,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.17857142857142858
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.12676494919293316,
+        0.4335567031899896
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.10714285714285715,
+          "ci95": [
+            -0.25,
+            0.035714285714285726
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": -0.1692213783745274,
+          "ci95": [
+            -0.23373830375681276,
+            -0.10624992598609337
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": 1.8928571428571432,
+          "ci95": [
+            0.20000000000000107,
+            3.583333333333334
+          ],
+          "defined_bootstrap_draws": 9885
+        },
+        "exact_paired_win_p": 0.375,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 9.999000099990002e-05,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "animals",
+      "n": 128,
+      "noise": 0,
+      "policy": "A23",
+      "games": 28,
+      "wins": 5,
+      "win_rate": 0.17857142857142858,
+      "eig_per_question": 0.29149721950111246,
+      "questions_per_win": 10.8,
+      "ambiguous_guesses": 0,
+      "ambiguous_guess_rate": 0.0,
+      "ambiguous_guess_wins": 0,
+      "no_guess_games": 23,
+      "no_guess_rate": 0.8214285714285714,
+      "early_guesses": 0,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 4,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 5,
+        "no_guess_games": 23,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 5,
+            "wins": 5,
+            "guesses_per_game": 0.17857142857142858,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 5,
+            "wins": 5
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.03571428571428571,
+            0.32142857142857145
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.22895380663899895,
+            0.35607182253028064
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            9.5,
+            12.2
+          ],
+          "defined_draws": 9959
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 9594
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.6785714285714286,
+            0.9642857142857143
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.07878501945604277,
+        0.35591424789342946
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.035714285714285726,
+          "ci95": [
+            -0.25,
+            0.17857142857142855
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.04067529337134579,
+          "ci95": [
+            -0.02910910216168629,
+            0.10954050206617795
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -1.0500000000000007,
+          "ci95": [
+            -3.034642857142858,
+            0.8333333333333339
+          ],
+          "defined_bootstrap_draws": 9847
+        },
+        "exact_paired_win_p": 1.0,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.5688431156884312,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "animals",
+      "n": 128,
+      "noise": 0,
+      "policy": "B41",
+      "games": 28,
+      "wins": 4,
+      "win_rate": 0.14285714285714285,
+      "eig_per_question": 0.33217251287245825,
+      "questions_per_win": 9.75,
+      "ambiguous_guesses": 25,
+      "ambiguous_guess_rate": 0.8928571428571429,
+      "ambiguous_guess_wins": 2,
+      "no_guess_games": 1,
+      "no_guess_rate": 0.03571428571428571,
+      "early_guesses": 1,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 4,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 27,
+        "no_guess_games": 1,
+        "ambiguous_guesses": 25,
+        "ambiguous_guess_wins": 2,
+        "ambiguous_guesses_per_game": 0.8928571428571429,
+        "bins": {
+          "1": {
+            "guesses": 2,
+            "wins": 2,
+            "guesses_per_game": 0.07142857142857142,
+            "share_of_guesses": 0.07407407407407407,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 1,
+            "wins": 0,
+            "guesses_per_game": 0.03571428571428571,
+            "share_of_guesses": 0.037037037037037035,
+            "win_rate_when_guessed": 0.0
+          },
+          "3": {
+            "guesses": 1,
+            "wins": 0,
+            "guesses_per_game": 0.03571428571428571,
+            "share_of_guesses": 0.037037037037037035,
+            "win_rate_when_guessed": 0.0
+          },
+          "4+": {
+            "guesses": 23,
+            "wins": 2,
+            "guesses_per_game": 0.8214285714285714,
+            "share_of_guesses": 0.8518518518518519,
+            "win_rate_when_guessed": 0.08695652173913043
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 2,
+            "wins": 2
+          },
+          "2": {
+            "guesses": 1,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 1,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 23,
+            "wins": 2
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.17892882628114387
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.03571428571428571,
+            0.2857142857142857
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.28113320363785765,
+            0.3765347058772242
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            8.0,
+            11.0
+          ],
+          "defined_draws": 9856
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 9594
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.7857142857142857,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.10714285714285714
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.05699005319749392,
+        0.31489802163525293
+      ],
+      "B41_minus_this_policy": null
+    },
+    {
+      "domain": "animals",
+      "n": 128,
+      "noise": 0.1,
+      "policy": "Raw",
+      "games": 28,
+      "wins": 2,
+      "win_rate": 0.07142857142857142,
+      "eig_per_question": 0.08657208391986047,
+      "questions_per_win": 10.0,
+      "ambiguous_guesses": 20,
+      "ambiguous_guess_rate": 0.7142857142857143,
+      "ambiguous_guess_wins": 2,
+      "no_guess_games": 8,
+      "no_guess_rate": 0.2857142857142857,
+      "early_guesses": 2,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 14,
+      "low_probability_opportunities": 22,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 20,
+        "no_guess_games": 8,
+        "ambiguous_guesses": 20,
+        "ambiguous_guess_wins": 2,
+        "ambiguous_guesses_per_game": 0.7142857142857143,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 20,
+            "wins": 2,
+            "guesses_per_game": 0.7142857142857143,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.1
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 20,
+            "wins": 2
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.0759864435269347
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.0,
+            0.17857142857142858
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.05341748227596206,
+            0.12437773629509641
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            9.0,
+            11.0
+          ],
+          "defined_draws": 8741
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.35714285714285715,
+            0.8333333333333334
+          ],
+          "defined_draws": 10000
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.5357142857142857,
+            0.8571428571428571
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.14285714285714285,
+            0.4642857142857143
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.019812064115305755,
+        0.22645362568399052
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.07142857142857142,
+          "ci95": [
+            -0.17857142857142858,
+            0.0
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.16342429882107007,
+          "ci95": [
+            0.11642175942655367,
+            0.20801330511253724
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": null,
+          "ci95": null,
+          "defined_bootstrap_draws": 0
+        },
+        "exact_paired_win_p": 0.5,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 9.999000099990002e-05,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "animals",
+      "n": 128,
+      "noise": 0.1,
+      "policy": "A11",
+      "games": 28,
+      "wins": 1,
+      "win_rate": 0.03571428571428571,
+      "eig_per_question": 0.32542093726041615,
+      "questions_per_win": 5.0,
+      "ambiguous_guesses": 28,
+      "ambiguous_guess_rate": 1.0,
+      "ambiguous_guess_wins": 1,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 20,
+      "early_guess_wins": 1,
+      "low_probability_reasks": 1,
+      "low_probability_opportunities": 9,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 28,
+        "ambiguous_guess_wins": 1,
+        "ambiguous_guesses_per_game": 1.0,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 1,
+            "guesses_per_game": 1.0,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.03571428571428571
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 1
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.08207209321625605
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.0,
+            0.10714285714285714
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.2977584508066094,
+            0.35216428763322377
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            5.0,
+            5.0
+          ],
+          "defined_draws": 6364
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.3
+          ],
+          "defined_draws": 9996
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.10714285714285714
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.0063325198490377516,
+        0.1771219774335332
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.03571428571428571,
+          "ci95": [
+            -0.10714285714285714,
+            0.0
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": -0.07542455451948568,
+          "ci95": [
+            -0.1197381664993354,
+            -0.03510272311153034
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": null,
+          "ci95": null,
+          "defined_bootstrap_draws": 0
+        },
+        "exact_paired_win_p": 1.0,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.0007999200079992001,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "animals",
+      "n": 128,
+      "noise": 0.1,
+      "policy": "A23",
+      "games": 28,
+      "wins": 2,
+      "win_rate": 0.07142857142857142,
+      "eig_per_question": 0.18857448814782435,
+      "questions_per_win": 14.0,
+      "ambiguous_guesses": 3,
+      "ambiguous_guess_rate": 0.10714285714285714,
+      "ambiguous_guess_wins": 2,
+      "no_guess_games": 25,
+      "no_guess_rate": 0.8928571428571429,
+      "early_guesses": 0,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 16,
+      "low_probability_opportunities": 31,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 3,
+        "no_guess_games": 25,
+        "ambiguous_guesses": 3,
+        "ambiguous_guess_wins": 2,
+        "ambiguous_guesses_per_game": 0.10714285714285714,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 3,
+            "wins": 2,
+            "guesses_per_game": 0.10714285714285714,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.6666666666666666
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 3,
+            "wins": 2
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.3728504258736744
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.0,
+            0.17857142857142858
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.15612853870836746,
+            0.22190342228004747
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            14.0,
+            14.0
+          ],
+          "defined_draws": 8772
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.3103448275862069,
+            0.7142857142857143
+          ],
+          "defined_draws": 10000
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.0,
+            0.21428571428571427
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.7857142857142857,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.019812064115305755,
+        0.22645362568399052
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.07142857142857142,
+          "ci95": [
+            -0.17857142857142858,
+            0.0
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.06142189459310618,
+          "ci95": [
+            0.02250879158905989,
+            0.09678148009423738
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": null,
+          "ci95": null,
+          "defined_bootstrap_draws": 0
+        },
+        "exact_paired_win_p": 0.5,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.0038996100389961006,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "animals",
+      "n": 128,
+      "noise": 0.1,
+      "policy": "B41",
+      "games": 28,
+      "wins": 0,
+      "win_rate": 0.0,
+      "eig_per_question": 0.24999638274093053,
+      "questions_per_win": null,
+      "ambiguous_guesses": 28,
+      "ambiguous_guess_rate": 1.0,
+      "ambiguous_guess_wins": 0,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 15,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 5,
+      "low_probability_opportunities": 9,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 28,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 1.0,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 0,
+            "guesses_per_game": 1.0,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.0
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.03812734717946388
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.2121870278688322,
+            0.28636810068796487
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": null,
+          "defined_draws": 0
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.14285714285714285,
+            0.9
+          ],
+          "defined_draws": 9998
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        1.3877787807814457e-17,
+        0.12064330476584563
+      ],
+      "B41_minus_this_policy": null
+    },
+    {
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0,
+      "policy": "Raw",
+      "games": 28,
+      "wins": 26,
+      "win_rate": 0.9285714285714286,
+      "eig_per_question": 0.7170030979017575,
+      "questions_per_win": 6.115384615384615,
+      "ambiguous_guesses": 0,
+      "ambiguous_guess_rate": 0.0,
+      "ambiguous_guess_wins": 0,
+      "no_guess_games": 2,
+      "no_guess_rate": 0.07142857142857142,
+      "early_guesses": 3,
+      "early_guess_wins": 3,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 1,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 26,
+        "no_guess_games": 2,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 26,
+            "wins": 26,
+            "guesses_per_game": 0.9285714285714286,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 26,
+            "wins": 26
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.8214285714285714,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.5908404807466798,
+            0.8307580333469152
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            5.44,
+            6.846153846153846
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 6260
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.17857142857142858
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.25
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.7735463743160095,
+        0.9801879358846942
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.0357142857142857,
+          "ci95": [
+            -0.1785714285714286,
+            0.1071428571428572
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.11975807335976263,
+          "ci95": [
+            0.007127795772421747,
+            0.2562810506928377
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -0.7553846153846147,
+          "ci95": [
+            -1.4316666666666666,
+            -0.20238095238095255
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "exact_paired_win_p": 1.0,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.0570942905709429,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0,
+      "policy": "A11",
+      "games": 28,
+      "wins": 18,
+      "win_rate": 0.6428571428571429,
+      "eig_per_question": 0.7504368363657161,
+      "questions_per_win": 5.277777777777778,
+      "ambiguous_guesses": 12,
+      "ambiguous_guess_rate": 0.42857142857142855,
+      "ambiguous_guess_wins": 4,
+      "no_guess_games": 2,
+      "no_guess_rate": 0.07142857142857142,
+      "early_guesses": 6,
+      "early_guess_wins": 2,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 1,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 26,
+        "no_guess_games": 2,
+        "ambiguous_guesses": 12,
+        "ambiguous_guess_wins": 4,
+        "ambiguous_guesses_per_game": 0.42857142857142855,
+        "bins": {
+          "1": {
+            "guesses": 14,
+            "wins": 14,
+            "guesses_per_game": 0.5,
+            "share_of_guesses": 0.5384615384615384,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 10,
+            "wins": 4,
+            "guesses_per_game": 0.35714285714285715,
+            "share_of_guesses": 0.38461538461538464,
+            "win_rate_when_guessed": 0.4
+          },
+          "3": {
+            "guesses": 2,
+            "wins": 0,
+            "guesses_per_game": 0.07142857142857142,
+            "share_of_guesses": 0.07692307692307693,
+            "win_rate_when_guessed": 0.0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 14,
+            "wins": 14
+          },
+          "2": {
+            "guesses": 10,
+            "wins": 4
+          },
+          "3": {
+            "guesses": 2,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.7564102564102565
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.4642857142857143,
+            0.8214285714285714
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.6205218608583588,
+            0.8731248802398435
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            4.833333333333333,
+            5.70594362745098
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 6260
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.25,
+            0.6071428571428571
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.17857142857142858
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.17857142857142858
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.4583030651442781,
+        0.7929417049226233
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": 0.25,
+          "ci95": [
+            0.0714285714285714,
+            0.4285714285714286
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.08632433489580404,
+          "ci95": [
+            -0.03165693503277212,
+            0.2256127581274819
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": 0.08222222222222264,
+          "ci95": [
+            -0.2350490196078432,
+            0.39048149219201883
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "exact_paired_win_p": 0.0390625,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.37096290370962903,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0,
+      "policy": "A23",
+      "games": 28,
+      "wins": 28,
+      "win_rate": 1.0,
+      "eig_per_question": 0.8458146439927537,
+      "questions_per_win": 5.75,
+      "ambiguous_guesses": 0,
+      "ambiguous_guess_rate": 0.0,
+      "ambiguous_guess_wins": 0,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 5,
+      "early_guess_wins": 5,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 1,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 28,
+            "wins": 28,
+            "guesses_per_game": 1.0,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 28,
+            "wins": 28
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.7977317666023837,
+            0.8939447504053345
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            5.178571428571429,
+            6.357142857142857
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 6260
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.03571428571428571,
+            0.32142857142857145
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.8793566952341543,
+        0.9999999999999998
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.1071428571428571,
+          "ci95": [
+            -0.25,
+            0.0
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": -0.00905347273123358,
+          "ci95": [
+            -0.02882339794852368,
+            0.007949182227565387
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -0.3899999999999997,
+          "ci95": [
+            -0.8896915584415582,
+            0.0
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "exact_paired_win_p": 0.25,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.5173482651734826,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0,
+      "policy": "B41",
+      "games": 28,
+      "wins": 25,
+      "win_rate": 0.8928571428571429,
+      "eig_per_question": 0.8367611712615203,
+      "questions_per_win": 5.36,
+      "ambiguous_guesses": 4,
+      "ambiguous_guess_rate": 0.14285714285714285,
+      "ambiguous_guess_wins": 1,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 5,
+      "early_guess_wins": 5,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 0,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 4,
+        "ambiguous_guess_wins": 1,
+        "ambiguous_guesses_per_game": 0.14285714285714285,
+        "bins": {
+          "1": {
+            "guesses": 24,
+            "wins": 24,
+            "guesses_per_game": 0.8571428571428571,
+            "share_of_guesses": 0.8571428571428571,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 4,
+            "wins": 1,
+            "guesses_per_game": 0.14285714285714285,
+            "share_of_guesses": 0.14285714285714285,
+            "win_rate_when_guessed": 0.25
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 24,
+            "wins": 24
+          },
+          "2": {
+            "guesses": 4,
+            "wins": 1
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.9285714285714286
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.7857142857142857,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.7852591334602368,
+            0.8885920211350946
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            4.958333333333333,
+            5.8076923076923075
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": null,
+          "defined_draws": 0
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.03571428571428571,
+            0.2857142857142857
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.03571428571428571,
+            0.32142857142857145
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.7280414845132785,
+        0.9628816331707
+      ],
+      "B41_minus_this_policy": null
+    },
+    {
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0.1,
+      "policy": "Raw",
+      "games": 28,
+      "wins": 9,
+      "win_rate": 0.32142857142857145,
+      "eig_per_question": 0.4053278040242906,
+      "questions_per_win": 9.333333333333334,
+      "ambiguous_guesses": 17,
+      "ambiguous_guess_rate": 0.6071428571428571,
+      "ambiguous_guess_wins": 9,
+      "no_guess_games": 11,
+      "no_guess_rate": 0.39285714285714285,
+      "early_guesses": 1,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 11,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 17,
+        "no_guess_games": 11,
+        "ambiguous_guesses": 17,
+        "ambiguous_guess_wins": 9,
+        "ambiguous_guesses_per_game": 0.6071428571428571,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 17,
+            "wins": 9,
+            "guesses_per_game": 0.6071428571428571,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.5294117647058824
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 17,
+            "wins": 9
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.6649365453484474
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.14285714285714285,
+            0.5
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.383222396372437,
+            0.4242959005914103
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            8.857142857142858,
+            9.777777777777779
+          ],
+          "defined_draws": 9998
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 9999
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.42857142857142855,
+            0.7857142857142857
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.21428571428571427,
+            0.5714285714285714
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.1793324692249496,
+        0.5066115681914238
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": 0.17857142857142855,
+          "ci95": [
+            0.0,
+            0.3928571428571428
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.03719487161113716,
+          "ci95": [
+            0.019889250709481398,
+            0.05799047964774615
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -2.0476190476190483,
+          "ci95": [
+            -2.566704545454546,
+            -1.541666666666667
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "exact_paired_win_p": 0.1796875,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 9.999000099990002e-05,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0.1,
+      "policy": "A11",
+      "games": 28,
+      "wins": 12,
+      "win_rate": 0.42857142857142855,
+      "eig_per_question": 0.39969982048801683,
+      "questions_per_win": 7.333333333333333,
+      "ambiguous_guesses": 26,
+      "ambiguous_guess_rate": 0.9285714285714286,
+      "ambiguous_guess_wins": 12,
+      "no_guess_games": 2,
+      "no_guess_rate": 0.07142857142857142,
+      "early_guesses": 0,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 7,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 26,
+        "no_guess_games": 2,
+        "ambiguous_guesses": 26,
+        "ambiguous_guess_wins": 12,
+        "ambiguous_guesses_per_game": 0.9285714285714286,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 26,
+            "wins": 12,
+            "guesses_per_game": 0.9285714285714286,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.46153846153846156
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 26,
+            "wins": 12
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.5433495773653776
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.25,
+            0.6071428571428571
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.34789034621816045,
+            0.43975761583193973
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            6.888888888888889,
+            7.75
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 9987
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.8214285714285714,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.17857142857142858
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.26508547124123694,
+        0.6092921437253123
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": 0.07142857142857145,
+          "ci95": [
+            0.0,
+            0.17857142857142858
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.042822855147410854,
+          "ci95": [
+            0.0034343001564848736,
+            0.09338451701713467
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -0.04761904761904745,
+          "ci95": [
+            -0.26190476190476186,
+            0.16429788961038974
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "exact_paired_win_p": 0.5,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.0273972602739726,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0.1,
+      "policy": "A23",
+      "games": 28,
+      "wins": 0,
+      "win_rate": 0.0,
+      "eig_per_question": 0.41005777372084823,
+      "questions_per_win": null,
+      "ambiguous_guesses": 0,
+      "ambiguous_guess_rate": 0.0,
+      "ambiguous_guess_wins": 0,
+      "no_guess_games": 28,
+      "no_guess_rate": 1.0,
+      "early_guesses": 0,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 15,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 0,
+        "no_guess_games": 28,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": null,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": null
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.39416948124101026,
+            0.4254899243486228
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": null,
+          "defined_draws": 0
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        1.3877787807814457e-17,
+        0.12064330476584563
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": 0.5,
+          "ci95": [
+            0.32142857142857145,
+            0.6785714285714286
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.032464901914579514,
+          "ci95": [
+            0.020245466492188877,
+            0.04518281367944027
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": null,
+          "ci95": null,
+          "defined_bootstrap_draws": 0
+        },
+        "exact_paired_win_p": 0.0001220703125,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.00019998000199980003,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0.1,
+      "policy": "B41",
+      "games": 28,
+      "wins": 14,
+      "win_rate": 0.5,
+      "eig_per_question": 0.4425226756354277,
+      "questions_per_win": 7.285714285714286,
+      "ambiguous_guesses": 28,
+      "ambiguous_guess_rate": 1.0,
+      "ambiguous_guess_wins": 14,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 0,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 6,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 28,
+        "ambiguous_guess_wins": 14,
+        "ambiguous_guesses_per_game": 1.0,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 14,
+            "guesses_per_game": 1.0,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.5
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 14
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.5270840493440513
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.32142857142857145,
+            0.6785714285714286
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.4303893175425228,
+            0.4542814429902309
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            6.9,
+            7.642857142857143
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 9955
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.32633127457293465,
+        0.6736687254270654
+      ],
+      "B41_minus_this_policy": null
+    },
+    {
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0,
+      "policy": "Raw",
+      "games": 28,
+      "wins": 28,
+      "win_rate": 1.0,
+      "eig_per_question": 0.8929558613000821,
+      "questions_per_win": 7.785714285714286,
+      "ambiguous_guesses": 0,
+      "ambiguous_guess_rate": 0.0,
+      "ambiguous_guess_wins": 0,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 4,
+      "early_guess_wins": 4,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 1,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 28,
+            "wins": 28,
+            "guesses_per_game": 1.0,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 28,
+            "wins": 28
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.8571046572921197,
+            0.9274472263164565
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            7.285714285714286,
+            8.321428571428571
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 6398
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.03571428571428571,
+            0.2857142857142857
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.8793566952341543,
+        0.9999999999999998
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.0714285714285714,
+          "ci95": [
+            -0.1785714285714286,
+            0.0
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": -0.061237487798304735,
+          "ci95": [
+            -0.16534643341218128,
+            0.007750292474996539
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -0.1318681318681314,
+          "ci95": [
+            -0.5557500000000003,
+            0.2142857142857144
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "exact_paired_win_p": 0.5,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.13788621137886212,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0,
+      "policy": "A11",
+      "games": 28,
+      "wins": 16,
+      "win_rate": 0.5714285714285714,
+      "eig_per_question": 0.6777613228671845,
+      "questions_per_win": 7.25,
+      "ambiguous_guesses": 11,
+      "ambiguous_guess_rate": 0.39285714285714285,
+      "ambiguous_guess_wins": 2,
+      "no_guess_games": 3,
+      "no_guess_rate": 0.10714285714285714,
+      "early_guesses": 2,
+      "early_guess_wins": 2,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 0,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 25,
+        "no_guess_games": 3,
+        "ambiguous_guesses": 11,
+        "ambiguous_guess_wins": 2,
+        "ambiguous_guesses_per_game": 0.39285714285714285,
+        "bins": {
+          "1": {
+            "guesses": 14,
+            "wins": 14,
+            "guesses_per_game": 0.5,
+            "share_of_guesses": 0.56,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 7,
+            "wins": 2,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.28,
+            "win_rate_when_guessed": 0.2857142857142857
+          },
+          "3": {
+            "guesses": 2,
+            "wins": 0,
+            "guesses_per_game": 0.07142857142857142,
+            "share_of_guesses": 0.08,
+            "win_rate_when_guessed": 0.0
+          },
+          "4+": {
+            "guesses": 2,
+            "wins": 0,
+            "guesses_per_game": 0.07142857142857142,
+            "share_of_guesses": 0.08,
+            "win_rate_when_guessed": 0.0
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 14,
+            "wins": 14
+          },
+          "2": {
+            "guesses": 7,
+            "wins": 2
+          },
+          "3": {
+            "guesses": 2,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 2,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.7277335229966809
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.39285714285714285,
+            0.75
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.5244577262283244,
+            0.8299677202060827
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            6.866666666666666,
+            7.684210526315789
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": null,
+          "defined_draws": 0
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.21428571428571427,
+            0.5714285714285714
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.25
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.17857142857142858
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.3907078562746876,
+        0.734914528758763
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": 0.3571428571428572,
+          "ci95": [
+            0.1428571428571429,
+            0.5714285714285714
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.15395705063459275,
+          "ci95": [
+            -0.031355582428912045,
+            0.3303833410233335
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": 0.4038461538461542,
+          "ci95": [
+            -0.01895323852560745,
+            0.8635757918552018
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "exact_paired_win_p": 0.00634765625,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.16498350164983502,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0,
+      "policy": "A23",
+      "games": 28,
+      "wins": 28,
+      "win_rate": 1.0,
+      "eig_per_question": 0.8771727610026951,
+      "questions_per_win": 8.035714285714286,
+      "ambiguous_guesses": 0,
+      "ambiguous_guess_rate": 0.0,
+      "ambiguous_guess_wins": 0,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 3,
+      "early_guess_wins": 3,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 0,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 28,
+            "wins": 28,
+            "guesses_per_game": 1.0,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 28,
+            "wins": 28
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.8362844613244318,
+            0.9185868742253515
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            7.5,
+            8.571428571428571
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": null,
+          "defined_draws": 0
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.25
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.8793566952341543,
+        0.9999999999999998
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.0714285714285714,
+          "ci95": [
+            -0.1785714285714286,
+            0.0
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": -0.04545438750091768,
+          "ci95": [
+            -0.15262231339216367,
+            0.031416845478985087
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -0.3818681318681323,
+          "ci95": [
+            -1.0467142857142855,
+            0.17000824175824159
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "exact_paired_win_p": 0.5,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.37066293370662934,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0,
+      "policy": "B41",
+      "games": 28,
+      "wins": 26,
+      "win_rate": 0.9285714285714286,
+      "eig_per_question": 0.8317183735017775,
+      "questions_per_win": 7.653846153846154,
+      "ambiguous_guesses": 5,
+      "ambiguous_guess_rate": 0.17857142857142858,
+      "ambiguous_guess_wins": 3,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 3,
+      "early_guess_wins": 3,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 2,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 5,
+        "ambiguous_guess_wins": 3,
+        "ambiguous_guesses_per_game": 0.17857142857142858,
+        "bins": {
+          "1": {
+            "guesses": 23,
+            "wins": 23,
+            "guesses_per_game": 0.8214285714285714,
+            "share_of_guesses": 0.8214285714285714,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 4,
+            "wins": 3,
+            "guesses_per_game": 0.14285714285714285,
+            "share_of_guesses": 0.14285714285714285,
+            "win_rate_when_guessed": 0.75
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 1,
+            "wins": 0,
+            "guesses_per_game": 0.03571428571428571,
+            "share_of_guesses": 0.03571428571428571,
+            "win_rate_when_guessed": 0.0
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 23,
+            "wins": 23
+          },
+          "2": {
+            "guesses": 4,
+            "wins": 3
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 1,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.893472906403941
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.8214285714285714,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.7282474240753245,
+            0.9059581395589218
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            7.1923076923076925,
+            8.115384615384615
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 8729
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.03571428571428571,
+            0.32142857142857145
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.25
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.7735463743160095,
+        0.9801879358846942
+      ],
+      "B41_minus_this_policy": null
+    },
+    {
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0.1,
+      "policy": "Raw",
+      "games": 28,
+      "wins": 17,
+      "win_rate": 0.6071428571428571,
+      "eig_per_question": 0.45788194722311754,
+      "questions_per_win": 11.882352941176471,
+      "ambiguous_guesses": 28,
+      "ambiguous_guess_rate": 1.0,
+      "ambiguous_guess_wins": 17,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 0,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 5,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 28,
+        "ambiguous_guess_wins": 17,
+        "ambiguous_guesses_per_game": 1.0,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 17,
+            "guesses_per_game": 1.0,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.6071428571428571
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 17
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.5813156890055948
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.42857142857142855,
+            0.7857142857142857
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.44559420477824596,
+            0.4703023757321543
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            11.31578947368421,
+            12.411764705882353
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 9964
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.42409044296597176,
+        0.764343134584204
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.24999999999999994,
+          "ci95": [
+            -0.4285714285714286,
+            -0.0714285714285714
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.03819799948112984,
+          "ci95": [
+            0.026279078235450164,
+            0.05065115340428351
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -3.6823529411764717,
+          "ci95": [
+            -4.222222222222221,
+            -3.1166346153846147
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "exact_paired_win_p": 0.0390625,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 9.999000099990002e-05,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0.1,
+      "policy": "A11",
+      "games": 28,
+      "wins": 6,
+      "win_rate": 0.21428571428571427,
+      "eig_per_question": 0.4396388735366751,
+      "questions_per_win": 7.833333333333333,
+      "ambiguous_guesses": 26,
+      "ambiguous_guess_rate": 0.9285714285714286,
+      "ambiguous_guess_wins": 6,
+      "no_guess_games": 2,
+      "no_guess_rate": 0.07142857142857142,
+      "early_guesses": 2,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 1,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 26,
+        "no_guess_games": 2,
+        "ambiguous_guesses": 26,
+        "ambiguous_guess_wins": 6,
+        "ambiguous_guesses_per_game": 0.9285714285714286,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 26,
+            "wins": 6,
+            "guesses_per_game": 0.9285714285714286,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.23076923076923078
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 26,
+            "wins": 6
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.33649241892069165
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.07142857142857142,
+            0.35714285714285715
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.3658344959193631,
+            0.4981334884741338
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            7.0,
+            8.666666666666666
+          ],
+          "defined_draws": 9992
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 6403
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.8214285714285714,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.17857142857142858
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.1021246033289788,
+        0.3953858565372187
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": 0.14285714285714288,
+          "ci95": [
+            0.0357142857142857,
+            0.2857142857142857
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.05644107316757235,
+          "ci95": [
+            -0.001363664841388422,
+            0.12951773771641945
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": 0.36666666666666625,
+          "ci95": [
+            -0.25539682539682523,
+            1.1111111111111107
+          ],
+          "defined_bootstrap_draws": 9983
+        },
+        "exact_paired_win_p": 0.125,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.16978302169783022,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0.1,
+      "policy": "A23",
+      "games": 28,
+      "wins": 9,
+      "win_rate": 0.32142857142857145,
+      "eig_per_question": 0.43091622726484685,
+      "questions_per_win": 13.444444444444445,
+      "ambiguous_guesses": 10,
+      "ambiguous_guess_rate": 0.35714285714285715,
+      "ambiguous_guess_wins": 9,
+      "no_guess_games": 18,
+      "no_guess_rate": 0.6428571428571429,
+      "early_guesses": 0,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 7,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 10,
+        "no_guess_games": 18,
+        "ambiguous_guesses": 10,
+        "ambiguous_guess_wins": 9,
+        "ambiguous_guesses_per_game": 0.35714285714285715,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 10,
+            "wins": 9,
+            "guesses_per_game": 0.35714285714285715,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.9
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 10,
+            "wins": 9
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.8461910173325299
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.14285714285714285,
+            0.5
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.4169289503347857,
+            0.44521913495389775
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            13.0,
+            13.875
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 9997
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.17857142857142858,
+            0.5357142857142857
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.4642857142857143,
+            0.8214285714285714
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.1793324692249496,
+        0.5066115681914238
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": 0.0357142857142857,
+          "ci95": [
+            -0.17857142857142855,
+            0.25
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.06516371943940058,
+          "ci95": [
+            0.05120262418615817,
+            0.07969644865726831
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -5.244444444444445,
+          "ci95": [
+            -5.7,
+            -4.738095238095237
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "exact_paired_win_p": 1.0,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 9.999000099990002e-05,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0.1,
+      "policy": "B41",
+      "games": 28,
+      "wins": 10,
+      "win_rate": 0.35714285714285715,
+      "eig_per_question": 0.4960799467042475,
+      "questions_per_win": 8.2,
+      "ambiguous_guesses": 28,
+      "ambiguous_guess_rate": 1.0,
+      "ambiguous_guess_wins": 10,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 0,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 1,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 28,
+        "ambiguous_guess_wins": 10,
+        "ambiguous_guesses_per_game": 1.0,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 10,
+            "guesses_per_game": 1.0,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.35714285714285715
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 10
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.38359008447822057
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.17857142857142858,
+            0.5357142857142857
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.4892135915645941,
+            0.5027965773087238
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            7.714285714285714,
+            8.666666666666666
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 6403
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.2070582950773768,
+        0.5416969348557219
+      ],
+      "B41_minus_this_policy": null
+    },
+    {
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0,
+      "policy": "Raw",
+      "games": 28,
+      "wins": 28,
+      "win_rate": 1.0,
+      "eig_per_question": 0.8575527706937635,
+      "questions_per_win": 9.214285714285714,
+      "ambiguous_guesses": 1,
+      "ambiguous_guess_rate": 0.03571428571428571,
+      "ambiguous_guess_wins": 1,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 5,
+      "early_guess_wins": 5,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 1,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 1,
+        "ambiguous_guess_wins": 1,
+        "ambiguous_guesses_per_game": 0.03571428571428571,
+        "bins": {
+          "1": {
+            "guesses": 27,
+            "wins": 27,
+            "guesses_per_game": 0.9642857142857143,
+            "share_of_guesses": 0.9642857142857143,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 1,
+            "wins": 1,
+            "guesses_per_game": 0.03571428571428571,
+            "share_of_guesses": 0.03571428571428571,
+            "win_rate_when_guessed": 1.0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 27,
+            "wins": 27
+          },
+          "2": {
+            "guesses": 1,
+            "wins": 1
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.9821428571428571
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.8150642195339262,
+            0.898429440959415
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            8.642857142857142,
+            9.821428571428571
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 6405
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.0,
+            0.10714285714285714
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.03571428571428571,
+            0.32142857142857145
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.8793566952341543,
+        0.9999999999999998
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.25,
+          "ci95": [
+            -0.4285714285714286,
+            -0.1071428571428571
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.01355888887631429,
+          "ci95": [
+            -0.00738882980621717,
+            0.03528401500837621
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -0.6428571428571423,
+          "ci95": [
+            -1.3095238095238093,
+            -0.04191899585921398
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "exact_paired_win_p": 0.015625,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.4340565943405659,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0,
+      "policy": "A11",
+      "games": 28,
+      "wins": 15,
+      "win_rate": 0.5357142857142857,
+      "eig_per_question": 0.6510017080172802,
+      "questions_per_win": 8.133333333333333,
+      "ambiguous_guesses": 19,
+      "ambiguous_guess_rate": 0.6785714285714286,
+      "ambiguous_guess_wins": 6,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 8,
+      "early_guess_wins": 6,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 2,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 19,
+        "ambiguous_guess_wins": 6,
+        "ambiguous_guesses_per_game": 0.6785714285714286,
+        "bins": {
+          "1": {
+            "guesses": 9,
+            "wins": 9,
+            "guesses_per_game": 0.32142857142857145,
+            "share_of_guesses": 0.32142857142857145,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 8,
+            "wins": 3,
+            "guesses_per_game": 0.2857142857142857,
+            "share_of_guesses": 0.2857142857142857,
+            "win_rate_when_guessed": 0.375
+          },
+          "3": {
+            "guesses": 4,
+            "wins": 2,
+            "guesses_per_game": 0.14285714285714285,
+            "share_of_guesses": 0.14285714285714285,
+            "win_rate_when_guessed": 0.5
+          },
+          "4+": {
+            "guesses": 7,
+            "wins": 1,
+            "guesses_per_game": 0.25,
+            "share_of_guesses": 0.25,
+            "win_rate_when_guessed": 0.14285714285714285
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 9,
+            "wins": 9
+          },
+          "2": {
+            "guesses": 8,
+            "wins": 3
+          },
+          "3": {
+            "guesses": 4,
+            "wins": 2
+          },
+          "4+": {
+            "guesses": 7,
+            "wins": 1
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.5293950649009963
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.35714285714285715,
+            0.7142857142857143
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.4906179010167229,
+            0.8341996427029994
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            7.470490196078432,
+            8.833333333333334
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 8752
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.5,
+            0.8571428571428571
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.07142857142857142,
+            0.3580357142857013
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.358126892344679,
+        0.7046843001720462
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": 0.2142857142857143,
+          "ci95": [
+            0.0357142857142857,
+            0.39285714285714285
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.22010995155279767,
+          "ci95": [
+            0.043939548590850426,
+            0.37726605804227453
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": 0.4380952380952383,
+          "ci95": [
+            -0.3250043706293708,
+            1.2333441558441558
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "exact_paired_win_p": 0.0703125,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.056194380561943806,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0,
+      "policy": "A23",
+      "games": 28,
+      "wins": 28,
+      "win_rate": 1.0,
+      "eig_per_question": 0.8565598707971638,
+      "questions_per_win": 9.428571428571429,
+      "ambiguous_guesses": 0,
+      "ambiguous_guess_rate": 0.0,
+      "ambiguous_guess_wins": 0,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 4,
+      "early_guess_wins": 4,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 1,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 0,
+        "ambiguous_guess_wins": 0,
+        "ambiguous_guesses_per_game": 0.0,
+        "bins": {
+          "1": {
+            "guesses": 28,
+            "wins": 28,
+            "guesses_per_game": 1.0,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 28,
+            "wins": 28
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 1.0
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.8147398703370745,
+            0.8967843740078152
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            8.821428571428571,
+            10.035714285714286
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 6405
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.03571428571428571,
+            0.2857142857142857
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.8793566952341543,
+        0.9999999999999998
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.25,
+          "ci95": [
+            -0.4285714285714286,
+            -0.1071428571428571
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.014551788772914076,
+          "ci95": [
+            -0.006312457644588862,
+            0.03579250499539328
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -0.8571428571428577,
+          "ci95": [
+            -1.5238095238095237,
+            -0.2797554347826091
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "exact_paired_win_p": 0.015625,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.31786821317868214,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0,
+      "policy": "B41",
+      "games": 28,
+      "wins": 21,
+      "win_rate": 0.75,
+      "eig_per_question": 0.8711116595700777,
+      "questions_per_win": 8.571428571428571,
+      "ambiguous_guesses": 9,
+      "ambiguous_guess_rate": 0.32142857142857145,
+      "ambiguous_guess_wins": 2,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 7,
+      "early_guess_wins": 6,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 2,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 9,
+        "ambiguous_guess_wins": 2,
+        "ambiguous_guesses_per_game": 0.32142857142857145,
+        "bins": {
+          "1": {
+            "guesses": 19,
+            "wins": 19,
+            "guesses_per_game": 0.6785714285714286,
+            "share_of_guesses": 0.6785714285714286,
+            "win_rate_when_guessed": 1.0
+          },
+          "2": {
+            "guesses": 6,
+            "wins": 1,
+            "guesses_per_game": 0.21428571428571427,
+            "share_of_guesses": 0.21428571428571427,
+            "win_rate_when_guessed": 0.16666666666666666
+          },
+          "3": {
+            "guesses": 3,
+            "wins": 1,
+            "guesses_per_game": 0.10714285714285714,
+            "share_of_guesses": 0.10714285714285714,
+            "win_rate_when_guessed": 0.3333333333333333
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 19,
+            "wins": 19
+          },
+          "2": {
+            "guesses": 6,
+            "wins": 1
+          },
+          "3": {
+            "guesses": 3,
+            "wins": 1
+          },
+          "4+": {
+            "guesses": 0,
+            "wins": 0
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.8214285714285714
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.5714285714285714,
+            0.8928571428571429
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.8333264924162745,
+            0.9071119174782827
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            8.0,
+            9.157894736842104
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 8752
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.14285714285714285,
+            0.5
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.07142857142857142,
+            0.35714285714285715
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.5664432968100104,
+        0.8732350508070668
+      ],
+      "B41_minus_this_policy": null
+    },
+    {
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0.1,
+      "policy": "Raw",
+      "games": 28,
+      "wins": 20,
+      "win_rate": 0.7142857142857143,
+      "eig_per_question": 0.47565857705110265,
+      "questions_per_win": 12.25,
+      "ambiguous_guesses": 28,
+      "ambiguous_guess_rate": 1.0,
+      "ambiguous_guess_wins": 20,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 0,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 1,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 28,
+        "ambiguous_guess_wins": 20,
+        "ambiguous_guesses_per_game": 1.0,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 20,
+            "guesses_per_game": 1.0,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.7142857142857143
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 20
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.5922472527298108
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.5357142857142857,
+            0.8571428571428571
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.46370081603158,
+            0.48633201975063745
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            11.733333333333333,
+            12.789473684210526
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 6452
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.5294071156670428,
+        0.8474600394333092
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.5,
+          "ci95": [
+            -0.6785714285714286,
+            -0.3214285714285714
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.0034277209097887673,
+          "ci95": [
+            -0.06216782727414562,
+            0.04470892509986976
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -3.75,
+          "ci95": [
+            -4.391304347826088,
+            -3.1831547619047615
+          ],
+          "defined_bootstrap_draws": 9986
+        },
+        "exact_paired_win_p": 0.0001220703125,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.28887111288871115,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0.1,
+      "policy": "A11",
+      "games": 28,
+      "wins": 7,
+      "win_rate": 0.25,
+      "eig_per_question": 0.34982871611253624,
+      "questions_per_win": 8.285714285714286,
+      "ambiguous_guesses": 28,
+      "ambiguous_guess_rate": 1.0,
+      "ambiguous_guess_wins": 7,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 5,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 0,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 28,
+        "ambiguous_guess_wins": 7,
+        "ambiguous_guesses_per_game": 1.0,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 7,
+            "guesses_per_game": 1.0,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.25
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 7
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.20466222493167266
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.10714285714285714,
+            0.42857142857142855
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.2563447889440116,
+            0.45074700902805354
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            8.0,
+            8.666666666666666
+          ],
+          "defined_draws": 9997
+        },
+        "recheck_rate": {
+          "ci95": null,
+          "defined_draws": 0
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.12676494919293316,
+        0.4335567031899896
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.035714285714285726,
+          "ci95": [
+            -0.1785714285714286,
+            0.10714285714285715
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.12925758184835523,
+          "ci95": [
+            0.0404774238248571,
+            0.22250004148032018
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": 0.21428571428571352,
+          "ci95": [
+            -0.257142857142858,
+            0.6666666666666661
+          ],
+          "defined_bootstrap_draws": 9983
+        },
+        "exact_paired_win_p": 1.0,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.013398660133986601,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0.1,
+      "policy": "A23",
+      "games": 28,
+      "wins": 16,
+      "win_rate": 0.5714285714285714,
+      "eig_per_question": 0.4256920562034138,
+      "questions_per_win": 14.875,
+      "ambiguous_guesses": 19,
+      "ambiguous_guess_rate": 0.6785714285714286,
+      "ambiguous_guess_wins": 16,
+      "no_guess_games": 9,
+      "no_guess_rate": 0.32142857142857145,
+      "early_guesses": 0,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 7,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 19,
+        "no_guess_games": 9,
+        "ambiguous_guesses": 19,
+        "ambiguous_guess_wins": 16,
+        "ambiguous_guesses_per_game": 0.6785714285714286,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 1,
+            "wins": 1,
+            "guesses_per_game": 0.03571428571428571,
+            "share_of_guesses": 0.05263157894736842,
+            "win_rate_when_guessed": 1.0
+          },
+          "4+": {
+            "guesses": 18,
+            "wins": 15,
+            "guesses_per_game": 0.6428571428571429,
+            "share_of_guesses": 0.9473684210526315,
+            "win_rate_when_guessed": 0.8333333333333334
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 19,
+            "wins": 16
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.7291521304979113
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.39285714285714285,
+            0.75
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.40862178940306887,
+            0.442021050904504
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            14.5,
+            15.266666666666667
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 9988
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            0.5,
+            0.8571428571428571
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.14285714285714285,
+            0.5
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.3907078562746876,
+        0.734914528758763
+      ],
+      "B41_minus_this_policy": {
+        "win_rate": {
+          "final_minus_base": -0.3571428571428571,
+          "ci95": [
+            -0.5714285714285714,
+            -0.14285714285714288
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "eig_per_question": {
+          "final_minus_base": 0.05339424175747759,
+          "ci95": [
+            -0.012357240363706412,
+            0.09792567911279881
+          ],
+          "defined_bootstrap_draws": 10000
+        },
+        "questions_per_win": {
+          "final_minus_base": -6.375,
+          "ci95": [
+            -6.965178571428571,
+            -5.808836996336996
+          ],
+          "defined_bootstrap_draws": 9986
+        },
+        "exact_paired_win_p": 0.00634765625,
+        "per_game_eig_permutation": {
+          "pairs": 28,
+          "two_sided_p": 0.00029997000299970003,
+          "draws": 10000,
+          "method": "Paired random sign permutation of per-game EIG, secondary to ratio-of-sums EIG."
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0.1,
+      "policy": "B41",
+      "games": 28,
+      "wins": 6,
+      "win_rate": 0.21428571428571427,
+      "eig_per_question": 0.47908629796089136,
+      "questions_per_win": 8.5,
+      "ambiguous_guesses": 28,
+      "ambiguous_guess_rate": 1.0,
+      "ambiguous_guess_wins": 6,
+      "no_guess_games": 0,
+      "no_guess_rate": 0.0,
+      "early_guesses": 6,
+      "early_guess_wins": 0,
+      "low_probability_reasks": 0,
+      "low_probability_opportunities": 0,
+      "guess_with_k_remaining": {
+        "games": 28,
+        "guesses": 28,
+        "no_guess_games": 0,
+        "ambiguous_guesses": 28,
+        "ambiguous_guess_wins": 6,
+        "ambiguous_guesses_per_game": 1.0,
+        "bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0,
+            "guesses_per_game": 0.0,
+            "share_of_guesses": 0.0,
+            "win_rate_when_guessed": null
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 6,
+            "guesses_per_game": 1.0,
+            "share_of_guesses": 1.0,
+            "win_rate_when_guessed": 0.21428571428571427
+          }
+        },
+        "positive_posterior_support_bins": {
+          "1": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "2": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "3": {
+            "guesses": 0,
+            "wins": 0
+          },
+          "4+": {
+            "guesses": 28,
+            "wins": 6
+          }
+        },
+        "guesses_outside_displayed_candidates": 0,
+        "mean_guessed_posterior_probability": 0.2679844547084894
+      },
+      "ci95": {
+        "win_rate": {
+          "ci95": [
+            0.07142857142857142,
+            0.35714285714285715
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "ci95": [
+            0.41493677326464334,
+            0.5154869751462262
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "ci95": [
+            8.0,
+            9.0
+          ],
+          "defined_draws": 9991
+        },
+        "recheck_rate": {
+          "ci95": null,
+          "defined_draws": 0
+        },
+        "ambiguous_guess_rate": {
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "win_wilson_ci95": [
+        0.1021246033289788,
+        0.3953858565372187
+      ],
+      "B41_minus_this_policy": null
+    }
+  ],
+  "B41_vs_mean_A": {
+    "subsets": {
+      "all_cells": {
+        "win_rate": {
+          "B41_minus_mean_A": 0.021428571428571443,
+          "ci95": [
+            -0.075,
+            0.1214285714285714
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "B41_minus_mean_A": 0.021206136404159696,
+          "ci95": [
+            -0.010813037574537637,
+            0.046361697965794944
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "B41_minus_mean_A": null,
+          "ci95": null,
+          "defined_draws": 0
+        },
+        "recheck_rate": {
+          "B41_minus_mean_A": null,
+          "ci95": null,
+          "defined_draws": 0
+        },
+        "ambiguous_guess_rate": {
+          "B41_minus_mean_A": 0.2589285714285714,
+          "ci95": [
+            -0.11071428571428572,
+            0.6285714285714286
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "B41_minus_mean_A": -0.25535714285714284,
+          "ci95": [
+            -0.5071428571428571,
+            -0.014285714285714285
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "B41_minus_mean_A": 1.3877787807814458e-18,
+          "ci95": [
+            -0.03214285714285713,
+            0.02142857142857143
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "noisy_all_domains": {
+        "win_rate": {
+          "B41_minus_mean_A": 0.04285714285714286,
+          "ci95": [
+            -0.01785714285714285,
+            0.10714285714285714
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "B41_minus_mean_A": 0.030584204295307744,
+          "ci95": [
+            0.0010928679526935343,
+            0.05318779366279808
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "B41_minus_mean_A": null,
+          "ci95": null,
+          "defined_draws": 0
+        },
+        "recheck_rate": {
+          "B41_minus_mean_A": null,
+          "ci95": null,
+          "defined_draws": 0
+        },
+        "ambiguous_guess_rate": {
+          "B41_minus_mean_A": 0.38928571428571423,
+          "ci95": [
+            0.01428571428571428,
+            0.7928571428571428
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "B41_minus_mean_A": -0.38928571428571435,
+          "ci95": [
+            -0.7928571428571428,
+            -0.014285714285714285
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "B41_minus_mean_A": -0.0035714285714285713,
+          "ci95": [
+            -0.014285714285714285,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "noisy_animals": {
+        "win_rate": {
+          "B41_minus_mean_A": 0.017857142857142853,
+          "ci95": [
+            -0.0625,
+            0.09821428571428573
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "B41_minus_mean_A": -0.01842558258042963,
+          "ci95": [
+            -0.08413765196637596,
+            0.044635657003611655
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "B41_minus_mean_A": null,
+          "ci95": null,
+          "defined_draws": 0
+        },
+        "recheck_rate": {
+          "B41_minus_mean_A": 0.13070800167574362,
+          "ci95": [
+            -0.1308589864996115,
+            0.4375
+          ],
+          "defined_draws": 9959
+        },
+        "ambiguous_guess_rate": {
+          "B41_minus_mean_A": 0.4464285714285714,
+          "ci95": [
+            0.0,
+            0.9464285714285714
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "B41_minus_mean_A": -0.44642857142857145,
+          "ci95": [
+            -0.9464285714285714,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "B41_minus_mean_A": -0.008928571428571428,
+          "ci95": [
+            -0.03571428571428571,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "noisy_synthetic": {
+        "win_rate": {
+          "B41_minus_mean_A": 0.05952380952380953,
+          "ci95": [
+            -0.029761904761904767,
+            0.14880952380952384
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "B41_minus_mean_A": 0.06325739554579933,
+          "ci95": [
+            0.033271944916304926,
+            0.10371612232600402
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "B41_minus_mean_A": null,
+          "ci95": [
+            -0.08643493761140851,
+            0.4679677729677727
+          ],
+          "defined_draws": 2507
+        },
+        "recheck_rate": {
+          "B41_minus_mean_A": null,
+          "ci95": null,
+          "defined_draws": 0
+        },
+        "ambiguous_guess_rate": {
+          "B41_minus_mean_A": 0.3511904761904761,
+          "ci95": [
+            0.023809523809523798,
+            0.7023809523809524
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "B41_minus_mean_A": -0.3511904761904762,
+          "ci95": [
+            -0.7023809523809524,
+            -0.023809523809523808
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "B41_minus_mean_A": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "noiseless_animals": {
+        "win_rate": {
+          "B41_minus_mean_A": -0.09821428571428573,
+          "ci95": [
+            -0.25,
+            0.05357142857142856
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "B41_minus_mean_A": -0.07553864512346023,
+          "ci95": [
+            -0.23913524089053106,
+            0.0839440352470006
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "B41_minus_mean_A": 0.1362044817927166,
+          "ci95": [
+            -1.867764355742297,
+            2.0554924242424235
+          ],
+          "defined_draws": 9848
+        },
+        "recheck_rate": {
+          "B41_minus_mean_A": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "defined_draws": 8187
+        },
+        "ambiguous_guess_rate": {
+          "B41_minus_mean_A": 0.375,
+          "ci95": [
+            -0.125,
+            0.875
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "B41_minus_mean_A": -0.2589285714285714,
+          "ci95": [
+            -0.6071428571428571,
+            0.03571428571428571
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "B41_minus_mean_A": -0.044642857142857144,
+          "ci95": [
+            -0.1607142857142857,
+            0.03571428571428572
+          ],
+          "defined_draws": 10000
+        }
+      },
+      "noiseless_synthetic": {
+        "win_rate": {
+          "B41_minus_mean_A": 0.06547619047619054,
+          "ci95": [
+            -0.19047619047619047,
+            0.3452380952380953
+          ],
+          "defined_draws": 10000
+        },
+        "eig_per_question": {
+          "B41_minus_mean_A": 0.07007254427065956,
+          "ci95": [
+            -0.03618827519916002,
+            0.21491501961401444
+          ],
+          "defined_draws": 10000
+        },
+        "questions_per_win": {
+          "B41_minus_mean_A": -0.11747456247456285,
+          "ci95": [
+            -0.7449366605616603,
+            0.514399400221382
+          ],
+          "defined_draws": 10000
+        },
+        "recheck_rate": {
+          "B41_minus_mean_A": null,
+          "ci95": null,
+          "defined_draws": 0
+        },
+        "ambiguous_guess_rate": {
+          "B41_minus_mean_A": -0.035714285714285705,
+          "ci95": [
+            -0.35714285714285715,
+            0.2738095238095238
+          ],
+          "defined_draws": 10000
+        },
+        "no_guess_rate": {
+          "B41_minus_mean_A": -0.029761904761904757,
+          "ci95": [
+            -0.09523809523809523,
+            0.0
+          ],
+          "defined_draws": 10000
+        },
+        "early_guess_win_rate": {
+          "B41_minus_mean_A": 0.03571428571428572,
+          "ci95": [
+            -0.011904761904761913,
+            0.09523809523809523
+          ],
+          "defined_draws": 10000
+        }
+      }
+    },
+    "draws": 10000,
+    "A_seeds": [
+      11,
+      23
+    ],
+    "B_seeds": [
+      41
+    ],
+    "method": "Resample the two A seeds then paired complete games within each cell; share case draws between noise variants. The single B endpoint is fixed, with no estimate of B training-seed variability. Equal weight per cell and A seed. Undefined recheck ratios remain undefined, not zero."
+  },
+  "endings": {
+    "Raw": {
+      "games": 280,
+      "wins": 141,
+      "wrong_guesses": 69,
+      "no_guess_games": 70,
+      "ambiguous_wrong_guesses": 69,
+      "early_guesses": 15,
+      "early_guess_wins": 12
+    },
+    "A11": {
+      "games": 280,
+      "wins": 104,
+      "wrong_guesses": 167,
+      "no_guess_games": 9,
+      "ambiguous_wrong_guesses": 167,
+      "early_guesses": 63,
+      "early_guess_wins": 21
+    },
+    "A23": {
+      "games": 280,
+      "wins": 138,
+      "wrong_guesses": 6,
+      "no_guess_games": 136,
+      "ambiguous_wrong_guesses": 6,
+      "early_guesses": 15,
+      "early_guess_wins": 15
+    },
+    "B41": {
+      "games": 280,
+      "wins": 127,
+      "wrong_guesses": 152,
+      "no_guess_games": 1,
+      "ambiguous_wrong_guesses": 152,
+      "early_guesses": 42,
+      "early_guess_wins": 18
+    }
+  },
+  "B41_synthetic_identifier_forms": {
+    "forms": {
+      "syntax_error": 13,
+      "hybrid_identifier_occurrences": 15,
+      "any_active_header_code_prefix_occurrences": 15,
+      "questions_with_hybrid_identifier": 15
+    },
+    "invalid_causes": {
+      "Unexpected text at character 1.": 13,
+      "Unknown attribute: b_602777": 1,
+      "Unknown attribute: c_534676": 1,
+      "Unknown attribute: d_824058": 1,
+      "Unknown attribute: e_191755": 1,
+      "Unknown attribute: f_108335": 1,
+      "Unknown attribute: g_183702": 1,
+      "Unknown attribute: h_593580": 1,
+      "Unknown attribute: i_184024": 1,
+      "Unknown attribute: j_631213": 1,
+      "Unknown attribute: k_332347": 1,
+      "Unknown attribute: l_237736": 1,
+      "Unknown attribute: m_664412": 1,
+      "Unknown attribute: n_658127": 1,
+      "Unknown attribute: o_261607": 1,
+      "Unknown attribute: p_598075": 1
+    },
+    "common_unknown_attributes": [
+      [
+        "b_602777",
+        1
+      ],
+      [
+        "c_534676",
+        1
+      ],
+      [
+        "d_824058",
+        1
+      ],
+      [
+        "e_191755",
+        1
+      ],
+      [
+        "f_108335",
+        1
+      ]
+    ],
+    "examples": [
+      {
+        "game_id": "paid-v1/synthetic/256/11/p0.1",
+        "raw_action": "ASK: b_602777",
+        "unknown_attributes": [
+          "b_602777"
+        ],
+        "error": "Unknown attribute: b_602777"
+      },
+      {
+        "game_id": "paid-v1/synthetic/256/11/p0.1",
+        "raw_action": "ASK: c_534676",
+        "unknown_attributes": [
+          "c_534676"
+        ],
+        "error": "Unknown attribute: c_534676"
+      },
+      {
+        "game_id": "paid-v1/synthetic/256/11/p0.1",
+        "raw_action": "ASK: d_824058",
+        "unknown_attributes": [
+          "d_824058"
+        ],
+        "error": "Unknown attribute: d_824058"
+      }
+    ],
+    "method": "Read-only AST audit, including compound predicates; no scoring changes."
+  },
+  "B41_invalid_name_reference_audit": {
+    "training": {
+      "counts": {
+        "counted_questions": 1889,
+        "questions_with_exact_candidate_name_references": 15,
+        "invalid_questions_with_name_references": 15,
+        "name_list_questions": 0,
+        "invalid_name_list_questions": 0,
+        "lists_at_least_quarter_original_N": 0
+      },
+      "examples": [
+        {
+          "game_id": "train-v1/seed41/animals/16/1000005/p0.1",
+          "update": 5,
+          "raw_action": "ASK: (hops AND (NOT (adult OR (adult_female_hippopotamus == \"adult_female_hippopotamus\"))))",
+          "distinct_candidate_names": 1,
+          "posterior_support": 16,
+          "error": "Expected )."
+        },
+        {
+          "game_id": "train-v1/seed41/animals/16/1000005/p0.1",
+          "update": 5,
+          "raw_action": "ASK: (hops AND (NOT (adult_female_hippopotamus == \"adult_female_hippopotamus\")))",
+          "distinct_candidate_names": 1,
+          "posterior_support": 16,
+          "error": "Expected )."
+        },
+        {
+          "game_id": "train-v1/seed41/animals/16/1000005/p0.1",
+          "update": 5,
+          "raw_action": "ASK: (hops AND (NOT (adult_female_hippopotamus == \"adult_female_hippopotamus\")))",
+          "distinct_candidate_names": 1,
+          "posterior_support": 16,
+          "error": "Expected )."
+        }
+      ],
+      "definition": "Post-hoc raw exact-name reference audit; identifiers and quoted names must match a candidate literally. It includes malformed ASK bodies, which are still INVALID with zero EIG. A raw name reference is not proof of intended enumeration. Legal item-equality enumeration remains the unchanged primary metric.",
+      "primary_scoring_changed": false
+    },
+    "endpoint": {
+      "counts": {
+        "counted_questions": 2107
+      },
+      "examples": [],
+      "definition": "Post-hoc raw exact-name reference audit; identifiers and quoted names must match a candidate literally. It includes malformed ASK bodies, which are still INVALID with zero EIG. A raw name reference is not proof of intended enumeration. Legal item-equality enumeration remains the unchanged primary metric.",
+      "primary_scoring_changed": false
+    }
+  },
+  "definitions": {
+    "ambiguous_guess_rate": "Games with a GUESS at displayed k>1, divided by all 28 games; exact positive support at p=0, threshold-plus-MAP display at p=.1.",
+    "no_guess_rate": "Games without GUESS divided by all 28 games.",
+    "early_guess_wins": "Correct guesses using fewer than ceil(log2(N)) questions; counts, with early-guess attempts also reported.",
+    "EIG": "Sum of exact question EIG divided by counted questions, including losses and INVALID.",
+    "uncertainty": "Whole-game paired intervals condition on endpoints. The A mean comparison resamples two A seeds; no B training-seed variance is estimable."
+  }
+}
