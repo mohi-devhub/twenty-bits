@@ -1,0 +1,22 @@
+{
+  "games": 28,
+  "wins": 0,
+  "verified_requests": 308,
+  "observed_sampling_usage_usd": "0.271615",
+  "eval_only": true,
+  "is_primary_result": false,
+  "training_updates": 0,
+  "finished_session": true,
+  "all_HTTP_work_drained": true,
+  "run_budget": {
+    "spent_usd": "0.271615",
+    "held_usd": "0.000000"
+  },
+  "project_budget": {
+    "cap_usd": "50.000000",
+    "spent_usd": "23.952838",
+    "held_usd": "2.083181",
+    "available_usd": "23.963981",
+    "blocked": false
+  }
+}

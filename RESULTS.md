@@ -1,6 +1,19 @@
 # Twenty Bits: better questions, unreliable stopping
 
-Outcome-only reinforcement learning improved Qwen3-8B's animal questions in every training seed. It did not produce a reliable end-to-end search policy. Similar win rates concealed different failures: one noiseless seed guessed too soon, the other kept asking after its budget ended. The noisy-trained seed also guessed too soon. An evaluation-only budget display removed the repeated final ASK behavior without removing ambiguous early guesses. [Primary measurements](results/writeup/numbers.json), [visible-budget comparison](results/visible_budget/summary.json).
+RL improved expected information per question on noiseless animals for all three seeds, about 4× for A11. The policies struggled with when to guess. Across the 280 primary games per seed, A11 made 167 ambiguous wrong guesses, A23 ended 136 games without guessing, and B41 made 202 ambiguous guesses with budget left. The last count includes wins as well as losses. [Primary measurements](results/writeup/numbers.json), [guess timing chart](figures/guess-timing.svg).
+
+![Guess timing across A11, A23 and B41](figures/guess-timing.png)
+
+The information gain did not reliably translate into more wins outside noiseless animal games. All three trained policies won fewer games than raw across the full primary bank.
+
+| Policy | Wins across all primary games | Wins on noiseless animal games | Wins on noisy games |
+| --- | ---: | ---: | ---: |
+| Raw Qwen3-8B | 141/280 | 7/56 | 52/140 |
+| A11 | 104/280 | 24/56 | 31/140 |
+| A23 | 138/280 | 25/56 | 29/140 |
+| B41 | 127/280 | 19/56 | 36/140 |
+
+On those same 56 noiseless animal cases, random questions won 16/56 and the greedy predicate reference won 56/56. The reference used exactly 5 questions at N=32 and 7 at N=128. [Matched baseline table](README.md#matched-noiseless-comparison-at-n32), [paired reference gaps](results/submission/comparison.json).
 
 ![Animal information gain and the different ways games end](results/writeup/charts/headline.png)
 
@@ -8,7 +21,7 @@ Outcome-only reinforcement learning improved Qwen3-8B's animal questions in ever
 
 The model sees a candidate table and asks exact Boolean questions such as `ASK: fur AND NOT carnivore`. Table column codes are exact, case-sensitive aliases for attribute names. `AND`, `OR`, `NOT`, parentheses and `item == <literal name>` form the grammar. Arbitrary name lists are legal when written as item equalities. A script answers from the target's row, so no judge model is involved. A final `GUESS: <name>` wins or ends the game. The question budget is twice `ceil(log2 N)`, followed by one final-guess opportunity. Malformed questions consume budget. [Game and grammar](PROTOCOL.md), [parser](twenty_bits/predicates.py).
 
-The environment supplies state after every answer. In noiseless games it lists exactly consistent candidates. With 10% independent answer noise, it lists candidates with posterior probability above 0.001 plus the maximum-posterior candidate. Noisy candidates can re-enter the list. The model never receives numeric posterior probabilities. The full table and history remain available. The primary prompt states the maximum budget but never displays a running remaining count. This is a study of question selection given supplied candidate state, with budget tracking still left to the model. [Observation contract](twenty_bits/candidate_feedback.py), [budget audit](research/BUDGET_VISIBILITY.md).
+The environment supplies candidate state after every counted question. In noiseless games it lists exactly consistent candidates. With 10% independent answer noise, it lists candidates with posterior probability above 0.001 plus the maximum-posterior candidate. Noisy candidates can re-enter the list. The model never receives numeric posterior probabilities. The full table and history remain available. The primary prompt states the maximum budget but never displays a running remaining count. This is a study of question selection given supplied candidate state, with budget tracking still left to the model. [Observation contract](twenty_bits/candidate_feedback.py), [budget audit](research/BUDGET_VISIBILITY.md).
 
 All main runs start from raw Qwen3-8B. A11 and A23 train with truthful answers. B41 trains with 10% answer noise. Each receives 30 updates, with eight sampled games from one start state per update. The curriculum reaches N=128. The reward is **+1 for winning, -0.03 per question, -0.1 per invalid question**. Group advantages use population-standardized game returns. Information gain receives no reward. Thinking is disabled, with a 2,048-token output cap. [A11 configuration](experiments/main_A11.json), [A23 configuration](experiments/main_A23.json), [B41 configuration](experiments/main_B41.json), [training code](twenty_bits/rl_pilot.py).
 
@@ -70,7 +83,7 @@ The visible-budget follow-up changes only the public prompt. Each turn adds `Que
 | A23 | 138/280 | 186/280 | 136 to 0 | 20 to 27 |
 | B41 | 127/280 | 156/280 | 1 to 0 | 202 to 188 |
 
-All extra ASK actions at the final opportunity disappear. Raw's remaining 12 no-guess endings exhaust context. A23's repeated final ASK behavior was a budget-tracking failure that an explicit state display fixes. B41's gambling persists: it still makes an ambiguous guess with questions left in every noisy animal N=128 game. Gambling is part of the trained policy's strategy under both prompts, rather than just a missing budget count. The data do not identify its internal mechanism or establish a unique causal role for any reward term. [Every paired cell and CI](VISIBLE_BUDGET_GATE.md), [complete counts](results/visible_budget/summary.json).
+All extra ASK actions at the final opportunity disappear. Raw's remaining 12 no-guess endings exhaust context. The combined counter and final-guess instruction changed A23's stopping behavior. The experiment does not isolate the contribution of either prompt element. B41 still makes an ambiguous guess with questions left in every noisy animal N=128 game under this variant. The data leave the mechanism and the role of any individual reward term open. [Every paired cell and CI](VISIBLE_BUDGET_GATE.md), [complete counts](results/visible_budget/summary.json).
 
 ![Primary and visible-budget outcomes, with remaining gambling](results/writeup/charts/visible-budget.png)
 
@@ -123,9 +136,11 @@ The N=256 synthetic cell changes both domain and candidate-set size relative to 
 
 ## Limits of the result
 
-- Candidate state is supplied. The model does not have to maintain the full posterior from history. The tiny hard-mode comparison without candidate feedback has zero wins out of 20 for both raw base and A23. It does not establish learned state tracking. A11's checkpoint loss prevented its deferred hard-mode and suffix comparisons. [Hard-mode and missing-data record](results/main_A23/replication_summary.json).
-- The semantic tables are authored profiles, not independent real-world species. Animals has 400 age-and-sex profiles from 100 underlying types, with a fixed 200-row training pool. Paid animal rows are held out but share underlying types. The synthetic domain tests relabeled binary-table search. Tools and foods have offline baselines but no main paid model evaluation. [World construction](data/WORLDS.md), [training boundary](PROTOCOL.md).
+- Candidate state is supplied. The model does not have to maintain the full posterior from history. The tiny hard-mode comparison without candidate feedback has zero wins out of 20 for both raw base and A23. It does not establish learned state tracking. A11's hosted checkpoint was unavailable for the deferred hard-mode and suffix comparisons. [Hard-mode and missing-data record](results/main_A23/replication_summary.json).
+- The semantic tables are authored profiles, not independent real-world species. Animals has 400 age-and-sex profiles from 100 underlying types, with a fixed 200-row training pool. The paid cases draw from held-out profiles. The training and evaluation pools share 88 underlying animal types. The synthetic domain tests relabeled binary-table search. Tools and foods have offline baselines but no main paid model evaluation. [World construction](data/WORLDS.md), [training boundary](PROTOCOL.md).
 - The exact Boolean grammar removes free-form interpretation. It admits balanced item-name lists but rejects malformed shortcuts. Improvements need not transfer to natural language question answering. [Grammar](PROTOCOL.md).
+- A working prompted-halving baseline remains untested. The tested wording produced 262 invalid questions out of 280 and no final guesses. It was a format failure on the 28 noiseless N=32 animal cases. [Prompt](results/submission/halving/preflight.json), [full rollouts](results/submission/halving/games.jsonl.gz).
+- Single learning rate, no sweep. The pilot and all main seeds use the cookbook default `4e-5`. [Optimizer settings](experiments/main_A11.json).
 - Thinking is disabled. Visible reasoning tokens are zero by design and do not measure internal computation. [Sampling settings](experiments/main_B41.json), [token measurements](results/visible_budget/summary.json).
 - There are two A seeds, one B seed and 28 games per frozen cell. Game-bootstrap CIs describe the fitted endpoints. Seed-bootstrap intervals based on two A endpoints remain unstable, and B training-seed uncertainty cannot be estimated. Multiple exploratory comparisons are not corrected as a family. [Statistical plan](NUMBERS.md), [write-up settings](results/writeup/numbers.json).
 - Each training update samples eight rollouts from one table and target. The noisy group also shares a seeded noise schedule. The apparent number of games overstates the number of independent search worlds. [Training configuration and audit](results/main_B41/summary.json).
@@ -133,6 +148,6 @@ The N=256 synthetic cell changes both domain and candidate-set size relative to 
 
 ## Cost and reproduction
 
-Recorded project usage is **$23.681223**, with **$2.083181 held** and **$24.235596 available** under the $50 cap. Charges use observed tokens at pinned prices, pending invoice reconciliation. Holds include unresolved lost originals and checkpoint storage. The write-up, figures and replays add zero Tinker spend and make no new sampling, evaluation or training requests. [Ledger export](ledger.json), [hold breakdown](BUDGET.md), [write-up source hashes](results/writeup/numbers.json).
+Recorded project usage is **$23.681223**, with **$2.083181 held** and **$24.235596 available** under the $50 cap. Charges use observed tokens at pinned prices, pending invoice reconciliation. Holds include unresolved lost originals and checkpoint storage. The original write-up, archived analysis, figures and replays added zero Tinker spend. The submission's halving baseline adds $0.271615 in recorded usage and $0.000000 in new holds. [Submission ledger](COSTS.md). [Ledger export](ledger.json), [hold breakdown](BUDGET.md), [write-up source hashes](results/writeup/numbers.json).
 
 Run `python3 scripts/build_writeup_data.py`, `python3 scripts/plot_writeup.py` and `python3 scripts/build_study_replays.py` to rebuild the derived data, charts and HTML from the saved artifacts. Local export commands and their version are recorded in [the replay guide](replays/study/README.md). The final [verification record](results/writeup/validation.json) checks the numbers, source hashes, example rule, chart pairs and exported media. Historical main-run gate checks remain tied to their commits because their ledger snapshots precede the follow-up.

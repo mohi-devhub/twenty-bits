@@ -1,0 +1,3016 @@
+{
+  "title": "Matched primary evaluation and submission controls",
+  "definitions": {
+    "bootstrap": "10,000 paired complete-game draws per cell, seed 20261122. Intervals condition on the fitted policies.",
+    "questions_per_win": "Counted questions on winning games divided by wins. A win at an ambiguous state may be lucky.",
+    "joint_wins": "The compared policies win these same cases. The saved question gap sums the per-case differences.",
+    "repeated_splits": "A legal question with the same truth mask as a previous question, or its complement.",
+    "flipped_answers": "Observed flips among valid sampled yes/no turns. Which turns are observed depends on the policy.",
+    "reward": "Mean of the saved game returns in that group. Noise comparisons are descriptive.",
+    "halving": "Format failure on noiseless animals N=32. The tested wording produced 262 invalid questions out of 280 and no final guesses. A working prompted-halving baseline remains untested."
+  },
+  "primary_outcomes": {
+    "Raw": {
+      "games": 280,
+      "wins": 141,
+      "questions": 2744,
+      "winning_questions": 1273,
+      "questions_per_win": 9.02836879432624,
+      "eig_per_question": 0.40463362518370755,
+      "invalid_questions": 349,
+      "repeated_splits": 457,
+      "truncated_turns": 103,
+      "no_guess_games": 70,
+      "context_losses": 5,
+      "valid_yes_no_answers": 2395,
+      "flipped_answers": 147,
+      "mean_reward": 0.08492857142857135,
+      "win": 141,
+      "ambiguous_wrong_guess": 69,
+      "no_guess": 70,
+      "other": 0,
+      "ambiguous_guesses_with_budget": 104
+    },
+    "A11": {
+      "games": 280,
+      "wins": 104,
+      "questions": 2095,
+      "winning_questions": 699,
+      "questions_per_win": 6.721153846153846,
+      "eig_per_question": 0.5146669847678154,
+      "invalid_questions": 277,
+      "repeated_splits": 47,
+      "truncated_turns": 0,
+      "no_guess_games": 9,
+      "context_losses": 0,
+      "valid_yes_no_answers": 1818,
+      "flipped_answers": 110,
+      "mean_reward": 0.048035714285714244,
+      "win": 104,
+      "ambiguous_wrong_guess": 167,
+      "no_guess": 9,
+      "other": 0,
+      "ambiguous_guesses_with_budget": 217
+    },
+    "A23": {
+      "games": 280,
+      "wins": 138,
+      "questions": 3007,
+      "winning_questions": 1249,
+      "questions_per_win": 9.05072463768116,
+      "eig_per_question": 0.46616833479063796,
+      "invalid_questions": 76,
+      "repeated_splits": 389,
+      "truncated_turns": 0,
+      "no_guess_games": 136,
+      "context_losses": 0,
+      "valid_yes_no_answers": 2931,
+      "flipped_answers": 191,
+      "mean_reward": 0.1435357142857142,
+      "win": 138,
+      "ambiguous_wrong_guess": 6,
+      "no_guess": 136,
+      "other": 0,
+      "ambiguous_guesses_with_budget": 20
+    },
+    "B41": {
+      "games": 280,
+      "wins": 127,
+      "questions": 2107,
+      "winning_questions": 912,
+      "questions_per_win": 7.181102362204724,
+      "eig_per_question": 0.540307714240778,
+      "invalid_questions": 30,
+      "repeated_splits": 187,
+      "truncated_turns": 0,
+      "no_guess_games": 1,
+      "context_losses": 0,
+      "valid_yes_no_answers": 2077,
+      "flipped_answers": 114,
+      "mean_reward": 0.21710714285714286,
+      "win": 127,
+      "ambiguous_wrong_guess": 152,
+      "no_guess": 1,
+      "other": 0,
+      "ambiguous_guesses_with_budget": 202
+    }
+  },
+  "by_noise": {
+    "0": {
+      "Raw": {
+        "games": 140,
+        "wins": 89,
+        "questions": 1263,
+        "winning_questions": 689,
+        "questions_per_win": 7.741573033707865,
+        "eig_per_question": 0.5035852600438735,
+        "invalid_questions": 185,
+        "repeated_splits": 266,
+        "truncated_turns": 43,
+        "no_guess_games": 36,
+        "context_losses": 3,
+        "valid_yes_no_answers": 1078,
+        "flipped_answers": 0,
+        "mean_reward": 0.23292857142857137
+      },
+      "A11": {
+        "games": 140,
+        "wins": 73,
+        "questions": 1037,
+        "winning_questions": 469,
+        "questions_per_win": 6.424657534246576,
+        "eig_per_question": 0.652117321306063,
+        "invalid_questions": 149,
+        "repeated_splits": 28,
+        "truncated_turns": 0,
+        "no_guess_games": 5,
+        "context_losses": 0,
+        "valid_yes_no_answers": 888,
+        "flipped_answers": 0,
+        "mean_reward": 0.19278571428571425
+      },
+      "A23": {
+        "games": 140,
+        "wins": 109,
+        "questions": 1246,
+        "winning_questions": 844,
+        "questions_per_win": 7.743119266055046,
+        "eig_per_question": 0.6235456938405239,
+        "invalid_questions": 35,
+        "repeated_splits": 174,
+        "truncated_turns": 0,
+        "no_guess_games": 31,
+        "context_losses": 0,
+        "valid_yes_no_answers": 1211,
+        "flipped_answers": 0,
+        "mean_reward": 0.4865714285714285
+      },
+      "B41": {
+        "games": 140,
+        "wins": 91,
+        "questions": 1076,
+        "winning_questions": 638,
+        "questions_per_win": 7.010989010989011,
+        "eig_per_question": 0.6671777423933637,
+        "invalid_questions": 14,
+        "repeated_splits": 114,
+        "truncated_turns": 0,
+        "no_guess_games": 1,
+        "context_losses": 0,
+        "valid_yes_no_answers": 1062,
+        "flipped_answers": 0,
+        "mean_reward": 0.4094285714285714
+      },
+      "random": {
+        "games": 140,
+        "wins": 92,
+        "questions": 1504,
+        "winning_questions": 890,
+        "questions_per_win": 9.673913043478262,
+        "eig_per_question": 0.4847973550650196,
+        "invalid_questions": 0,
+        "repeated_splits": 276,
+        "truncated_turns": 0,
+        "no_guess_games": 0,
+        "context_losses": 0,
+        "valid_yes_no_answers": 1504,
+        "flipped_answers": 0,
+        "mean_reward": 0.3348571428571428
+      },
+      "greedy_single": {
+        "games": 140,
+        "wins": 140,
+        "questions": 906,
+        "winning_questions": 906,
+        "questions_per_win": 6.4714285714285715,
+        "eig_per_question": 0.9936464938404853,
+        "invalid_questions": 0,
+        "repeated_splits": 0,
+        "truncated_turns": 0,
+        "no_guess_games": 0,
+        "context_losses": 0,
+        "valid_yes_no_answers": 906,
+        "flipped_answers": 0,
+        "mean_reward": 0.8058571428571429
+      },
+      "greedy_predicate": {
+        "games": 140,
+        "wins": 140,
+        "questions": 896,
+        "winning_questions": 896,
+        "questions_per_win": 6.4,
+        "eig_per_question": 0.9993408320459407,
+        "invalid_questions": 0,
+        "repeated_splits": 0,
+        "truncated_turns": 0,
+        "no_guess_games": 0,
+        "context_losses": 0,
+        "valid_yes_no_answers": 896,
+        "flipped_answers": 0,
+        "mean_reward": 0.808
+      }
+    },
+    "0.1": {
+      "Raw": {
+        "games": 140,
+        "wins": 52,
+        "questions": 1481,
+        "winning_questions": 584,
+        "questions_per_win": 11.23076923076923,
+        "eig_per_question": 0.32024745716994,
+        "invalid_questions": 164,
+        "repeated_splits": 191,
+        "truncated_turns": 60,
+        "no_guess_games": 34,
+        "context_losses": 2,
+        "valid_yes_no_answers": 1317,
+        "flipped_answers": 147,
+        "mean_reward": -0.06307142857142867
+      },
+      "A11": {
+        "games": 140,
+        "wins": 31,
+        "questions": 1058,
+        "winning_questions": 230,
+        "questions_per_win": 7.419354838709677,
+        "eig_per_question": 0.3799448685200245,
+        "invalid_questions": 128,
+        "repeated_splits": 19,
+        "truncated_turns": 0,
+        "no_guess_games": 4,
+        "context_losses": 0,
+        "valid_yes_no_answers": 930,
+        "flipped_answers": 110,
+        "mean_reward": -0.09671428571428575
+      },
+      "A23": {
+        "games": 140,
+        "wins": 29,
+        "questions": 1761,
+        "winning_questions": 405,
+        "questions_per_win": 13.96551724137931,
+        "eig_per_question": 0.3548155867065052,
+        "invalid_questions": 41,
+        "repeated_splits": 215,
+        "truncated_turns": 0,
+        "no_guess_games": 105,
+        "context_losses": 0,
+        "valid_yes_no_answers": 1720,
+        "flipped_answers": 191,
+        "mean_reward": -0.19950000000000012
+      },
+      "B41": {
+        "games": 140,
+        "wins": 36,
+        "questions": 1031,
+        "winning_questions": 274,
+        "questions_per_win": 7.611111111111111,
+        "eig_per_question": 0.4079001969835692,
+        "invalid_questions": 16,
+        "repeated_splits": 73,
+        "truncated_turns": 0,
+        "no_guess_games": 0,
+        "context_losses": 0,
+        "valid_yes_no_answers": 1015,
+        "flipped_answers": 114,
+        "mean_reward": 0.024785714285714282
+      },
+      "random": {
+        "games": 140,
+        "wins": 53,
+        "questions": 1791,
+        "winning_questions": 705,
+        "questions_per_win": 13.30188679245283,
+        "eig_per_question": 0.2859520704554397,
+        "invalid_questions": 0,
+        "repeated_splits": 403,
+        "truncated_turns": 0,
+        "no_guess_games": 0,
+        "context_losses": 0,
+        "valid_yes_no_answers": 1791,
+        "flipped_answers": 199,
+        "mean_reward": -0.0052142857142858335
+      },
+      "greedy_single": {
+        "games": 140,
+        "wins": 110,
+        "questions": 1604,
+        "winning_questions": 1241,
+        "questions_per_win": 11.281818181818181,
+        "eig_per_question": 0.4805876589688079,
+        "invalid_questions": 0,
+        "repeated_splits": 202,
+        "truncated_turns": 0,
+        "no_guess_games": 0,
+        "context_losses": 0,
+        "valid_yes_no_answers": 1604,
+        "flipped_answers": 178,
+        "mean_reward": 0.4419999999999999
+      },
+      "greedy_predicate": {
+        "games": 140,
+        "wins": 109,
+        "questions": 1524,
+        "winning_questions": 1154,
+        "questions_per_win": 10.587155963302752,
+        "eig_per_question": 0.5069791532221346,
+        "invalid_questions": 0,
+        "repeated_splits": 49,
+        "truncated_turns": 0,
+        "no_guess_games": 0,
+        "context_losses": 0,
+        "valid_yes_no_answers": 1524,
+        "flipped_answers": 170,
+        "mean_reward": 0.4519999999999999
+      }
+    }
+  },
+  "cells": [
+    {
+      "domain": "animals",
+      "n": 32,
+      "noise": 0,
+      "game_ids": [
+        "paid-v1/animals/32/0/p0",
+        "paid-v1/animals/32/1/p0",
+        "paid-v1/animals/32/2/p0",
+        "paid-v1/animals/32/3/p0",
+        "paid-v1/animals/32/4/p0",
+        "paid-v1/animals/32/5/p0",
+        "paid-v1/animals/32/6/p0",
+        "paid-v1/animals/32/7/p0",
+        "paid-v1/animals/32/8/p0",
+        "paid-v1/animals/32/9/p0",
+        "paid-v1/animals/32/10/p0",
+        "paid-v1/animals/32/11/p0",
+        "paid-v1/animals/32/12/p0",
+        "paid-v1/animals/32/13/p0",
+        "paid-v1/animals/32/14/p0",
+        "paid-v1/animals/32/15/p0",
+        "paid-v1/animals/32/16/p0",
+        "paid-v1/animals/32/17/p0",
+        "paid-v1/animals/32/18/p0",
+        "paid-v1/animals/32/19/p0",
+        "paid-v1/animals/32/20/p0",
+        "paid-v1/animals/32/21/p0",
+        "paid-v1/animals/32/22/p0",
+        "paid-v1/animals/32/23/p0",
+        "paid-v1/animals/32/24/p0",
+        "paid-v1/animals/32/25/p0",
+        "paid-v1/animals/32/26/p0",
+        "paid-v1/animals/32/27/p0"
+      ],
+      "policies": {
+        "Raw": {
+          "games": 28,
+          "wins": 5,
+          "questions": 261,
+          "winning_questions": 37,
+          "questions_per_win": 7.4,
+          "eig_per_question": 0.2073134405190021,
+          "invalid_questions": 75,
+          "repeated_splits": 89,
+          "truncated_turns": 14,
+          "no_guess_games": 15,
+          "context_losses": 0,
+          "valid_yes_no_answers": 186,
+          "flipped_answers": 0,
+          "mean_reward": -0.3689285714285715,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 23,
+            "won_only_before": 0,
+            "won_only_after": 23,
+            "joint_wins": 5,
+            "delta_questions_on_joint_wins": -12,
+            "win_rate_ci95": [
+              0.6785714285714286,
+              0.9642857142857143
+            ],
+            "eig_per_question_ci95": [
+              0.703180247424026,
+              0.872431858798365
+            ],
+            "delta_eig_per_question": 0.7926865594809979
+          }
+        },
+        "A11": {
+          "games": 28,
+          "wins": 17,
+          "questions": 139,
+          "winning_questions": 81,
+          "questions_per_win": 4.764705882352941,
+          "eig_per_question": 0.767254327768226,
+          "invalid_questions": 0,
+          "repeated_splits": 3,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 139,
+          "flipped_answers": 0,
+          "mean_reward": 0.45821428571428574,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 11,
+            "won_only_before": 0,
+            "won_only_after": 11,
+            "joint_wins": 17,
+            "delta_questions_on_joint_wins": 4,
+            "win_rate_ci95": [
+              0.2142857142857143,
+              0.5714285714285714
+            ],
+            "eig_per_question_ci95": [
+              0.17528950550253913,
+              0.28774834204640787
+            ],
+            "delta_eig_per_question": 0.232745672231774
+          }
+        },
+        "A23": {
+          "games": 28,
+          "wins": 20,
+          "questions": 220,
+          "winning_questions": 140,
+          "questions_per_win": 7.0,
+          "eig_per_question": 0.48937793269992536,
+          "invalid_questions": 1,
+          "repeated_splits": 54,
+          "truncated_turns": 0,
+          "no_guess_games": 8,
+          "context_losses": 0,
+          "valid_yes_no_answers": 219,
+          "flipped_answers": 0,
+          "mean_reward": 0.47500000000000003,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 8,
+            "won_only_before": 0,
+            "won_only_after": 8,
+            "joint_wins": 20,
+            "delta_questions_on_joint_wins": -40,
+            "win_rate_ci95": [
+              0.1428571428571429,
+              0.4642857142857143
+            ],
+            "eig_per_question_ci95": [
+              0.41133217950472106,
+              0.6076171411229918
+            ],
+            "delta_eig_per_question": 0.5106220673000746
+          }
+        },
+        "B41": {
+          "games": 28,
+          "wins": 15,
+          "questions": 178,
+          "winning_questions": 86,
+          "questions_per_win": 5.733333333333333,
+          "eig_per_question": 0.5415118824887459,
+          "invalid_questions": 0,
+          "repeated_splits": 30,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 178,
+          "flipped_answers": 0,
+          "mean_reward": 0.34500000000000003,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 13,
+            "won_only_before": 0,
+            "won_only_after": 13,
+            "joint_wins": 15,
+            "delta_questions_on_joint_wins": -11,
+            "win_rate_ci95": [
+              0.2857142857142857,
+              0.6428571428571428
+            ],
+            "eig_per_question_ci95": [
+              0.36614914880113975,
+              0.5499691376190642
+            ],
+            "delta_eig_per_question": 0.45848811751125407
+          }
+        },
+        "random": {
+          "games": 28,
+          "wins": 11,
+          "questions": 251,
+          "winning_questions": 81,
+          "questions_per_win": 7.363636363636363,
+          "eig_per_question": 0.35513488106255026,
+          "invalid_questions": 0,
+          "repeated_splits": 26,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 251,
+          "flipped_answers": 0,
+          "mean_reward": 0.12392857142857139,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 17,
+            "won_only_before": 0,
+            "won_only_after": 17,
+            "joint_wins": 11,
+            "delta_questions_on_joint_wins": -26,
+            "win_rate_ci95": [
+              0.4285714285714286,
+              0.7857142857142857
+            ],
+            "eig_per_question_ci95": [
+              0.5997556744413862,
+              0.68770437733342
+            ],
+            "delta_eig_per_question": 0.6448651189374497
+          }
+        },
+        "greedy_single": {
+          "games": 28,
+          "wins": 28,
+          "questions": 140,
+          "winning_questions": 140,
+          "questions_per_win": 5.0,
+          "eig_per_question": 0.9903435741026491,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 140,
+          "flipped_answers": 0,
+          "mean_reward": 0.85,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 28,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.006439218488873572,
+              0.01298808863613551
+            ],
+            "delta_eig_per_question": 0.00965642589735094
+          }
+        },
+        "greedy_predicate": {
+          "games": 28,
+          "wins": 28,
+          "questions": 140,
+          "winning_questions": 140,
+          "questions_per_win": 5.0,
+          "eig_per_question": 1.0,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 140,
+          "flipped_answers": 0,
+          "mean_reward": 0.85,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 28,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.0,
+              0.0
+            ],
+            "delta_eig_per_question": 0.0
+          }
+        },
+        "Halving": {
+          "games": 28,
+          "wins": 0,
+          "questions": 280,
+          "winning_questions": 0,
+          "questions_per_win": null,
+          "eig_per_question": 0.015255452997190418,
+          "invalid_questions": 262,
+          "repeated_splits": 10,
+          "truncated_turns": 92,
+          "no_guess_games": 28,
+          "context_losses": 0,
+          "valid_yes_no_answers": 18,
+          "flipped_answers": 0,
+          "mean_reward": -1.235714285714286,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 28,
+            "won_only_before": 0,
+            "won_only_after": 28,
+            "joint_wins": 0,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              1.0,
+              1.0
+            ],
+            "eig_per_question_ci95": [
+              0.9628240319154553,
+              1.0
+            ],
+            "delta_eig_per_question": 0.9847445470028096
+          },
+          "halving_minus_raw": {
+            "delta_wins": -5,
+            "won_only_before": 5,
+            "won_only_after": 0,
+            "joint_wins": 0,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              -0.32142857142857145,
+              -0.03571428571428571
+            ],
+            "eig_per_question_ci95": [
+              -0.2820609115964647,
+              -0.11227711389125197
+            ],
+            "delta_eig_per_question": -0.1920579875218117
+          }
+        }
+      }
+    },
+    {
+      "domain": "animals",
+      "n": 32,
+      "noise": 0.1,
+      "game_ids": [
+        "paid-v1/animals/32/0/p0.1",
+        "paid-v1/animals/32/1/p0.1",
+        "paid-v1/animals/32/2/p0.1",
+        "paid-v1/animals/32/3/p0.1",
+        "paid-v1/animals/32/4/p0.1",
+        "paid-v1/animals/32/5/p0.1",
+        "paid-v1/animals/32/6/p0.1",
+        "paid-v1/animals/32/7/p0.1",
+        "paid-v1/animals/32/8/p0.1",
+        "paid-v1/animals/32/9/p0.1",
+        "paid-v1/animals/32/10/p0.1",
+        "paid-v1/animals/32/11/p0.1",
+        "paid-v1/animals/32/12/p0.1",
+        "paid-v1/animals/32/13/p0.1",
+        "paid-v1/animals/32/14/p0.1",
+        "paid-v1/animals/32/15/p0.1",
+        "paid-v1/animals/32/16/p0.1",
+        "paid-v1/animals/32/17/p0.1",
+        "paid-v1/animals/32/18/p0.1",
+        "paid-v1/animals/32/19/p0.1",
+        "paid-v1/animals/32/20/p0.1",
+        "paid-v1/animals/32/21/p0.1",
+        "paid-v1/animals/32/22/p0.1",
+        "paid-v1/animals/32/23/p0.1",
+        "paid-v1/animals/32/24/p0.1",
+        "paid-v1/animals/32/25/p0.1",
+        "paid-v1/animals/32/26/p0.1",
+        "paid-v1/animals/32/27/p0.1"
+      ],
+      "policies": {
+        "Raw": {
+          "games": 28,
+          "wins": 4,
+          "questions": 262,
+          "winning_questions": 33,
+          "questions_per_win": 8.25,
+          "eig_per_question": 0.12129743403419689,
+          "invalid_questions": 93,
+          "repeated_splits": 55,
+          "truncated_turns": 36,
+          "no_guess_games": 15,
+          "context_losses": 0,
+          "valid_yes_no_answers": 169,
+          "flipped_answers": 26,
+          "mean_reward": -0.4700000000000001,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 18,
+            "won_only_before": 1,
+            "won_only_after": 19,
+            "joint_wins": 3,
+            "delta_questions_on_joint_wins": 5,
+            "win_rate_ci95": [
+              0.4285714285714286,
+              0.8214285714285715
+            ],
+            "eig_per_question_ci95": [
+              0.33730509875168685,
+              0.41822322142150453
+            ],
+            "delta_eig_per_question": 0.3787596168053219
+          }
+        },
+        "A11": {
+          "games": 28,
+          "wins": 5,
+          "questions": 173,
+          "winning_questions": 32,
+          "questions_per_win": 6.4,
+          "eig_per_question": 0.3742800195373943,
+          "invalid_questions": 0,
+          "repeated_splits": 4,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 173,
+          "flipped_answers": 24,
+          "mean_reward": -0.006785714285714272,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 17,
+            "won_only_before": 0,
+            "won_only_after": 17,
+            "joint_wins": 5,
+            "delta_questions_on_joint_wins": 10,
+            "win_rate_ci95": [
+              0.42857142857142855,
+              0.7857142857142858
+            ],
+            "eig_per_question_ci95": [
+              0.09833514763187474,
+              0.15389577925298026
+            ],
+            "delta_eig_per_question": 0.12577703130212448
+          }
+        },
+        "A23": {
+          "games": 28,
+          "wins": 2,
+          "questions": 278,
+          "winning_questions": 18,
+          "questions_per_win": 9.0,
+          "eig_per_question": 0.3195874415638512,
+          "invalid_questions": 5,
+          "repeated_splits": 36,
+          "truncated_turns": 0,
+          "no_guess_games": 25,
+          "context_losses": 0,
+          "valid_yes_no_answers": 273,
+          "flipped_answers": 39,
+          "mean_reward": -0.24428571428571436,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 20,
+            "won_only_before": 0,
+            "won_only_after": 20,
+            "joint_wins": 2,
+            "delta_questions_on_joint_wins": -4,
+            "win_rate_ci95": [
+              0.5357142857142857,
+              0.8571428571428572
+            ],
+            "eig_per_question_ci95": [
+              0.1586646311438608,
+              0.204488752449014
+            ],
+            "delta_eig_per_question": 0.18046960927566758
+          }
+        },
+        "B41": {
+          "games": 28,
+          "wins": 6,
+          "questions": 179,
+          "winning_questions": 39,
+          "questions_per_win": 6.5,
+          "eig_per_question": 0.3170838953529533,
+          "invalid_questions": 0,
+          "repeated_splits": 18,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 179,
+          "flipped_answers": 23,
+          "mean_reward": 0.022500000000000013,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 16,
+            "won_only_before": 0,
+            "won_only_after": 16,
+            "joint_wins": 6,
+            "delta_questions_on_joint_wins": 10,
+            "win_rate_ci95": [
+              0.39285714285714285,
+              0.75
+            ],
+            "eig_per_question_ci95": [
+              0.15519440842398105,
+              0.2109697245681885
+            ],
+            "delta_eig_per_question": 0.1829731554865655
+          }
+        },
+        "random": {
+          "games": 28,
+          "wins": 5,
+          "questions": 280,
+          "winning_questions": 50,
+          "questions_per_win": 10.0,
+          "eig_per_question": 0.17105605779080213,
+          "invalid_questions": 0,
+          "repeated_splits": 29,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 280,
+          "flipped_answers": 40,
+          "mean_reward": -0.12142857142857147,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 17,
+            "won_only_before": 1,
+            "won_only_after": 18,
+            "joint_wins": 4,
+            "delta_questions_on_joint_wins": -3,
+            "win_rate_ci95": [
+              0.39285714285714285,
+              0.7857142857142858
+            ],
+            "eig_per_question_ci95": [
+              0.3062249343603934,
+              0.3497093026673795
+            ],
+            "delta_eig_per_question": 0.32900099304871666
+          }
+        },
+        "greedy_single": {
+          "games": 28,
+          "wins": 22,
+          "questions": 251,
+          "winning_questions": 191,
+          "questions_per_win": 8.681818181818182,
+          "eig_per_question": 0.4954115910050742,
+          "invalid_questions": 0,
+          "repeated_splits": 42,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 251,
+          "flipped_answers": 37,
+          "mean_reward": 0.5167857142857143,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 1,
+            "won_only_after": 1,
+            "joint_wins": 21,
+            "delta_questions_on_joint_wins": 3,
+            "win_rate_ci95": [
+              -0.1071428571428571,
+              0.1071428571428571
+            ],
+            "eig_per_question_ci95": [
+              -0.0031959932151396976,
+              0.01322250343986065
+            ],
+            "delta_eig_per_question": 0.004645459834444587
+          }
+        },
+        "greedy_predicate": {
+          "games": 28,
+          "wins": 22,
+          "questions": 254,
+          "winning_questions": 194,
+          "questions_per_win": 8.818181818181818,
+          "eig_per_question": 0.5000570508395188,
+          "invalid_questions": 0,
+          "repeated_splits": 21,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 254,
+          "flipped_answers": 37,
+          "mean_reward": 0.5135714285714286,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 22,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.0,
+              0.0
+            ],
+            "delta_eig_per_question": 0.0
+          }
+        }
+      }
+    },
+    {
+      "domain": "animals",
+      "n": 128,
+      "noise": 0,
+      "game_ids": [
+        "paid-v1/animals/128/0/p0",
+        "paid-v1/animals/128/1/p0",
+        "paid-v1/animals/128/2/p0",
+        "paid-v1/animals/128/3/p0",
+        "paid-v1/animals/128/4/p0",
+        "paid-v1/animals/128/5/p0",
+        "paid-v1/animals/128/6/p0",
+        "paid-v1/animals/128/7/p0",
+        "paid-v1/animals/128/8/p0",
+        "paid-v1/animals/128/9/p0",
+        "paid-v1/animals/128/10/p0",
+        "paid-v1/animals/128/11/p0",
+        "paid-v1/animals/128/12/p0",
+        "paid-v1/animals/128/13/p0",
+        "paid-v1/animals/128/14/p0",
+        "paid-v1/animals/128/15/p0",
+        "paid-v1/animals/128/16/p0",
+        "paid-v1/animals/128/17/p0",
+        "paid-v1/animals/128/18/p0",
+        "paid-v1/animals/128/19/p0",
+        "paid-v1/animals/128/20/p0",
+        "paid-v1/animals/128/21/p0",
+        "paid-v1/animals/128/22/p0",
+        "paid-v1/animals/128/23/p0",
+        "paid-v1/animals/128/24/p0",
+        "paid-v1/animals/128/25/p0",
+        "paid-v1/animals/128/26/p0",
+        "paid-v1/animals/128/27/p0"
+      ],
+      "policies": {
+        "Raw": {
+          "games": 28,
+          "wins": 2,
+          "questions": 347,
+          "winning_questions": 17,
+          "questions_per_win": 8.5,
+          "eig_per_question": 0.10853841018192853,
+          "invalid_questions": 109,
+          "repeated_splits": 159,
+          "truncated_turns": 29,
+          "no_guess_games": 19,
+          "context_losses": 3,
+          "valid_yes_no_answers": 238,
+          "flipped_answers": 0,
+          "mean_reward": -0.6896428571428573,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 26,
+            "won_only_before": 0,
+            "won_only_after": 26,
+            "joint_wins": 2,
+            "delta_questions_on_joint_wins": -3,
+            "win_rate_ci95": [
+              0.8214285714285714,
+              1.0
+            ],
+            "eig_per_question_ci95": [
+              0.8363411259225685,
+              0.9379303737083948
+            ],
+            "delta_eig_per_question": 0.8914615898180714
+          }
+        },
+        "A11": {
+          "games": 28,
+          "wins": 7,
+          "questions": 244,
+          "winning_questions": 55,
+          "questions_per_win": 7.857142857142857,
+          "eig_per_question": 0.5013938912469856,
+          "invalid_questions": 1,
+          "repeated_splits": 25,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 243,
+          "flipped_answers": 0,
+          "mean_reward": -0.015000000000000027,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 21,
+            "won_only_before": 0,
+            "won_only_after": 21,
+            "joint_wins": 7,
+            "delta_questions_on_joint_wins": -6,
+            "win_rate_ci95": [
+              0.5714285714285714,
+              0.8928571428571429
+            ],
+            "eig_per_question_ci95": [
+              0.431933567284735,
+              0.5584385908186776
+            ],
+            "delta_eig_per_question": 0.49860610875301437
+          }
+        },
+        "A23": {
+          "games": 28,
+          "wins": 5,
+          "questions": 376,
+          "winning_questions": 54,
+          "questions_per_win": 10.8,
+          "eig_per_question": 0.29149721950111246,
+          "invalid_questions": 32,
+          "repeated_splits": 120,
+          "truncated_turns": 0,
+          "no_guess_games": 23,
+          "context_losses": 0,
+          "valid_yes_no_answers": 344,
+          "flipped_answers": 0,
+          "mean_reward": -0.3385714285714288,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 23,
+            "won_only_before": 0,
+            "won_only_after": 23,
+            "joint_wins": 5,
+            "delta_questions_on_joint_wins": -19,
+            "win_rate_ci95": [
+              0.6785714285714286,
+              0.9285714285714286
+            ],
+            "eig_per_question_ci95": [
+              0.6455341565202687,
+              0.7715047112043909
+            ],
+            "delta_eig_per_question": 0.7085027804988875
+          }
+        },
+        "B41": {
+          "games": 28,
+          "wins": 4,
+          "questions": 272,
+          "winning_questions": 39,
+          "questions_per_win": 9.75,
+          "eig_per_question": 0.33217251287245825,
+          "invalid_questions": 1,
+          "repeated_splits": 84,
+          "truncated_turns": 0,
+          "no_guess_games": 1,
+          "context_losses": 0,
+          "valid_yes_no_answers": 271,
+          "flipped_answers": 0,
+          "mean_reward": -0.1521428571428572,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 24,
+            "won_only_before": 0,
+            "won_only_after": 24,
+            "joint_wins": 4,
+            "delta_questions_on_joint_wins": -11,
+            "win_rate_ci95": [
+              0.7142857142857143,
+              0.9642857142857143
+            ],
+            "eig_per_question_ci95": [
+              0.6236108766940266,
+              0.7169788069054864
+            ],
+            "delta_eig_per_question": 0.6678274871275418
+          }
+        },
+        "random": {
+          "games": 28,
+          "wins": 5,
+          "questions": 390,
+          "winning_questions": 68,
+          "questions_per_win": 13.6,
+          "eig_per_question": 0.23358055706450856,
+          "invalid_questions": 0,
+          "repeated_splits": 28,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 390,
+          "flipped_answers": 0,
+          "mean_reward": -0.23928571428571446,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 23,
+            "won_only_before": 0,
+            "won_only_after": 23,
+            "joint_wins": 5,
+            "delta_questions_on_joint_wins": -33,
+            "win_rate_ci95": [
+              0.6785714285714286,
+              0.9642857142857143
+            ],
+            "eig_per_question_ci95": [
+              0.7328103394565636,
+              0.7967803740785309
+            ],
+            "delta_eig_per_question": 0.7664194429354915
+          }
+        },
+        "greedy_single": {
+          "games": 28,
+          "wins": 28,
+          "questions": 207,
+          "winning_questions": 207,
+          "questions_per_win": 7.392857142857143,
+          "eig_per_question": 0.9823073441241273,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 207,
+          "flipped_answers": 0,
+          "mean_reward": 0.7782142857142856,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 28,
+            "delta_questions_on_joint_wins": -11,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.011886297545883273,
+              0.025017292871052525
+            ],
+            "delta_eig_per_question": 0.017692655875872654
+          }
+        },
+        "greedy_predicate": {
+          "games": 28,
+          "wins": 28,
+          "questions": 196,
+          "winning_questions": 196,
+          "questions_per_win": 7.0,
+          "eig_per_question": 1.0,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 196,
+          "flipped_answers": 0,
+          "mean_reward": 0.79,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 28,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.0,
+              0.0
+            ],
+            "delta_eig_per_question": 0.0
+          }
+        }
+      }
+    },
+    {
+      "domain": "animals",
+      "n": 128,
+      "noise": 0.1,
+      "game_ids": [
+        "paid-v1/animals/128/0/p0.1",
+        "paid-v1/animals/128/1/p0.1",
+        "paid-v1/animals/128/2/p0.1",
+        "paid-v1/animals/128/3/p0.1",
+        "paid-v1/animals/128/4/p0.1",
+        "paid-v1/animals/128/5/p0.1",
+        "paid-v1/animals/128/6/p0.1",
+        "paid-v1/animals/128/7/p0.1",
+        "paid-v1/animals/128/8/p0.1",
+        "paid-v1/animals/128/9/p0.1",
+        "paid-v1/animals/128/10/p0.1",
+        "paid-v1/animals/128/11/p0.1",
+        "paid-v1/animals/128/12/p0.1",
+        "paid-v1/animals/128/13/p0.1",
+        "paid-v1/animals/128/14/p0.1",
+        "paid-v1/animals/128/15/p0.1",
+        "paid-v1/animals/128/16/p0.1",
+        "paid-v1/animals/128/17/p0.1",
+        "paid-v1/animals/128/18/p0.1",
+        "paid-v1/animals/128/19/p0.1",
+        "paid-v1/animals/128/20/p0.1",
+        "paid-v1/animals/128/21/p0.1",
+        "paid-v1/animals/128/22/p0.1",
+        "paid-v1/animals/128/23/p0.1",
+        "paid-v1/animals/128/24/p0.1",
+        "paid-v1/animals/128/25/p0.1",
+        "paid-v1/animals/128/26/p0.1",
+        "paid-v1/animals/128/27/p0.1"
+      ],
+      "policies": {
+        "Raw": {
+          "games": 28,
+          "wins": 2,
+          "questions": 290,
+          "winning_questions": 20,
+          "questions_per_win": 10.0,
+          "eig_per_question": 0.08657208391986047,
+          "invalid_questions": 69,
+          "repeated_splits": 131,
+          "truncated_turns": 22,
+          "no_guess_games": 8,
+          "context_losses": 2,
+          "valid_yes_no_answers": 221,
+          "flipped_answers": 26,
+          "mean_reward": -0.4857142857142858,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 19,
+            "won_only_before": 0,
+            "won_only_after": 19,
+            "joint_wins": 2,
+            "delta_questions_on_joint_wins": 2,
+            "win_rate_ci95": [
+              0.5,
+              0.8571428571428571
+            ],
+            "eig_per_question_ci95": [
+              0.3913514661890386,
+              0.46110952086805385
+            ],
+            "delta_eig_per_question": 0.42839605688382754
+          }
+        },
+        "A11": {
+          "games": 28,
+          "wins": 1,
+          "questions": 169,
+          "winning_questions": 5,
+          "questions_per_win": 5.0,
+          "eig_per_question": 0.32542093726041615,
+          "invalid_questions": 0,
+          "repeated_splits": 15,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 169,
+          "flipped_answers": 20,
+          "mean_reward": -0.14535714285714288,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 20,
+            "won_only_before": 0,
+            "won_only_after": 20,
+            "joint_wins": 1,
+            "delta_questions_on_joint_wins": 8,
+            "win_rate_ci95": [
+              0.5357142857142857,
+              0.8571428571428572
+            ],
+            "eig_per_question_ci95": [
+              0.16135956892705194,
+              0.2183480324284132
+            ],
+            "delta_eig_per_question": 0.18954720354327187
+          }
+        },
+        "A23": {
+          "games": 28,
+          "wins": 2,
+          "questions": 392,
+          "winning_questions": 28,
+          "questions_per_win": 14.0,
+          "eig_per_question": 0.18857448814782435,
+          "invalid_questions": 34,
+          "repeated_splits": 157,
+          "truncated_turns": 0,
+          "no_guess_games": 25,
+          "context_losses": 0,
+          "valid_yes_no_answers": 358,
+          "flipped_answers": 40,
+          "mean_reward": -0.47000000000000014,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 19,
+            "won_only_before": 0,
+            "won_only_after": 19,
+            "joint_wins": 2,
+            "delta_questions_on_joint_wins": -2,
+            "win_rate_ci95": [
+              0.5,
+              0.8571428571428571
+            ],
+            "eig_per_question_ci95": [
+              0.2944173489331764,
+              0.35904177541486726
+            ],
+            "delta_eig_per_question": 0.3263936526558637
+          }
+        },
+        "B41": {
+          "games": 28,
+          "wins": 0,
+          "questions": 177,
+          "winning_questions": 0,
+          "questions_per_win": null,
+          "eig_per_question": 0.24999638274093053,
+          "invalid_questions": 1,
+          "repeated_splits": 55,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 176,
+          "flipped_answers": 19,
+          "mean_reward": -0.19321428571428573,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 21,
+            "won_only_before": 0,
+            "won_only_after": 21,
+            "joint_wins": 0,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              0.5714285714285714,
+              0.8928571428571429
+            ],
+            "eig_per_question_ci95": [
+              0.2281860019234595,
+              0.302556155404534
+            ],
+            "delta_eig_per_question": 0.2649717580627575
+          }
+        },
+        "random": {
+          "games": 28,
+          "wins": 4,
+          "questions": 392,
+          "winning_questions": 56,
+          "questions_per_win": 14.0,
+          "eig_per_question": 0.12358716605952787,
+          "invalid_questions": 0,
+          "repeated_splits": 28,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 392,
+          "flipped_answers": 44,
+          "mean_reward": -0.2771428571428573,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 17,
+            "won_only_before": 2,
+            "won_only_after": 19,
+            "joint_wins": 2,
+            "delta_questions_on_joint_wins": -6,
+            "win_rate_ci95": [
+              0.3571428571428572,
+              0.8214285714285714
+            ],
+            "eig_per_question_ci95": [
+              0.3750019626278085,
+              0.4069022519436088
+            ],
+            "delta_eig_per_question": 0.39138097474416017
+          }
+        },
+        "greedy_single": {
+          "games": 28,
+          "wins": 19,
+          "questions": 347,
+          "winning_questions": 222,
+          "questions_per_win": 11.68421052631579,
+          "eig_per_question": 0.4845700521596954,
+          "invalid_questions": 0,
+          "repeated_splits": 61,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 347,
+          "flipped_answers": 39,
+          "mean_reward": 0.30678571428571416,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 2,
+            "won_only_before": 0,
+            "won_only_after": 2,
+            "joint_wins": 19,
+            "delta_questions_on_joint_wins": -16,
+            "win_rate_ci95": [
+              0.0,
+              0.1785714285714286
+            ],
+            "eig_per_question_ci95": [
+              0.020322430974979027,
+              0.04143001146064829
+            ],
+            "delta_eig_per_question": 0.030398088643992627
+          }
+        },
+        "greedy_predicate": {
+          "games": 28,
+          "wins": 21,
+          "questions": 332,
+          "winning_questions": 234,
+          "questions_per_win": 11.142857142857142,
+          "eig_per_question": 0.514968140803688,
+          "invalid_questions": 0,
+          "repeated_splits": 11,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 332,
+          "flipped_answers": 38,
+          "mean_reward": 0.3942857142857142,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 21,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.0,
+              0.0
+            ],
+            "delta_eig_per_question": 0.0
+          }
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0,
+      "game_ids": [
+        "paid-v1/synthetic/32/0/p0",
+        "paid-v1/synthetic/32/1/p0",
+        "paid-v1/synthetic/32/2/p0",
+        "paid-v1/synthetic/32/3/p0",
+        "paid-v1/synthetic/32/4/p0",
+        "paid-v1/synthetic/32/5/p0",
+        "paid-v1/synthetic/32/6/p0",
+        "paid-v1/synthetic/32/7/p0",
+        "paid-v1/synthetic/32/8/p0",
+        "paid-v1/synthetic/32/9/p0",
+        "paid-v1/synthetic/32/10/p0",
+        "paid-v1/synthetic/32/11/p0",
+        "paid-v1/synthetic/32/12/p0",
+        "paid-v1/synthetic/32/13/p0",
+        "paid-v1/synthetic/32/14/p0",
+        "paid-v1/synthetic/32/15/p0",
+        "paid-v1/synthetic/32/16/p0",
+        "paid-v1/synthetic/32/17/p0",
+        "paid-v1/synthetic/32/18/p0",
+        "paid-v1/synthetic/32/19/p0",
+        "paid-v1/synthetic/32/20/p0",
+        "paid-v1/synthetic/32/21/p0",
+        "paid-v1/synthetic/32/22/p0",
+        "paid-v1/synthetic/32/23/p0",
+        "paid-v1/synthetic/32/24/p0",
+        "paid-v1/synthetic/32/25/p0",
+        "paid-v1/synthetic/32/26/p0",
+        "paid-v1/synthetic/32/27/p0"
+      ],
+      "policies": {
+        "Raw": {
+          "games": 28,
+          "wins": 26,
+          "questions": 179,
+          "winning_questions": 159,
+          "questions_per_win": 6.115384615384615,
+          "eig_per_question": 0.7170030979017575,
+          "invalid_questions": 0,
+          "repeated_splits": 18,
+          "truncated_turns": 0,
+          "no_guess_games": 2,
+          "context_losses": 0,
+          "valid_yes_no_answers": 179,
+          "flipped_answers": 0,
+          "mean_reward": 0.7367857142857143,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 2,
+            "won_only_before": 0,
+            "won_only_after": 2,
+            "joint_wins": 26,
+            "delta_questions_on_joint_wins": -29,
+            "win_rate_ci95": [
+              0.0,
+              0.1785714285714286
+            ],
+            "eig_per_question_ci95": [
+              0.16735093773590579,
+              0.4126416925401882
+            ],
+            "delta_eig_per_question": 0.28211995236211496
+          }
+        },
+        "A11": {
+          "games": 28,
+          "wins": 18,
+          "questions": 153,
+          "winning_questions": 95,
+          "questions_per_win": 5.277777777777778,
+          "eig_per_question": 0.7504368363657161,
+          "invalid_questions": 18,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 2,
+          "context_losses": 0,
+          "valid_yes_no_answers": 135,
+          "flipped_answers": 0,
+          "mean_reward": 0.41464285714285715,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 10,
+            "won_only_before": 0,
+            "won_only_after": 10,
+            "joint_wins": 18,
+            "delta_questions_on_joint_wins": -5,
+            "win_rate_ci95": [
+              0.1785714285714286,
+              0.5357142857142857
+            ],
+            "eig_per_question_ci95": [
+              0.12698951243356518,
+              0.3799843764420817
+            ],
+            "delta_eig_per_question": 0.24868621389815637
+          }
+        },
+        "A23": {
+          "games": 28,
+          "wins": 28,
+          "questions": 161,
+          "winning_questions": 161,
+          "questions_per_win": 5.75,
+          "eig_per_question": 0.8458146439927537,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 161,
+          "flipped_answers": 0,
+          "mean_reward": 0.8275,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 28,
+            "delta_questions_on_joint_wins": -21,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.10504841563107616,
+              0.2011068996015807
+            ],
+            "delta_eig_per_question": 0.15330840627111875
+          }
+        },
+        "B41": {
+          "games": 28,
+          "wins": 25,
+          "questions": 158,
+          "winning_questions": 134,
+          "questions_per_win": 5.36,
+          "eig_per_question": 0.8367611712615203,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 158,
+          "flipped_answers": 0,
+          "mean_reward": 0.7235714285714286,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 3,
+            "won_only_before": 0,
+            "won_only_after": 3,
+            "joint_wins": 25,
+            "delta_questions_on_joint_wins": -9,
+            "win_rate_ci95": [
+              0.0,
+              0.25
+            ],
+            "eig_per_question_ci95": [
+              0.1110701471440731,
+              0.2131787575132361
+            ],
+            "delta_eig_per_question": 0.16236187900235222
+          }
+        },
+        "random": {
+          "games": 28,
+          "wins": 27,
+          "questions": 206,
+          "winning_questions": 196,
+          "questions_per_win": 7.2592592592592595,
+          "eig_per_question": 0.6629116786936065,
+          "invalid_questions": 0,
+          "repeated_splits": 44,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 206,
+          "flipped_answers": 0,
+          "mean_reward": 0.7435714285714285,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 1,
+            "won_only_before": 0,
+            "won_only_after": 1,
+            "joint_wins": 27,
+            "delta_questions_on_joint_wins": -61,
+            "win_rate_ci95": [
+              0.0,
+              0.1071428571428571
+            ],
+            "eig_per_question_ci95": [
+              0.2948220987567291,
+              0.3721278726119382
+            ],
+            "delta_eig_per_question": 0.33621137157026604
+          }
+        },
+        "greedy_single": {
+          "games": 28,
+          "wins": 28,
+          "questions": 140,
+          "winning_questions": 140,
+          "questions_per_win": 5.0,
+          "eig_per_question": 0.9990420143791531,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 140,
+          "flipped_answers": 0,
+          "mean_reward": 0.85,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 28,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.0,
+              0.00020512869175370874
+            ],
+            "delta_eig_per_question": 8.103588471941592e-05
+          }
+        },
+        "greedy_predicate": {
+          "games": 28,
+          "wins": 28,
+          "questions": 140,
+          "winning_questions": 140,
+          "questions_per_win": 5.0,
+          "eig_per_question": 0.9991230502638725,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 140,
+          "flipped_answers": 0,
+          "mean_reward": 0.85,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 28,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.0,
+              0.0
+            ],
+            "delta_eig_per_question": 0.0
+          }
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 32,
+      "noise": 0.1,
+      "game_ids": [
+        "paid-v1/synthetic/32/0/p0.1",
+        "paid-v1/synthetic/32/1/p0.1",
+        "paid-v1/synthetic/32/2/p0.1",
+        "paid-v1/synthetic/32/3/p0.1",
+        "paid-v1/synthetic/32/4/p0.1",
+        "paid-v1/synthetic/32/5/p0.1",
+        "paid-v1/synthetic/32/6/p0.1",
+        "paid-v1/synthetic/32/7/p0.1",
+        "paid-v1/synthetic/32/8/p0.1",
+        "paid-v1/synthetic/32/9/p0.1",
+        "paid-v1/synthetic/32/10/p0.1",
+        "paid-v1/synthetic/32/11/p0.1",
+        "paid-v1/synthetic/32/12/p0.1",
+        "paid-v1/synthetic/32/13/p0.1",
+        "paid-v1/synthetic/32/14/p0.1",
+        "paid-v1/synthetic/32/15/p0.1",
+        "paid-v1/synthetic/32/16/p0.1",
+        "paid-v1/synthetic/32/17/p0.1",
+        "paid-v1/synthetic/32/18/p0.1",
+        "paid-v1/synthetic/32/19/p0.1",
+        "paid-v1/synthetic/32/20/p0.1",
+        "paid-v1/synthetic/32/21/p0.1",
+        "paid-v1/synthetic/32/22/p0.1",
+        "paid-v1/synthetic/32/23/p0.1",
+        "paid-v1/synthetic/32/24/p0.1",
+        "paid-v1/synthetic/32/25/p0.1",
+        "paid-v1/synthetic/32/26/p0.1",
+        "paid-v1/synthetic/32/27/p0.1"
+      ],
+      "policies": {
+        "Raw": {
+          "games": 28,
+          "wins": 9,
+          "questions": 265,
+          "winning_questions": 84,
+          "questions_per_win": 9.333333333333334,
+          "eig_per_question": 0.4053278040242906,
+          "invalid_questions": 2,
+          "repeated_splits": 1,
+          "truncated_turns": 2,
+          "no_guess_games": 11,
+          "context_losses": 0,
+          "valid_yes_no_answers": 263,
+          "flipped_answers": 37,
+          "mean_reward": 0.030357142857142822,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 10,
+            "won_only_before": 1,
+            "won_only_after": 11,
+            "joint_wins": 8,
+            "delta_questions_on_joint_wins": -16,
+            "win_rate_ci95": [
+              0.17857142857142855,
+              0.5714285714285714
+            ],
+            "eig_per_question_ci95": [
+              0.07194287928529602,
+              0.11429833920063796
+            ],
+            "delta_eig_per_question": 0.09179744851451932
+          }
+        },
+        "A11": {
+          "games": 28,
+          "wins": 12,
+          "questions": 219,
+          "winning_questions": 88,
+          "questions_per_win": 7.333333333333333,
+          "eig_per_question": 0.39969982048801683,
+          "invalid_questions": 18,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 2,
+          "context_losses": 0,
+          "valid_yes_no_answers": 201,
+          "flipped_answers": 26,
+          "mean_reward": 0.12964285714285714,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 7,
+            "won_only_before": 1,
+            "won_only_after": 8,
+            "joint_wins": 11,
+            "delta_questions_on_joint_wins": 6,
+            "win_rate_ci95": [
+              0.0714285714285714,
+              0.4285714285714286
+            ],
+            "eig_per_question_ci95": [
+              0.05677246582598322,
+              0.14996666069415457
+            ],
+            "delta_eig_per_question": 0.09742543205079307
+          }
+        },
+        "A23": {
+          "games": 28,
+          "wins": 0,
+          "questions": 280,
+          "winning_questions": 0,
+          "questions_per_win": null,
+          "eig_per_question": 0.41005777372084823,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 28,
+          "context_losses": 0,
+          "valid_yes_no_answers": 280,
+          "flipped_answers": 40,
+          "mean_reward": -0.3000000000000001,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 19,
+            "won_only_before": 0,
+            "won_only_after": 19,
+            "joint_wins": 0,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              0.5,
+              0.8571428571428571
+            ],
+            "eig_per_question_ci95": [
+              0.07080160792769533,
+              0.10243213347176518
+            ],
+            "delta_eig_per_question": 0.08706747881796167
+          }
+        },
+        "B41": {
+          "games": 28,
+          "wins": 14,
+          "questions": 213,
+          "winning_questions": 102,
+          "questions_per_win": 7.285714285714286,
+          "eig_per_question": 0.4425226756354277,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 213,
+          "flipped_answers": 28,
+          "mean_reward": 0.2717857142857143,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 5,
+            "won_only_before": 1,
+            "won_only_after": 6,
+            "joint_wins": 13,
+            "delta_questions_on_joint_wins": 6,
+            "win_rate_ci95": [
+              0.0,
+              0.35714285714285715
+            ],
+            "eig_per_question_ci95": [
+              0.0407657605195775,
+              0.06775234849178143
+            ],
+            "delta_eig_per_question": 0.054602576903382216
+          }
+        },
+        "random": {
+          "games": 28,
+          "wins": 11,
+          "questions": 280,
+          "winning_questions": 110,
+          "questions_per_win": 10.0,
+          "eig_per_question": 0.37477622269776223,
+          "invalid_questions": 0,
+          "repeated_splits": 69,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 280,
+          "flipped_answers": 40,
+          "mean_reward": 0.09285714285714282,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 8,
+            "won_only_before": 0,
+            "won_only_after": 8,
+            "joint_wins": 11,
+            "delta_questions_on_joint_wins": -24,
+            "win_rate_ci95": [
+              0.1428571428571428,
+              0.46428571428571425
+            ],
+            "eig_per_question_ci95": [
+              0.10921178373759415,
+              0.13513656256152243
+            ],
+            "delta_eig_per_question": 0.12234902984104767
+          }
+        },
+        "greedy_single": {
+          "games": 28,
+          "wins": 20,
+          "questions": 253,
+          "winning_questions": 175,
+          "questions_per_win": 8.75,
+          "eig_per_question": 0.4840625925453937,
+          "invalid_questions": 0,
+          "repeated_splits": 19,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 253,
+          "flipped_answers": 36,
+          "mean_reward": 0.4432142857142857,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": -1,
+            "won_only_before": 3,
+            "won_only_after": 2,
+            "joint_wins": 17,
+            "delta_questions_on_joint_wins": -8,
+            "win_rate_ci95": [
+              -0.1785714285714286,
+              0.1071428571428572
+            ],
+            "eig_per_question_ci95": [
+              0.0009760245106641683,
+              0.025136253601214763
+            ],
+            "delta_eig_per_question": 0.013062659993416215
+          }
+        },
+        "greedy_predicate": {
+          "games": 28,
+          "wins": 19,
+          "questions": 241,
+          "winning_questions": 157,
+          "questions_per_win": 8.263157894736842,
+          "eig_per_question": 0.4971252525388099,
+          "invalid_questions": 0,
+          "repeated_splits": 8,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 241,
+          "flipped_answers": 35,
+          "mean_reward": 0.4203571428571428,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 19,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.0,
+              0.0
+            ],
+            "delta_eig_per_question": 0.0
+          }
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0,
+      "game_ids": [
+        "paid-v1/synthetic/128/0/p0",
+        "paid-v1/synthetic/128/1/p0",
+        "paid-v1/synthetic/128/2/p0",
+        "paid-v1/synthetic/128/3/p0",
+        "paid-v1/synthetic/128/4/p0",
+        "paid-v1/synthetic/128/5/p0",
+        "paid-v1/synthetic/128/6/p0",
+        "paid-v1/synthetic/128/7/p0",
+        "paid-v1/synthetic/128/8/p0",
+        "paid-v1/synthetic/128/9/p0",
+        "paid-v1/synthetic/128/10/p0",
+        "paid-v1/synthetic/128/11/p0",
+        "paid-v1/synthetic/128/12/p0",
+        "paid-v1/synthetic/128/13/p0",
+        "paid-v1/synthetic/128/14/p0",
+        "paid-v1/synthetic/128/15/p0",
+        "paid-v1/synthetic/128/16/p0",
+        "paid-v1/synthetic/128/17/p0",
+        "paid-v1/synthetic/128/18/p0",
+        "paid-v1/synthetic/128/19/p0",
+        "paid-v1/synthetic/128/20/p0",
+        "paid-v1/synthetic/128/21/p0",
+        "paid-v1/synthetic/128/22/p0",
+        "paid-v1/synthetic/128/23/p0",
+        "paid-v1/synthetic/128/24/p0",
+        "paid-v1/synthetic/128/25/p0",
+        "paid-v1/synthetic/128/26/p0",
+        "paid-v1/synthetic/128/27/p0"
+      ],
+      "policies": {
+        "Raw": {
+          "games": 28,
+          "wins": 28,
+          "questions": 218,
+          "winning_questions": 218,
+          "questions_per_win": 7.785714285714286,
+          "eig_per_question": 0.8929558613000821,
+          "invalid_questions": 1,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 217,
+          "flipped_answers": 0,
+          "mean_reward": 0.7628571428571428,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 28,
+            "delta_questions_on_joint_wins": -22,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.07099111956016965,
+              0.14165279547098078
+            ],
+            "delta_eig_per_question": 0.10535765138899167
+          }
+        },
+        "A11": {
+          "games": 28,
+          "wins": 16,
+          "questions": 235,
+          "winning_questions": 116,
+          "questions_per_win": 7.25,
+          "eig_per_question": 0.6777613228671845,
+          "invalid_questions": 57,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 3,
+          "context_losses": 0,
+          "valid_yes_no_answers": 178,
+          "flipped_answers": 0,
+          "mean_reward": 0.1160714285714285,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 12,
+            "won_only_before": 0,
+            "won_only_after": 12,
+            "joint_wins": 16,
+            "delta_questions_on_joint_wins": -4,
+            "win_rate_ci95": [
+              0.25,
+              0.6071428571428572
+            ],
+            "eig_per_question_ci95": [
+              0.16769298781673264,
+              0.4704914267445973
+            ],
+            "delta_eig_per_question": 0.32055218982188927
+          }
+        },
+        "A23": {
+          "games": 28,
+          "wins": 28,
+          "questions": 225,
+          "winning_questions": 225,
+          "questions_per_win": 8.035714285714286,
+          "eig_per_question": 0.8771727610026951,
+          "invalid_questions": 2,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 223,
+          "flipped_answers": 0,
+          "mean_reward": 0.7517857142857143,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 28,
+            "delta_questions_on_joint_wins": -29,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.0799915865184964,
+              0.16246767911137222
+            ],
+            "delta_eig_per_question": 0.12114075168637861
+          }
+        },
+        "B41": {
+          "games": 28,
+          "wins": 26,
+          "questions": 222,
+          "winning_questions": 199,
+          "questions_per_win": 7.653846153846154,
+          "eig_per_question": 0.8317183735017775,
+          "invalid_questions": 13,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 209,
+          "flipped_answers": 0,
+          "mean_reward": 0.6442857142857142,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 2,
+            "won_only_before": 0,
+            "won_only_after": 2,
+            "joint_wins": 26,
+            "delta_questions_on_joint_wins": -17,
+            "win_rate_ci95": [
+              0.0,
+              0.1785714285714286
+            ],
+            "eig_per_question_ci95": [
+              0.09124205120924006,
+              0.2692905694323249
+            ],
+            "delta_eig_per_question": 0.1665951391872963
+          }
+        },
+        "random": {
+          "games": 28,
+          "wins": 28,
+          "questions": 299,
+          "winning_questions": 299,
+          "questions_per_win": 10.678571428571429,
+          "eig_per_question": 0.6660378178573212,
+          "invalid_questions": 0,
+          "repeated_splits": 70,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 299,
+          "flipped_answers": 0,
+          "mean_reward": 0.6796428571428571,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 28,
+            "delta_questions_on_joint_wins": -103,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.27116800686401266,
+              0.3837469229515161
+            ],
+            "delta_eig_per_question": 0.33227569483175257
+          }
+        },
+        "greedy_single": {
+          "games": 28,
+          "wins": 28,
+          "questions": 196,
+          "winning_questions": 196,
+          "questions_per_win": 7.0,
+          "eig_per_question": 0.9981831984716762,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 196,
+          "flipped_answers": 0,
+          "mean_reward": 0.79,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 28,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.0,
+              0.00036381482190350756
+            ],
+            "delta_eig_per_question": 0.00013031421739750915
+          }
+        },
+        "greedy_predicate": {
+          "games": 28,
+          "wins": 28,
+          "questions": 196,
+          "winning_questions": 196,
+          "questions_per_win": 7.0,
+          "eig_per_question": 0.9983135126890738,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 196,
+          "flipped_answers": 0,
+          "mean_reward": 0.79,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 28,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.0,
+              0.0
+            ],
+            "delta_eig_per_question": 0.0
+          }
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 128,
+      "noise": 0.1,
+      "game_ids": [
+        "paid-v1/synthetic/128/0/p0.1",
+        "paid-v1/synthetic/128/1/p0.1",
+        "paid-v1/synthetic/128/2/p0.1",
+        "paid-v1/synthetic/128/3/p0.1",
+        "paid-v1/synthetic/128/4/p0.1",
+        "paid-v1/synthetic/128/5/p0.1",
+        "paid-v1/synthetic/128/6/p0.1",
+        "paid-v1/synthetic/128/7/p0.1",
+        "paid-v1/synthetic/128/8/p0.1",
+        "paid-v1/synthetic/128/9/p0.1",
+        "paid-v1/synthetic/128/10/p0.1",
+        "paid-v1/synthetic/128/11/p0.1",
+        "paid-v1/synthetic/128/12/p0.1",
+        "paid-v1/synthetic/128/13/p0.1",
+        "paid-v1/synthetic/128/14/p0.1",
+        "paid-v1/synthetic/128/15/p0.1",
+        "paid-v1/synthetic/128/16/p0.1",
+        "paid-v1/synthetic/128/17/p0.1",
+        "paid-v1/synthetic/128/18/p0.1",
+        "paid-v1/synthetic/128/19/p0.1",
+        "paid-v1/synthetic/128/20/p0.1",
+        "paid-v1/synthetic/128/21/p0.1",
+        "paid-v1/synthetic/128/22/p0.1",
+        "paid-v1/synthetic/128/23/p0.1",
+        "paid-v1/synthetic/128/24/p0.1",
+        "paid-v1/synthetic/128/25/p0.1",
+        "paid-v1/synthetic/128/26/p0.1",
+        "paid-v1/synthetic/128/27/p0.1"
+      ],
+      "policies": {
+        "Raw": {
+          "games": 28,
+          "wins": 17,
+          "questions": 329,
+          "winning_questions": 202,
+          "questions_per_win": 11.882352941176471,
+          "eig_per_question": 0.45788194722311754,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 329,
+          "flipped_answers": 34,
+          "mean_reward": 0.25464285714285706,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 4,
+            "won_only_before": 2,
+            "won_only_after": 6,
+            "joint_wins": 15,
+            "delta_questions_on_joint_wins": -16,
+            "win_rate_ci95": [
+              -0.0357142857142857,
+              0.32142857142857145
+            ],
+            "eig_per_question_ci95": [
+              0.03819681414499115,
+              0.06484687697232396
+            ],
+            "delta_eig_per_question": 0.051274006136789285
+          }
+        },
+        "A11": {
+          "games": 28,
+          "wins": 6,
+          "questions": 232,
+          "winning_questions": 47,
+          "questions_per_win": 7.833333333333333,
+          "eig_per_question": 0.4396388735366751,
+          "invalid_questions": 26,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 2,
+          "context_losses": 0,
+          "valid_yes_no_answers": 206,
+          "flipped_answers": 25,
+          "mean_reward": -0.1271428571428572,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 15,
+            "won_only_before": 0,
+            "won_only_after": 15,
+            "joint_wins": 6,
+            "delta_questions_on_joint_wins": 10,
+            "win_rate_ci95": [
+              0.3571428571428571,
+              0.7142857142857143
+            ],
+            "eig_per_question_ci95": [
+              0.010092683052979669,
+              0.14205166171534891
+            ],
+            "delta_eig_per_question": 0.06951707982323174
+          }
+        },
+        "A23": {
+          "games": 28,
+          "wins": 9,
+          "questions": 385,
+          "winning_questions": 121,
+          "questions_per_win": 13.444444444444445,
+          "eig_per_question": 0.43091622726484685,
+          "invalid_questions": 0,
+          "repeated_splits": 4,
+          "truncated_turns": 0,
+          "no_guess_games": 18,
+          "context_losses": 0,
+          "valid_yes_no_answers": 385,
+          "flipped_answers": 39,
+          "mean_reward": -0.09107142857142872,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 12,
+            "won_only_before": 0,
+            "won_only_after": 12,
+            "joint_wins": 9,
+            "delta_questions_on_joint_wins": -20,
+            "win_rate_ci95": [
+              0.25,
+              0.6071428571428572
+            ],
+            "eig_per_question_ci95": [
+              0.06575219626903236,
+              0.0911241342825274
+            ],
+            "delta_eig_per_question": 0.07823972609505997
+          }
+        },
+        "B41": {
+          "games": 28,
+          "wins": 10,
+          "questions": 232,
+          "winning_questions": 82,
+          "questions_per_win": 8.2,
+          "eig_per_question": 0.4960799467042475,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 232,
+          "flipped_answers": 26,
+          "mean_reward": 0.10857142857142857,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 11,
+            "won_only_before": 0,
+            "won_only_after": 11,
+            "joint_wins": 10,
+            "delta_questions_on_joint_wins": 16,
+            "win_rate_ci95": [
+              0.2142857142857143,
+              0.5714285714285714
+            ],
+            "eig_per_question_ci95": [
+              0.004827302828824947,
+              0.021580582035089634
+            ],
+            "delta_eig_per_question": 0.013076006655659334
+          }
+        },
+        "random": {
+          "games": 28,
+          "wins": 19,
+          "questions": 391,
+          "winning_questions": 265,
+          "questions_per_win": 13.947368421052632,
+          "eig_per_question": 0.3813614893797121,
+          "invalid_questions": 0,
+          "repeated_splits": 117,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 391,
+          "flipped_answers": 40,
+          "mean_reward": 0.259642857142857,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 2,
+            "won_only_before": 3,
+            "won_only_after": 5,
+            "joint_wins": 16,
+            "delta_questions_on_joint_wins": -47,
+            "win_rate_ci95": [
+              -0.1428571428571428,
+              0.25
+            ],
+            "eig_per_question_ci95": [
+              0.1157277061496051,
+              0.13947617734944023
+            ],
+            "delta_eig_per_question": 0.12779446398019473
+          }
+        },
+        "greedy_single": {
+          "games": 28,
+          "wins": 24,
+          "questions": 355,
+          "winning_questions": 299,
+          "questions_per_win": 12.458333333333334,
+          "eig_per_question": 0.4793377793716148,
+          "invalid_questions": 0,
+          "repeated_splits": 34,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 355,
+          "flipped_answers": 35,
+          "mean_reward": 0.47678571428571415,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": -3,
+            "won_only_before": 3,
+            "won_only_after": 0,
+            "joint_wins": 21,
+            "delta_questions_on_joint_wins": -17,
+            "win_rate_ci95": [
+              -0.21517857142857064,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.02078267824980239,
+              0.03952463004626465
+            ],
+            "delta_eig_per_question": 0.029818173988292007
+          }
+        },
+        "greedy_predicate": {
+          "games": 28,
+          "wins": 21,
+          "questions": 336,
+          "winning_questions": 240,
+          "questions_per_win": 11.428571428571429,
+          "eig_per_question": 0.5091559533599068,
+          "invalid_questions": 0,
+          "repeated_splits": 4,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 336,
+          "flipped_answers": 35,
+          "mean_reward": 0.38999999999999996,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 21,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.0,
+              0.0
+            ],
+            "delta_eig_per_question": 0.0
+          }
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0,
+      "game_ids": [
+        "paid-v1/synthetic/256/0/p0",
+        "paid-v1/synthetic/256/1/p0",
+        "paid-v1/synthetic/256/2/p0",
+        "paid-v1/synthetic/256/3/p0",
+        "paid-v1/synthetic/256/4/p0",
+        "paid-v1/synthetic/256/5/p0",
+        "paid-v1/synthetic/256/6/p0",
+        "paid-v1/synthetic/256/7/p0",
+        "paid-v1/synthetic/256/8/p0",
+        "paid-v1/synthetic/256/9/p0",
+        "paid-v1/synthetic/256/10/p0",
+        "paid-v1/synthetic/256/11/p0",
+        "paid-v1/synthetic/256/12/p0",
+        "paid-v1/synthetic/256/13/p0",
+        "paid-v1/synthetic/256/14/p0",
+        "paid-v1/synthetic/256/15/p0",
+        "paid-v1/synthetic/256/16/p0",
+        "paid-v1/synthetic/256/17/p0",
+        "paid-v1/synthetic/256/18/p0",
+        "paid-v1/synthetic/256/19/p0",
+        "paid-v1/synthetic/256/20/p0",
+        "paid-v1/synthetic/256/21/p0",
+        "paid-v1/synthetic/256/22/p0",
+        "paid-v1/synthetic/256/23/p0",
+        "paid-v1/synthetic/256/24/p0",
+        "paid-v1/synthetic/256/25/p0",
+        "paid-v1/synthetic/256/26/p0",
+        "paid-v1/synthetic/256/27/p0"
+      ],
+      "policies": {
+        "Raw": {
+          "games": 28,
+          "wins": 28,
+          "questions": 258,
+          "winning_questions": 258,
+          "questions_per_win": 9.214285714285714,
+          "eig_per_question": 0.8575527706937635,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 258,
+          "flipped_answers": 0,
+          "mean_reward": 0.7235714285714285,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 28,
+            "delta_questions_on_joint_wins": -34,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.10002117924655529,
+              0.18398179740320397
+            ],
+            "delta_eig_per_question": 0.14183432747213942
+          }
+        },
+        "A11": {
+          "games": 28,
+          "wins": 15,
+          "questions": 266,
+          "winning_questions": 122,
+          "questions_per_win": 8.133333333333333,
+          "eig_per_question": 0.6510017080172802,
+          "invalid_questions": 73,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 193,
+          "flipped_answers": 0,
+          "mean_reward": -0.010000000000000148,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 13,
+            "won_only_before": 0,
+            "won_only_after": 13,
+            "joint_wins": 15,
+            "delta_questions_on_joint_wins": -2,
+            "win_rate_ci95": [
+              0.2857142857142857,
+              0.6428571428571428
+            ],
+            "eig_per_question_ci95": [
+              0.17204973752815111,
+              0.5089995428764612
+            ],
+            "delta_eig_per_question": 0.3483853901486227
+          }
+        },
+        "A23": {
+          "games": 28,
+          "wins": 28,
+          "questions": 264,
+          "winning_questions": 264,
+          "questions_per_win": 9.428571428571429,
+          "eig_per_question": 0.8565598707971638,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 264,
+          "flipped_answers": 0,
+          "mean_reward": 0.7171428571428571,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 28,
+            "delta_questions_on_joint_wins": -40,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.10126199198210185,
+              0.18355923596942017
+            ],
+            "delta_eig_per_question": 0.1428272273687391
+          }
+        },
+        "B41": {
+          "games": 28,
+          "wins": 21,
+          "questions": 246,
+          "winning_questions": 180,
+          "questions_per_win": 8.571428571428571,
+          "eig_per_question": 0.8711116595700777,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 246,
+          "flipped_answers": 0,
+          "mean_reward": 0.4864285714285714,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 7,
+            "won_only_before": 0,
+            "won_only_after": 7,
+            "joint_wins": 21,
+            "delta_questions_on_joint_wins": -12,
+            "win_rate_ci95": [
+              0.1071428571428571,
+              0.4285714285714286
+            ],
+            "eig_per_question_ci95": [
+              0.09225020573645945,
+              0.1655989170833043
+            ],
+            "delta_eig_per_question": 0.12827543859582513
+          }
+        },
+        "random": {
+          "games": 28,
+          "wins": 21,
+          "questions": 358,
+          "winning_questions": 246,
+          "questions_per_win": 11.714285714285714,
+          "eig_per_question": 0.5955163024181818,
+          "invalid_questions": 0,
+          "repeated_splits": 108,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 358,
+          "flipped_answers": 0,
+          "mean_reward": 0.36642857142857127,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 7,
+            "won_only_before": 0,
+            "won_only_after": 7,
+            "joint_wins": 21,
+            "delta_questions_on_joint_wins": -78,
+            "win_rate_ci95": [
+              0.1071428571428571,
+              0.4285714285714286
+            ],
+            "eig_per_question_ci95": [
+              0.35006364058710066,
+              0.4506477780646223
+            ],
+            "delta_eig_per_question": 0.4038707957477211
+          }
+        },
+        "greedy_single": {
+          "games": 28,
+          "wins": 28,
+          "questions": 223,
+          "winning_questions": 223,
+          "questions_per_win": 7.964285714285714,
+          "eig_per_question": 0.9988709143402893,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 223,
+          "flipped_answers": 0,
+          "mean_reward": 0.7610714285714285,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 28,
+            "delta_questions_on_joint_wins": 1,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              -0.0007263277567121113,
+              0.001932684042791268
+            ],
+            "delta_eig_per_question": 0.0005161838256135809
+          }
+        },
+        "greedy_predicate": {
+          "games": 28,
+          "wins": 28,
+          "questions": 224,
+          "winning_questions": 224,
+          "questions_per_win": 8.0,
+          "eig_per_question": 0.9993870981659029,
+          "invalid_questions": 0,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 224,
+          "flipped_answers": 0,
+          "mean_reward": 0.76,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 28,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.0,
+              0.0
+            ],
+            "delta_eig_per_question": 0.0
+          }
+        }
+      }
+    },
+    {
+      "domain": "synthetic",
+      "n": 256,
+      "noise": 0.1,
+      "game_ids": [
+        "paid-v1/synthetic/256/0/p0.1",
+        "paid-v1/synthetic/256/1/p0.1",
+        "paid-v1/synthetic/256/2/p0.1",
+        "paid-v1/synthetic/256/3/p0.1",
+        "paid-v1/synthetic/256/4/p0.1",
+        "paid-v1/synthetic/256/5/p0.1",
+        "paid-v1/synthetic/256/6/p0.1",
+        "paid-v1/synthetic/256/7/p0.1",
+        "paid-v1/synthetic/256/8/p0.1",
+        "paid-v1/synthetic/256/9/p0.1",
+        "paid-v1/synthetic/256/10/p0.1",
+        "paid-v1/synthetic/256/11/p0.1",
+        "paid-v1/synthetic/256/12/p0.1",
+        "paid-v1/synthetic/256/13/p0.1",
+        "paid-v1/synthetic/256/14/p0.1",
+        "paid-v1/synthetic/256/15/p0.1",
+        "paid-v1/synthetic/256/16/p0.1",
+        "paid-v1/synthetic/256/17/p0.1",
+        "paid-v1/synthetic/256/18/p0.1",
+        "paid-v1/synthetic/256/19/p0.1",
+        "paid-v1/synthetic/256/20/p0.1",
+        "paid-v1/synthetic/256/21/p0.1",
+        "paid-v1/synthetic/256/22/p0.1",
+        "paid-v1/synthetic/256/23/p0.1",
+        "paid-v1/synthetic/256/24/p0.1",
+        "paid-v1/synthetic/256/25/p0.1",
+        "paid-v1/synthetic/256/26/p0.1",
+        "paid-v1/synthetic/256/27/p0.1"
+      ],
+      "policies": {
+        "Raw": {
+          "games": 28,
+          "wins": 20,
+          "questions": 335,
+          "winning_questions": 245,
+          "questions_per_win": 12.25,
+          "eig_per_question": 0.47565857705110265,
+          "invalid_questions": 0,
+          "repeated_splits": 4,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 335,
+          "flipped_answers": 24,
+          "mean_reward": 0.35535714285714276,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 6,
+            "won_only_before": 0,
+            "won_only_after": 6,
+            "joint_wins": 20,
+            "delta_questions_on_joint_wins": -2,
+            "win_rate_ci95": [
+              0.0714285714285714,
+              0.3571428571428572
+            ],
+            "eig_per_question_ci95": [
+              0.023297834039739798,
+              0.04409239401832956
+            ],
+            "delta_eig_per_question": 0.03339607574582021
+          }
+        },
+        "A11": {
+          "games": 28,
+          "wins": 7,
+          "questions": 265,
+          "winning_questions": 58,
+          "questions_per_win": 8.285714285714286,
+          "eig_per_question": 0.34982871611253624,
+          "invalid_questions": 84,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 181,
+          "flipped_answers": 15,
+          "mean_reward": -0.33392857142857163,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 19,
+            "won_only_before": 0,
+            "won_only_after": 19,
+            "joint_wins": 7,
+            "delta_questions_on_joint_wins": 22,
+            "win_rate_ci95": [
+              0.5,
+              0.8571428571428572
+            ],
+            "eig_per_question_ci95": [
+              0.058620059079399496,
+              0.2521563308414711
+            ],
+            "delta_eig_per_question": 0.15922593668438662
+          }
+        },
+        "A23": {
+          "games": 28,
+          "wins": 16,
+          "questions": 426,
+          "winning_questions": 238,
+          "questions_per_win": 14.875,
+          "eig_per_question": 0.4256920562034138,
+          "invalid_questions": 2,
+          "repeated_splits": 18,
+          "truncated_turns": 0,
+          "no_guess_games": 9,
+          "context_losses": 0,
+          "valid_yes_no_answers": 424,
+          "flipped_answers": 33,
+          "mean_reward": 0.10785714285714267,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 10,
+            "won_only_before": 0,
+            "won_only_after": 10,
+            "joint_wins": 16,
+            "delta_questions_on_joint_wins": -54,
+            "win_rate_ci95": [
+              0.1785714285714286,
+              0.5357142857142858
+            ],
+            "eig_per_question_ci95": [
+              0.06825158429915987,
+              0.09860003544522548
+            ],
+            "delta_eig_per_question": 0.08336259659350903
+          }
+        },
+        "B41": {
+          "games": 28,
+          "wins": 6,
+          "questions": 230,
+          "winning_questions": 51,
+          "questions_per_win": 8.5,
+          "eig_per_question": 0.47908629796089136,
+          "invalid_questions": 15,
+          "repeated_splits": 0,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 215,
+          "flipped_answers": 18,
+          "mean_reward": -0.08571428571428576,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 20,
+            "won_only_before": 0,
+            "won_only_after": 20,
+            "joint_wins": 6,
+            "delta_questions_on_joint_wins": 15,
+            "win_rate_ci95": [
+              0.5357142857142858,
+              0.8571428571428572
+            ],
+            "eig_per_question_ci95": [
+              -0.008521431267315107,
+              0.09265040951170678
+            ],
+            "delta_eig_per_question": 0.029968354836031497
+          }
+        },
+        "random": {
+          "games": 28,
+          "wins": 14,
+          "questions": 448,
+          "winning_questions": 224,
+          "questions_per_win": 16.0,
+          "eig_per_question": 0.36104600046002716,
+          "invalid_questions": 0,
+          "repeated_splits": 160,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 448,
+          "flipped_answers": 35,
+          "mean_reward": 0.019999999999999796,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 12,
+            "won_only_before": 0,
+            "won_only_after": 12,
+            "joint_wins": 14,
+            "delta_questions_on_joint_wins": -57,
+            "win_rate_ci95": [
+              0.25,
+              0.6071428571428572
+            ],
+            "eig_per_question_ci95": [
+              0.13627973283282274,
+              0.16006104110142977
+            ],
+            "delta_eig_per_question": 0.1480086523368957
+          }
+        },
+        "greedy_single": {
+          "games": 28,
+          "wins": 25,
+          "questions": 398,
+          "winning_questions": 354,
+          "questions_per_win": 14.16,
+          "eig_per_question": 0.4666727134506835,
+          "invalid_questions": 0,
+          "repeated_splits": 46,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 398,
+          "flipped_answers": 31,
+          "mean_reward": 0.46642857142857125,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 1,
+            "won_only_before": 1,
+            "won_only_after": 2,
+            "joint_wins": 24,
+            "delta_questions_on_joint_wins": -41,
+            "win_rate_ci95": [
+              -0.07142857142857151,
+              0.1428571428571429
+            ],
+            "eig_per_question_ci95": [
+              0.03063407674273963,
+              0.05388545724866474
+            ],
+            "delta_eig_per_question": 0.04238193934623935
+          }
+        },
+        "greedy_predicate": {
+          "games": 28,
+          "wins": 26,
+          "questions": 361,
+          "winning_questions": 329,
+          "questions_per_win": 12.653846153846153,
+          "eig_per_question": 0.5090546527969229,
+          "invalid_questions": 0,
+          "repeated_splits": 5,
+          "truncated_turns": 0,
+          "no_guess_games": 0,
+          "context_losses": 0,
+          "valid_yes_no_answers": 361,
+          "flipped_answers": 25,
+          "mean_reward": 0.5417857142857142,
+          "greedy_predicate_minus_policy": {
+            "delta_wins": 0,
+            "won_only_before": 0,
+            "won_only_after": 0,
+            "joint_wins": 26,
+            "delta_questions_on_joint_wins": 0,
+            "win_rate_ci95": [
+              0.0,
+              0.0
+            ],
+            "eig_per_question_ci95": [
+              0.0,
+              0.0
+            ],
+            "delta_eig_per_question": 0.0
+          }
+        }
+      }
+    }
+  ],
+  "source_sha256": {
+    "results/main_A11/games.jsonl.gz": "c11f1f08317e616fba7827775c803adc9fbb29403ef0c96b41081c5612086518",
+    "results/main_A23/games.jsonl.gz": "63977c35697693a3c2b66bfd1f422827082af1eea0fe2b5c5f6ed78ac356e879",
+    "results/main_B41/games.jsonl.gz": "ad367672439a2627fc6623f5085c6da2c9c01e042af36473f157be2ecc9559ed",
+    "results/writeup/numbers.json": "5853b28e18783247e8d003acbf475e48a2aad5c897c641886ec4a1be6dd8a2cb",
+    "evals/frozen/manifest.json": "96cbff2993f3ffcd5f6f6151571a8786e8ef2606c26c30180a753c944b9511eb",
+    "results/baselines/frozen/animals_n32_p0.00.jsonl.gz": "4996d916faed8f7255cfde913f3ebf9838250e14334a7a738d01ddeb9461b133",
+    "evals/frozen/animals_n32_p0.00.jsonl.gz": "d72f8e08d5b1a2a058ec7b4250d6dceffe74266ad6f857714d77de4793ada54d",
+    "results/submission/halving/games.jsonl.gz": "e8dbe066c8a159ef0f4d0d9c3923d0040446f1881e090443c31d2021477f4ab2",
+    "results/baselines/frozen/animals_n32_p0.10.jsonl.gz": "709c4445df1ad7b885dd3e3e60552009d9a8c588edf2280495c4f2bfa9936671",
+    "evals/frozen/animals_n32_p0.10.jsonl.gz": "8c36eb39d83aa1b0555a2bb9589a8b90bdc49f8bcec438cc24a14d6a91fc5a60",
+    "results/baselines/frozen/animals_n128_p0.00.jsonl.gz": "c58614f12f149f91b27ae6800c9f3bf83d3e0f86faab9dc62cbc31116093e50d",
+    "evals/frozen/animals_n128_p0.00.jsonl.gz": "1dcaace1d07e7c2822fe79594afc785519151dbbce800e255de964898101f9e9",
+    "results/baselines/frozen/animals_n128_p0.10.jsonl.gz": "ee8bb543bf1bb98a29929bdb19b2ab95d8594488c448d513da43b5b2c6b32818",
+    "evals/frozen/animals_n128_p0.10.jsonl.gz": "6fa3774b45c9fe5518469fab8f9aeb6101ad7d4edaed7d3c17eeceea5f23bb9a",
+    "results/baselines/frozen/synthetic_n32_p0.00.jsonl.gz": "7db0a6cd463f1688cab33e5e149ac2d5752cb32d6fc40273e9babcafe0ad338a",
+    "evals/frozen/synthetic_n32_p0.00.jsonl.gz": "30e828cb498b97534f218cb6f57c0cca2ea8a73d15ec9e709c88200876eb14ce",
+    "results/baselines/frozen/synthetic_n32_p0.10.jsonl.gz": "e660e021a716b16a147a2b016f93410f4fbaf7c67fefc5beb16d389f7841a69f",
+    "evals/frozen/synthetic_n32_p0.10.jsonl.gz": "f672c108e82c37daef841d1a59c61a68fac97a6b05cb79ff64bc2c2bcd0de67b",
+    "results/baselines/frozen/synthetic_n128_p0.00.jsonl.gz": "c80d14ffae6dbece836489852c36e99f04e4492ba7f7daaa0581f10279bf8b0d",
+    "evals/frozen/synthetic_n128_p0.00.jsonl.gz": "d79c0b0c708809d0fd76a31c16317af73b1f30144b7bca2f1ff959529bc748a1",
+    "results/baselines/frozen/synthetic_n128_p0.10.jsonl.gz": "a0ca4730fb2310ff0010d1411bdf1685e8c2320e438ac612d72fbe2cff017b40",
+    "evals/frozen/synthetic_n128_p0.10.jsonl.gz": "3c82cee528e64be3c93eca973f02746dc87706ab0dcbc84a3f874ad78e70efcb",
+    "results/baselines/frozen/synthetic_n256_p0.00.jsonl.gz": "037658c00780539e2957f8aa6d7eb9c0995803e9bec059fc368711dca1817a43",
+    "evals/frozen/synthetic_n256_p0.00.jsonl.gz": "6fe51d1205ebc5e0c0be731fccb3de766d148fcea3a6df257e04d8fedfcbcb3d",
+    "results/baselines/frozen/synthetic_n256_p0.10.jsonl.gz": "8b6888fd69921d579c9ff1a3959c0f8a94bed392b0db3569e882534797773ca8",
+    "evals/frozen/synthetic_n256_p0.10.jsonl.gz": "dbe1c7009607cca82b0e81e3455ebd571152aaa6ea16079eb16b9a1622eae340"
+  }
+}
